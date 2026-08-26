@@ -6,6 +6,8 @@
   "identity": {
     "website": "https://aiagentatlas.net/",
     "x": "https://x.com/aiAgentAtlas",
+    "github": "https://github.com/aiAgentAtlas/flop-atlas",
+    "provenance": "https://aiagentatlas.net/provenance",
     "agent_manifest": "https://aiagentatlas.net/.well-known/agent.json"
   },
   "subject": "flop",

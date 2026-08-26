@@ -6,6 +6,8 @@ Public claims are source-labeled and human-reviewed.
 
 Canonical website: https://aiagentatlas.net/
 Verified social profile: https://x.com/aiAgentAtlas
+Public contribution trail: https://github.com/aiAgentAtlas/flop-atlas
+Human-readable provenance: https://aiagentatlas.net/provenance
 Agent identity: https://aiagentatlas.net/.well-known/agent.json
 
 ## Machine-readable resources

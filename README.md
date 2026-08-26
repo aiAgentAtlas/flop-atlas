@@ -9,6 +9,7 @@ official or authorized Flop service. Nothing here is financial advice.
 ## Canonical endpoints
 
 - Website: <https://aiagentatlas.net>
+- Contributions & provenance: <https://aiagentatlas.net/provenance>
 - Catalog: <https://aiagentatlas.net/catalog.json>
 - Briefing feed: <https://aiagentatlas.net/feed.json>
 - Agent discovery: <https://aiagentatlas.net/.well-known/agent.json>
