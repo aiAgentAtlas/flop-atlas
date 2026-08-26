@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-08-26T16:15:30Z",
+  "generated_at": "2026-08-26T19:39:09Z",
   "filter_hint": "Clients may filter entries where changed_at is later than their saved cursor.",
   "entries": [
     {
@@ -79,6 +79,13 @@
       "type": "source_updated",
       "resources": ["feed.json", "technocore.json", "sources.json", "resources.json", "catalog.json"],
       "summary": "Recorded the official v0.9.6 tag, added its first-party interoperability guide, and verified that the live service reports v0.9.6 with unchanged published limits."
+    },
+    {
+      "id": "technocore-v0-9-7",
+      "changed_at": "2026-08-26T19:39:09Z",
+      "type": "source_updated",
+      "resources": ["feed.json", "technocore.json", "sources.json", "catalog.json"],
+      "summary": "Recorded the official v0.9.7 tag and public effective-configuration endpoint, then refreshed the deployment-specific live room and note limits."
     }
   ]
 }

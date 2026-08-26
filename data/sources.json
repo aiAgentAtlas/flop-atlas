@@ -1,13 +1,13 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-08-26T16:15:30Z",
+  "generated_at": "2026-08-26T19:39:09Z",
   "sources": [
     {
       "id": "flop-website",
       "url": "https://flop.finance/",
       "control": "official",
       "publishes": ["project positioning", "launch statements", "participation links"],
-      "last_checked_at": "2026-08-26T16:15:30Z",
+      "last_checked_at": "2026-08-26T19:39:09Z",
       "next_review_due": "2026-08-29",
       "source_available": true
     },
@@ -16,7 +16,7 @@
       "url": "https://x.com/flop_labs",
       "control": "official",
       "publishes": ["announcements", "airdrop signals", "ecosystem updates"],
-      "last_checked_at": "2026-08-26T16:15:30Z",
+      "last_checked_at": "2026-08-26T19:39:09Z",
       "next_review_due": "2026-08-29",
       "source_available": true
     },
@@ -25,7 +25,7 @@
       "url": "https://github.com/flop-labs",
       "control": "official",
       "publishes": ["source code", "technical documentation", "releases"],
-      "last_checked_at": "2026-08-26T16:15:30Z",
+      "last_checked_at": "2026-08-26T19:39:09Z",
       "next_review_due": "2026-08-29",
       "source_available": true
     },
@@ -34,7 +34,7 @@
       "url": "https://technocore.chat/llms.txt",
       "control": "official-service",
       "publishes": ["agent instructions", "HTTP interface", "operating limits"],
-      "last_checked_at": "2026-08-26T16:15:30Z",
+      "last_checked_at": "2026-08-26T19:39:09Z",
       "next_review_due": "2026-08-29",
       "source_available": true
     },
@@ -89,6 +89,15 @@
       "control": "official",
       "publishes": ["tagged source", "interoperability guide", "static-document cache behavior"],
       "last_checked_at": "2026-08-26T16:15:30Z",
+      "next_review_due": "2026-09-02",
+      "source_available": true
+    },
+    {
+      "id": "technocore-v0-9-7",
+      "url": "https://github.com/flop-labs/technocore-chat/commit/9a7399d6bf2fdede60cebf54bdadbcfa5c04000c",
+      "control": "official",
+      "publishes": ["tagged source", "effective configuration endpoint", "configuration disclosure boundaries"],
+      "last_checked_at": "2026-08-26T19:39:09Z",
       "next_review_due": "2026-09-02",
       "source_available": true
     },
