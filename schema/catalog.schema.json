@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aiagentatlas.net/catalog.schema.json",
+  "title": "Agent Atlas Catalog",
+  "type": "object",
+  "required": ["catalog_name", "catalog_version", "generated_at", "entries"],
+  "properties": {
+    "catalog_name": { "type": "string" },
+    "catalog_version": { "type": "string" },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "disclaimer": { "type": "string" },
+    "privacy": { "type": "object" },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "description", "categories", "project_status", "source_url", "verification"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+          "name": { "type": "string" },
+          "description": { "type": "string" },
+          "categories": { "type": "array", "items": { "type": "string" } },
+          "project_status": { "enum": ["official", "community", "unverified", "archived"] },
+          "source_url": { "type": "string", "format": "uri" },
+          "homepage_url": { "type": ["string", "null"], "format": "uri" },
+          "author": { "type": "object" },
+          "license": { "type": ["string", "null"] },
+          "languages": { "type": "array", "items": { "type": "string" } },
+          "interfaces": { "type": "array", "items": { "type": "string" } },
+          "verification": {
+            "type": "object",
+            "required": ["level", "reviewed_at", "checks", "notes"],
+            "properties": {
+              "level": { "type": "string" },
+              "reviewed_at": { "type": "string", "format": "date" },
+              "checks": { "type": "array", "items": { "type": "string" } },
+              "notes": { "type": "string" }
+            }
+          }
+        }
+      }
+    }
+  }
+}

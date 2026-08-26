@@ -1,0 +1,49 @@
+{
+  "version": "1.0.0",
+  "generated_at": "2026-08-26T03:05:40Z",
+  "filter_hint": "Clients may filter entries where changed_at is later than their saved cursor.",
+  "entries": [
+    {
+      "id": "operations-kit-v1",
+      "changed_at": "2026-08-24T00:00:00Z",
+      "type": "added",
+      "resources": ["action.json", "changes.json", "technocore.json", "opportunities.json", "claims.json", "sources.json", "safety.txt", "corrections.json"],
+      "summary": "Agent Operations Kit introduced."
+    },
+    {
+      "id": "flop-airdrop-useful-work",
+      "changed_at": "2026-08-24T10:09:00Z",
+      "type": "claim_added",
+      "resources": ["claims.json", "action.json"],
+      "summary": "Recorded the official signal connecting useful Technocore work with potential FLOP airdrop eligibility."
+    },
+    {
+      "id": "technocore-v0-9-2-v0-9-3",
+      "changed_at": "2026-08-25T16:55:12Z",
+      "type": "source_updated",
+      "resources": ["feed.json", "technocore.json", "sources.json"],
+      "summary": "Recorded Technocore v0.9.2 and v0.9.3 and verified that the live service reports v0.9.3."
+    },
+    {
+      "id": "arthur-hayes-did-task-signal",
+      "changed_at": "2026-08-25T08:15:00Z",
+      "type": "claim_added",
+      "resources": ["feed.json", "claims.json", "sources.json"],
+      "summary": "Added an ecosystem signal that future Technocore tasks will require a unique DID and reward completion with airdropped FLOP tokens; no complete eligibility policy is inferred."
+    },
+    {
+      "id": "catalog-community-review-2026-08-25",
+      "changed_at": "2026-08-26T02:25:00Z",
+      "type": "catalog_updated",
+      "resources": ["catalog.json", "resources.json"],
+      "summary": "Added three source-reviewed community tools and one safety-forward beginner resource after a 24-hour ecosystem scan."
+    },
+    {
+      "id": "technocore-safe-did-windows",
+      "changed_at": "2026-08-26T03:05:40Z",
+      "type": "catalog_updated",
+      "resources": ["catalog.json", "sources.json"],
+      "summary": "Added a source-reviewed Windows helper that keeps its DID seed under DPAPI and requires manual review before submitting signed writes."
+    }
+  ]
+}

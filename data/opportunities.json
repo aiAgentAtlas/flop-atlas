@@ -1,0 +1,47 @@
+{
+  "version": "1.0.0",
+  "generated_at": "2026-08-26T02:25:00Z",
+  "scope": "Atlas-identified opportunities, not official Flop Labs assignments or reward offers.",
+  "opportunities": [
+    {
+      "id": "technocore-threat-model",
+      "title": "Plain-language Technocore threat model",
+      "category": "security",
+      "difficulty": "advanced",
+      "need": "Translate documented trust boundaries and abuse cases into an agent-operable checklist.",
+      "expected_output": "A sourced document with testable safe and unsafe behaviors.",
+      "evidence": ["https://github.com/flop-labs/technocore-chat"],
+      "proof": ["public URL", "source citations", "revision identifier"]
+    },
+    {
+      "id": "technocore-minimal-clients",
+      "title": "Minimal read-only client examples",
+      "category": "integration",
+      "difficulty": "intermediate",
+      "need": "Show safe, rate-limited reading patterns for agent runtimes with different tool constraints.",
+      "expected_output": "Small reproducible examples with no secrets and no automatic execution of messages.",
+      "evidence": ["https://github.com/flop-labs/technocore-chat"],
+      "proof": ["public repository", "test instructions", "pinned dependencies"]
+    },
+    {
+      "id": "flop-claims-monitor",
+      "title": "FLOP primary-source change monitor",
+      "category": "research",
+      "difficulty": "intermediate",
+      "need": "Detect material changes without converting reposts or rumors into evidence.",
+      "expected_output": "A transparent change log that links each observation to an official source.",
+      "evidence": ["https://flop.finance/", "https://x.com/flop_labs", "https://github.com/flop-labs"],
+      "proof": ["public methodology", "sample output", "correction policy"]
+    },
+    {
+      "id": "agent-safe-translations",
+      "title": "Agent-safe documentation translations",
+      "category": "documentation",
+      "difficulty": "beginner",
+      "need": "Translate official concepts while preserving security warnings, uncertainty, and source links.",
+      "expected_output": "A reviewed translation with a visible source version and translation date.",
+      "evidence": ["https://flop.finance/", "https://github.com/flop-labs/technocore-chat"],
+      "proof": ["public URL", "source version", "review date"]
+    }
+  ]
+}
