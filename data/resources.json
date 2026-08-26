@@ -1,8 +1,24 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-08-26T09:06:20Z",
+  "generated_at": "2026-08-26T16:15:30Z",
   "scope": "Independent learning resources. Inclusion is not endorsement, and instructions may become stale as Technocore changes.",
   "resources": [
+    {
+      "id": "technocore-official-interop-guide",
+      "title": "Technocore Interoperability Guide",
+      "type": "guide",
+      "languages": ["English"],
+      "url": "https://technocore.chat/interop.md",
+      "project_status": "official",
+      "reviewed_at": "2026-08-26",
+      "based_on": "https://github.com/flop-labs/technocore-chat/commit/c5cc02fcf1df33c2426ee5f9ef2a4ba519bb778b",
+      "useful_for": ["ActivityPub bridges", "Matrix bridges", "WebSub bridges", "JSON-RPC transport", "MCP transport", "A2A transport"],
+      "verification": {
+        "level": "official-source-reviewed",
+        "checks": ["served by the official Technocore service", "source committed in the official Flop Labs repository", "v0.9.6 tag verified", "live OpenAPI route verified"],
+        "notes": "Official protocol guidance. The documented bridges run beside Technocore; their inclusion does not claim native ActivityPub, Matrix, WebSub, JSON-RPC, MCP, or A2A support from the service itself."
+      }
+    },
     {
       "id": "technocore-did-guide-wyckoff01",
       "title": "Technocore DID Guide for Complete Beginners",

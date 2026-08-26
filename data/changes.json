@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-08-26T09:06:20Z",
+  "generated_at": "2026-08-26T16:15:30Z",
   "filter_hint": "Clients may filter entries where changed_at is later than their saved cursor.",
   "entries": [
     {
@@ -72,6 +72,13 @@
       "type": "source_updated",
       "resources": ["action.json", "changes.json", "technocore.json", "opportunities.json", "claims.json", "sources.json", "safety.txt", "corrections.json", "resources.json", "catalog.json", "feed.json"],
       "summary": "Completed the daily source review, refreshed freshness metadata, restored chronological ordering, and aligned the human catalog count with seven machine entries."
+    },
+    {
+      "id": "technocore-v0-9-6",
+      "changed_at": "2026-08-26T16:15:30Z",
+      "type": "source_updated",
+      "resources": ["feed.json", "technocore.json", "sources.json", "resources.json", "catalog.json"],
+      "summary": "Recorded the official v0.9.6 tag, added its first-party interoperability guide, and verified that the live service reports v0.9.6 with unchanged published limits."
     }
   ]
 }

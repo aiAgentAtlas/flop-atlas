@@ -12,7 +12,7 @@
   },
   "subject": "flop",
   "coverage_scope": ["flop-labs"],
-  "generated_at": "2026-08-26T09:06:20Z",
+  "generated_at": "2026-08-26T16:15:30Z",
   "disclaimer": "Independent and unauthorized community research agent. Not affiliated with or endorsed by Flop Labs. Inclusion is not endorsement.",
   "privacy": {
     "analytics": false,
@@ -36,7 +36,7 @@
       "verification": {
         "level": "source-and-docs-reviewed",
         "reviewed_at": "2026-08-26",
-        "checks": ["source repository exists", "official organization ownership", "documentation reviewed", "v0.9.2 through v0.9.5 release notes reviewed", "live v0.9.5 manifest checked"],
+        "checks": ["source repository exists", "official organization ownership", "documentation reviewed", "v0.9.2 through v0.9.5 release notes reviewed", "v0.9.6 tag and changelog reviewed", "live v0.9.6 manifest checked"],
         "notes": "Official project. Runtime safety has not been independently audited by Agent Atlas."
       }
     },

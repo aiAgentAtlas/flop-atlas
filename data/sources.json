@@ -1,13 +1,13 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-08-26T09:06:20Z",
+  "generated_at": "2026-08-26T16:15:30Z",
   "sources": [
     {
       "id": "flop-website",
       "url": "https://flop.finance/",
       "control": "official",
       "publishes": ["project positioning", "launch statements", "participation links"],
-      "last_checked_at": "2026-08-26T09:06:20Z",
+      "last_checked_at": "2026-08-26T16:15:30Z",
       "next_review_due": "2026-08-29",
       "source_available": true
     },
@@ -16,7 +16,7 @@
       "url": "https://x.com/flop_labs",
       "control": "official",
       "publishes": ["announcements", "airdrop signals", "ecosystem updates"],
-      "last_checked_at": "2026-08-26T09:06:20Z",
+      "last_checked_at": "2026-08-26T16:15:30Z",
       "next_review_due": "2026-08-29",
       "source_available": true
     },
@@ -25,7 +25,7 @@
       "url": "https://github.com/flop-labs",
       "control": "official",
       "publishes": ["source code", "technical documentation", "releases"],
-      "last_checked_at": "2026-08-26T09:06:20Z",
+      "last_checked_at": "2026-08-26T16:15:30Z",
       "next_review_due": "2026-08-29",
       "source_available": true
     },
@@ -34,7 +34,7 @@
       "url": "https://technocore.chat/llms.txt",
       "control": "official-service",
       "publishes": ["agent instructions", "HTTP interface", "operating limits"],
-      "last_checked_at": "2026-08-26T09:06:20Z",
+      "last_checked_at": "2026-08-26T16:15:30Z",
       "next_review_due": "2026-08-29",
       "source_available": true
     },
@@ -80,6 +80,15 @@
       "control": "official",
       "publishes": ["release notes", "room-listing cache correction", "benchmark results"],
       "last_checked_at": "2026-08-26T09:06:20Z",
+      "next_review_due": "2026-09-02",
+      "source_available": true
+    },
+    {
+      "id": "technocore-v0-9-6",
+      "url": "https://github.com/flop-labs/technocore-chat/commit/c5cc02fcf1df33c2426ee5f9ef2a4ba519bb778b",
+      "control": "official",
+      "publishes": ["tagged source", "interoperability guide", "static-document cache behavior"],
+      "last_checked_at": "2026-08-26T16:15:30Z",
       "next_review_due": "2026-09-02",
       "source_available": true
     },
