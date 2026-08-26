@@ -1,14 +1,14 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-08-26T03:05:40Z",
+  "generated_at": "2026-08-26T09:06:20Z",
   "sources": [
     {
       "id": "flop-website",
       "url": "https://flop.finance/",
       "control": "official",
       "publishes": ["project positioning", "launch statements", "participation links"],
-      "last_checked_at": "2026-08-26T02:25:00Z",
-      "next_review_due": "2026-08-28",
+      "last_checked_at": "2026-08-26T09:06:20Z",
+      "next_review_due": "2026-08-29",
       "source_available": true
     },
     {
@@ -16,8 +16,8 @@
       "url": "https://x.com/flop_labs",
       "control": "official",
       "publishes": ["announcements", "airdrop signals", "ecosystem updates"],
-      "last_checked_at": "2026-08-26T02:25:00Z",
-      "next_review_due": "2026-08-28",
+      "last_checked_at": "2026-08-26T09:06:20Z",
+      "next_review_due": "2026-08-29",
       "source_available": true
     },
     {
@@ -25,8 +25,8 @@
       "url": "https://github.com/flop-labs",
       "control": "official",
       "publishes": ["source code", "technical documentation", "releases"],
-      "last_checked_at": "2026-08-26T02:25:00Z",
-      "next_review_due": "2026-08-28",
+      "last_checked_at": "2026-08-26T09:06:20Z",
+      "next_review_due": "2026-08-29",
       "source_available": true
     },
     {
@@ -34,8 +34,8 @@
       "url": "https://technocore.chat/llms.txt",
       "control": "official-service",
       "publishes": ["agent instructions", "HTTP interface", "operating limits"],
-      "last_checked_at": "2026-08-26T02:25:00Z",
-      "next_review_due": "2026-08-28",
+      "last_checked_at": "2026-08-26T09:06:20Z",
+      "next_review_due": "2026-08-29",
       "source_available": true
     },
     {
@@ -43,8 +43,17 @@
       "url": "https://x.com/CryptoHayes/status/2092163906537918944",
       "control": "ecosystem-signal",
       "publishes": ["DID-gated task statement", "airdrop reward statement"],
-      "last_checked_at": "2026-08-26T02:25:00Z",
-      "next_review_due": "2026-08-28",
+      "last_checked_at": "2026-08-26T09:06:20Z",
+      "next_review_due": "2026-08-29",
+      "source_available": true
+    },
+    {
+      "id": "arthur-hayes-testnet-faucet",
+      "url": "https://x.com/CryptoHayes/status/2092209532600463598",
+      "control": "ecosystem-signal",
+      "publishes": ["testnet-activity allocation statement", "Technocore faucet statement", "DID-key access statement"],
+      "last_checked_at": "2026-08-26T09:06:20Z",
+      "next_review_due": "2026-08-29",
       "source_available": true
     },
     {
@@ -52,8 +61,26 @@
       "url": "https://github.com/flop-labs/technocore-chat/releases/tag/v0.9.3",
       "control": "official",
       "publishes": ["release notes", "performance changes", "documentation corrections"],
-      "last_checked_at": "2026-08-26T02:25:00Z",
-      "next_review_due": "2026-09-01",
+      "last_checked_at": "2026-08-26T09:06:20Z",
+      "next_review_due": "2026-09-02",
+      "source_available": true
+    },
+    {
+      "id": "technocore-v0-9-4",
+      "url": "https://github.com/flop-labs/technocore-chat/releases/tag/v0.9.4",
+      "control": "official",
+      "publishes": ["release notes", "concurrency fixes", "room-listing cache changes"],
+      "last_checked_at": "2026-08-26T09:06:20Z",
+      "next_review_due": "2026-09-02",
+      "source_available": true
+    },
+    {
+      "id": "technocore-v0-9-5",
+      "url": "https://github.com/flop-labs/technocore-chat/releases/tag/v0.9.5",
+      "control": "official",
+      "publishes": ["release notes", "room-listing cache correction", "benchmark results"],
+      "last_checked_at": "2026-08-26T09:06:20Z",
+      "next_review_due": "2026-09-02",
       "source_available": true
     },
     {
@@ -61,8 +88,8 @@
       "url": "https://github.com/Maje53/technocore-explorer",
       "control": "community",
       "publishes": ["read-only explorer source", "signature inspection implementation"],
-      "last_checked_at": "2026-08-26T02:25:00Z",
-      "next_review_due": "2026-08-28",
+      "last_checked_at": "2026-08-26T09:06:20Z",
+      "next_review_due": "2026-08-29",
       "source_available": true
     },
     {
@@ -70,8 +97,8 @@
       "url": "https://github.com/ramu0793/technocore-get-client",
       "control": "community",
       "publishes": ["GET-only client source", "local identity handling"],
-      "last_checked_at": "2026-08-26T02:25:00Z",
-      "next_review_due": "2026-08-28",
+      "last_checked_at": "2026-08-26T09:06:20Z",
+      "next_review_due": "2026-08-29",
       "source_available": true
     },
     {
@@ -79,8 +106,8 @@
       "url": "https://github.com/nolimitool/technocore-analytics",
       "control": "community",
       "publishes": ["public-room analytics source", "read-only monitoring"],
-      "last_checked_at": "2026-08-26T02:25:00Z",
-      "next_review_due": "2026-08-28",
+      "last_checked_at": "2026-08-26T09:06:20Z",
+      "next_review_due": "2026-08-29",
       "source_available": true
     },
     {
@@ -88,17 +115,17 @@
       "url": "https://github.com/wyckoff01/Flop",
       "control": "community",
       "publishes": ["cross-platform beginner guide", "identity safety reminders"],
-      "last_checked_at": "2026-08-26T02:25:00Z",
-      "next_review_due": "2026-08-28",
+      "last_checked_at": "2026-08-26T09:06:20Z",
+      "next_review_due": "2026-08-29",
       "source_available": true
     },
     {
       "id": "technocore-safe-did-windows-source",
-      "url": "https://github.com/iammikedavis/technocore-safe-did-windows/commit/a2fc65864662a1439a5686d45b91fe7a9f889bbd",
+      "url": "https://github.com/iammikedavis/technocore-safe-did-windows/commit/8183d0e0399a5a1963445e4f4690d893f687f8ef",
       "control": "community",
-      "publishes": ["Windows DPAPI identity helper source", "prepare-only signed-write workflow", "security review notes"],
-      "last_checked_at": "2026-08-26T03:05:40Z",
-      "next_review_due": "2026-08-28",
+      "publishes": ["Windows DPAPI identity research snapshot", "withdrawn beginner execution guide", "security review notes"],
+      "last_checked_at": "2026-08-26T09:06:20Z",
+      "next_review_due": "2026-08-29",
       "source_available": true
     }
   ]

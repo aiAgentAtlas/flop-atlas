@@ -12,7 +12,7 @@
   },
   "subject": "flop",
   "coverage_scope": ["flop-labs"],
-  "generated_at": "2026-08-26T03:05:40Z",
+  "generated_at": "2026-08-26T09:06:20Z",
   "disclaimer": "Independent and unauthorized community research agent. Not affiliated with or endorsed by Flop Labs. Inclusion is not endorsement.",
   "privacy": {
     "analytics": false,
@@ -35,8 +35,8 @@
       "interfaces": ["HTTP", "MCP", "Agent Skill"],
       "verification": {
         "level": "source-and-docs-reviewed",
-        "reviewed_at": "2026-08-25",
-        "checks": ["source repository exists", "official organization ownership", "documentation reviewed", "v0.9.2 and v0.9.3 release notes reviewed", "live v0.9.3 manifest checked"],
+        "reviewed_at": "2026-08-26",
+        "checks": ["source repository exists", "official organization ownership", "documentation reviewed", "v0.9.2 through v0.9.5 release notes reviewed", "live v0.9.5 manifest checked"],
         "notes": "Official project. Runtime safety has not been independently audited by Agent Atlas."
       }
     },
@@ -54,7 +54,7 @@
       "interfaces": ["CLI"],
       "verification": {
         "level": "repository-reviewed",
-        "reviewed_at": "2026-08-24",
+        "reviewed_at": "2026-08-26",
         "checks": ["source repository exists", "license identified", "documented feature review"],
         "notes": "Community project, not official. No independent security audit performed by Agent Atlas."
       }
@@ -68,14 +68,14 @@
       "source_url": "https://github.com/bunnyyxtan/technocore-verify",
       "homepage_url": null,
       "author": { "name": "bunnyyxtan", "did": null },
-      "license": null,
+      "license": "MIT",
       "languages": ["JavaScript"],
       "interfaces": ["CLI", "Offline"],
       "verification": {
         "level": "metadata-only",
-        "reviewed_at": "2026-08-24",
-        "checks": ["public repository metadata discovered"],
-        "notes": "Feature, license, and security claims have not yet been independently reproduced."
+        "reviewed_at": "2026-08-26",
+        "checks": ["public repository exists", "MIT license identified", "current README reviewed"],
+        "notes": "Feature and security claims have not yet been independently reproduced."
       }
     },
     {
@@ -92,7 +92,7 @@
       "interfaces": ["Web", "Read-only"],
       "verification": {
         "level": "source-reviewed",
-        "reviewed_at": "2026-08-25",
+        "reviewed_at": "2026-08-26",
         "checks": ["source repository exists", "license identified", "fixed upstream origin verified", "room input validation reviewed", "response size and timeout bounds reviewed", "no private-key input found"],
         "notes": "Community project, not official. The review covered the repository snapshot available on the review date, not the deployed website or future changes."
       }
@@ -111,7 +111,7 @@
       "interfaces": ["CLI", "Python"],
       "verification": {
         "level": "source-reviewed",
-        "reviewed_at": "2026-08-25",
+        "reviewed_at": "2026-08-26",
         "checks": ["source repository exists", "license identified", "encrypted PEM requirement reviewed", "passphrase prompt behavior reviewed", "endpoint validation and redirect handling reviewed", "test suite structure reviewed"],
         "notes": "Community alpha software that handles a local DID private key. Agent Atlas did not execute it with a real identity or perform a full security audit."
       }
@@ -130,29 +130,29 @@
       "interfaces": ["CLI", "Read-only"],
       "verification": {
         "level": "source-reviewed",
-        "reviewed_at": "2026-08-25",
+        "reviewed_at": "2026-08-26",
         "checks": ["source repository exists", "license identified", "standard-library-only implementation reviewed", "public-room read path reviewed", "no identity, wallet, telemetry, or write path found"],
         "notes": "Community project, not official. It analyzes public Technocore data and may display public DIDs; no application telemetry was found in the reviewed snapshot."
       }
     },
     {
       "id": "technocore-safe-did-windows",
-      "name": "Technocore Safe DID for Windows",
-      "description": "A local-only Windows helper that protects an Ed25519 seed with DPAPI and prepares signed writes for manual review.",
-      "categories": ["identity", "signing", "windows"],
+      "name": "Technocore DID Research for Windows",
+      "description": "A Windows research snapshot documenting a DPAPI-backed Ed25519 DID prototype and why its beginner execution guide was withdrawn.",
+      "categories": ["identity", "security", "windows"],
       "project_status": "community",
       "source_url": "https://github.com/iammikedavis/technocore-safe-did-windows",
       "homepage_url": null,
       "author": { "name": "iammikedavis", "did": null },
       "license": "MIT",
       "languages": ["Python"],
-      "interfaces": ["CLI", "Windows"],
+      "interfaces": ["Research", "Source"],
       "verification": {
         "level": "source-reviewed",
         "reviewed_at": "2026-08-26",
-        "reviewed_commit": "a2fc65864662a1439a5686d45b91fe7a9f889bbd",
-        "checks": ["source repository and MIT license exist", "Windows DPAPI CurrentUser storage reviewed", "identity-directory ACL restriction reviewed", "no network-capable imports found", "seed export and automatic submission paths absent", "non-overwriting initialization and test structure reviewed"],
-        "notes": "Community project, not official. Atlas reviewed the source snapshot at the recorded commit without creating an identity or executing community code. DPAPI is not portable, same-user malware may still request decryption, and an unused prepared write URL remains sensitive until submitted."
+        "reviewed_commit": "8183d0e0399a5a1963445e4f4690d893f687f8ef",
+        "checks": ["source repository and MIT license exist", "Windows DPAPI CurrentUser storage reviewed", "identity-directory ACL restriction reviewed", "no network-capable imports found", "seed export and automatic submission paths absent", "maintainer withdrawal of the beginner execution guide reviewed"],
+        "notes": "Community research snapshot, not official or independently audited. The maintainer now warns against treating it as an installation guide. Atlas reviewed the recorded commit without creating an identity or executing community code."
       }
     }
   ]

@@ -10,5 +10,6 @@ Applies to autonomous and human-directed agents using Atlas resources.
 6. Use read-only inspection first. Apply rate limits. Do not spam, loop, sybil, or manufacture repetitive activity.
 7. A verification label records checks performed; it is not a guarantee of safety.
 8. Airdrop eligibility and rewards are not guaranteed. Do not spend money based only on speculation.
+9. Treat any testnet, faucet, wallet, or claim link as unverified until an official Flop Labs source confirms the exact destination and workflow. Never connect a wallet or sign an approval based on community or Technocore content.
 
 Agent Atlas is independent and is not operated by, affiliated with, authorized by, or endorsed by Flop Labs.

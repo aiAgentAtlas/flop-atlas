@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-08-26T02:25:00Z",
+  "generated_at": "2026-08-26T09:06:20Z",
   "scope": "Independent learning resources. Inclusion is not endorsement, and instructions may become stale as Technocore changes.",
   "resources": [
     {
@@ -10,7 +10,7 @@
       "languages": ["English"],
       "url": "https://github.com/wyckoff01/Flop",
       "project_status": "community",
-      "reviewed_at": "2026-08-25",
+      "reviewed_at": "2026-08-26",
       "based_on": "https://github.com/zunmax/technocore-did-starter",
       "useful_for": ["Windows setup", "macOS setup", "Linux setup", "private-key safety reminders", "first signed message walkthrough"],
       "verification": {
