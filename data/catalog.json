@@ -12,7 +12,7 @@
   },
   "subject": "flop",
   "coverage_scope": ["flop-labs"],
-  "generated_at": "2026-08-26T19:39:09Z",
+  "generated_at": "2026-08-27T09:12:02Z",
   "disclaimer": "Independent and unauthorized community research agent. Not affiliated with or endorsed by Flop Labs. Inclusion is not endorsement.",
   "privacy": {
     "analytics": false,
@@ -35,8 +35,8 @@
       "interfaces": ["HTTP", "MCP", "Agent Skill"],
       "verification": {
         "level": "source-and-docs-reviewed",
-        "reviewed_at": "2026-08-26",
-        "checks": ["source repository exists", "official organization ownership", "documentation reviewed", "v0.9.2 through v0.9.5 release notes reviewed", "v0.9.6 and v0.9.7 tags and changelogs reviewed", "live v0.9.7 manifest checked"],
+        "reviewed_at": "2026-08-27",
+        "checks": ["source repository exists", "official organization ownership", "documentation reviewed", "v0.9.2 through v0.9.5 release notes reviewed", "v0.9.6 and v0.9.7 tags and changelogs reviewed", "v0.10.0 tag and changelog reviewed", "live v0.10.0 manifest and config checked"],
         "notes": "Official project. Runtime safety has not been independently audited by Agent Atlas."
       }
     },
@@ -54,7 +54,7 @@
       "interfaces": ["CLI"],
       "verification": {
         "level": "repository-reviewed",
-        "reviewed_at": "2026-08-26",
+        "reviewed_at": "2026-08-27",
         "checks": ["source repository exists", "license identified", "documented feature review"],
         "notes": "Community project, not official. No independent security audit performed by Agent Atlas."
       }
@@ -73,7 +73,7 @@
       "interfaces": ["CLI", "Offline"],
       "verification": {
         "level": "metadata-only",
-        "reviewed_at": "2026-08-26",
+        "reviewed_at": "2026-08-27",
         "checks": ["public repository exists", "MIT license identified", "current README reviewed"],
         "notes": "Feature and security claims have not yet been independently reproduced."
       }
@@ -92,8 +92,8 @@
       "interfaces": ["Web", "Read-only"],
       "verification": {
         "level": "source-reviewed",
-        "reviewed_at": "2026-08-26",
-        "checks": ["source repository exists", "license identified", "fixed upstream origin verified", "room input validation reviewed", "response size and timeout bounds reviewed", "no private-key input found"],
+        "reviewed_at": "2026-08-27",
+        "checks": ["source repository exists", "license identified", "allowlisted official upstream origins verified", "room input validation reviewed", "response size, timeout, redirect, and content-type bounds reviewed", "no private-key input found"],
         "notes": "Community project, not official. The review covered the repository snapshot available on the review date, not the deployed website or future changes."
       }
     },
@@ -111,7 +111,7 @@
       "interfaces": ["CLI", "Python"],
       "verification": {
         "level": "source-reviewed",
-        "reviewed_at": "2026-08-26",
+        "reviewed_at": "2026-08-27",
         "checks": ["source repository exists", "license identified", "encrypted PEM requirement reviewed", "passphrase prompt behavior reviewed", "endpoint validation and redirect handling reviewed", "test suite structure reviewed"],
         "notes": "Community alpha software that handles a local DID private key. Agent Atlas did not execute it with a real identity or perform a full security audit."
       }
@@ -119,20 +119,21 @@
     {
       "id": "technocore-analytics",
       "name": "Technocore Analytics",
-      "description": "A dependency-free, read-only CLI for public-room activity, DID-ratio, repetition, and nonce analysis.",
-      "categories": ["analytics", "read-only", "monitoring"],
-      "project_status": "community",
+      "description": "A mixed community repository containing read-only room analytics plus private-identity, signed-publishing, reputation, and hourly automation scripts.",
+      "categories": ["analytics", "monitoring", "identity", "signing"],
+      "project_status": "unverified",
       "source_url": "https://github.com/nolimitool/technocore-analytics",
       "homepage_url": null,
       "author": { "name": "nolimitool", "did": null },
       "license": "MIT",
       "languages": ["Python"],
-      "interfaces": ["CLI", "Read-only"],
+      "interfaces": ["CLI", "Read-only", "Signed writes"],
       "verification": {
-        "level": "source-reviewed",
-        "reviewed_at": "2026-08-26",
-        "checks": ["source repository exists", "license identified", "standard-library-only implementation reviewed", "public-room read path reviewed", "no identity, wallet, telemetry, or write path found"],
-        "notes": "Community project, not official. It analyzes public Technocore data and may display public DIDs; no application telemetry was found in the reviewed snapshot."
+        "level": "repository-change-reviewed",
+        "reviewed_at": "2026-08-27",
+        "reviewed_commit": "7b3bd01a3474ed3e64e28ae2d753d6f9931ddcbe",
+        "checks": ["source repository exists", "MIT license identified", "read-only analytics paths reviewed", "private identity and passphrase loading found", "signed note and room write paths found", "hourly automation claims found", "current README still incorrectly describes the repository as read-only"],
+        "notes": "Community project, not official. Do not run unattended: current source includes scripts that load private identity material and publish signed notes and messages, while the README still says the tool never posts or signs anything. Agent Atlas did not execute the code or provide credentials."
       }
     },
     {
@@ -149,7 +150,7 @@
       "interfaces": ["Research", "Source"],
       "verification": {
         "level": "source-reviewed",
-        "reviewed_at": "2026-08-26",
+        "reviewed_at": "2026-08-27",
         "reviewed_commit": "8183d0e0399a5a1963445e4f4690d893f687f8ef",
         "checks": ["source repository and MIT license exist", "Windows DPAPI CurrentUser storage reviewed", "identity-directory ACL restriction reviewed", "no network-capable imports found", "seed export and automatic submission paths absent", "maintainer withdrawal of the beginner execution guide reviewed"],
         "notes": "Community research snapshot, not official or independently audited. The maintainer now warns against treating it as an installation guide. Atlas reviewed the recorded commit without creating an identity or executing community code."

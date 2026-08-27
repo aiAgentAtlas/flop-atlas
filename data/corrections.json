@@ -1,6 +1,17 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-08-26T09:06:20Z",
+  "generated_at": "2026-08-27T09:12:02Z",
   "policy": "Material factual errors receive an append-only correction entry identifying the affected claim or resource, the previous statement, the corrected statement, the reason, and the correction time.",
-  "entries": []
+  "entries": [
+    {
+      "id": "correction-technocore-analytics-scope-2026-08-27",
+      "issued_at": "2026-08-27T09:12:02Z",
+      "affected_resources": ["catalog.json", "sources.json"],
+      "affected_ids": ["technocore-analytics", "technocore-analytics-source"],
+      "prior_statement": "Technocore Analytics was described as a dependency-free, read-only CLI, and the verification record said no identity or write path was found.",
+      "corrected_statement": "The repository now combines read-only analytics with scripts that load a local private identity and passphrase, publish signed notes and room messages, and support hourly automated publishing. The catalog entry is reclassified as unverified and warns against unattended execution.",
+      "reason": "Commits added after the 2026-08-26 review materially expanded the repository beyond the reviewed read-only scope, while its current README still states that the tool never posts or signs anything.",
+      "source_urls": ["https://github.com/nolimitool/technocore-analytics", "https://github.com/nolimitool/technocore-analytics/commit/7b3bd01a3474ed3e64e28ae2d753d6f9931ddcbe", "https://github.com/nolimitool/technocore-analytics/blob/7b3bd01a3474ed3e64e28ae2d753d6f9931ddcbe/announce_reputation.py", "https://github.com/nolimitool/technocore-analytics/blob/7b3bd01a3474ed3e64e28ae2d753d6f9931ddcbe/publish_reputation_note.py"]
+    }
+  ]
 }

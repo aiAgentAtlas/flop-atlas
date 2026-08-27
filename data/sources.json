@@ -1,14 +1,14 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-08-26T19:39:09Z",
+  "generated_at": "2026-08-27T09:12:02Z",
   "sources": [
     {
       "id": "flop-website",
       "url": "https://flop.finance/",
       "control": "official",
       "publishes": ["project positioning", "launch statements", "participation links"],
-      "last_checked_at": "2026-08-26T19:39:09Z",
-      "next_review_due": "2026-08-29",
+      "last_checked_at": "2026-08-27T09:12:02Z",
+      "next_review_due": "2026-08-30",
       "source_available": true
     },
     {
@@ -16,8 +16,8 @@
       "url": "https://x.com/flop_labs",
       "control": "official",
       "publishes": ["announcements", "airdrop signals", "ecosystem updates"],
-      "last_checked_at": "2026-08-26T19:39:09Z",
-      "next_review_due": "2026-08-29",
+      "last_checked_at": "2026-08-27T09:12:02Z",
+      "next_review_due": "2026-08-30",
       "source_available": true
     },
     {
@@ -25,17 +25,17 @@
       "url": "https://github.com/flop-labs",
       "control": "official",
       "publishes": ["source code", "technical documentation", "releases"],
-      "last_checked_at": "2026-08-26T19:39:09Z",
-      "next_review_due": "2026-08-29",
+      "last_checked_at": "2026-08-27T09:12:02Z",
+      "next_review_due": "2026-08-30",
       "source_available": true
     },
     {
       "id": "technocore",
       "url": "https://technocore.chat/llms.txt",
       "control": "official-service",
-      "publishes": ["agent instructions", "HTTP interface", "operating limits"],
-      "last_checked_at": "2026-08-26T19:39:09Z",
-      "next_review_due": "2026-08-29",
+      "publishes": ["agent instructions", "HTTP interface", "operating limits", "write-refusal behavior"],
+      "last_checked_at": "2026-08-27T09:12:02Z",
+      "next_review_due": "2026-08-30",
       "source_available": true
     },
     {
@@ -43,8 +43,8 @@
       "url": "https://x.com/CryptoHayes/status/2092163906537918944",
       "control": "ecosystem-signal",
       "publishes": ["DID-gated task statement", "airdrop reward statement"],
-      "last_checked_at": "2026-08-26T09:06:20Z",
-      "next_review_due": "2026-08-29",
+      "last_checked_at": "2026-08-27T09:12:02Z",
+      "next_review_due": "2026-08-30",
       "source_available": true
     },
     {
@@ -52,8 +52,8 @@
       "url": "https://x.com/CryptoHayes/status/2092209532600463598",
       "control": "ecosystem-signal",
       "publishes": ["testnet-activity allocation statement", "Technocore faucet statement", "DID-key access statement"],
-      "last_checked_at": "2026-08-26T09:06:20Z",
-      "next_review_due": "2026-08-29",
+      "last_checked_at": "2026-08-27T09:12:02Z",
+      "next_review_due": "2026-08-30",
       "source_available": true
     },
     {
@@ -61,8 +61,8 @@
       "url": "https://github.com/flop-labs/technocore-chat/releases/tag/v0.9.3",
       "control": "official",
       "publishes": ["release notes", "performance changes", "documentation corrections"],
-      "last_checked_at": "2026-08-26T09:06:20Z",
-      "next_review_due": "2026-09-02",
+      "last_checked_at": "2026-08-27T09:12:02Z",
+      "next_review_due": "2026-09-03",
       "source_available": true
     },
     {
@@ -70,8 +70,8 @@
       "url": "https://github.com/flop-labs/technocore-chat/releases/tag/v0.9.4",
       "control": "official",
       "publishes": ["release notes", "concurrency fixes", "room-listing cache changes"],
-      "last_checked_at": "2026-08-26T09:06:20Z",
-      "next_review_due": "2026-09-02",
+      "last_checked_at": "2026-08-27T09:12:02Z",
+      "next_review_due": "2026-09-03",
       "source_available": true
     },
     {
@@ -79,8 +79,8 @@
       "url": "https://github.com/flop-labs/technocore-chat/releases/tag/v0.9.5",
       "control": "official",
       "publishes": ["release notes", "room-listing cache correction", "benchmark results"],
-      "last_checked_at": "2026-08-26T09:06:20Z",
-      "next_review_due": "2026-09-02",
+      "last_checked_at": "2026-08-27T09:12:02Z",
+      "next_review_due": "2026-09-03",
       "source_available": true
     },
     {
@@ -88,8 +88,8 @@
       "url": "https://github.com/flop-labs/technocore-chat/commit/c5cc02fcf1df33c2426ee5f9ef2a4ba519bb778b",
       "control": "official",
       "publishes": ["tagged source", "interoperability guide", "static-document cache behavior"],
-      "last_checked_at": "2026-08-26T16:15:30Z",
-      "next_review_due": "2026-09-02",
+      "last_checked_at": "2026-08-27T09:12:02Z",
+      "next_review_due": "2026-09-03",
       "source_available": true
     },
     {
@@ -97,8 +97,17 @@
       "url": "https://github.com/flop-labs/technocore-chat/commit/9a7399d6bf2fdede60cebf54bdadbcfa5c04000c",
       "control": "official",
       "publishes": ["tagged source", "effective configuration endpoint", "configuration disclosure boundaries"],
-      "last_checked_at": "2026-08-26T19:39:09Z",
-      "next_review_due": "2026-09-02",
+      "last_checked_at": "2026-08-27T09:12:02Z",
+      "next_review_due": "2026-09-03",
+      "source_available": true
+    },
+    {
+      "id": "technocore-v0-10-0",
+      "url": "https://github.com/flop-labs/technocore-chat/commit/9c7df0e3616cf28d17e7c8ebeb0c05de6adf117c",
+      "control": "official",
+      "publishes": ["tagged source", "cross-sender duplicate filter", "HTTP 422 refusal behavior", "effective configuration changes"],
+      "last_checked_at": "2026-08-27T09:12:02Z",
+      "next_review_due": "2026-09-03",
       "source_available": true
     },
     {
@@ -106,8 +115,8 @@
       "url": "https://github.com/Maje53/technocore-explorer",
       "control": "community",
       "publishes": ["read-only explorer source", "signature inspection implementation"],
-      "last_checked_at": "2026-08-26T09:06:20Z",
-      "next_review_due": "2026-08-29",
+      "last_checked_at": "2026-08-27T09:12:02Z",
+      "next_review_due": "2026-08-30",
       "source_available": true
     },
     {
@@ -115,17 +124,17 @@
       "url": "https://github.com/ramu0793/technocore-get-client",
       "control": "community",
       "publishes": ["GET-only client source", "local identity handling"],
-      "last_checked_at": "2026-08-26T09:06:20Z",
-      "next_review_due": "2026-08-29",
+      "last_checked_at": "2026-08-27T09:12:02Z",
+      "next_review_due": "2026-08-30",
       "source_available": true
     },
     {
       "id": "technocore-analytics-source",
       "url": "https://github.com/nolimitool/technocore-analytics",
       "control": "community",
-      "publishes": ["public-room analytics source", "read-only monitoring"],
-      "last_checked_at": "2026-08-26T09:06:20Z",
-      "next_review_due": "2026-08-29",
+      "publishes": ["public-room analytics", "private-identity handling", "signed note and room publishing", "hourly automation"],
+      "last_checked_at": "2026-08-27T09:12:02Z",
+      "next_review_due": "2026-08-30",
       "source_available": true
     },
     {
@@ -133,8 +142,8 @@
       "url": "https://github.com/wyckoff01/Flop",
       "control": "community",
       "publishes": ["cross-platform beginner guide", "identity safety reminders"],
-      "last_checked_at": "2026-08-26T09:06:20Z",
-      "next_review_due": "2026-08-29",
+      "last_checked_at": "2026-08-27T09:12:02Z",
+      "next_review_due": "2026-08-30",
       "source_available": true
     },
     {
@@ -142,8 +151,8 @@
       "url": "https://github.com/iammikedavis/technocore-safe-did-windows/commit/8183d0e0399a5a1963445e4f4690d893f687f8ef",
       "control": "community",
       "publishes": ["Windows DPAPI identity research snapshot", "withdrawn beginner execution guide", "security review notes"],
-      "last_checked_at": "2026-08-26T09:06:20Z",
-      "next_review_due": "2026-08-29",
+      "last_checked_at": "2026-08-27T09:12:02Z",
+      "next_review_due": "2026-08-30",
       "source_available": true
     }
   ]

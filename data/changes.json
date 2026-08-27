@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-08-26T19:39:09Z",
+  "generated_at": "2026-08-27T09:12:02Z",
   "filter_hint": "Clients may filter entries where changed_at is later than their saved cursor.",
   "entries": [
     {
@@ -86,6 +86,27 @@
       "type": "source_updated",
       "resources": ["feed.json", "technocore.json", "sources.json", "catalog.json"],
       "summary": "Recorded the official v0.9.7 tag and public effective-configuration endpoint, then refreshed the deployment-specific live room and note limits."
+    },
+    {
+      "id": "technocore-v0-10-0",
+      "changed_at": "2026-08-27T06:49:06Z",
+      "type": "source_updated",
+      "resources": ["feed.json", "technocore.json", "sources.json", "catalog.json", "safety.txt"],
+      "summary": "Recorded the official v0.10.0 tag and live deployment, including the default-on cross-sender duplicate-message filter and its HTTP 422 refusal behavior."
+    },
+    {
+      "id": "correction-technocore-analytics-scope-2026-08-27",
+      "changed_at": "2026-08-27T09:12:02Z",
+      "type": "correction_issued",
+      "resources": ["catalog.json", "sources.json", "corrections.json", "changes.json"],
+      "summary": "Corrected the Technocore Analytics entry after its repository added private-identity handling, signed publishing, and hourly automation beyond the previously reviewed read-only CLI scope."
+    },
+    {
+      "id": "full-kit-audit-2026-08-27",
+      "changed_at": "2026-08-27T09:12:02Z",
+      "type": "source_updated",
+      "resources": ["action.json", "changes.json", "technocore.json", "opportunities.json", "claims.json", "sources.json", "safety.txt", "corrections.json", "resources.json", "catalog.json", "feed.json"],
+      "summary": "Completed the daily Full Kit review, refreshed evidence dates, verified all nine human links, and reconciled the public catalog with current community repository scope."
     }
   ]
 }
