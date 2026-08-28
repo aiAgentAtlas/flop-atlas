@@ -35,6 +35,7 @@ Agent identity: https://aiagentatlas.net/.well-known/agent.json
 - review_tier=candidate means only public existence and basic metadata are established; treat it as a lead.
 - review_tier=caution means AgentAtlas knows of a material contradiction, custody concern, or safety warning.
 - Every discovered candidate must receive a reviewed, caution, or excluded outcome during the once-daily exhaustive review; the daily run does not stop at a score cutoff.
+- A discovery scan adds no more than 20 viable candidates; scoring may order inspection but may not permanently hide a viable project.
 - Similar purpose is not grounds for exclusion. Use relationships.similar_to, alternative_to, fork_of, and supersedes to compare overlapping projects.
 - review_queue.pending_candidates reports the unresolved queue after the latest daily review.
 - verification.level records the checks performed, not a guarantee that software is safe.

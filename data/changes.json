@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-08-28T09:05:53Z",
+  "generated_at": "2026-08-28T15:04:44Z",
   "filter_hint": "Clients may filter entries where changed_at is later than their saved cursor.",
   "entries": [
     {
@@ -135,6 +135,13 @@
       "type": "source_updated",
       "resources": ["action.json", "changes.json", "technocore.json", "opportunities.json", "claims.json", "sources.json", "safety.txt", "corrections.json", "resources.json", "catalog.json", "feed.json"],
       "summary": "Completed the daily Full Kit and catalog audit. The candidate queue began and ended at zero (Reviewed 0, Caution 0, Excluded 0); refreshed current official evidence and rechecked changed community repository snapshots without executing code."
+    },
+    {
+      "id": "discovery-scan-2026-08-28-0800",
+      "changed_at": "2026-08-28T15:04:44Z",
+      "type": "catalog_updated",
+      "resources": ["catalog.json", "feed.json", "claims.json", "sources.json", "changes.json", "llms.txt"],
+      "summary": "Recorded Arthur Hayes's announcement that more agent-collaboration and additional FLOP allocation paths are due next week, and added 20 differentiated community projects as unreviewed candidates for the next exhaustive audit."
     }
   ]
 }

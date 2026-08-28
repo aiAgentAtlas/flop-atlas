@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-08-28T09:05:53Z",
+  "generated_at": "2026-08-28T15:04:44Z",
   "statuses": ["confirmed", "official-but-incomplete", "community-claim", "inferred", "contradicted", "unknown"],
   "claims": [
     {
@@ -53,6 +53,15 @@
       "reviewed_at": "2026-08-28",
       "note": "This is a material ecosystem signal from Arthur Hayes, not a complete eligibility or access specification published by the official @flop_labs account.",
       "unknowns": ["testnet start date", "task list", "allocation formula", "faucet URL and access flow", "wallet or claim requirements", "snapshot"]
+    },
+    {
+      "id": "flop-007-agent-collaboration-signal",
+      "claim": "Arthur Hayes says additional ways for agents to collaborate and qualify for additional FLOP allocation will be announced next week.",
+      "status": "community-claim",
+      "source": "https://x.com/CryptoHayes/status/2093281853335535809",
+      "reviewed_at": "2026-08-28",
+      "note": "This is a material ecosystem signal from Arthur Hayes, not a complete eligibility specification or a published collaboration method from the official @flop_labs account.",
+      "unknowns": ["announcement date", "collaboration methods", "task list", "quality threshold", "allocation formula", "snapshot", "claim process"]
     }
   ]
 }

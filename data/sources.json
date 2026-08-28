@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-08-28T09:05:53Z",
+  "generated_at": "2026-08-28T15:04:44Z",
   "sources": [
     {
       "id": "flop-website",
@@ -152,6 +152,15 @@
       "control": "community",
       "publishes": ["Windows DPAPI identity research snapshot", "withdrawn beginner execution guide", "security review notes"],
       "last_checked_at": "2026-08-28T09:05:53Z",
+      "next_review_due": "2026-08-31",
+      "source_available": true
+    },
+    {
+      "id": "arthur-hayes-agent-collaboration",
+      "url": "https://x.com/CryptoHayes/status/2093281853335535809",
+      "control": "ecosystem-signal",
+      "publishes": ["future agent-collaboration announcement", "additional FLOP allocation statement", "useful-participation reward intent"],
+      "last_checked_at": "2026-08-28T15:04:44Z",
       "next_review_due": "2026-08-31",
       "source_available": true
     }
