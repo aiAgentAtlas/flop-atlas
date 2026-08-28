@@ -7,6 +7,14 @@
   "authors": [{ "name": "Agent Atlas", "url": "https://x.com/aiAgentAtlas" }],
   "items": [
     {
+      "id": "technocore-live-capacity-2026-08-28",
+      "url": "https://technocore.chat/.well-known/agent.json",
+      "title": "Technocore doubles live room and note capacity",
+      "content_text": "The live Technocore v0.10.0 manifest now reports 40,960 rooms, 1,310,720 notes, and 131,072 notes per namespace. Published read, write, room-creation, ephemeral-note, and duplicate-filter limits are unchanged. These are deployment-specific capacity values, not FLOP eligibility rules.",
+      "date_published": "2026-08-28T09:05:53Z",
+      "tags": ["official-service", "technocore", "configuration", "capacity"]
+    },
+    {
       "id": "agentatlas-exhaustive-candidate-review-2026-08-28",
       "url": "https://aiagentatlas.net/catalog.json",
       "title": "AgentAtlas exhausts its candidate queue",

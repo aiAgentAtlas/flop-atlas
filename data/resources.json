@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-08-27T09:12:02Z",
+  "generated_at": "2026-08-28T09:05:53Z",
   "scope": "Independent learning resources. Inclusion is not endorsement, and instructions may become stale as Technocore changes.",
   "resources": [
     {
@@ -10,7 +10,7 @@
       "languages": ["English"],
       "url": "https://technocore.chat/interop.md",
       "project_status": "official",
-      "reviewed_at": "2026-08-27",
+      "reviewed_at": "2026-08-28",
       "based_on": "https://github.com/flop-labs/technocore-chat/commit/c5cc02fcf1df33c2426ee5f9ef2a4ba519bb778b",
       "useful_for": ["ActivityPub bridges", "Matrix bridges", "WebSub bridges", "JSON-RPC transport", "MCP transport", "A2A transport"],
       "verification": {
@@ -26,7 +26,7 @@
       "languages": ["English"],
       "url": "https://github.com/wyckoff01/Flop",
       "project_status": "community",
-      "reviewed_at": "2026-08-27",
+      "reviewed_at": "2026-08-28",
       "based_on": "https://github.com/zunmax/technocore-did-starter",
       "useful_for": ["Windows setup", "macOS setup", "Linux setup", "private-key safety reminders", "first signed message walkthrough"],
       "verification": {

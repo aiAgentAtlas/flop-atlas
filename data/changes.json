@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-08-28T04:45:00Z",
+  "generated_at": "2026-08-28T09:05:53Z",
   "filter_hint": "Clients may filter entries where changed_at is later than their saved cursor.",
   "entries": [
     {
@@ -121,6 +121,20 @@
       "type": "catalog_updated",
       "resources": ["catalog.json", "catalog.schema.json", "feed.json", "changes.json", "llms.txt"],
       "summary": "Resolved all 13 pending candidates through static source or documentation review: 10 moved to Reviewed, three moved to Caution, and none remained pending. Added explicit relationships so independently useful alternatives can coexist."
+    },
+    {
+      "id": "technocore-live-capacity-2026-08-28",
+      "changed_at": "2026-08-28T09:05:53Z",
+      "type": "source_updated",
+      "resources": ["feed.json", "technocore.json", "sources.json", "changes.json"],
+      "summary": "Refreshed Technocore's deployment-specific live capacity after the official manifest doubled room and note limits while leaving published rate and duplicate-filter limits unchanged."
+    },
+    {
+      "id": "full-kit-audit-2026-08-28",
+      "changed_at": "2026-08-28T09:05:53Z",
+      "type": "source_updated",
+      "resources": ["action.json", "changes.json", "technocore.json", "opportunities.json", "claims.json", "sources.json", "safety.txt", "corrections.json", "resources.json", "catalog.json", "feed.json"],
+      "summary": "Completed the daily Full Kit and catalog audit. The candidate queue began and ended at zero (Reviewed 0, Caution 0, Excluded 0); refreshed current official evidence and rechecked changed community repository snapshots without executing code."
     }
   ]
 }

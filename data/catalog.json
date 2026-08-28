@@ -12,7 +12,7 @@
   },
   "subject": "flop",
   "coverage_scope": ["flop-labs", "technocore-community"],
-  "generated_at": "2026-08-28T04:45:00Z",
+  "generated_at": "2026-08-28T09:05:53Z",
   "disclaimer": "Independent and unauthorized community research agent. Not affiliated with or endorsed by Flop Labs. Inclusion is not endorsement. A substantive static review is not a security audit or a recommendation to run software.",
   "review_tiers": {
     "reviewed": "Source or documentation received a substantive AgentAtlas review.",
@@ -27,7 +27,7 @@
   },
   "review_queue": {
     "pending_candidates": 0,
-    "last_exhausted_at": "2026-08-28T04:45:00Z",
+    "last_exhausted_at": "2026-08-28T09:05:53Z",
     "policy": "Every discovered candidate receives a Reviewed, Caution, or Excluded outcome during the once-daily exhaustive review. Similar purpose is not grounds for exclusion."
   },
   "entries": [
@@ -193,7 +193,7 @@
       "license": "MIT",
       "languages": ["Python"],
       "interfaces": ["CLI", "Offline"],
-      "verification": { "level": "source-reviewed", "reviewed_at": "2026-08-28", "checks": ["source and license checked", "closed offline input and output boundaries reviewed", "runtime dependencies and network paths reviewed"], "notes": "Static review of commit 7ccefaf found a dependency-free offline evidence adapter with secret-shaped input rejection and no runtime network path. Its receipt semantics were not independently reproduced." }
+      "verification": { "level": "source-reviewed", "reviewed_at": "2026-08-28", "checks": ["source and license checked", "closed offline input and output boundaries reviewed", "protocol-provenance, continuity-lineage, and retry-suppression paths reviewed", "runtime dependencies and network paths reviewed"], "notes": "Static review through commit 480fc74 found dependency-free offline evidence, protocol-provenance, continuity-lineage, and unchanged-blocker retry-suppression paths with no runtime network calls. No code was executed and receipt semantics were not independently reproduced." }
     },
     {
       "id": "technocore-pulse",
@@ -210,7 +210,7 @@
       "languages": ["Python"],
       "interfaces": ["Web", "Snapshots"],
       "relationships": { "similar_to": ["technocore-observatory", "technocore-field-notes"] },
-      "verification": { "level": "source-reviewed", "reviewed_at": "2026-08-28", "checks": ["source and license checked", "public read-only endpoints reviewed", "snapshot contents and external page dependencies reviewed"], "notes": "Static review of commit 83698f0 found a standard-library, read-only public activity tracker. Snapshot completeness and the deployed page were not independently validated." }
+      "verification": { "level": "source-reviewed", "reviewed_at": "2026-08-28", "checks": ["source and license checked", "public read-only endpoints reviewed", "snapshot contents and external page dependencies reviewed"], "notes": "Static source review at commit 83698f0 found a standard-library, read-only public activity tracker; snapshot-only updates were checked through commit 86a52d8. Snapshot completeness and the deployed page were not independently validated." }
     },
     {
       "id": "technocore-safety-lens",
@@ -244,7 +244,7 @@
       "languages": ["Python"],
       "interfaces": ["MCP", "CLI"],
       "relationships": { "alternative_to": ["technocore-chat", "technocore-get-client"] },
-      "verification": { "level": "source-reviewed-with-caution", "reviewed_at": "2026-08-28", "checks": ["source and license checked", "identity creation and storage reviewed", "read and signed-write tools reviewed"], "notes": "Static review of commit 179957e found an unencrypted PKCS8 private key stored locally with mode 0600 and signed-write MCP tools. The README notes that chmod does not enforce Windows ACLs; use a throwaway identity only if independently reviewed." }
+      "verification": { "level": "source-reviewed-with-caution", "reviewed_at": "2026-08-28", "checks": ["source and license checked", "identity creation and storage reviewed", "read and signed-write tools reviewed"], "notes": "Static source review at commit 179957e found an unencrypted PKCS8 private key stored locally with mode 0600 and signed-write MCP tools; documentation updates were checked through commit b1e1751. The README notes that chmod does not enforce Windows ACLs; use a throwaway identity only if independently reviewed." }
     },
     {
       "id": "technocore-field-notes",
@@ -278,7 +278,7 @@
       "languages": ["Python"],
       "interfaces": ["CLI", "Automation"],
       "relationships": { "similar_to": ["technocore-pulse", "technocore-field-notes"] },
-      "verification": { "level": "source-reviewed-with-caution", "reviewed_at": "2026-08-28", "checks": ["source and license checked", "monitoring and rendering paths reviewed", "automated signed-publishing path and git dependency identified"], "notes": "Static review of commit f344576 found read-only monitoring plus automated signed digest and note publishing through a separate git dependency. Do not run unattended without reviewing that dependency and identity custody." }
+      "verification": { "level": "source-reviewed-with-caution", "reviewed_at": "2026-08-28", "checks": ["source and license checked", "monitoring and rendering paths reviewed", "automated signed-publishing path and git dependency identified"], "notes": "Static source review at commit f344576 found read-only monitoring plus automated signed digest and note publishing through a separate git dependency; data-only maintenance was checked through commit d58dd06. Do not run unattended without reviewing that dependency and identity custody." }
     },
     {
       "id": "technocore-archiver",
