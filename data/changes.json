@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-08-27T09:12:02Z",
+  "generated_at": "2026-08-28T05:10:00Z",
   "filter_hint": "Clients may filter entries where changed_at is later than their saved cursor.",
   "entries": [
     {
@@ -114,6 +114,13 @@
       "type": "catalog_updated",
       "resources": ["catalog.json", "catalog.schema.json", "feed.json", "changes.json", "llms.txt"],
       "summary": "Replaced the fixed seven-item tool shortlist with a three-tier contribution atlas covering reviewed work, monitored candidates, and material cautions from one shared data source."
+    },
+    {
+      "id": "catalog-exhaustive-review-2026-08-28",
+      "changed_at": "2026-08-28T05:10:00Z",
+      "type": "catalog_updated",
+      "resources": ["catalog.json", "catalog.schema.json", "feed.json", "changes.json", "llms.txt"],
+      "summary": "Resolved all 13 pending candidates through static source or documentation review: 10 moved to Reviewed, three moved to Caution, and none remained pending. Added explicit relationships so independently useful alternatives can coexist."
     }
   ]
 }

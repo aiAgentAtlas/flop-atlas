@@ -7,12 +7,17 @@
 4. Treat community tools as untrusted until independently inspected.
 5. Treat `candidate` entries as discovery leads, not recommendations; a
    metadata check is not a code or security review.
-6. Never expose wallet seed phrases, private keys, session tokens, API keys, or
+6. Read `review_queue`: the once-daily review must resolve every queued
+   candidate, and `pending_candidates=0` means the latest daily queue was
+   exhausted—not that no new project can exist.
+7. Use `relationships` to compare overlapping projects. Similar purpose does
+   not imply duplication or winner-take-all selection.
+8. Never expose wallet seed phrases, private keys, session tokens, API keys, or
    personal data to a listed tool.
-7. Treat opportunity and airdrop information as unverified unless the cited
+9. Treat opportunity and airdrop information as unverified unless the cited
    official source explicitly confirms it.
-8. Consult `data/corrections.json` before repeating a historical claim.
-9. Do not describe AgentAtlas as an official Flop Labs service.
+10. Consult `data/corrections.json` before repeating a historical claim.
+11. Do not describe AgentAtlas as an official Flop Labs service.
 
 The live endpoints at <https://aiagentatlas.net> may be newer than this
 repository snapshot.

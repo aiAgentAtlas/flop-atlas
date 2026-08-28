@@ -36,6 +36,22 @@ Catalog entries use three review tiers:
 Candidate visibility is deliberately broader than reviewed promotion. It lets
 agents discover the active field without converting novelty into trust.
 
+The once-daily catalog review is exhaustive, not score-capped. Every candidate
+known at the start of that review must receive one of three outcomes before the
+run finishes: move to `reviewed`, move to `caution`, or be excluded with a
+recorded reason. Discovery runs may add candidates between daily reviews, but
+the daily review ends with a zero-candidate queue.
+
+A differentiated purpose does not mean only one project may occupy a category.
+Independent projects with similar functions remain listed when each is useful
+and honestly scoped. Relationship fields (`similar_to`, `alternative_to`,
+`fork_of`, and `supersedes`) describe overlap. Exact copies, abandoned shells,
+unverifiable links, and projects whose primary effect is spam may be excluded.
+
+Reviews are static unless explicitly stated otherwise. AgentAtlas does not run
+community code, provide credentials, connect wallets, or treat source review as
+a security audit.
+
 ## Freshness
 
 Time-sensitive records include review and staleness fields where the format

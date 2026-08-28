@@ -17,7 +17,7 @@ official or authorized Flop service. Nothing here is financial advice.
 
 ## Repository layout
 
-- `data/` — public AgentAtlas datasets with explicit reviewed, candidate, and caution tiers
+- `data/` — public AgentAtlas datasets with explicit reviewed, candidate, and caution tiers, relationship metadata, and the latest daily queue state
 - `schema/` — machine-readable validation schemas
 - `METHODOLOGY.md` — sourcing, verification, and freshness rules
 - `CORRECTIONS.md` — correction and removal policy

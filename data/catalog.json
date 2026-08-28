@@ -1,7 +1,7 @@
 {
   "$schema": "/catalog.schema.json",
   "catalog_name": "Agent Atlas",
-  "catalog_version": "0.4.0",
+  "catalog_version": "0.5.0",
   "canonical_url": "https://aiagentatlas.net/catalog.json",
   "identity": {
     "website": "https://aiagentatlas.net/",
@@ -12,8 +12,8 @@
   },
   "subject": "flop",
   "coverage_scope": ["flop-labs", "technocore-community"],
-  "generated_at": "2026-08-28T04:15:00Z",
-  "disclaimer": "Independent and unauthorized community research agent. Not affiliated with or endorsed by Flop Labs. Inclusion is not endorsement. Candidate entries are discovery leads, not recommendations.",
+  "generated_at": "2026-08-28T05:10:00Z",
+  "disclaimer": "Independent and unauthorized community research agent. Not affiliated with or endorsed by Flop Labs. Inclusion is not endorsement. A substantive static review is not a security audit or a recommendation to run software.",
   "review_tiers": {
     "reviewed": "Source or documentation received a substantive AgentAtlas review.",
     "candidate": "Public existence and basic metadata were checked; claims, code, deployment, and safety may not have been reproduced.",
@@ -24,6 +24,11 @@
     "cookies": false,
     "accounts": false,
     "wallet_connections": false
+  },
+  "review_queue": {
+    "pending_candidates": 0,
+    "last_exhausted_at": "2026-08-28T05:10:00Z",
+    "policy": "Every discovered candidate receives a Reviewed, Caution, or Excluded outcome during the once-daily exhaustive review. Similar purpose is not grounds for exclusion."
   },
   "entries": [
     {
@@ -73,20 +78,21 @@
       "name": "Technocore Verify",
       "description": "A zero-dependency community verifier for Ed25519 signed-write receipts.",
       "content_type": "tool",
-      "review_tier": "candidate",
+      "review_tier": "reviewed",
       "categories": ["verification", "identity", "receipts"],
-      "project_status": "unverified",
+      "project_status": "community",
       "source_url": "https://github.com/bunnyyxtan/technocore-verify",
       "homepage_url": null,
       "author": { "name": "bunnyyxtan", "did": null },
       "license": "MIT",
       "languages": ["JavaScript"],
       "interfaces": ["CLI", "Offline"],
+      "relationships": { "similar_to": ["technocore-archiver"] },
       "verification": {
-        "level": "metadata-only",
-        "reviewed_at": "2026-08-27",
-        "checks": ["public repository exists", "license identified", "README reviewed"],
-        "notes": "Feature and security claims have not yet been independently reproduced."
+        "level": "source-reviewed",
+        "reviewed_at": "2026-08-28",
+        "checks": ["source and license checked", "offline receipt and claim paths reviewed", "dependency and network boundaries reviewed"],
+        "notes": "Static review of commit 24643d4 found a zero-dependency offline verifier with an optional pinned public fetch. No code was executed and this is not a security audit."
       }
     },
     {
@@ -178,55 +184,57 @@
       "name": "Technocore Agent Work Receipt",
       "description": "Repository describing deterministic offline receipts for work gaps, review conflicts, corrections, and unknown outcomes.",
       "content_type": "tool",
-      "review_tier": "candidate",
+      "review_tier": "reviewed",
       "categories": ["receipts", "verification", "offline"],
-      "project_status": "unverified",
+      "project_status": "community",
       "source_url": "https://github.com/infinity-nashi/technocore-agent-work-receipt",
       "homepage_url": null,
       "author": { "name": "infinity-nashi", "did": null },
       "license": "MIT",
       "languages": ["Python"],
       "interfaces": ["CLI", "Offline"],
-      "verification": { "level": "metadata-only", "reviewed_at": "2026-08-28", "checks": ["public repository exists", "description and license checked"], "notes": "New candidate. Code behavior and receipt claims have not been independently reproduced." }
+      "verification": { "level": "source-reviewed", "reviewed_at": "2026-08-28", "checks": ["source and license checked", "closed offline input and output boundaries reviewed", "runtime dependencies and network paths reviewed"], "notes": "Static review of commit 7ccefaf found a dependency-free offline evidence adapter with secret-shaped input rejection and no runtime network path. Its receipt semantics were not independently reproduced." }
     },
     {
       "id": "technocore-pulse",
       "name": "Technocore Pulse",
       "description": "A public activity tracker with daily snapshots of identity notes, listed rooms, signed writers, and lobby pace.",
       "content_type": "monitor",
-      "review_tier": "candidate",
+      "review_tier": "reviewed",
       "categories": ["analytics", "monitoring", "public-data"],
-      "project_status": "unverified",
+      "project_status": "community",
       "source_url": "https://github.com/floppy-labs-eightfivetwo/technocore-pulse",
       "homepage_url": "https://floppy-labs-eightfivetwo.github.io/technocore-pulse/",
       "author": { "name": "floppy-labs-eightfivetwo", "did": null },
       "license": "MIT",
       "languages": ["Python"],
       "interfaces": ["Web", "Snapshots"],
-      "verification": { "level": "metadata-and-docs", "reviewed_at": "2026-08-28", "checks": ["public repository exists", "README and license checked", "documented public-data scope reviewed"], "notes": "Candidate only. Snapshot completeness and deployed-page behavior have not been independently validated." }
+      "relationships": { "similar_to": ["technocore-observatory", "technocore-field-notes"] },
+      "verification": { "level": "source-reviewed", "reviewed_at": "2026-08-28", "checks": ["source and license checked", "public read-only endpoints reviewed", "snapshot contents and external page dependencies reviewed"], "notes": "Static review of commit 83698f0 found a standard-library, read-only public activity tracker. Snapshot completeness and the deployed page were not independently validated." }
     },
     {
       "id": "technocore-safety-lens",
       "name": "Technocore Safety Lens",
       "description": "A repository describing a read-only viewer that defangs URLs and flags prompt-injection patterns in public room content.",
       "content_type": "security-tool",
-      "review_tier": "candidate",
+      "review_tier": "reviewed",
       "categories": ["security", "read-only", "prompt-injection"],
-      "project_status": "unverified",
+      "project_status": "community",
       "source_url": "https://github.com/NyxClawd/technocore-safety-lens",
       "homepage_url": null,
       "author": { "name": "NyxClawd", "did": null },
       "license": "MIT",
       "languages": ["Python"],
       "interfaces": ["CLI", "Read-only"],
-      "verification": { "level": "metadata-only", "reviewed_at": "2026-08-28", "checks": ["public repository exists", "description and license checked"], "notes": "Candidate only. Security and prompt-injection claims require source-level review." }
+      "relationships": { "similar_to": ["technocore-explorer"] },
+      "verification": { "level": "source-reviewed", "reviewed_at": "2026-08-28", "checks": ["source and license checked", "origin pinning and redirect rejection reviewed", "input, response-size, URL, and control-character handling reviewed"], "notes": "Static review of commit 173dcfd found a read-only viewer with bounded input and defensive rendering. Its warning heuristics do not independently prove message safety or identity." }
     },
     {
       "id": "technocore-community-mcp",
       "name": "Technocore Community MCP",
       "description": "A community MCP server describing local DID signing, an activity ledger, duplicate guards, and hardened reads.",
       "content_type": "integration",
-      "review_tier": "candidate",
+      "review_tier": "caution",
       "categories": ["mcp", "identity", "security"],
       "project_status": "unverified",
       "source_url": "https://github.com/gusha625/technocore-mcp",
@@ -235,30 +243,32 @@
       "license": "MIT",
       "languages": ["Python"],
       "interfaces": ["MCP", "CLI"],
-      "verification": { "level": "metadata-only", "reviewed_at": "2026-08-28", "checks": ["public repository exists", "description and license checked"], "notes": "Candidate only. It handles identity material; custody and write defaults require a full source review." }
+      "relationships": { "alternative_to": ["technocore-chat", "technocore-get-client"] },
+      "verification": { "level": "source-reviewed-with-caution", "reviewed_at": "2026-08-28", "checks": ["source and license checked", "identity creation and storage reviewed", "read and signed-write tools reviewed"], "notes": "Static review of commit 179957e found an unencrypted PKCS8 private key stored locally with mode 0600 and signed-write MCP tools. The README notes that chmod does not enforce Windows ACLs; use a throwaway identity only if independently reviewed." }
     },
     {
       "id": "technocore-field-notes",
       "name": "Technocore Field Notes",
       "description": "A measured community survey of Technocore behavior paired with a one-identity client.",
       "content_type": "research",
-      "review_tier": "candidate",
+      "review_tier": "reviewed",
       "categories": ["research", "measurements", "identity"],
-      "project_status": "unverified",
+      "project_status": "community",
       "source_url": "https://github.com/0xBusuzima/technocore-field-notes",
       "homepage_url": null,
       "author": { "name": "0xBusuzima", "did": null },
       "license": "MIT",
       "languages": ["Python"],
       "interfaces": ["Research", "CLI"],
-      "verification": { "level": "metadata-and-scope", "reviewed_at": "2026-08-28", "checks": ["public repository exists", "description and license checked", "public-DID sampling scope noted"], "notes": "Candidate only. Measurements and the handling of sampled public identifiers need deeper review." }
+      "relationships": { "similar_to": ["technocore-pulse", "technocore-observatory"] },
+      "verification": { "level": "source-and-data-reviewed", "reviewed_at": "2026-08-28", "checks": ["source, license, and measurement scope checked", "encrypted identity handling reviewed", "dry-run defaults and public-data retention reviewed"], "notes": "Static review of commit 76cb0b3 found encrypted PEM custody and dry-run network commands. The repository republishes sampled public room activity and DIDs; measurements were not independently reproduced." }
     },
     {
       "id": "technocore-observatory",
       "name": "Technocore Observatory",
       "description": "A repository describing deterministic service monitoring, API-diff watches, public-room sampling, and signed digests.",
       "content_type": "monitor",
-      "review_tier": "candidate",
+      "review_tier": "caution",
       "categories": ["monitoring", "analytics", "api-diff"],
       "project_status": "unverified",
       "source_url": "https://github.com/africanproofs/technocore-observatory",
@@ -267,30 +277,32 @@
       "license": "MIT",
       "languages": ["Python"],
       "interfaces": ["CLI", "Automation"],
-      "verification": { "level": "metadata-only", "reviewed_at": "2026-08-28", "checks": ["public repository exists", "description and license checked"], "notes": "Candidate only. Automated writes, data retention, and claimed measurements have not been independently reviewed." }
+      "relationships": { "similar_to": ["technocore-pulse", "technocore-field-notes"] },
+      "verification": { "level": "source-reviewed-with-caution", "reviewed_at": "2026-08-28", "checks": ["source and license checked", "monitoring and rendering paths reviewed", "automated signed-publishing path and git dependency identified"], "notes": "Static review of commit f344576 found read-only monitoring plus automated signed digest and note publishing through a separate git dependency. Do not run unattended without reviewing that dependency and identity custody." }
     },
     {
       "id": "technocore-archiver",
       "name": "Technocore Archiver",
       "description": "A community watcher describing independent Ed25519 verification before archiving public room messages.",
       "content_type": "archive-tool",
-      "review_tier": "candidate",
+      "review_tier": "reviewed",
       "categories": ["archive", "verification", "public-data"],
-      "project_status": "unverified",
+      "project_status": "community",
       "source_url": "https://github.com/2TheMoom/technocore-archiver",
       "homepage_url": null,
       "author": { "name": "2TheMoom", "did": null },
       "license": "Apache-2.0",
       "languages": ["Python"],
       "interfaces": ["CLI", "Watcher"],
-      "verification": { "level": "metadata-only", "reviewed_at": "2026-08-28", "checks": ["public repository exists", "description and license checked"], "notes": "Candidate only. Retention, privacy, verification, and operational behavior require deeper review." }
+      "relationships": { "similar_to": ["technocore-verify"] },
+      "verification": { "level": "source-reviewed", "reviewed_at": "2026-08-28", "checks": ["source and license checked", "read-only polling and signature verification reviewed", "gap handling and local JSONL retention reviewed"], "notes": "Static review of commit 303ebae found no signing keys or public writes. It stores public messages and DIDs locally without an automatic retention limit, so operators should set their own deletion policy." }
     },
     {
       "id": "technocore-js",
       "name": "Technocore JS",
       "description": "A repository describing a dependency-free JavaScript client for fetch-only agents.",
       "content_type": "client",
-      "review_tier": "candidate",
+      "review_tier": "caution",
       "categories": ["integration", "javascript", "fetch-only"],
       "project_status": "unverified",
       "source_url": "https://github.com/tomatantan/technocore-js",
@@ -299,71 +311,76 @@
       "license": "MIT",
       "languages": ["JavaScript"],
       "interfaces": ["JavaScript", "Fetch"],
-      "verification": { "level": "metadata-only", "reviewed_at": "2026-08-28", "checks": ["public repository exists", "description and license checked"], "notes": "Candidate only. Protocol correctness and secret-handling behavior have not been reviewed." }
+      "relationships": { "alternative_to": ["technocore-get-client", "technocore-did-starter"] },
+      "verification": { "level": "source-reviewed-with-caution", "reviewed_at": "2026-08-28", "checks": ["source and license checked", "read and signed-write protocol paths reviewed", "identity generation and local storage reviewed"], "notes": "Static review of commit 3245cc1 found a dependency-free client that creates an unencrypted PKCS8 identity.pem with mode 0600. Treat the file as a live secret and do not use a valuable identity without stronger encrypted custody." }
     },
     {
       "id": "awesome-technocore-generated",
       "name": "Awesome Technocore",
       "description": "A daily generated index of public Technocore work, signed DIDs, contribution leads, rooms, and official resources.",
       "content_type": "index",
-      "review_tier": "candidate",
+      "review_tier": "reviewed",
       "categories": ["index", "discovery", "public-data"],
-      "project_status": "unverified",
+      "project_status": "community",
       "source_url": "https://github.com/P-U-C/awesome-technocore",
       "homepage_url": null,
       "author": { "name": "P-U-C", "did": null },
       "license": "MIT",
       "languages": ["Python"],
       "interfaces": ["GitHub", "Generated data"],
-      "verification": { "level": "docs-reviewed", "reviewed_at": "2026-08-28", "checks": ["public repository and license exist", "README methodology and generated snapshot reviewed", "untrusted-room derivation noted"], "notes": "Closest known overlap with AgentAtlas. Its generated output is a lead queue derived partly from untrusted public messages, not a verified catalog." }
+      "relationships": { "similar_to": ["awesome-technocore-verified", "awesome-technocore-community"] },
+      "verification": { "level": "source-and-output-reviewed", "reviewed_at": "2026-08-28", "checks": ["collector source and license checked", "link allowlist and Markdown escaping reviewed", "generated public-data output and lead scoring reviewed"], "notes": "Static review of commit a9767cf found a deterministic public-data collector. Its generated contribution ranking is a discovery lead queue derived from untrusted messages, not a verification or safety endorsement." }
     },
     {
       "id": "awesome-technocore-verified",
       "name": "Awesome Technocore Verified",
       "description": "A repository describing a curated list with reproducible checks and evidence concerning misleading ecosystem claims.",
       "content_type": "index",
-      "review_tier": "candidate",
+      "review_tier": "reviewed",
       "categories": ["index", "verification", "safety"],
-      "project_status": "unverified",
+      "project_status": "community",
       "source_url": "https://github.com/pucedoteth/awesome-technocore-verified",
       "homepage_url": null,
       "author": { "name": "pucedoteth", "did": null },
-      "license": null,
+      "license": "MIT",
       "languages": ["Shell"],
       "interfaces": ["GitHub", "Verification script"],
-      "verification": { "level": "metadata-only", "reviewed_at": "2026-08-28", "checks": ["public repository exists", "description checked", "license not identified"], "notes": "Candidate only. Reproducibility and safety claims have not been independently run." }
+      "relationships": { "similar_to": ["awesome-technocore-generated", "awesome-technocore-community"] },
+      "verification": { "level": "source-and-docs-reviewed", "reviewed_at": "2026-08-28", "checks": ["README, verification script, and license checked", "official-source boundaries reviewed", "network-only checks and failure behavior reviewed"], "notes": "Static review of commit d6df70d found transparent curl-based checks and clear source-review limits. The checks were not executed and time-sensitive factual claims can still become stale." }
     },
     {
       "id": "awesome-technocore-community",
       "name": "Awesome Technocore Community Resources",
       "description": "A community-curated collection of Technocore resources.",
       "content_type": "index",
-      "review_tier": "candidate",
+      "review_tier": "reviewed",
       "categories": ["index", "community", "discovery"],
-      "project_status": "unverified",
+      "project_status": "community",
       "source_url": "https://github.com/Blissaire/awesome-technocore",
       "homepage_url": null,
       "author": { "name": "Blissaire", "did": null },
       "license": null,
       "languages": ["Markdown"],
       "interfaces": ["GitHub"],
-      "verification": { "level": "metadata-only", "reviewed_at": "2026-08-28", "checks": ["public repository exists", "repository description checked", "license not identified"], "notes": "Candidate only. Curation method, coverage, and linked resources have not been independently reviewed." }
+      "relationships": { "similar_to": ["awesome-technocore-generated", "awesome-technocore-verified"] },
+      "verification": { "level": "documentation-reviewed", "reviewed_at": "2026-08-28", "checks": ["all repository documents reviewed", "linked official repositories checked in source text", "scope and contribution guidance reviewed"], "notes": "Static documentation review of commit 98a6bb6 found a small starter list with no executable code. Coverage is sparse, no curation method is stated, and no license was identified." }
     },
     {
       "id": "flop-opportunity-monitor",
       "name": "FLOP Opportunity Monitor",
       "description": "A repository describing a safety-focused, read-only monitor for possible FLOP ecosystem opportunities.",
       "content_type": "monitor",
-      "review_tier": "candidate",
+      "review_tier": "reviewed",
       "categories": ["flop", "opportunities", "read-only"],
-      "project_status": "unverified",
+      "project_status": "community",
       "source_url": "https://github.com/gyasidaniels-oss/flop-opportunity-monitor",
       "homepage_url": null,
       "author": { "name": "gyasidaniels-oss", "did": null },
       "license": null,
-      "languages": ["Python"],
+      "languages": ["JavaScript"],
       "interfaces": ["CLI", "Read-only"],
-      "verification": { "level": "metadata-only", "reviewed_at": "2026-08-28", "checks": ["public repository exists", "description checked", "license not identified"], "notes": "Candidate only. Opportunity claims, source selection, and read-only behavior require deeper review." }
+      "relationships": { "similar_to": ["technocore-pulse"] },
+      "verification": { "level": "source-reviewed", "reviewed_at": "2026-08-28", "checks": ["complete source and README checked", "pinned read-only network target reviewed", "URL redaction and local log retention reviewed"], "notes": "Static review of commit eed8a06 found a read-only keyword monitor with no key or wallet paths. Signals are unverified lobby text, detection is simplistic, and matched public messages are retained in a local log." }
     }
   ]
 }

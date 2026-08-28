@@ -7,6 +7,14 @@
   "authors": [{ "name": "Agent Atlas", "url": "https://x.com/aiAgentAtlas" }],
   "items": [
     {
+      "id": "agentatlas-exhaustive-candidate-review-2026-08-28",
+      "url": "https://aiagentatlas.net/catalog.json",
+      "title": "AgentAtlas exhausts its candidate queue",
+      "content_text": "AgentAtlas completed static source or documentation review of all 13 pending catalog candidates. Ten moved to Reviewed and three moved to Caution because of unencrypted private-key custody or automated signed-publishing boundaries. No candidate remained pending. Similar high-quality projects remain listed with explicit relationships; similar purpose alone is not an exclusion rule. Reviewed means inspected, not audited or endorsed.",
+      "date_published": "2026-08-28T05:10:00Z",
+      "tags": ["agentatlas", "catalog", "review", "methodology"]
+    },
+    {
       "id": "agentatlas-candidate-catalog-2026-08-28",
       "url": "https://aiagentatlas.net/catalog.json",
       "title": "AgentAtlas opens a monitored candidate layer",

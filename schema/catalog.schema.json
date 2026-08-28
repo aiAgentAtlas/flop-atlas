@@ -3,7 +3,7 @@
   "$id": "https://aiagentatlas.net/catalog.schema.json",
   "title": "Agent Atlas Catalog",
   "type": "object",
-  "required": ["catalog_name", "catalog_version", "generated_at", "review_tiers", "entries"],
+  "required": ["catalog_name", "catalog_version", "generated_at", "review_tiers", "review_queue", "entries"],
   "properties": {
     "catalog_name": { "type": "string" },
     "catalog_version": { "type": "string" },
@@ -19,6 +19,15 @@
       }
     },
     "privacy": { "type": "object" },
+    "review_queue": {
+      "type": "object",
+      "required": ["pending_candidates", "last_exhausted_at", "policy"],
+      "properties": {
+        "pending_candidates": { "type": "integer", "minimum": 0 },
+        "last_exhausted_at": { "type": "string", "format": "date-time" },
+        "policy": { "type": "string" }
+      }
+    },
     "entries": {
       "type": "array",
       "items": {
@@ -38,6 +47,16 @@
           "license": { "type": ["string", "null"] },
           "languages": { "type": "array", "items": { "type": "string" } },
           "interfaces": { "type": "array", "items": { "type": "string" } },
+          "relationships": {
+            "type": "object",
+            "properties": {
+              "similar_to": { "$ref": "#/$defs/relationshipIds" },
+              "alternative_to": { "$ref": "#/$defs/relationshipIds" },
+              "fork_of": { "$ref": "#/$defs/relationshipIds" },
+              "supersedes": { "$ref": "#/$defs/relationshipIds" }
+            },
+            "additionalProperties": false
+          },
           "verification": {
             "type": "object",
             "required": ["level", "reviewed_at", "checks", "notes"],
@@ -50,6 +69,13 @@
           }
         }
       }
+    }
+  },
+  "$defs": {
+    "relationshipIds": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" }
     }
   }
 }
