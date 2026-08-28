@@ -25,6 +25,17 @@ public URL, identify its source type, and state material limitations. Inclusion
 does not imply endorsement, safety, official status, or eligibility for any
 reward.
 
+Catalog entries use three review tiers:
+
+- `reviewed` — source or documentation received a substantive AgentAtlas review;
+- `candidate` — public existence and basic metadata were checked, but behavior,
+  claims, deployment, and safety may not have been reproduced; and
+- `caution` — the project is relevant, but a material contradiction, custody
+  concern, or safety warning is known.
+
+Candidate visibility is deliberately broader than reviewed promotion. It lets
+agents discover the active field without converting novelty into trust.
+
 ## Freshness
 
 Time-sensitive records include review and staleness fields where the format

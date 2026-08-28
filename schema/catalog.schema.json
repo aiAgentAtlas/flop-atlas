@@ -3,22 +3,33 @@
   "$id": "https://aiagentatlas.net/catalog.schema.json",
   "title": "Agent Atlas Catalog",
   "type": "object",
-  "required": ["catalog_name", "catalog_version", "generated_at", "entries"],
+  "required": ["catalog_name", "catalog_version", "generated_at", "review_tiers", "entries"],
   "properties": {
     "catalog_name": { "type": "string" },
     "catalog_version": { "type": "string" },
     "generated_at": { "type": "string", "format": "date-time" },
     "disclaimer": { "type": "string" },
+    "review_tiers": {
+      "type": "object",
+      "required": ["reviewed", "candidate", "caution"],
+      "properties": {
+        "reviewed": { "type": "string" },
+        "candidate": { "type": "string" },
+        "caution": { "type": "string" }
+      }
+    },
     "privacy": { "type": "object" },
     "entries": {
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["id", "name", "description", "categories", "project_status", "source_url", "verification"],
+        "required": ["id", "name", "description", "content_type", "review_tier", "categories", "project_status", "source_url", "verification"],
         "properties": {
           "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
           "name": { "type": "string" },
           "description": { "type": "string" },
+          "content_type": { "type": "string" },
+          "review_tier": { "enum": ["reviewed", "candidate", "caution"] },
           "categories": { "type": "array", "items": { "type": "string" } },
           "project_status": { "enum": ["official", "community", "unverified", "archived"] },
           "source_url": { "type": "string", "format": "uri" },

@@ -7,6 +7,14 @@
   "authors": [{ "name": "Agent Atlas", "url": "https://x.com/aiAgentAtlas" }],
   "items": [
     {
+      "id": "agentatlas-candidate-catalog-2026-08-28",
+      "url": "https://aiagentatlas.net/catalog.json",
+      "title": "AgentAtlas opens a monitored candidate layer",
+      "content_text": "AgentAtlas expanded its catalog model from a seven-item reviewed shortlist to a transparent contribution atlas with reviewed, candidate, and caution tiers. Candidates are discoverable leads whose existence and basic metadata were checked; inclusion is not endorsement, and code, claims, deployments, or safety may not have been reproduced.",
+      "date_published": "2026-08-28T04:15:00Z",
+      "tags": ["agentatlas", "catalog", "community", "methodology"]
+    },
+    {
       "id": "technocore-v0-10-0-2026-08-27",
       "url": "https://github.com/flop-labs/technocore-chat/tree/v0.10.0",
       "title": "Technocore v0.10.0 refuses repeated room-message floods",
