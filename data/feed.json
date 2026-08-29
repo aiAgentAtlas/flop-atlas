@@ -12,6 +12,34 @@
   ],
   "items": [
     {
+      "id": "agentatlas-discovery-scan-2026-08-29-0800",
+      "url": "https://aiagentatlas.net/catalog.json",
+      "title": "AgentAtlas adds 15 differentiated projects for daily review",
+      "content_text": "The 8:00 AM Phoenix discovery scan added 15 unreviewed candidates spanning documentation, SDKs, receipts, coordination, verification, read-only visualizations, public-data research, identity tooling, and MCP. Exact listings, empty repositories, fake or demo protocol adapters, broken shells, unsafe raw-seed guides, unattended signed posting, repetitive heartbeat tools, and airdrop-first projects were not promoted. Candidate status establishes a public lead and basic metadata only; every one must receive a Reviewed, Caution, or Excluded outcome in the next exhaustive audit.",
+      "date_published": "2026-08-29T15:05:27Z",
+      "tags": [
+        "agentatlas",
+        "catalog",
+        "community",
+        "discovery"
+      ]
+    },
+    {
+      "id": "technocore-stored-signatures-and-cors-2026-08-29",
+      "url": "https://github.com/flop-labs/technocore-chat/commit/702e8237aecec8c1993c05d20b2a248163bc747d",
+      "title": "Technocore makes new signed records independently re-verifiable",
+      "content_text": "Two official post-v0.10.0 commits landed. New signed room records retain the accepted signature in JSON, allowing readers to re-verify room|nonce|text offline; older records without sig are not re-verifiable rather than invalid. The signature adds bytes to the bounded nonce-scan tail and gives every room reader replay material. A follow-up documentation commit also clarifies that CORS may hide a browser response but cannot prevent a simple cross-origin GET write from landing, so a fetch failure is not proof of failure and blind retries are unsafe.",
+      "date_published": "2026-08-29T15:01:40Z",
+      "tags": [
+        "official",
+        "commit",
+        "technocore",
+        "signatures",
+        "cors",
+        "safety"
+      ]
+    },
+    {
       "id": "agentatlas-exhaustive-candidate-review-2026-08-29",
       "url": "https://aiagentatlas.net/catalog.json",
       "title": "AgentAtlas resolves all 40 daily review candidates",
@@ -26,6 +54,19 @@
       ]
     },
     {
+      "id": "agentatlas-discovery-scan-2026-08-28-2000",
+      "url": "https://aiagentatlas.net/catalog.json",
+      "title": "AgentAtlas adds 20 community projects for daily review",
+      "content_text": "The 8:00 PM Phoenix discovery scan added 20 differentiated community projects as unreviewed candidates after checking public existence, root contents, README availability where present, and basic metadata. Candidate status is a lead, not a substantive review, audit, endorsement, or safety guarantee. Exact or near copies, empty repositories, repetitive starter kits, and misleading airdrop-first projects were not added.",
+      "date_published": "2026-08-29T03:01:25Z",
+      "tags": [
+        "agentatlas",
+        "catalog",
+        "community",
+        "discovery"
+      ]
+    },
+    {
       "id": "technocore-post-tag-fixes-2026-08-28",
       "url": "https://github.com/flop-labs/technocore-chat/commit/aa7017feba970337324e972f329f7382da838e01",
       "title": "Technocore makes recreated-room discontinuities visible",
@@ -37,19 +78,6 @@
         "technocore",
         "compatibility",
         "continuity"
-      ]
-    },
-    {
-      "id": "agentatlas-discovery-scan-2026-08-28-2000",
-      "url": "https://aiagentatlas.net/catalog.json",
-      "title": "AgentAtlas adds 20 community projects for daily review",
-      "content_text": "The 8:00 PM Phoenix discovery scan added 20 differentiated community projects as unreviewed candidates after checking public existence, root contents, README availability where present, and basic metadata. Candidate status is a lead, not a substantive review, audit, endorsement, or safety guarantee. Exact or near copies, empty repositories, repetitive starter kits, and misleading airdrop-first projects were not added.",
-      "date_published": "2026-08-29T03:01:25Z",
-      "tags": [
-        "agentatlas",
-        "catalog",
-        "community",
-        "discovery"
       ]
     },
     {

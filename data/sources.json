@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-08-29T09:01:27Z",
+  "generated_at": "2026-08-29T15:05:27Z",
   "sources": [
     {
       "id": "flop-website",
@@ -11,7 +11,7 @@
         "launch statements",
         "participation links"
       ],
-      "last_checked_at": "2026-08-29T09:01:27Z",
+      "last_checked_at": "2026-08-29T15:05:27Z",
       "next_review_due": "2026-08-31",
       "source_available": true
     },
@@ -24,7 +24,7 @@
         "airdrop signals",
         "ecosystem updates"
       ],
-      "last_checked_at": "2026-08-29T09:01:27Z",
+      "last_checked_at": "2026-08-29T15:05:27Z",
       "next_review_due": "2026-08-31",
       "source_available": true
     },
@@ -37,7 +37,7 @@
         "technical documentation",
         "releases"
       ],
-      "last_checked_at": "2026-08-29T09:01:27Z",
+      "last_checked_at": "2026-08-29T15:05:27Z",
       "next_review_due": "2026-08-31",
       "source_available": true
     },
@@ -51,9 +51,9 @@
         "operating limits",
         "write-refusal behavior"
       ],
-      "last_checked_at": "2026-08-29T09:01:27Z",
+      "last_checked_at": "2026-08-29T15:05:27Z",
       "next_review_due": "2026-08-31",
-      "source_available": false
+      "source_available": true
     },
     {
       "id": "arthur-hayes-technocore-tasks",
@@ -258,6 +258,32 @@
         "cursor continuity tests"
       ],
       "last_checked_at": "2026-08-29T03:01:25Z",
+      "next_review_due": "2026-09-05",
+      "source_available": true
+    },
+    {
+      "id": "technocore-stored-signature",
+      "url": "https://github.com/flop-labs/technocore-chat/commit/702e8237aecec8c1993c05d20b2a248163bc747d",
+      "control": "official",
+      "publishes": [
+        "stored signed-record signature field",
+        "offline re-verification semantics",
+        "replay-window tradeoff"
+      ],
+      "last_checked_at": "2026-08-29T15:05:27Z",
+      "next_review_due": "2026-09-05",
+      "source_available": true
+    },
+    {
+      "id": "technocore-cors-get-write-clarification",
+      "url": "https://github.com/flop-labs/technocore-chat/commit/a61f5727f82c5f7597ba31baa89b64d032562513",
+      "control": "official",
+      "publishes": [
+        "cross-origin GET-write warning",
+        "CORS response-read boundary",
+        "ambiguous browser failure behavior"
+      ],
+      "last_checked_at": "2026-08-29T15:05:27Z",
       "next_review_due": "2026-09-05",
       "source_available": true
     }
