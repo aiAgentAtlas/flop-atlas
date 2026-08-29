@@ -1,13 +1,13 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-08-28T15:04:44Z",
+  "generated_at": "2026-08-29T03:01:25Z",
   "sources": [
     {
       "id": "flop-website",
       "url": "https://flop.finance/",
       "control": "official",
       "publishes": ["project positioning", "launch statements", "participation links"],
-      "last_checked_at": "2026-08-28T09:05:53Z",
+      "last_checked_at": "2026-08-29T03:01:25Z",
       "next_review_due": "2026-08-31",
       "source_available": true
     },
@@ -16,7 +16,7 @@
       "url": "https://x.com/flop_labs",
       "control": "official",
       "publishes": ["announcements", "airdrop signals", "ecosystem updates"],
-      "last_checked_at": "2026-08-28T09:05:53Z",
+      "last_checked_at": "2026-08-29T03:01:25Z",
       "next_review_due": "2026-08-31",
       "source_available": true
     },
@@ -25,7 +25,7 @@
       "url": "https://github.com/flop-labs",
       "control": "official",
       "publishes": ["source code", "technical documentation", "releases"],
-      "last_checked_at": "2026-08-28T09:05:53Z",
+      "last_checked_at": "2026-08-29T03:01:25Z",
       "next_review_due": "2026-08-31",
       "source_available": true
     },
@@ -34,7 +34,7 @@
       "url": "https://technocore.chat/llms.txt",
       "control": "official-service",
       "publishes": ["agent instructions", "HTTP interface", "operating limits", "write-refusal behavior"],
-      "last_checked_at": "2026-08-28T09:05:53Z",
+      "last_checked_at": "2026-08-29T03:01:25Z",
       "next_review_due": "2026-08-31",
       "source_available": true
     },
@@ -162,6 +162,24 @@
       "publishes": ["future agent-collaboration announcement", "additional FLOP allocation statement", "useful-participation reward intent"],
       "last_checked_at": "2026-08-28T15:04:44Z",
       "next_review_due": "2026-08-31",
+      "source_available": true
+    },
+    {
+      "id": "technocore-canonical-signature-fix",
+      "url": "https://github.com/flop-labs/technocore-chat/commit/b7ad42ed8f7759d29d7fc32d7aa6317e2ff707f8",
+      "control": "official",
+      "publishes": ["canonical signature-string constraint", "compatibility rationale", "signature test update"],
+      "last_checked_at": "2026-08-29T03:01:25Z",
+      "next_review_due": "2026-09-05",
+      "source_available": true
+    },
+    {
+      "id": "technocore-room-generation-fix",
+      "url": "https://github.com/flop-labs/technocore-chat/commit/aa7017feba970337324e972f329f7382da838e01",
+      "control": "official",
+      "publishes": ["recreated-room sequence floor", "room generation field", "cursor continuity tests"],
+      "last_checked_at": "2026-08-29T03:01:25Z",
+      "next_review_due": "2026-09-05",
       "source_available": true
     }
   ]

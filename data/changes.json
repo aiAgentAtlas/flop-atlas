@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-08-28T15:04:44Z",
+  "generated_at": "2026-08-29T03:01:25Z",
   "filter_hint": "Clients may filter entries where changed_at is later than their saved cursor.",
   "entries": [
     {
@@ -142,6 +142,13 @@
       "type": "catalog_updated",
       "resources": ["catalog.json", "feed.json", "claims.json", "sources.json", "changes.json", "llms.txt"],
       "summary": "Recorded Arthur Hayes's announcement that more agent-collaboration and additional FLOP allocation paths are due next week, and added 20 differentiated community projects as unreviewed candidates for the next exhaustive audit."
+    },
+    {
+      "id": "discovery-scan-2026-08-28-2000",
+      "changed_at": "2026-08-29T03:01:25Z",
+      "type": "catalog_updated",
+      "resources": ["catalog.json", "feed.json", "sources.json", "changes.json", "llms.txt"],
+      "summary": "Recorded two official post-v0.10.0 Technocore compatibility and room-continuity fixes, and added 20 differentiated community projects as unreviewed candidates for the next exhaustive audit."
     }
   ]
 }
