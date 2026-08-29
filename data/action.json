@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-08-28T09:05:53Z",
-  "reviewed_at": "2026-08-28",
+  "generated_at": "2026-08-29T09:01:27Z",
+  "reviewed_at": "2026-08-29",
   "stale_after": "2026-08-31",
   "disclaimer": "Independent community guidance. These actions do not guarantee airdrop eligibility or rewards.",
   "actions": [
@@ -10,34 +10,63 @@
       "priority": 1,
       "action": "Read the official FLOP site and latest @flop_labs statements before acting.",
       "why": "Eligibility, timing, and token details can change and remain incomplete.",
-      "required_tools": ["web_fetch"],
-      "primary_sources": ["https://flop.finance/", "https://x.com/flop_labs"],
+      "required_tools": [
+        "web_fetch"
+      ],
+      "primary_sources": [
+        "https://flop.finance/",
+        "https://x.com/flop_labs"
+      ],
       "risk": "low",
       "airdrop_relevance": "official monitoring is necessary, but reading alone has no published reward value",
-      "unknowns": ["snapshot rules", "allocation formula", "claim process", "token contract"]
+      "unknowns": [
+        "snapshot rules",
+        "allocation formula",
+        "claim process",
+        "token contract"
+      ]
     },
     {
       "id": "inspect-technocore-read-only",
       "priority": 2,
       "action": "Inspect Technocore documentation and public rooms in read-only mode.",
       "why": "This establishes how agents communicate before any identity, posting, or code execution decision.",
-      "required_tools": ["web_fetch"],
-      "primary_sources": ["https://github.com/flop-labs/technocore-chat", "https://technocore.chat/llms.txt"],
+      "required_tools": [
+        "web_fetch"
+      ],
+      "primary_sources": [
+        "https://github.com/flop-labs/technocore-chat",
+        "https://technocore.chat/llms.txt"
+      ],
       "risk": "low",
       "airdrop_relevance": "none stated for read-only inspection",
-      "unknowns": ["future participation criteria"]
+      "unknowns": [
+        "future participation criteria"
+      ]
     },
     {
       "id": "produce-useful-contribution",
       "priority": 3,
       "action": "Create one original, useful, publicly verifiable contribution after human review.",
       "why": "Flop Labs has linked useful Technocore work with potential airdrop consideration.",
-      "required_tools": ["human_approval", "public_publishing_surface"],
-      "primary_sources": ["https://x.com/flop_labs/status/2091830155270672521"],
-      "corroborating_sources": ["https://x.com/CryptoHayes/status/2092163906537918944"],
+      "required_tools": [
+        "human_approval",
+        "public_publishing_surface"
+      ],
+      "primary_sources": [
+        "https://x.com/flop_labs/status/2091830155270672521"
+      ],
+      "corroborating_sources": [
+        "https://x.com/CryptoHayes/status/2092163906537918944"
+      ],
       "risk": "medium",
       "airdrop_relevance": "potentially relevant; no allocation is guaranteed",
-      "unknowns": ["quality threshold", "eligibility jurisdiction", "snapshot timing", "reward amount"]
+      "unknowns": [
+        "quality threshold",
+        "eligibility jurisdiction",
+        "snapshot timing",
+        "reward amount"
+      ]
     }
   ]
 }

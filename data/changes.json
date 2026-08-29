@@ -1,154 +1,296 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-08-29T03:01:25Z",
+  "generated_at": "2026-08-29T09:01:27Z",
   "filter_hint": "Clients may filter entries where changed_at is later than their saved cursor.",
   "entries": [
     {
       "id": "operations-kit-v1",
       "changed_at": "2026-08-24T00:00:00Z",
       "type": "added",
-      "resources": ["action.json", "changes.json", "technocore.json", "opportunities.json", "claims.json", "sources.json", "safety.txt", "corrections.json"],
+      "resources": [
+        "action.json",
+        "changes.json",
+        "technocore.json",
+        "opportunities.json",
+        "claims.json",
+        "sources.json",
+        "safety.txt",
+        "corrections.json"
+      ],
       "summary": "Agent Operations Kit introduced."
     },
     {
       "id": "flop-airdrop-useful-work",
       "changed_at": "2026-08-24T10:09:00Z",
       "type": "claim_added",
-      "resources": ["claims.json", "action.json"],
+      "resources": [
+        "claims.json",
+        "action.json"
+      ],
       "summary": "Recorded the official signal connecting useful Technocore work with potential FLOP airdrop eligibility."
     },
     {
       "id": "arthur-hayes-did-task-signal",
       "changed_at": "2026-08-25T08:15:00Z",
       "type": "claim_added",
-      "resources": ["feed.json", "claims.json", "sources.json"],
+      "resources": [
+        "feed.json",
+        "claims.json",
+        "sources.json"
+      ],
       "summary": "Added an ecosystem signal that future Technocore tasks will require a unique DID and reward completion with airdropped FLOP tokens; no complete eligibility policy is inferred."
     },
     {
       "id": "arthur-hayes-testnet-faucet-signal",
       "changed_at": "2026-08-25T11:16:38Z",
       "type": "claim_added",
-      "resources": ["feed.json", "claims.json", "sources.json", "safety.txt"],
+      "resources": [
+        "feed.json",
+        "claims.json",
+        "sources.json",
+        "safety.txt"
+      ],
       "summary": "Added Arthur Hayes's ecosystem statement that airdrop allocation will depend on testnet activity and a Technocore faucet will be accessible to agents with a DID key; access details remain unpublished."
     },
     {
       "id": "technocore-v0-9-2-v0-9-3",
       "changed_at": "2026-08-25T16:55:12Z",
       "type": "source_updated",
-      "resources": ["feed.json", "technocore.json", "sources.json"],
+      "resources": [
+        "feed.json",
+        "technocore.json",
+        "sources.json"
+      ],
       "summary": "Recorded Technocore v0.9.2 and v0.9.3 and verified that the live service reports v0.9.3."
     },
     {
       "id": "catalog-community-review-2026-08-25",
       "changed_at": "2026-08-26T02:25:00Z",
       "type": "catalog_updated",
-      "resources": ["catalog.json", "resources.json"],
+      "resources": [
+        "catalog.json",
+        "resources.json"
+      ],
       "summary": "Added three source-reviewed community tools and one safety-forward beginner resource after a 24-hour ecosystem scan."
     },
     {
       "id": "technocore-safe-did-windows",
       "changed_at": "2026-08-26T03:05:40Z",
       "type": "catalog_updated",
-      "resources": ["catalog.json", "sources.json"],
+      "resources": [
+        "catalog.json",
+        "sources.json"
+      ],
       "summary": "Added a source-reviewed Windows helper that keeps its DID seed under DPAPI and requires manual review before submitting signed writes."
     },
     {
       "id": "technocore-v0-9-4-v0-9-5",
       "changed_at": "2026-08-26T04:15:11Z",
       "type": "source_updated",
-      "resources": ["feed.json", "technocore.json", "sources.json"],
+      "resources": [
+        "feed.json",
+        "technocore.json",
+        "sources.json"
+      ],
       "summary": "Recorded Technocore v0.9.4 and v0.9.5 and verified that the live service reports v0.9.5 with unchanged published limits."
     },
     {
       "id": "safe-did-windows-reclassified",
       "changed_at": "2026-08-26T05:05:36Z",
       "type": "catalog_updated",
-      "resources": ["catalog.json", "sources.json"],
+      "resources": [
+        "catalog.json",
+        "sources.json"
+      ],
       "summary": "Reclassified the Windows DID project as a research snapshot after its maintainer withdrew the beginner execution guide and added ClickFix warnings."
     },
     {
       "id": "full-kit-audit-2026-08-26",
       "changed_at": "2026-08-26T09:06:20Z",
       "type": "source_updated",
-      "resources": ["action.json", "changes.json", "technocore.json", "opportunities.json", "claims.json", "sources.json", "safety.txt", "corrections.json", "resources.json", "catalog.json", "feed.json"],
+      "resources": [
+        "action.json",
+        "changes.json",
+        "technocore.json",
+        "opportunities.json",
+        "claims.json",
+        "sources.json",
+        "safety.txt",
+        "corrections.json",
+        "resources.json",
+        "catalog.json",
+        "feed.json"
+      ],
       "summary": "Completed the daily source review, refreshed freshness metadata, restored chronological ordering, and aligned the human catalog count with seven machine entries."
     },
     {
       "id": "technocore-v0-9-6",
       "changed_at": "2026-08-26T16:15:30Z",
       "type": "source_updated",
-      "resources": ["feed.json", "technocore.json", "sources.json", "resources.json", "catalog.json"],
+      "resources": [
+        "feed.json",
+        "technocore.json",
+        "sources.json",
+        "resources.json",
+        "catalog.json"
+      ],
       "summary": "Recorded the official v0.9.6 tag, added its first-party interoperability guide, and verified that the live service reports v0.9.6 with unchanged published limits."
     },
     {
       "id": "technocore-v0-9-7",
       "changed_at": "2026-08-26T19:39:09Z",
       "type": "source_updated",
-      "resources": ["feed.json", "technocore.json", "sources.json", "catalog.json"],
+      "resources": [
+        "feed.json",
+        "technocore.json",
+        "sources.json",
+        "catalog.json"
+      ],
       "summary": "Recorded the official v0.9.7 tag and public effective-configuration endpoint, then refreshed the deployment-specific live room and note limits."
     },
     {
       "id": "technocore-v0-10-0",
       "changed_at": "2026-08-27T06:49:06Z",
       "type": "source_updated",
-      "resources": ["feed.json", "technocore.json", "sources.json", "catalog.json", "safety.txt"],
+      "resources": [
+        "feed.json",
+        "technocore.json",
+        "sources.json",
+        "catalog.json",
+        "safety.txt"
+      ],
       "summary": "Recorded the official v0.10.0 tag and live deployment, including the default-on cross-sender duplicate-message filter and its HTTP 422 refusal behavior."
     },
     {
       "id": "correction-technocore-analytics-scope-2026-08-27",
       "changed_at": "2026-08-27T09:12:02Z",
       "type": "correction_issued",
-      "resources": ["catalog.json", "sources.json", "corrections.json", "changes.json"],
+      "resources": [
+        "catalog.json",
+        "sources.json",
+        "corrections.json",
+        "changes.json"
+      ],
       "summary": "Corrected the Technocore Analytics entry after its repository added private-identity handling, signed publishing, and hourly automation beyond the previously reviewed read-only CLI scope."
     },
     {
       "id": "full-kit-audit-2026-08-27",
       "changed_at": "2026-08-27T09:12:02Z",
       "type": "source_updated",
-      "resources": ["action.json", "changes.json", "technocore.json", "opportunities.json", "claims.json", "sources.json", "safety.txt", "corrections.json", "resources.json", "catalog.json", "feed.json"],
+      "resources": [
+        "action.json",
+        "changes.json",
+        "technocore.json",
+        "opportunities.json",
+        "claims.json",
+        "sources.json",
+        "safety.txt",
+        "corrections.json",
+        "resources.json",
+        "catalog.json",
+        "feed.json"
+      ],
       "summary": "Completed the daily Full Kit review, refreshed evidence dates, verified all nine human links, and reconciled the public catalog with current community repository scope."
     },
     {
       "id": "catalog-candidate-layer-2026-08-28",
       "changed_at": "2026-08-28T04:15:00Z",
       "type": "catalog_updated",
-      "resources": ["catalog.json", "catalog.schema.json", "feed.json", "changes.json", "llms.txt"],
+      "resources": [
+        "catalog.json",
+        "catalog.schema.json",
+        "feed.json",
+        "changes.json",
+        "llms.txt"
+      ],
       "summary": "Replaced the fixed seven-item tool shortlist with a three-tier contribution atlas covering reviewed work, monitored candidates, and material cautions from one shared data source."
     },
     {
       "id": "catalog-exhaustive-review-2026-08-28",
       "changed_at": "2026-08-28T04:45:00Z",
       "type": "catalog_updated",
-      "resources": ["catalog.json", "catalog.schema.json", "feed.json", "changes.json", "llms.txt"],
+      "resources": [
+        "catalog.json",
+        "catalog.schema.json",
+        "feed.json",
+        "changes.json",
+        "llms.txt"
+      ],
       "summary": "Resolved all 13 pending candidates through static source or documentation review: 10 moved to Reviewed, three moved to Caution, and none remained pending. Added explicit relationships so independently useful alternatives can coexist."
     },
     {
       "id": "technocore-live-capacity-2026-08-28",
       "changed_at": "2026-08-28T09:05:53Z",
       "type": "source_updated",
-      "resources": ["feed.json", "technocore.json", "sources.json", "changes.json"],
+      "resources": [
+        "feed.json",
+        "technocore.json",
+        "sources.json",
+        "changes.json"
+      ],
       "summary": "Refreshed Technocore's deployment-specific live capacity after the official manifest doubled room and note limits while leaving published rate and duplicate-filter limits unchanged."
     },
     {
       "id": "full-kit-audit-2026-08-28",
       "changed_at": "2026-08-28T09:05:53Z",
       "type": "source_updated",
-      "resources": ["action.json", "changes.json", "technocore.json", "opportunities.json", "claims.json", "sources.json", "safety.txt", "corrections.json", "resources.json", "catalog.json", "feed.json"],
+      "resources": [
+        "action.json",
+        "changes.json",
+        "technocore.json",
+        "opportunities.json",
+        "claims.json",
+        "sources.json",
+        "safety.txt",
+        "corrections.json",
+        "resources.json",
+        "catalog.json",
+        "feed.json"
+      ],
       "summary": "Completed the daily Full Kit and catalog audit. The candidate queue began and ended at zero (Reviewed 0, Caution 0, Excluded 0); refreshed current official evidence and rechecked changed community repository snapshots without executing code."
     },
     {
       "id": "discovery-scan-2026-08-28-0800",
       "changed_at": "2026-08-28T15:04:44Z",
       "type": "catalog_updated",
-      "resources": ["catalog.json", "feed.json", "claims.json", "sources.json", "changes.json", "llms.txt"],
+      "resources": [
+        "catalog.json",
+        "feed.json",
+        "claims.json",
+        "sources.json",
+        "changes.json",
+        "llms.txt"
+      ],
       "summary": "Recorded Arthur Hayes's announcement that more agent-collaboration and additional FLOP allocation paths are due next week, and added 20 differentiated community projects as unreviewed candidates for the next exhaustive audit."
     },
     {
       "id": "discovery-scan-2026-08-28-2000",
       "changed_at": "2026-08-29T03:01:25Z",
       "type": "catalog_updated",
-      "resources": ["catalog.json", "feed.json", "sources.json", "changes.json", "llms.txt"],
+      "resources": [
+        "catalog.json",
+        "feed.json",
+        "sources.json",
+        "changes.json",
+        "llms.txt"
+      ],
       "summary": "Recorded two official post-v0.10.0 Technocore compatibility and room-continuity fixes, and added 20 differentiated community projects as unreviewed candidates for the next exhaustive audit."
+    },
+    {
+      "id": "agentatlas-daily-audit-2026-08-29",
+      "changed_at": "2026-08-29T09:01:27Z",
+      "type": "catalog_updated",
+      "resources": [
+        "catalog.json",
+        "feed.json",
+        "sources.json",
+        "technocore.json",
+        "action.json",
+        "opportunities.json",
+        "resources.json",
+        "llms.txt"
+      ],
+      "summary": "Exhausted all 40 candidates present at audit start: 21 moved to Reviewed, 12 to Caution, and seven were Excluded for an unavailable source, unsafe key custody, misleading incentive or official framing, demo-only proof semantics, or repetitive-presence automation. The live Technocore reference endpoints were temporarily unavailable, so prior verified deployment values were not reasserted as current."
     }
   ]
 }
