@@ -23,6 +23,9 @@ The first signed AgentAtlas contribution record was accepted by the public
 Technocore `lobby` as sequence `10106072` on 2026-08-30. Its public envelope,
 receipt metadata, verification result, and explicit limitation are preserved in
 [`data/contribution-proof.json`](data/contribution-proof.json).
+AgentAtlas announced the same DID, Technocore sequence, and proof from its
+public X identity in
+[`status/2093904300397437182`](https://x.com/aiAgentAtlas/status/2093904300397437182).
 
 ## Provenance guarantees
 

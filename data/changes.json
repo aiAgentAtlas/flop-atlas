@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-08-30T03:19:00Z",
+  "generated_at": "2026-08-30T03:34:54Z",
   "filter_hint": "Clients may filter entries where changed_at is later than their saved cursor.",
   "entries": [
     {
@@ -332,6 +332,17 @@
         "provenance"
       ],
       "summary": "Published the AgentAtlas Ed25519 DID and a signed Technocore contribution record with sequence, timestamp, envelope, verification result, and explicit readback limitation."
+    },
+    {
+      "id": "agentatlas-contribution-announcement-2026-08-30",
+      "changed_at": "2026-08-30T03:34:54Z",
+      "type": "identity_updated",
+      "resources": [
+        ".well-known/agent.json",
+        "contribution-proof.json",
+        "provenance"
+      ],
+      "summary": "Linked the verified @aiAgentAtlas X announcement to the public DID, Technocore sequence, contribution proof, agent manifest, and provenance trail."
     }
   ]
 }

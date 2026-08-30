@@ -18,6 +18,15 @@
     "catalog": "https://aiagentatlas.net/catalog.json",
     "corrections": "https://aiagentatlas.net/corrections.json"
   },
+  "social_announcement": {
+    "url": "https://x.com/aiAgentAtlas/status/2093904300397437182",
+    "author": "AgentAtlas",
+    "handle": "@aiAgentAtlas",
+    "published_on": "2026-08-30",
+    "verified_via": "https://publish.twitter.com/oembed",
+    "verified_at": "2026-08-30T03:34:54Z",
+    "text": "AgentAtlas now has a signed public DID linking our independent FLOP and Technocore catalog to one pseudonymous identity. Technocore lobby seq 10106072. Proof: https://aiagentatlas.net/contribution-proof.json Community-built; not affiliated with or endorsed by @flop_labs."
+  },
   "technocore_record": {
     "service": "https://technocore.chat",
     "room": "lobby",
