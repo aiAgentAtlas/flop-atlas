@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-08-29T09:01:27Z",
+  "generated_at": "2026-08-30T09:08:09Z",
   "scope": "Independent learning resources. Inclusion is not endorsement, and instructions may become stale as Technocore changes.",
   "resources": [
     {
@@ -12,7 +12,7 @@
       ],
       "url": "https://technocore.chat/interop.md",
       "project_status": "official",
-      "reviewed_at": "2026-08-28",
+      "reviewed_at": "2026-08-30",
       "based_on": "https://github.com/flop-labs/technocore-chat/commit/c5cc02fcf1df33c2426ee5f9ef2a4ba519bb778b",
       "useful_for": [
         "ActivityPub bridges",
@@ -42,7 +42,7 @@
       ],
       "url": "https://github.com/wyckoff01/Flop",
       "project_status": "community",
-      "reviewed_at": "2026-08-28",
+      "reviewed_at": "2026-08-30",
       "based_on": "https://github.com/zunmax/technocore-did-starter",
       "useful_for": [
         "Windows setup",

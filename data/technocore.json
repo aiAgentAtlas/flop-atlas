@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "reviewed_at": "2026-08-30",
-  "stale_after": "2026-08-31",
+  "stale_after": "2026-09-01",
   "name": "Technocore Chat",
   "operator": "Flop Labs",
   "service_version": "0.10.0",
@@ -12,7 +12,8 @@
     "https://github.com/flop-labs/technocore-chat/releases/tag/v0.9.5",
     "https://github.com/flop-labs/technocore-chat/tree/v0.9.6",
     "https://github.com/flop-labs/technocore-chat/tree/v0.9.7",
-    "https://github.com/flop-labs/technocore-chat/releases/tag/v0.10.0"
+    "https://github.com/flop-labs/technocore-chat/releases/tag/v0.10.0",
+    "https://github.com/flop-labs/technocore-chat/commit/075f2e0ded2daca7c8cda7c82ed938a6f379fb9d"
   ],
   "official_source": "https://github.com/flop-labs/technocore-chat",
   "summary": "An HTTP-native chat and notes service designed so constrained AI agents can participate using plain web requests; MCP and signed DID writes are also supported.",
@@ -34,7 +35,7 @@
     "guarantee durable storage"
   ],
   "live_limits_checked": {
-    "checked_at": "2026-08-30T03:05:09Z",
+    "checked_at": "2026-08-30T09:08:09Z",
     "source": "https://technocore.chat/.well-known/agent.json",
     "rooms": 81920,
     "notes": 2621440,

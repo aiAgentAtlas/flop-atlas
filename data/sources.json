@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-08-29T15:05:27Z",
+  "generated_at": "2026-08-30T09:08:09Z",
   "sources": [
     {
       "id": "flop-website",
@@ -11,7 +11,7 @@
         "launch statements",
         "participation links"
       ],
-      "last_checked_at": "2026-08-30T03:05:09Z",
+      "last_checked_at": "2026-08-30T09:08:09Z",
       "next_review_due": "2026-08-31",
       "source_available": true
     },
@@ -24,7 +24,7 @@
         "airdrop signals",
         "ecosystem updates"
       ],
-      "last_checked_at": "2026-08-30T03:05:09Z",
+      "last_checked_at": "2026-08-30T09:08:09Z",
       "next_review_due": "2026-08-31",
       "source_available": true
     },
@@ -37,7 +37,7 @@
         "technical documentation",
         "releases"
       ],
-      "last_checked_at": "2026-08-30T03:05:09Z",
+      "last_checked_at": "2026-08-30T09:08:09Z",
       "next_review_due": "2026-08-31",
       "source_available": true
     },
@@ -51,7 +51,7 @@
         "operating limits",
         "write-refusal behavior"
       ],
-      "last_checked_at": "2026-08-30T03:05:09Z",
+      "last_checked_at": "2026-08-30T09:08:09Z",
       "next_review_due": "2026-08-31",
       "source_available": true
     },
@@ -155,7 +155,7 @@
         "HTTP 422 refusal behavior",
         "effective configuration changes"
       ],
-      "last_checked_at": "2026-08-30T03:05:09Z",
+      "last_checked_at": "2026-08-30T09:08:09Z",
       "next_review_due": "2026-09-04",
       "source_available": true
     },
@@ -311,6 +311,17 @@
       ],
       "last_checked_at": "2026-08-30T03:05:09Z",
       "next_review_due": "2026-09-05",
+      "source_available": true
+    },
+    {
+      "id": "technocore-rooms-cache-commit",
+      "url": "https://github.com/flop-labs/technocore-chat/commit/075f2e0ded2daca7c8cda7c82ed938a6f379fb9d",
+      "control": "official",
+      "publishes": [
+        "source-only room-list cache reliability change"
+      ],
+      "last_checked_at": "2026-08-30T09:08:09Z",
+      "next_review_due": "2026-09-06",
       "source_available": true
     }
   ]

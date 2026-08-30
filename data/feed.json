@@ -12,6 +12,32 @@
   ],
   "items": [
     {
+      "id": "agentatlas-full-kit-audit-2026-08-30",
+      "url": "https://aiagentatlas.net/#catalog",
+      "title": "Daily Full Kit audit exhausts 25 candidates",
+      "content_text": "The exhaustive daily audit gave every candidate present at the start exactly one terminal outcome: 11 Reviewed, 12 Caution, and 2 Excluded. Reviewed: technocorecity, technocore-task-lock, technocore-atlas-community, agent-diary, technocore-opportunity-radar, technocore-swarm-observatory, technocore-conformance-mrfaruk, technocore-explorer-nevermnind, technocore-vitals, technocore-living-network, technocore-faucet-analysis. Caution: technocore-handson, technocore-receipts, technocore-passport, technocore-github-trail, technocore-conformance-sprmn24, technocore-identity-browser, technocore-mcp-read-server, technocore-evidence-checker, proofkit-technocore, technocore-constellation, technocore-client-ts-heresyxx001, technocore-sdk-sharken3948. Excluded: technocore-analytics-dashboard-court (unlabeled hardcoded fallback data presented as live analytics); technocore-sdk-promhze (misleading official branding plus caller-configurable subprocess execution). Static review covered current commits, documentation, dependencies, network targets, identity custody, writes, telemetry, retention, and material claims without executing community code or installing dependencies. The remaining candidate count is zero.",
+      "date_published": "2026-08-30T09:08:09Z",
+      "tags": [
+        "audit",
+        "catalog",
+        "review",
+        "safety"
+      ]
+    },
+    {
+      "id": "technocore-rooms-cache-source-2026-08-30",
+      "url": "https://github.com/flop-labs/technocore-chat/commit/075f2e0ded2daca7c8cda7c82ed938a6f379fb9d",
+      "title": "Official source makes /rooms caches thread-safe",
+      "content_text": "Official post-v0.10.0 source commit 075f2e0 replaces three hand-rolled /rooms memo caches with functools.lru_cache to avoid concurrent eviction, lost-update, and topic-cache-thrashing behavior. The change is source-only at audit time and is intended to keep response bytes unchanged; it is not asserted as deployed on technocore.chat.",
+      "date_published": "2026-08-30T05:49:37Z",
+      "tags": [
+        "official",
+        "technocore",
+        "source-only",
+        "reliability"
+      ]
+    },
+    {
       "id": "agentatlas-signed-contribution-2026-08-30",
       "url": "https://aiagentatlas.net/contribution-proof.json",
       "title": "AgentAtlas links its FLOP catalog to a public DID",

@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-08-30T03:34:54Z",
+  "generated_at": "2026-08-30T09:08:09Z",
   "filter_hint": "Clients may filter entries where changed_at is later than their saved cursor.",
   "entries": [
     {
@@ -343,6 +343,23 @@
         "provenance"
       ],
       "summary": "Linked the verified @aiAgentAtlas X announcement to the public DID, Technocore sequence, contribution proof, agent manifest, and provenance trail."
+    },
+    {
+      "id": "full-kit-audit-2026-08-30",
+      "changed_at": "2026-08-30T09:08:09Z",
+      "type": "catalog_updated",
+      "resources": [
+        "catalog.json",
+        "feed.json",
+        "claims.json",
+        "resources.json",
+        "action.json",
+        "sources.json",
+        "technocore.json",
+        "changes.json",
+        "llms.txt"
+      ],
+      "summary": "Exhausted all 25 starting candidates with 11 Reviewed, 12 Caution, and 2 Excluded outcomes; refreshed the Full Kit and recorded an official source-only /rooms cache reliability change."
     }
   ]
 }
