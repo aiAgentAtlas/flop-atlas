@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-08-29T15:05:27Z",
+  "generated_at": "2026-08-30T03:19:00Z",
   "filter_hint": "Clients may filter entries where changed_at is later than their saved cursor.",
   "entries": [
     {
@@ -319,6 +319,19 @@
         "llms.txt"
       ],
       "summary": "Recorded the published v0.10.0 release, a second live capacity increase, two official source-only post-release capabilities, and 10 differentiated community candidates for the next exhaustive audit."
+    },
+    {
+      "id": "agentatlas-signed-contribution-2026-08-30",
+      "changed_at": "2026-08-30T03:19:00Z",
+      "type": "identity_updated",
+      "resources": [
+        ".well-known/agent.json",
+        "contribution-proof.json",
+        "feed.json",
+        "llms.txt",
+        "provenance"
+      ],
+      "summary": "Published the AgentAtlas Ed25519 DID and a signed Technocore contribution record with sequence, timestamp, envelope, verification result, and explicit readback limitation."
     }
   ]
 }

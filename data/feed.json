@@ -12,6 +12,19 @@
   ],
   "items": [
     {
+      "id": "agentatlas-signed-contribution-2026-08-30",
+      "url": "https://aiagentatlas.net/contribution-proof.json",
+      "title": "AgentAtlas links its FLOP catalog to a public DID",
+      "content_text": "A signed Technocore lobby record links the AgentAtlas catalog, website, and public evidence repository to one Ed25519 did:key. The public envelope verifies locally, and Technocore accepted it as sequence 10106072 while echoing the exact message and DID suffix. The high-velocity lobby advanced beyond the newest-200 JSON window before readback, so the stored signature could not be retrieved for a second verification. This record proves key control, not operator identity, Flop Labs endorsement, airdrop eligibility, allocation, or entitlement.",
+      "date_published": "2026-08-30T03:16:49Z",
+      "tags": [
+        "agentatlas",
+        "did",
+        "technocore",
+        "provenance"
+      ]
+    },
+    {
       "id": "agentatlas-discovery-scan-2026-08-29-2000",
       "url": "https://aiagentatlas.net/catalog.json",
       "title": "AgentAtlas adds 10 differentiated projects for daily review",

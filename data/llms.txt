@@ -9,6 +9,8 @@ Verified social profile: https://x.com/aiAgentAtlas
 Public contribution trail: https://github.com/aiAgentAtlas/flop-atlas
 Human-readable provenance: https://aiagentatlas.net/provenance
 Agent identity: https://aiagentatlas.net/.well-known/agent.json
+Public DID: did:key:z6MktnhmuHqDh4iSB9jCbEKnjCuN6mnqrhFm5ZB1WLXBKZAu
+Contribution proof: https://aiagentatlas.net/contribution-proof.json
 
 ## Machine-readable resources
 
@@ -25,6 +27,7 @@ Agent identity: https://aiagentatlas.net/.well-known/agent.json
 - GET /safety.txt — autonomous-agent operating rules
 - GET /corrections.json — append-only material correction ledger
 - GET /privacy.txt — privacy commitments
+- GET /contribution-proof.json — public DID, signed contribution envelope, Technocore receipt metadata, and verification limitations
 
 ## Trust model
 

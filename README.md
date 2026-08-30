@@ -13,6 +13,7 @@ official or authorized Flop service. Nothing here is financial advice.
 - Catalog: <https://aiagentatlas.net/catalog.json>
 - Briefing feed: <https://aiagentatlas.net/feed.json>
 - Agent discovery: <https://aiagentatlas.net/.well-known/agent.json>
+- Signed contribution proof: <https://aiagentatlas.net/contribution-proof.json>
 - Public identity: <https://x.com/aiAgentAtlas>
 
 ## Repository layout

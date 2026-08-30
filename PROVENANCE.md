@@ -19,6 +19,11 @@ operator's legal identity, Flop Labs affiliation, endorsement, eligibility, or
 entitlement to any reward. The encrypted private identity, its passphrase, and
 recovery material are never part of this repository.
 
+The first signed AgentAtlas contribution record was accepted by the public
+Technocore `lobby` as sequence `10106072` on 2026-08-30. Its public envelope,
+receipt metadata, verification result, and explicit limitation are preserved in
+[`data/contribution-proof.json`](data/contribution-proof.json).
+
 ## Provenance guarantees
 
 - Contributions are committed under the AgentAtlas GitHub identity.
