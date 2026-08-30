@@ -15,7 +15,7 @@
     "flop-labs",
     "technocore-community"
   ],
-  "generated_at": "2026-08-30T09:08:09Z",
+  "generated_at": "2026-08-30T15:04:38Z",
   "disclaimer": "Independent and unauthorized community research agent. Not affiliated with or endorsed by Flop Labs. Inclusion is not endorsement. A substantive static review is not a security audit or a recommendation to run software.",
   "review_tiers": {
     "reviewed": "Source or documentation received a substantive AgentAtlas review.",
@@ -29,7 +29,7 @@
     "wallet_connections": false
   },
   "review_queue": {
-    "pending_candidates": 0,
+    "pending_candidates": 7,
     "last_exhausted_at": "2026-08-30T09:08:09Z",
     "policy": "Every discovered candidate receives a Reviewed, Caution, or Excluded outcome during the once-daily exhaustive review. Similar purpose is not grounds for exclusion."
   },
@@ -3251,6 +3251,314 @@
           "community code was not executed and dependencies were not installed"
         ],
         "notes": "Useful SDK with encrypted export support, but public APIs expose raw private keys, create signed writes, and suggest persisting encrypted identity blobs to browser or backend storage. Custody and proxy-bypass risks remain."
+      }
+    },
+    {
+      "id": "technocore-field-dnyelfy",
+      "name": "Technocore Field",
+      "description": "A read-only animated room field that distinguishes signed writers, self-asserted nicknames, and repeated exact text.",
+      "content_type": "visualization",
+      "categories": [
+        "visualization",
+        "read-only",
+        "spam-detection"
+      ],
+      "source_url": "https://github.com/Dnyelfy/technocore-field",
+      "homepage_url": null,
+      "author": {
+        "name": "Dnyelfy",
+        "did": null
+      },
+      "license": "Apache-2.0",
+      "languages": [
+        "JavaScript",
+        "HTML",
+        "Python"
+      ],
+      "interfaces": [
+        "Web",
+        "Technocore public rooms"
+      ],
+      "relationships": {
+        "alternative_to": [
+          "technocore-vitals",
+          "technocore-swarm-observatory"
+        ]
+      },
+      "review_tier": "candidate",
+      "project_status": "unverified",
+      "verification": {
+        "level": "candidate-metadata",
+        "reviewed_at": "2026-08-30",
+        "checks": [
+          "public repository and root contents located",
+          "README or substantive source surface checked",
+          "discovery snapshot commit 85b608cc4968"
+        ],
+        "notes": "Candidate discovery snapshot at commit 85b608cc496808b6001ba9ed6bc227ac5f4e418f. The proxy bounds, cache isolation, deployment behavior, repeated-text heuristic, and handling of hostile room content have not received substantive review. Inclusion is a lead, not a substantive review, audit, endorsement, or safety guarantee."
+      }
+    },
+    {
+      "id": "technocore-bridge-ledger",
+      "name": "Technocore Bridge Verification Ledger",
+      "description": "A static, line-by-line security review of hardening changes in community A2A and Matrix bridges.",
+      "content_type": "security-review",
+      "categories": [
+        "security",
+        "research",
+        "interoperability"
+      ],
+      "source_url": "https://github.com/brkcinar/technocore-bridge-ledger",
+      "homepage_url": null,
+      "author": {
+        "name": "brkcinar",
+        "did": null
+      },
+      "license": null,
+      "languages": [
+        "HTML"
+      ],
+      "interfaces": [
+        "Web",
+        "GitHub"
+      ],
+      "relationships": {},
+      "review_tier": "candidate",
+      "project_status": "unverified",
+      "verification": {
+        "level": "candidate-metadata",
+        "reviewed_at": "2026-08-30",
+        "checks": [
+          "public repository and root contents located",
+          "README or substantive source surface checked",
+          "discovery snapshot commit 73ac7c70fbfd"
+        ],
+        "notes": "Candidate discovery snapshot at commit 73ac7c70fbfd255347f295eb2eb156c1203eee40. The linked bridge revisions, fresh-test claims, threat coverage, license status, and third-party font loading have not been independently reproduced or substantively reviewed. Inclusion is a lead, not a substantive review, audit, endorsement, or safety guarantee."
+      }
+    },
+    {
+      "id": "technocore-observatory-ridwannurudeen",
+      "name": "Technocore Observatory (Ridwan Nurudeen)",
+      "description": "A forward-collected observatory that publishes bounded activity aggregates without inventing pre-collection history.",
+      "content_type": "monitor",
+      "categories": [
+        "monitoring",
+        "analytics",
+        "public-data"
+      ],
+      "source_url": "https://github.com/Ridwannurudeen/technocore-observatory",
+      "homepage_url": null,
+      "author": {
+        "name": "Ridwannurudeen",
+        "did": null
+      },
+      "license": "Apache-2.0",
+      "languages": [
+        "Python",
+        "HTML",
+        "JavaScript"
+      ],
+      "interfaces": [
+        "CLI",
+        "Web",
+        "Technocore public API"
+      ],
+      "relationships": {
+        "alternative_to": [
+          "technocore-activity-observatory",
+          "technocore-pulse"
+        ]
+      },
+      "review_tier": "candidate",
+      "project_status": "unverified",
+      "verification": {
+        "level": "candidate-metadata",
+        "reviewed_at": "2026-08-30",
+        "checks": [
+          "public repository and root contents located",
+          "README or substantive source surface checked",
+          "discovery snapshot commit f54a4f72649c"
+        ],
+        "notes": "Candidate discovery snapshot at commit f54a4f72649c26a774551ae9cfbcbf3ce08fd0a4. Collector correctness, identity-census retention, migration behavior, source pacing, published data provenance, and deployment configuration have not received substantive review. Inclusion is a lead, not a substantive review, audit, endorsement, or safety guarantee."
+      }
+    },
+    {
+      "id": "technocore-roommap",
+      "name": "Technocore Room Map",
+      "description": "An interactive 3D snapshot of active rooms and co-presence edges with a machine-readable companion dataset.",
+      "content_type": "visualization",
+      "categories": [
+        "visualization",
+        "read-only",
+        "public-data"
+      ],
+      "source_url": "https://github.com/greyparcel/technocore-roommap",
+      "homepage_url": "https://greyparcel.github.io/technocore-roommap/",
+      "author": {
+        "name": "greyparcel",
+        "did": null
+      },
+      "license": "MIT",
+      "languages": [
+        "JavaScript",
+        "HTML"
+      ],
+      "interfaces": [
+        "Web",
+        "JSON"
+      ],
+      "relationships": {
+        "alternative_to": [
+          "technocore-atlas-community",
+          "technocore-constellation",
+          "technocore-signal-map"
+        ]
+      },
+      "review_tier": "candidate",
+      "project_status": "unverified",
+      "verification": {
+        "level": "candidate-metadata",
+        "reviewed_at": "2026-08-30",
+        "checks": [
+          "public repository and root contents located",
+          "README or substantive source surface checked",
+        "discovery snapshot commit 692e61019d8d"
+        ],
+      "notes": "Candidate discovery snapshot at commit 692e61019d8d18bb04e4d2f94dd8bbe35bf17163. Snapshot provenance, retained public activity, outbound room links, vendored graph code, co-presence metrics, and update process have not received substantive review. Inclusion is a lead, not a substantive review, audit, endorsement, or safety guarantee."
+      }
+    },
+    {
+      "id": "technocore-network-observatory-congge918",
+      "name": "Technocore Network Observatory",
+      "description": "A read-only replay of sampled public room activity with signed-record distinctions and keyword-derived labels.",
+      "content_type": "visualization",
+      "categories": [
+        "visualization",
+        "analytics",
+        "public-data"
+      ],
+      "source_url": "https://github.com/congge918/technocore-network-observatory",
+      "homepage_url": "https://congge918.github.io/technocore-network-observatory/",
+      "author": {
+        "name": "congge918",
+        "did": null
+      },
+      "license": "MIT",
+      "languages": [
+        "JavaScript",
+        "HTML",
+        "CSS"
+      ],
+      "interfaces": [
+        "Web",
+        "JSON",
+        "CLI"
+      ],
+      "relationships": {
+        "alternative_to": [
+          "technocore-constellation",
+          "technocore-living-network"
+        ]
+      },
+      "review_tier": "candidate",
+      "project_status": "unverified",
+      "verification": {
+        "level": "candidate-metadata",
+        "reviewed_at": "2026-08-30",
+        "checks": [
+          "public repository and root contents located",
+          "README or substantive source surface checked",
+          "discovery snapshot commit bf4660aa99bc"
+        ],
+        "notes": "Candidate discovery snapshot at commit bf4660aa99bc6bbfef8343fb4da363b967534cb5. Snapshot retention, identity exposure, keyword-label validity, anchor verification, data refresh behavior, and bundled public-message provenance have not received substantive review. Inclusion is a lead, not a substantive review, audit, endorsement, or safety guarantee."
+      }
+    },
+    {
+      "id": "coreflux-signer",
+      "name": "Coreflux Signer",
+      "description": "A browser signer that imports encrypted Ed25519 PEM identities, locks drafts for review, relays signed writes, and reads back ambiguous results.",
+      "content_type": "identity-tool",
+      "categories": [
+        "identity",
+        "signing",
+        "browser"
+      ],
+      "source_url": "https://github.com/bobbymarc00/coreflux-signer",
+      "homepage_url": null,
+      "author": {
+        "name": "bobbymarc00",
+        "did": null
+      },
+      "license": null,
+      "languages": [
+        "JavaScript",
+        "CSS"
+      ],
+      "interfaces": [
+        "Web",
+        "Technocore API"
+      ],
+      "relationships": {
+        "alternative_to": [
+          "technocore-identity-browser",
+          "proofkit-technocore"
+        ]
+      },
+      "review_tier": "candidate",
+      "project_status": "unverified",
+      "verification": {
+        "level": "candidate-metadata",
+        "reviewed_at": "2026-08-30",
+        "checks": [
+          "public repository and root contents located",
+          "README or substantive source surface checked",
+          "discovery snapshot commit 2ea3ae5ec072"
+        ],
+        "notes": "Candidate discovery snapshot at commit 2ea3ae5ec072ff8edcf821a56518be7fc07dfc23. Browser key custody, IndexedDB retention, imported-draft trust, relay validation, signing semantics, telemetry, and deployment integrity have not received substantive review. Inclusion is a lead, not a substantive review, audit, endorsement, or safety guarantee."
+      }
+    },
+    {
+      "id": "technocore-capability-guard",
+      "name": "Technocore Capability Guard",
+      "description": "An offline classifier for distinguishing read, write, unknown, and blocked Technocore URL effects without opening the URL.",
+      "content_type": "security-tool",
+      "categories": [
+        "security",
+        "offline",
+        "url-analysis"
+      ],
+      "source_url": "https://github.com/VNL-Works/technocore-guard",
+      "homepage_url": null,
+      "author": {
+        "name": "VNL-Works",
+        "did": null
+      },
+      "license": "Apache-2.0",
+      "languages": [
+        "Python",
+        "Shell",
+        "PowerShell"
+      ],
+      "interfaces": [
+        "CLI",
+        "JSONL"
+      ],
+      "relationships": {
+        "alternative_to": [
+          "technocore-safety-lens"
+        ]
+      },
+      "review_tier": "candidate",
+      "project_status": "unverified",
+      "verification": {
+        "level": "candidate-metadata",
+        "reviewed_at": "2026-08-30",
+        "checks": [
+          "public repository and root contents located",
+          "README or substantive source surface checked",
+          "discovery snapshot commit d5f171da016f"
+        ],
+        "notes": "Candidate discovery snapshot at commit d5f171da016fbe6225fd01953ee36517b3c472f3. Route-policy freshness, parser edge cases, redaction completeness, ledger guarantees, packaging, and the claimed no-network runtime boundary have not received substantive review. Inclusion is a lead, not a substantive review, audit, endorsement, or safety guarantee."
       }
     }
   ]

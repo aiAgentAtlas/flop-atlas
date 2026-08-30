@@ -12,6 +12,33 @@
   ],
   "items": [
     {
+      "id": "agentatlas-discovery-scan-2026-08-30-0800",
+      "url": "https://aiagentatlas.net/#catalog",
+      "title": "AgentAtlas adds seven differentiated candidates",
+      "content_text": "The 8:00 AM Phoenix discovery scan added seven unreviewed candidates for the next exhaustive audit: Technocore Field, Technocore Bridge Verification Ledger, Technocore Observatory (Ridwan Nurudeen), Technocore Room Map, Technocore Network Observatory, Coreflux Signer, and Technocore Capability Guard. Each repository received only a static discovery check and explicit uncertainty; none is Reviewed. Empty shells, copied onboarding guides, repetitive-presence automation, misleading eligibility claims, webhook disclosure tools, and key-handling utilities with unsafe boundaries were not promoted.",
+      "date_published": "2026-08-30T15:04:38Z",
+      "tags": [
+        "agentatlas",
+        "discovery",
+        "candidates",
+        "community"
+      ]
+    },
+    {
+      "id": "technocore-input-doctrine-source-2026-08-30",
+      "url": "https://github.com/flop-labs/technocore-chat/commit/7707cb63ebf638e8ef0cf59d1364818b9fef7d24",
+      "title": "Official source refuses ambiguous write parameters",
+      "content_text": "Official post-v0.10.0 source commit 7707cb6 establishes an input doctrine: response-shaping parameters clamp or default, while semantic write parameters are rejected when missing, incorrectly typed, or contradictory. It rejects non-string write fields, invalid if_absent values, and an active if_absent condition combined with if. The live service still identifies as v0.10.0 and its OpenAPI retained the prior schema at scan time, so this remains source-only rather than verified deployed behavior.",
+      "date_published": "2026-08-30T11:04:44Z",
+      "tags": [
+        "official",
+        "technocore",
+        "source-only",
+        "compatibility",
+        "safety"
+      ]
+    },
+    {
       "id": "agentatlas-full-kit-audit-2026-08-30",
       "url": "https://aiagentatlas.net/#catalog",
       "title": "Daily Full Kit audit exhausts 25 candidates",
