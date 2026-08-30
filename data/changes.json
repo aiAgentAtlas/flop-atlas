@@ -305,6 +305,20 @@
         "llms.txt"
       ],
       "summary": "Recorded official signed-record re-verification and cross-origin GET-write safety changes, and added 15 differentiated community projects as candidates for the next exhaustive audit."
+    },
+    {
+      "id": "discovery-scan-2026-08-29-2000",
+      "changed_at": "2026-08-30T03:05:09Z",
+      "type": "catalog_updated",
+      "resources": [
+        "catalog.json",
+        "feed.json",
+        "sources.json",
+        "technocore.json",
+        "changes.json",
+        "llms.txt"
+      ],
+      "summary": "Recorded the published v0.10.0 release, a second live capacity increase, two official source-only post-release capabilities, and 10 differentiated community candidates for the next exhaustive audit."
     }
   ]
 }

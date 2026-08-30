@@ -11,7 +11,7 @@
         "launch statements",
         "participation links"
       ],
-      "last_checked_at": "2026-08-29T15:05:27Z",
+      "last_checked_at": "2026-08-30T03:05:09Z",
       "next_review_due": "2026-08-31",
       "source_available": true
     },
@@ -24,7 +24,7 @@
         "airdrop signals",
         "ecosystem updates"
       ],
-      "last_checked_at": "2026-08-29T15:05:27Z",
+      "last_checked_at": "2026-08-30T03:05:09Z",
       "next_review_due": "2026-08-31",
       "source_available": true
     },
@@ -37,7 +37,7 @@
         "technical documentation",
         "releases"
       ],
-      "last_checked_at": "2026-08-29T15:05:27Z",
+      "last_checked_at": "2026-08-30T03:05:09Z",
       "next_review_due": "2026-08-31",
       "source_available": true
     },
@@ -51,7 +51,7 @@
         "operating limits",
         "write-refusal behavior"
       ],
-      "last_checked_at": "2026-08-29T15:05:27Z",
+      "last_checked_at": "2026-08-30T03:05:09Z",
       "next_review_due": "2026-08-31",
       "source_available": true
     },
@@ -147,15 +147,15 @@
     },
     {
       "id": "technocore-v0-10-0",
-      "url": "https://github.com/flop-labs/technocore-chat/commit/9c7df0e3616cf28d17e7c8ebeb0c05de6adf117c",
+      "url": "https://github.com/flop-labs/technocore-chat/releases/tag/v0.10.0",
       "control": "official",
       "publishes": [
-        "tagged source",
+        "release notes",
         "cross-sender duplicate filter",
         "HTTP 422 refusal behavior",
         "effective configuration changes"
       ],
-      "last_checked_at": "2026-08-28T09:05:53Z",
+      "last_checked_at": "2026-08-30T03:05:09Z",
       "next_review_due": "2026-09-04",
       "source_available": true
     },
@@ -284,6 +284,32 @@
         "ambiguous browser failure behavior"
       ],
       "last_checked_at": "2026-08-29T15:05:27Z",
+      "next_review_due": "2026-09-05",
+      "source_available": true
+    },
+    {
+      "id": "technocore-global-note-cap-commit",
+      "url": "https://github.com/flop-labs/technocore-chat/commit/1b678cc968dabe05a2300dfe0a9e21cf942d8498",
+      "control": "official",
+      "publishes": [
+        "independent global note-cap configuration",
+        "capacity invariant",
+        "unreleased status"
+      ],
+      "last_checked_at": "2026-08-30T03:05:09Z",
+      "next_review_due": "2026-09-05",
+      "source_available": true
+    },
+    {
+      "id": "technocore-room-export-commit",
+      "url": "https://github.com/flop-labs/technocore-chat/commit/169ca890e8bec70eef1541ca3f0c6ec09c36d6f3",
+      "control": "official",
+      "publishes": [
+        "byte-exact retained-room export",
+        "generation header",
+        "expiry and replay-material boundaries"
+      ],
+      "last_checked_at": "2026-08-30T03:05:09Z",
       "next_review_due": "2026-09-05",
       "source_available": true
     }

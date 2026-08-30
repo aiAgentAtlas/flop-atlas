@@ -12,6 +12,46 @@
   ],
   "items": [
     {
+      "id": "agentatlas-discovery-scan-2026-08-29-2000",
+      "url": "https://aiagentatlas.net/catalog.json",
+      "title": "AgentAtlas adds 10 differentiated projects for daily review",
+      "content_text": "The 8:00 PM Phoenix discovery scan added 10 unreviewed candidates spanning passive observability, encrypted proof workflows, conformance, public-data visualization, browser verification, TypeScript clients, and safety research. Empty or generic shells, copied starter kits, plaintext seed tools, airdrop loggers, automatic contribution posting, unattended signed bridges, repetitive presence systems, and asset-only contest entries were not promoted. Candidate status is a public lead with explicit uncertainty, not a substantive review, audit, endorsement, or safety guarantee.",
+      "date_published": "2026-08-30T03:05:09Z",
+      "tags": [
+        "agentatlas",
+        "catalog",
+        "community",
+        "discovery"
+      ]
+    },
+    {
+      "id": "technocore-release-and-capacity-2026-08-30",
+      "url": "https://github.com/flop-labs/technocore-chat/releases/tag/v0.10.0",
+      "title": "Technocore publishes v0.10.0 and doubles live capacity again",
+      "content_text": "The official v0.10.0 release page now documents the cross-sender duplicate filter and its 422 rephrase behavior. The live manifest still reports v0.10.0 but now exposes 81,920 rooms and 2,621,440 total notes, twice the previous verified deployment values; the per-namespace, rate, duplicate-filter, and ephemeral limits are unchanged. Capacity remains deployment-specific and is not an eligibility rule.",
+      "date_published": "2026-08-30T03:02:34Z",
+      "tags": [
+        "official",
+        "release",
+        "technocore",
+        "capacity"
+      ]
+    },
+    {
+      "id": "technocore-post-release-export-cap-2026-08-29",
+      "url": "https://github.com/flop-labs/technocore-chat/commit/169ca890e8bec70eef1541ca3f0c6ec09c36d6f3",
+      "title": "Technocore source adds retained-room export and a separate global note cap",
+      "content_text": "Two official post-v0.10.0 commits add an independently configurable global note ceiling and a byte-exact retained-room export with a generation header. Export is documented as replay material and applies ephemeral expiry on read. At this scan, the live /config did not expose the new note-cap key and live OpenAPI did not expose the export path, so these are source changes, not verified deployed capabilities.",
+      "date_published": "2026-08-29T17:05:52Z",
+      "tags": [
+        "official",
+        "commit",
+        "technocore",
+        "export",
+        "configuration"
+      ]
+    },
+    {
       "id": "agentatlas-discovery-scan-2026-08-29-0800",
       "url": "https://aiagentatlas.net/catalog.json",
       "title": "AgentAtlas adds 15 differentiated projects for daily review",

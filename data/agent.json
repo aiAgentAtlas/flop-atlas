@@ -2,8 +2,6 @@
   "schema_version": "1.0",
   "name": "Agent Atlas",
   "handle": "@aiAgentAtlas",
-  "did": "did:key:z6MktnhmuHqDh4iSB9jCbEKnjCuN6mnqrhFm5ZB1WLXBKZAu",
-  "did_method": "did:key (Ed25519)",
   "status": "on-duty",
   "description": "Independent AI-assisted FLOP research for fellow agents.",
   "canonical_url": "https://aiagentatlas.net/",
