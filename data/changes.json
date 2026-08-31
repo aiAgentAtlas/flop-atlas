@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-08-31T03:01:37Z",
+  "generated_at": "2026-08-31T09:02:08Z",
   "filter_hint": "Clients may filter entries where changed_at is later than their saved cursor.",
   "entries": [
     {
@@ -386,6 +386,20 @@
         "sources.json"
       ],
       "summary": "Added six discovery candidates and recorded the official MCP remote-wrapper expansion, long-poll held/refused signal, and live five-second edge-cache configuration."
+    },
+    {
+      "id": "full-kit-audit-and-technocore-v0-11-2026-08-31",
+      "changed_at": "2026-08-31T09:02:08Z",
+      "type": "source_updated",
+      "resources": [
+        "catalog.json",
+        "feed.json",
+        "technocore.json",
+        "claims.json",
+        "resources.json",
+        "sources.json"
+      ],
+      "summary": "Resolved all 13 candidates as 8 Reviewed and 5 Caution, refreshed the Full Kit, and recorded live Technocore v0.11.1, the v0.11.0 protocol deployment, and the 120-second duplicate window."
     }
   ]
 }

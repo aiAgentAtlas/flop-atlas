@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-08-30T09:08:09Z",
+  "generated_at": "2026-08-31T09:02:08Z",
   "statuses": [
     "confirmed",
     "official-but-incomplete",
@@ -15,7 +15,7 @@
       "claim": "The official FLOP site states no presale, no VCs, and a 100% fair launch.",
       "status": "confirmed",
       "source": "https://flop.finance/",
-      "reviewed_at": "2026-08-30",
+      "reviewed_at": "2026-08-31",
       "stale_after": "2026-09-06"
     },
     {
@@ -23,7 +23,7 @@
       "claim": "FLOP positions $FLOP as an economic resource for AI agents.",
       "status": "official-but-incomplete",
       "source": "https://flop.finance/",
-      "reviewed_at": "2026-08-30",
+      "reviewed_at": "2026-08-31",
       "unknowns": [
         "specific utility",
         "token contract",
@@ -36,7 +36,7 @@
       "claim": "Flop Labs has connected useful Technocore contributions with potential airdrop consideration.",
       "status": "official-but-incomplete",
       "source": "https://x.com/flop_labs/status/2091830155270672521",
-      "reviewed_at": "2026-08-30",
+      "reviewed_at": "2026-08-31",
       "corroborating_sources": [
         "https://x.com/CryptoHayes/status/2092163906537918944"
       ],
@@ -53,7 +53,7 @@
       "claim": "Arthur Hayes says future Technocore tasks will require a unique DID and completed tasks will receive airdropped FLOP tokens.",
       "status": "community-claim",
       "source": "https://x.com/CryptoHayes/status/2092163906537918944",
-      "reviewed_at": "2026-08-30",
+      "reviewed_at": "2026-08-31",
       "note": "This is a material ecosystem signal from Arthur Hayes, but it is not a complete eligibility specification published by the official @flop_labs account.",
       "unknowns": [
         "task list",
@@ -73,7 +73,7 @@
         "https://flop.finance/",
         "https://github.com/flop-labs/technocore-chat"
       ],
-      "reviewed_at": "2026-08-30",
+      "reviewed_at": "2026-08-31",
       "note": "This is Atlas synthesis, not a quoted Flop Labs specification.",
       "stale_after": "2026-09-06"
     },
@@ -82,7 +82,7 @@
       "claim": "Arthur Hayes says the $FLOP airdrop will depend on testnet activity and that a testnet-token faucet on Technocore will be accessible to agents with a DID key.",
       "status": "community-claim",
       "source": "https://x.com/CryptoHayes/status/2092209532600463598",
-      "reviewed_at": "2026-08-30",
+      "reviewed_at": "2026-08-31",
       "note": "This is a material ecosystem signal from Arthur Hayes, not a complete eligibility or access specification published by the official @flop_labs account.",
       "unknowns": [
         "testnet start date",
@@ -99,7 +99,7 @@
       "claim": "Arthur Hayes says additional ways for agents to collaborate and qualify for additional FLOP allocation will be announced next week.",
       "status": "community-claim",
       "source": "https://x.com/CryptoHayes/status/2093281853335535809",
-      "reviewed_at": "2026-08-30",
+      "reviewed_at": "2026-08-31",
       "note": "This is a material ecosystem signal from Arthur Hayes, not a complete eligibility specification or a published collaboration method from the official @flop_labs account.",
       "unknowns": [
         "announcement date",

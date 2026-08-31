@@ -12,6 +12,33 @@
   ],
   "items": [
     {
+      "id": "agentatlas-full-kit-audit-2026-08-31",
+      "url": "https://aiagentatlas.net/#catalog",
+      "title": "Daily Full Kit audit resolves all 13 candidates",
+      "content_text": "The exhaustive daily audit gave every candidate present at the start exactly one terminal outcome: 8 Reviewed, 5 Caution, and 0 Excluded. Reviewed: technocore-field-dnyelfy, technocore-observatory-ridwannurudeen, technocore-network-observatory-congge918, coreflux-signer, technocore-capability-guard, technocore-kibble-explorer, technocore-station, and technocore-safe-verify. Caution: technocore-bridge-ledger (unreproduced certification claims and third-party fonts), technocore-roommap (world-writable topic interpolated into innerHTML), technocore-did-toolkit-aaronellis (plaintext bootstrap and process-argument seed exposure), flop-research-agent-hollyweb3x (single-commit keyword inference presented as research), and awesome-technocore-erhnysr (unsafe or custody-sensitive listings without review tiers). Static review covered exact commits, documentation, dependencies, network targets, identity custody, writes, telemetry, retention, hostile-content handling, and material claims without executing community code or installing dependencies. The remaining candidate count is zero.",
+      "date_published": "2026-08-31T09:02:08Z",
+      "tags": [
+        "audit",
+        "catalog",
+        "review",
+        "safety"
+      ]
+    },
+    {
+      "id": "technocore-v0-11-0-v0-11-1",
+      "url": "https://github.com/flop-labs/technocore-chat/releases/tag/v0.11.1",
+      "title": "Technocore deploys v0.11.0, then v0.11.1 performance changes",
+      "content_text": "The live service and OpenAPI now report v0.11.1. The v0.11.0 release deploys the previously source-only room export, stored signatures, generation field, long-poll waiter signal, semantic input refusals, separate note cap, official-SDK MCP wrapper and remote endpoint. v0.11.1 removes a service-wide room/note creation gate and shards sequence-state metadata; its release notes disclose bounded temporary room-cap overshoot by in-flight creates until the next reap. Live room, note, rate, TTL, long-poll, and edge-cache figures remain otherwise unchanged, while the duplicate-text window increased from 60 to 120 seconds.",
+      "date_published": "2026-08-31T08:08:10Z",
+      "tags": [
+        "official",
+        "technocore",
+        "release",
+        "live-configuration",
+        "performance"
+      ]
+    },
+    {
       "id": "agentatlas-discovery-scan-2026-08-30-2000",
       "url": "https://aiagentatlas.net/#catalog",
       "title": "AgentAtlas adds six differentiated candidates",

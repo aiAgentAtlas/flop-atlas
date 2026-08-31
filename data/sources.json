@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-08-31T03:01:37Z",
+  "generated_at": "2026-08-31T09:02:08Z",
   "sources": [
     {
       "id": "flop-website",
@@ -11,8 +11,8 @@
         "launch statements",
         "participation links"
       ],
-      "last_checked_at": "2026-08-30T15:04:38Z",
-      "next_review_due": "2026-08-31",
+      "last_checked_at": "2026-08-31T09:02:08Z",
+      "next_review_due": "2026-09-01",
       "source_available": true
     },
     {
@@ -24,8 +24,8 @@
         "airdrop signals",
         "ecosystem updates"
       ],
-      "last_checked_at": "2026-08-30T15:04:38Z",
-      "next_review_due": "2026-08-31",
+      "last_checked_at": "2026-08-31T09:02:08Z",
+      "next_review_due": "2026-09-01",
       "source_available": true
     },
     {
@@ -37,8 +37,8 @@
         "technical documentation",
         "releases"
       ],
-      "last_checked_at": "2026-08-30T15:04:38Z",
-      "next_review_due": "2026-08-31",
+      "last_checked_at": "2026-08-31T09:02:08Z",
+      "next_review_due": "2026-09-01",
       "source_available": true
     },
     {
@@ -51,8 +51,8 @@
         "operating limits",
         "write-refusal behavior"
       ],
-      "last_checked_at": "2026-08-31T03:01:37Z",
-      "next_review_due": "2026-09-02",
+      "last_checked_at": "2026-08-31T09:02:08Z",
+      "next_review_due": "2026-09-01",
       "source_available": true
     },
     {
@@ -63,8 +63,8 @@
         "DID-gated task statement",
         "airdrop reward statement"
       ],
-      "last_checked_at": "2026-08-28T09:05:53Z",
-      "next_review_due": "2026-08-31",
+      "last_checked_at": "2026-08-31T09:02:08Z",
+      "next_review_due": "2026-09-02",
       "source_available": true
     },
     {
@@ -76,8 +76,8 @@
         "Technocore faucet statement",
         "DID-key access statement"
       ],
-      "last_checked_at": "2026-08-28T09:05:53Z",
-      "next_review_due": "2026-08-31",
+      "last_checked_at": "2026-08-31T09:02:08Z",
+      "next_review_due": "2026-09-02",
       "source_available": true
     },
     {
@@ -167,8 +167,8 @@
         "read-only explorer source",
         "signature inspection implementation"
       ],
-      "last_checked_at": "2026-08-28T09:05:53Z",
-      "next_review_due": "2026-08-31",
+      "last_checked_at": "2026-08-31T09:02:08Z",
+      "next_review_due": "2026-09-02",
       "source_available": true
     },
     {
@@ -179,8 +179,8 @@
         "GET-only client source",
         "local identity handling"
       ],
-      "last_checked_at": "2026-08-28T09:05:53Z",
-      "next_review_due": "2026-08-31",
+      "last_checked_at": "2026-08-31T09:02:08Z",
+      "next_review_due": "2026-09-02",
       "source_available": true
     },
     {
@@ -193,8 +193,8 @@
         "signed note and room publishing",
         "hourly automation"
       ],
-      "last_checked_at": "2026-08-28T09:05:53Z",
-      "next_review_due": "2026-08-31",
+      "last_checked_at": "2026-08-31T09:02:08Z",
+      "next_review_due": "2026-09-02",
       "source_available": true
     },
     {
@@ -205,8 +205,8 @@
         "cross-platform beginner guide",
         "identity safety reminders"
       ],
-      "last_checked_at": "2026-08-28T09:05:53Z",
-      "next_review_due": "2026-08-31",
+      "last_checked_at": "2026-08-31T09:02:08Z",
+      "next_review_due": "2026-09-02",
       "source_available": true
     },
     {
@@ -218,8 +218,8 @@
         "withdrawn beginner execution guide",
         "security review notes"
       ],
-      "last_checked_at": "2026-08-28T09:05:53Z",
-      "next_review_due": "2026-08-31",
+      "last_checked_at": "2026-08-31T09:02:08Z",
+      "next_review_due": "2026-09-02",
       "source_available": true
     },
     {
@@ -231,8 +231,8 @@
         "additional FLOP allocation statement",
         "useful-participation reward intent"
       ],
-      "last_checked_at": "2026-08-28T15:04:44Z",
-      "next_review_due": "2026-08-31",
+      "last_checked_at": "2026-08-31T09:02:08Z",
+      "next_review_due": "2026-09-02",
       "source_available": true
     },
     {
@@ -357,6 +357,30 @@
       ],
       "last_checked_at": "2026-08-31T03:01:37Z",
       "next_review_due": "2026-09-06",
+      "source_available": true
+    },
+    {
+      "id": "technocore-v0-11-0",
+      "url": "https://github.com/flop-labs/technocore-chat/releases/tag/v0.11.0",
+      "control": "official",
+      "publishes": [
+        "v0.11.0 release notes",
+        "deployed protocol and MCP changes"
+      ],
+      "last_checked_at": "2026-08-31T09:02:08Z",
+      "next_review_due": "2026-09-04",
+      "source_available": true
+    },
+    {
+      "id": "technocore-v0-11-1",
+      "url": "https://github.com/flop-labs/technocore-chat/releases/tag/v0.11.1",
+      "control": "official",
+      "publishes": [
+        "v0.11.1 release notes",
+        "creation-path and sequence-state performance changes"
+      ],
+      "last_checked_at": "2026-08-31T09:02:08Z",
+      "next_review_due": "2026-09-04",
       "source_available": true
     }
   ]

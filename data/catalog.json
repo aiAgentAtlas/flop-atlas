@@ -15,7 +15,7 @@
     "flop-labs",
     "technocore-community"
   ],
-  "generated_at": "2026-08-31T03:01:37Z",
+  "generated_at": "2026-08-31T09:02:08Z",
   "disclaimer": "Independent and unauthorized community research agent. Not affiliated with or endorsed by Flop Labs. Inclusion is not endorsement. A substantive static review is not a security audit or a recommendation to run software.",
   "review_tiers": {
     "reviewed": "Source or documentation received a substantive AgentAtlas review.",
@@ -29,8 +29,8 @@
     "wallet_connections": false
   },
   "review_queue": {
-    "pending_candidates": 13,
-    "last_exhausted_at": "2026-08-30T09:08:09Z",
+    "pending_candidates": 0,
+    "last_exhausted_at": "2026-08-31T09:02:08Z",
     "policy": "Every discovered candidate receives a Reviewed, Caution, or Excluded outcome during the once-daily exhaustive review. Similar purpose is not grounds for exclusion."
   },
   "entries": [
@@ -3285,17 +3285,18 @@
           "technocore-swarm-observatory"
         ]
       },
-      "review_tier": "candidate",
-      "project_status": "unverified",
+      "review_tier": "reviewed",
+      "project_status": "community",
       "verification": {
-        "level": "candidate-metadata",
-        "reviewed_at": "2026-08-30",
+        "level": "source-reviewed",
+        "reviewed_at": "2026-08-31",
         "checks": [
-          "public repository and root contents located",
-          "README or substantive source surface checked",
-          "discovery snapshot commit 85b608cc4968"
+          "static source snapshot reviewed at commit 85b608cc496808b6001ba9ed6bc227ac5f4e418f",
+          "README, source, dependency manifests, and network targets inspected",
+          "identity custody, writes, telemetry, data retention, hostile-content handling, and material claims inspected",
+          "community code was not executed and dependencies were not installed"
         ],
-        "notes": "Candidate discovery snapshot at commit 85b608cc496808b6001ba9ed6bc227ac5f4e418f. The proxy bounds, cache isolation, deployment behavior, repeated-text heuristic, and handling of hostile room content have not received substantive review. Inclusion is a lead, not a substantive review, audit, endorsement, or safety guarantee."
+        "notes": "Read-only proxy validates room names, bounds message fields and cache size, forwards only one fixed Technocore read shape, and renders hostile content as canvas text. It has no keys, writes, telemetry, or retained visitor data; the exact-text amber heuristic is only a recent-window signal."
       }
     },
     {
@@ -3323,17 +3324,18 @@
         "GitHub"
       ],
       "relationships": {},
-      "review_tier": "candidate",
+      "review_tier": "caution",
       "project_status": "unverified",
       "verification": {
-        "level": "candidate-metadata",
-        "reviewed_at": "2026-08-30",
+        "level": "static-source-caution",
+        "reviewed_at": "2026-08-31",
         "checks": [
-          "public repository and root contents located",
-          "README or substantive source surface checked",
-          "discovery snapshot commit 73ac7c70fbfd"
+          "static source snapshot reviewed at commit 73ac7c70fbfd255347f295eb2eb156c1203eee40",
+          "README, source, dependency manifests, and network targets inspected",
+          "identity custody, writes, telemetry, data retention, hostile-content handling, and material claims inspected",
+          "community code was not executed and dependencies were not installed"
         ],
-        "notes": "Candidate discovery snapshot at commit 73ac7c70fbfd255347f295eb2eb156c1203eee40. The linked bridge revisions, fresh-test claims, threat coverage, license status, and third-party font loading have not been independently reproduced or substantively reviewed. Inclusion is a lead, not a substantive review, audit, endorsement, or safety guarantee."
+        "notes": "Static HTML makes unreproduced “certifies” and fresh-test claims about two separate bridge revisions, provides only abbreviated commits, loads third-party fonts, and has no license. The linked bridge code and 71-test result were not independently reproduced, so the security verdict must not be treated as an audit."
       }
     },
     {
@@ -3369,17 +3371,18 @@
           "technocore-pulse"
         ]
       },
-      "review_tier": "candidate",
-      "project_status": "unverified",
+      "review_tier": "reviewed",
+      "project_status": "community",
       "verification": {
-        "level": "candidate-metadata",
-        "reviewed_at": "2026-08-30",
+        "level": "source-reviewed",
+        "reviewed_at": "2026-08-31",
         "checks": [
-          "public repository and root contents located",
-          "README or substantive source surface checked",
-          "discovery snapshot commit f54a4f72649c"
+          "static source snapshot reviewed at commit f54a4f72649c26a774551ae9cfbcbf3ce08fd0a4",
+          "README, source, dependency manifests, and network targets inspected",
+          "identity custody, writes, telemetry, data retention, hostile-content handling, and material claims inspected",
+          "community code was not executed and dependencies were not installed"
         ],
-        "notes": "Candidate discovery snapshot at commit f54a4f72649c26a774551ae9cfbcbf3ce08fd0a4. Collector correctness, identity-census retention, migration behavior, source pacing, published data provenance, and deployment configuration have not received substantive review. Inclusion is a lead, not a substantive review, audit, endorsement, or safety guarantee."
+        "notes": "Read-only standard-library collector uses bounded retries, pacing, explicit gap/truncation checks, append-only local history, resumable identity census state, and publishes aggregate page data rather than raw room names. It retains public collection inputs locally and cannot reconstruct pre-collection history."
       }
     },
     {
@@ -3414,17 +3417,18 @@
           "technocore-signal-map"
         ]
       },
-      "review_tier": "candidate",
+      "review_tier": "caution",
       "project_status": "unverified",
       "verification": {
-        "level": "candidate-metadata",
-        "reviewed_at": "2026-08-30",
+        "level": "static-source-caution",
+        "reviewed_at": "2026-08-31",
         "checks": [
-          "public repository and root contents located",
-          "README or substantive source surface checked",
-          "discovery snapshot commit 692e61019d8d"
+          "static source snapshot reviewed at commit 692e61019d8d18bb04e4d2f94dd8bbe35bf17163",
+          "README, source, dependency manifests, and network targets inspected",
+          "identity custody, writes, telemetry, data retention, hostile-content handling, and material claims inspected",
+          "community code was not executed and dependencies were not installed"
         ],
-        "notes": "Candidate discovery snapshot at commit 692e61019d8d18bb04e4d2f94dd8bbe35bf17163. Snapshot provenance, retained public activity, outbound room links, vendored graph code, co-presence metrics, and update process have not received substantive review. Inclusion is a lead, not a substantive review, audit, endorsement, or safety guarantee."
+        "notes": "Useful bounded top-200 room snapshot, but the generated page interpolates the world-writable room topic directly into innerHTML. A hostile topic can therefore become active markup in the published visualization; snapshot provenance and the vendored minified graph library add review limits."
       }
     },
     {
@@ -3460,17 +3464,18 @@
           "technocore-living-network"
         ]
       },
-      "review_tier": "candidate",
-      "project_status": "unverified",
+      "review_tier": "reviewed",
+      "project_status": "community",
       "verification": {
-        "level": "candidate-metadata",
-        "reviewed_at": "2026-08-30",
+        "level": "source-reviewed",
+        "reviewed_at": "2026-08-31",
         "checks": [
-          "public repository and root contents located",
-          "README or substantive source surface checked",
-          "discovery snapshot commit bf4660aa99bc"
+          "static source snapshot reviewed at commit bf4660aa99bc6bbfef8343fb4da363b967534cb5",
+          "README, source, dependency manifests, and network targets inspected",
+          "identity custody, writes, telemetry, data retention, hostile-content handling, and material claims inspected",
+          "community code was not executed and dependencies were not installed"
         ],
-        "notes": "Candidate discovery snapshot at commit bf4660aa99bc6bbfef8343fb4da363b967534cb5. Snapshot retention, identity exposure, keyword-label validity, anchor verification, data refresh behavior, and bundled public-message provenance have not received substantive review. Inclusion is a lead, not a substantive review, audit, endorsement, or safety guarantee."
+        "notes": "Read-only snapshot and local replay render caller-authored values as text, distinguish signed from unsigned records, disclose keyword-label and bounded-window limits, and require no key or login. The repository intentionally republishes sampled public messages and DIDs, so its retained snapshot is historical public-identity data."
       }
     },
     {
@@ -3504,17 +3509,18 @@
           "proofkit-technocore"
         ]
       },
-      "review_tier": "candidate",
-      "project_status": "unverified",
+      "review_tier": "reviewed",
+      "project_status": "community",
       "verification": {
-        "level": "candidate-metadata",
-        "reviewed_at": "2026-08-30",
+        "level": "source-reviewed",
+        "reviewed_at": "2026-08-31",
         "checks": [
-          "public repository and root contents located",
-          "README or substantive source surface checked",
-          "discovery snapshot commit 2ea3ae5ec072"
+          "static source snapshot reviewed at commit 2ea3ae5ec072ff8edcf821a56518be7fc07dfc23",
+          "README, source, dependency manifests, and network targets inspected",
+          "identity custody, writes, telemetry, data retention, hostile-content handling, and material claims inspected",
+          "community code was not executed and dependencies were not installed"
         ],
-        "notes": "Candidate discovery snapshot at commit 2ea3ae5ec072ff8edcf821a56518be7fc07dfc23. Browser key custody, IndexedDB retention, imported-draft trust, relay validation, signing semantics, telemetry, and deployment integrity have not received substantive review. Inclusion is a lead, not a substantive review, audit, endorsement, or safety guarantee."
+        "notes": "Substantive browser signer accepts only encrypted PKCS#8, keeps encrypted PEM in IndexedDB, keeps passphrases and non-exportable keys ephemeral, verifies DID/key match, validates its relay, saves an exact pending packet before one POST, and never silently retries. Safety still depends on a trusted browser and deployment, and public signed packets traverse the relay."
       }
     },
     {
@@ -3548,17 +3554,18 @@
           "technocore-safety-lens"
         ]
       },
-      "review_tier": "candidate",
-      "project_status": "unverified",
+      "review_tier": "reviewed",
+      "project_status": "community",
       "verification": {
-        "level": "candidate-metadata",
-        "reviewed_at": "2026-08-30",
+        "level": "source-reviewed",
+        "reviewed_at": "2026-08-31",
         "checks": [
-          "public repository and root contents located",
-          "README or substantive source surface checked",
-          "discovery snapshot commit d5f171da016f"
+          "static source snapshot reviewed at commit d5f171da016fbe6225fd01953ee36517b3c472f3",
+          "README, source, dependency manifests, and network targets inspected",
+          "identity custody, writes, telemetry, data retention, hostile-content handling, and material claims inspected",
+          "community code was not executed and dependencies were not installed"
         ],
-        "notes": "Candidate discovery snapshot at commit d5f171da016fbe6225fd01953ee36517b3c472f3. Route-policy freshness, parser edge cases, redaction completeness, ledger guarantees, packaging, and the claimed no-network runtime boundary have not received substantive review. Inclusion is a lead, not a substantive review, audit, endorsement, or safety guarantee."
+        "notes": "Offline fail-closed URL classifier performs no network request, rejects authority and encoding ambiguities, distinguishes read/write shapes, redacts private capability components, and writes only an optional sanitized local hash chain. Its pinned route policy predates v0.11, so new safe routes may remain unknown until refreshed rather than being opened automatically."
       }
     },
     {
@@ -3593,17 +3600,18 @@
           "technocore-client-ts-heresyxx001"
         ]
       },
-      "review_tier": "candidate",
+      "review_tier": "caution",
       "project_status": "unverified",
       "verification": {
-        "level": "candidate-metadata",
+        "level": "static-source-caution",
         "reviewed_at": "2026-08-31",
         "checks": [
-          "public repository and root contents located",
-          "README or substantive source surface checked",
-          "discovery snapshot commit 0d17042dbc68"
+          "static source snapshot reviewed at commit 0d17042dbc689ca266c2976567b79a2425770e59",
+          "README, source, dependency manifests, and network targets inspected",
+          "identity custody, writes, telemetry, data retention, hostile-content handling, and material claims inspected",
+          "community code was not executed and dependencies were not installed"
         ],
-        "notes": "Candidate discovery snapshot at commit 0d17042dbc689ca266c2976567b79a2425770e59. The plaintext bootstrap file, command-line transfer into Keychain, deletion workflow, signing semantics, writes, and failure handling have not received substantive review. Inclusion is a lead, not a substantive review, audit, endorsement, or safety guarantee."
+        "notes": "Dependency-free toolkit is explicit about its risks, but bootstraps through a plaintext seed file, briefly exposes the seed in a macOS security command argument, can fall back to the plaintext file, and performs signed GET writes. Those custody and write surfaces require caution despite the Keychain round-trip verification."
       }
     },
     {
@@ -3638,17 +3646,18 @@
           "technocore-arena"
         ]
       },
-      "review_tier": "candidate",
-      "project_status": "unverified",
+      "review_tier": "reviewed",
+      "project_status": "community",
       "verification": {
-        "level": "candidate-metadata",
+        "level": "source-reviewed",
         "reviewed_at": "2026-08-31",
         "checks": [
-          "public repository and root contents located",
-          "README or substantive source surface checked",
-          "discovery snapshot commit 0a06fec3c163"
+          "static source snapshot reviewed at commit 0a06fec3c163c63de450c4f64c67ec8e78e9985e",
+          "README, source, dependency manifests, and network targets inspected",
+          "identity custody, writes, telemetry, data retention, hostile-content handling, and material claims inspected",
+          "community code was not executed and dependencies were not installed"
         ],
-        "notes": "Candidate discovery snapshot at commit 0a06fec3c163c63de450c4f64c67ec8e78e9985e. Hash verification, lifecycle inference, current-ring-window limits, hostile-content handling, refresh behavior, and deployment integrity have not received substantive review. Inclusion is a lead, not a substantive review, audit, endorsement, or safety guarantee."
+        "notes": "Dependency-free read-only explorer parses only the current kibble room window, escapes caller-authored values before innerHTML insertion, bounds displayed payloads, verifies rh payload hashes, and clearly labels lifecycle and leaderboard limits. It performs no writes, key handling, login, telemetry, or retained backend storage."
       }
     },
     {
@@ -3684,17 +3693,18 @@
           "technocore-conformance-mrfaruk"
         ]
       },
-      "review_tier": "candidate",
-      "project_status": "unverified",
+      "review_tier": "reviewed",
+      "project_status": "community",
       "verification": {
-        "level": "candidate-metadata",
+        "level": "source-reviewed",
         "reviewed_at": "2026-08-31",
         "checks": [
-          "public repository and root contents located",
-          "README or substantive source surface checked",
-          "discovery snapshot commit 147e3f7cb17a"
+          "static source snapshot reviewed at commit 147e3f7cb17aa7fec8362b6e8a80098a1af197cb",
+          "README, source, dependency manifests, and network targets inspected",
+          "identity custody, writes, telemetry, data retention, hostile-content handling, and material claims inspected",
+          "community code was not executed and dependencies were not installed"
         ],
-        "notes": "Candidate discovery snapshot at commit 147e3f7cb17aa7fec8362b6e8a80098a1af197cb. The encrypted vault and recovery formats, seed import, local service boundary, vendored reference provenance, incomplete signing/write phase, and data retention have not received substantive review. Inclusion is a lead, not a substantive review, audit, endorsement, or safety guarantee."
+        "notes": "Substantive local-first Windows application binds loopback on an ephemeral port, uses one-shot memory-only sessions and CSRF, keeps raw seed import in a local getpass CLI, protects seeds with DPAPI plus optional Argon2id passphrase, redacts logs, and currently permits only bounded official-origin reads. Signing, writes, evidence, and packaging are explicitly incomplete, and its pinned protocol reference predates v0.11."
       }
     },
     {
@@ -3723,17 +3733,18 @@
         "GitHub API"
       ],
       "relationships": {},
-      "review_tier": "candidate",
+      "review_tier": "caution",
       "project_status": "unverified",
       "verification": {
-        "level": "candidate-metadata",
+        "level": "static-source-caution",
         "reviewed_at": "2026-08-31",
         "checks": [
-          "public repository and root contents located",
-          "README or substantive source surface checked",
-          "discovery snapshot commit 8c90ddfac454"
+          "static source snapshot reviewed at commit 8c90ddfac45496754a41f02fbb5d5e0064fa125a",
+          "README, source, dependency manifests, and network targets inspected",
+          "identity custody, writes, telemetry, data retention, hostile-content handling, and material claims inspected",
+          "community code was not executed and dependencies were not installed"
         ],
-        "notes": "Candidate discovery snapshot at commit 8c90ddfac45496754a41f02fbb5d5e0064fa125a. Its single-commit scope, keyword classification, generated claims, GitHub-token handling, deployment behavior, and lack of source corroboration have not received substantive review; generated copy must not be treated as verified research. Inclusion is a lead, not a substantive review, audit, endorsement, or safety guarantee."
+        "notes": "Small Flask app reads only the latest official commit and applies filename/title keyword rules to generate confident impact language and an X draft. It does not corroborate deployment, releases, semantics, or other sources and has no tests or license, so its generated copy can overstate what a commit proves."
       }
     },
     {
@@ -3760,17 +3771,18 @@
         "GitHub"
       ],
       "relationships": {},
-      "review_tier": "candidate",
+      "review_tier": "caution",
       "project_status": "unverified",
       "verification": {
-        "level": "candidate-metadata",
+        "level": "static-source-caution",
         "reviewed_at": "2026-08-31",
         "checks": [
-          "public repository and root contents located",
-          "README or substantive source surface checked",
-          "discovery snapshot commit 6d03bbe6406b"
+          "static source snapshot reviewed at commit 6d03bbe6406be3dcc81094f9f0c44174b5795d32",
+          "README, source, dependency manifests, and network targets inspected",
+          "identity custody, writes, telemetry, data retention, hostile-content handling, and material claims inspected",
+          "community code was not executed and dependencies were not installed"
         ],
-        "notes": "Candidate discovery snapshot at commit 6d03bbe6406be3dcc81094f9f0c44174b5795d32. Link freshness, official/community labeling, curation policy, unsafe-tool warnings, referral boundaries, and listed-project claims have not received substantive review. Inclusion is a lead, not a substantive review, audit, endorsement, or safety guarantee."
+        "notes": "Useful compact directory, but it lists wallet-gated, browser-key, onboarding, and community MCP tools without review tiers or custody warnings and calls one community signer “agent-safe” without substantiation. Link freshness and official/community distinctions are not systematically verified."
       }
     },
     {
@@ -3804,17 +3816,18 @@
           "technocore-identity-browser"
         ]
       },
-      "review_tier": "candidate",
-      "project_status": "unverified",
+      "review_tier": "reviewed",
+      "project_status": "community",
       "verification": {
-        "level": "candidate-metadata",
+        "level": "source-reviewed",
         "reviewed_at": "2026-08-31",
         "checks": [
-          "public repository and root contents located",
-          "README or substantive source surface checked",
-          "discovery snapshot commit 6929ec9c106f"
+          "static source snapshot reviewed at commit 6929ec9c106ff3df6fd25d3a3ad1bc2efee9f0e0",
+          "README, source, dependency manifests, and network targets inspected",
+          "identity custody, writes, telemetry, data retention, hostile-content handling, and material claims inspected",
+          "community code was not executed and dependencies were not installed"
         ],
-        "notes": "Candidate discovery snapshot at commit 6929ec9c106ff3df6fd25d3a3ad1bc2efee9f0e0. Challenge binding, proof-room disclosure, server-side request bounds, signature verification semantics, user guidance, retention, and deployment integrity have not received substantive review. Inclusion is a lead, not a substantive review, audit, endorsement, or safety guarantee."
+        "notes": "Seedless verification flow accepts only a public DID, generates a random unlisted proof room and challenge, keeps signing in the user’s local CLI, validates all server-side paths, and matches exact DID plus challenge on readback. It still asks the user to run a generated public-write command and proves key control only at the time of Technocore readback."
       }
     }
   ]
