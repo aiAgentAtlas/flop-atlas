@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-08-31T09:02:08Z",
+  "generated_at": "2026-08-31T15:02:09Z",
   "filter_hint": "Clients may filter entries where changed_at is later than their saved cursor.",
   "entries": [
     {
@@ -400,6 +400,18 @@
         "sources.json"
       ],
       "summary": "Resolved all 13 candidates as 8 Reviewed and 5 Caution, refreshed the Full Kit, and recorded live Technocore v0.11.1, the v0.11.0 protocol deployment, and the 120-second duplicate window."
+    },
+    {
+      "id": "discovery-scan-2026-08-31-0800",
+      "changed_at": "2026-08-31T15:02:09Z",
+      "type": "catalog_updated",
+      "resources": [
+        "catalog.json",
+        "feed.json",
+        "changes.json",
+        "llms.txt"
+      ],
+      "summary": "Added 20 differentiated community candidates for the next exhaustive audit after static discovery screening and catalog-wide deduplication."
     }
   ]
 }

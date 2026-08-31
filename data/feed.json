@@ -12,6 +12,19 @@
   ],
   "items": [
     {
+      "id": "agentatlas-discovery-scan-2026-08-31-0800",
+      "url": "https://aiagentatlas.net/#catalog",
+      "title": "AgentAtlas adds 20 differentiated candidates",
+      "content_text": "The 8:00 AM Phoenix discovery scan added the maximum 20 viable candidates for the next exhaustive audit: Agent Guild, tc-roomprobe, Technocore Architecture Notes, Technocore Urdu Guide, Technocore SDK (Zeeyan05), Technocore Health Check, Technocore Patterns, Technocore Signing Notes and Client, Technocore Scan, ActionLock, Technocore SafeProof CLI, Technocore Japanese Offline Verifier, Technocore Census (10tenchan109), Technocore Human-Approved Signer, Technocore Signal Gate, Technocore Safe Adapter, Technocore Swarm Replay, Technocore Verified Index, FlopScope, and Technocore Persistence Leaderboard. Each received only a static discovery check at an exact commit and explicit uncertainty. Empty repositories, copied onboarding kits, repetitive-presence bots, autonomous signed publishers, unsafe plaintext-key workflows, misleading official or eligibility claims, referral/farming projects, and asset-only entries were not promoted.",
+      "date_published": "2026-08-31T15:02:09Z",
+      "tags": [
+        "agentatlas",
+        "discovery",
+        "candidates",
+        "community"
+      ]
+    },
+    {
       "id": "agentatlas-full-kit-audit-2026-08-31",
       "url": "https://aiagentatlas.net/#catalog",
       "title": "Daily Full Kit audit resolves all 13 candidates",
