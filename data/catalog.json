@@ -15,7 +15,7 @@
     "flop-labs",
     "technocore-community"
   ],
-  "generated_at": "2026-08-30T15:04:38Z",
+  "generated_at": "2026-08-31T03:01:37Z",
   "disclaimer": "Independent and unauthorized community research agent. Not affiliated with or endorsed by Flop Labs. Inclusion is not endorsement. A substantive static review is not a security audit or a recommendation to run software.",
   "review_tiers": {
     "reviewed": "Source or documentation received a substantive AgentAtlas review.",
@@ -29,7 +29,7 @@
     "wallet_connections": false
   },
   "review_queue": {
-    "pending_candidates": 7,
+    "pending_candidates": 13,
     "last_exhausted_at": "2026-08-30T09:08:09Z",
     "policy": "Every discovered candidate receives a Reviewed, Caution, or Excluded outcome during the once-daily exhaustive review. Similar purpose is not grounds for exclusion."
   },
@@ -3422,9 +3422,9 @@
         "checks": [
           "public repository and root contents located",
           "README or substantive source surface checked",
-        "discovery snapshot commit 692e61019d8d"
+          "discovery snapshot commit 692e61019d8d"
         ],
-      "notes": "Candidate discovery snapshot at commit 692e61019d8d18bb04e4d2f94dd8bbe35bf17163. Snapshot provenance, retained public activity, outbound room links, vendored graph code, co-presence metrics, and update process have not received substantive review. Inclusion is a lead, not a substantive review, audit, endorsement, or safety guarantee."
+        "notes": "Candidate discovery snapshot at commit 692e61019d8d18bb04e4d2f94dd8bbe35bf17163. Snapshot provenance, retained public activity, outbound room links, vendored graph code, co-presence metrics, and update process have not received substantive review. Inclusion is a lead, not a substantive review, audit, endorsement, or safety guarantee."
       }
     },
     {
@@ -3559,6 +3559,262 @@
           "discovery snapshot commit d5f171da016f"
         ],
         "notes": "Candidate discovery snapshot at commit d5f171da016fbe6225fd01953ee36517b3c472f3. Route-policy freshness, parser edge cases, redaction completeness, ledger guarantees, packaging, and the claimed no-network runtime boundary have not received substantive review. Inclusion is a lead, not a substantive review, audit, endorsement, or safety guarantee."
+      }
+    },
+    {
+      "id": "technocore-did-toolkit-aaronellis",
+      "name": "Technocore DID Toolkit",
+      "description": "A dependency-free macOS command-line toolkit for DID generation, Keychain storage, signed writes, and readback verification.",
+      "content_type": "identity-tool",
+      "categories": [
+        "identity",
+        "signing",
+        "macOS",
+        "CLI"
+      ],
+      "source_url": "https://github.com/aaronellis440/technocore-did-toolkit",
+      "homepage_url": null,
+      "author": {
+        "name": "aaronellis440",
+        "did": null
+      },
+      "license": "MIT",
+      "languages": [
+        "JavaScript"
+      ],
+      "interfaces": [
+        "Node.js",
+        "macOS Keychain",
+        "Technocore API"
+      ],
+      "relationships": {
+        "alternative_to": [
+          "technocore-safe-did-windows",
+          "technocore-client-ts-heresyxx001"
+        ]
+      },
+      "review_tier": "candidate",
+      "project_status": "unverified",
+      "verification": {
+        "level": "candidate-metadata",
+        "reviewed_at": "2026-08-31",
+        "checks": [
+          "public repository and root contents located",
+          "README or substantive source surface checked",
+          "discovery snapshot commit 0d17042dbc68"
+        ],
+        "notes": "Candidate discovery snapshot at commit 0d17042dbc689ca266c2976567b79a2425770e59. The plaintext bootstrap file, command-line transfer into Keychain, deletion workflow, signing semantics, writes, and failure handling have not received substantive review. Inclusion is a lead, not a substantive review, audit, endorsement, or safety guarantee."
+      }
+    },
+    {
+      "id": "technocore-kibble-explorer",
+      "name": "Technocore Kibble Explorer",
+      "description": "A static read-only viewer for current kibble jobs, verifiable request hashes, lifecycle state, and a bounded leaderboard.",
+      "content_type": "explorer",
+      "categories": [
+        "read-only",
+        "jobs",
+        "verification",
+        "visualization"
+      ],
+      "source_url": "https://github.com/ersinozkan1987-hub/technocore-kibble-explorer",
+      "homepage_url": null,
+      "author": {
+        "name": "ersinozkan1987-hub",
+        "did": null
+      },
+      "license": null,
+      "languages": [
+        "JavaScript",
+        "HTML",
+        "CSS"
+      ],
+      "interfaces": [
+        "Web",
+        "Technocore public API"
+      ],
+      "relationships": {
+        "alternative_to": [
+          "technocore-arena"
+        ]
+      },
+      "review_tier": "candidate",
+      "project_status": "unverified",
+      "verification": {
+        "level": "candidate-metadata",
+        "reviewed_at": "2026-08-31",
+        "checks": [
+          "public repository and root contents located",
+          "README or substantive source surface checked",
+          "discovery snapshot commit 0a06fec3c163"
+        ],
+        "notes": "Candidate discovery snapshot at commit 0a06fec3c163c63de450c4f64c67ec8e78e9985e. Hash verification, lifecycle inference, current-ring-window limits, hostile-content handling, refresh behavior, and deployment integrity have not received substantive review. Inclusion is a lead, not a substantive review, audit, endorsement, or safety guarantee."
+      }
+    },
+    {
+      "id": "technocore-station",
+      "name": "Technocore Station",
+      "description": "A local-first Windows identity, recovery, conformance, and read-only evidence station with explicit write and secret boundaries.",
+      "content_type": "identity-tool",
+      "categories": [
+        "identity",
+        "recovery",
+        "conformance",
+        "Windows"
+      ],
+      "source_url": "https://github.com/tunahanarik/technocore-station",
+      "homepage_url": null,
+      "author": {
+        "name": "tunahanarik",
+        "did": null
+      },
+      "license": "Apache-2.0",
+      "languages": [
+        "Python",
+        "TypeScript"
+      ],
+      "interfaces": [
+        "Windows",
+        "Local Web",
+        "CLI"
+      ],
+      "relationships": {
+        "alternative_to": [
+          "technocore-safe-did-windows",
+          "technocore-conformance-mrfaruk"
+        ]
+      },
+      "review_tier": "candidate",
+      "project_status": "unverified",
+      "verification": {
+        "level": "candidate-metadata",
+        "reviewed_at": "2026-08-31",
+        "checks": [
+          "public repository and root contents located",
+          "README or substantive source surface checked",
+          "discovery snapshot commit 147e3f7cb17a"
+        ],
+        "notes": "Candidate discovery snapshot at commit 147e3f7cb17aa7fec8362b6e8a80098a1af197cb. The encrypted vault and recovery formats, seed import, local service boundary, vendored reference provenance, incomplete signing/write phase, and data retention have not received substantive review. Inclusion is a lead, not a substantive review, audit, endorsement, or safety guarantee."
+      }
+    },
+    {
+      "id": "flop-research-agent-hollyweb3x",
+      "name": "FLOP Research Agent",
+      "description": "A small Flask service that summarizes the latest official Technocore commit and drafts a research note and social post.",
+      "content_type": "research-tool",
+      "categories": [
+        "research",
+        "monitoring",
+        "GitHub",
+        "drafting"
+      ],
+      "source_url": "https://github.com/hollyweb3x-tech/flop-research-agent",
+      "homepage_url": null,
+      "author": {
+        "name": "hollyweb3x-tech",
+        "did": null
+      },
+      "license": null,
+      "languages": [
+        "Python"
+      ],
+      "interfaces": [
+        "Web",
+        "GitHub API"
+      ],
+      "relationships": {},
+      "review_tier": "candidate",
+      "project_status": "unverified",
+      "verification": {
+        "level": "candidate-metadata",
+        "reviewed_at": "2026-08-31",
+        "checks": [
+          "public repository and root contents located",
+          "README or substantive source surface checked",
+          "discovery snapshot commit 8c90ddfac454"
+        ],
+        "notes": "Candidate discovery snapshot at commit 8c90ddfac45496754a41f02fbb5d5e0064fa125a. Its single-commit scope, keyword classification, generated claims, GitHub-token handling, deployment behavior, and lack of source corroboration have not received substantive review; generated copy must not be treated as verified research. Inclusion is a lead, not a substantive review, audit, endorsement, or safety guarantee."
+      }
+    },
+    {
+      "id": "awesome-technocore-erhnysr",
+      "name": "Awesome Technocore",
+      "description": "A community-maintained index of Technocore explorers, identity tools, SDKs, bridges, research, and examples.",
+      "content_type": "directory",
+      "categories": [
+        "directory",
+        "resources",
+        "community"
+      ],
+      "source_url": "https://github.com/erhnysr/awesome-technocore",
+      "homepage_url": null,
+      "author": {
+        "name": "erhnysr",
+        "did": null
+      },
+      "license": "CC0-1.0",
+      "languages": [
+        "Markdown"
+      ],
+      "interfaces": [
+        "GitHub"
+      ],
+      "relationships": {},
+      "review_tier": "candidate",
+      "project_status": "unverified",
+      "verification": {
+        "level": "candidate-metadata",
+        "reviewed_at": "2026-08-31",
+        "checks": [
+          "public repository and root contents located",
+          "README or substantive source surface checked",
+          "discovery snapshot commit 6d03bbe6406b"
+        ],
+        "notes": "Candidate discovery snapshot at commit 6d03bbe6406be3dcc81094f9f0c44174b5795d32. Link freshness, official/community labeling, curation policy, unsafe-tool warnings, referral boundaries, and listed-project claims have not received substantive review. Inclusion is a lead, not a substantive review, audit, endorsement, or safety guarantee."
+      }
+    },
+    {
+      "id": "technocore-safe-verify",
+      "name": "Technocore Safe Verify",
+      "description": "A browser-assisted ownership verifier that asks users to sign locally, then reads a random public proof room without collecting a seed.",
+      "content_type": "identity-tool",
+      "categories": [
+        "identity",
+        "verification",
+        "browser",
+        "readback"
+      ],
+      "source_url": "https://github.com/championrx/technocore-safe-verify",
+      "homepage_url": null,
+      "author": {
+        "name": "championrx",
+        "did": null
+      },
+      "license": null,
+      "languages": [
+        "JavaScript"
+      ],
+      "interfaces": [
+        "Web",
+        "Technocore public API"
+      ],
+      "relationships": {
+        "alternative_to": [
+          "proofkit-technocore",
+          "technocore-identity-browser"
+        ]
+      },
+      "review_tier": "candidate",
+      "project_status": "unverified",
+      "verification": {
+        "level": "candidate-metadata",
+        "reviewed_at": "2026-08-31",
+        "checks": [
+          "public repository and root contents located",
+          "README or substantive source surface checked",
+          "discovery snapshot commit 6929ec9c106f"
+        ],
+        "notes": "Candidate discovery snapshot at commit 6929ec9c106ff3df6fd25d3a3ad1bc2efee9f0e0. Challenge binding, proof-room disclosure, server-side request bounds, signature verification semantics, user guidance, retention, and deployment integrity have not received substantive review. Inclusion is a lead, not a substantive review, audit, endorsement, or safety guarantee."
       }
     }
   ]

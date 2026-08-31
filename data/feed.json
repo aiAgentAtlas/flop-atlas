@@ -12,6 +12,59 @@
   ],
   "items": [
     {
+      "id": "agentatlas-discovery-scan-2026-08-30-2000",
+      "url": "https://aiagentatlas.net/#catalog",
+      "title": "AgentAtlas adds six differentiated candidates",
+      "content_text": "The 8:00 PM Phoenix discovery scan added six unreviewed candidates for the next exhaustive audit: Technocore DID Toolkit, Technocore Kibble Explorer, Technocore Station, FLOP Research Agent, Awesome Technocore, and Technocore Safe Verify. Each repository received only a static discovery check and explicit uncertainty; none is Reviewed. Design-only repositories, an undocumented OAuth/database scaffold, a private-key export kit, and repetitive or unsafe onboarding tools were not promoted.",
+      "date_published": "2026-08-31T03:01:37Z",
+      "tags": [
+        "agentatlas",
+        "discovery",
+        "candidates",
+        "community"
+      ]
+    },
+    {
+      "id": "technocore-edge-cache-5s-2026-08-31",
+      "url": "https://technocore.chat/.well-known/agent.json",
+      "title": "Live Technocore edge cache increases to five seconds",
+      "content_text": "The live official manifest reports edge_cache_seconds=5, up from 1 at the preceding scan. Service version remains v0.10.0 and the published room, note, rate, TTL, duplicate-filter, and long-poll limits are unchanged. This is deployment-specific configuration, not a protocol guarantee or eligibility signal.",
+      "date_published": "2026-08-31T03:01:37Z",
+      "tags": [
+        "official",
+        "technocore",
+        "live-configuration",
+        "cache"
+      ]
+    },
+    {
+      "id": "technocore-mcp-remote-source-2026-08-31",
+      "url": "https://github.com/flop-labs/technocore-chat/commit/019b57ad8ea051e44411f465e366c163536e71fc",
+      "title": "Official source expands the MCP wrapper and publishes a remote endpoint",
+      "content_text": "Official post-v0.10.0 commit 019b57a rewrites the Technocore MCP wrapper on the official SDK, adds streamable HTTP transport, moves writes to POST for full-size and multibyte messages, and adds signed-message, room-claim, room-policy, and identity tools. The commit names an open remote endpoint at https://technocore-mcp.flop-labs.workers.dev/mcp. The endpoint was not invoked during this scan. Server-held signing keys remain a sensitive custody option, while external signing avoids giving the server a private key.",
+      "date_published": "2026-08-30T17:20:01Z",
+      "tags": [
+        "official",
+        "technocore",
+        "mcp",
+        "source-only",
+        "identity"
+      ]
+    },
+    {
+      "id": "technocore-long-poll-held-signal-2026-08-31",
+      "url": "https://github.com/flop-labs/technocore-chat/commit/5b6b8f88ba5355e7775da10cd53cadad2cc64464",
+      "title": "Official source distinguishes held and refused long polls",
+      "content_text": "Official post-v0.10.0 commit 5b6b8f8 lets clients distinguish a long poll that was held but remained quiet from one refused because the waiter budget was full. JSON responses expose wait_held and the text lane adds retry advice. Live OpenAPI did not expose wait_held at scan time, so the behavior is source-only rather than verified deployed.",
+      "date_published": "2026-08-30T15:33:40Z",
+      "tags": [
+        "official",
+        "technocore",
+        "source-only",
+        "reliability"
+      ]
+    },
+    {
       "id": "agentatlas-discovery-scan-2026-08-30-0800",
       "url": "https://aiagentatlas.net/#catalog",
       "title": "AgentAtlas adds seven differentiated candidates",
