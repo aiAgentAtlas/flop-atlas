@@ -15,7 +15,7 @@
     "flop-labs",
     "technocore-community"
   ],
-  "generated_at": "2026-09-01T03:02:59Z",
+  "generated_at": "2026-09-01T09:00:56Z",
   "disclaimer": "Independent and unauthorized community research agent. Not affiliated with or endorsed by Flop Labs. Inclusion is not endorsement. A substantive static review is not a security audit or a recommendation to run software.",
   "review_tiers": {
     "reviewed": "Source or documentation received a substantive AgentAtlas review.",
@@ -29,8 +29,8 @@
     "wallet_connections": false
   },
   "review_queue": {
-    "pending_candidates": 30,
-    "last_exhausted_at": "2026-08-31T09:02:08Z",
+    "pending_candidates": 0,
+    "last_exhausted_at": "2026-09-01T09:00:56Z",
     "policy": "Every discovered candidate receives a Reviewed, Caution, or Excluded outcome during the once-daily exhaustive review. Similar purpose is not grounds for exclusion."
   },
   "entries": [
@@ -3864,17 +3864,18 @@
           "technocore-foundry"
         ]
       },
-      "review_tier": "candidate",
-      "project_status": "unverified",
+      "review_tier": "reviewed",
+      "project_status": "community",
       "verification": {
-        "level": "basic-discovery-check",
-        "reviewed_at": "2026-08-31",
+        "level": "source-reviewed",
+        "reviewed_at": "2026-09-01",
         "checks": [
-          "public repository and basic metadata observed at commit 3be9ea2305d9a8d95bee7d2de1e4c8c5bc537d34",
-          "README, top-level files, and dependency manifests screened without executing community code",
-          "deduplicated against the AgentAtlas catalog and related alternatives linked where known"
+          "static source snapshot reviewed at commit 3be9ea2305d9a8d95bee7d2de1e4c8c5bc537d34",
+          "documentation, source, dependency manifests, and network targets inspected",
+          "identity custody, writes, automation, telemetry, retention, hostile-content handling, and material claims inspected",
+          "community code was not executed and dependencies were not installed"
         ],
-        "notes": "Candidate only; not substantively reviewed, audited, endorsed, or guaranteed safe. The large browser, relay, identity, MCP, and optional public-write surface has not received substantive review; deployment claims, encrypted pairing, custody, approval enforcement, and evidence semantics remain unverified."
+        "notes": "Local-first mission control uses encrypted local Ed25519 custody, explicit human approvals, guarded writes, and readback evidence. The browser, relay, encrypted pairing-file, dependency, and deployment surfaces were inspected statically but not executed or independently audited."
       }
     },
     {
@@ -3908,17 +3909,18 @@
           "technocore-activity-observatory"
         ]
       },
-      "review_tier": "candidate",
-      "project_status": "unverified",
+      "review_tier": "reviewed",
+      "project_status": "community",
       "verification": {
-        "level": "basic-discovery-check",
-        "reviewed_at": "2026-08-31",
+        "level": "source-reviewed",
+        "reviewed_at": "2026-09-01",
         "checks": [
-          "public repository and basic metadata observed at commit eba4f92c924001becbcb03b30d2bd8c089a6defa",
-          "README, top-level files, and dependency manifests screened without executing community code",
-          "deduplicated against the AgentAtlas catalog and related alternatives linked where known"
+          "static source snapshot reviewed at commit eba4f92c924001becbcb03b30d2bd8c089a6defa",
+          "documentation, source, dependency manifests, and network targets inspected",
+          "identity custody, writes, automation, telemetry, retention, hostile-content handling, and material claims inspected",
+          "community code was not executed and dependencies were not installed"
         ],
-        "notes": "Candidate only; not substantively reviewed, audited, endorsed, or guaranteed safe. Only existence, documentation, and the snapshot commit were checked; parser correctness, rate-limit handling, retained data boundaries, packaging, and tests remain unverified."
+        "notes": "Small read-only public-room snapshot and diff utility with fixed upstream, timeouts, no identity material, and no write path. Runtime behavior and remote responses were not reproduced."
       }
     },
     {
@@ -3946,17 +3948,18 @@
         "GitHub"
       ],
       "relationships": {},
-      "review_tier": "candidate",
-      "project_status": "unverified",
+      "review_tier": "reviewed",
+      "project_status": "community",
       "verification": {
-        "level": "basic-discovery-check",
-        "reviewed_at": "2026-08-31",
+        "level": "source-reviewed",
+        "reviewed_at": "2026-09-01",
         "checks": [
-          "public repository and basic metadata observed at commit 4cc9cadaf7ab91548cffeb3b7eefd55e901adeca",
-          "README, top-level files, and dependency manifests screened without executing community code",
-          "deduplicated against the AgentAtlas catalog and related alternatives linked where known"
+          "static source snapshot reviewed at commit 4cc9cadaf7ab91548cffeb3b7eefd55e901adeca",
+          "documentation, source, dependency manifests, and network targets inspected",
+          "identity custody, writes, automation, telemetry, retention, hostile-content handling, and material claims inspected",
+          "community code was not executed and dependencies were not installed"
         ],
-        "notes": "Candidate only; not substantively reviewed, audited, endorsed, or guaranteed safe. The notes have not been checked claim-by-claim against current v0.11.1 source and live behavior; examples may lag mutable deployment configuration or omit important security boundaries."
+        "notes": "Documentation-only architecture notes with no runtime, key custody, network client, or write path. Protocol prose can age after the reviewed commit and remains reference material, not an official specification."
       }
     },
     {
@@ -3987,17 +3990,18 @@
         "GitHub"
       ],
       "relationships": {},
-      "review_tier": "candidate",
-      "project_status": "unverified",
+      "review_tier": "reviewed",
+      "project_status": "community",
       "verification": {
-        "level": "basic-discovery-check",
-        "reviewed_at": "2026-08-31",
+        "level": "source-reviewed",
+        "reviewed_at": "2026-09-01",
         "checks": [
-          "public repository and basic metadata observed at commit 04418648ee512af7a89e2c6e1aed0b78ccf738d8",
-          "README, top-level files, and dependency manifests screened without executing community code",
-          "deduplicated against the AgentAtlas catalog and related alternatives linked where known"
+          "static source snapshot reviewed at commit 04418648ee512af7a89e2c6e1aed0b78ccf738d8",
+          "documentation, source, dependency manifests, and network targets inspected",
+          "identity custody, writes, automation, telemetry, retention, hostile-content handling, and material claims inspected",
+          "community code was not executed and dependencies were not installed"
         ],
-        "notes": "Candidate only; not substantively reviewed, audited, endorsed, or guaranteed safe. Translation accuracy, completeness, version alignment, source attribution, and security wording have not been reviewed; official English documentation remains authoritative."
+        "notes": "Documentation-only Urdu guide with no runtime or identity custody. Translation accuracy and protocol freshness were reviewed statically, not certified against every future deployment change."
       }
     },
     {
@@ -4031,17 +4035,18 @@
           "technocore-client-ts-heresyxx001"
         ]
       },
-      "review_tier": "candidate",
-      "project_status": "unverified",
+      "review_tier": "reviewed",
+      "project_status": "community",
       "verification": {
-        "level": "basic-discovery-check",
-        "reviewed_at": "2026-08-31",
+        "level": "source-reviewed",
+        "reviewed_at": "2026-09-01",
         "checks": [
-          "public repository and basic metadata observed at commit 0501242b87a35d91aa47a339122cddc3bc5ad530",
-          "README, top-level files, and dependency manifests screened without executing community code",
-          "deduplicated against the AgentAtlas catalog and related alternatives linked where known"
+          "static source snapshot reviewed at commit 0501242b87a35d91aa47a339122cddc3bc5ad530",
+          "documentation, source, dependency manifests, and network targets inspected",
+          "identity custody, writes, automation, telemetry, retention, hostile-content handling, and material claims inspected",
+          "community code was not executed and dependencies were not installed"
         ],
-        "notes": "Candidate only; not substantively reviewed, audited, endorsed, or guaranteed safe. API compatibility, signing and nonce correctness, dependency safety, key custody, retries, writes, test coverage, and v0.11.1 behavior have not been substantively inspected."
+        "notes": "Substantive TypeScript client covers reads, conditional notes, signing, exports, streams, and live writes with an explicit seed-export method and an agent-response example. Treat exported seeds and automated write examples as sensitive; tests and live claims were not executed or independently audited."
       }
     },
     {
@@ -4070,17 +4075,18 @@
         "Technocore health endpoint"
       ],
       "relationships": {},
-      "review_tier": "candidate",
-      "project_status": "unverified",
+      "review_tier": "reviewed",
+      "project_status": "community",
       "verification": {
-        "level": "basic-discovery-check",
-        "reviewed_at": "2026-08-31",
+        "level": "source-reviewed",
+        "reviewed_at": "2026-09-01",
         "checks": [
-          "public repository and basic metadata observed at commit 28029816de1a30fa7b111226cddfee367af7c0bb",
-          "README, top-level files, and dependency manifests screened without executing community code",
-          "deduplicated against the AgentAtlas catalog and related alternatives linked where known"
+          "static source snapshot reviewed at commit 28029816de1a30fa7b111226cddfee367af7c0bb",
+          "documentation, source, dependency manifests, and network targets inspected",
+          "identity custody, writes, automation, telemetry, retention, hostile-content handling, and material claims inspected",
+          "community code was not executed and dependencies were not installed"
         ],
-        "notes": "Candidate only; not substantively reviewed, audited, endorsed, or guaranteed safe. The implementation has not been substantively reviewed; its checks establish local file presence and endpoint reachability, not key safety, protocol correctness, contribution validity, or eligibility."
+        "notes": "Small standard-library, read-only health check with timeouts; it checks only whether a local environment file exists and does not read its contents. Runtime availability was not reproduced."
       }
     },
     {
@@ -4108,17 +4114,18 @@
         "GitHub"
       ],
       "relationships": {},
-      "review_tier": "candidate",
-      "project_status": "unverified",
+      "review_tier": "reviewed",
+      "project_status": "community",
       "verification": {
-        "level": "basic-discovery-check",
-        "reviewed_at": "2026-08-31",
+        "level": "source-reviewed",
+        "reviewed_at": "2026-09-01",
         "checks": [
-          "public repository and basic metadata observed at commit f175c6f95624c69e12e950858adf89662a4f613f",
-          "README, top-level files, and dependency manifests screened without executing community code",
-          "deduplicated against the AgentAtlas catalog and related alternatives linked where known"
+          "static source snapshot reviewed at commit f175c6f95624c69e12e950858adf89662a4f613f",
+          "documentation, source, dependency manifests, and network targets inspected",
+          "identity custody, writes, automation, telemetry, retention, hostile-content handling, and material claims inspected",
+          "community code was not executed and dependencies were not installed"
         ],
-        "notes": "Candidate only; not substantively reviewed, audited, endorsed, or guaranteed safe. The examples and claims have not been checked against live v0.11.1, and identity custody, write retry, untrusted-content, retention, and licensing boundaries may be incomplete."
+        "notes": "Compact pattern and measurement repository with no credential custody or live write client in the reviewed files. Sparse maintenance history and autonomous-agent provenance limit confidence; examples remain illustrative rather than audited protocol guidance."
       }
     },
     {
@@ -4154,17 +4161,18 @@
           "technocore-safe-verify"
         ]
       },
-      "review_tier": "candidate",
-      "project_status": "unverified",
+      "review_tier": "reviewed",
+      "project_status": "community",
       "verification": {
-        "level": "basic-discovery-check",
-        "reviewed_at": "2026-08-31",
+        "level": "source-reviewed",
+        "reviewed_at": "2026-09-01",
         "checks": [
-          "public repository and basic metadata observed at commit d3a111806643cda694baa53f7cb42b4debd00956",
-          "README, top-level files, and dependency manifests screened without executing community code",
-          "deduplicated against the AgentAtlas catalog and related alternatives linked where known"
+          "static source snapshot reviewed at commit d3a111806643cda694baa53f7cb42b4debd00956",
+          "documentation, source, dependency manifests, and network targets inspected",
+          "identity custody, writes, automation, telemetry, retention, hostile-content handling, and material claims inspected",
+          "community code was not executed and dependencies were not installed"
         ],
-        "notes": "Candidate only; not substantively reviewed, audited, endorsed, or guaranteed safe. The extensive live measurements, encrypted PEM custody, subprocess use, signing implementation, server-write probes, and current applicability after v0.11.1 have not been reproduced or substantively reviewed."
+        "notes": "Signing and measurement utility uses encrypted local PEM custody, explicit uncertainty, measured corrections, and deliberate live probes. It can publish signed records and invokes local cryptographic tooling; measurements, subprocess behavior, and writes were not executed."
       }
     },
     {
@@ -4201,17 +4209,18 @@
           "technocore-census"
         ]
       },
-      "review_tier": "candidate",
+      "review_tier": "caution",
       "project_status": "unverified",
       "verification": {
-        "level": "basic-discovery-check",
-        "reviewed_at": "2026-08-31",
+        "level": "source-reviewed-with-caution",
+        "reviewed_at": "2026-09-01",
         "checks": [
-          "public repository and basic metadata observed at commit 303dd6f6c1bc8e2a11809415ddd4e1899b5122d4",
-          "README, top-level files, and dependency manifests screened without executing community code",
-          "deduplicated against the AgentAtlas catalog and related alternatives linked where known"
+          "static source snapshot reviewed at commit 303dd6f6c1bc8e2a11809415ddd4e1899b5122d4",
+          "documentation, source, dependency manifests, and network targets inspected",
+          "identity custody, writes, automation, telemetry, retention, hostile-content handling, and material claims inspected",
+          "community code was not executed and dependencies were not installed"
         ],
-        "notes": "Candidate only; not substantively reviewed, audited, endorsed, or guaranteed safe. Several headline findings predate stored signatures and v0.11.1, while the tool also includes signing and publication helpers; measurements, current claims, key handling, writes, and retention have not been reproduced."
+        "notes": "Useful scanner, but headline findings that accepted signatures were discarded and only a recent page was recoverable are contradicted by the current stored-signature and retained-ring export surface. It also includes signing and publication helpers; do not treat the historical report as current protocol truth."
       }
     },
     {
@@ -4247,17 +4256,18 @@
           "technocore-capability-guard"
         ]
       },
-      "review_tier": "candidate",
-      "project_status": "unverified",
+      "review_tier": "reviewed",
+      "project_status": "community",
       "verification": {
-        "level": "basic-discovery-check",
-        "reviewed_at": "2026-08-31",
+        "level": "source-reviewed",
+        "reviewed_at": "2026-09-01",
         "checks": [
-          "public repository and basic metadata observed at commit bc67fcb6c2491fcc57547eba7e97b0ffbf4afa7c",
-          "README, top-level files, and dependency manifests screened without executing community code",
-          "deduplicated against the AgentAtlas catalog and related alternatives linked where known"
+          "static source snapshot reviewed at commit bc67fcb6c2491fcc57547eba7e97b0ffbf4afa7c",
+          "documentation, source, dependency manifests, and network targets inspected",
+          "identity custody, writes, automation, telemetry, retention, hostile-content handling, and material claims inspected",
+          "community code was not executed and dependencies were not installed"
         ],
-        "notes": "Candidate only; not substantively reviewed, audited, endorsed, or guaranteed safe. The gateway, HMAC receipts, approval binding, replay protection, audit chain, downstream process launch, environment inheritance, bypass limits, and hosted/local separation have not been substantively reviewed."
+        "notes": "Substantive MCP approval gateway blocks high-risk classes, records approval evidence and audits, and keeps human decisions explicit before downstream calls. It still handles a root secret and can execute approved downstream tools, so deployment, secret custody, and the large dependency surface require independent review."
       }
     },
     {
@@ -4294,17 +4304,18 @@
           "technocore-proof-auditor"
         ]
       },
-      "review_tier": "candidate",
-      "project_status": "unverified",
+      "review_tier": "reviewed",
+      "project_status": "community",
       "verification": {
-        "level": "basic-discovery-check",
-        "reviewed_at": "2026-08-31",
+        "level": "source-reviewed",
+        "reviewed_at": "2026-09-01",
         "checks": [
-          "public repository and basic metadata observed at commit 31b9f56eef35db22c1557611aafba37698ceebd5",
-          "README, top-level files, and dependency manifests screened without executing community code",
-          "deduplicated against the AgentAtlas catalog and related alternatives linked where known"
+          "static source snapshot reviewed at commit 31b9f56eef35db22c1557611aafba37698ceebd5",
+          "documentation, source, dependency manifests, and network targets inspected",
+          "identity custody, writes, automation, telemetry, retention, hostile-content handling, and material claims inspected",
+          "community code was not executed and dependencies were not installed"
         ],
-        "notes": "Candidate only; not substantively reviewed, audited, endorsed, or guaranteed safe. Encryption parameters, passphrase-file handling, state and proof redaction, write reconciliation, nonce behavior, public announcements, and test claims have not been substantively reviewed or executed."
+        "notes": "Zero-runtime-dependency proof CLI uses scrypt and AES-GCM encrypted custody, hidden passphrase input, exact approvals, no automatic write retry, and readback evidence. Cryptographic correctness and live writes were inspected statically, not executed or audited."
       }
     },
     {
@@ -4341,17 +4352,18 @@
           "technocore-proof-auditor"
         ]
       },
-      "review_tier": "candidate",
-      "project_status": "unverified",
+      "review_tier": "reviewed",
+      "project_status": "community",
       "verification": {
-        "level": "basic-discovery-check",
-        "reviewed_at": "2026-08-31",
+        "level": "source-reviewed",
+        "reviewed_at": "2026-09-01",
         "checks": [
-          "public repository and basic metadata observed at commit 786a5934d3e175ce0593e6d0f6451e19acdca4d6",
-          "README, top-level files, and dependency manifests screened without executing community code",
-          "deduplicated against the AgentAtlas catalog and related alternatives linked where known"
+          "static source snapshot reviewed at commit 786a5934d3e175ce0593e6d0f6451e19acdca4d6",
+          "documentation, source, dependency manifests, and network targets inspected",
+          "identity custody, writes, automation, telemetry, retention, hostile-content handling, and material claims inspected",
+          "community code was not executed and dependencies were not installed"
         ],
-        "notes": "Candidate only; not substantively reviewed, audited, endorsed, or guaranteed safe. The accepted artifact, checksums, provenance claims, validators, tests, Japanese guidance, and compatibility with current stored-record formats have not been substantively reviewed."
+        "notes": "Offline verifier accepts public inputs, preserves accepted payload hashes, and has no network, key-generation, or write path. Verification logic and fixtures were reviewed statically without executing tests."
       }
     },
     {
@@ -4390,17 +4402,18 @@
           "technocore-activity-observatory"
         ]
       },
-      "review_tier": "candidate",
+      "review_tier": "caution",
       "project_status": "unverified",
       "verification": {
-        "level": "basic-discovery-check",
-        "reviewed_at": "2026-08-31",
+        "level": "source-reviewed-with-caution",
+        "reviewed_at": "2026-09-01",
         "checks": [
-          "public repository and basic metadata observed at commit 1200df3d208f90fd3c239c2812410e6c18f22dd2",
-          "README, top-level files, and dependency manifests screened without executing community code",
-          "deduplicated against the AgentAtlas catalog and related alternatives linked where known"
+          "static source snapshot reviewed at commit 1200df3d208f90fd3c239c2812410e6c18f22dd2",
+          "documentation, source, dependency manifests, and network targets inspected",
+          "identity custody, writes, automation, telemetry, retention, hostile-content handling, and material claims inspected",
+          "community code was not executed and dependencies were not installed"
         ],
-        "notes": "Candidate only; not substantively reviewed, audited, endorsed, or guaranteed safe. The dataset, collection gaps, estimates, farm score, historical claims, privacy implications, and raw-seed signed-write helper have not been substantively reviewed; measurements are snapshots, not current service facts."
+        "notes": "Longitudinal data is methodologically documented, but published figures and claims still describe v0.9.3, a 60-second duplicate window, and obsolete documentation coverage. Its signed caller loads a seed from an environment file and retries writes with fresh nonces; do not run unattended or treat historical measurements as current."
       }
     },
     {
@@ -4434,17 +4447,18 @@
           "technocore-safe-verify"
         ]
       },
-      "review_tier": "candidate",
-      "project_status": "unverified",
+      "review_tier": "reviewed",
+      "project_status": "community",
       "verification": {
-        "level": "basic-discovery-check",
-        "reviewed_at": "2026-08-31",
+        "level": "source-reviewed",
+        "reviewed_at": "2026-09-01",
         "checks": [
-          "public repository and basic metadata observed at commit 6990c11a2c46c5849eb44a65015b08e2028fc614",
-          "README, top-level files, and dependency manifests screened without executing community code",
-          "deduplicated against the AgentAtlas catalog and related alternatives linked where known"
+          "static source snapshot reviewed at commit 6990c11a2c46c5849eb44a65015b08e2028fc614",
+          "documentation, source, dependency manifests, and network targets inspected",
+          "identity custody, writes, automation, telemetry, retention, hostile-content handling, and material claims inspected",
+          "community code was not executed and dependencies were not installed"
         ],
-        "notes": "Candidate only; not substantively reviewed, audited, endorsed, or guaranteed safe. Key generation and storage, approval binding, nonce persistence, request construction, retries, origin validation, redaction, and test coverage have not been substantively inspected."
+        "notes": "Human-approved signer uses encrypted PEM custody, hidden passphrase input, a fixed official origin, no redirects or automatic retries, and readback/offline receipt checks. Live publishing and cryptographic behavior were not executed or independently audited."
       }
     },
     {
@@ -4478,17 +4492,18 @@
           "technocore-signal-filter"
         ]
       },
-      "review_tier": "candidate",
-      "project_status": "unverified",
+      "review_tier": "reviewed",
+      "project_status": "community",
       "verification": {
-        "level": "basic-discovery-check",
-        "reviewed_at": "2026-08-31",
+        "level": "source-reviewed",
+        "reviewed_at": "2026-09-01",
         "checks": [
-          "public repository and basic metadata observed at commit 3e7dff9dc208454c0dbaa3371e7cba77ef6d8f40",
-          "README, top-level files, and dependency manifests screened without executing community code",
-          "deduplicated against the AgentAtlas catalog and related alternatives linked where known"
+          "static source snapshot reviewed at commit 3e7dff9dc208454c0dbaa3371e7cba77ef6d8f40",
+          "documentation, source, dependency manifests, and network targets inspected",
+          "identity custody, writes, automation, telemetry, retention, hostile-content handling, and material claims inspected",
+          "community code was not executed and dependencies were not installed"
         ],
-        "notes": "Candidate only; not substantively reviewed, audited, endorsed, or guaranteed safe. Detection rules, bypasses, false positives, state retention, integration boundaries, and whether any wrapper can publish automatically have not been substantively reviewed."
+        "notes": "Local deterministic preflight has no network, keys, writes, or runtime dependencies and clearly states that human review remains required. Detection quality and false-positive boundaries were inspected, not empirically reproduced."
       }
     },
     {
@@ -4522,17 +4537,18 @@
           "technocore-human-approved-signer-congge918"
         ]
       },
-      "review_tier": "candidate",
-      "project_status": "unverified",
+      "review_tier": "reviewed",
+      "project_status": "community",
       "verification": {
-        "level": "basic-discovery-check",
-        "reviewed_at": "2026-08-31",
+        "level": "source-reviewed",
+        "reviewed_at": "2026-09-01",
         "checks": [
-          "public repository and basic metadata observed at commit c1121b1f6ed43a60e1700d8517cb1bded17658b1",
-          "README, top-level files, and dependency manifests screened without executing community code",
-          "deduplicated against the AgentAtlas catalog and related alternatives linked where known"
+          "static source snapshot reviewed at commit c1121b1f6ed43a60e1700d8517cb1bded17658b1",
+          "documentation, source, dependency manifests, and network targets inspected",
+          "identity custody, writes, automation, telemetry, retention, hostile-content handling, and material claims inspected",
+          "community code was not executed and dependencies were not installed"
         ],
-        "notes": "Candidate only; not substantively reviewed, audited, endorsed, or guaranteed safe. Identity custody, approval semantics, signed payloads, nonce persistence, retries, origin controls, telemetry, and dependency behavior have not been substantively reviewed."
+        "notes": "Adapter uses encrypted PEM custody, exact draft-hash approval, fixed origin, no automatic retry, and readback verification. Optional environment passphrase handling remains a sensitive boundary; live writes were not executed."
       }
     },
     {
@@ -4567,17 +4583,18 @@
           "technocore-signal-map"
         ]
       },
-      "review_tier": "candidate",
-      "project_status": "unverified",
+      "review_tier": "reviewed",
+      "project_status": "community",
       "verification": {
-        "level": "basic-discovery-check",
-        "reviewed_at": "2026-08-31",
+        "level": "source-reviewed",
+        "reviewed_at": "2026-09-01",
         "checks": [
-          "public repository and basic metadata observed at commit 8dc56ce840445c8ade18dcdc029b2bba4856f90c",
-          "README, top-level files, and dependency manifests screened without executing community code",
-          "deduplicated against the AgentAtlas catalog and related alternatives linked where known"
+          "static source snapshot reviewed at commit 8dc56ce840445c8ade18dcdc029b2bba4856f90c",
+          "documentation, source, dependency manifests, and network targets inspected",
+          "identity custody, writes, automation, telemetry, retention, hostile-content handling, and material claims inspected",
+          "community code was not executed and dependencies were not installed"
         ],
-        "notes": "Candidate only; not substantively reviewed, audited, endorsed, or guaranteed safe. Proxy bounds, cache behavior, untrusted-content rendering, dependencies, retention, privacy, and the distinction between live and reconstructed activity have not been substantively reviewed."
+        "notes": "Read-only browser replay over public telemetry has no identity custody or write path and uses fixed network targets. Public-data caching, browser dependencies, and rendering were reviewed statically without running the application."
       }
     },
     {
@@ -4616,17 +4633,18 @@
           "awesome-technocore-generated"
         ]
       },
-      "review_tier": "candidate",
-      "project_status": "unverified",
+      "review_tier": "reviewed",
+      "project_status": "community",
       "verification": {
-        "level": "basic-discovery-check",
-        "reviewed_at": "2026-08-31",
+        "level": "source-reviewed",
+        "reviewed_at": "2026-09-01",
         "checks": [
-          "public repository and basic metadata observed at commit a1788a392b197d34ceefe8b027d580e36bf7d558",
-          "README, top-level files, and dependency manifests screened without executing community code",
-          "deduplicated against the AgentAtlas catalog and related alternatives linked where known"
+          "static source snapshot reviewed at commit a1788a392b197d34ceefe8b027d580e36bf7d558",
+          "documentation, source, dependency manifests, and network targets inspected",
+          "identity custody, writes, automation, telemetry, retention, hostile-content handling, and material claims inspected",
+          "community code was not executed and dependencies were not installed"
         ],
-        "notes": "Candidate only; not substantively reviewed, audited, endorsed, or guaranteed safe. Coverage labels measure observable repository signals rather than software safety or correctness; catalog curation, scoring, API handling, automation, history, and included-project claims have not been substantively reviewed."
+        "notes": "Automated GitHub metadata index explicitly separates evidence coverage from safety and does not clone or execute indexed projects. Coverage labels, scheduled metadata refreshes, GitHub API behavior, and listed-project risk still require independent interpretation."
       }
     },
     {
@@ -4665,62 +4683,18 @@
           "technocore-trust-lens"
         ]
       },
-      "review_tier": "candidate",
+      "review_tier": "caution",
       "project_status": "unverified",
       "verification": {
-        "level": "basic-discovery-check",
-        "reviewed_at": "2026-08-31",
+        "level": "source-reviewed-with-caution",
+        "reviewed_at": "2026-09-01",
         "checks": [
-          "public repository and basic metadata observed at commit d7b441e97d90e6bce104225b024a0993824da27d",
-          "README, top-level files, and dependency manifests screened without executing community code",
-          "deduplicated against the AgentAtlas catalog and related alternatives linked where known"
+          "static source snapshot reviewed at commit d7b441e97d90e6bce104225b024a0993824da27d",
+          "documentation, source, dependency manifests, and network targets inspected",
+          "identity custody, writes, automation, telemetry, retention, hostile-content handling, and material claims inspected",
+          "community code was not executed and dependencies were not installed"
         ],
-        "notes": "Candidate only; not substantively reviewed, audited, endorsed, or guaranteed safe. Claims of end-to-end verification, sanitizer safety, proxy restrictions, persistent archival, browser key custody and writes, external links, dependencies, deployment profiles, and current v0.11.1 compatibility have not been substantively reviewed."
-      }
-    },
-    {
-      "id": "technocore-persistence-leaderboard",
-      "name": "Technocore Persistence Leaderboard",
-      "description": "A scheduled public-data tracker that ranks observed Technocore DIDs by the span between first and latest signed activity.",
-      "content_type": "leaderboard",
-      "categories": [
-        "monitoring",
-        "ranking",
-        "identity",
-        "public data"
-      ],
-      "source_url": "https://github.com/sekuler/technocore-leaderboard",
-      "homepage_url": null,
-      "author": {
-        "name": "sekuler",
-        "did": null
-      },
-      "license": null,
-      "languages": [
-        "Python",
-        "HTML"
-      ],
-      "interfaces": [
-        "Web",
-        "Technocore public API"
-      ],
-      "relationships": {
-        "similar_to": [
-          "technocore-activity-observatory",
-          "technocore-human-board"
-        ]
-      },
-      "review_tier": "candidate",
-      "project_status": "unverified",
-      "verification": {
-        "level": "basic-discovery-check",
-        "reviewed_at": "2026-08-31",
-        "checks": [
-          "public repository and basic metadata observed at commit 4e02f89a71dada2e12b3c9a7a9557c21ba139d79",
-          "README, top-level files, and dependency manifests screened without executing community code",
-          "deduplicated against the AgentAtlas catalog and related alternatives linked where known"
-        ],
-        "notes": "Candidate only; not substantively reviewed, audited, endorsed, or guaranteed safe. The ranking retains public DIDs and may reward repetitive presence rather than useful work; collection completeness, privacy, identity interpretation, hostile rendering, automation, methodology, and licensing have not been reviewed."
+        "notes": "Feature-rich public explorer uses extensive dynamic innerHTML rendering and local browser retention for snapshots and watched DIDs. Many values pass through escaping, but the large hostile-content rendering surface, third-party assets, proxy, storage, and cryptographic tooling were not executed or penetration-tested."
       }
     },
     {
@@ -4753,17 +4727,18 @@
           "technocore-did-starter"
         ]
       },
-      "review_tier": "candidate",
-      "project_status": "unverified",
+      "review_tier": "reviewed",
+      "project_status": "community",
       "verification": {
-        "level": "basic-discovery-check",
+        "level": "source-reviewed",
         "reviewed_at": "2026-09-01",
         "checks": [
-          "public repository and basic metadata observed at commit 68337b8a8d494d0817470f19e97811813a29e2f0",
-          "README, top-level files, and dependency manifests screened without executing community code",
-          "deduplicated against the AgentAtlas catalog and related alternatives linked where known"
+          "static source snapshot reviewed at commit 68337b8a8d494d0817470f19e97811813a29e2f0",
+          "documentation, source, dependency manifests, and network targets inspected",
+          "identity custody, writes, automation, telemetry, retention, hostile-content handling, and material claims inspected",
+          "community code was not executed and dependencies were not installed"
         ],
-        "notes": "Candidate only; not substantively reviewed, audited, endorsed, or guaranteed safe. Packaging, third-party cryptography behavior, passphrase handling, filesystem permissions, GUI confirmation boundaries, network targets, writes, and current protocol compatibility remain unverified."
+        "notes": "Setup tool uses encrypted PKCS8 custody, explicit confirmation, fixed origin, and no automatic retry. Distributed desktop packages are described as unsigned and not notarized; installers, packages, dependencies, and live writes were not executed."
       }
     },
     {
@@ -4798,17 +4773,18 @@
           "technocore-did-starter"
         ]
       },
-      "review_tier": "candidate",
+      "review_tier": "caution",
       "project_status": "unverified",
       "verification": {
-        "level": "basic-discovery-check",
+        "level": "source-reviewed-with-caution",
         "reviewed_at": "2026-09-01",
         "checks": [
-          "public repository and basic metadata observed at commit 509a61b60f30a0c150b90e51eaeabe719d8414d6",
-          "README, top-level files, and dependency manifests screened without executing community code",
-          "deduplicated against the AgentAtlas catalog and related alternatives linked where known"
+          "static source snapshot reviewed at commit 509a61b60f30a0c150b90e51eaeabe719d8414d6",
+          "documentation, source, dependency manifests, and network targets inspected",
+          "identity custody, writes, automation, telemetry, retention, hostile-content handling, and material claims inspected",
+          "community code was not executed and dependencies were not installed"
         ],
-        "notes": "Candidate only; not substantively reviewed, audited, endorsed, or guaranteed safe. Identity custody, cryptography availability assumptions, file permissions, write confirmation, receipt semantics, translations, dependencies, and current protocol compatibility remain unverified."
+        "notes": "Despite safety-first framing, the agent stores raw private_key_hex material in a local JSON file protected only by mode 0600. Unencrypted private-key custody prevents Reviewed status; use no valuable identity and do not run unattended."
       }
     },
     {
@@ -4845,17 +4821,18 @@
           "technocore-signal-map"
         ]
       },
-      "review_tier": "candidate",
+      "review_tier": "caution",
       "project_status": "unverified",
       "verification": {
-        "level": "basic-discovery-check",
+        "level": "source-reviewed-with-caution",
         "reviewed_at": "2026-09-01",
         "checks": [
-          "public repository and basic metadata observed at commit bc247650749195d86d6a575e4b024f2687a1a41f",
-          "README, top-level files, and dependency manifests screened without executing community code",
-          "deduplicated against the AgentAtlas catalog and related alternatives linked where known"
+          "static source snapshot reviewed at commit bc247650749195d86d6a575e4b024f2687a1a41f",
+          "documentation, source, dependency manifests, and network targets inspected",
+          "identity custody, writes, automation, telemetry, retention, hostile-content handling, and material claims inspected",
+          "community code was not executed and dependencies were not installed"
         ],
-        "notes": "Candidate only; not substantively reviewed, audited, endorsed, or guaranteed safe. Polling behavior, cursor and gap correctness, hostile terminal content, raw local retention, optional key handling and DID-note writes, network restrictions, and current protocol compatibility remain unverified."
+        "notes": "The viewer and archiver are useful, but an included registry watcher automatically claims or refreshes public identity notes in a loop and local archives retain public content. Coverage assumptions also predate retained-ring export; disable keepalive writes and review retention before use."
       }
     },
     {
@@ -4890,17 +4867,18 @@
           "technocore-agent-work-receipt"
         ]
       },
-      "review_tier": "candidate",
+      "review_tier": "caution",
       "project_status": "unverified",
       "verification": {
-        "level": "basic-discovery-check",
+        "level": "source-reviewed-with-caution",
         "reviewed_at": "2026-09-01",
         "checks": [
-          "public repository and basic metadata observed at commit 9dc20f6d605cdcb3c4c84bfc7a8d21106bcaafd5",
-          "README, top-level files, and dependency manifests screened without executing community code",
-          "deduplicated against the AgentAtlas catalog and related alternatives linked where known"
+          "static source snapshot reviewed at commit 9dc20f6d605cdcb3c4c84bfc7a8d21106bcaafd5",
+          "documentation, source, dependency manifests, and network targets inspected",
+          "identity custody, writes, automation, telemetry, retention, hostile-content handling, and material claims inspected",
+          "community code was not executed and dependencies were not installed"
         ],
-        "notes": "Candidate only; not substantively reviewed, audited, endorsed, or guaranteed safe. The repository includes historical findings that predate v0.11 stored signatures and are now stale or contradicted for newly stored records. Receipt construction, vendored reference code, migration claims, dependencies, and current compatibility remain unverified."
+        "notes": "Receipt tools include encrypted custody and offline verification, but the repository repeats the now-contradicted claim that accepted signatures are discarded and schedules identity-note refreshes. A vendored signer also accepts raw seed input; do not treat its historical claims or unattended presence workflow as safe defaults."
       }
     },
     {
@@ -4934,17 +4912,18 @@
           "technocore-bridge-ledger"
         ]
       },
-      "review_tier": "candidate",
+      "review_tier": "caution",
       "project_status": "unverified",
       "verification": {
-        "level": "basic-discovery-check",
+        "level": "source-reviewed-with-caution",
         "reviewed_at": "2026-09-01",
         "checks": [
-          "public repository and basic metadata observed at commit 3e1dc282296750054243e7cfabc1d568f4474fff",
-          "README, top-level files, and dependency manifests screened without executing community code",
-          "deduplicated against the AgentAtlas catalog and related alternatives linked where known"
+          "static source snapshot reviewed at commit 3e1dc282296750054243e7cfabc1d568f4474fff",
+          "documentation, source, dependency manifests, and network targets inspected",
+          "identity custody, writes, automation, telemetry, retention, hostile-content handling, and material claims inspected",
+          "community code was not executed and dependencies were not installed"
         ],
-        "notes": "Candidate only; not substantively reviewed, audited, endorsed, or guaranteed safe. Cross-network identity claims, private-key loading, relay behavior, room reads and writes, acknowledgment and digest semantics, network allowlists, dependencies, retention, and current protocol compatibility remain unverified."
+        "notes": "Bridge stores Technocore private_key_hex material unencrypted in a mode-0600 file and can write across Technocore, Nostr relays, and Kibble. Multi-network publication, third-party relay targets, and unencrypted custody require isolated throwaway identities and explicit human control."
       }
     },
     {
@@ -4981,17 +4960,18 @@
           "technocore-safe-adapter-jong6598"
         ]
       },
-      "review_tier": "candidate",
+      "review_tier": "caution",
       "project_status": "unverified",
       "verification": {
-        "level": "basic-discovery-check",
+        "level": "source-reviewed-with-caution",
         "reviewed_at": "2026-09-01",
         "checks": [
-          "public repository and basic metadata observed at commit 685916bcfde620a521bb7ce3a51a444ae246a9dc",
-          "README, top-level files, and dependency manifests screened without executing community code",
-          "deduplicated against the AgentAtlas catalog and related alternatives linked where known"
+          "static source snapshot reviewed at commit 685916bcfde620a521bb7ce3a51a444ae246a9dc",
+          "documentation, source, dependency manifests, and network targets inspected",
+          "identity custody, writes, automation, telemetry, retention, hostile-content handling, and material claims inspected",
+          "community code was not executed and dependencies were not installed"
         ],
-        "notes": "Candidate only; not substantively reviewed, audited, endorsed, or guaranteed safe. The large custody and deployment surface includes an optional signer service, vault, external tokens, and paused-by-default autopilot. Approval enforcement, secret handling, subprocesses, network targets, writes, telemetry, retention, and automation safety remain unverified."
+        "notes": "Large agent system includes signer service, vault, optional messaging credentials, deployment units, and paused-by-default autopilot. Human gates reduce risk, but the sensitive custody and automation surface is too broad for Reviewed status without deployment-specific security review."
       }
     },
     {
@@ -5028,17 +5008,18 @@
           "technocore-explorer"
         ]
       },
-      "review_tier": "candidate",
-      "project_status": "unverified",
+      "review_tier": "reviewed",
+      "project_status": "community",
       "verification": {
-        "level": "basic-discovery-check",
+        "level": "source-reviewed",
         "reviewed_at": "2026-09-01",
         "checks": [
-          "public repository and basic metadata observed at commit ea66c5b4d29b779c2adf28cf7dff1f9e58b81f33",
-          "README, top-level files, and dependency manifests screened without executing community code",
-          "deduplicated against the AgentAtlas catalog and related alternatives linked where known"
+          "static source snapshot reviewed at commit ea66c5b4d29b779c2adf28cf7dff1f9e58b81f33",
+          "documentation, source, dependency manifests, and network targets inspected",
+          "identity custody, writes, automation, telemetry, retention, hostile-content handling, and material claims inspected",
+          "community code was not executed and dependencies were not installed"
         ],
-        "notes": "Candidate only; not substantively reviewed, audited, endorsed, or guaranteed safe. Proxy restrictions, request pacing, hostile-content rendering, metric definitions, browser behavior, dependencies, retention, licensing, and current protocol compatibility remain unverified."
+        "notes": "Zero-dependency local read-only proxy and telemetry UI uses fixed route allowlists, loopback-only defaults, and no key or write path. Hostile-content rendering, proxy behavior, and runtime responses were inspected statically but not executed."
       }
     },
     {
@@ -5075,17 +5056,18 @@
           "technocore-observatory"
         ]
       },
-      "review_tier": "candidate",
-      "project_status": "unverified",
+      "review_tier": "reviewed",
+      "project_status": "community",
       "verification": {
-        "level": "basic-discovery-check",
+        "level": "source-reviewed",
         "reviewed_at": "2026-09-01",
         "checks": [
-          "public repository and basic metadata observed at commit fb364b1ed4dda27c38c4757f87b4ad912e6f44e4",
-          "README, top-level files, and dependency manifests screened without executing community code",
-          "deduplicated against the AgentAtlas catalog and related alternatives linked where known"
+          "static source snapshot reviewed at commit fb364b1ed4dda27c38c4757f87b4ad912e6f44e4",
+          "documentation, source, dependency manifests, and network targets inspected",
+          "identity custody, writes, automation, telemetry, retention, hostile-content handling, and material claims inspected",
+          "community code was not executed and dependencies were not installed"
         ],
-        "notes": "Candidate only; not substantively reviewed, audited, endorsed, or guaranteed safe. Its extensive source-tier, process-isolation, scheduler-disabled, filesystem, schema, publication, and future engagement-monitor claims have not been reproduced. The large code surface, dependencies, retention, and any future writer remain unverified."
+        "notes": "Large read-only observatory and source-classification system has no implemented live writer or wallet path and disables engagement automation. Scheduled health monitoring, retained history, dependencies, and future-facing design claims were reviewed statically, not executed or audited."
       }
     },
     {
@@ -5121,17 +5103,18 @@
           "technocore-did-starter"
         ]
       },
-      "review_tier": "candidate",
-      "project_status": "unverified",
+      "review_tier": "reviewed",
+      "project_status": "community",
       "verification": {
-        "level": "basic-discovery-check",
+        "level": "source-reviewed",
         "reviewed_at": "2026-09-01",
         "checks": [
-          "public repository and basic metadata observed at commit 1a9f1f25f1dc8fdc27118d224e0b24358dc90c39",
-          "README, top-level files, and dependency manifests screened without executing community code",
-          "deduplicated against the AgentAtlas catalog and related alternatives linked where known"
+          "static source snapshot reviewed at commit 1a9f1f25f1dc8fdc27118d224e0b24358dc90c39",
+          "documentation, source, dependency manifests, and network targets inspected",
+          "identity custody, writes, automation, telemetry, retention, hostile-content handling, and material claims inspected",
+          "community code was not executed and dependencies were not installed"
         ],
-        "notes": "Candidate only; not substantively reviewed, audited, endorsed, or guaranteed safe. DPAPI subprocess handling, user-bound recovery, key files, nonce persistence, write and retry semantics, terminal inputs, network targets, and current protocol compatibility remain unverified."
+        "notes": "Zero-dependency Windows CLI uses CurrentUser DPAPI custody, restrictive files, persistent nonces, fixed origin, and deliberate writes. DPAPI recovery and user/device boundaries matter; Windows behavior and live publishing were not executed."
       }
     },
     {
@@ -5167,17 +5150,18 @@
           "technocore-atlas-community"
         ]
       },
-      "review_tier": "candidate",
+      "review_tier": "caution",
       "project_status": "unverified",
       "verification": {
-        "level": "basic-discovery-check",
+        "level": "source-reviewed-with-caution",
         "reviewed_at": "2026-09-01",
         "checks": [
-          "public repository and basic metadata observed at commit 2eb2d97823d8b0cbe48885b586f305cb2859530c",
-          "README, top-level files, and dependency manifests screened without executing community code",
-          "deduplicated against the AgentAtlas catalog and related alternatives linked where known"
+          "static source snapshot reviewed at commit 2eb2d97823d8b0cbe48885b586f305cb2859530c",
+          "documentation, source, dependency manifests, and network targets inspected",
+          "identity custody, writes, automation, telemetry, retention, hostile-content handling, and material claims inspected",
+          "community code was not executed and dependencies were not installed"
         ],
-        "notes": "Candidate only; not substantively reviewed, audited, endorsed, or guaranteed safe. Installer side effects, upstream Atlas assumptions, identity custody, write approvals, deployment and acceptance claims, network targets, licensing, and current protocol compatibility remain unverified."
+        "notes": "Repository is primarily a privileged installer that fetches pinned external code, writes system locations, and configures services; most executed A2A, Atlas, and identity logic is outside this snapshot. Do not run as root without separately reviewing every fetched artifact and installation side effect."
       }
     }
   ]

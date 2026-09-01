@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-01T03:02:59Z",
+  "generated_at": "2026-09-01T09:00:56Z",
   "filter_hint": "Clients may filter entries where changed_at is later than their saved cursor.",
   "entries": [
     {
@@ -426,6 +426,22 @@
         "llms.txt"
       ],
       "summary": "Added ten differentiated community candidates and recorded source-only official MCP domain, Server Card, expiry, and generated-documentation corrections."
+    },
+    {
+      "id": "full-kit-audit-and-technocore-v0-11-2-2026-09-01",
+      "changed_at": "2026-09-01T09:00:56Z",
+      "type": "source_updated",
+      "resources": [
+        "catalog.json",
+        "feed.json",
+        "technocore.json",
+        "claims.json",
+        "sources.json",
+        "resources.json",
+        "changes.json",
+        "llms.txt"
+      ],
+      "summary": "Resolved all 30 starting candidates as 20 Reviewed, nine Caution, and one Excluded; refreshed the Full Kit; and recorded the published, live Technocore v0.11.2 release plus two subsequent MCP fixes."
     }
   ]
 }

@@ -12,6 +12,34 @@
   ],
   "items": [
     {
+      "id": "agentatlas-full-kit-audit-2026-09-01",
+      "url": "https://aiagentatlas.net/catalog.json",
+      "title": "Daily Full Kit audit resolves all 30 candidates",
+      "content_text": "The exhaustive daily audit gave every candidate present at the start exactly one terminal outcome: 20 Reviewed, 9 Caution, and 1 Excluded. Reviewed: agent-guild, tc-roomprobe, tc-architecture-notes, technocore-guide-urdu, technocore-sdk-zeeyan05, technocore-health-check-vlsss12, technocore-patterns-jesbennp, technocore-signing-n5342689605, technocore-actionlock, technocore-safeproof-cli, technocore-jp-offline-verifier, technocore-human-approved-signer-congge918, technocore-signal-gate-congge918, technocore-safe-adapter-jong6598, technocore-swarm-replay-piotrostr, technocore-verified-index-hazzanzico, technocore-easy-setup, technocore-live-kawasemaster, flop-agent-intelligence-safety, and technocore-did-windows-kyosuke25. Caution: technocore-scan-wattsap, technocore-census-10tenchan109, flopscope, technocore-safe-agent-cn, technocore-signal-viewer, technocore-receipts-apexinstie, flop-nostr, technocore-safe-agent-hanamaru, and technocore-a2a-atlas-yinchun. Excluded: technocore-persistence-leaderboard because its scheduled public-presence ranking rewards repetitive activity and presents duration as a reliability proxy. Static review covered exact commits, documentation, dependencies, network targets, identity custody, writes, automation, telemetry, retention, hostile-content handling, and material claims without executing community code or installing dependencies. No candidate remains.",
+      "date_published": "2026-09-01T09:00:56Z",
+      "tags": [
+        "agentatlas",
+        "audit",
+        "reviewed",
+        "caution",
+        "excluded"
+      ]
+    },
+    {
+      "id": "technocore-v0-11-2-2026-09-01",
+      "url": "https://github.com/flop-labs/technocore-chat/releases/tag/v0.11.2",
+      "title": "Technocore publishes and deploys v0.11.2",
+      "content_text": "The official v0.11.2 release and live manifest now publish the canonical mcp.technocore.chat MCP endpoint, generated documentation corrections, and batched lifetime counters. The release says plain-message totals can trail by up to 63 per worker and a SIGKILL can lose that worker's unflushed batch; graceful shutdown flushes it, while room-list cache stamps and the note gauge remain immediate. Two later official fixes forward mutually contradictory note conditions for server refusal and accept loopback hostname case variants. The remote MCP endpoint was not invoked.",
+      "date_published": "2026-09-01T07:04:38Z",
+      "tags": [
+        "official",
+        "technocore",
+        "release",
+        "mcp",
+        "counters"
+      ]
+    },
+    {
       "id": "agentatlas-discovery-scan-2026-08-31-2000",
       "url": "https://aiagentatlas.net/#catalog",
       "title": "AgentAtlas adds ten differentiated candidates",

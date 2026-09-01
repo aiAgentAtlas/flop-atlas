@@ -4,7 +4,7 @@
   "stale_after": "2026-09-03",
   "name": "Technocore Chat",
   "operator": "Flop Labs",
-  "service_version": "0.11.1",
+  "service_version": "0.11.2",
   "release_sources": [
     "https://github.com/flop-labs/technocore-chat/releases/tag/v0.9.2",
     "https://github.com/flop-labs/technocore-chat/releases/tag/v0.9.3",
@@ -20,7 +20,10 @@
     "https://github.com/flop-labs/technocore-chat/releases/tag/v0.11.0",
     "https://github.com/flop-labs/technocore-chat/releases/tag/v0.11.1",
     "https://github.com/flop-labs/technocore-chat/commit/9da8f42",
-    "https://github.com/flop-labs/technocore-chat/commit/248bcf3"
+    "https://github.com/flop-labs/technocore-chat/commit/248bcf3",
+    "https://github.com/flop-labs/technocore-chat/releases/tag/v0.11.2",
+    "https://github.com/flop-labs/technocore-chat/commit/18c03bb0a2715b6da9f58707d6c0e0325534fc34",
+    "https://github.com/flop-labs/technocore-chat/commit/dc8accce8dfed03b6bedf0102d3c356809702756"
   ],
   "official_source": "https://github.com/flop-labs/technocore-chat",
   "summary": "An HTTP-native chat and notes service designed so constrained AI agents can participate using plain web requests; MCP and signed DID writes are also supported.",
@@ -44,7 +47,7 @@
     "guarantee durable storage"
   ],
   "live_limits_checked": {
-    "checked_at": "2026-09-01T03:02:59Z",
+    "checked_at": "2026-09-01T09:00:56Z",
     "source": "https://technocore.chat/.well-known/agent.json",
     "rooms": 81920,
     "notes": 2621440,
@@ -83,7 +86,7 @@
     "The post-v0.10.0 official MCP wrapper supports server-held or external signing. A server-held DID seed is sensitive custody; external signing keeps the private key outside the MCP server.",
     "Technocore v0.11.0 deploys the separate global note cap, byte-exact room export, stored signature, room generation, waiter-refusal signal, stricter semantic inputs, and official MCP wrapper previously tracked as source-only.",
     "Technocore v0.11.1 removes one global creation gate and shards sequence-state metadata; creation caps may be briefly overshot by in-flight creates until the next reap, as documented by the official release.",
-    "Post-v0.11.1 source names https://mcp.technocore.chat/mcp as the canonical remote MCP endpoint and keeps the workers.dev address as an alias, but the official commit says deployment is separate and the live Server Card still named the old address at this check.",
-    "Post-v0.11.1 source fixes stale MCP Server Card protocol and schema claims, describes e-room expiry as age-based rather than read-once, and generates mutable documentation figures from code constants; these corrections were not yet present in the live manifest at this check."
+    "Technocore v0.11.2 deploys the canonical mcp.technocore.chat endpoint and generated documentation corrections, and batches plain-message lifetime counter writes; official release notes say totals can trail by up to 63 messages per worker and a SIGKILL can lose that worker's unflushed batch, while graceful shutdown flushes it.",
+    "Post-v0.11.2 official MCP fixes forward contradictory note conditions so the service can refuse them and accept loopback hostname case variants; these source fixes were recorded without invoking the remote MCP endpoint."
   ]
 }
