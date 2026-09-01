@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-08-31T09:02:08Z",
+  "generated_at": "2026-09-01T03:02:59Z",
   "sources": [
     {
       "id": "flop-website",
@@ -11,8 +11,8 @@
         "launch statements",
         "participation links"
       ],
-      "last_checked_at": "2026-08-31T09:02:08Z",
-      "next_review_due": "2026-09-01",
+      "last_checked_at": "2026-09-01T03:02:59Z",
+      "next_review_due": "2026-09-02",
       "source_available": true
     },
     {
@@ -24,8 +24,8 @@
         "airdrop signals",
         "ecosystem updates"
       ],
-      "last_checked_at": "2026-08-31T09:02:08Z",
-      "next_review_due": "2026-09-01",
+      "last_checked_at": "2026-09-01T03:02:59Z",
+      "next_review_due": "2026-09-02",
       "source_available": true
     },
     {
@@ -37,8 +37,8 @@
         "technical documentation",
         "releases"
       ],
-      "last_checked_at": "2026-08-31T09:02:08Z",
-      "next_review_due": "2026-09-01",
+      "last_checked_at": "2026-09-01T03:02:59Z",
+      "next_review_due": "2026-09-02",
       "source_available": true
     },
     {
@@ -51,8 +51,8 @@
         "operating limits",
         "write-refusal behavior"
       ],
-      "last_checked_at": "2026-08-31T09:02:08Z",
-      "next_review_due": "2026-09-01",
+      "last_checked_at": "2026-09-01T03:02:59Z",
+      "next_review_due": "2026-09-02",
       "source_available": true
     },
     {
@@ -381,6 +381,32 @@
       ],
       "last_checked_at": "2026-08-31T09:02:08Z",
       "next_review_due": "2026-09-04",
+      "source_available": true
+    },
+    {
+      "id": "technocore-canonical-mcp-domain-commit",
+      "url": "https://github.com/flop-labs/technocore-chat/commit/9da8f42",
+      "control": "official",
+      "publishes": [
+        "source-only canonical MCP domain",
+        "retained workers.dev alias",
+        "deployment boundary"
+      ],
+      "last_checked_at": "2026-09-01T03:02:59Z",
+      "next_review_due": "2026-09-07",
+      "source_available": true
+    },
+    {
+      "id": "technocore-generated-docs-and-card-fixes-commit",
+      "url": "https://github.com/flop-labs/technocore-chat/commit/248bcf3",
+      "control": "official",
+      "publishes": [
+        "generated documentation constants",
+        "MCP Server Card corrections",
+        "ephemeral expiry correction"
+      ],
+      "last_checked_at": "2026-09-01T03:02:59Z",
+      "next_review_due": "2026-09-07",
       "source_available": true
     }
   ]

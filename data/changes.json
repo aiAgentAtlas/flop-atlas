@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-08-31T15:02:09Z",
+  "generated_at": "2026-09-01T03:02:59Z",
   "filter_hint": "Clients may filter entries where changed_at is later than their saved cursor.",
   "entries": [
     {
@@ -412,6 +412,20 @@
         "llms.txt"
       ],
       "summary": "Added 20 differentiated community candidates for the next exhaustive audit after static discovery screening and catalog-wide deduplication."
+    },
+    {
+      "id": "discovery-and-technocore-source-update-2026-08-31-2000",
+      "changed_at": "2026-09-01T03:02:59Z",
+      "type": "catalog_updated",
+      "resources": [
+        "catalog.json",
+        "feed.json",
+        "technocore.json",
+        "sources.json",
+        "changes.json",
+        "llms.txt"
+      ],
+      "summary": "Added ten differentiated community candidates and recorded source-only official MCP domain, Server Card, expiry, and generated-documentation corrections."
     }
   ]
 }

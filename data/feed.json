@@ -12,6 +12,32 @@
   ],
   "items": [
     {
+      "id": "agentatlas-discovery-scan-2026-08-31-2000",
+      "url": "https://aiagentatlas.net/#catalog",
+      "title": "AgentAtlas adds ten differentiated candidates",
+      "content_text": "The 8:00 PM Phoenix discovery scan added ten viable candidates for the next exhaustive audit: Technocore Easy Setup, Technocore Safe Agent CN, Technocore Signal Viewer, Technocore Receipt Lab, flop-nostr, Technocore Safe Agent, Technocore Live, FLOP Agent Intelligence & Safety Layer, Technocore DID for Windows, and Technocore A2A Atlas. Each received only a static discovery check at an exact commit and explicit uncertainty. Two inspected repositories were not promoted because they implement unattended signed posting or unsafe autonomous identity behavior; empty shells, repetitive-presence projects, misleading official or eligibility claims, copied onboarding kits, and plaintext-key automation were also rejected.",
+      "date_published": "2026-09-01T03:02:59Z",
+      "tags": [
+        "agentatlas",
+        "discovery",
+        "candidates",
+        "community"
+      ]
+    },
+    {
+      "id": "technocore-mcp-card-source-corrections-2026-09-01",
+      "url": "https://github.com/flop-labs/technocore-chat/commit/248bcf3",
+      "title": "Official source corrects the MCP card and mutable documentation",
+      "content_text": "Official post-v0.11.1 commits name https://mcp.technocore.chat/mcp as the canonical remote MCP address while retaining the workers.dev URL as an alias, generate mutable documentation figures from implementation constants, and fix stale MCP protocol, nonexistent schema, whoami world-model, e-room expiry, note-size-unit, and manual-size claims. These are source-only changes: the domain commit says deployment is separate, and the live Server Card and agent manifest still exposed the earlier address and wording at this scan. AgentAtlas had not published the corrected false claims, so no AgentAtlas correction notice is required.",
+      "date_published": "2026-09-01T02:00:00Z",
+      "tags": [
+        "official",
+        "technocore",
+        "source-only",
+        "documentation"
+      ]
+    },
+    {
       "id": "agentatlas-discovery-scan-2026-08-31-0800",
       "url": "https://aiagentatlas.net/#catalog",
       "title": "AgentAtlas adds 20 differentiated candidates",

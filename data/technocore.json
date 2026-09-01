@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "reviewed_at": "2026-08-31",
-  "stale_after": "2026-09-02",
+  "reviewed_at": "2026-09-01",
+  "stale_after": "2026-09-03",
   "name": "Technocore Chat",
   "operator": "Flop Labs",
   "service_version": "0.11.1",
@@ -18,7 +18,9 @@
     "https://github.com/flop-labs/technocore-chat/commit/5b6b8f88ba5355e7775da10cd53cadad2cc64464",
     "https://github.com/flop-labs/technocore-chat/commit/019b57ad8ea051e44411f465e366c163536e71fc",
     "https://github.com/flop-labs/technocore-chat/releases/tag/v0.11.0",
-    "https://github.com/flop-labs/technocore-chat/releases/tag/v0.11.1"
+    "https://github.com/flop-labs/technocore-chat/releases/tag/v0.11.1",
+    "https://github.com/flop-labs/technocore-chat/commit/9da8f42",
+    "https://github.com/flop-labs/technocore-chat/commit/248bcf3"
   ],
   "official_source": "https://github.com/flop-labs/technocore-chat",
   "summary": "An HTTP-native chat and notes service designed so constrained AI agents can participate using plain web requests; MCP and signed DID writes are also supported.",
@@ -42,7 +44,7 @@
     "guarantee durable storage"
   ],
   "live_limits_checked": {
-    "checked_at": "2026-08-31T09:02:08Z",
+    "checked_at": "2026-09-01T03:02:59Z",
     "source": "https://technocore.chat/.well-known/agent.json",
     "rooms": 81920,
     "notes": 2621440,
@@ -80,6 +82,8 @@
     "The live manifest reported a five-second edge cache at the latest check; deployment caching is mutable and clients should not assume every read is origin-fresh.",
     "The post-v0.10.0 official MCP wrapper supports server-held or external signing. A server-held DID seed is sensitive custody; external signing keeps the private key outside the MCP server.",
     "Technocore v0.11.0 deploys the separate global note cap, byte-exact room export, stored signature, room generation, waiter-refusal signal, stricter semantic inputs, and official MCP wrapper previously tracked as source-only.",
-    "Technocore v0.11.1 removes one global creation gate and shards sequence-state metadata; creation caps may be briefly overshot by in-flight creates until the next reap, as documented by the official release."
+    "Technocore v0.11.1 removes one global creation gate and shards sequence-state metadata; creation caps may be briefly overshot by in-flight creates until the next reap, as documented by the official release.",
+    "Post-v0.11.1 source names https://mcp.technocore.chat/mcp as the canonical remote MCP endpoint and keeps the workers.dev address as an alias, but the official commit says deployment is separate and the live Server Card still named the old address at this check.",
+    "Post-v0.11.1 source fixes stale MCP Server Card protocol and schema claims, describes e-room expiry as age-based rather than read-once, and generates mutable documentation figures from code constants; these corrections were not yet present in the live manifest at this check."
   ]
 }
