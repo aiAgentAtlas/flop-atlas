@@ -12,6 +12,20 @@
   ],
   "items": [
     {
+      "id": "agentatlas-discovery-scan-2026-09-01-0800",
+      "url": "https://aiagentatlas.net/#catalog",
+      "title": "AgentAtlas adds eight candidates and one immediate Caution",
+      "content_text": "The 8:00 AM Phoenix discovery scan added eight differentiated candidates for the next exhaustive audit: Technocore Agent Registry, Technocore Secure Windows Guide in French, Technocore Windows Safe Start in Japanese, Technocore DID Verifier, Technocore Health Scorer, Technocore Archive, Technocore Registry, and Technocore Discovery. Each candidate received only a static discovery check at an exact commit and explicit uncertainty. FLOP Contributions: Secure Ubuntu Agent Operations was added directly as Caution because it stores SIGN_SEED unencrypted in a local environment file while providing signed writes and mailbox automation. Repetitive signed-heartbeat tools, bidirectional social bridges, raw-key or autonomous agent SDKs, copied onboarding material, a near-copy research app, an unsupported deployment chart, a default dashboard shell, and empty repositories were rejected. No new official commit, release, live configuration, or complete FLOP eligibility policy appeared after the daily audit.",
+      "date_published": "2026-09-01T15:00:57Z",
+      "tags": [
+        "agentatlas",
+        "discovery",
+        "candidates",
+        "caution",
+        "community"
+      ]
+    },
+    {
       "id": "agentatlas-full-kit-audit-2026-09-01",
       "url": "https://aiagentatlas.net/catalog.json",
       "title": "Daily Full Kit audit resolves all 30 candidates",

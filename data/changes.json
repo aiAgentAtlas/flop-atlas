@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-01T09:00:56Z",
+  "generated_at": "2026-09-01T15:00:57Z",
   "filter_hint": "Clients may filter entries where changed_at is later than their saved cursor.",
   "entries": [
     {
@@ -442,6 +442,18 @@
         "llms.txt"
       ],
       "summary": "Resolved all 30 starting candidates as 20 Reviewed, nine Caution, and one Excluded; refreshed the Full Kit; and recorded the published, live Technocore v0.11.2 release plus two subsequent MCP fixes."
+    },
+    {
+      "id": "discovery-scan-2026-09-01-0800",
+      "changed_at": "2026-09-01T15:00:57Z",
+      "type": "catalog_updated",
+      "resources": [
+        "catalog.json",
+        "feed.json",
+        "changes.json",
+        "llms.txt"
+      ],
+      "summary": "Added eight differentiated community candidates and one immediate Caution after static screening and catalog-wide deduplication; no official baseline changed."
     }
   ]
 }
