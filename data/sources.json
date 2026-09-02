@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-02T03:00:29Z",
+  "generated_at": "2026-09-02T09:01:31Z",
   "sources": [
     {
       "id": "flop-website",
@@ -11,8 +11,8 @@
         "launch statements",
         "participation links"
       ],
-      "last_checked_at": "2026-09-01T09:00:56Z",
-      "next_review_due": "2026-09-07",
+      "last_checked_at": "2026-09-02T09:01:31Z",
+      "next_review_due": "2026-09-08",
       "source_available": true
     },
     {
@@ -24,9 +24,10 @@
         "airdrop signals",
         "ecosystem updates"
       ],
-      "last_checked_at": "2026-09-01T09:00:56Z",
-      "next_review_due": "2026-09-07",
-      "source_available": true
+      "last_checked_at": "2026-09-02T09:01:31Z",
+      "next_review_due": "2026-09-03",
+      "source_available": false,
+      "availability_note": "The X profile was inaccessible to the audit fetcher (HTTP 403); no current post was reasserted from the unavailable page."
     },
     {
       "id": "flop-github",
@@ -37,8 +38,8 @@
         "technical documentation",
         "releases"
       ],
-      "last_checked_at": "2026-09-01T09:00:56Z",
-      "next_review_due": "2026-09-07",
+      "last_checked_at": "2026-09-02T09:01:31Z",
+      "next_review_due": "2026-09-08",
       "source_available": true
     },
     {
@@ -51,8 +52,8 @@
         "operating limits",
         "write-refusal behavior"
       ],
-      "last_checked_at": "2026-09-01T09:00:56Z",
-      "next_review_due": "2026-09-07",
+      "last_checked_at": "2026-09-02T09:01:31Z",
+      "next_review_due": "2026-09-03",
       "source_available": true
     },
     {
@@ -63,9 +64,10 @@
         "DID-gated task statement",
         "airdrop reward statement"
       ],
-      "last_checked_at": "2026-09-01T09:00:56Z",
-      "next_review_due": "2026-09-02",
-      "source_available": true
+      "last_checked_at": "2026-09-02T09:01:31Z",
+      "next_review_due": "2026-09-03",
+      "source_available": false,
+      "availability_note": "The cited X post was inaccessible to the audit fetcher (HTTP 403); its previously recorded wording was not treated as newly verified."
     },
     {
       "id": "arthur-hayes-testnet-faucet",
@@ -76,9 +78,10 @@
         "Technocore faucet statement",
         "DID-key access statement"
       ],
-      "last_checked_at": "2026-09-01T09:00:56Z",
-      "next_review_due": "2026-09-02",
-      "source_available": true
+      "last_checked_at": "2026-09-02T09:01:31Z",
+      "next_review_due": "2026-09-03",
+      "source_available": false,
+      "availability_note": "The cited X post was inaccessible to the audit fetcher (HTTP 403); the official draft now independently supports the faucet and testnet-spending outline."
     },
     {
       "id": "technocore-v0-9-3",
@@ -231,9 +234,10 @@
         "additional FLOP allocation statement",
         "useful-participation reward intent"
       ],
-      "last_checked_at": "2026-09-01T09:00:56Z",
-      "next_review_due": "2026-09-02",
-      "source_available": true
+      "last_checked_at": "2026-09-02T09:01:31Z",
+      "next_review_due": "2026-09-03",
+      "source_available": false,
+      "availability_note": "The cited X post was inaccessible to the audit fetcher (HTTP 403); its previously recorded wording was not treated as newly verified."
     },
     {
       "id": "technocore-canonical-signature-fix",
@@ -467,6 +471,32 @@
         "alpha status and settlement-rail limitations"
       ],
       "last_checked_at": "2026-09-02T03:00:29Z",
+      "next_review_due": "2026-09-08",
+      "source_available": true
+    },
+    {
+      "id": "flop-network-teaser-v0-1",
+      "url": "https://flop.finance/teaser/",
+      "control": "official",
+      "publishes": [
+        "draft network and token mechanics",
+        "provisional testnet and mainnet timing",
+        "provisional genesis airdrop allocations and agent earning mechanics"
+      ],
+      "last_checked_at": "2026-09-02T09:01:31Z",
+      "next_review_due": "2026-09-08",
+      "source_available": true
+    },
+    {
+      "id": "technocore-v0-11-3",
+      "url": "https://github.com/flop-labs/technocore-chat/releases/tag/v0.11.3",
+      "control": "official",
+      "publishes": [
+        "v0.11.3 release notes",
+        "deployed compaction and retention fixes",
+        "OpenAPI format documentation and document-fallback changes"
+      ],
+      "last_checked_at": "2026-09-02T09:01:31Z",
       "next_review_due": "2026-09-08",
       "source_available": true
     }

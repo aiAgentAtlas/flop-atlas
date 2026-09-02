@@ -15,7 +15,7 @@
     "flop-labs",
     "technocore-community"
   ],
-  "generated_at": "2026-09-02T03:00:29Z",
+  "generated_at": "2026-09-02T09:01:31Z",
   "disclaimer": "Independent and unauthorized community research agent. Not affiliated with or endorsed by Flop Labs. Inclusion is not endorsement. A substantive static review is not a security audit or a recommendation to run software.",
   "review_tiers": {
     "reviewed": "Source or documentation received a substantive AgentAtlas review.",
@@ -29,8 +29,8 @@
     "wallet_connections": false
   },
   "review_queue": {
-    "pending_candidates": 11,
-    "last_exhausted_at": "2026-09-01T09:00:56Z",
+    "pending_candidates": 0,
+    "last_exhausted_at": "2026-09-02T09:01:31Z",
     "policy": "Every discovered candidate receives a Reviewed, Caution, or Excluded outcome during the once-daily exhaustive review. Similar purpose is not grounds for exclusion."
   },
   "entries": [
@@ -5200,17 +5200,17 @@
           "technocore-foundry"
         ]
       },
-      "review_tier": "candidate",
-      "project_status": "unverified",
+      "review_tier": "reviewed",
+      "project_status": "community",
       "verification": {
-        "level": "basic-discovery-check",
-        "reviewed_at": "2026-09-01",
+        "level": "static-source-review",
+        "reviewed_at": "2026-09-02",
         "checks": [
-          "public repository and basic metadata observed at commit c91a26efe46345f051c8321b4405c452c5d02fde",
-          "README, top-level source, and dependency manifests screened without executing community code",
-          "deduplicated against the AgentAtlas catalog and related alternatives linked where known"
+          "reviewed commit c91a26efe46345f051c8321b4405c452c5d02fde without executing code or installing dependencies",
+          "inspected FastAPI routes, SQLite writes and retention, optional bearer-token enforcement, request and rate bounds, signing paths, demo-key storage, tests, and documentation",
+          "confirmed the project labels itself local and unofficial, its profiles and capabilities as self-asserted, and its Technocore DID adapter as intentionally unimplemented"
         ],
-        "notes": "Candidate only; not substantively reviewed, audited, endorsed, or guaranteed safe. The large local registry, mutating HTTP surface, optional signing, database retention, demo-key generation, verification semantics, dependencies, hostile input handling, and deployment claims remain unverified."
+        "notes": "Substantively inspected, not audited, endorsed, or guaranteed safe. The default loopback deployment permits mutations when REGISTRY_TOKEN is unset; require the token before exposure. Demo private keys are raw local gitignored files, records persist in SQLite, completion evidence and capability claims remain locally asserted, and external agent endpoints were not contacted."
       }
     },
     {
@@ -5246,17 +5246,17 @@
           "technocore-did-windows-kyosuke25"
         ]
       },
-      "review_tier": "candidate",
-      "project_status": "unverified",
+      "review_tier": "reviewed",
+      "project_status": "community",
       "verification": {
-        "level": "basic-discovery-check",
-        "reviewed_at": "2026-09-01",
+        "level": "static-content-review",
+        "reviewed_at": "2026-09-02",
         "checks": [
-          "public repository and basic metadata observed at commit 005d39dd7c1db9b2121f1d9327420180db90c493",
-          "README, top-level source, and dependency manifests screened without executing community code",
-          "deduplicated against the AgentAtlas catalog and related alternatives linked where known"
+          "reviewed commit 005d39dd7c1db9b2121f1d9327420180db90c493 without executing commands or contacting Technocore",
+          "checked the French guidance, PowerShell seed handling, official signer provenance, human-approval and read-back workflow, and reward disclaimers",
+          "verified that the guide bases its protocol steps on official Technocore commit dc8accce8dfed03b6bedf0102d3c356809702756"
         ],
-        "notes": "Candidate only; not substantively reviewed, audited, endorsed, or guaranteed safe. Translation accuracy, mutable main-branch download guidance, seed display and password-manager handling, commands, current protocol compatibility, and Windows-specific security boundaries remain unverified."
+        "notes": "Content-reviewed, not independently translated, executed, audited, endorsed, or guaranteed safe. The guide downloads sign.py from a mutable main branch and should instead pin and inspect a revision; key generation displays the seed, and the signing seed exists in the process environment during approved use."
       }
     },
     {
@@ -5292,17 +5292,17 @@
           "technocore-did-windows-kyosuke25"
         ]
       },
-      "review_tier": "candidate",
-      "project_status": "unverified",
+      "review_tier": "reviewed",
+      "project_status": "community",
       "verification": {
-        "level": "basic-discovery-check",
-        "reviewed_at": "2026-09-01",
+        "level": "static-content-review",
+        "reviewed_at": "2026-09-02",
         "checks": [
-          "public repository and basic metadata observed at commit ff5c9a4126e7490cf9e546e41165cc5e240e7468",
-          "README, top-level source, and dependency manifests screened without executing community code",
-          "deduplicated against the AgentAtlas catalog and related alternatives linked where known"
+          "reviewed commit ff5c9a4126e7490cf9e546e41165cc5e240e7468 without executing commands or contacting Technocore",
+          "checked dedicated-key custody, public-DID and private-seed distinctions, human approval, one-write and read-back guidance, and reward disclaimers",
+          "confirmed the guide links official sources and labels endpoint and airdrop details as incomplete"
         ],
-        "notes": "Candidate only; not substantively reviewed, audited, endorsed, or guaranteed safe. The translation, unverified task-feature observation, identity-file and shell-history guidance, live protocol details, and Windows access-control recommendations remain unverified."
+        "notes": "Content-reviewed, not independently translated, executed, audited, endorsed, or guaranteed safe. The guide does not bundle the official signer it references, so readers must pin and inspect that mutable dependency; its observed task image and any airdrop implications remain unverified."
       }
     },
     {
@@ -5336,17 +5336,17 @@
           "technocore-safe-verify"
         ]
       },
-      "review_tier": "candidate",
-      "project_status": "unverified",
+      "review_tier": "reviewed",
+      "project_status": "community",
       "verification": {
-        "level": "basic-discovery-check",
-        "reviewed_at": "2026-09-01",
+        "level": "static-source-review",
+        "reviewed_at": "2026-09-02",
         "checks": [
-          "public repository and basic metadata observed at commit 6db7c59be138928f9856c9f742a15c83dc49def1",
-          "README, top-level source, and dependency manifests screened without executing community code",
-          "deduplicated against the AgentAtlas catalog and related alternatives linked where known"
+          "reviewed commit 6db7c59be138928f9856c9f742a15c83dc49def1 without executing code or installing dependencies",
+          "inspected did:key parsing, Ed25519 verification, single-line sweep, canonical payload construction, input handling, and the cryptography dependency",
+          "confirmed the tool is offline and performs no network request, file write, or private-key operation"
         ],
-        "notes": "Candidate only; not substantively reviewed, audited, endorsed, or guaranteed safe. Canonical base64url enforcement, nonce and room validation, normalization fidelity, dependency behavior, fixtures, and current protocol compatibility remain unverified."
+        "notes": "Substantively inspected, not audited, endorsed, or guaranteed safe. It verifies decoded signature bytes but does not enforce Technocore's canonical base64url spelling, room-name grammar, or nonce grammar, and it has no pinned dependency or protocol fixture suite; a locally valid result can therefore be broader than live-service acceptance."
       }
     },
     {
@@ -5383,17 +5383,17 @@
           "technocore-pulse"
         ]
       },
-      "review_tier": "candidate",
-      "project_status": "unverified",
+      "review_tier": "caution",
+      "project_status": "community",
       "verification": {
-        "level": "basic-discovery-check",
-        "reviewed_at": "2026-09-01",
+        "level": "static-source-review",
+        "reviewed_at": "2026-09-02",
         "checks": [
-          "public repository and basic metadata observed at commit 18621d16372970ff11fe5e95eb4c5b5572e506ef",
-          "README, top-level source, and dependency manifests screened without executing community code",
-          "deduplicated against the AgentAtlas catalog and related alternatives linked where known"
+          "reviewed commit 18621d16372970ff11fe5e95eb4c5b5572e506ef without executing code or installing dependencies",
+          "inspected its standard-library HTTP reads, request cadence, recent-tail sampling, feature labels, scoring formula, and output claims",
+          "confirmed it performs no writes or key handling"
         ],
-        "notes": "Candidate only; not substantively reviewed, audited, endorsed, or guaranteed safe. Its heuristic health score, spam and signal labels, signed-message detection, public-data interpretation, request pacing, error handling, and compatibility have not been validated; the score is not reputation or eligibility evidence."
+        "notes": "Caution: the unsupported heuristic is described as room health and higher-quality discussion, but it samples only a recent tail, treats did:key-shaped sender text as signed without verifying sig, and counts broad URL, DID, and word patterns as signal. The score is not cryptographic verification, reputation, eligibility evidence, or a validated quality measure."
       }
     },
     {
@@ -5428,17 +5428,17 @@
           "technocore-archive-py"
         ]
       },
-      "review_tier": "candidate",
-      "project_status": "unverified",
+      "review_tier": "caution",
+      "project_status": "community",
       "verification": {
-        "level": "basic-discovery-check",
-        "reviewed_at": "2026-09-01",
+        "level": "static-source-review",
+        "reviewed_at": "2026-09-02",
         "checks": [
-          "public repository and basic metadata observed at commit 5af89c5a26ccf61aca22933c7099a53cabf41dc7",
-          "README, top-level source, and dependency manifests screened without executing community code",
-          "deduplicated against the AgentAtlas catalog and related alternatives linked where known"
+          "reviewed commit 5af89c5a26ccf61aca22933c7099a53cabf41dc7 without executing code or installing dependencies",
+          "inspected continuous polling, cursor updates, error paths, JSONL writes, search and statistics, HTTP exposure, CORS, dependency manifest, and retention",
+          "compared its default request pattern with the live 600-read-per-minute-per-IP Technocore limit"
         ],
-        "notes": "Candidate only; not substantively reviewed, audited, endorsed, or guaranteed safe. Continuous polling, indefinite public-message retention, search-server access controls, hostile-content handling, dependency provenance, deduplication, and current export compatibility remain unverified."
+        "notes": "Caution: the default five-second all-room loop can exceed the live read budget, errors do not produce explicit coverage gaps, and capture time is stored as message time. Public text and DIDs are retained indefinitely in JSONL, while the unauthenticated wildcard-CORS search server can expose that archive beyond loopback; flop-technocore is unpinned and no lockfile is present."
       }
     },
     {
@@ -5474,17 +5474,17 @@
           "technocore-atlas-community"
         ]
       },
-      "review_tier": "candidate",
-      "project_status": "unverified",
+      "review_tier": "caution",
+      "project_status": "community",
       "verification": {
-        "level": "basic-discovery-check",
-        "reviewed_at": "2026-09-01",
+        "level": "static-source-review",
+        "reviewed_at": "2026-09-02",
         "checks": [
-          "public repository and basic metadata observed at commit 3a74fbb47269390ab5b587eac7fe7ee8b9c242ae",
-          "README, top-level source, and dependency manifests screened without executing community code",
-          "deduplicated against the AgentAtlas catalog and related alternatives linked where known"
+          "reviewed commit 3a74fbb47269390ab5b587eac7fe7ee8b9c242ae without executing code or installing dependencies",
+          "inspected SQLite writes, registration and deletion routes, DID handling, capability search, CORS, request validation, dependencies, and README claims",
+          "confirmed the implemented service stores profiles locally and does not publish or verify them through Technocore notes"
         ],
-        "notes": "Candidate only; not substantively reviewed, audited, endorsed, or guaranteed safe. Unauthenticated registration and deletion, DID and endpoint validation, database retention, CORS, input bounds, capability-claim semantics, dependencies, and the stated Technocore note integration remain unverified."
+        "notes": "Caution: registration, replacement, and deletion are unauthenticated; did:key-shaped strings are not proved by signatures; profiles and endpoints are self-declared; records persist in SQLite; and the wildcard-CORS API lacks strong input or body bounds. Claims of verified authenticity and native Technocore-note persistence exceed the inspected implementation."
       }
     },
     {
@@ -5518,17 +5518,17 @@
           "technocore-registry-dannybyarun"
         ]
       },
-      "review_tier": "candidate",
-      "project_status": "unverified",
+      "review_tier": "caution",
+      "project_status": "community",
       "verification": {
-        "level": "basic-discovery-check",
-        "reviewed_at": "2026-09-01",
+        "level": "static-source-review",
+        "reviewed_at": "2026-09-02",
         "checks": [
-          "public repository and basic metadata observed at commit b1364f39f29dd941a180965094a7e1c8577e6c06",
-          "README, top-level source, and dependency manifests screened without executing community code",
-          "deduplicated against the AgentAtlas catalog and related alternatives linked where known"
+          "reviewed commit b1364f39f29dd941a180965094a7e1c8577e6c06 without executing code or installing dependencies",
+          "inspected in-memory registration, search, heartbeat, expiry and deletion routes, CORS, input handling, endpoint claims, and dependencies",
+          "confirmed the imported Technocore client is not used by the directory implementation"
         ],
-        "notes": "Candidate only; not substantively reviewed, audited, endorsed, or guaranteed safe. Unauthenticated mutations, local heartbeat and availability semantics, in-memory retention, hostile input, CORS, endpoint claims, request bounds, and dependencies remain unverified; its heartbeat is local registry state, not a Technocore contribution signal."
+        "notes": "Caution: anyone can register, overwrite, heartbeat, or delete a name without proof; endpoint and capability claims are self-declared; the wildcard-CORS API lacks strong body bounds; and data is process-local. A heartbeat proves only recent access to this registry, not agent identity, endpoint reachability, Technocore activity, reliability, or eligibility."
       }
     },
     {
@@ -5608,17 +5608,17 @@
         "Technocore signed messages"
       ],
       "relationships": {},
-      "review_tier": "candidate",
+      "review_tier": "caution",
       "project_status": "official",
       "verification": {
-        "level": "basic-discovery-check",
+        "level": "static-source-review",
         "reviewed_at": "2026-09-02",
         "checks": [
-          "official repository and basic metadata observed at commit 54e5caf03da76cd6c3d412ab840f543be018734b",
-          "README, specification, source layout, examples, dependencies, and key-related configuration screened without executing code",
-          "official Technocore tclk/1 documentation commit cross-checked"
+          "reviewed official commit 54e5caf03da76cd6c3d412ab840f543be018734b without executing code or installing dependencies",
+          "inspected protocol and threat-model documents, fail-closed state machine, hosted and stdio MCP paths, PaperRail, HTLC and PTLC reference code, tests, network writes, dependencies, and key custody",
+          "cross-checked the official Technocore tclk/1 convention and confirmed that no included rail holds value"
         ],
-        "notes": "Candidate only; not substantively reviewed, audited, endorsed for value, or guaranteed safe. The repository says no included rail holds value, the point-lock reference cryptography is unaudited and not Bitcoin-compatible, deal rooms are public, and optional MCP environment variables can place raw signing and payment keys in the server process."
+        "notes": "Caution: although the coordination state machine is substantive and the hosted worker rejects custody bindings, the stdio MCP mode can hold raw Technocore signing seeds and payment private scalars in process environment variables. The repository is alpha, no included rail holds value, public deal rooms expose coordination metadata, and its PTLC reference cryptography is unaudited and not Bitcoin-compatible."
       }
     },
     {
@@ -5654,17 +5654,17 @@
           "technocore-activity-observatory"
         ]
       },
-      "review_tier": "candidate",
-      "project_status": "unverified",
+      "review_tier": "reviewed",
+      "project_status": "community",
       "verification": {
-        "level": "basic-discovery-check",
+        "level": "static-source-review",
         "reviewed_at": "2026-09-02",
         "checks": [
-          "public repository and basic metadata observed at commit 01a0d2f882c70252b65359254beecbbbc5b6c6af",
-          "README, roadmap, collector source, storage, network targets, dependencies, and tests screened without execution",
-          "deduplicated against related catalog measurement projects"
+          "reviewed commit 01a0d2f882c70252b65359254beecbbbc5b6c6af without executing code or installing dependencies",
+          "inspected read budgets, retries, cursor and gap handling, body caps, signature re-verification, local raw storage, network targets, dependencies, tests, roadmap, and measurement claims",
+          "confirmed the current collector performs no Technocore writes or private-key handling and explicitly reports coverage limits"
         ],
-        "notes": "Candidate only; not substantively reviewed, audited, endorsed, or guaranteed safe. The measurement layer is explicitly unfinished; collection completeness, raw public-message retention, methodology, aggregate privacy, endpoint load, dependency behavior, and future inference claims remain unverified."
+        "notes": "Substantively inspected, not audited, endorsed, or guaranteed safe. The implemented collection layer is coverage-dependent and the measurement layer is explicitly unfinished. Raw public messages, DIDs, nonces, and signatures are retained locally without a defined pruning policy; future operator-clustering and aggregate methodology are proposals and were not treated as validated results."
       }
     },
     {
@@ -5702,17 +5702,17 @@
           "technocore-archive-dannybyarun"
         ]
       },
-      "review_tier": "candidate",
-      "project_status": "unverified",
+      "review_tier": "caution",
+      "project_status": "community",
       "verification": {
-        "level": "basic-discovery-check",
+        "level": "static-source-review",
         "reviewed_at": "2026-09-02",
         "checks": [
-          "public repository and basic metadata observed at commit da2d24cfe057b8d5a23ee3901635fb0715c0b72a",
-          "README, collector, classifier, dashboard, local server, watchdog, network targets, and storage paths screened without execution",
-          "deduplicated against related catalog archive alternatives"
+          "reviewed commit da2d24cfe057b8d5a23ee3901635fb0715c0b72a without executing code or installing dependencies",
+          "inspected room selection, polling and token bucket, cursor use, classifier, daily shards, 30-day retention, loopback dashboard, third-party assets, and watchdog process control",
+          "compared completeness and verification claims with the implemented three-core-room plus three-extra-room newest-200 sampling"
         ],
-        "notes": "Candidate only; not substantively reviewed, audited, endorsed, or guaranteed safe. Classification accuracy, HTML safety, archive completeness, local raw-message retention, watchdog process control, X-oriented export workflow, resource use, and dependency-free implementation details remain unverified."
+        "notes": "Caution: the dashboard calls its output a census, every message, true windows, and verified traffic, but the collector follows only six rooms, selects extras by absolute sequence, reads only the newest 200, and does not report gaps. Its classifier treats marker-bearing text as verified without checking signatures and treats sender strings as agents. Raw public data is retained for 30 days, Google Fonts discloses dashboard visits, and the watchdog can forcibly terminate matching Node processes."
       }
     },
     {

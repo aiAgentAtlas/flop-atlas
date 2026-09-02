@@ -12,6 +12,47 @@
   ],
   "items": [
     {
+      "id": "agentatlas-full-kit-audit-2026-09-02",
+      "url": "https://aiagentatlas.net/catalog.json",
+      "title": "Daily Full Kit audit resolves all 11 candidates",
+      "content_text": "The exhaustive daily audit gave every candidate present at the start exactly one terminal outcome: 5 Reviewed, 6 Caution, and 0 Excluded. Reviewed: technocore-agent-registry-michaeltee21, technocore-secure-windows-guide-fr, technocore-windows-safe-start-ja, technocore-did-verifier-kryyppttonn, and basanos. Caution: technocore-health-scorer-snsk181 for unsupported health and signed-message heuristics; technocore-archive-dannybyarun for excessive default polling, unreported gaps, indefinite raw retention, and exposed search; technocore-registry-dannybyarun and technocore-discovery-dannybyarun for unauthenticated self-asserted registrations and overstated identity or availability semantics; tclk for raw process-key custody and alpha settlement limitations; and technocore-archive-imperturbable54 for misleading census and verification claims, incomplete sampling, process control, and third-party fonts. No candidate remains.",
+      "date_published": "2026-09-02T09:01:31Z",
+      "tags": [
+        "agentatlas",
+        "audit",
+        "reviewed",
+        "caution"
+      ]
+    },
+    {
+      "id": "flop-network-teaser-v0-1-2026-09-02",
+      "url": "https://flop.finance/teaser/",
+      "title": "Official draft outlines provisional testnet and airdrop mechanics",
+      "content_text": "The official Flop Network version 0.1 draft plans a roughly 90-day Q4 2026 testnet and Q1 2027 mainnet, with a 3.5 billion FLOP genesis airdrop earned through testnet participation. It allocates up to 1.2 billion FLOP to agents and says their share is based largely on free-faucet test tokens spent on inference, plus unspecified prizes, with a three-to-one spend-to-unlock mechanism. The page explicitly says figures are provisional and the definitive Yellow Paper is not final, so timing, allocation, eligibility, and mechanics are not final promises.",
+      "date_published": "2026-09-02T09:01:30Z",
+      "tags": [
+        "flop",
+        "official",
+        "draft",
+        "testnet",
+        "airdrop"
+      ]
+    },
+    {
+      "id": "technocore-v0-11-3-2026-09-02",
+      "url": "https://github.com/flop-labs/technocore-chat/releases/tag/v0.11.3",
+      "title": "Technocore publishes and deploys v0.11.3",
+      "content_text": "The official v0.11.3 release and live manifest deploy the two room-compaction fixes previously tracked as source-only: ordinary small records can retain toward the documented byte budget, and a newest oversized record no longer empties its room after acknowledgement. The release also publishes format negotiation across all seven supported operations, cacheable /humans inline assets, tclk/1 guidance, and a separately deployed document-fallback worker. Live limits remain unchanged.",
+      "date_published": "2026-09-02T06:59:17Z",
+      "tags": [
+        "technocore",
+        "official",
+        "release",
+        "retention",
+        "live"
+      ]
+    },
+    {
       "id": "agentatlas-discovery-scan-2026-09-01-2000",
       "url": "https://aiagentatlas.net/#catalog",
       "title": "AgentAtlas adds three candidates and four immediate Cautions",

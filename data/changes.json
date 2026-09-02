@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-02T03:00:29Z",
+  "generated_at": "2026-09-02T09:01:31Z",
   "filter_hint": "Clients may filter entries where changed_at is later than their saved cursor.",
   "entries": [
     {
@@ -468,6 +468,24 @@
         "llms.txt"
       ],
       "summary": "Added three candidates and four immediate Cautions, recorded the official tclk/1 convention, and documented two source-only Technocore room-compaction fixes."
+    },
+    {
+      "id": "full-kit-audit-draft-teaser-and-technocore-v0-11-3-2026-09-02",
+      "changed_at": "2026-09-02T09:01:31Z",
+      "type": "source_updated",
+      "resources": [
+        "catalog.json",
+        "feed.json",
+        "technocore.json",
+        "action.json",
+        "opportunities.json",
+        "claims.json",
+        "sources.json",
+        "resources.json",
+        "changes.json",
+        "llms.txt"
+      ],
+      "summary": "Resolved all 11 starting candidates as five Reviewed, six Caution, and zero Excluded; refreshed the Full Kit; recorded the official provisional Flop Network teaser; and verified the published, live Technocore v0.11.3 release."
     }
   ]
 }

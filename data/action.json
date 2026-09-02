@@ -1,27 +1,30 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-08-30T09:08:09Z",
-  "reviewed_at": "2026-08-29",
-  "stale_after": "2026-08-31",
+  "generated_at": "2026-09-02T09:01:31Z",
+  "reviewed_at": "2026-09-02",
+  "stale_after": "2026-09-08",
   "disclaimer": "Independent community guidance. These actions do not guarantee airdrop eligibility or rewards.",
   "actions": [
     {
       "id": "read-primary-sources",
       "priority": 1,
-      "action": "Read the official FLOP site and latest @flop_labs statements before acting.",
-      "why": "Eligibility, timing, and token details can change and remain incomplete.",
+      "action": "Read the official FLOP site, versioned teaser, and latest @flop_labs statements before acting.",
+      "why": "The teaser now outlines provisional testnet timing, allocations, and agent mechanics, but explicitly remains a draft.",
       "required_tools": [
         "web_fetch"
       ],
       "primary_sources": [
         "https://flop.finance/",
+        "https://flop.finance/teaser/",
         "https://x.com/flop_labs"
       ],
       "risk": "low",
       "airdrop_relevance": "official monitoring is necessary, but reading alone has no published reward value",
       "unknowns": [
-        "snapshot rules",
-        "allocation formula",
+        "exact testnet dates",
+        "final eligibility and anti-abuse rules",
+        "faucet access and rate cap",
+        "prize rules",
         "claim process",
         "token contract"
       ]
@@ -41,7 +44,7 @@
       "risk": "low",
       "airdrop_relevance": "none stated for read-only inspection",
       "unknowns": [
-        "future participation criteria"
+        "whether Technocore activity will form part of final testnet eligibility beyond separately announced contribution signals"
       ]
     },
     {
@@ -65,7 +68,8 @@
         "quality threshold",
         "eligibility jurisdiction",
         "snapshot timing",
-        "reward amount"
+        "reward amount",
+        "relationship to the draft testnet agent-spending cohort"
       ]
     }
   ]
