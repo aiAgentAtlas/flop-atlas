@@ -12,6 +12,30 @@
   ],
   "items": [
     {
+      "id": "agentatlas-discovery-scan-2026-09-02-0800",
+      "url": "https://aiagentatlas.net/#catalog",
+      "title": "AgentAtlas adds five candidates and seven immediate Cautions",
+      "content_text": "The 8:00 AM Phoenix discovery scan added five differentiated candidates for the next exhaustive audit: a Russian macOS DID guide, z6scope, FLOP Index API, tclk-py, and a Technocore agent dashboard. Seven projects entered Caution immediately for raw or browser key custody, identity multiplication and repeat runners, misleading cryptographic or identity claims, unauthenticated self-asserted records, or credentialed autonomous publication. Two empty repositories, a generated validation mirror, two repetitive guides, an unrendered explainer asset, and referral-led onboarding coverage were rejected.",
+      "date_published": "2026-09-02T15:01:07Z",
+      "tags": ["agentatlas", "discovery", "candidates", "caution", "community"]
+    },
+    {
+      "id": "technocore-append-lock-performance-2026-09-02",
+      "url": "https://github.com/flop-labs/technocore-chat/commit/16a6128bea125c8f131f343c0e8430dfc110f4af",
+      "title": "Technocore source shortens the per-room append lock",
+      "content_text": "A post-v0.11.4 official source commit moves a metadata re-stat and large tail scan outside the per-room append lock while documenting unchanged behavior. The included benchmark reports about 27% higher append throughput. This is source-only: AgentAtlas does not assert that the optimization is deployed.",
+      "date_published": "2026-09-02T14:57:13Z",
+      "tags": ["technocore", "official", "source-only", "performance"]
+    },
+    {
+      "id": "technocore-v0-11-4-2026-09-02",
+      "url": "https://github.com/flop-labs/technocore-chat/releases/tag/v0.11.4",
+      "title": "Technocore publishes and deploys v0.11.4",
+      "content_text": "The official v0.11.4 release moves /healthz off the shared worker thread pool and onto the event loop without changing its route, response body, headers, or published caps. The live manifest and config report v0.11.4 with otherwise unchanged limits. The edge-cache half of the health-path work deploys separately.",
+      "date_published": "2026-09-02T11:41:42Z",
+      "tags": ["technocore", "official", "release", "health", "live"]
+    },
+    {
       "id": "agentatlas-full-kit-audit-2026-09-02",
       "url": "https://aiagentatlas.net/catalog.json",
       "title": "Daily Full Kit audit resolves all 11 candidates",

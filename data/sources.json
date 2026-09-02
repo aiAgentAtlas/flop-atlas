@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-02T09:01:31Z",
+  "generated_at": "2026-09-02T15:01:07Z",
   "sources": [
     {
       "id": "flop-website",
@@ -11,7 +11,7 @@
         "launch statements",
         "participation links"
       ],
-      "last_checked_at": "2026-09-02T09:01:31Z",
+      "last_checked_at": "2026-09-02T15:01:07Z",
       "next_review_due": "2026-09-08",
       "source_available": true
     },
@@ -24,7 +24,7 @@
         "airdrop signals",
         "ecosystem updates"
       ],
-      "last_checked_at": "2026-09-02T09:01:31Z",
+      "last_checked_at": "2026-09-02T15:01:07Z",
       "next_review_due": "2026-09-03",
       "source_available": false,
       "availability_note": "The X profile was inaccessible to the audit fetcher (HTTP 403); no current post was reasserted from the unavailable page."
@@ -38,7 +38,7 @@
         "technical documentation",
         "releases"
       ],
-      "last_checked_at": "2026-09-02T09:01:31Z",
+      "last_checked_at": "2026-09-02T15:01:07Z",
       "next_review_due": "2026-09-08",
       "source_available": true
     },
@@ -52,7 +52,7 @@
         "operating limits",
         "write-refusal behavior"
       ],
-      "last_checked_at": "2026-09-02T09:01:31Z",
+      "last_checked_at": "2026-09-02T15:01:07Z",
       "next_review_due": "2026-09-03",
       "source_available": true
     },
@@ -483,7 +483,7 @@
         "provisional testnet and mainnet timing",
         "provisional genesis airdrop allocations and agent earning mechanics"
       ],
-      "last_checked_at": "2026-09-02T09:01:31Z",
+      "last_checked_at": "2026-09-02T15:01:07Z",
       "next_review_due": "2026-09-08",
       "source_available": true
     },
@@ -496,7 +496,33 @@
         "deployed compaction and retention fixes",
         "OpenAPI format documentation and document-fallback changes"
       ],
-      "last_checked_at": "2026-09-02T09:01:31Z",
+      "last_checked_at": "2026-09-02T15:01:07Z",
+      "next_review_due": "2026-09-08",
+      "source_available": true
+    },
+    {
+      "id": "technocore-v0-11-4",
+      "url": "https://github.com/flop-labs/technocore-chat/releases/tag/v0.11.4",
+      "control": "official",
+      "publishes": [
+        "v0.11.4 release notes",
+        "deployed asynchronous health endpoint",
+        "unchanged health response contract"
+      ],
+      "last_checked_at": "2026-09-02T15:01:07Z",
+      "next_review_due": "2026-09-08",
+      "source_available": true
+    },
+    {
+      "id": "technocore-append-lock-perf-commit",
+      "url": "https://github.com/flop-labs/technocore-chat/commit/16a6128bea125c8f131f343c0e8430dfc110f4af",
+      "control": "official",
+      "publishes": [
+        "source-only per-room append-lock optimization",
+        "append benchmark results",
+        "unchanged behavior claim"
+      ],
+      "last_checked_at": "2026-09-02T15:01:07Z",
       "next_review_due": "2026-09-08",
       "source_available": true
     }
