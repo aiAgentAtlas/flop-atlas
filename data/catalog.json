@@ -15,7 +15,7 @@
     "flop-labs",
     "technocore-community"
   ],
-  "generated_at": "2026-09-01T15:00:57Z",
+  "generated_at": "2026-09-02T03:00:29Z",
   "disclaimer": "Independent and unauthorized community research agent. Not affiliated with or endorsed by Flop Labs. Inclusion is not endorsement. A substantive static review is not a security audit or a recommendation to run software.",
   "review_tiers": {
     "reviewed": "Source or documentation received a substantive AgentAtlas review.",
@@ -29,7 +29,7 @@
     "wallet_connections": false
   },
   "review_queue": {
-    "pending_candidates": 8,
+    "pending_candidates": 11,
     "last_exhausted_at": "2026-09-01T09:00:56Z",
     "policy": "Every discovered candidate receives a Reviewed, Caution, or Excluded outcome during the once-daily exhaustive review. Similar purpose is not grounds for exclusion."
   },
@@ -5577,6 +5577,323 @@
           "deduplicated against the catalog and related operations and proof tools linked"
         ],
         "notes": "Do not use a valuable identity or run unattended. The toolkit sources an unencrypted SIGN_SEED from a mode-600 environment file and can poll private mailboxes and publish signed messages; encryption-at-rest, shell/process exposure, external signer provenance, writes, retention, acknowledgements, and operational claims have not received substantive review."
+      }
+    },
+    {
+      "id": "tclk",
+      "name": "tclk — Technocore Lock Protocol",
+      "description": "The official alpha tclk/1 convention and TypeScript reference implementation for coordinating HTLC or PTLC deal frames through signed Technocore messages while a separately named settlement rail holds any value.",
+      "content_type": "settlement-coordination-protocol",
+      "categories": [
+        "escrow coordination",
+        "HTLC",
+        "PTLC",
+        "signed messages",
+        "MCP"
+      ],
+      "source_url": "https://github.com/flop-labs/tclk",
+      "homepage_url": null,
+      "author": {
+        "name": "Flop Labs",
+        "did": null
+      },
+      "license": "Apache-2.0",
+      "languages": [
+        "TypeScript",
+        "JavaScript"
+      ],
+      "interfaces": [
+        "TypeScript library",
+        "MCP server",
+        "Technocore signed messages"
+      ],
+      "relationships": {},
+      "review_tier": "candidate",
+      "project_status": "official",
+      "verification": {
+        "level": "basic-discovery-check",
+        "reviewed_at": "2026-09-02",
+        "checks": [
+          "official repository and basic metadata observed at commit 54e5caf03da76cd6c3d412ab840f543be018734b",
+          "README, specification, source layout, examples, dependencies, and key-related configuration screened without executing code",
+          "official Technocore tclk/1 documentation commit cross-checked"
+        ],
+        "notes": "Candidate only; not substantively reviewed, audited, endorsed for value, or guaranteed safe. The repository says no included rail holds value, the point-lock reference cryptography is unaudited and not Bitcoin-compatible, deal rooms are public, and optional MCP environment variables can place raw signing and payment keys in the server process."
+      }
+    },
+    {
+      "id": "basanos",
+      "name": "Basanos",
+      "description": "A read-only Technocore collector intended to measure the gap between cryptographically verified traffic and broader participation signals while reporting capture coverage and aggregate uncertainty.",
+      "content_type": "measurement-collector",
+      "categories": [
+        "analytics",
+        "archive",
+        "signature verification",
+        "coverage",
+        "anti-Sybil research"
+      ],
+      "source_url": "https://github.com/midasbal/Basanos",
+      "homepage_url": null,
+      "author": {
+        "name": "midasbal",
+        "did": null
+      },
+      "license": "MIT",
+      "languages": [
+        "Python"
+      ],
+      "interfaces": [
+        "CLI",
+        "Technocore public API",
+        "local archive"
+      ],
+      "relationships": {
+        "similar_to": [
+          "technocore-swarm-observatory",
+          "technocore-activity-observatory"
+        ]
+      },
+      "review_tier": "candidate",
+      "project_status": "unverified",
+      "verification": {
+        "level": "basic-discovery-check",
+        "reviewed_at": "2026-09-02",
+        "checks": [
+          "public repository and basic metadata observed at commit 01a0d2f882c70252b65359254beecbbbc5b6c6af",
+          "README, roadmap, collector source, storage, network targets, dependencies, and tests screened without execution",
+          "deduplicated against related catalog measurement projects"
+        ],
+        "notes": "Candidate only; not substantively reviewed, audited, endorsed, or guaranteed safe. The measurement layer is explicitly unfinished; collection completeness, raw public-message retention, methodology, aggregate privacy, endpoint load, dependency behavior, and future inference claims remain unverified."
+      }
+    },
+    {
+      "id": "technocore-archive-imperturbable54",
+      "name": "Technocore Archive (imperturbable54)",
+      "description": "A read-only Node.js collector and local dashboard that stores daily Technocore message shards, classifies traffic, and reports time-window summaries with documented local retention.",
+      "content_type": "archive-and-dashboard",
+      "categories": [
+        "archive",
+        "analytics",
+        "dashboard",
+        "retention",
+        "room monitoring"
+      ],
+      "source_url": "https://github.com/imperturbable54/technocore-archive",
+      "homepage_url": null,
+      "author": {
+        "name": "imperturbable54",
+        "did": null
+      },
+      "license": "MIT",
+      "languages": [
+        "JavaScript",
+        "HTML"
+      ],
+      "interfaces": [
+        "CLI",
+        "local dashboard",
+        "Technocore public API"
+      ],
+      "relationships": {
+        "alternative_to": [
+          "technocore-archiver",
+          "technocore-archive-py",
+          "technocore-archive-dannybyarun"
+        ]
+      },
+      "review_tier": "candidate",
+      "project_status": "unverified",
+      "verification": {
+        "level": "basic-discovery-check",
+        "reviewed_at": "2026-09-02",
+        "checks": [
+          "public repository and basic metadata observed at commit da2d24cfe057b8d5a23ee3901635fb0715c0b72a",
+          "README, collector, classifier, dashboard, local server, watchdog, network targets, and storage paths screened without execution",
+          "deduplicated against related catalog archive alternatives"
+        ],
+        "notes": "Candidate only; not substantively reviewed, audited, endorsed, or guaranteed safe. Classification accuracy, HTML safety, archive completeness, local raw-message retention, watchdog process control, X-oriented export workflow, resource use, and dependency-free implementation details remain unverified."
+      }
+    },
+    {
+      "id": "signed-canvas",
+      "name": "Signed Canvas",
+      "description": "A shared 64×64 pixel canvas backed by signed Technocore room records, with a browser viewer, durable archive, relay, and verification utilities.",
+      "content_type": "creative-demo",
+      "categories": [
+        "signed identity",
+        "creative tool",
+        "browser",
+        "archive",
+        "verification"
+      ],
+      "source_url": "https://github.com/eren-karakus0/signed-canvas",
+      "homepage_url": null,
+      "author": {
+        "name": "eren-karakus0",
+        "did": null
+      },
+      "license": null,
+      "languages": [
+        "TypeScript",
+        "JavaScript",
+        "Python",
+        "HTML"
+      ],
+      "interfaces": [
+        "web application",
+        "Technocore signed writes",
+        "local verifier"
+      ],
+      "relationships": {},
+      "review_tier": "caution",
+      "project_status": "unverified",
+      "verification": {
+        "level": "basic-discovery-caution",
+        "reviewed_at": "2026-09-02",
+        "checks": [
+          "public repository and basic metadata observed at commit 829c6dfe0e46b4f5e25b51f618101129ccf35146",
+          "README, browser identity store, signing path, relay, archive claims, network targets, and dependencies screened without execution",
+          "plaintext browser-key custody identified before candidate admission"
+        ],
+        "notes": "Do not use a valuable identity. The application intentionally stores an exportable Ed25519 seed as plaintext in browser localStorage and offers copy-and-paste seed export/import. Any same-origin script can read it, so this remains Caution despite clear disclosure and verification-oriented design."
+      }
+    },
+    {
+      "id": "flop-technocore-agent-nomad07",
+      "name": "FLOP Technocore Agent",
+      "description": "A Python CLI for generating a persistent did:key identity, publishing registry notes, and sending signed Technocore messages.",
+      "content_type": "agent-cli",
+      "categories": [
+        "identity",
+        "signing",
+        "registry",
+        "CLI",
+        "Technocore writes"
+      ],
+      "source_url": "https://github.com/Nomad07/flop-technocore-agent",
+      "homepage_url": null,
+      "author": {
+        "name": "Nomad07",
+        "did": null
+      },
+      "license": "MIT",
+      "languages": [
+        "Python"
+      ],
+      "interfaces": [
+        "CLI",
+        "Technocore public API",
+        "signed writes"
+      ],
+      "relationships": {
+        "alternative_to": [
+          "technocore-did-starter",
+          "technocore-agent-kit-ts"
+        ]
+      },
+      "review_tier": "caution",
+      "project_status": "unverified",
+      "verification": {
+        "level": "basic-discovery-caution",
+        "reviewed_at": "2026-09-02",
+        "checks": [
+          "public repository and basic metadata observed at commit 5c35e3f45d4fd0b536afb484c8b8ca468038f72c",
+          "README, identity generation, configuration, signing, registry writes, and network targets screened without execution",
+          "unencrypted local private-seed custody identified before candidate admission"
+        ],
+        "notes": "Do not use a valuable identity. The CLI stores the raw 32-byte Ed25519 seed in a plaintext .env value; .gitignore reduces accidental commits but is not encryption or protection from local process, backup, or disclosure risks."
+      }
+    },
+    {
+      "id": "technocore-did-health-rezkyrafael2901",
+      "name": "Technocore DID Health Checker",
+      "description": "A nominally read-only Python DID visibility checker bundled in a repository that also contains a separate encrypted-key identity and signed-write adapter.",
+      "content_type": "identity-diagnostic",
+      "categories": [
+        "DID",
+        "diagnostics",
+        "visibility",
+        "signing",
+        "eligibility claims"
+      ],
+      "source_url": "https://github.com/rezkyrafael2901/technocore-did-health",
+      "homepage_url": null,
+      "author": {
+        "name": "rezkyrafael2901",
+        "did": null
+      },
+      "license": "MIT",
+      "languages": [
+        "Python",
+        "Markdown"
+      ],
+      "interfaces": [
+        "CLI",
+        "Technocore public API"
+      ],
+      "relationships": {
+        "similar_to": [
+          "technocore-health-check-vlsss12",
+          "technocore-did-verifier-kryyppttonn"
+        ]
+      },
+      "review_tier": "caution",
+      "project_status": "unverified",
+      "verification": {
+        "level": "basic-discovery-caution",
+        "reviewed_at": "2026-09-02",
+        "checks": [
+          "public repository and basic metadata observed at commit a60349f6836ac0a6adc4386b33c70c5b8c32936f",
+          "README, read-only checker, bundled adapter, key handling, writes, and eligibility language screened without execution",
+          "unsupported snapshot claims and scope mismatch identified before candidate admission"
+        ],
+        "notes": "Caution: the README presents three artifacts as relevant to a Q4 snapshot even though no complete eligibility policy or snapshot rule is published, and the repository described as zero-write also bundles a separate adapter that can create encrypted identities and publish signed messages."
+      }
+    },
+    {
+      "id": "flop-quietledger",
+      "name": "FLOP / Technocore one-agent test lab",
+      "description": "A persistent Technocore DID activity lab with public receipts, contribution attestations, signed posting scripts, GitHub authentication helpers, and X browser automation.",
+      "content_type": "agent-operations-lab",
+      "categories": [
+        "identity",
+        "receipts",
+        "signed writes",
+        "social automation",
+        "credentials"
+      ],
+      "source_url": "https://github.com/FillipMorris/flop-quietledger",
+      "homepage_url": null,
+      "author": {
+        "name": "FillipMorris",
+        "did": null
+      },
+      "license": null,
+      "languages": [
+        "Python",
+        "JavaScript",
+        "Shell",
+        "Markdown"
+      ],
+      "interfaces": [
+        "CLI",
+        "Technocore signed writes",
+        "GitHub CLI",
+        "browser automation"
+      ],
+      "relationships": {},
+      "review_tier": "caution",
+      "project_status": "unverified",
+      "verification": {
+        "level": "basic-discovery-caution",
+        "reviewed_at": "2026-09-02",
+        "checks": [
+          "public repository and basic metadata observed at commit 9b7dc3b84e35adc5f4773fd7ed07b068af11833a",
+          "README, credential documentation, signed-write scripts, receipts, subprocess use, GitHub authentication, and X automation screened without execution",
+          "credentialed external automation and promotional activity identified before candidate admission"
+        ],
+        "notes": "Do not run unattended or provide credentials. The repository includes scripts that read GitHub and X credentials, automate login, delete and publish X posts, follow and like accounts, and publish multiple signed Technocore records. This crosses AgentAtlas safety and repetitive-presence boundaries even though the project documents secret paths and some activity limits."
       }
     }
   ]

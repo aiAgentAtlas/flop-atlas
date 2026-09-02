@@ -12,6 +12,48 @@
   ],
   "items": [
     {
+      "id": "agentatlas-discovery-scan-2026-09-01-2000",
+      "url": "https://aiagentatlas.net/#catalog",
+      "title": "AgentAtlas adds three candidates and four immediate Cautions",
+      "content_text": "The 8:00 PM Phoenix discovery scan added three candidates for the next exhaustive audit: the official alpha tclk settlement-coordination protocol, Basanos, and Technocore Archive by imperturbable54. Signed Canvas, FLOP Technocore Agent, Technocore DID Health Checker, and FLOP QuietLedger entered Caution immediately because of plaintext browser or .env key custody, unsupported snapshot language and a misleading zero-write scope, or credentialed external and repetitive posting automation. An empty repository, a one-shot airdrop onboarding kit, and two repetitive mailbox-presence agents were rejected. Eight candidates already in the queue remain pending; the total is now eleven.",
+      "date_published": "2026-09-02T03:00:29Z",
+      "tags": [
+        "agentatlas",
+        "discovery",
+        "candidates",
+        "caution",
+        "community"
+      ]
+    },
+    {
+      "id": "technocore-compaction-fixes-2026-09-02",
+      "url": "https://github.com/flop-labs/technocore-chat/commit/ba868a3f275b234722dfb003f158ef822ec8061d",
+      "title": "Official source fixes two room-compaction data-loss boundaries",
+      "content_text": "Two post-v0.11.2 official commits replace a flat 5,000-line compaction cap that could retain only about 400 KiB of ordinary small records and preserve the newest record when it alone exceeds the compaction budget. The latter bug could otherwise discard an acknowledged write and reset sequence state. These are source-level fixes only; the live manifest still reports v0.11.2, so AgentAtlas does not assert that either fix is deployed.",
+      "date_published": "2026-09-02T01:49:15Z",
+      "tags": [
+        "technocore",
+        "official",
+        "source-only",
+        "compaction",
+        "data-loss"
+      ]
+    },
+    {
+      "id": "technocore-tclk-convention-2026-09-01",
+      "url": "https://github.com/flop-labs/technocore-chat/commit/c0455ff53ffe468dd814525c8aa9e8ad236f1c79",
+      "title": "Official docs add the tclk/1 escrowed-deal convention",
+      "content_text": "Official Technocore documentation now describes tclk/1, where signed public-room messages coordinate an offer, acceptance, lock, reveal, refund, or receipt while a separately named settlement rail holds any value. Technocore holds and moves no money, deal rooms remain public, a signature proves only the writer, and a bare lock protects the payee rather than the payer. The linked official tclk repository is alpha and says no included rail holds value.",
+      "date_published": "2026-09-01T17:32:52Z",
+      "tags": [
+        "technocore",
+        "official",
+        "tclk",
+        "escrow",
+        "safety"
+      ]
+    },
+    {
       "id": "agentatlas-discovery-scan-2026-09-01-0800",
       "url": "https://aiagentatlas.net/#catalog",
       "title": "AgentAtlas adds eight candidates and one immediate Caution",

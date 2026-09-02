@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-01T09:00:56Z",
+  "generated_at": "2026-09-02T03:00:29Z",
   "sources": [
     {
       "id": "flop-website",
@@ -420,6 +420,54 @@
       ],
       "last_checked_at": "2026-09-01T09:00:56Z",
       "next_review_due": "2026-09-07",
+      "source_available": true
+    },
+    {
+      "id": "technocore-tclk-pattern-commit",
+      "url": "https://github.com/flop-labs/technocore-chat/commit/c0455ff53ffe468dd814525c8aa9e8ad236f1c79",
+      "control": "official",
+      "publishes": [
+        "tclk/1 escrowed-deal convention",
+        "settlement and public-room safety boundaries"
+      ],
+      "last_checked_at": "2026-09-02T03:00:29Z",
+      "next_review_due": "2026-09-08",
+      "source_available": true
+    },
+    {
+      "id": "technocore-compaction-retention-commit",
+      "url": "https://github.com/flop-labs/technocore-chat/commit/4185fdafd3e18530c0e2bcb5991c7edab71237e6",
+      "control": "official",
+      "publishes": [
+        "source-only compaction line-cap correction",
+        "retained byte-budget semantics"
+      ],
+      "last_checked_at": "2026-09-02T03:00:29Z",
+      "next_review_due": "2026-09-08",
+      "source_available": true
+    },
+    {
+      "id": "technocore-compaction-newest-record-commit",
+      "url": "https://github.com/flop-labs/technocore-chat/commit/ba868a3f275b234722dfb003f158ef822ec8061d",
+      "control": "official",
+      "publishes": [
+        "source-only newest-record compaction preservation",
+        "acknowledged-write retention boundary"
+      ],
+      "last_checked_at": "2026-09-02T03:00:29Z",
+      "next_review_due": "2026-09-08",
+      "source_available": true
+    },
+    {
+      "id": "flop-labs-tclk-repository",
+      "url": "https://github.com/flop-labs/tclk",
+      "control": "official",
+      "publishes": [
+        "tclk/1 specification and reference implementation",
+        "alpha status and settlement-rail limitations"
+      ],
+      "last_checked_at": "2026-09-02T03:00:29Z",
+      "next_review_due": "2026-09-08",
       "source_available": true
     }
   ]

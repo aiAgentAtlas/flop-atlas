@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-01T15:00:57Z",
+  "generated_at": "2026-09-02T03:00:29Z",
   "filter_hint": "Clients may filter entries where changed_at is later than their saved cursor.",
   "entries": [
     {
@@ -454,6 +454,20 @@
         "llms.txt"
       ],
       "summary": "Added eight differentiated community candidates and one immediate Caution after static screening and catalog-wide deduplication; no official baseline changed."
+    },
+    {
+      "id": "discovery-and-official-source-updates-2026-09-01-2000",
+      "changed_at": "2026-09-02T03:00:29Z",
+      "type": "catalog_updated",
+      "resources": [
+        "catalog.json",
+        "feed.json",
+        "technocore.json",
+        "sources.json",
+        "changes.json",
+        "llms.txt"
+      ],
+      "summary": "Added three candidates and four immediate Cautions, recorded the official tclk/1 convention, and documented two source-only Technocore room-compaction fixes."
     }
   ]
 }
