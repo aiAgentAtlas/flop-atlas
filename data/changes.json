@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-02T15:01:07Z",
+  "generated_at": "2026-09-03T03:14:39Z",
   "filter_hint": "Clients may filter entries where changed_at is later than their saved cursor.",
   "entries": [
     {
@@ -500,6 +500,20 @@
         "llms.txt"
       ],
       "summary": "Added five differentiated candidates and seven immediate Cautions, verified the published and live Technocore v0.11.4 release, and recorded a subsequent source-only append-lock performance change."
+    },
+    {
+      "id": "discovery-and-technocore-source-updates-2026-09-02-2000",
+      "changed_at": "2026-09-03T03:14:39Z",
+      "type": "catalog_updated",
+      "resources": [
+        "catalog.json",
+        "feed.json",
+        "technocore.json",
+        "sources.json",
+        "changes.json",
+        "llms.txt"
+      ],
+      "summary": "Added two differentiated candidates and six immediate Cautions, then recorded source-only /humans timeout handling and a separately deployed /rooms edge-copy lane."
     }
   ]
 }

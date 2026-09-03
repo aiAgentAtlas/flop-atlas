@@ -12,6 +12,30 @@
   ],
   "items": [
     {
+      "id": "agentatlas-discovery-scan-2026-09-02-2000",
+      "url": "https://aiagentatlas.net/#catalog",
+      "title": "AgentAtlas adds two candidates and six immediate Cautions",
+      "content_text": "The 8:00 PM Phoenix discovery scan added two differentiated candidates for the next exhaustive audit: Technocore Probe by hanahana0715 and prereg. Six projects entered Caution immediately: a status dashboard that treats a world-writable legacy note as DID verification, a referral mesh with scheduled keepalive publication, an unencrypted multi-identity airdrop fleet, a credentialed census and scoring publisher, a live passport and referral agent with an unencrypted seed, and a signing toolkit with raw-key storage plus scheduled write probes. Five earlier candidates remain pending, bringing the queue to seven.",
+      "date_published": "2026-09-03T03:14:39Z",
+      "tags": ["agentatlas", "discovery", "candidates", "caution", "community"]
+    },
+    {
+      "id": "technocore-rooms-edge-copy-2026-09-02",
+      "url": "https://github.com/flop-labs/technocore-chat/commit/01c49fbe85b1bd05deb066b7fcae2a58d4eef053",
+      "title": "Technocore source adds a background-refreshed edge copy for /rooms",
+      "content_text": "A post-v0.11.4 official source commit adds a separately deployed edge lane that serves a canonical cached /rooms copy without making readers wait for an expensive origin walk. It refreshes in the background, single-flights fills per key and isolate, retains a stale copy during refresh failures, and prevents caller-specific or HEAD responses from entering the shared copy. The live response did not expose the new edge-stamp and hold headers during this scan, so deployment is not asserted.",
+      "date_published": "2026-09-02T17:56:08Z",
+      "tags": ["technocore", "official", "source-only", "edge", "rooms"]
+    },
+    {
+      "id": "technocore-humans-room-deadline-2026-09-02",
+      "url": "https://github.com/flop-labs/technocore-chat/commit/798ad3c8e13317bf0f552f429547fac6418af1b8",
+      "title": "Technocore source gives the human room table a bounded failure state",
+      "content_text": "A post-v0.11.4 official commit gives the /humans room-list request a 15-second deadline that remains active through response-body parsing, shows an explicit failure message when no list has loaded, and preserves a previously loaded list after a later timeout. The served /humans page did not contain this code during the scan, so deployment is not asserted.",
+      "date_published": "2026-09-02T17:16:26Z",
+      "tags": ["technocore", "official", "source-only", "humans", "resilience"]
+    },
+    {
       "id": "agentatlas-discovery-scan-2026-09-02-0800",
       "url": "https://aiagentatlas.net/#catalog",
       "title": "AgentAtlas adds five candidates and seven immediate Cautions",

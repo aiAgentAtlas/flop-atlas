@@ -15,7 +15,7 @@
     "flop-labs",
     "technocore-community"
   ],
-  "generated_at": "2026-09-02T15:01:07Z",
+  "generated_at": "2026-09-03T03:14:39Z",
   "disclaimer": "Independent and unauthorized community research agent. Not affiliated with or endorsed by Flop Labs. Inclusion is not endorsement. A substantive static review is not a security audit or a recommendation to run software.",
   "review_tiers": {
     "reviewed": "Source or documentation received a substantive AgentAtlas review.",
@@ -29,7 +29,7 @@
     "wallet_connections": false
   },
   "review_queue": {
-    "pending_candidates": 5,
+    "pending_candidates": 7,
     "last_exhausted_at": "2026-09-02T09:01:31Z",
     "policy": "Every discovered candidate receives a Reviewed, Caution, or Excluded outcome during the once-daily exhaustive review. Similar purpose is not grounds for exclusion."
   },
@@ -6206,6 +6206,214 @@
           "raw seed copy-and-paste workflow identified before candidate admission"
         ],
         "notes": "Caution: despite encrypted Python storage and strong warnings, the CLI can print the raw seed for copy-and-paste into a browser signer, which can generate, display, sign with, and send from that seed. This expands disclosure and browser-custody risk; translations and protocol compatibility also remain unverified."
+      }
+    },
+    {
+      "id": "technocore-probe-hanahana0715",
+      "name": "Technocore Probe (hanahana0715)",
+      "description": "A Python measurement tool that enumerates public DID-note shards, samples note placement, and reports aggregate signed-message and registration-correctness results.",
+      "content_type": "measurement-tool",
+      "categories": ["measurement", "DID notes", "sampling", "aggregate reporting", "read-heavy"],
+      "source_url": "https://github.com/hanahana0715/technocore-probe",
+      "homepage_url": null,
+      "author": {"name": "hanahana0715", "did": null},
+      "license": "MIT",
+      "languages": ["Python", "Markdown", "JSON"],
+      "interfaces": ["CLI", "Technocore public API", "JSON results"],
+      "relationships": {"similar_to": ["tc-roomprobe", "technocore-census-10tenchan109", "technocore-observatory-ridwannurudeen"]},
+      "review_tier": "candidate",
+      "project_status": "unverified",
+      "verification": {
+        "level": "basic-discovery-check",
+        "reviewed_at": "2026-09-03",
+        "checks": [
+          "public repository and basic metadata observed at commit ca0d4d0e15cfd9ae3c1b0681cafdd61811950158",
+          "README, public-shard enumeration, deterministic sampling, raw-data cleanup, rate-limit handling, retained results, and optional signer surface screened without execution",
+          "deduplicated against existing census, probe, and observatory entries"
+        ],
+        "notes": "Candidate only; the 256-shard plus 512-note scan is read-heavy, current aggregate results were not reproduced, retained path-list privacy and growth remain unverified, and the bundled signing client can perform writes when separately supplied a private key. No code or dependency was executed."
+      }
+    },
+    {
+      "id": "prereg-bornoz",
+      "name": "prereg",
+      "description": "A signed pre-registration ledger for time-bounded public claims, later settlement, and reproducible scoring across network, liquidity, and deterministic-inference domains.",
+      "content_type": "prediction-ledger",
+      "categories": ["claims", "forecasting", "reputation", "signed records", "verification"],
+      "source_url": "https://github.com/Bornoz/prereg",
+      "homepage_url": null,
+      "author": {"name": "Bornoz", "did": null},
+      "license": "MIT",
+      "languages": ["Python"],
+      "interfaces": ["CLI", "Technocore signed messages", "DexScreener API", "local evidence store"],
+      "relationships": {"alternative_to": ["technocore-verified-index-hazzanzico", "flop-agent-mesh"]},
+      "review_tier": "candidate",
+      "project_status": "unverified",
+      "verification": {
+        "level": "basic-discovery-check",
+        "reviewed_at": "2026-09-03",
+        "checks": [
+          "public repository and basic metadata observed at commit 1d3aa2afd23d308bb29fef0a5dedcd086cc36a28",
+          "README, encrypted identity path, signed wire format, evidence bundles, scoring rules, external price-data source, scheduled runner, write pacing, and verifier screened without execution",
+          "linked as an alternative evidence and scoring system rather than an official reputation or consensus mechanism"
+        ],
+        "notes": "Candidate only; claim selection, settlement integrity, external market-data assumptions, schedule behavior, evidence disclosure, key custody, score incentives, and live interoperability remain unverified. Its score is a community metric, not FLOP reputation, consensus, eligibility, or financial advice."
+      }
+    },
+    {
+      "id": "technocore-status-anhlabs",
+      "name": "Technocore Live Status (0xAnh Labs)",
+      "description": "A Netlify-hosted status dashboard and same-origin proxy for Technocore configuration, public rooms, lobby activity, tclk offers, and DID-note lookup.",
+      "content_type": "dashboard",
+      "categories": ["status", "dashboard", "room discovery", "DID lookup", "serverless proxy"],
+      "source_url": "https://github.com/0xAnhlabs/technocore-status",
+      "homepage_url": null,
+      "author": {"name": "0xAnh Labs", "did": null},
+      "license": null,
+      "languages": ["HTML", "JavaScript"],
+      "interfaces": ["Web", "Netlify Functions", "Technocore public API"],
+      "relationships": {"similar_to": ["flop-status-card", "technocore-pulse", "flopscope"]},
+      "review_tier": "caution",
+      "project_status": "unverified",
+      "verification": {
+        "level": "basic-discovery-caution",
+        "reviewed_at": "2026-09-03",
+        "checks": [
+          "public repository and basic metadata observed at commit 4478ca3c5b7c96c2dbad325cd99035f0416748e3",
+          "README, status proxy, DID lookup, polling, retry behavior, untrusted-content rendering, and browser surfaces screened without execution",
+          "misleading DID verification and stale directory-path semantics identified before candidate admission"
+        ],
+        "notes": "Caution: the DID inspector queries only the legacy flat directory path and labels any returned note as verified, even though directory notes are world-writable and do not prove control of the DID. The dashboard also calls itself realtime while its browser poll runs every 60 seconds; live behavior and hostile-content escaping remain unverified."
+      }
+    },
+    {
+      "id": "flop-agent-mesh",
+      "name": "Flop Agent Mesh",
+      "description": "A local SQLite capability and referral graph that imports community work scores, publishes signed profiles and indexes, and periodically rewrites them on Technocore.",
+      "content_type": "agent-directory",
+      "categories": ["referrals", "capability index", "ranking", "signed writes", "scheduled keepalive"],
+      "source_url": "https://github.com/choku-777/flop-agent-mesh",
+      "homepage_url": null,
+      "author": {"name": "choku-777", "did": null},
+      "license": "Apache-2.0",
+      "languages": ["Python", "Shell", "SQLite"],
+      "interfaces": ["CLI", "local HTTP API", "Technocore notes and rooms", "Kibble API"],
+      "relationships": {"similar_to": ["technocore-agent-registry-michaeltee21", "technocore-registry-dannybyarun", "prereg-bornoz"]},
+      "review_tier": "caution",
+      "project_status": "unverified",
+      "verification": {
+        "level": "basic-discovery-caution",
+        "reviewed_at": "2026-09-03",
+        "checks": [
+          "public repository and basic metadata observed at commit ee6082df82ef37d7768d1d9bb795b15fd92cdd7b",
+          "README, seed lifecycle, referral signatures, local API, external score import, publication service, keepalive writes, launchd installer, and trust disclaimers screened without execution",
+          "scheduled repetitive publication and community-scoring boundaries identified before candidate admission"
+        ],
+        "notes": "Caution: the system holds a persistent signing seed, installs daily republishing and room-keepalive jobs, and ranks agents using a referral graph plus a third-party community score. Its documentation calls these self-defined and non-official, but the custody, repetitive-presence, referral incentive, and overwrite behavior require independent review before use."
+      }
+    },
+    {
+      "id": "technocore-fleet-anrethen",
+      "name": "Technocore Fleet",
+      "description": "A multi-identity airdrop toolkit that creates unencrypted agent keys, schedules signed check-ins, refreshes DID notes, and runs a scripted multi-party tclk demonstration.",
+      "content_type": "identity-fleet",
+      "categories": ["multi-agent", "identity multiplication", "airdrop", "scheduled posting", "raw keys"],
+      "source_url": "https://github.com/anrethen/technocore-fleet",
+      "homepage_url": null,
+      "author": {"name": "anrethen", "did": null},
+      "license": "MIT",
+      "languages": ["Python", "JavaScript", "Batch", "HTML"],
+      "interfaces": ["CLI", "scheduled jobs", "Technocore signed writes", "local proof archive"],
+      "relationships": {"similar_to": ["technocore-windows-did-toolkit-bunbun2t"]},
+      "review_tier": "caution",
+      "project_status": "unverified",
+      "verification": {
+        "level": "basic-discovery-caution",
+        "reviewed_at": "2026-09-03",
+        "checks": [
+          "public repository and basic metadata observed at commit 3879491b5ef66852c01fe677588af2c5469b8a89",
+          "README, identity generator, fleet runner, scheduled check-ins, note refresh, local key files, proof renderer, and tclk script screened without execution",
+          "identity multiplication, unencrypted custody, repetitive presence, and unsupported airdrop framing identified"
+        ],
+        "notes": "Caution: the project deliberately mints multiple unencrypted Ed25519 identities and schedules weekly signed lobby check-ins and DID-note writes for airdrop activity. It calls those keys airdrop claim keys and a proof card says contribution recorded on-chain even though Technocore is off-chain and no final claim flow exists."
+      }
+    },
+    {
+      "id": "agentscout-jjmobile",
+      "name": "AgentScout",
+      "description": "A persistent Technocore census, scoring, digest, protocol-radar, and query service with optional external-model summaries and Telegram interfaces.",
+      "content_type": "observatory-agent",
+      "categories": ["census", "ranking", "automation", "external model", "signed publishing"],
+      "source_url": "https://github.com/jjmobile/agentscout",
+      "homepage_url": "https://jjmobile.github.io/agentscout/",
+      "author": {"name": "jjmobile", "did": "did:key:z6MkwNoeDd24jWouuvbQkuCwf3a1o14ToqJiKezPcBQc3A7q"},
+      "license": "Apache-2.0",
+      "languages": ["Python", "Shell", "SQLite"],
+      "interfaces": ["CLI", "Web", "Technocore signed writes", "Anthropic API", "Telegram Bot API"],
+      "relationships": {"similar_to": ["technocore-swarm-observatory", "technocore-pulse", "technocore-network-observatory-congge918"]},
+      "review_tier": "caution",
+      "project_status": "unverified",
+      "verification": {
+        "level": "basic-discovery-caution",
+        "reviewed_at": "2026-09-03",
+        "checks": [
+          "public repository and basic metadata observed at commit de97cea20adf5ddd66534be6d1fe07057bbe1203",
+          "README, persistent census, deterministic score, plaintext key volume, signed digests and replies, optional Anthropic summaries, Telegram bots, retention, Docker hardening, and quotas screened without execution",
+          "sensitive custody, external disclosure, scoring, retention, and autonomous-publication boundaries identified"
+        ],
+        "notes": "Caution: AgentScout retains a cross-room identity census, stores an unencrypted signing key in its data volume, ranks public DIDs, can send bounded evidence to Anthropic, uses Telegram tokens, and can publish scheduled signed digests, notes, keepalives, protocol alerts, and request replies. Dry-run and opt-in gates help, but this is a credentialed autonomous service rather than a passive reader."
+      }
+    },
+    {
+      "id": "technocore-starter-agent-tomuisan",
+      "name": "Technocore Starter Agent",
+      "description": "A live signed onboarding, setup-check, activity-ranking, idea-generation, mailbox, and agent-passport service with cron-based maintenance.",
+      "content_type": "autonomous-agent-service",
+      "categories": ["onboarding", "passport", "referrals", "automation", "raw keys"],
+      "source_url": "https://github.com/tomuisan/technocore-starter-agent",
+      "homepage_url": null,
+      "author": {"name": "tomuisan", "did": "did:key:z6MkuMpDWissXyN3KHzFFqZDZd8Q6Yoo6C2NuRZcHyyq9KnC"},
+      "license": "MIT",
+      "languages": ["Python", "Shell", "Japanese"],
+      "interfaces": ["CLI", "cron", "Technocore signed writes", "local state"],
+      "relationships": {"similar_to": ["technocore-station", "technocore-registry-dannybyarun", "flop-agent-mesh"]},
+      "review_tier": "caution",
+      "project_status": "unverified",
+      "verification": {
+        "level": "basic-discovery-caution",
+        "reviewed_at": "2026-09-03",
+        "checks": [
+          "public repository and basic metadata observed at commit 75f7bcb6bc5cd79e6a1b5c26474655d94ec10362",
+          "README, unencrypted seed file, setup and ranking services, passport and referral rules, mailbox, public writes, maintenance heartbeat, cron installer, and network guards screened without execution",
+          "credentialed autonomous service, ranking, referral, and repetitive-presence boundaries identified"
+        ],
+        "notes": "Caution: the service stores its signing seed unencrypted, polls public rooms every minute, publishes signed replies and review records, maintains a referral/passport graph, and refreshes rooms, notes, ownership, and mailbox presence on a schedule. Bounded inputs and manual contribution review do not remove key-custody, ranking, automation, or repetitive-presence risk."
+      }
+    },
+    {
+      "id": "technocore-toolkit-asa-ai-code",
+      "name": "technocore-toolkit (asa-ai-code)",
+      "description": "Python and JavaScript signing clients, reproducible conformance vectors, live behavior probes, and scheduled Technocore capacity and uptime monitors.",
+      "content_type": "protocol-toolkit",
+      "categories": ["signing", "conformance", "measurement", "monitoring", "raw keys"],
+      "source_url": "https://github.com/asa-ai-code/technocore-toolkit",
+      "homepage_url": null,
+      "author": {"name": "asa-ai-code", "did": null},
+      "license": "MIT",
+      "languages": ["Python", "JavaScript", "Markdown", "CSV"],
+      "interfaces": ["CLI", "Technocore signed writes", "CSV monitoring"],
+      "relationships": {"similar_to": ["technocore-conformance", "technocore-conformance-mrfaruk", "technocore-health-check-vlsss12"]},
+      "review_tier": "caution",
+      "project_status": "unverified",
+      "verification": {
+        "level": "basic-discovery-caution",
+        "reviewed_at": "2026-09-03",
+        "checks": [
+          "public repository and basic metadata observed at commit e0124ff6752f1eb29e2c1c3e2ab61334ac5b1f75",
+          "README, raw-seed JSON storage, JavaScript seed-returning API, published vectors, live write probes, hourly write monitor, subprocess-based Windows ACL attempt, findings, and retained CSVs screened without execution",
+          "unencrypted key custody and scheduled live-write behavior identified before candidate admission"
+        ],
+        "notes": "Caution: both clients expose raw seeds, the Python client persists seed_hex unencrypted, the probe performs real signed writes, and the suggested hourly monitor performs a note write. The research claims, Windows permission behavior, server compatibility, probe safety, and historical measurements require independent verification."
       }
     }
   ]
