@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-03T03:14:39Z",
+  "generated_at": "2026-09-03T09:01:11Z",
   "filter_hint": "Clients may filter entries where changed_at is later than their saved cursor.",
   "entries": [
     {
@@ -514,6 +514,24 @@
         "llms.txt"
       ],
       "summary": "Added two differentiated candidates and six immediate Cautions, then recorded source-only /humans timeout handling and a separately deployed /rooms edge-copy lane."
+    },
+    {
+      "id": "full-kit-audit-and-official-source-updates-2026-09-03",
+      "changed_at": "2026-09-03T09:01:11Z",
+      "type": "source_updated",
+      "resources": [
+        "catalog.json",
+        "feed.json",
+        "technocore.json",
+        "action.json",
+        "opportunities.json",
+        "claims.json",
+        "sources.json",
+        "resources.json",
+        "changes.json",
+        "llms.txt"
+      ],
+      "summary": "Resolved all 7 starting candidates as four Reviewed, three Caution, and zero Excluded; refreshed the Full Kit; confirmed the separately deployed /rooms edge lane and favicon are live; and recorded source-only Technocore duplicate-follow-up work plus official tclk transcript and live-wire conformance fixes."
     }
   ]
 }

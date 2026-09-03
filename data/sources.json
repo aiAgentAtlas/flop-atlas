@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-03T03:14:39Z",
+  "generated_at": "2026-09-03T09:01:11Z",
   "sources": [
     {
       "id": "flop-website",
@@ -11,7 +11,7 @@
         "launch statements",
         "participation links"
       ],
-      "last_checked_at": "2026-09-03T03:14:39Z",
+      "last_checked_at": "2026-09-03T09:01:11Z",
       "next_review_due": "2026-09-08",
       "source_available": true
     },
@@ -24,10 +24,10 @@
         "airdrop signals",
         "ecosystem updates"
       ],
-      "last_checked_at": "2026-09-03T03:14:39Z",
-      "next_review_due": "2026-09-03",
+      "last_checked_at": "2026-09-03T09:01:11Z",
+      "next_review_due": "2026-09-04",
       "source_available": false,
-      "availability_note": "The X profile was inaccessible to the audit fetcher (HTTP 403); no current post was reasserted from the unavailable page."
+      "availability_note": "The X profile returned only a generic application shell without readable current posts; no current post was reasserted from the unavailable content."
     },
     {
       "id": "flop-github",
@@ -38,7 +38,7 @@
         "technical documentation",
         "releases"
       ],
-      "last_checked_at": "2026-09-03T03:14:39Z",
+      "last_checked_at": "2026-09-03T09:01:11Z",
       "next_review_due": "2026-09-08",
       "source_available": true
     },
@@ -52,8 +52,8 @@
         "operating limits",
         "write-refusal behavior"
       ],
-      "last_checked_at": "2026-09-03T03:14:39Z",
-      "next_review_due": "2026-09-03",
+      "last_checked_at": "2026-09-03T09:01:11Z",
+      "next_review_due": "2026-09-04",
       "source_available": true
     },
     {
@@ -64,10 +64,10 @@
         "DID-gated task statement",
         "airdrop reward statement"
       ],
-      "last_checked_at": "2026-09-02T09:01:31Z",
-      "next_review_due": "2026-09-03",
+      "last_checked_at": "2026-09-03T09:01:11Z",
+      "next_review_due": "2026-09-04",
       "source_available": false,
-      "availability_note": "The cited X post was inaccessible to the audit fetcher (HTTP 403); its previously recorded wording was not treated as newly verified."
+      "availability_note": "The cited X post returned only a generic application shell without readable post text; its previously recorded wording was not treated as newly verified."
     },
     {
       "id": "arthur-hayes-testnet-faucet",
@@ -78,10 +78,10 @@
         "Technocore faucet statement",
         "DID-key access statement"
       ],
-      "last_checked_at": "2026-09-02T09:01:31Z",
-      "next_review_due": "2026-09-03",
+      "last_checked_at": "2026-09-03T09:01:11Z",
+      "next_review_due": "2026-09-04",
       "source_available": false,
-      "availability_note": "The cited X post was inaccessible to the audit fetcher (HTTP 403); the official draft now independently supports the faucet and testnet-spending outline."
+      "availability_note": "The cited X post returned only a generic application shell without readable post text; the official draft independently supports the faucet and testnet-spending outline."
     },
     {
       "id": "technocore-v0-9-3",
@@ -234,10 +234,10 @@
         "additional FLOP allocation statement",
         "useful-participation reward intent"
       ],
-      "last_checked_at": "2026-09-02T09:01:31Z",
-      "next_review_due": "2026-09-03",
+      "last_checked_at": "2026-09-03T09:01:11Z",
+      "next_review_due": "2026-09-04",
       "source_available": false,
-      "availability_note": "The cited X post was inaccessible to the audit fetcher (HTTP 403); its previously recorded wording was not treated as newly verified."
+      "availability_note": "The cited X post returned only a generic application shell without readable post text; its previously recorded wording was not treated as newly verified."
     },
     {
       "id": "technocore-canonical-signature-fix",
@@ -434,7 +434,7 @@
         "tclk/1 escrowed-deal convention",
         "settlement and public-room safety boundaries"
       ],
-      "last_checked_at": "2026-09-02T03:00:29Z",
+      "last_checked_at": "2026-09-03T09:01:11Z",
       "next_review_due": "2026-09-08",
       "source_available": true
     },
@@ -470,7 +470,7 @@
         "tclk/1 specification and reference implementation",
         "alpha status and settlement-rail limitations"
       ],
-      "last_checked_at": "2026-09-02T03:00:29Z",
+      "last_checked_at": "2026-09-03T09:01:11Z",
       "next_review_due": "2026-09-08",
       "source_available": true
     },
@@ -483,7 +483,7 @@
         "provisional testnet and mainnet timing",
         "provisional genesis airdrop allocations and agent earning mechanics"
       ],
-      "last_checked_at": "2026-09-03T03:14:39Z",
+      "last_checked_at": "2026-09-03T09:01:11Z",
       "next_review_due": "2026-09-08",
       "source_available": true
     },
@@ -509,7 +509,7 @@
         "deployed asynchronous health endpoint",
         "unchanged health response contract"
       ],
-      "last_checked_at": "2026-09-03T03:14:39Z",
+      "last_checked_at": "2026-09-03T09:01:11Z",
       "next_review_due": "2026-09-08",
       "source_available": true
     },
@@ -522,7 +522,7 @@
         "append benchmark results",
         "unchanged behavior claim"
       ],
-      "last_checked_at": "2026-09-03T03:14:39Z",
+      "last_checked_at": "2026-09-03T09:01:11Z",
       "next_review_due": "2026-09-08",
       "source_available": true
     },
@@ -535,7 +535,7 @@
         "room-table failure state",
         "stale-list preservation behavior"
       ],
-      "last_checked_at": "2026-09-03T03:14:39Z",
+      "last_checked_at": "2026-09-03T09:01:11Z",
       "next_review_due": "2026-09-09",
       "source_available": true
     },
@@ -548,7 +548,59 @@
         "background refresh and canonical cache-key behavior",
         "stale-copy and caller-specific response safeguards"
       ],
-      "last_checked_at": "2026-09-03T03:14:39Z",
+      "last_checked_at": "2026-09-03T09:01:11Z",
+      "next_review_due": "2026-09-09",
+      "source_available": true
+    },
+    {
+      "id": "technocore-edge-favicon-commit",
+      "url": "https://github.com/flop-labs/technocore-chat/commit/6e73c19a3beedb35512aa527b975cb7da86e4649",
+      "control": "official",
+      "publishes": [
+        "separately deployed edge favicon lane",
+        "wildcard routing fix for query-bearing /rooms requests",
+        "edge snapshot dependency and manifest corrections"
+      ],
+      "last_checked_at": "2026-09-03T09:01:11Z",
+      "next_review_due": "2026-09-09",
+      "source_available": true
+    },
+    {
+      "id": "technocore-duplicate-followup-commit",
+      "url": "https://github.com/flop-labs/technocore-chat/commit/674c2aaf55caabfb3832653133339068207162fa",
+      "control": "official",
+      "publishes": [
+        "source-only duplicate-refusal guidance",
+        "optional stateless follow-up reference token",
+        "duplicate and follow-up request measurement"
+      ],
+      "last_checked_at": "2026-09-03T09:01:11Z",
+      "next_review_due": "2026-09-09",
+      "source_available": true
+    },
+    {
+      "id": "tclk-authenticated-transcripts-commit",
+      "url": "https://github.com/flop-labs/tclk/commit/162b331df10a9c016b1bae5ff404e7cee1e43e49",
+      "control": "official",
+      "publishes": [
+        "authenticated complete transcript folding",
+        "strict export parsing and venue ordering",
+        "per-record timestamp and sender verification"
+      ],
+      "last_checked_at": "2026-09-03T09:01:11Z",
+      "next_review_due": "2026-09-09",
+      "source_available": true
+    },
+    {
+      "id": "tclk-live-wire-conformance-commit",
+      "url": "https://github.com/flop-labs/tclk/commit/103a1b960c117c82473ee058b7dca1769e167125",
+      "control": "official",
+      "publishes": [
+        "live-wire conformance fixes",
+        "lock-deadline and rail-reference guards",
+        "canonical settlement-rail registry and heartbeat frame"
+      ],
+      "last_checked_at": "2026-09-03T09:01:11Z",
       "next_review_due": "2026-09-09",
       "source_available": true
     }

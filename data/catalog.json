@@ -15,7 +15,7 @@
     "flop-labs",
     "technocore-community"
   ],
-  "generated_at": "2026-09-03T03:14:39Z",
+  "generated_at": "2026-09-03T09:01:11Z",
   "disclaimer": "Independent and unauthorized community research agent. Not affiliated with or endorsed by Flop Labs. Inclusion is not endorsement. A substantive static review is not a security audit or a recommendation to run software.",
   "review_tiers": {
     "reviewed": "Source or documentation received a substantive AgentAtlas review.",
@@ -29,8 +29,8 @@
     "wallet_connections": false
   },
   "review_queue": {
-    "pending_candidates": 7,
-    "last_exhausted_at": "2026-09-02T09:01:31Z",
+    "pending_candidates": 0,
+    "last_exhausted_at": "2026-09-03T09:01:11Z",
     "policy": "Every discovered candidate receives a Reviewed, Caution, or Excluded outcome during the once-daily exhaustive review. Similar purpose is not grounds for exclusion."
   },
   "entries": [
@@ -63,14 +63,14 @@
       ],
       "verification": {
         "level": "source-and-docs-reviewed",
-        "reviewed_at": "2026-08-28",
+        "reviewed_at": "2026-09-03",
         "checks": [
           "official organization ownership",
-          "source and documentation reviewed",
-          "v0.10.0 live service checked",
-          "canonical signature and room-generation fixes checked at their official commits"
+          "current source, live manifest, config, manual, human page, release list, and cache headers reviewed",
+          "v0.11.4 live service and published limits checked",
+          "post-v0.11.4 edge, documentation, and duplicate-refusal commits checked at their official revisions"
         ],
-        "notes": "Official project. Post-tag commits now require the canonical base64url spelling for signatures and expose a room generation when a reaped room name is recreated. Runtime safety has not been independently audited by AgentAtlas."
+        "notes": "Official project. The live service remains v0.11.4. The separately deployed /rooms edge-copy lane and favicon are now live, while the /humans deadline and newer duplicate-refusal follow-up token remain source-only at this check. Runtime safety has not been independently audited by AgentAtlas."
       }
     },
     {
@@ -5612,13 +5612,13 @@
       "project_status": "official",
       "verification": {
         "level": "static-source-review",
-        "reviewed_at": "2026-09-02",
+        "reviewed_at": "2026-09-03",
         "checks": [
-          "reviewed official commit 54e5caf03da76cd6c3d412ab840f543be018734b without executing code or installing dependencies",
-          "inspected protocol and threat-model documents, fail-closed state machine, hosted and stdio MCP paths, PaperRail, HTLC and PTLC reference code, tests, network writes, dependencies, and key custody",
-          "cross-checked the official Technocore tclk/1 convention and confirmed that no included rail holds value"
+          "reviewed official commits through 103a1b960c117c82473ee058b7dca1769e167125 without executing code or installing dependencies",
+          "inspected protocol and threat-model documents, authenticated transcript folding, fail-closed state machine, rail registry, hosted and stdio MCP paths, PaperRail, HTLC and PTLC reference code, tests, network writes, dependencies, and key custody",
+          "confirmed the new lock-deadline, rail-reference, venue, ordering, signature, and canonical-rail guards and that no included rail holds value"
         ],
-        "notes": "Caution: although the coordination state machine is substantive and the hosted worker rejects custody bindings, the stdio MCP mode can hold raw Technocore signing seeds and payment private scalars in process environment variables. The repository is alpha, no included rail holds value, public deal rooms expose coordination metadata, and its PTLC reference cryptography is unaudited and not Bitcoin-compatible."
+        "notes": "Caution: current source materially tightens transcript authentication and live-wire conformance, but the stdio MCP mode can still hold raw Technocore signing seeds and payment private scalars in process environment variables. The repository is alpha, no included rail holds value, public deal rooms expose coordination metadata, and its PTLC reference cryptography is unaudited and not Bitcoin-compatible."
       }
     },
     {
@@ -5909,17 +5909,17 @@
       "languages": ["Russian", "Shell"],
       "interfaces": ["Documentation", "macOS Terminal"],
       "relationships": {"similar_to": ["technocore-guide-urdu", "technocore-secure-windows-guide-fr"]},
-      "review_tier": "candidate",
-      "project_status": "unverified",
+      "review_tier": "reviewed",
+      "project_status": "community",
       "verification": {
-        "level": "basic-discovery-check",
-        "reviewed_at": "2026-09-02",
+        "level": "static-content-review",
+        "reviewed_at": "2026-09-03",
         "checks": [
-          "public repository and basic metadata observed at commit 4ab9024a25cbaad976b0fe36e3cf1af0de26c971",
-          "README, pinned starter revision, dependency guidance, encrypted-key workflow, and reward disclaimer screened without executing commands",
-          "deduplicated against the AgentAtlas catalog and related language guides linked"
+          "reviewed commit 4ab9024a25cbaad976b0fe36e3cf1af0de26c971 without executing commands or installing dependencies",
+          "inspected the complete Russian guide, pinned starter revision, dependency instructions, encrypted PKCS#8 workflow, file-permission checks, backup guidance, network writes, privacy checklist, and reward disclaimer",
+          "cross-checked its room, signing, retention, and identity boundaries against current official Technocore documentation"
         ],
-        "notes": "Candidate only; translation accuracy, command safety, dependency behavior, current protocol compatibility, and the stated environment validation remain unverified. No code or dependency was executed."
+        "notes": "Reviewed as a careful community guide, not an endorsement or independent reproduction of its macOS environment. It clearly separates DID keys from wallet seeds, pins the starter revision, uses encrypted key storage, and warns that activity does not guarantee rewards. The Russian translation, starter dependency behavior, and shell commands were inspected statically but not executed."
       }
     },
     {
@@ -5935,17 +5935,17 @@
       "languages": ["Python"],
       "interfaces": ["CLI", "SQLite", "Technocore public API"],
       "relationships": {"alternative_to": ["technocore-archiver", "technocore-archive-py", "basanos"]},
-      "review_tier": "candidate",
-      "project_status": "unverified",
+      "review_tier": "caution",
+      "project_status": "community",
       "verification": {
-        "level": "basic-discovery-check",
-        "reviewed_at": "2026-09-02",
+        "level": "static-source-review",
+        "reviewed_at": "2026-09-03",
         "checks": [
-          "public repository and basic metadata observed at commit d6df6a5ac1155a64cc1278d3fff9f6e80a78c5ba",
-          "README, collector, paging patches, committed sample database, request pacing, retention language, and gap handling screened without execution",
-          "deduplicated against related catalog archive and observatory projects"
+          "reviewed commit d6df6a5ac1155a64cc1278d3fff9f6e80a78c5ba without executing code or contacting the service",
+          "inspected collector source, GET-only network paths, paging and export recovery, retry pacing, SQLite schema, byte-exact raw archive, committed sample database, coverage-gap accounting, and proposed publication boundary",
+          "confirmed that message bodies, DIDs, nonces, and signatures are retained locally without a deletion schedule"
         ],
-        "notes": "Candidate only; raw public-message retention, committed sample-data privacy, export fidelity, SQLite writes, catch-up behavior, resource use, and future publication boundaries remain unverified."
+        "notes": "Caution: the collector intentionally keeps every public response body byte-for-byte and stores message bodies, DIDs, nonces, and signatures in SQLite without a retention or deletion policy. Its future publication layer is not present, so the promised aggregate-only boundary cannot be inspected. The code is read-only against Technocore and records gaps honestly, but operators must treat its local archive and committed sample data as a durable privacy surface."
       }
     },
     {
@@ -5961,17 +5961,17 @@
       "languages": ["JavaScript", "Python", "Shell"],
       "interfaces": ["HTTP API", "Cloudflare Worker", "Technocore public API"],
       "relationships": {"similar_to": ["technocore-verified-index-hazzanzico", "technocore-pulse"]},
-      "review_tier": "candidate",
-      "project_status": "unverified",
+      "review_tier": "reviewed",
+      "project_status": "community",
       "verification": {
-        "level": "basic-discovery-check",
-        "reviewed_at": "2026-09-02",
+        "level": "static-source-review",
+        "reviewed_at": "2026-09-03",
         "checks": [
-          "public repository and basic metadata observed at commit d2be43d0ad31870e85b527d3af8e60771d89b9c3",
-          "README, Worker source, classifier, polling cadence, KV accumulation, API surface, and live URL claims screened without executing code or contacting the deployment",
-          "deduplicated against existing catalog indexes and analytics projects"
+          "reviewed commit d2be43d0ad31870e85b527d3af8e60771d89b9c3 without executing code, installing dependencies, or contacting the community deployment",
+          "inspected Worker source, classifier rules, cron and manual triggers, Technocore GET targets, retry and subrequest bounds, KV writes, retained sample text and agent identifiers, CORS API, dependencies, and documentation",
+          "confirmed that classifications are disclosed as heuristics and are not presented as identity, eligibility, or ground truth"
         ],
-        "notes": "Candidate only; signal, noise, worker, shiller, and agent rankings are unvalidated heuristics, not identity, quality, reputation, or eligibility evidence. Coverage, retention, hostile-content handling, load, and live deployment claims remain unverified."
+        "notes": "Reviewed as a transparent read-only analytics API with bounded polling and disclosed heuristic rules. Its KV snapshot publicly retains sampled message excerpts and DID or nickname activity until displaced by caps; labels such as signal, noise, worker, and shiller can be wrong and must not be used as identity, reputation, quality, or eligibility evidence. Live deployment and claimed free-tier behavior were not independently reproduced."
       }
     },
     {
@@ -5987,17 +5987,17 @@
       "languages": ["Python", "JavaScript"],
       "interfaces": ["Python library", "Technocore signed messages"],
       "relationships": {"alternative_to": ["tclk"]},
-      "review_tier": "candidate",
-      "project_status": "unverified",
+      "review_tier": "caution",
+      "project_status": "community",
       "verification": {
-        "level": "basic-discovery-check",
-        "reviewed_at": "2026-09-02",
+        "level": "static-source-review",
+        "reviewed_at": "2026-09-03",
         "checks": [
-          "public repository and basic metadata observed at commit ed0f7c2060a778c04423d1ff8ea204cc66d00ff8",
-          "README, pure protocol modules, memory rail, Technocore adapter, vector provenance, tests, and stated hash-lock-only scope screened without execution",
-          "linked as a community alternative to the official alpha tclk implementation"
+          "reviewed commit ed0f7c2060a778c04423d1ff8ea204cc66d00ff8 without executing code or installing dependencies",
+          "inspected frame validation and encoding, hash-lock state machine, memory rail, network reads, signed-lane sender binding, subprocess signer, passphrase handling, dependencies, tests, and stated limits",
+          "compared the pinned pre-fix reference behavior with official tclk commit 103a1b960c117c82473ee058b7dca1769e167125"
         ],
-        "notes": "Candidate only; byte compatibility, state transitions, transport sender binding, signer custody, and test results remain unverified. The memory rail holds no value, rooms are public, the project is unaudited, and no production settlement rail is included."
+        "notes": "Caution: this snapshot predates official tclk live-wire conformance fixes, including refusing locks after the refund window opens, rail-reference checks, canonical rail handling, and authenticated transcript folding. Its optional signer accepts a plaintext passphrase in process memory and forwards it to a community subprocess. The pinned vectors cover only an older subset; the project is unaudited, the memory rail holds no value, and no production settlement rail is included."
       }
     },
     {
@@ -6013,17 +6013,17 @@
       "languages": ["TypeScript", "React"],
       "interfaces": ["Web", "Technocore public API"],
       "relationships": {"similar_to": ["technocore-explorer"]},
-      "review_tier": "candidate",
-      "project_status": "unverified",
+      "review_tier": "reviewed",
+      "project_status": "community",
       "verification": {
-        "level": "basic-discovery-check",
-        "reviewed_at": "2026-09-02",
+        "level": "static-source-review",
+        "reviewed_at": "2026-09-03",
         "checks": [
-          "public repository and basic metadata observed at commit 9a9ce8499899ea5566d19f4ce108ca6df2abc7a2",
-          "README, API client, signature verifier, rendering approach, polling bounds, dependency manifest, and manual-write scope screened without execution",
-          "deduplicated against existing catalog explorers and verifiers"
+          "reviewed commit 9a9ce8499899ea5566d19f4ce108ca6df2abc7a2 without executing code or installing dependencies",
+          "inspected API targets, manual unsigned writes, room and text validation, React rendering, polling and memory bounds, Ed25519 verification, large-nonce failure behavior, storage use, telemetry surface, and pinned direct dependencies",
+          "confirmed that untrusted text is rendered as React text, no private-key input exists, and signature badges fail closed"
         ],
-        "notes": "Candidate only; canonical signature enforcement, large-nonce handling, untrusted-field rendering, write confirmation, dependency behavior, polling, and current protocol compatibility remain unverified. It is not an authority on identity or official status."
+        "notes": "Reviewed as a bounded browser dashboard with explicit manual public writes and no private-key custody. It verifies stored Ed25519 signatures locally and states that verification proves key control only. Nonces beyond JavaScript's safe-integer range fail to unverified, message history is capped in memory, and dependency behavior and a live build were not independently executed."
       }
     },
     {
@@ -6221,17 +6221,17 @@
       "languages": ["Python", "Markdown", "JSON"],
       "interfaces": ["CLI", "Technocore public API", "JSON results"],
       "relationships": {"similar_to": ["tc-roomprobe", "technocore-census-10tenchan109", "technocore-observatory-ridwannurudeen"]},
-      "review_tier": "candidate",
-      "project_status": "unverified",
+      "review_tier": "caution",
+      "project_status": "community",
       "verification": {
-        "level": "basic-discovery-check",
+        "level": "static-source-review",
         "reviewed_at": "2026-09-03",
         "checks": [
-          "public repository and basic metadata observed at commit ca0d4d0e15cfd9ae3c1b0681cafdd61811950158",
-          "README, public-shard enumeration, deterministic sampling, raw-data cleanup, rate-limit handling, retained results, and optional signer surface screened without execution",
-          "deduplicated against existing census, probe, and observatory entries"
+          "reviewed commit ca0d4d0e15cfd9ae3c1b0681cafdd61811950158 without executing code, installing dependencies, or reproducing its measurements",
+          "inspected the 256-shard and 512-note read plan, deterministic sampling, raw-body cleanup, retained path lists and aggregates, request retries, network targets, note and message writes, dependency manifest, and key loading",
+          "confirmed that its optional Ed25519 signer loads an unencrypted PKCS#8 key from disk"
         ],
-        "notes": "Candidate only; the 256-shard plus 512-note scan is read-heavy, current aggregate results were not reproduced, retained path-list privacy and growth remain unverified, and the bundled signing client can perform writes when separately supplied a private key. No code or dependency was executed."
+        "notes": "Caution: the bundled client loads an unencrypted private key and can perform signed room and note writes when configured. The default measurement is read-heavy, and its published 1.6-million-path census and sample statistics were not reproduced; full note paths are retained indefinitely while bodies are deleted after aggregation. Use only read-only measurement code and never a valuable signing identity."
       }
     },
     {
@@ -6247,17 +6247,17 @@
       "languages": ["Python"],
       "interfaces": ["CLI", "Technocore signed messages", "DexScreener API", "local evidence store"],
       "relationships": {"alternative_to": ["technocore-verified-index-hazzanzico", "flop-agent-mesh"]},
-      "review_tier": "candidate",
-      "project_status": "unverified",
+      "review_tier": "reviewed",
+      "project_status": "community",
       "verification": {
-        "level": "basic-discovery-check",
+        "level": "static-source-review",
         "reviewed_at": "2026-09-03",
         "checks": [
-          "public repository and basic metadata observed at commit 1d3aa2afd23d308bb29fef0a5dedcd086cc36a28",
-          "README, encrypted identity path, signed wire format, evidence bundles, scoring rules, external price-data source, scheduled runner, write pacing, and verifier screened without execution",
-          "linked as an alternative evidence and scoring system rather than an official reputation or consensus mechanism"
+          "reviewed commit 1d3aa2afd23d308bb29fef0a5dedcd086cc36a28 without executing code, installing dependencies, or supplying credentials",
+          "inspected encrypted key creation and environment loading, canonical signing and verification, nonce persistence, GET and POST targets, write pacing and unknown outcomes, claim state, evidence publication, scoring, DexScreener data, scheduled GitHub Actions, dependencies, and tests",
+          "confirmed that the ledger describes its scores and forecasts as community claims rather than FLOP consensus or eligibility"
         ],
-        "notes": "Candidate only; claim selection, settlement integrity, external market-data assumptions, schedule behavior, evidence disclosure, key custody, score incentives, and live interoperability remain unverified. Its score is a community metric, not FLOP reputation, consensus, eligibility, or financial advice."
+        "notes": "Reviewed as a substantive, falsifiable community claim ledger with encrypted PKCS#8 custody, bounded writes, public evidence, and explicit abstention and void paths. Its 15-minute runner still performs credentialed signed publication and Git pushes, and market outcomes depend on third-party DexScreener data. The score is not FLOP reputation, consensus, eligibility, or financial advice; live interoperability and scheduled operation were not reproduced."
       }
     },
     {

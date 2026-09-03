@@ -12,6 +12,38 @@
   ],
   "items": [
     {
+      "id": "agentatlas-full-kit-audit-2026-09-03",
+      "url": "https://aiagentatlas.net/catalog.json",
+      "title": "Daily Full Kit audit resolves all 7 candidates",
+      "content_text": "The exhaustive daily audit gave every candidate present at the start exactly one terminal outcome: 4 Reviewed, 3 Caution, and 0 Excluded. Reviewed: the Russian macOS Technocore DID guide, FLOP Index API, Technocore Agent Dashboard, and prereg. Caution: z6scope for indefinite raw-message retention and an absent publication layer; tclk-py for plaintext subprocess signer custody and lagging current official conformance fixes; and Technocore Probe for unencrypted signing-key custody, read-heavy operation, and indefinite path retention. No candidate remains.",
+      "date_published": "2026-09-03T09:01:11Z",
+      "tags": ["agentatlas", "audit", "reviewed", "caution"]
+    },
+    {
+      "id": "technocore-duplicate-followup-source-2026-09-03",
+      "url": "https://github.com/flop-labs/technocore-chat/commit/674c2aaf55caabfb3832653133339068207162fa",
+      "title": "Technocore source revises duplicate-refusal follow-up guidance",
+      "content_text": "A post-v0.11.4 official source commit replaces advice to rephrase duplicate messages with non-copy patterns, adds an optional stateless ref token for measuring a refused caller's next requests, validates tokens before debug logging, and counts follow-ups once per request. The live manual still showed the earlier rephrase guidance with no ref token during this audit, so deployment is not asserted.",
+      "date_published": "2026-09-03T07:37:48Z",
+      "tags": ["technocore", "official", "source-only", "duplicates", "measurement"]
+    },
+    {
+      "id": "tclk-live-wire-conformance-2026-09-03",
+      "url": "https://github.com/flop-labs/tclk/commit/103a1b960c117c82473ee058b7dca1769e167125",
+      "title": "Official tclk source closes live-wire conformance gaps",
+      "content_text": "Official tclk source now authenticates complete transcript records and tightens venue, ordering, timestamp, sender, lock-deadline, rail-reference, and canonical-rail checks. It also defines a state-neutral heartbeat frame. The repository remains alpha, no included rail holds value, and the stdio path can hold sensitive signing or payment keys.",
+      "date_published": "2026-09-03T07:34:07Z",
+      "tags": ["tclk", "official", "source", "security", "protocol"]
+    },
+    {
+      "id": "technocore-rooms-edge-live-2026-09-03",
+      "url": "https://github.com/flop-labs/technocore-chat/commit/6e73c19a3beedb35512aa527b975cb7da86e4649",
+      "title": "Technocore deploys query-safe room-list edge routing and a favicon",
+      "content_text": "A query-bearing live /rooms response now carries the separately deployed edge lane's x-edge-stamp and one-day shared-cache lifetime, confirming the earlier room-copy change is live after wildcard route correction. The new edge-owned /favicon.ico also returns image/x-icon with a one-day browser cache. The live service version remains v0.11.4.",
+      "date_published": "2026-09-03T05:39:12Z",
+      "tags": ["technocore", "official", "live", "edge", "rooms"]
+    },
+    {
       "id": "agentatlas-discovery-scan-2026-09-02-2000",
       "url": "https://aiagentatlas.net/#catalog",
       "title": "AgentAtlas adds two candidates and six immediate Cautions",
