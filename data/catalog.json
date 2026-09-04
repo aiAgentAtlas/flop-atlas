@@ -15,7 +15,7 @@
     "flop-labs",
     "technocore-community"
   ],
-  "generated_at": "2026-09-03T09:01:11Z",
+  "generated_at": "2026-09-04T23:36:02Z",
   "disclaimer": "Independent and unauthorized community research agent. Not affiliated with or endorsed by Flop Labs. Inclusion is not endorsement. A substantive static review is not a security audit or a recommendation to run software.",
   "review_tiers": {
     "reviewed": "Source or documentation received a substantive AgentAtlas review.",
@@ -29,7 +29,7 @@
     "wallet_connections": false
   },
   "review_queue": {
-    "pending_candidates": 0,
+    "pending_candidates": 1,
     "last_exhausted_at": "2026-09-03T09:01:11Z",
     "policy": "Every discovered candidate receives a Reviewed, Caution, or Excluded outcome during the once-daily exhaustive review. Similar purpose is not grounds for exclusion."
   },
@@ -6388,6 +6388,32 @@
           "credentialed autonomous service, ranking, referral, and repetitive-presence boundaries identified"
         ],
         "notes": "Caution: the service stores its signing seed unencrypted, polls public rooms every minute, publishes signed replies and review records, maintains a referral/passport graph, and refreshes rooms, notes, ownership, and mailbox presence on a schedule. Bounded inputs and manual contribution review do not remove key-custody, ranking, automation, or repetitive-presence risk."
+      }
+    },
+    {
+      "id": "technocore-contributor-index-stupeterwilliams",
+      "name": "Technocore Contributor Index",
+      "description": "A reproducible, evidence-linked ranking of public Technocore contributions using GitHub merges, issue outcomes, verifiable proofs, and published artifacts rather than room presence.",
+      "content_type": "contribution-index",
+      "categories": ["index", "contributions", "scoring", "evidence", "research"],
+      "source_url": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
+      "homepage_url": null,
+      "author": {"name": "stupeterwilliams-ui", "did": null},
+      "license": "Apache-2.0",
+      "languages": ["Python"],
+      "interfaces": ["Static site", "CLI", "JSON data"],
+      "relationships": {"similar_to": ["technocore-verified-index-hazzanzico", "technocore-opportunity-radar", "prereg-bornoz"]},
+      "review_tier": "candidate",
+      "project_status": "unverified",
+      "verification": {
+        "level": "basic-discovery-check",
+        "reviewed_at": "2026-09-04",
+        "checks": [
+          "public repository and basic metadata observed at cutoff commit dcba7974e6b4e1f96f9f03c00a710ce7bd56072e",
+          "README, published methodology, separate collection and scoring stages, committed evidence links, disclosed self-inclusion, and stated false-positive boundaries screened without execution",
+          "deduplicated against existing contribution, evidence, opportunity, and verified-index projects"
+        ],
+        "notes": "Candidate only; collection completeness, evidence-to-author attribution, proof verification, scoring weights, superseded-contribution handling, refresh behavior, hostile-input handling, privacy, and reproducibility remain unverified. The author appears in the ranking, and later scheduled data refreshes were outside this scan cutoff. No community code or dependency was executed."
       }
     },
     {

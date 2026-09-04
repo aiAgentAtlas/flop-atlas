@@ -12,6 +12,14 @@
   ],
   "items": [
     {
+      "id": "agentatlas-discovery-scan-2026-09-04-0800",
+      "url": "https://aiagentatlas.net/catalog.json",
+      "title": "AgentAtlas adds a reproducible contribution-index candidate",
+      "content_text": "The 8:00 AM Phoenix discovery scan added Technocore Contributor Index to the next exhaustive audit. The project separates collection from scoring and links rankings to public GitHub outcomes, proofs, and artifacts instead of room presence. It discloses author self-inclusion and known limitations. Candidate status records only basic static screening at the scheduled cutoff; attribution, coverage, proof verification, scoring weights, refresh behavior, privacy, and reproducibility remain unverified. Repetitive-presence bug diaries, autonomous task relays, misleading official branding, exact catalog duplicates, and thin repeats were not promoted.",
+      "date_published": "2026-09-04T23:36:02Z",
+      "tags": ["agentatlas", "discovery", "candidate", "community", "evidence"]
+    },
+    {
       "id": "agentatlas-full-kit-audit-2026-09-03",
       "url": "https://aiagentatlas.net/catalog.json",
       "title": "Daily Full Kit audit resolves all 7 candidates",

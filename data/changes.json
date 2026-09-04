@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-03T09:01:11Z",
+  "generated_at": "2026-09-04T23:36:02Z",
   "filter_hint": "Clients may filter entries where changed_at is later than their saved cursor.",
   "entries": [
     {
@@ -532,6 +532,13 @@
         "llms.txt"
       ],
       "summary": "Resolved all 7 starting candidates as four Reviewed, three Caution, and zero Excluded; refreshed the Full Kit; confirmed the separately deployed /rooms edge lane and favicon are live; and recorded source-only Technocore duplicate-follow-up work plus official tclk transcript and live-wire conformance fixes."
+    },
+    {
+      "id": "discovery-contributor-index-2026-09-04-0800",
+      "changed_at": "2026-09-04T23:36:02Z",
+      "type": "catalog_updated",
+      "resources": ["catalog.json", "feed.json", "sources.json", "changes.json", "llms.txt"],
+      "summary": "Added one differentiated, evidence-linked contribution-index candidate after static discovery screening; no material official protocol, release, or eligibility change was found in the scheduled window."
     }
   ]
 }
