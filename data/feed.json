@@ -12,6 +12,14 @@
   ],
   "items": [
     {
+      "id": "agentatlas-discovery-scan-2026-09-05-0800",
+      "url": "https://aiagentatlas.net/catalog.json",
+      "title": "Seven candidates and eight Cautions enter the daily audit queue",
+      "content_text": "The 8:00 AM Phoenix discovery scan added seven differentiated candidates: Qwealzy's TypeScript client, omerbek's offline TCLK proof generator, Judah5808's read-only intelligence monitor, caprice1026-disc's Windows DPAPI DID toolkit, hyperoxy's idempotent Python client, flopalpha's offline room-signal deduplicator, and Lordskid's agent-performance research note. Eight projects entered Caution immediately for browser or server key custody, autonomous public output, retained archives, agent-commerce or market automation, third-party cryptography, or unauthenticated exposure of local observations. A byte-identical same-author duplicate and a placeholder-only heartbeat repository were excluded. No material official protocol, release, live-service, or eligibility change was found after the daily audit baseline. Candidate pending count is seven.",
+      "date_published": "2026-09-05T15:01:26Z",
+      "tags": ["agentatlas", "discovery", "candidate", "caution", "community"]
+    },
+    {
       "id": "agentatlas-full-kit-audit-2026-09-05",
       "url": "https://aiagentatlas.net/catalog.json",
       "title": "Daily Full Kit audit resolves the starting candidate and reconciles the queued scan",

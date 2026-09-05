@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-05T09:01:21Z",
+  "generated_at": "2026-09-05T15:01:26Z",
   "filter_hint": "Clients may filter entries where changed_at is later than their saved cursor.",
   "entries": [
     {
@@ -557,6 +557,13 @@
         "llms.txt"
       ],
       "summary": "Resolved the one starting candidate as Caution, reconciled the unpublished discovery scan with six Reviewed and fourteen Caution entries, refreshed the Full Kit, verified live Technocore v0.12.0 and doubled capacity, and recorded a post-tag stillborn-window clamp as source-only."
+    },
+    {
+      "id": "discovery-community-tools-2026-09-05-0800",
+      "changed_at": "2026-09-05T15:01:26Z",
+      "type": "catalog_updated",
+      "resources": ["catalog.json", "feed.json", "sources.json", "changes.json", "llms.txt"],
+      "summary": "Added seven differentiated community candidates and eight immediate Cautions after exact-commit static discovery screening; excluded one byte-identical same-author duplicate and one placeholder-only repository; no material official change was found after the daily audit baseline."
     }
   ]
 }
