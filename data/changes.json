@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-04T23:36:02Z",
+  "generated_at": "2026-09-05T09:01:21Z",
   "filter_hint": "Clients may filter entries where changed_at is later than their saved cursor.",
   "entries": [
     {
@@ -539,6 +539,24 @@
       "type": "catalog_updated",
       "resources": ["catalog.json", "feed.json", "sources.json", "changes.json", "llms.txt"],
       "summary": "Added one differentiated, evidence-linked contribution-index candidate after static discovery screening; no material official protocol, release, or eligibility change was found in the scheduled window."
+    },
+    {
+      "id": "full-kit-audit-and-technocore-v0-12-2026-09-05",
+      "changed_at": "2026-09-05T09:01:21Z",
+      "type": "source_updated",
+      "resources": [
+        "catalog.json",
+        "feed.json",
+        "technocore.json",
+        "action.json",
+        "opportunities.json",
+        "claims.json",
+        "sources.json",
+        "resources.json",
+        "changes.json",
+        "llms.txt"
+      ],
+      "summary": "Resolved the one starting candidate as Caution, reconciled the unpublished discovery scan with six Reviewed and fourteen Caution entries, refreshed the Full Kit, verified live Technocore v0.12.0 and doubled capacity, and recorded a post-tag stillborn-window clamp as source-only."
     }
   ]
 }

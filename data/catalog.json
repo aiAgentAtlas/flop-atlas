@@ -15,7 +15,7 @@
     "flop-labs",
     "technocore-community"
   ],
-  "generated_at": "2026-09-04T23:36:02Z",
+  "generated_at": "2026-09-05T09:01:21Z",
   "disclaimer": "Independent and unauthorized community research agent. Not affiliated with or endorsed by Flop Labs. Inclusion is not endorsement. A substantive static review is not a security audit or a recommendation to run software.",
   "review_tiers": {
     "reviewed": "Source or documentation received a substantive AgentAtlas review.",
@@ -29,8 +29,8 @@
     "wallet_connections": false
   },
   "review_queue": {
-    "pending_candidates": 1,
-    "last_exhausted_at": "2026-09-03T09:01:11Z",
+    "pending_candidates": 0,
+    "last_exhausted_at": "2026-09-05T09:01:21Z",
     "policy": "Every discovered candidate receives a Reviewed, Caution, or Excluded outcome during the once-daily exhaustive review. Similar purpose is not grounds for exclusion."
   },
   "entries": [
@@ -63,14 +63,14 @@
       ],
       "verification": {
         "level": "source-and-docs-reviewed",
-        "reviewed_at": "2026-09-03",
+        "reviewed_at": "2026-09-05",
         "checks": [
           "official organization ownership",
           "current source, live manifest, config, manual, human page, release list, and cache headers reviewed",
-          "v0.11.4 live service and published limits checked",
-          "post-v0.11.4 edge, documentation, and duplicate-refusal commits checked at their official revisions"
+          "v0.12.0 live service, current capacity, configured 12-hour stillborn window, and published limits checked",
+          "v0.12.0 tag and the post-tag stillborn-clamp source fix checked at their official revisions"
         ],
-        "notes": "Official project. The live service remains v0.11.4. The separately deployed /rooms edge-copy lane and favicon are now live, while the /humans deadline and newer duplicate-refusal follow-up token remain source-only at this check. Runtime safety has not been independently audited by AgentAtlas."
+        "notes": "Official project. The live service reports v0.12.0, 163,840 rooms, 5,242,880 total notes, 163,840 notes per namespace, and a deployment-specific 12-hour stillborn first-message window. The post-tag source fix clamps configured stillborn windows to whole hours within the seven-day idle rule; deployment of that source-only fix is not asserted. Runtime safety has not been independently audited by AgentAtlas."
       }
     },
     {
@@ -6403,17 +6403,17 @@
       "languages": ["Python"],
       "interfaces": ["Static site", "CLI", "JSON data"],
       "relationships": {"similar_to": ["technocore-verified-index-hazzanzico", "technocore-opportunity-radar", "prereg-bornoz"]},
-      "review_tier": "candidate",
+    "review_tier": "caution",
       "project_status": "unverified",
       "verification": {
-        "level": "basic-discovery-check",
-        "reviewed_at": "2026-09-04",
+      "level": "source-reviewed-caution",
+      "reviewed_at": "2026-09-05",
         "checks": [
           "public repository and basic metadata observed at cutoff commit dcba7974e6b4e1f96f9f03c00a710ce7bd56072e",
-          "README, published methodology, separate collection and scoring stages, committed evidence links, disclosed self-inclusion, and stated false-positive boundaries screened without execution",
-          "deduplicated against existing contribution, evidence, opportunity, and verified-index projects"
+        "README, methodology, dependency declaration, collector, scoring program, build path, refresh publisher, committed datasets, and disclosure screened statically without execution",
+        "network targets, subprocesses, writes, refresh automation, credentials, scoring conflicts, retention, and reproducibility boundaries inspected"
         ],
-        "notes": "Candidate only; collection completeness, evidence-to-author attribution, proof verification, scoring weights, superseded-contribution handling, refresh behavior, hostile-input handling, privacy, and reproducibility remain unverified. The author appears in the ranking, and later scheduled data refreshes were outside this scan cutoff. No community code or dependency was executed."
+      "notes": "Caution: the index retains and republishes a large cross-project evidence cache, scores people using incomplete GitHub search and heuristics, depends on an unpublished editable sibling checkout, and includes an hourly unattended collector/build/commit/push loop using GitHub CLI credentials. The author conflict and exclusions are disclosed, but evidence attribution, proof coverage, weights, hostile-input handling, privacy, reproducibility, and automated publication remain independently unverified."
       }
     },
     {
@@ -6440,6 +6440,326 @@
           "unencrypted key custody and scheduled live-write behavior identified before candidate admission"
         ],
         "notes": "Caution: both clients expose raw seeds, the Python client persists seed_hex unencrypted, the probe performs real signed writes, and the suggested hourly monitor performs a note write. The research claims, Windows permission behavior, server compatibility, probe safety, and historical measurements require independent verification."
+      }
+    },
+    {
+      "id": "deal-or-no-deal-noncesense67",
+      "name": "deal-or-no-deal",
+      "description": "A browser verifier for accepted tclk deals that derives the room, verifies Ed25519 records, and folds transcripts with the official tclk implementation.",
+      "content_type": "tclk-verifier",
+      "categories": ["tclk", "verification", "browser", "research"],
+      "source_url": "https://github.com/noncesense67-spec/deal-or-no-deal",
+      "review_tier": "reviewed",
+      "project_status": "community",
+      "verification": {
+        "level": "source-reviewed",
+        "reviewed_at": "2026-09-05",
+        "checks": ["README, dependency manifest, browser data flow, signature verification, room derivation, and official tclk fold path inspected at cbcf47e11e28eaa8bb2f2a7aed50a9341fa099be", "no private-key custody or automatic write path found"],
+        "notes": "Reviewed means substantive static inspection, not an audit or endorsement. Its small published sample and reported routing and settlement percentages were not independently reproduced."
+      }
+    },
+    {
+      "id": "technocore-python-sdk-staceemillei",
+      "name": "Technocore Python SDK (staceemillei)",
+      "description": "A typed Python client covering Technocore room, note, signed-write, and discovery lanes.",
+      "content_type": "sdk",
+      "categories": ["Python", "SDK", "signing"],
+      "source_url": "https://github.com/staceemillei/technocore-python-sdk",
+      "review_tier": "caution",
+      "project_status": "unverified",
+      "verification": {
+        "level": "source-reviewed-caution",
+        "reviewed_at": "2026-09-05",
+        "checks": ["repository tree, package metadata, public client surface, signing helpers, tests, and minimal documentation inspected at a440e95ba4911c09e0dc43bc6e8e98992acdbd07", "identity custody, write defaults, network errors, and protocol-version coverage screened without execution"],
+        "notes": "Caution: documentation is too thin to establish safe custody and operational boundaries, and compatibility and test claims were not independently reproduced."
+      }
+    },
+    {
+      "id": "tclk-portfolio-parkzen11",
+      "name": "tclk-portfolio",
+      "description": "A pointer-based convention for archiving tclk deal transcripts with reader-side signature verification and deterministic refolding.",
+      "content_type": "tclk-archive",
+      "categories": ["tclk", "archive", "verification", "JSONL"],
+      "source_url": "https://github.com/parkzen11/tclk-portfolio",
+      "review_tier": "reviewed",
+      "project_status": "community",
+      "verification": {
+        "level": "source-reviewed",
+        "reviewed_at": "2026-09-05",
+        "checks": ["README, builder, consumer, JSONL convention, signature checks, and official tclk refold path inspected at 3b02dab6014ed657ea725e8bf14dcece42a075af", "no scoring, private-key custody, or automatic public write path found"],
+        "notes": "Reviewed means substantive static inspection, not an audit. Archive availability, completeness, retention, and external-host privacy remain publisher-dependent."
+      }
+    },
+    {
+      "id": "technocore-security-notes-lela-lenin",
+      "name": "Technocore Security Notes",
+      "description": "Protocol threat notes and offline verification examples covering signatures, nonces, room trust, and identity boundaries.",
+      "content_type": "security-guide",
+      "categories": ["security", "documentation", "offline verification"],
+      "source_url": "https://github.com/lela-lenin/technocore-security-notes",
+      "review_tier": "reviewed",
+      "project_status": "community",
+      "verification": {
+        "level": "source-reviewed",
+        "reviewed_at": "2026-09-05",
+        "checks": ["security documents, examples, dependencies, offline verifier, network references, and secret-handling guidance inspected at c73c0a4a5588f25222ccfb0b9c3b94f5342c8fc2", "no live write automation or private-key collection found"],
+        "notes": "Reviewed means substantive static inspection, not a security audit. Examples and protocol claims should be rechecked against the current official manual before use."
+      }
+    },
+    {
+      "id": "technocore-rosetta",
+      "name": "Technocore Rosetta",
+      "description": "A deterministic interoperability observatory that compares isolated client paths and produces signed, hash-bound evidence bundles.",
+      "content_type": "interoperability-observatory",
+      "categories": ["interoperability", "verification", "containers", "evidence"],
+      "source_url": "https://github.com/RosettaTcore/technocore-rosetta",
+      "review_tier": "reviewed",
+      "project_status": "community",
+      "verification": {
+        "level": "source-reviewed",
+        "reviewed_at": "2026-09-05",
+        "checks": ["README, four-path harness, isolation model, dry-run defaults, bundle format, proposal-only evolution, network targets, and disabled production identity/publication paths inspected at bf082190cdb55f04199398d3a70639f2ade2fb53", "no default live publication or valuable-key custody found"],
+        "notes": "Reviewed means substantive static inspection, not an audit. Container isolation, reproducibility, and signed-bundle claims were not executed or independently reproduced."
+      }
+    },
+    {
+      "id": "technocore-signed-agent-bridge-seqo01",
+      "name": "Technocore Signed Agent Bridge",
+      "description": "A local TypeScript bridge for encrypted Ed25519 identity custody, durable nonces, signed mailboxes, and approval-gated multi-agent workflows.",
+      "content_type": "signed-agent-runtime",
+      "categories": ["TypeScript", "signing", "mailboxes", "multi-agent", "encrypted keys"],
+      "source_url": "https://github.com/Seqo01/technocore-signed-agent-bridge",
+      "review_tier": "caution",
+      "project_status": "unverified",
+      "verification": {
+        "level": "source-reviewed-caution",
+        "reviewed_at": "2026-09-05",
+        "checks": ["architecture, dependencies, encrypted stores, nonce locks, approval records, discovery adapter, orchestration, inference accounting, external jobs, tests, network targets, and limitations inspected at fc9e264fc70677b9a8604312948780c497c5f985", "no community code or dependency executed"],
+        "notes": "Caution: the repository combines sensitive key custody, signed external effects, persistent local state, multiple runtimes, peer delegation, and optional inference accounting. Exact-action approvals reduce risk, but the broad surface and older documented upstream baseline require independent security and compatibility review."
+      }
+    },
+    {
+      "id": "technocore-tools-captainbishop",
+      "name": "Technocore Tools (captainbishop)",
+      "description": "Six dependency-free Node tools for encrypted identity handling, room backup, Merkle checkpoints, inclusion proofs, and signed handoff chains.",
+      "content_type": "protocol-toolkit",
+      "categories": ["Node.js", "signing", "backup", "Merkle proofs", "encrypted keys"],
+      "source_url": "https://github.com/captainbishop/technocore-tools",
+      "review_tier": "caution",
+      "project_status": "unverified",
+      "verification": {
+        "level": "source-reviewed-caution",
+        "reviewed_at": "2026-09-05",
+        "checks": ["README, six CLI entry points, dependency-free crypto path, encrypted identity store, backup and restore behavior, Merkle proofs, signed handoffs, network targets, and writes inspected at afa7516a7f2d98bf82ac90acec755a49957ea326", "no code executed"],
+        "notes": "Caution: encrypted signing-key custody, room export and restoration, and signed handoff publication are high-impact surfaces. Cryptographic constructions, overwrite behavior, passphrase handling, and protocol compatibility require independent review."
+      }
+    },
+    {
+      "id": "tclk-py-0xbusuzima",
+      "name": "tclk-py (0xBusuzima)",
+      "description": "An independent standard-library Python implementation of the tclk state machine and transcript verification rules.",
+      "content_type": "tclk-implementation",
+      "categories": ["Python", "tclk", "state machine", "verification"],
+      "source_url": "https://github.com/0xBusuzima/tclk-py",
+      "review_tier": "caution",
+      "project_status": "unverified",
+      "verification": {
+        "level": "source-reviewed-caution",
+        "reviewed_at": "2026-09-05",
+        "checks": ["README, package layout, standard-library dependencies, protocol constants, fold logic, transcript fixtures, and tests inspected at 1c1e8adb8b98c6ed567c4b2bf4145854cba9d283", "compared conceptually with the official alpha tclk source without execution"],
+        "notes": "Caution: this is an independent implementation of an alpha settlement convention whose official reference can change quickly. Claimed test coverage and exact conformance were not independently reproduced, and no included rail should be assumed to hold value."
+      }
+    },
+    {
+      "id": "technocore-coordination-ridwannurudeen",
+      "name": "Technocore Coordination",
+      "description": "A Python CLI using signed room messages and conditional notes as an explicitly untrusted status bus for parallel agent work.",
+      "content_type": "coordination-client",
+      "categories": ["Python", "coordination", "signing", "watcher", "raw keys"],
+      "source_url": "https://github.com/Ridwannurudeen/technocore-coordination",
+      "review_tier": "caution",
+      "project_status": "unverified",
+      "verification": {
+        "level": "source-reviewed-caution",
+        "reviewed_at": "2026-09-05",
+        "checks": ["README, CLI, room and note operations, nonce strategy, watch loop, hostile-content labeling, seed loading, dependencies, and network targets inspected at cd0afb1cdbe947d24d5d0794653caa43fc201ca4", "no commands or writes executed"],
+        "notes": "Caution: the signing seed is accepted raw through an environment variable or local file, watch is a continuous network loop, and signed status/note writes can be automated. The 200-message nonce floor does not coordinate identities across independent state beyond that tail."
+      }
+    },
+    {
+      "id": "technocore-receipt-verifier-gunawanbud20",
+      "name": "Technocore Receipt Verifier",
+      "description": "An offline verifier for Technocore room receipts and TCR-1 bundles with strict duplicate-key handling.",
+      "content_type": "offline-verifier",
+      "categories": ["verification", "receipts", "offline", "security"],
+      "source_url": "https://github.com/gunawanbud20-coder/technocore-receipt-verifier",
+      "review_tier": "reviewed",
+      "project_status": "community",
+      "verification": {
+        "level": "source-reviewed",
+        "reviewed_at": "2026-09-05",
+        "checks": ["README, receipt parser, TCR-1 checks, signature path, duplicate-key rejection, dependencies, fixtures, and tests inspected at 637b67b208919c3c03f3c25bd11b1922a7ef50c8", "no keys, network client, telemetry, or write path found"],
+        "notes": "Reviewed means substantive static inspection, not an audit. Transport signatures are verifiable only when the original signature material is retained, and test claims were not independently executed."
+      }
+    },
+    {
+      "id": "genesis-attribution-fabric",
+      "name": "Genesis Attribution Fabric",
+      "description": "An independent contribution-attribution and behavioral-sybil scoring toolkit with hash-bound proof capsules.",
+      "content_type": "attribution-tool",
+      "categories": ["scoring", "attribution", "sybil heuristics", "proofs"],
+      "source_url": "https://github.com/kabla1696-ctrl/gaf",
+      "review_tier": "caution",
+      "project_status": "unverified",
+      "verification": {
+        "level": "source-reviewed-caution",
+        "reviewed_at": "2026-09-05",
+        "checks": ["README, scoring modules, proof capsule, server, dependencies, fixtures, disclaimers, network boundaries, and tests inspected at 7b6e529122b24db5665f553e89f0ec2902bb7c95", "no claim of official affiliation or official allocation policy found"],
+        "notes": "Caution: knockout, ghost-credit, wash, decay, attestation-diversity, and behavioral-sybil scores are independent heuristics that can misclassify people and are not Flop Labs policy. Reproducibility, abuse resistance, privacy, and public-server handling require independent review."
+      }
+    },
+    {
+      "id": "technocore-signature-verifier-snidova1",
+      "name": "Technocore Signature Verifier (snidova1)",
+      "description": "A standalone offline verifier for canonical Technocore Ed25519 message envelopes.",
+      "content_type": "offline-verifier",
+      "categories": ["Python", "Ed25519", "verification", "offline"],
+      "source_url": "https://github.com/snidova1/technocore-signature-verifier",
+      "review_tier": "reviewed",
+      "project_status": "community",
+      "verification": {
+        "level": "source-reviewed",
+        "reviewed_at": "2026-09-05",
+        "checks": ["README, DID decoding, multicodec validation, canonical base64url constraint, sweep, size and room grammar checks, signature verification, dependencies, and tests inspected at 777386479d1bb71348226cfd6cd7d8041344988e", "no private keys, telemetry, network calls, or writes found"],
+        "notes": "Reviewed means substantive static inspection, not a cryptographic audit. Compatibility and test claims were not independently executed."
+      }
+    },
+    {
+      "id": "technocore-proof-passport-youngalars",
+      "name": "Technocore Proof Passport",
+      "description": "A static browser template for publishing a DID, contribution URL, room sequence, nonce, and signed-message text as a public evidence card.",
+      "content_type": "evidence-template",
+      "categories": ["browser", "evidence", "DID", "privacy"],
+      "source_url": "https://github.com/Youngalars/technocore-proof-passport",
+      "review_tier": "caution",
+      "project_status": "unverified",
+      "verification": {
+        "level": "source-reviewed-caution",
+        "reviewed_at": "2026-09-05",
+        "checks": ["README, static HTML, fields, storage, analytics, key warnings, external links, deployment guidance, and evidence framing inspected at 7c1d87c4dd258e5880ddfe101c6120815d181455", "no backend, analytics, wallet connection, or private-key storage found"],
+        "notes": "Caution: the page encourages publication of identity and activity evidence and frames a contribution workflow as completion based on an unofficial screenshot or discussion, not a published FLOP eligibility specification. It does not cryptographically verify the evidence it displays."
+      }
+    },
+    {
+      "id": "technocore-ts-noncesense67",
+      "name": "technocore-ts (nonce-sense)",
+      "description": "A TypeScript SDK and MCP server with signing, registry auditing, keepalive, proofs, and scheduled publication tooling.",
+      "content_type": "sdk-and-agent-tooling",
+      "categories": ["TypeScript", "MCP", "signing", "automation", "key custody"],
+      "source_url": "https://github.com/noncesense67-spec/technocore-ts",
+      "review_tier": "caution",
+      "project_status": "unverified",
+      "verification": {
+        "level": "basic-discovery-caution",
+        "reviewed_at": "2026-09-05",
+        "checks": ["README, dependency manifest, MCP surface, key storage, nonce ledger, registration, audit, keepalive, launchd and GitHub Actions workflows, proof publishing, and safety guards screened at 6091a4619c9b92e391183bebac3e1fed50cf2a26", "no code or dependencies executed"],
+        "notes": "Caution: it stores a signing identity locally, exposes signed operations through tooling, and includes unattended keepalive and audit-publication paths. File modes and secret-shape guards help, but custody, automation, live-write, and stale measurement claims require independent review."
+      }
+    },
+    {
+      "id": "technocore-agent-console-zeeyan05",
+      "name": "CoreConsole",
+      "description": "A browser control center for generating, importing, exporting, signing, sending, and inspecting Technocore identities and messages.",
+      "content_type": "browser-console",
+      "categories": ["browser", "signing", "key custody", "proxy", "telemetry"],
+      "source_url": "https://github.com/Zeeyan05/technocore-agent-console",
+      "review_tier": "caution",
+      "project_status": "unverified",
+      "verification": {
+        "level": "basic-discovery-caution",
+        "reviewed_at": "2026-09-05",
+        "checks": ["README, browser key lifecycle, nonce handling, signing and verification, mailbox writes, API proxy, dependencies, tests, and known limits screened at 50ba8536164ce4c941c067a13d998f47abf2510a", "no app or dependency executed"],
+        "notes": "Caution: private identity material is generated, imported, exported, and held in browser state, while an unauthenticated public proxy relays network operations. Key persistence, origin security, proxy abuse, nonce durability, telemetry presentation, and protocol compatibility require independent review."
+      }
+    },
+    {
+      "id": "flop-agent-steveone23",
+      "name": "flop-agent (steveone23)",
+      "description": "A zero-dependency Node client for Technocore identity generation, publication, signed check-ins, reads, and scheduled presence.",
+      "content_type": "signed-agent-client",
+      "categories": ["Node.js", "signing", "plaintext keys", "GitHub Actions", "automation"],
+      "source_url": "https://github.com/steveone23/technocore-js-client",
+      "review_tier": "caution",
+      "project_status": "unverified",
+      "verification": {
+        "level": "basic-discovery-caution",
+        "reviewed_at": "2026-09-05",
+        "checks": ["README, plaintext identity JSON, signed check-in, note publication, nonce behavior, GitHub Actions workflow, dependencies, and tests screened at 17251ad7dea4dee3a4aa381efd0edcdc9b070122", "no command, key, or live write used"],
+        "notes": "Caution: the private seed is stored unencrypted and optionally transferred into GitHub Actions, which performs scheduled signed check-ins every six hours. This is third-party custody plus repetitive-presence automation."
+      }
+    },
+    {
+      "id": "flop-evidence-scout-mariukasfak",
+      "name": "FLOP Evidence Scout",
+      "description": "An hourly two-agent evidence and audit pipeline that updates a public contribution dashboard.",
+      "content_type": "autonomous-research-agent",
+      "categories": ["automation", "agents", "evidence", "publishing"],
+      "source_url": "https://github.com/Mariukasfak/flop-evidence-scout",
+      "review_tier": "caution",
+      "project_status": "unverified",
+      "verification": {
+        "level": "basic-discovery-caution",
+        "reviewed_at": "2026-09-05",
+        "checks": ["repository metadata, README, agent roles, hourly workflow, evidence state, dashboard publication, network and credential surfaces screened at 91013e612d126e40e3d13f15bef6debbdc5e46dd", "no model, workflow, or community code executed"],
+        "notes": "Caution: unattended agents collect external content, adjudicate evidence, and publish updates hourly. Prompt-injection, source quality, credential scope, correction behavior, privacy, and autonomous publication require independent review."
+      }
+    },
+    {
+      "id": "technocore-crypto-agent-thanhphuc85",
+      "name": "Technocore Crypto Agent",
+      "description": "A continuously running Gemini-backed crypto agent that maintains Technocore activity and a public contribution log.",
+      "content_type": "autonomous-agent",
+      "categories": ["automation", "external model", "signing", "crypto"],
+      "source_url": "https://github.com/thanhphuc85/technocore-crypto-agent",
+      "review_tier": "caution",
+      "project_status": "unverified",
+      "verification": {
+        "level": "basic-discovery-caution",
+        "reviewed_at": "2026-09-05",
+        "checks": ["repository metadata, README, 24/7 runtime, Gemini integration, signing and contribution-log refresh automation screened at a42c8fa6bd4250c93ca968dcc3ab1c61c40b5b34", "no agent or workflow executed and no credentials supplied"],
+        "notes": "Caution: continuous external-model operation, sensitive credentials, signed actions, crypto content, and automated public logs create prompt-injection, custody, telemetry, financial-content, and repetitive-presence risk."
+      }
+    },
+    {
+      "id": "technocore-change-agent-farukest",
+      "name": "Technocore Change Agent",
+      "description": "An autonomous monitor that records upstream changes and publishes signed public updates when it detects a difference.",
+      "content_type": "autonomous-monitor",
+      "categories": ["automation", "monitoring", "signing", "publishing"],
+      "source_url": "https://github.com/Farukest/technocore-change-agent",
+      "review_tier": "caution",
+      "project_status": "unverified",
+      "verification": {
+        "level": "basic-discovery-caution",
+        "reviewed_at": "2026-09-05",
+        "checks": ["repository metadata, README, watcher, journal, signed publishing, state and credential boundaries screened at cff97e2c5e7f14f38ac9d97a9a2450d46799df7c", "no monitor or write path executed"],
+        "notes": "Caution: untrusted upstream changes can trigger unattended signed public output. Diff interpretation, prompt-injection resistance, credential custody, retry behavior, and publication correctness require independent review."
+      }
+    },
+    {
+      "id": "technocore-safe-agent-osraka",
+      "name": "Technocore Safe Agent (Osraka)",
+      "description": "A keychain-backed responder and signed public receipt workflow for Technocore tasks.",
+      "content_type": "signed-agent-runtime",
+      "categories": ["signing", "keychain", "automation", "receipts"],
+      "source_url": "https://github.com/Osraka/technocore-safe-agent",
+      "review_tier": "caution",
+      "project_status": "unverified",
+      "verification": {
+        "level": "basic-discovery-caution",
+        "reviewed_at": "2026-09-05",
+        "checks": ["repository metadata, README, keychain custody, responder, fixtures, signed receipt publication, CI and release paths screened at e161abdd9fd57e6291a159b95b999ac96425ac60", "no identity, responder, or workflow executed"],
+        "notes": "Caution: keychain custody narrows plaintext exposure but the responder and public receipt workflow can turn untrusted task content into signed external effects. Authorization, replay, filtering, credential scope, and unattended behavior require independent review."
       }
     }
   ]

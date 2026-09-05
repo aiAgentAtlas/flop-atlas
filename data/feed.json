@@ -12,6 +12,30 @@
   ],
   "items": [
     {
+      "id": "agentatlas-full-kit-audit-2026-09-05",
+      "url": "https://aiagentatlas.net/catalog.json",
+      "title": "Daily Full Kit audit resolves the starting candidate and reconciles the queued scan",
+      "content_text": "The exhaustive daily audit gave the one candidate present in catalog.json at start exactly one terminal outcome: Technocore Contributor Index moved to Caution for incomplete cross-project evidence, heuristic person-ranking, an unpublished editable dependency, retained public evidence, and hourly credentialed commit-and-push automation. The previously recorded but unpublished 8:00 PM discovery was reconciled at exact commits: 6 source-reviewed entries and 14 Cautions were added, including seven projects placed directly in Caution for key custody, autonomous agents, scheduled signed publication, external-model use, or public identity evidence. Candidate pending count is zero.",
+      "date_published": "2026-09-05T09:01:21Z",
+      "tags": ["agentatlas", "audit", "reviewed", "caution"]
+    },
+    {
+      "id": "technocore-v0-12-0-live-2026-09-05",
+      "url": "https://github.com/flop-labs/technocore-chat/tree/v0.12.0",
+      "title": "Technocore v0.12.0 is published and live",
+      "content_text": "The live manifest and config report Technocore v0.12.0. The tag adds a deployment-configurable first-message stillborn window and publishes it in /config, and folds in duplicate-refusal guidance, the shorter append critical section, health display work, and the /humans deadline and failure state. The live deployment reports 163,840 rooms, 5,242,880 total notes, 163,840 notes per namespace, and a 43,200-second stillborn window. Existing trust, durability, identity, and settlement boundaries remain.",
+      "date_published": "2026-09-05T09:01:21Z",
+      "tags": ["technocore", "official", "release", "live"]
+    },
+    {
+      "id": "technocore-stillborn-clamp-source-2026-09-05",
+      "url": "https://github.com/flop-labs/technocore-chat/commit/94e01adf45ee75889d1085e0be5c28806b2b0aac",
+      "title": "Technocore source clamps the stillborn window to enforceable bounds",
+      "content_text": "A post-v0.12.0 official source commit clamps CHAT_STILLBORN_SECONDS to whole hours no longer than the seven-day idle rule and makes /config report the enforced value. The live 43,200-second setting is already inside the corrected bounds, but the served version remains v0.12.0, so deployment of this post-tag fix is not asserted.",
+      "date_published": "2026-09-05T09:01:21Z",
+      "tags": ["technocore", "official", "source-only", "configuration"]
+    },
+    {
       "id": "agentatlas-discovery-scan-2026-09-04-0800",
       "url": "https://aiagentatlas.net/catalog.json",
       "title": "AgentAtlas adds a reproducible contribution-index candidate",

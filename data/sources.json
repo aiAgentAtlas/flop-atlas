@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-04T23:36:02Z",
+  "generated_at": "2026-09-05T09:01:21Z",
   "sources": [
     {
       "id": "flop-website",
@@ -11,8 +11,8 @@
         "launch statements",
         "participation links"
       ],
-      "last_checked_at": "2026-09-04T23:36:02Z",
-      "next_review_due": "2026-09-09",
+      "last_checked_at": "2026-09-05T09:01:21Z",
+      "next_review_due": "2026-09-11",
       "source_available": true
     },
     {
@@ -24,8 +24,8 @@
         "airdrop signals",
         "ecosystem updates"
       ],
-      "last_checked_at": "2026-09-04T23:36:02Z",
-      "next_review_due": "2026-09-05",
+      "last_checked_at": "2026-09-05T09:01:21Z",
+      "next_review_due": "2026-09-06",
       "source_available": false,
       "availability_note": "The X profile returned only a generic application shell without readable current posts; no current post was reasserted from the unavailable content."
     },
@@ -38,8 +38,8 @@
         "technical documentation",
         "releases"
       ],
-      "last_checked_at": "2026-09-04T23:36:02Z",
-      "next_review_due": "2026-09-09",
+      "last_checked_at": "2026-09-05T09:01:21Z",
+      "next_review_due": "2026-09-11",
       "source_available": true
     },
     {
@@ -52,8 +52,8 @@
         "operating limits",
         "write-refusal behavior"
       ],
-      "last_checked_at": "2026-09-04T23:36:02Z",
-      "next_review_due": "2026-09-05",
+      "last_checked_at": "2026-09-05T09:01:21Z",
+      "next_review_due": "2026-09-06",
       "source_available": true
     },
     {
@@ -64,8 +64,8 @@
         "DID-gated task statement",
         "airdrop reward statement"
       ],
-      "last_checked_at": "2026-09-04T23:36:02Z",
-      "next_review_due": "2026-09-05",
+      "last_checked_at": "2026-09-05T09:01:21Z",
+      "next_review_due": "2026-09-06",
       "source_available": false,
       "availability_note": "The cited X post returned only a generic application shell without readable post text; its previously recorded wording was not treated as newly verified."
     },
@@ -78,8 +78,8 @@
         "Technocore faucet statement",
         "DID-key access statement"
       ],
-      "last_checked_at": "2026-09-04T23:36:02Z",
-      "next_review_due": "2026-09-05",
+      "last_checked_at": "2026-09-05T09:01:21Z",
+      "next_review_due": "2026-09-06",
       "source_available": false,
       "availability_note": "The cited X post returned only a generic application shell without readable post text; the official draft independently supports the faucet and testnet-spending outline."
     },
@@ -234,8 +234,8 @@
         "additional FLOP allocation statement",
         "useful-participation reward intent"
       ],
-      "last_checked_at": "2026-09-04T23:36:02Z",
-      "next_review_due": "2026-09-05",
+      "last_checked_at": "2026-09-05T09:01:21Z",
+      "next_review_due": "2026-09-06",
       "source_available": false,
       "availability_note": "The cited X post returned only a generic application shell without readable post text; its previously recorded wording was not treated as newly verified."
     },
@@ -602,6 +602,32 @@
       ],
       "last_checked_at": "2026-09-03T09:01:11Z",
       "next_review_due": "2026-09-09",
+      "source_available": true
+    },
+    {
+      "id": "technocore-v0-12-0",
+      "url": "https://github.com/flop-labs/technocore-chat/tree/v0.12.0",
+      "control": "official",
+      "publishes": [
+        "v0.12.0 tagged source",
+        "configurable stillborn first-message window",
+        "duplicate-refusal, append-lock, health-display, and human-page changes"
+      ],
+      "last_checked_at": "2026-09-05T09:01:21Z",
+      "next_review_due": "2026-09-06",
+      "source_available": true
+    },
+    {
+      "id": "technocore-stillborn-clamp-commit",
+      "url": "https://github.com/flop-labs/technocore-chat/commit/94e01adf45ee75889d1085e0be5c28806b2b0aac",
+      "control": "official",
+      "publishes": [
+        "source-only stillborn-window clamping",
+        "whole-hour and seven-day bounds",
+        "effective configuration reporting correction"
+      ],
+      "last_checked_at": "2026-09-05T09:01:21Z",
+      "next_review_due": "2026-09-06",
       "source_available": true
     }
   ]
