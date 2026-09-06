@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-06T03:00:58Z",
+  "generated_at": "2026-09-06T09:00:59Z",
   "sources": [
     {
       "id": "flop-website",
@@ -11,8 +11,8 @@
         "launch statements",
         "participation links"
       ],
-      "last_checked_at": "2026-09-05T15:01:26Z",
-      "next_review_due": "2026-09-11",
+      "last_checked_at": "2026-09-06T09:00:59Z",
+      "next_review_due": "2026-09-12",
       "source_available": true
     },
     {
@@ -24,10 +24,9 @@
         "airdrop signals",
         "ecosystem updates"
       ],
-      "last_checked_at": "2026-09-05T15:01:26Z",
-      "next_review_due": "2026-09-06",
-      "source_available": false,
-      "availability_note": "The X profile returned only a generic application shell without readable current posts; no current post was reasserted from the unavailable content."
+      "last_checked_at": "2026-09-06T09:00:59Z",
+      "next_review_due": "2026-09-12",
+      "source_available": true
     },
     {
       "id": "flop-github",
@@ -38,8 +37,8 @@
         "technical documentation",
         "releases"
       ],
-      "last_checked_at": "2026-09-05T15:01:26Z",
-      "next_review_due": "2026-09-11",
+      "last_checked_at": "2026-09-06T09:00:59Z",
+      "next_review_due": "2026-09-12",
       "source_available": true
     },
     {
@@ -52,8 +51,8 @@
         "operating limits",
         "write-refusal behavior"
       ],
-      "last_checked_at": "2026-09-06T03:00:58Z",
-      "next_review_due": "2026-09-06",
+      "last_checked_at": "2026-09-06T09:00:59Z",
+      "next_review_due": "2026-09-07",
       "source_available": true
     },
     {
@@ -64,10 +63,9 @@
         "DID-gated task statement",
         "airdrop reward statement"
       ],
-      "last_checked_at": "2026-09-05T09:01:21Z",
-      "next_review_due": "2026-09-06",
-      "source_available": false,
-      "availability_note": "The cited X post returned only a generic application shell without readable post text; its previously recorded wording was not treated as newly verified."
+      "last_checked_at": "2026-09-06T09:00:59Z",
+      "next_review_due": "2026-09-12",
+      "source_available": true
     },
     {
       "id": "arthur-hayes-testnet-faucet",
@@ -78,10 +76,9 @@
         "Technocore faucet statement",
         "DID-key access statement"
       ],
-      "last_checked_at": "2026-09-05T09:01:21Z",
-      "next_review_due": "2026-09-06",
-      "source_available": false,
-      "availability_note": "The cited X post returned only a generic application shell without readable post text; the official draft independently supports the faucet and testnet-spending outline."
+      "last_checked_at": "2026-09-06T09:00:59Z",
+      "next_review_due": "2026-09-12",
+      "source_available": true
     },
     {
       "id": "technocore-v0-9-3",
@@ -92,7 +89,7 @@
         "performance changes",
         "documentation corrections"
       ],
-      "last_checked_at": "2026-09-06T03:00:58Z",
+      "last_checked_at": "2026-09-06T09:00:59Z",
       "next_review_due": "2026-09-07",
       "source_available": true
     },
@@ -105,7 +102,7 @@
         "concurrency fixes",
         "room-listing cache changes"
       ],
-      "last_checked_at": "2026-09-06T03:00:58Z",
+      "last_checked_at": "2026-09-06T09:00:59Z",
       "next_review_due": "2026-09-07",
       "source_available": true
     },
@@ -118,7 +115,7 @@
         "room-listing cache correction",
         "benchmark results"
       ],
-      "last_checked_at": "2026-09-06T03:00:58Z",
+      "last_checked_at": "2026-09-06T09:00:59Z",
       "next_review_due": "2026-09-07",
       "source_available": true
     },
@@ -131,7 +128,7 @@
         "interoperability guide",
         "static-document cache behavior"
       ],
-      "last_checked_at": "2026-09-06T03:00:58Z",
+      "last_checked_at": "2026-09-06T09:00:59Z",
       "next_review_due": "2026-09-07",
       "source_available": true
     },
@@ -144,7 +141,7 @@
         "effective configuration endpoint",
         "configuration disclosure boundaries"
       ],
-      "last_checked_at": "2026-09-06T03:00:58Z",
+      "last_checked_at": "2026-09-06T09:00:59Z",
       "next_review_due": "2026-09-07",
       "source_available": true
     },
@@ -158,7 +155,7 @@
         "HTTP 422 refusal behavior",
         "effective configuration changes"
       ],
-      "last_checked_at": "2026-09-06T03:00:58Z",
+      "last_checked_at": "2026-09-06T09:00:59Z",
       "next_review_due": "2026-09-07",
       "source_available": true
     },
@@ -170,7 +167,7 @@
         "read-only explorer source",
         "signature inspection implementation"
       ],
-      "last_checked_at": "2026-09-01T09:00:56Z",
+      "last_checked_at": "2026-09-06T09:00:59Z",
       "next_review_due": "2026-09-07",
       "source_available": true
     },
@@ -182,7 +179,7 @@
         "GET-only client source",
         "local identity handling"
       ],
-      "last_checked_at": "2026-09-01T09:00:56Z",
+      "last_checked_at": "2026-09-06T09:00:59Z",
       "next_review_due": "2026-09-07",
       "source_available": true
     },
@@ -196,7 +193,7 @@
         "signed note and room publishing",
         "hourly automation"
       ],
-      "last_checked_at": "2026-09-01T09:00:56Z",
+      "last_checked_at": "2026-09-06T09:00:59Z",
       "next_review_due": "2026-09-07",
       "source_available": true
     },
@@ -208,7 +205,7 @@
         "cross-platform beginner guide",
         "identity safety reminders"
       ],
-      "last_checked_at": "2026-09-01T09:00:56Z",
+      "last_checked_at": "2026-09-06T09:00:59Z",
       "next_review_due": "2026-09-07",
       "source_available": true
     },
@@ -221,7 +218,7 @@
         "withdrawn beginner execution guide",
         "security review notes"
       ],
-      "last_checked_at": "2026-09-01T09:00:56Z",
+      "last_checked_at": "2026-09-06T09:00:59Z",
       "next_review_due": "2026-09-07",
       "source_available": true
     },
@@ -234,10 +231,9 @@
         "additional FLOP allocation statement",
         "useful-participation reward intent"
       ],
-      "last_checked_at": "2026-09-05T09:01:21Z",
-      "next_review_due": "2026-09-06",
-      "source_available": false,
-      "availability_note": "The cited X post returned only a generic application shell without readable post text; its previously recorded wording was not treated as newly verified."
+      "last_checked_at": "2026-09-06T09:00:59Z",
+      "next_review_due": "2026-09-12",
+      "source_available": true
     },
     {
       "id": "technocore-canonical-signature-fix",
@@ -248,7 +244,7 @@
         "compatibility rationale",
         "signature test update"
       ],
-      "last_checked_at": "2026-09-06T03:00:58Z",
+      "last_checked_at": "2026-09-06T09:00:59Z",
       "next_review_due": "2026-09-07",
       "source_available": true
     },
@@ -261,7 +257,7 @@
         "room generation field",
         "cursor continuity tests"
       ],
-      "last_checked_at": "2026-09-06T03:00:58Z",
+      "last_checked_at": "2026-09-06T09:00:59Z",
       "next_review_due": "2026-09-07",
       "source_available": true
     },
@@ -274,7 +270,7 @@
         "offline re-verification semantics",
         "replay-window tradeoff"
       ],
-      "last_checked_at": "2026-09-06T03:00:58Z",
+      "last_checked_at": "2026-09-06T09:00:59Z",
       "next_review_due": "2026-09-07",
       "source_available": true
     },
@@ -287,7 +283,7 @@
         "CORS response-read boundary",
         "ambiguous browser failure behavior"
       ],
-      "last_checked_at": "2026-09-06T03:00:58Z",
+      "last_checked_at": "2026-09-06T09:00:59Z",
       "next_review_due": "2026-09-07",
       "source_available": true
     },
@@ -300,7 +296,7 @@
         "capacity invariant",
         "unreleased status"
       ],
-      "last_checked_at": "2026-09-06T03:00:58Z",
+      "last_checked_at": "2026-09-06T09:00:59Z",
       "next_review_due": "2026-09-07",
       "source_available": true
     },
@@ -313,7 +309,7 @@
         "generation header",
         "expiry and replay-material boundaries"
       ],
-      "last_checked_at": "2026-09-06T03:00:58Z",
+      "last_checked_at": "2026-09-06T09:00:59Z",
       "next_review_due": "2026-09-07",
       "source_available": true
     },
@@ -324,7 +320,7 @@
       "publishes": [
         "source-only room-list cache reliability change"
       ],
-      "last_checked_at": "2026-09-06T03:00:58Z",
+      "last_checked_at": "2026-09-06T09:00:59Z",
       "next_review_due": "2026-09-07",
       "source_available": true
     },
@@ -335,7 +331,7 @@
       "publishes": [
         "source-only input validation and OpenAPI contract changes"
       ],
-      "last_checked_at": "2026-09-06T03:00:58Z",
+      "last_checked_at": "2026-09-06T09:00:59Z",
       "next_review_due": "2026-09-07",
       "source_available": true
     },
@@ -346,7 +342,7 @@
       "publishes": [
         "source-only long-poll held/refused response signal"
       ],
-      "last_checked_at": "2026-09-06T03:00:58Z",
+      "last_checked_at": "2026-09-06T09:00:59Z",
       "next_review_due": "2026-09-07",
       "source_available": true
     },
@@ -359,7 +355,7 @@
         "streamable HTTP remote transport",
         "signed MCP tool custody modes"
       ],
-      "last_checked_at": "2026-09-06T03:00:58Z",
+      "last_checked_at": "2026-09-06T09:00:59Z",
       "next_review_due": "2026-09-07",
       "source_available": true
     },
@@ -371,7 +367,7 @@
         "v0.11.0 release notes",
         "deployed protocol and MCP changes"
       ],
-      "last_checked_at": "2026-09-06T03:00:58Z",
+      "last_checked_at": "2026-09-06T09:00:59Z",
       "next_review_due": "2026-09-07",
       "source_available": true
     },
@@ -383,7 +379,7 @@
         "v0.11.1 release notes",
         "creation-path and sequence-state performance changes"
       ],
-      "last_checked_at": "2026-09-06T03:00:58Z",
+      "last_checked_at": "2026-09-06T09:00:59Z",
       "next_review_due": "2026-09-07",
       "source_available": true
     },
@@ -396,7 +392,7 @@
         "retained workers.dev alias",
         "deployment boundary"
       ],
-      "last_checked_at": "2026-09-06T03:00:58Z",
+      "last_checked_at": "2026-09-06T09:00:59Z",
       "next_review_due": "2026-09-07",
       "source_available": true
     },
@@ -409,7 +405,7 @@
         "MCP Server Card corrections",
         "ephemeral expiry correction"
       ],
-      "last_checked_at": "2026-09-06T03:00:58Z",
+      "last_checked_at": "2026-09-06T09:00:59Z",
       "next_review_due": "2026-09-07",
       "source_available": true
     },
@@ -422,7 +418,7 @@
         "canonical MCP endpoint",
         "batched lifetime-counter semantics"
       ],
-      "last_checked_at": "2026-09-06T03:00:58Z",
+      "last_checked_at": "2026-09-06T09:00:59Z",
       "next_review_due": "2026-09-07",
       "source_available": true
     },
@@ -434,8 +430,8 @@
         "tclk/1 escrowed-deal convention",
         "settlement and public-room safety boundaries"
       ],
-      "last_checked_at": "2026-09-06T03:00:58Z",
-      "next_review_due": "2026-09-08",
+      "last_checked_at": "2026-09-06T09:00:59Z",
+      "next_review_due": "2026-09-07",
       "source_available": true
     },
     {
@@ -446,8 +442,8 @@
         "source-only compaction line-cap correction",
         "retained byte-budget semantics"
       ],
-      "last_checked_at": "2026-09-06T03:00:58Z",
-      "next_review_due": "2026-09-08",
+      "last_checked_at": "2026-09-06T09:00:59Z",
+      "next_review_due": "2026-09-07",
       "source_available": true
     },
     {
@@ -458,8 +454,8 @@
         "source-only newest-record compaction preservation",
         "acknowledged-write retention boundary"
       ],
-      "last_checked_at": "2026-09-06T03:00:58Z",
-      "next_review_due": "2026-09-08",
+      "last_checked_at": "2026-09-06T09:00:59Z",
+      "next_review_due": "2026-09-07",
       "source_available": true
     },
     {
@@ -470,8 +466,8 @@
         "tclk/1 specification and reference implementation",
         "alpha status and settlement-rail limitations"
       ],
-      "last_checked_at": "2026-09-05T15:01:26Z",
-      "next_review_due": "2026-09-09",
+      "last_checked_at": "2026-09-06T09:00:59Z",
+      "next_review_due": "2026-09-12",
       "source_available": true
     },
     {
@@ -483,8 +479,8 @@
         "provisional testnet and mainnet timing",
         "provisional genesis airdrop allocations and agent earning mechanics"
       ],
-      "last_checked_at": "2026-09-05T15:01:26Z",
-      "next_review_due": "2026-09-09",
+      "last_checked_at": "2026-09-06T09:00:59Z",
+      "next_review_due": "2026-09-12",
       "source_available": true
     },
     {
@@ -496,8 +492,8 @@
         "deployed compaction and retention fixes",
         "OpenAPI format documentation and document-fallback changes"
       ],
-      "last_checked_at": "2026-09-06T03:00:58Z",
-      "next_review_due": "2026-09-08",
+      "last_checked_at": "2026-09-06T09:00:59Z",
+      "next_review_due": "2026-09-07",
       "source_available": true
     },
     {
@@ -509,8 +505,8 @@
         "deployed asynchronous health endpoint",
         "unchanged health response contract"
       ],
-      "last_checked_at": "2026-09-06T03:00:58Z",
-      "next_review_due": "2026-09-09",
+      "last_checked_at": "2026-09-06T09:00:59Z",
+      "next_review_due": "2026-09-07",
       "source_available": true
     },
     {
@@ -522,8 +518,8 @@
         "append benchmark results",
         "unchanged behavior claim"
       ],
-      "last_checked_at": "2026-09-06T03:00:58Z",
-      "next_review_due": "2026-09-08",
+      "last_checked_at": "2026-09-06T09:00:59Z",
+      "next_review_due": "2026-09-07",
       "source_available": true
     },
     {
@@ -535,8 +531,8 @@
         "room-table failure state",
         "stale-list preservation behavior"
       ],
-      "last_checked_at": "2026-09-06T03:00:58Z",
-      "next_review_due": "2026-09-09",
+      "last_checked_at": "2026-09-06T09:00:59Z",
+      "next_review_due": "2026-09-07",
       "source_available": true
     },
     {
@@ -548,8 +544,8 @@
         "background refresh and canonical cache-key behavior",
         "stale-copy and caller-specific response safeguards"
       ],
-      "last_checked_at": "2026-09-06T03:00:58Z",
-      "next_review_due": "2026-09-09",
+      "last_checked_at": "2026-09-06T09:00:59Z",
+      "next_review_due": "2026-09-07",
       "source_available": true
     },
     {
@@ -561,8 +557,8 @@
         "wildcard routing fix for query-bearing /rooms requests",
         "edge snapshot dependency and manifest corrections"
       ],
-      "last_checked_at": "2026-09-06T03:00:58Z",
-      "next_review_due": "2026-09-09",
+      "last_checked_at": "2026-09-06T09:00:59Z",
+      "next_review_due": "2026-09-07",
       "source_available": true
     },
     {
@@ -574,8 +570,8 @@
         "optional stateless follow-up reference token",
         "duplicate and follow-up request measurement"
       ],
-      "last_checked_at": "2026-09-06T03:00:58Z",
-      "next_review_due": "2026-09-09",
+      "last_checked_at": "2026-09-06T09:00:59Z",
+      "next_review_due": "2026-09-07",
       "source_available": true
     },
     {
@@ -587,8 +583,8 @@
         "strict export parsing and venue ordering",
         "per-record timestamp and sender verification"
       ],
-      "last_checked_at": "2026-09-03T09:01:11Z",
-      "next_review_due": "2026-09-09",
+      "last_checked_at": "2026-09-06T09:00:59Z",
+      "next_review_due": "2026-09-12",
       "source_available": true
     },
     {
@@ -600,8 +596,8 @@
         "lock-deadline and rail-reference guards",
         "canonical settlement-rail registry and heartbeat frame"
       ],
-      "last_checked_at": "2026-09-03T09:01:11Z",
-      "next_review_due": "2026-09-09",
+      "last_checked_at": "2026-09-06T09:00:59Z",
+      "next_review_due": "2026-09-12",
       "source_available": true
     },
     {
@@ -613,8 +609,8 @@
         "configurable stillborn first-message window",
         "duplicate-refusal, append-lock, health-display, and human-page changes"
       ],
-      "last_checked_at": "2026-09-06T03:00:58Z",
-      "next_review_due": "2026-09-06",
+      "last_checked_at": "2026-09-06T09:00:59Z",
+      "next_review_due": "2026-09-07",
       "source_available": true
     },
     {
@@ -626,8 +622,8 @@
         "whole-hour and seven-day bounds",
         "effective configuration reporting correction"
       ],
-      "last_checked_at": "2026-09-06T03:00:58Z",
-      "next_review_due": "2026-09-06",
+      "last_checked_at": "2026-09-06T09:00:59Z",
+      "next_review_due": "2026-09-07",
       "source_available": true
     },
     {
@@ -639,8 +635,8 @@
         "reaper lock-contention fix",
         "fail-closed global count semantics"
       ],
-      "last_checked_at": "2026-09-06T03:00:58Z",
-      "next_review_due": "2026-09-06",
+      "last_checked_at": "2026-09-06T09:00:59Z",
+      "next_review_due": "2026-09-07",
       "source_available": true
     },
     {
@@ -652,8 +648,8 @@
         "signed posting from /humans",
         "delegation note convention and long polling"
       ],
-      "last_checked_at": "2026-09-06T03:00:58Z",
-      "next_review_due": "2026-09-06",
+      "last_checked_at": "2026-09-06T09:00:59Z",
+      "next_review_due": "2026-09-07",
       "source_available": true
     },
     {
@@ -665,8 +661,67 @@
         "v0.12.1 version bump",
         "count baseline correction"
       ],
-      "last_checked_at": "2026-09-06T03:00:58Z",
-      "next_review_due": "2026-09-06",
+      "last_checked_at": "2026-09-06T09:00:59Z",
+      "next_review_due": "2026-09-07",
+      "source_available": true
+    },
+    {
+      "id": "technocore-stillborn-doc-commit",
+      "url": "https://github.com/flop-labs/technocore-chat/commit/cc621b4f1e8d347244c866f9a95cbc492f0c4ab4",
+      "control": "official-source",
+      "publishes": [
+        "documented stillborn configuration alignment"
+      ],
+      "last_checked_at": "2026-09-06T09:00:59Z",
+      "next_review_due": "2026-09-07",
+      "source_available": true
+    },
+    {
+      "id": "technocore-note-cache-commit",
+      "url": "https://github.com/flop-labs/technocore-chat/commit/91a28151656a86c2583491512b6cbd87466c5613",
+      "control": "official-source",
+      "publishes": [
+        "note-read cacheability",
+        "read-budget footer stride"
+      ],
+      "last_checked_at": "2026-09-06T09:00:59Z",
+      "next_review_due": "2026-09-07",
+      "source_available": true
+    },
+    {
+      "id": "technocore-bounded-post-reaper-commit",
+      "url": "https://github.com/flop-labs/technocore-chat/commit/c149aa52b1b9a4ac57029a0d49a0317990bcdb37",
+      "control": "official-source",
+      "publishes": [
+        "bounded POST uploads",
+        "missing-note CAS rejection",
+        "reaper cadence"
+      ],
+      "last_checked_at": "2026-09-06T09:00:59Z",
+      "next_review_due": "2026-09-07",
+      "source_available": true
+    },
+    {
+      "id": "technocore-stats-token-commit",
+      "url": "https://github.com/flop-labs/technocore-chat/commit/ee6a201aa1321b36aaaacf2c6b2c94b8628ee501",
+      "control": "official-source",
+      "publishes": [
+        "malformed stats-token handling"
+      ],
+      "last_checked_at": "2026-09-06T09:00:59Z",
+      "next_review_due": "2026-09-07",
+      "source_available": true
+    },
+    {
+      "id": "technocore-mcp-list-notes-bound-commit",
+      "url": "https://github.com/flop-labs/technocore-chat/commit/9861d01cb42e10a5ffdffe3880338feaa4f56b3f",
+      "control": "official-source",
+      "publishes": [
+        "bounded MCP note listing",
+        "note total reporting"
+      ],
+      "last_checked_at": "2026-09-06T09:00:59Z",
+      "next_review_due": "2026-09-07",
       "source_available": true
     }
   ]

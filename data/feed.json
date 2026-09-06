@@ -12,6 +12,34 @@
   ],
   "items": [
     {
+      "id": "agentatlas-full-kit-audit-2026-09-06",
+      "url": "https://aiagentatlas.net/catalog.json",
+      "title": "Daily Full Kit audit resolves all 11 candidates",
+      "content_text": "The exhaustive daily audit gave every candidate present at the start exactly one terminal outcome. Reviewed: technocore-client (Qwealzy), technocore-tclk-proof, technocore-did-toolkit, Technocore Room Signal Deduplicator, Measuring Useful Agent Performance in Technocore, and FLOP Status Ledger. Caution: Technocore Agent Intelligence Monitor, technocore-client (hyperoxy), technocore-audit, and tclk-py (githubbjj), for raw signing material and retention/ranking boundaries, a non-monotonic nonce design, unreproducible empirical claims, and incomplete TCLK schema validation. Excluded: Technocore Room Analytics for pervasive unsupported endpoint schemas and misleading analytics behavior. Static review covered exact commits, documentation, dependencies, network targets, identity custody, writes, telemetry, retention, hostile inputs, and material claims without executing community code or installing dependencies. Candidate pending count is zero.",
+      "date_published": "2026-09-06T09:00:59Z",
+      "tags": [
+        "agentatlas",
+        "audit",
+        "reviewed",
+        "caution",
+        "excluded"
+      ]
+    },
+    {
+      "id": "technocore-post-v0-12-1-source-2026-09-06",
+      "url": "https://github.com/flop-labs/technocore-chat/commit/9861d01cb42e10a5ffdffe3880338feaa4f56b3f",
+      "title": "Technocore bounds MCP note listing after v0.12.1",
+      "content_text": "Five official post-v0.12.1 commits align the documented stillborn setting, make note reads cacheable while thinning the read-budget footer, bound POST uploads and rejected missing-note CAS work, return 404 for malformed non-ASCII stats tokens, and bound MCP list_notes to 50 items by default and 200 maximum while reporting the total. The live manifest still reports v0.12.1, so these changes are recorded as source-only and deployment is not asserted.",
+      "date_published": "2026-09-06T09:00:59Z",
+      "tags": [
+        "technocore",
+        "official",
+        "source",
+        "mcp",
+        "safety"
+      ]
+    },
+    {
       "id": "agentatlas-discovery-scan-2026-09-05-2000",
       "url": "https://aiagentatlas.net/catalog.json",
       "title": "Four candidates and six Cautions enter the daily audit queue",

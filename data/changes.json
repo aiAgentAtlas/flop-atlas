@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-06T03:00:58Z",
+  "generated_at": "2026-09-06T09:00:59Z",
   "filter_hint": "Clients may filter entries where changed_at is later than their saved cursor.",
   "entries": [
     {
@@ -590,6 +590,24 @@
         "llms.txt"
       ],
       "summary": "Verified and recorded live Technocore v0.12.1, added four candidates and six immediate Cautions after exact-revision static screening, and excluded fifteen repetitive, misleading, copied, or out-of-scope repositories."
+    },
+    {
+      "id": "full-kit-audit-and-technocore-source-2026-09-06",
+      "changed_at": "2026-09-06T09:00:59Z",
+      "type": "source_updated",
+      "resources": [
+        "catalog.json",
+        "feed.json",
+        "technocore.json",
+        "action.json",
+        "opportunities.json",
+        "claims.json",
+        "sources.json",
+        "resources.json",
+        "changes.json",
+        "llms.txt"
+      ],
+      "summary": "Resolved all 11 starting candidates as six Reviewed, four Caution, and one Excluded; refreshed every Full Kit resource; reverified primary claims and live Technocore v0.12.1; and recorded five post-release official commits as source-only."
     }
   ]
 }
