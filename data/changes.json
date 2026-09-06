@@ -589,7 +589,7 @@
         "changes.json",
         "llms.txt"
       ],
-      "summary": "Verified and recorded live Technocore v0.12.1, added four candidates and six immediate Cautions after exact-revision static screening, and excluded sixteen repetitive, misleading, copied, or out-of-scope repositories."
+      "summary": "Verified and recorded live Technocore v0.12.1, added four candidates and six immediate Cautions after exact-revision static screening, and excluded fifteen repetitive, misleading, copied, or out-of-scope repositories."
     }
   ]
 }
