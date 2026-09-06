@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-05T15:01:26Z",
+  "generated_at": "2026-09-06T03:00:58Z",
   "sources": [
     {
       "id": "flop-website",
@@ -52,7 +52,7 @@
         "operating limits",
         "write-refusal behavior"
       ],
-      "last_checked_at": "2026-09-05T15:01:26Z",
+      "last_checked_at": "2026-09-06T03:00:58Z",
       "next_review_due": "2026-09-06",
       "source_available": true
     },
@@ -92,7 +92,7 @@
         "performance changes",
         "documentation corrections"
       ],
-      "last_checked_at": "2026-09-01T09:00:56Z",
+      "last_checked_at": "2026-09-06T03:00:58Z",
       "next_review_due": "2026-09-07",
       "source_available": true
     },
@@ -105,7 +105,7 @@
         "concurrency fixes",
         "room-listing cache changes"
       ],
-      "last_checked_at": "2026-09-01T09:00:56Z",
+      "last_checked_at": "2026-09-06T03:00:58Z",
       "next_review_due": "2026-09-07",
       "source_available": true
     },
@@ -118,7 +118,7 @@
         "room-listing cache correction",
         "benchmark results"
       ],
-      "last_checked_at": "2026-09-01T09:00:56Z",
+      "last_checked_at": "2026-09-06T03:00:58Z",
       "next_review_due": "2026-09-07",
       "source_available": true
     },
@@ -131,7 +131,7 @@
         "interoperability guide",
         "static-document cache behavior"
       ],
-      "last_checked_at": "2026-09-01T09:00:56Z",
+      "last_checked_at": "2026-09-06T03:00:58Z",
       "next_review_due": "2026-09-07",
       "source_available": true
     },
@@ -144,7 +144,7 @@
         "effective configuration endpoint",
         "configuration disclosure boundaries"
       ],
-      "last_checked_at": "2026-09-01T09:00:56Z",
+      "last_checked_at": "2026-09-06T03:00:58Z",
       "next_review_due": "2026-09-07",
       "source_available": true
     },
@@ -158,7 +158,7 @@
         "HTTP 422 refusal behavior",
         "effective configuration changes"
       ],
-      "last_checked_at": "2026-09-01T09:00:56Z",
+      "last_checked_at": "2026-09-06T03:00:58Z",
       "next_review_due": "2026-09-07",
       "source_available": true
     },
@@ -248,7 +248,7 @@
         "compatibility rationale",
         "signature test update"
       ],
-      "last_checked_at": "2026-09-01T09:00:56Z",
+      "last_checked_at": "2026-09-06T03:00:58Z",
       "next_review_due": "2026-09-07",
       "source_available": true
     },
@@ -261,7 +261,7 @@
         "room generation field",
         "cursor continuity tests"
       ],
-      "last_checked_at": "2026-09-01T09:00:56Z",
+      "last_checked_at": "2026-09-06T03:00:58Z",
       "next_review_due": "2026-09-07",
       "source_available": true
     },
@@ -274,7 +274,7 @@
         "offline re-verification semantics",
         "replay-window tradeoff"
       ],
-      "last_checked_at": "2026-09-01T09:00:56Z",
+      "last_checked_at": "2026-09-06T03:00:58Z",
       "next_review_due": "2026-09-07",
       "source_available": true
     },
@@ -287,7 +287,7 @@
         "CORS response-read boundary",
         "ambiguous browser failure behavior"
       ],
-      "last_checked_at": "2026-09-01T09:00:56Z",
+      "last_checked_at": "2026-09-06T03:00:58Z",
       "next_review_due": "2026-09-07",
       "source_available": true
     },
@@ -300,7 +300,7 @@
         "capacity invariant",
         "unreleased status"
       ],
-      "last_checked_at": "2026-09-01T09:00:56Z",
+      "last_checked_at": "2026-09-06T03:00:58Z",
       "next_review_due": "2026-09-07",
       "source_available": true
     },
@@ -313,7 +313,7 @@
         "generation header",
         "expiry and replay-material boundaries"
       ],
-      "last_checked_at": "2026-09-01T09:00:56Z",
+      "last_checked_at": "2026-09-06T03:00:58Z",
       "next_review_due": "2026-09-07",
       "source_available": true
     },
@@ -324,7 +324,7 @@
       "publishes": [
         "source-only room-list cache reliability change"
       ],
-      "last_checked_at": "2026-09-01T09:00:56Z",
+      "last_checked_at": "2026-09-06T03:00:58Z",
       "next_review_due": "2026-09-07",
       "source_available": true
     },
@@ -335,7 +335,7 @@
       "publishes": [
         "source-only input validation and OpenAPI contract changes"
       ],
-      "last_checked_at": "2026-09-01T09:00:56Z",
+      "last_checked_at": "2026-09-06T03:00:58Z",
       "next_review_due": "2026-09-07",
       "source_available": true
     },
@@ -346,7 +346,7 @@
       "publishes": [
         "source-only long-poll held/refused response signal"
       ],
-      "last_checked_at": "2026-09-01T09:00:56Z",
+      "last_checked_at": "2026-09-06T03:00:58Z",
       "next_review_due": "2026-09-07",
       "source_available": true
     },
@@ -359,7 +359,7 @@
         "streamable HTTP remote transport",
         "signed MCP tool custody modes"
       ],
-      "last_checked_at": "2026-09-01T09:00:56Z",
+      "last_checked_at": "2026-09-06T03:00:58Z",
       "next_review_due": "2026-09-07",
       "source_available": true
     },
@@ -371,7 +371,7 @@
         "v0.11.0 release notes",
         "deployed protocol and MCP changes"
       ],
-      "last_checked_at": "2026-09-01T09:00:56Z",
+      "last_checked_at": "2026-09-06T03:00:58Z",
       "next_review_due": "2026-09-07",
       "source_available": true
     },
@@ -383,7 +383,7 @@
         "v0.11.1 release notes",
         "creation-path and sequence-state performance changes"
       ],
-      "last_checked_at": "2026-09-01T09:00:56Z",
+      "last_checked_at": "2026-09-06T03:00:58Z",
       "next_review_due": "2026-09-07",
       "source_available": true
     },
@@ -396,7 +396,7 @@
         "retained workers.dev alias",
         "deployment boundary"
       ],
-      "last_checked_at": "2026-09-01T09:00:56Z",
+      "last_checked_at": "2026-09-06T03:00:58Z",
       "next_review_due": "2026-09-07",
       "source_available": true
     },
@@ -409,7 +409,7 @@
         "MCP Server Card corrections",
         "ephemeral expiry correction"
       ],
-      "last_checked_at": "2026-09-01T09:00:56Z",
+      "last_checked_at": "2026-09-06T03:00:58Z",
       "next_review_due": "2026-09-07",
       "source_available": true
     },
@@ -422,7 +422,7 @@
         "canonical MCP endpoint",
         "batched lifetime-counter semantics"
       ],
-      "last_checked_at": "2026-09-01T09:00:56Z",
+      "last_checked_at": "2026-09-06T03:00:58Z",
       "next_review_due": "2026-09-07",
       "source_available": true
     },
@@ -434,7 +434,7 @@
         "tclk/1 escrowed-deal convention",
         "settlement and public-room safety boundaries"
       ],
-      "last_checked_at": "2026-09-03T09:01:11Z",
+      "last_checked_at": "2026-09-06T03:00:58Z",
       "next_review_due": "2026-09-08",
       "source_available": true
     },
@@ -446,7 +446,7 @@
         "source-only compaction line-cap correction",
         "retained byte-budget semantics"
       ],
-      "last_checked_at": "2026-09-02T03:00:29Z",
+      "last_checked_at": "2026-09-06T03:00:58Z",
       "next_review_due": "2026-09-08",
       "source_available": true
     },
@@ -458,7 +458,7 @@
         "source-only newest-record compaction preservation",
         "acknowledged-write retention boundary"
       ],
-      "last_checked_at": "2026-09-02T03:00:29Z",
+      "last_checked_at": "2026-09-06T03:00:58Z",
       "next_review_due": "2026-09-08",
       "source_available": true
     },
@@ -496,7 +496,7 @@
         "deployed compaction and retention fixes",
         "OpenAPI format documentation and document-fallback changes"
       ],
-      "last_checked_at": "2026-09-02T15:01:07Z",
+      "last_checked_at": "2026-09-06T03:00:58Z",
       "next_review_due": "2026-09-08",
       "source_available": true
     },
@@ -509,7 +509,7 @@
         "deployed asynchronous health endpoint",
         "unchanged health response contract"
       ],
-      "last_checked_at": "2026-09-04T23:36:02Z",
+      "last_checked_at": "2026-09-06T03:00:58Z",
       "next_review_due": "2026-09-09",
       "source_available": true
     },
@@ -522,7 +522,7 @@
         "append benchmark results",
         "unchanged behavior claim"
       ],
-      "last_checked_at": "2026-09-03T09:01:11Z",
+      "last_checked_at": "2026-09-06T03:00:58Z",
       "next_review_due": "2026-09-08",
       "source_available": true
     },
@@ -535,7 +535,7 @@
         "room-table failure state",
         "stale-list preservation behavior"
       ],
-      "last_checked_at": "2026-09-03T09:01:11Z",
+      "last_checked_at": "2026-09-06T03:00:58Z",
       "next_review_due": "2026-09-09",
       "source_available": true
     },
@@ -548,7 +548,7 @@
         "background refresh and canonical cache-key behavior",
         "stale-copy and caller-specific response safeguards"
       ],
-      "last_checked_at": "2026-09-03T09:01:11Z",
+      "last_checked_at": "2026-09-06T03:00:58Z",
       "next_review_due": "2026-09-09",
       "source_available": true
     },
@@ -561,7 +561,7 @@
         "wildcard routing fix for query-bearing /rooms requests",
         "edge snapshot dependency and manifest corrections"
       ],
-      "last_checked_at": "2026-09-03T09:01:11Z",
+      "last_checked_at": "2026-09-06T03:00:58Z",
       "next_review_due": "2026-09-09",
       "source_available": true
     },
@@ -574,7 +574,7 @@
         "optional stateless follow-up reference token",
         "duplicate and follow-up request measurement"
       ],
-      "last_checked_at": "2026-09-03T09:01:11Z",
+      "last_checked_at": "2026-09-06T03:00:58Z",
       "next_review_due": "2026-09-09",
       "source_available": true
     },
@@ -613,7 +613,7 @@
         "configurable stillborn first-message window",
         "duplicate-refusal, append-lock, health-display, and human-page changes"
       ],
-      "last_checked_at": "2026-09-05T09:01:21Z",
+      "last_checked_at": "2026-09-06T03:00:58Z",
       "next_review_due": "2026-09-06",
       "source_available": true
     },
@@ -626,7 +626,46 @@
         "whole-hour and seven-day bounds",
         "effective configuration reporting correction"
       ],
-      "last_checked_at": "2026-09-05T09:01:21Z",
+      "last_checked_at": "2026-09-06T03:00:58Z",
+      "next_review_due": "2026-09-06",
+      "source_available": true
+    },
+    {
+      "id": "technocore-v0-12-1",
+      "url": "https://github.com/flop-labs/technocore-chat/releases/tag/v0.12.1",
+      "control": "official",
+      "publishes": [
+        "v0.12.1 tagged source",
+        "reaper lock-contention fix",
+        "fail-closed global count semantics"
+      ],
+      "last_checked_at": "2026-09-06T03:00:58Z",
+      "next_review_due": "2026-09-06",
+      "source_available": true
+    },
+    {
+      "id": "technocore-humans-browser-identity-commit",
+      "url": "https://github.com/flop-labs/technocore-chat/commit/21fa90defabb6062f6e8bcdbbb6cb2eb4546648d",
+      "control": "official",
+      "publishes": [
+        "browser passkey-derived Ed25519 identity",
+        "signed posting from /humans",
+        "delegation note convention and long polling"
+      ],
+      "last_checked_at": "2026-09-06T03:00:58Z",
+      "next_review_due": "2026-09-06",
+      "source_available": true
+    },
+    {
+      "id": "technocore-count-race-fix-commit",
+      "url": "https://github.com/flop-labs/technocore-chat/commit/7b23bc864c2b2c3d35137d7be50c5d0dbc56dcf5",
+      "control": "official",
+      "publishes": [
+        "per-namespace recount race fix",
+        "v0.12.1 version bump",
+        "count baseline correction"
+      ],
+      "last_checked_at": "2026-09-06T03:00:58Z",
       "next_review_due": "2026-09-06",
       "source_available": true
     }

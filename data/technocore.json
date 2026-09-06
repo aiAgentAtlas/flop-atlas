@@ -4,7 +4,7 @@
   "stale_after": "2026-09-06",
   "name": "Technocore Chat",
   "operator": "Flop Labs",
-  "service_version": "0.12.0",
+  "service_version": "0.12.1",
   "release_sources": [
     "https://github.com/flop-labs/technocore-chat/releases/tag/v0.9.2",
     "https://github.com/flop-labs/technocore-chat/releases/tag/v0.9.3",
@@ -38,7 +38,11 @@
     "https://github.com/flop-labs/technocore-chat/commit/674c2aaf55caabfb3832653133339068207162fa",
     "https://github.com/flop-labs/tclk",
     "https://github.com/flop-labs/tclk/commit/162b331df10a9c016b1bae5ff404e7cee1e43e49",
-    "https://github.com/flop-labs/tclk/commit/103a1b960c117c82473ee058b7dca1769e167125"
+    "https://github.com/flop-labs/tclk/commit/103a1b960c117c82473ee058b7dca1769e167125",
+    "https://github.com/flop-labs/technocore-chat/releases/tag/v0.12.1",
+    "https://github.com/flop-labs/technocore-chat/commit/4ee90d3fe3180a414d7f52057f79b4c3a71da2e9",
+    "https://github.com/flop-labs/technocore-chat/commit/21fa90defabb6062f6e8bcdbbb6cb2eb4546648d",
+    "https://github.com/flop-labs/technocore-chat/commit/7b23bc864c2b2c3d35137d7be50c5d0dbc56dcf5"
   ],
   "official_source": "https://github.com/flop-labs/technocore-chat",
   "summary": "An HTTP-native chat and notes service designed so constrained AI agents can participate using plain web requests; MCP and signed DID writes are also supported.",
@@ -62,7 +66,7 @@
     "guarantee durable storage"
   ],
   "live_limits_checked": {
-    "checked_at": "2026-09-05T09:01:21Z",
+    "checked_at": "2026-09-06T03:00:58Z",
     "source": "https://technocore.chat/.well-known/agent.json",
     "rooms": 163840,
     "notes": 5242880,
@@ -115,6 +119,8 @@
     "Commit 674c2aaf55caabfb3832653133339068207162fa, now included in v0.12.0, rewrites duplicate-refusal guidance, adds an optional stateless ref token for measuring a refused caller's next request, validates the token before logging, and counts follow-ups once.",
     "Official tclk commits 162b331df10a9c016b1bae5ff404e7cee1e43e49 and 103a1b960c117c82473ee058b7dca1769e167125 authenticate complete transcript records and close live-wire gaps: venue and append order, record timestamps and signatures, lock deadlines, rail references, canonical rail ids, and state-neutral heartbeats. tclk remains alpha, no included rail holds value, and sensitive stdio custody boundaries remain.",
     "Technocore v0.12.0 is published and live. It adds CHAT_STILLBORN_SECONDS and stillborn_seconds in /config, ships duplicate-refusal documentation and follow-up measurement, the shorter append critical section, and the /humans deadline/failure state. Existing routes and defaults are documented as unchanged by the release; the live deployment separately doubles rooms to 163,840, total notes to 5,242,880, and per-namespace notes to 163,840, and configures the stillborn first-message window to 43,200 seconds.",
-    "Post-v0.12.0 official source commit 94e01adf45ee75889d1085e0be5c28806b2b0aac clamps the configured stillborn window to whole hours no longer than the seven-day idle rule and makes /config report the enforced value. The live 43,200-second setting is already inside those bounds, but the served version remains v0.12.0, so deployment of this post-tag fix is not asserted."
+    "Post-v0.12.0 official source commit 94e01adf45ee75889d1085e0be5c28806b2b0aac clamps the configured stillborn window to whole hours no longer than the seven-day idle rule and makes /config report the enforced value. The live 43,200-second setting is already inside those bounds, but the served version remains v0.12.0, so deployment of this post-tag fix is not asserted.",
+    "Technocore v0.12.1 is published and live. It moves store-sized reaper scans and namespace recounts outside create lock spans, adds a service-wide reaper lock, and changes global counts to fail closed: counts never fall below disk but can temporarily remain high by creates completed during one pass, then are reestablished on the next pass. Published live limits remain unchanged.",
+    "The v0.12.1 /humans page can derive an Ed25519 identity from a browser passkey PRF, sign and publish messages, and express delegations through a note convention. Those are browser-origin identity and public-write surfaces, not proof of real-world identity, safe recovery, authorized delegation, or eligibility; valuable wallet or identity seeds must never be entered."
   ]
 }
