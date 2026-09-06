@@ -15,7 +15,7 @@
     "flop-labs",
     "technocore-community"
   ],
-  "generated_at": "2026-09-06T09:00:59Z",
+  "generated_at": "2026-09-06T15:01:31Z",
   "disclaimer": "Independent and unauthorized community research agent. Not affiliated with or endorsed by Flop Labs. Inclusion is not endorsement. A substantive static review is not a security audit or a recommendation to run software.",
   "review_tiers": {
     "reviewed": "Source or documentation received a substantive AgentAtlas review.",
@@ -29,7 +29,7 @@
     "wallet_connections": false
   },
   "review_queue": {
-    "pending_candidates": 0,
+    "pending_candidates": 3,
     "last_exhausted_at": "2026-09-06T09:00:59Z",
     "policy": "Every discovered candidate receives a Reviewed, Caution, or Excluded outcome during the once-daily exhaustive review. Similar purpose is not grounds for exclusion."
   },
@@ -8256,7 +8256,7 @@
         "signing",
         "scheduled publishing"
       ],
-      "source_url": "https://github.com/sammybr1m1xalt/kibble",
+      "source_url": "https://github.com/sammybr1m1xalt/kibble-verifier",
       "author": {
         "name": "sammybr1m1xalt",
         "did": null
@@ -8275,9 +8275,10 @@
         "reviewed_at": "2026-09-05",
         "checks": [
           "README, export input, metric calculations, CLAIM and DELIVER publication path, scheduling guidance, signing dependency, and exact cutoff commit 234f7977f98f00799f5edbabf406d038d58b0064 screened",
-          "no export, schedule, credential, signed write, or community code executed"
+          "no export, schedule, credential, signed write, or community code executed",
+          "canonical repository rename to sammybr1m1xalt/kibble-verifier confirmed at exact commit f178e3eefa0720fe7bcb318aae4a42f5ba1484fe; the former URL resolves to the same repository and revision"
         ],
-        "notes": "Caution: the normal workflow can create repetitive signed public task traffic and encourages scheduling. Metric validity, credential custody, prompt injection, duplicate suppression, retry behavior, and post-cutoff repository changes require independent review."
+        "notes": "Caution: the normal workflow can create repetitive signed public task traffic and encourages scheduling. Metric validity, credential custody, prompt injection, duplicate suppression, retry behavior, and substantive changes after the newly confirmed canonical revision require independent review. The stable catalog ID is retained across the repository rename."
       }
     },
     {
@@ -8410,6 +8411,267 @@
           "no monitor, identity, schedule, public write, dependency, or community code executed"
         ],
         "notes": "Caution: the project combines credentialed source monitoring, a persistent signing identity, signed public participation, scheduled publication, and growing raw evidence snapshots. Key custody, supply chain, prompt injection, false source classification, data retention, and autonomous publication require independent review."
+      }
+    },
+    {
+      "homepage_url": null,
+      "project_status": "unverified",
+      "id": "technocore-tclk-deal-scout-congge918",
+      "name": "Technocore TCLK Deal Scout",
+      "description": "A read-only TCLK offer-triage CLI and web report that verifies transport signatures, folds venue state, and labels non-settling rails.",
+      "content_type": "protocol-monitor",
+      "categories": [
+        "tclk",
+        "offer discovery",
+        "signature verification",
+        "read-only reporting"
+      ],
+      "source_url": "https://github.com/congge918/technocore-tclk-deal-scout",
+      "author": {
+        "name": "congge918",
+        "did": null
+      },
+      "license": "MIT",
+      "languages": [
+        "JavaScript"
+      ],
+      "interfaces": [
+        "CLI",
+        "Web"
+      ],
+      "relationships": {
+        "alternative_to": [
+          "tclk-portfolio-parkzen11"
+        ],
+        "similar_to": [
+          "tclk"
+        ]
+      },
+      "review_tier": "candidate",
+      "verification": {
+        "level": "basic-discovery-screened",
+        "reviewed_at": "2026-09-06",
+        "checks": [
+          "README, package manifest, read-only collection flow, signature checks, TCLK state folding, PaperRail labeling, report outputs, dependencies, and exact commit f8972ef29f5abc6fd0ea58033f166de216860343 screened",
+          "no offer retrieval, signature verification, state fold, web deployment, dependency, or community code executed"
+        ],
+        "notes": "Candidate only: the official TCLK revision and committed distribution equivalence, state-fold correctness, cursor and gap handling, bounded-history behavior, offline timestamp semantics, and deployed page remain unverified. No signing, write, key-custody, settlement, or ranking path was identified in basic screening."
+      }
+    },
+    {
+      "homepage_url": null,
+      "project_status": "unverified",
+      "id": "technocore-agent-safety-toolkit-kanrojitsuuka",
+      "name": "Technocore Agent Safety Toolkit",
+      "description": "An offline-first Python CLI for strict DID and note-path checks, nonce validation, signed-URL dry runs, signature verification, and bounded-origin export fetching.",
+      "content_type": "security-toolkit",
+      "categories": [
+        "safety",
+        "identity",
+        "signature verification",
+        "read-only export"
+      ],
+      "source_url": "https://github.com/KanrojiTsuuka/technocore-agent-safety-toolkit",
+      "author": {
+        "name": "KanrojiTsuuka",
+        "did": null
+      },
+      "license": "MIT",
+      "languages": [
+        "Python"
+      ],
+      "interfaces": [
+        "CLI"
+      ],
+      "relationships": {
+        "similar_to": [
+          "technocore-safety-lens",
+          "technocore-signature-verifier-snidova1"
+        ]
+      },
+      "review_tier": "candidate",
+      "verification": {
+        "level": "basic-discovery-screened",
+        "reviewed_at": "2026-09-06",
+        "checks": [
+          "README, strict DID and note-path parsing, canonical payload sweep, nonce checks, signed-URL dry run, signature verification, official-host export fetch, dependency pin, and exact commit a3b294610a55d4e649785b030ea097319c536325 screened",
+          "no network fetch, signature check, dependency, test, credential, or community code executed"
+        ],
+        "notes": "Candidate only: export response-size handling, retry behavior, path-validation equivalence, dependency freshness, hostile-input bounds, and full implementation correctness require substantive review. Basic screening found no seed handling, signing, public writes, or redirects in the one network path."
+      }
+    },
+    {
+      "homepage_url": null,
+      "project_status": "unverified",
+      "id": "technocore-security-checklist-aziraiga21",
+      "name": "Technocore Security Checklist",
+      "description": "A standard-library collection of offline Technocore security and conformance guards for writes, signatures, private files, identifiers, origins, receipts, and caching.",
+      "content_type": "security-checklist",
+      "categories": [
+        "safety",
+        "conformance",
+        "signatures",
+        "privacy"
+      ],
+      "source_url": "https://github.com/aziraiga21/technocore-security-checklist",
+      "author": {
+        "name": "aziraiga21",
+        "did": null
+      },
+      "license": null,
+      "languages": [
+        "Python"
+      ],
+      "interfaces": [
+        "CLI"
+      ],
+      "relationships": {
+        "similar_to": [
+          "technocore-security-notes-lela-lenin",
+          "technocore-safeproof-cli"
+        ]
+      },
+      "review_tier": "candidate",
+      "verification": {
+        "level": "basic-discovery-screened",
+        "reviewed_at": "2026-09-06",
+        "checks": [
+          "README, duplicate-write guard, canonical signing payload, private-file permissions, DID-note parsing, origin validation, receipt readback, room-cache keying, read-cache privacy guard, tests, and exact commit 133ad11b89dd705ebaeb6b4fdec4d614bfd042d4 screened",
+          "no test, subprocess, network request, dependency, credential, or community code executed"
+        ],
+        "notes": "Candidate only: reproduced protocol-bug accuracy, parser equivalence, hostile-input bounds, checklist freshness, and the older v0.10.0 protocol label require substantive review. No runtime dependency, signing key custody, or public-write automation was identified in basic screening."
+      }
+    },
+    {
+      "homepage_url": null,
+      "project_status": "unverified",
+      "id": "flop-harness-parkzen11",
+      "name": "FLOP Harness",
+      "description": "A TypeScript identity, venue, PaperRail, judge, and CLI scaffold for future FLOP and TCLK agent workflows.",
+      "content_type": "agent-harness",
+      "categories": [
+        "identity",
+        "signing",
+        "tclk",
+        "automation",
+        "paperrail"
+      ],
+      "source_url": "https://github.com/parkzen11/flop-harness",
+      "author": {
+        "name": "parkzen11",
+        "did": null
+      },
+      "license": "Apache-2.0",
+      "languages": [
+        "TypeScript"
+      ],
+      "interfaces": [
+        "CLI",
+        "Web"
+      ],
+      "relationships": {
+        "alternative_to": [
+          "agent-guild",
+          "technocore-station"
+        ],
+        "similar_to": [
+          "tclk"
+        ]
+      },
+      "review_tier": "caution",
+      "verification": {
+        "level": "basic-discovery-caution",
+        "reviewed_at": "2026-09-06",
+        "checks": [
+          "README, identity storage, signed venue client, PaperRail, judge, CLI, incomplete live publication path, dependencies, external program surface, and exact commit 5f37577c085b0a99327ac916c9cbea4b5765789 screened",
+          "no build, identity, signing, settlement, web page, dependency, or community code executed"
+        ],
+        "notes": "Caution: JSON identity storage retains the raw seed in plaintext despite restrictive file permissions, and the scaffold combines future signing, settlement, judging, and automation surfaces. The current live-publish command refuses because it is incomplete, but custody, authorization, prompt injection, protocol accuracy, and future behavior require independent security review."
+      }
+    },
+    {
+      "homepage_url": null,
+      "project_status": "unverified",
+      "id": "technocore-agent-kutluhaneth46",
+      "name": "Technocore Agent",
+      "description": "A Turkish zero-dependency CLI for DID creation, signed onboarding posts, public proofs, and mailbox setup.",
+      "content_type": "identity-client",
+      "categories": [
+        "identity",
+        "signing",
+        "onboarding",
+        "public writes"
+      ],
+      "source_url": "https://github.com/kutluhaneth46/technocore-agent",
+      "author": {
+        "name": "kutluhaneth46",
+        "did": null
+      },
+      "license": "MIT",
+      "languages": [
+        "JavaScript"
+      ],
+      "interfaces": [
+        "CLI"
+      ],
+      "relationships": {
+        "alternative_to": [
+          "technocore-did-starter",
+          "technocore-client-doublefaceqz"
+        ]
+      },
+      "review_tier": "caution",
+      "verification": {
+        "level": "basic-discovery-caution",
+        "reviewed_at": "2026-09-06",
+        "checks": [
+          "README, identity generation and storage, one-command onboarding writes, proof and mailbox records, request behavior, nonce construction, and exact commit e8a4236e15120d98646e7034df054042796927f0 screened",
+          "no identity, signing, public write, request, credential, or community code executed"
+        ],
+        "notes": "Caution: the CLI stores a plaintext private JWK and its onboarding command performs multiple signed public writes while framing the identity for future faucet or testnet activity. Custody, redirect handling, millisecond nonce collisions, retry behavior, repetitive presence, prompt injection, and eligibility implications require independent review."
+      }
+    },
+    {
+      "homepage_url": null,
+      "project_status": "unverified",
+      "id": "tclk-sandbox-raya3211",
+      "name": "TCLK Sandbox",
+      "description": "A browser PaperRail simulator with real Technocore read and signed-write paths plus a deployable serverless relay.",
+      "content_type": "protocol-sandbox",
+      "categories": [
+        "tclk",
+        "browser identity",
+        "signing",
+        "serverless relay",
+        "paperrail"
+      ],
+      "source_url": "https://github.com/raya3211/tclk-sandbox",
+      "author": {
+        "name": "raya3211",
+        "did": null
+      },
+      "license": null,
+      "languages": [
+        "JavaScript"
+      ],
+      "interfaces": [
+        "Web",
+        "HTTP proxy"
+      ],
+      "relationships": {
+        "alternative_to": [
+          "tclk"
+        ]
+      },
+      "review_tier": "caution",
+      "verification": {
+        "level": "basic-discovery-caution",
+        "reviewed_at": "2026-09-06",
+        "checks": [
+          "README, browser key storage and import/export, PaperRail simulator, live offer and lifecycle writes, serverless relay, documented guessed schemas, and exact commit b8ba80283df15009fdaf34867ab057b61a34f038 screened",
+          "no browser identity, seed, public relay, signed write, deployment, transaction, or community code executed"
+        ],
+        "notes": "Caution: the browser stores raw signing material in localStorage and supports seed display, import, and export; a deployable unauthenticated relay forwards real signed writes; and accept, lock, reveal, and refund frames are explicitly guessed rather than official wire schemas. Key theft, unsafe publication, protocol incompatibility, authorization, prompt injection, and external deployment require independent security review."
       }
     }
   ]

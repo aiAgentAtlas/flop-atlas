@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-06T09:00:59Z",
+  "generated_at": "2026-09-06T15:01:31Z",
   "filter_hint": "Clients may filter entries where changed_at is later than their saved cursor.",
   "entries": [
     {
@@ -608,6 +608,19 @@
         "llms.txt"
       ],
       "summary": "Resolved all 11 starting candidates as six Reviewed, four Caution, and one Excluded; refreshed every Full Kit resource; reverified primary claims and live Technocore v0.12.1; and recorded five post-release official commits as source-only."
+    },
+    {
+      "id": "discovery-community-safety-tools-2026-09-06-0800",
+      "changed_at": "2026-09-06T15:01:31Z",
+      "type": "catalog_updated",
+      "resources": [
+        "catalog.json",
+        "feed.json",
+        "sources.json",
+        "changes.json",
+        "llms.txt"
+      ],
+      "summary": "Added three differentiated community candidates and three immediate Cautions after exact-commit static discovery screening; rejected three misleading farming, onboarding, or repetitive-presence repositories; and followed one same-repository rename without duplicating its stable catalog record. No material official change was found after the daily audit baseline."
     }
   ]
 }
