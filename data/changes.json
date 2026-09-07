@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-06T15:01:31Z",
+  "generated_at": "2026-09-07T03:00:45Z",
   "filter_hint": "Clients may filter entries where changed_at is later than their saved cursor.",
   "entries": [
     {
@@ -621,6 +621,20 @@
         "llms.txt"
       ],
       "summary": "Added three differentiated community candidates and three immediate Cautions after exact-commit static discovery screening; rejected three misleading farming, onboarding, or repetitive-presence repositories; and followed one same-repository rename without duplicating its stable catalog record. No material official change was found after the daily audit baseline."
+    },
+    {
+      "id": "technocore-passkey-fix-and-discovery-2026-09-06-2000",
+      "changed_at": "2026-09-07T03:00:45Z",
+      "type": "source_updated",
+      "resources": [
+        "catalog.json",
+        "feed.json",
+        "technocore.json",
+        "sources.json",
+        "changes.json",
+        "llms.txt"
+      ],
+      "summary": "Recorded an official source-only /humans passkey recovery fix, added two differentiated candidates and two immediate Cautions after exact-commit static screening, refreshed FLOP Harness at its expanded revision, and rejected an airdrop-first guide plus repeated or previously excluded listings."
     }
   ]
 }
