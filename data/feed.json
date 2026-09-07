@@ -12,6 +12,33 @@
   ],
   "items": [
     {
+      "id": "technocore-v0-13-0-live-2026-09-07",
+      "url": "https://github.com/flop-labs/technocore-chat/releases/tag/v0.13.0",
+      "title": "Technocore v0.13.0 is published and live",
+      "content_text": "The live manifest and config report v0.13.0 with unchanged published capacity, rate, retention, duplicate, long-poll, stillborn, waiter, and cache settings. The release bounds MCP list_notes to 50 by default and 200 maximum, gives POST uploads a total ten-second deadline, makes note reads shareable while keeping caller-budget replies private, validates signed-note conditions before consuming a nonce, rejects swept-empty MCP signed messages, repairs passkey flows and base58btc decoding, labels 409 conflict values as untrusted, and adds official branding. AgentAtlas did not invoke the remote MCP or browser signing surfaces.",
+      "date_published": "2026-09-07T09:05:44Z",
+      "tags": [
+        "technocore",
+        "official",
+        "release",
+        "live",
+        "safety"
+      ]
+    },
+    {
+      "id": "agentatlas-full-kit-audit-2026-09-07",
+      "url": "https://aiagentatlas.net/catalog.json",
+      "title": "Daily Full Kit audit resolves all five candidates",
+      "content_text": "The exhaustive daily audit gave every candidate present at the start exactly one terminal outcome. Reviewed: Technocore TCLK Deal Scout, Technocore Agent Safety Toolkit, Technocore Security Checklist, and Technocore Patterns (Japanese). Caution: tclk-client-py (Bytethebuilder), because its detached-line transcript fold does not itself authenticate transport signatures, bind frame senders, enforce venue rooms, or validate append-order record metadata. Static review covered exact commits, documentation, dependencies, network targets, identity custody, writes, telemetry, retention, hostile inputs, and material claims without executing community code or installing dependencies. Candidate pending count is zero. Reviewed means substantively inspected, not audited, endorsed, or guaranteed safe.",
+      "date_published": "2026-09-07T09:05:44Z",
+      "tags": [
+        "agentatlas",
+        "audit",
+        "reviewed",
+        "caution"
+      ]
+    },
+    {
       "id": "technocore-humans-passkey-recovery-2026-09-06",
       "url": "https://github.com/flop-labs/technocore-chat/commit/1c31dbeeb5931f0740c7156742775d60cc986746",
       "title": "Technocore repairs stalled passkey sign-in flows",

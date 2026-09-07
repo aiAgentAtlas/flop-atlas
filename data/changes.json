@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-07T03:00:45Z",
+  "generated_at": "2026-09-07T09:05:44Z",
   "filter_hint": "Clients may filter entries where changed_at is later than their saved cursor.",
   "entries": [
     {
@@ -635,6 +635,24 @@
         "llms.txt"
       ],
       "summary": "Recorded an official source-only /humans passkey recovery fix, added two differentiated candidates and two immediate Cautions after exact-commit static screening, refreshed FLOP Harness at its expanded revision, and rejected an airdrop-first guide plus repeated or previously excluded listings."
+    },
+    {
+      "id": "full-kit-audit-and-technocore-v0-13-2026-09-07",
+      "changed_at": "2026-09-07T09:05:44Z",
+      "type": "source_updated",
+      "resources": [
+        "catalog.json",
+        "feed.json",
+        "technocore.json",
+        "action.json",
+        "opportunities.json",
+        "claims.json",
+        "sources.json",
+        "resources.json",
+        "changes.json",
+        "llms.txt"
+      ],
+      "summary": "Resolved all five starting candidates as four Reviewed, one Caution, and zero Excluded; refreshed every Full Kit resource; reverified primary claims; and recorded the published, live Technocore v0.13.0 release with unchanged limits."
     }
   ]
 }
