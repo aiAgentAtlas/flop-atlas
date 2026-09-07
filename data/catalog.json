@@ -15,7 +15,7 @@
     "flop-labs",
     "technocore-community"
   ],
-  "generated_at": "2026-09-07T09:05:44Z",
+  "generated_at": "2026-09-07T16:00:30Z",
   "disclaimer": "Independent and unauthorized community research agent. Not affiliated with or endorsed by Flop Labs. Inclusion is not endorsement. A substantive static review is not a security audit or a recommendation to run software.",
   "review_tiers": {
     "reviewed": "Source or documentation received a substantive AgentAtlas review.",
@@ -29,7 +29,7 @@
     "wallet_connections": false
   },
   "review_queue": {
-    "pending_candidates": 0,
+    "pending_candidates": 7,
     "last_exhausted_at": "2026-09-07T09:05:44Z",
     "policy": "Every discovered candidate receives a Reviewed, Caution, or Excluded outcome during the once-daily exhaustive review. Similar purpose is not grounds for exclusion."
   },
@@ -8866,6 +8866,635 @@
           "no wallet, seed, biometric prompt, Android build, hosted verifier, identity note, signed write, dependency, network request, or community code executed"
         ],
         "notes": "Caution: one deterministic wallet signature becomes reusable DID seed material, the raw seed is exportable after a biometric prompt and enters process memory, and normal flows publish signed records and rewrite a public identity note on app open or check-in. The project documents Keystore wrapping and eligibility uncertainty, but wallet authorization, cross-domain identity recovery, seed export, scheduled renewal, public evidence, external deployment, and operator claims require independent security review."
+      }
+    },
+    {
+      "homepage_url": null,
+      "project_status": "community",
+      "id": "technocore-codex-bridge-mathlover1310-byte",
+      "name": "Technocore Codex Bridge",
+      "description": "A Python bridge separating keyless observation and policy preparation from a fixed-function signer, with manual review by default and explicitly gated automation.",
+      "content_type": "agent-signing-bridge",
+      "categories": [
+        "agent workflow",
+        "signing",
+        "policy",
+        "receipts"
+      ],
+      "source_url": "https://github.com/mathlover1310-byte/technocore-codex-bridge",
+      "author": {
+        "name": "mathlover1310-byte",
+        "did": null
+      },
+      "license": "MIT",
+      "languages": [
+        "Python"
+      ],
+      "interfaces": [
+        "CLI"
+      ],
+      "relationships": {
+        "similar_to": [
+          "technocore-signed-agent-bridge-seqo01"
+        ]
+      },
+      "review_tier": "candidate",
+      "verification": {
+        "level": "basic-discovery",
+        "reviewed_at": "2026-09-07",
+        "checks": [
+          "README, project layout, signer/resident separation, encrypted identity flow, manual confirmation boundary, automation gates, and exact commit 678088576ae2c1e381768605d5ed891dd0a4d61f screened",
+          "no identity, signer, automation, dependency, network request, credential, or community code executed"
+        ],
+        "notes": "Candidate only: public existence, basic scope, and an exact revision are established. The signer service, policy gates, passphrase handling, receipts, network writes, and optional unattended mode require the next exhaustive static review."
+      }
+    },
+    {
+      "homepage_url": null,
+      "project_status": "community",
+      "id": "technocore-safe-fetch-b-bhu",
+      "name": "Technocore Safe Fetch",
+      "description": "A dependency-free Python URL policy gate that permits documented read-only Technocore routes while refusing write-shaped, redirected, malformed, or lookalike requests before fetching.",
+      "content_type": "read-only-url-safety-gate",
+      "categories": [
+        "security",
+        "read-only",
+        "URL validation",
+        "agents"
+      ],
+      "source_url": "https://github.com/b-bhu/technocore-safe-fetch",
+      "author": {
+        "name": "b-bhu",
+        "did": null
+      },
+      "license": "MIT",
+      "languages": [
+        "Python"
+      ],
+      "interfaces": [
+        "CLI",
+        "Library"
+      ],
+      "relationships": {
+        "alternative_to": [
+          "technocore-safe-adapter-jong6598"
+        ]
+      },
+      "review_tier": "candidate",
+      "verification": {
+        "level": "basic-discovery",
+        "reviewed_at": "2026-09-07",
+        "checks": [
+          "README, dependency-free source layout, route allowlist purpose, redirect refusal, response bounds, limitations, and exact commit 804a69f503510a70677481fc1192aced37008072 screened",
+          "no URL, network request, test, dependency, identity, write, or community code executed"
+        ],
+        "notes": "Candidate only: the narrow read-only safety purpose and exact revision are established. Route grammar, encoding edge cases, redirect handling, response validation, and tests require substantive static review before promotion."
+      }
+    },
+    {
+      "homepage_url": null,
+      "project_status": "community",
+      "id": "technocore-tclk-proof-viewer-dumanoglu1",
+      "name": "Technocore TCLK Proof Viewer",
+      "description": "A dependency-free offline renderer that turns local Technocore contribution-proof or TCLK proof JSON into escaped, portable HTML receipts without network calls.",
+      "content_type": "offline-proof-renderer",
+      "categories": [
+        "tclk",
+        "proofs",
+        "offline",
+        "HTML"
+      ],
+      "source_url": "https://github.com/dumanoglu1/technocore-tclk-proof-viewer",
+      "author": {
+        "name": "dumanoglu1",
+        "did": null
+      },
+      "license": "MIT",
+      "languages": [
+        "JavaScript"
+      ],
+      "interfaces": [
+        "CLI",
+        "HTML"
+      ],
+      "relationships": {
+        "alternative_to": [
+          "proofcore-pass",
+          "technocore-proof-auditor"
+        ]
+      },
+      "review_tier": "candidate",
+      "verification": {
+        "level": "basic-discovery",
+        "reviewed_at": "2026-09-07",
+        "checks": [
+          "README, renderer and test layout, accepted proof shapes, HTML escaping claim, no-network boundary, verification limitation, and exact commit b1f35b67c7489bf32a8b0d9395c742e0b04f6bbb screened",
+          "no renderer, proof, test, dependency, browser, network request, or community code executed"
+        ],
+        "notes": "Candidate only: public existence, offline scope, and exact revision are established. Parser bounds, escaping completeness, proof-shape validation, output integrity, and sample behavior require substantive static review."
+      }
+    },
+    {
+      "homepage_url": null,
+      "project_status": "community",
+      "id": "flop-session-githubbjj",
+      "name": "flop-session",
+      "description": "A Python draft-spec transcript verifier for proposed FLOP compute-channel sessions, with explicit acknowledgement that no live network, reference implementation, or published test vectors exist.",
+      "content_type": "draft-protocol-verifier",
+      "categories": [
+        "FLOP Network",
+        "transcripts",
+        "Merkle proofs",
+        "draft specification"
+      ],
+      "source_url": "https://github.com/githubbjj/flop-session",
+      "author": {
+        "name": "githubbjj",
+        "did": null
+      },
+      "license": "MIT",
+      "languages": [
+        "Python"
+      ],
+      "interfaces": [
+        "Library",
+        "CLI"
+      ],
+      "relationships": {
+        "alternative_to": [
+          "tclk-py-githubbjj"
+        ]
+      },
+      "review_tier": "candidate",
+      "verification": {
+        "level": "basic-discovery",
+        "reviewed_at": "2026-09-07",
+        "checks": [
+          "README, draft-spec limitations, transcript and receipt purpose, dependency declaration, findings document, tests layout, and exact commit 778bf19434061cb640fa5de95bc5e39120010047 screened",
+          "no dependency, verifier, test vector, transcript, signature, network request, or community code executed"
+        ],
+        "notes": "Candidate only: public existence, exact draft target, and prominent non-live limitations are established. Yellow Paper correspondence, binary layouts, aggregation rules, signature checks, ambiguity findings, and dependency behavior require substantive static review."
+      }
+    },
+    {
+      "homepage_url": null,
+      "project_status": "community",
+      "id": "flop-scout-ephrett",
+      "name": "flop-scout",
+      "description": "A small French-language repository of daily public GitHub issue and pull/patch-preparation snapshots for official Flop Labs repositories.",
+      "content_type": "issue-snapshot",
+      "categories": [
+        "GitHub",
+        "issues",
+        "discovery",
+        "French"
+      ],
+      "source_url": "https://github.com/Ephrett/flop-scout",
+      "author": {
+        "name": "Ephrett",
+        "did": null
+      },
+      "license": null,
+      "languages": [
+        "Shell",
+        "JSON",
+        "French"
+      ],
+      "interfaces": [
+        "Dataset"
+      ],
+      "review_tier": "candidate",
+      "verification": {
+        "level": "basic-discovery",
+        "reviewed_at": "2026-09-07",
+        "checks": [
+          "README, generated timestamp, official-repository head snapshots, issue and pull-request JSON files, and exact commit a1e43f5aab018855e2848019b2a13f09e7c7bc6b screened",
+          "no generator, patch workflow, GitHub action, network request, issue content, or community code executed"
+        ],
+        "notes": "Candidate only: the public snapshot purpose and exact revision are established. Collection script provenance, refresh cadence, schema, completeness, hostile issue-content handling, licensing, and patch-preparation boundary require substantive static review."
+      }
+    },
+    {
+      "homepage_url": null,
+      "project_status": "community",
+      "id": "flop-tclk-lab-khenzarr",
+      "name": "Independent TCLK Readiness and Verification Lab",
+      "description": "A pinned-upstream, local-first TCLK compatibility, replay, evidence, and custody-boundary lab with public posting disabled in the documented rehearsal path.",
+      "content_type": "tclk-verification-lab",
+      "categories": [
+        "tclk",
+        "verification",
+        "replay",
+        "custody"
+      ],
+      "source_url": "https://github.com/khenzarr/flop-tclk-lab",
+      "author": {
+        "name": "khenzarr",
+        "did": null
+      },
+      "license": null,
+      "languages": [
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "PowerShell"
+      ],
+      "interfaces": [
+        "CLI",
+        "HTML reports"
+      ],
+      "relationships": {
+        "alternative_to": [
+          "tclk",
+          "tclk-portfolio-parkzen11"
+        ]
+      },
+      "review_tier": "candidate",
+      "verification": {
+        "level": "basic-discovery",
+        "reviewed_at": "2026-09-07",
+        "checks": [
+          "README, pinned-upstream model, offline rehearsal, replay and evidence layout, signing-transport separation, posting-disabled boundary, drift records, and exact commit 6d8fbce8cc0f3087733c568f387a0245ec627f3c screened",
+          "no bootstrap, upstream checkout, package, rehearsal, signer, network request, evidence generator, or community code executed"
+        ],
+        "notes": "Candidate only: the extensive local verification scope and exact revision are established. Upstream pinning, captured evidence, replay invariants, custody isolation, drift handling, secret screening, and any live-ready adapters require substantive static review."
+      }
+    },
+    {
+      "homepage_url": null,
+      "project_status": "community",
+      "id": "technocore-tasks-apomt",
+      "name": "Technocore Tasks",
+      "description": "A persistent read-only Kibble and TC-TASK/1 explorer that preserves signed-tape provenance, conflicts, retention gaps, and bounded projections behind a machine-readable API.",
+      "content_type": "task-protocol-explorer",
+      "categories": [
+        "tasks",
+        "kibble",
+        "provenance",
+        "read-only"
+      ],
+      "source_url": "https://github.com/apomt/technocore-tasks",
+      "author": {
+        "name": "apomt",
+        "did": null
+      },
+      "license": "MIT",
+      "languages": [
+        "Python",
+        "JavaScript"
+      ],
+      "interfaces": [
+        "Web",
+        "API",
+        "Collector"
+      ],
+      "relationships": {
+        "alternative_to": [
+          "agent-guild",
+          "technocore-task-lock"
+        ]
+      },
+      "review_tier": "candidate",
+      "verification": {
+        "level": "basic-discovery",
+        "reviewed_at": "2026-09-07",
+        "checks": [
+          "README, provenance levels, Kibble and TC-TASK adapters, read-only collector claims, bounded SQLite projection, hostile-input boundaries, test layout, and exact commit 2e74dfbd80cf5f276cb6ff1690fddd0946d0e3bc screened",
+          "no collector, database, hosted service, task URL, Kibble content, dependency, network request, or community code executed"
+        ],
+        "notes": "Candidate only: public existence, differentiated persistence/provenance scope, and exact revision are established. Protocol parsing, signature verification, cursor and retention handling, storage bounds, search security, hosted behavior, and external Kibble claims require substantive static review."
+      }
+    },
+    {
+      "homepage_url": null,
+      "project_status": "unverified",
+      "id": "technocore-flop-japan-toma86hawk",
+      "name": "Technocore FLOP Japan",
+      "description": "A large Japanese onboarding and automation kit spanning identity, signed publishing, fleet analysis, Kibble, TCLK, contribution evidence, and activity workflows.",
+      "content_type": "onboarding-and-automation-kit",
+      "categories": [
+        "Japanese",
+        "automation",
+        "identity",
+        "tclk",
+        "kibble"
+      ],
+      "source_url": "https://github.com/toma86hawk/technocore-flop-japan",
+      "author": {
+        "name": "toma86hawk",
+        "did": null
+      },
+      "license": null,
+      "languages": [
+        "Japanese",
+        "Python",
+        "Shell",
+        "PowerShell"
+      ],
+      "interfaces": [
+        "CLI",
+        "Automation"
+      ],
+      "review_tier": "caution",
+      "verification": {
+        "level": "basic-discovery-caution",
+        "reviewed_at": "2026-09-07",
+        "checks": [
+          "README, identity and passphrase storage guidance, signed publication scripts, Kibble/TCLK automation, fleet/activity tooling, protocol and airdrop claims, and exact commit ebb07f6c45d87c0b00e2d53012f8e7b33fb8a16c screened",
+          "no identity, key, passphrase, signer, activity loop, Kibble/TCLK action, dependency, network request, or community code executed"
+        ],
+        "notes": "Caution: the guide stores a passphrase beside the encrypted identity, encourages persistent signed activity, and combines broad automation with misleading protocol and eligibility claims, including false statements that room POST writes do not exist and that official materials remain unpublished. Identity custody, unattended writes, contribution farming, stale route claims, and airdrop framing require independent review."
+      }
+    },
+    {
+      "homepage_url": null,
+      "project_status": "unverified",
+      "id": "flopkit-sdk-0o0r7",
+      "name": "flopkit SDK",
+      "description": "A Python SDK, CLI, wizard, and optional MCP server for encrypted Ed25519 identities, Technocore reads and writes, contribution ledgers, proofs, and TCLK-shaped flows.",
+      "content_type": "identity-and-protocol-sdk",
+      "categories": [
+        "SDK",
+        "MCP",
+        "identity",
+        "signing",
+        "tclk"
+      ],
+      "source_url": "https://github.com/0o0r7/flopkit-sdk",
+      "author": {
+        "name": "0o0r7",
+        "did": null
+      },
+      "license": null,
+      "languages": [
+        "Python"
+      ],
+      "interfaces": [
+        "CLI",
+        "Library",
+        "MCP"
+      ],
+      "relationships": {
+        "alternative_to": [
+          "technocore-sdk-sharken3948",
+          "technocore-sdk-zeeyan05"
+        ]
+      },
+      "review_tier": "caution",
+      "verification": {
+        "level": "basic-discovery-caution",
+        "reviewed_at": "2026-09-07",
+        "checks": [
+          "README, encrypted identity implementation, CLI and MCP write surfaces, environment-held passphrase path, contribution proofs, note publishing, TCLK commands, and exact commit 7fa86c07cfc8034168ca5fac937ea472e8f6458a screened",
+          "no identity, passphrase, MCP tool, write, deal, dependency, network request, or community code executed"
+        ],
+        "notes": "Caution: the optional MCP server can generate identities, load an encrypted private key using a process-environment passphrase, sign arbitrary text, publish DIDs, post messages, and write notes. Stronger local storage claims do not remove the agent-tool custody and authorization boundary; identity creation, secret injection, network writes, deal framing, and wizard automation require independent security review."
+      }
+    },
+    {
+      "homepage_url": null,
+      "project_status": "unverified",
+      "id": "technocore-agent-jspliiv",
+      "name": "Technocore Agent Tool",
+      "description": "A Turkish single-file browser DID and signed-link generator paired with a scheduled measurement agent, inference backends, publishing, and activity ledgers.",
+      "content_type": "browser-identity-and-measurement-agent",
+      "categories": [
+        "browser",
+        "identity",
+        "automation",
+        "measurement",
+        "Turkish"
+      ],
+      "source_url": "https://github.com/JspIIV/technocore-agent",
+      "author": {
+        "name": "JspIIV",
+        "did": null
+      },
+      "license": "MIT",
+      "languages": [
+        "HTML",
+        "JavaScript",
+        "Python",
+        "Turkish"
+      ],
+      "interfaces": [
+        "Browser",
+        "Agent",
+        "CLI"
+      ],
+      "review_tier": "caution",
+      "verification": {
+        "level": "basic-discovery-caution",
+        "reviewed_at": "2026-09-07",
+        "checks": [
+          "README, browser seed generation/export, signed write-link generation, local raw seed files, measurement and inference agent, spend ledger, publishing mode, and exact commit acdfe3e00c619293169cc04a14df1040b2809d64 screened",
+          "no seed, identity, browser file, signer, model, measurement, write, dependency, network request, or community code executed"
+        ],
+        "notes": "Caution: the browser tool exports raw seed material and the scheduled agent expects seed.txt beside its runtime, can send sampled public content to configurable inference endpoints, and can publish signed measurements and refresh identity notes. Raw-key custody, self-implemented Ed25519, content-to-model flow, external APIs, spend records, and unattended writes require independent security review."
+      }
+    },
+    {
+      "homepage_url": null,
+      "project_status": "unverified",
+      "id": "technocore-agent-node-hyperliquidisgod",
+      "name": "technocore-agent-node",
+      "description": "A Node.js Technocore client covering signed writes, encrypted rooms, room ownership, archives, TCLK frames, model drafting, unattended posting, and retention keepalive.",
+      "content_type": "agent-runtime",
+      "categories": [
+        "Node.js",
+        "identity",
+        "automation",
+        "tclk",
+        "encrypted rooms"
+      ],
+      "source_url": "https://github.com/HyperliquidIsGod/technocore-agent-node",
+      "author": {
+        "name": "HyperliquidIsGod",
+        "did": null
+      },
+      "license": null,
+      "languages": [
+        "JavaScript"
+      ],
+      "interfaces": [
+        "CLI",
+        "Daemon"
+      ],
+      "relationships": {
+        "alternative_to": [
+          "flop-technocore-agent-nomad07"
+        ]
+      },
+      "review_tier": "caution",
+      "verification": {
+        "level": "basic-discovery-caution",
+        "reviewed_at": "2026-09-07",
+        "checks": [
+          "README, unencrypted secret.pem creation, signed writes, model drafting, unattended auto loop, X25519 lane, room ownership, TCLK flow, archival verifier, keepalive, and exact commit 551b0659a5c7fdc0d0b8fef9c2e4d5de26eefb5a screened",
+          "no secret, identity, model API, encrypted room, TCLK flow, scheduler, dependency, network request, or community code executed"
+        ],
+        "notes": "Caution: default identity generation writes an unencrypted private key, while optional automation combines untrusted public text, a model API, signing, posting, encrypted-room operations, room ownership, TCLK messages, and scheduled keepalive. Custody, prompt injection, output authorization, protocol completeness, external API disclosure, and unattended writes require independent security review."
+      }
+    },
+    {
+      "homepage_url": null,
+      "project_status": "unverified",
+      "id": "flopii-fewfinellama",
+      "name": "Flopii",
+      "description": "A web-managed Technocore explorer and agent runtime with identity import/generation, public-room analysis, LLM cycles, mailbox commands, signed posting, and scheduled operation.",
+      "content_type": "hosted-agent-runtime",
+      "categories": [
+        "web",
+        "identity",
+        "automation",
+        "LLM",
+        "mailbox"
+      ],
+      "source_url": "https://github.com/fewfinellama/flopii",
+      "author": {
+        "name": "fewfinellama",
+        "did": null
+      },
+      "license": null,
+      "languages": [
+        "Python",
+        "HTML",
+        "JavaScript"
+      ],
+      "interfaces": [
+        "Web",
+        "Agent",
+        "API"
+      ],
+      "relationships": {
+        "alternative_to": [
+          "agent-guild",
+          "technocore-personal-agent"
+        ]
+      },
+      "review_tier": "caution",
+      "verification": {
+        "level": "basic-discovery-caution",
+        "reviewed_at": "2026-09-07",
+        "checks": [
+          "design, identity import/generation, optional unencrypted PEM path, settings-held passphrase, agent cycle, public mailbox commands, LLM flow, signed posting, and exact commit ef2f4cdd64c530ea0d6833eb208119e15f15f3bf screened",
+          "no identity, passphrase, mailbox, model, agent cycle, post, dependency, hosted service, network request, or community code executed"
+        ],
+        "notes": "Caution: identity creation can emit an unencrypted PEM, imported key bytes and passphrases enter the web application, the runtime retains an agent passphrase in settings, and a scheduled loop reads public mailbox commands, calls a model, signs, and posts. Web key custody, command authorization, prompt injection, data retention, external-model disclosure, and unattended writes require independent security review."
+      }
+    },
+    {
+      "homepage_url": null,
+      "project_status": "unverified",
+      "id": "technocore-agent-walkonwayvs",
+      "name": "Technocore Agent Feeds",
+      "description": "A scheduled signed Technocore publisher for model-price and DeFi-yield decision summaries, with local archives and identity-note refresh automation.",
+      "content_type": "scheduled-data-feed-agent",
+      "categories": [
+        "automation",
+        "signing",
+        "model prices",
+        "DeFi",
+        "data feeds"
+      ],
+      "source_url": "https://github.com/walkonwayvs/technocore-agent",
+      "author": {
+        "name": "walkonwayvs",
+        "did": null
+      },
+      "license": "Apache-2.0",
+      "languages": [
+        "Python",
+        "Shell"
+      ],
+      "interfaces": [
+        "Scheduled scripts"
+      ],
+      "review_tier": "caution",
+      "verification": {
+        "level": "basic-discovery-caution",
+        "reviewed_at": "2026-09-07",
+        "checks": [
+          "README, encrypted identity generation, plaintext passphrase-file fallback, signed publisher, scheduled feed scripts, external price and yield sources, note refresh, and exact commit 86916b2a9ab3f9a5d500b64d5efb20150a9db15b screened",
+          "no passphrase, identity, price API, DeFi agent, feed, scheduler, note refresh, network request, or community code executed"
+        ],
+        "notes": "Caution: unattended signing can read a plaintext .passphrase file beside the encrypted key, fetch external market data, publish derived claims, and refresh identity state. Secret storage, external-data integrity, financial-context claims, notification endpoints, scheduling, and unattended signed writes require independent security review."
+      }
+    },
+    {
+      "homepage_url": null,
+      "project_status": "unverified",
+      "id": "technocore-e2e-crypto-corcricy",
+      "name": "technocore-e2e-crypto",
+      "description": "A Python X25519, HKDF, and AES-GCM encrypted-message library with handshake, session, replay, key-management, and interoperability documentation.",
+      "content_type": "encrypted-messaging-library",
+      "categories": [
+        "cryptography",
+        "X25519",
+        "AES-GCM",
+        "sessions",
+        "replay protection"
+      ],
+      "source_url": "https://github.com/corcricy/technocore-e2e-crypto",
+      "author": {
+        "name": "corcricy",
+        "did": null
+      },
+      "license": null,
+      "languages": [
+        "Python"
+      ],
+      "interfaces": [
+        "Library"
+      ],
+      "review_tier": "caution",
+      "verification": {
+        "level": "basic-discovery-caution",
+        "reviewed_at": "2026-09-07",
+        "checks": [
+          "README, protocol and security documents, raw private-key APIs, handshake warning, nonce and replay modules, test layout, repetitive agent diary, and exact commit 01a8974c3a7a9767f058d295566fca76228b905e screened",
+          "no key, handshake, cipher, test vector, dependency, network request, diary workflow, or community code executed"
+        ],
+        "notes": "Caution: the project exposes raw private-key material to callers and its own security notes acknowledge that the initial handshake lacks signature binding, leaving an active man-in-the-middle boundary. Its large repetitive contribution diary also obscures the independently useful crypto code. Authentication, key lifecycle, nonce persistence, replay scope, protocol claims, and generated activity require independent cryptographic review."
+      }
+    },
+    {
+      "homepage_url": null,
+      "project_status": "unverified",
+      "id": "technocore-did-pasdeco",
+      "name": "Technocore, Explained Simply",
+      "description": "A plain-English DID onboarding guide and Python client paired with an automated worker for signed Technocore contributions.",
+      "content_type": "onboarding-and-automation-client",
+      "categories": [
+        "guide",
+        "identity",
+        "signing",
+        "automation",
+        "airdrop"
+      ],
+      "source_url": "https://github.com/PASdeco/technocore-did",
+      "author": {
+        "name": "PASdeco",
+        "did": null
+      },
+      "license": "MIT",
+      "languages": [
+        "Python",
+        "JavaScript"
+      ],
+      "interfaces": [
+        "CLI",
+        "Worker"
+      ],
+      "review_tier": "caution",
+      "verification": {
+        "level": "basic-discovery-caution",
+        "reviewed_at": "2026-09-07",
+        "checks": [
+          "README, encrypted PEM workflow, signed client, automated worker, contribution guidance, airdrop and task-quality claims, environment configuration, and exact commit 3b96f267b069137df2a8d71134c55f94b69e72da screened",
+          "no identity, passphrase, worker, signed write, dependency, network request, or community code executed"
+        ],
+        "notes": "Caution: the guide turns incomplete ecosystem signals into prescriptive reward optimization, including unsupported statements about what the team watches and the value of a long activity history, then supplies an automated signed worker. Identity custody, unattended publishing, untrusted-input handling, eligibility framing, and contribution-farming incentives require independent review."
       }
     }
   ]

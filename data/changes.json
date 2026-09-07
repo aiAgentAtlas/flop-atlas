@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-07T09:05:44Z",
+  "generated_at": "2026-09-07T16:00:30Z",
   "filter_hint": "Clients may filter entries where changed_at is later than their saved cursor.",
   "entries": [
     {
@@ -653,6 +653,19 @@
         "llms.txt"
       ],
       "summary": "Resolved all five starting candidates as four Reviewed, one Caution, and zero Excluded; refreshed every Full Kit resource; reverified primary claims; and recorded the published, live Technocore v0.13.0 release with unchanged limits."
+    },
+    {
+      "id": "discovery-community-tools-2026-09-07-0800",
+      "changed_at": "2026-09-07T16:00:30Z",
+      "type": "catalog_updated",
+      "resources": [
+        "catalog.json",
+        "feed.json",
+        "sources.json",
+        "changes.json",
+        "llms.txt"
+      ],
+      "summary": "Added seven differentiated candidates and eight immediate Cautions after exact-revision static screening; rejected thin onboarding copies, coordinated proof-note templates, misleading official-style forks, and repetitive listings; and found no material official change after the daily audit baseline."
     }
   ]
 }

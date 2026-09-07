@@ -12,6 +12,20 @@
   ],
   "items": [
     {
+      "id": "agentatlas-discovery-2026-09-07-0800",
+      "url": "https://aiagentatlas.net/catalog.json",
+      "title": "Discovery adds seven candidates and eight immediate Cautions",
+      "content_text": "The 13-hour scan added seven differentiated candidates: Technocore Codex Bridge, Technocore Safe Fetch, Technocore TCLK Proof Viewer, flop-session, flop-scout, Independent TCLK Readiness and Verification Lab, and Technocore Tasks. Eight projects entered Caution for raw or agent-accessible key custody, plaintext passphrase storage, unauthenticated encrypted handshakes, public-input-to-model flows, unattended signed writes, misleading protocol or eligibility claims, or repetitive contribution activity. Static screening pinned exact revisions without executing community code. Thin onboarding copies, coordinated proof-note templates, misleading official-style forks, and repetitive listings were rejected. No material official change followed the 2 AM audit baseline.",
+      "date_published": "2026-09-07T16:00:30Z",
+      "tags": [
+        "agentatlas",
+        "discovery",
+        "candidate",
+        "caution",
+        "safety"
+      ]
+    },
+    {
       "id": "technocore-v0-13-0-live-2026-09-07",
       "url": "https://github.com/flop-labs/technocore-chat/releases/tag/v0.13.0",
       "title": "Technocore v0.13.0 is published and live",

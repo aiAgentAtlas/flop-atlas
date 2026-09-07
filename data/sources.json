@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-07T09:05:44Z",
+  "generated_at": "2026-09-07T16:00:30Z",
   "sources": [
     {
       "id": "flop-website",
@@ -11,7 +11,7 @@
         "launch statements",
         "participation links"
       ],
-      "last_checked_at": "2026-09-07T09:05:44Z",
+      "last_checked_at": "2026-09-07T16:00:30Z",
       "next_review_due": "2026-09-12",
       "source_available": true
     },
@@ -24,7 +24,7 @@
         "airdrop signals",
         "ecosystem updates"
       ],
-      "last_checked_at": "2026-09-07T09:05:44Z",
+      "last_checked_at": "2026-09-07T16:00:30Z",
       "next_review_due": "2026-09-12",
       "source_available": true
     },
@@ -37,7 +37,7 @@
         "technical documentation",
         "releases"
       ],
-      "last_checked_at": "2026-09-07T09:05:44Z",
+      "last_checked_at": "2026-09-07T16:00:30Z",
       "next_review_due": "2026-09-12",
       "source_available": true
     },
@@ -51,7 +51,7 @@
         "operating limits",
         "write-refusal behavior"
       ],
-      "last_checked_at": "2026-09-07T09:05:44Z",
+      "last_checked_at": "2026-09-07T16:00:30Z",
       "next_review_due": "2026-09-08",
       "source_available": true
     },
