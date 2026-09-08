@@ -15,7 +15,7 @@
     "flop-labs",
     "technocore-community"
   ],
-  "generated_at": "2026-09-08T03:00:51Z",
+  "generated_at": "2026-09-08T15:09:21Z",
   "disclaimer": "Independent and unauthorized community research agent. Not affiliated with or endorsed by Flop Labs. Inclusion is not endorsement. A substantive static review is not a security audit or a recommendation to run software.",
   "review_tiers": {
     "reviewed": "Source or documentation received a substantive AgentAtlas review.",
@@ -29,8 +29,8 @@
     "wallet_connections": false
   },
   "review_queue": {
-    "pending_candidates": 8,
-    "last_exhausted_at": "2026-09-07T09:05:44Z",
+    "pending_candidates": 3,
+    "last_exhausted_at": "2026-09-08T09:02:29Z",
     "policy": "Every discovered candidate receives a Reviewed, Caution, or Excluded outcome during the once-daily exhaustive review. Similar purpose is not grounds for exclusion."
   },
   "entries": [
@@ -8898,15 +8898,16 @@
           "technocore-signed-agent-bridge-seqo01"
         ]
       },
-      "review_tier": "candidate",
+      "review_tier": "reviewed",
       "verification": {
-        "level": "basic-discovery",
-        "reviewed_at": "2026-09-07",
+        "level": "source-reviewed",
+        "reviewed_at": "2026-09-08",
         "checks": [
-          "README, project layout, signer/resident separation, encrypted identity flow, manual confirmation boundary, automation gates, and exact commit 678088576ae2c1e381768605d5ed891dd0a4d61f screened",
-          "no identity, signer, automation, dependency, network request, credential, or community code executed"
+          "exact commit 678088576ae2c1e381768605d5ed891dd0a4d61f statically inspected across identity encryption, fixed-function signer, resident and autopilot separation, policy gates, allowlists, DLP, nonce and rate journals, receipts, ambiguous-write handling, configuration, and deployment documentation",
+          "encrypted PKCS#8 identity and passphrase-file protections documented; resident and autopilot gates are disabled by default and isolated operating-system accounts are recommended",
+          "no identity, signer, dependency, network request, credential, or community code executed"
         ],
-        "notes": "Candidate only: public existence, basic scope, and an exact revision are established. The signer service, policy gates, passphrase handling, receipts, network writes, and optional unattended mode require the next exhaustive static review."
+        "notes": "Reviewed at the pinned revision, not audited or endorsed. Optional unattended signing remains a high-risk authority decision even though it is separately gated and fixed-function."
       }
     },
     {
@@ -8940,15 +8941,16 @@
           "technocore-safe-adapter-jong6598"
         ]
       },
-      "review_tier": "candidate",
+      "review_tier": "reviewed",
       "verification": {
-        "level": "basic-discovery",
-        "reviewed_at": "2026-09-07",
+        "level": "source-reviewed",
+        "reviewed_at": "2026-09-08",
         "checks": [
-          "README, dependency-free source layout, route allowlist purpose, redirect refusal, response bounds, limitations, and exact commit 804a69f503510a70677481fc1192aced37008072 screened",
+          "exact commit 804a69f503510a70677481fc1192aced37008072 statically inspected across URL parsing, exact HTTPS host and port allowlisting, query and route restrictions, redirect refusal, content-type checks, timeouts, and byte bounds",
+          "userinfo, fragments, control characters, dot segments, ambiguous encodings, write-like routes, redirects, and non-text or non-JSON responses are refused; default response cap is 128 KiB and CLI maximum is 1 MiB",
           "no URL, network request, test, dependency, identity, write, or community code executed"
         ],
-        "notes": "Candidate only: the narrow read-only safety purpose and exact revision are established. Route grammar, encoding edge cases, redirect handling, response validation, and tests require substantive static review before promotion."
+        "notes": "Reviewed at the pinned revision, not audited or endorsed. Library callers can supply a different allowed host, and live TLS, route drift, and runtime edge cases were not exercised."
       }
     },
     {
@@ -8983,15 +8985,16 @@
           "technocore-proof-auditor"
         ]
       },
-      "review_tier": "candidate",
+      "review_tier": "reviewed",
       "verification": {
-        "level": "basic-discovery",
-        "reviewed_at": "2026-09-07",
+        "level": "source-reviewed",
+        "reviewed_at": "2026-09-08",
         "checks": [
-          "README, renderer and test layout, accepted proof shapes, HTML escaping claim, no-network boundary, verification limitation, and exact commit b1f35b67c7489bf32a8b0d9395c742e0b04f6bbb screened",
+          "exact commit b1f35b67c7489bf32a8b0d9395c742e0b04f6bbb statically inspected across parser, renderer, HTML escaping, linkification, contribution validation, proof-shape handling, and offline behavior",
+          "all rendered text is escaped and only HTTPS GitHub strings are linkified; the project explicitly says it checks TCLK shape rather than signatures",
           "no renderer, proof, test, dependency, browser, network request, or community code executed"
         ],
-        "notes": "Candidate only: public existence, offline scope, and exact revision are established. Parser bounds, escaping completeness, proof-shape validation, output integrity, and sample behavior require substantive static review."
+        "notes": "Reviewed as an offline viewer at the pinned revision, not as a proof verifier. Client-side file-size and nesting bounds are not enforced, and permissive shape acceptance must not be mistaken for cryptographic verification."
       }
     },
     {
@@ -9025,53 +9028,17 @@
           "tclk-py-githubbjj"
         ]
       },
-      "review_tier": "candidate",
+      "review_tier": "caution",
       "verification": {
-        "level": "basic-discovery",
-        "reviewed_at": "2026-09-07",
+        "level": "source-reviewed-with-material-gap",
+        "reviewed_at": "2026-09-08",
         "checks": [
-          "README, draft-spec limitations, transcript and receipt purpose, dependency declaration, findings document, tests layout, and exact commit 778bf19434061cb640fa5de95bc5e39120010047 screened",
-          "no dependency, verifier, test vector, transcript, signature, network request, or community code executed"
+          "exact commit 778bf19434061cb640fa5de95bc5e39120010047 compared statically with official Yellow Paper v0.5.0 transcript, leaf, node, receipt, signature, aggregation, and turn-cap rules",
+          "the implementation matches the documented 236, 172, 140, and 116-byte leaf forms, V3-to-V2 fallback, receipt preimage, signature and path checks, and 1024-turn cap",
+          "the official channel_max_merkle_path_len=64 bound is not enforced and merkle_root prose conflicts with its duplicate-last default",
+          "no dependency, verifier, vector, transcript, signature, network request, or community code executed"
         ],
-        "notes": "Candidate only: public existence, exact draft target, and prominent non-live limitations are established. Yellow Paper correspondence, binary layouts, aggregation rules, signature checks, ambiguity findings, and dependency behavior require substantive static review."
-      }
-    },
-    {
-      "homepage_url": null,
-      "project_status": "community",
-      "id": "flop-scout-ephrett",
-      "name": "flop-scout",
-      "description": "A small French-language repository of daily public GitHub issue and pull/patch-preparation snapshots for official Flop Labs repositories.",
-      "content_type": "issue-snapshot",
-      "categories": [
-        "GitHub",
-        "issues",
-        "discovery",
-        "French"
-      ],
-      "source_url": "https://github.com/Ephrett/flop-scout",
-      "author": {
-        "name": "Ephrett",
-        "did": null
-      },
-      "license": null,
-      "languages": [
-        "Shell",
-        "JSON",
-        "French"
-      ],
-      "interfaces": [
-        "Dataset"
-      ],
-      "review_tier": "candidate",
-      "verification": {
-        "level": "basic-discovery",
-        "reviewed_at": "2026-09-07",
-        "checks": [
-          "README, generated timestamp, official-repository head snapshots, issue and pull-request JSON files, and exact commit a1e43f5aab018855e2848019b2a13f09e7c7bc6b screened",
-          "no generator, patch workflow, GitHub action, network request, issue content, or community code executed"
-        ],
-        "notes": "Candidate only: the public snapshot purpose and exact revision are established. Collection script provenance, refresh cadence, schema, completeness, hostile issue-content handling, licensing, and patch-preparation boundary require substantive static review."
+        "notes": "Caution: the draft implementation is transparent and largely aligned, but omits the official 64-element Merkle-path bound while presenting itself as an implementation checklist. Treat it as incomplete until that limit and the odd-node-policy wording are corrected."
       }
     },
     {
@@ -9109,15 +9076,16 @@
           "tclk-portfolio-parkzen11"
         ]
       },
-      "review_tier": "candidate",
+      "review_tier": "reviewed",
       "verification": {
-        "level": "basic-discovery",
-        "reviewed_at": "2026-09-07",
+        "level": "source-reviewed",
+        "reviewed_at": "2026-09-08",
         "checks": [
-          "README, pinned-upstream model, offline rehearsal, replay and evidence layout, signing-transport separation, posting-disabled boundary, drift records, and exact commit 6d8fbce8cc0f3087733c568f387a0245ec627f3c screened",
-          "no bootstrap, upstream checkout, package, rehearsal, signer, network request, evidence generator, or community code executed"
+          "exact commit 6d8fbce8cc0f3087733c568f387a0245ec627f3c statically inspected across upstream pins, black-box model and replay, airlock, schemas, detached route, CLI, and evidence records",
+          "current source closes live submit and custody routes and exposes fixture-only offline rehearsal; no key, wallet, value rail, or credential was found",
+          "no bootstrap, checkout, package, rehearsal, signer, network request, evidence generator, or community code executed"
         ],
-        "notes": "Candidate only: the extensive local verification scope and exact revision are established. Upstream pinning, captured evidence, replay invariants, custody isolation, drift handling, secret screening, and any live-ready adapters require substantive static review."
+        "notes": "Reviewed for its current offline verification path at the pinned revision, not audited or endorsed. Upstream claims and test results were not reproduced; pins are historical, fixtures use deterministic future timestamps, and no license is declared."
       }
     },
     {
@@ -9138,7 +9106,7 @@
         "name": "apomt",
         "did": null
       },
-      "license": "MIT",
+      "license": "Apache-2.0",
       "languages": [
         "Python",
         "JavaScript"
@@ -9154,15 +9122,16 @@
           "technocore-task-lock"
         ]
       },
-      "review_tier": "candidate",
+      "review_tier": "reviewed",
       "verification": {
-        "level": "basic-discovery",
-        "reviewed_at": "2026-09-07",
+        "level": "source-reviewed",
+        "reviewed_at": "2026-09-08",
         "checks": [
-          "README, provenance levels, Kibble and TC-TASK adapters, read-only collector claims, bounded SQLite projection, hostile-input boundaries, test layout, and exact commit 2e74dfbd80cf5f276cb6ff1690fddd0946d0e3bc screened",
+          "exact commit 2e74dfbd80cf5f276cb6ff1690fddd0946d0e3bc statically inspected across public-room collection, cursor and gap handling, SQLite projection, pagination and retention bounds, hostile-input rendering, CSP, signing separation, and hosted deployment guards",
+          "hosted paths expose read-only behavior and reject the separate local signing module; the collector restricts rooms, redirects, content links, and page size",
           "no collector, database, hosted service, task URL, Kibble content, dependency, network request, or community code executed"
         ],
-        "notes": "Candidate only: public existence, differentiated persistence/provenance scope, and exact revision are established. Protocol parsing, signature verification, cursor and retention handling, storage bounds, search security, hosted behavior, and external Kibble claims require substantive static review."
+        "notes": "Reviewed at the pinned revision, not audited or endorsed. The separate local SIGN_SEED path is high risk if enabled, and external Kibble provenance claims were not independently reproduced."
       }
     },
     {
@@ -9528,15 +9497,16 @@
           "flop-tclk-lab-khenzarr"
         ]
       },
-      "review_tier": "candidate",
+      "review_tier": "reviewed",
       "verification": {
-        "level": "basic-discovery",
+        "level": "source-reviewed",
         "reviewed_at": "2026-09-08",
         "checks": [
-          "README, 49-assertion transition and guard scope, offline/keyless boundary, current upstream pin, withheld stale findings, source layout, and exact commit 2066eb2267a133585ab94ab90d3a6db1a7045966 screened",
-          "no upstream build, harness, assertion, dependency, network request, signature, key, venue, or community code executed"
+          "exact commit 2066eb2267a133585ab94ab90d3a6db1a7045966 statically inspected across six transitions, 26 omitted-grid rejection cases, 17 guard cases, object-identity assertions, and the upstream tclk pin",
+          "offline harness has no package dependency, network path, signing path, nonce source, or settlement rail",
+          "reported 49/49 result and separately built upstream package were not executed"
         ],
-        "notes": "Candidate only: public existence, exact revision, offline scope, and explicit claim boundary are established. Upstream pin integrity, frame construction, full transition coverage, object-identity assertions, clock edge cases, and the reported 49/49 result require substantive static review."
+        "notes": "Reviewed at the pinned revision, not audited or endorsed. Frame constructors move with the imported library, so this is transition behavior coverage rather than independent codec conformance."
       }
     },
     {
@@ -9677,6 +9647,344 @@
           "no identity, passphrase, model, inference job, miner, validator, ledger, TCLK action, dependency, network request, or community code executed"
         ],
         "notes": "Caution: the project accepts public signed requests into unattended model execution and publication, bridges encrypted PEM keys into raw signing seeds, coordinates mock settlement and TCLK scripts, and reports empirical reproducibility and market results. Prompt handling, identity custody, output disclosure, authorization, model isolation, accounting semantics, retries, and draft-spec claims require independent review."
+      }
+    },
+    {
+      "id": "flop-reputation-index-0o0r7",
+      "name": "FRI — Flop Reputation Index",
+      "description": "An independent read-only collector and transparent heuristic reputation index for public Technocore, Kibble, and TCLK signals.",
+      "content_type": "reputation-index",
+      "review_tier": "candidate",
+      "categories": [
+        "analytics",
+        "reputation",
+        "technocore",
+        "tclk"
+      ],
+      "project_status": "unverified",
+      "source_url": "https://github.com/0o0r7/Fri",
+      "homepage_url": null,
+      "author": {
+        "name": "0o0r7",
+        "did": null
+      },
+      "license": "MIT",
+      "languages": [
+        "Python",
+        "TypeScript"
+      ],
+      "interfaces": [
+        "CLI",
+        "JSON",
+        "Web"
+      ],
+      "verification": {
+        "level": "basic-discovery",
+        "reviewed_at": "2026-09-08",
+        "checks": [
+          "README, tree, read-only design, heuristic disclosure, planned signed introduction, generated data, workflow, and exact commit ef57d780c13d16598e397f4c6ce70e019c0f12a3 screened",
+          "no collector, workflow, dependency, score, network request, signing helper, or community code executed"
+        ],
+        "notes": "Candidate only. Public existence and a differentiated transparent scoring purpose are established; collector bounds, hostile-input handling, score manipulation resistance, generated-data provenance, workflow permissions, and signing separation require substantive review."
+      }
+    },
+    {
+      "id": "flop-conformance-lab-retardio73-boop",
+      "name": "FLOP Conformance Lab",
+      "description": "An offline interoperability and drift harness spanning released TCLK vectors, Technocore signing semantics, routing boundaries, and FLOP target-spec classifications.",
+      "content_type": "conformance-suite",
+      "review_tier": "candidate",
+      "categories": [
+        "testing",
+        "conformance",
+        "tclk",
+        "technocore"
+      ],
+      "project_status": "unverified",
+      "source_url": "https://github.com/retardio73-boop/flop-conformance-lab",
+      "homepage_url": null,
+      "author": {
+        "name": "retardio73-boop",
+        "did": null
+      },
+      "license": "Apache-2.0",
+      "languages": [
+        "TypeScript"
+      ],
+      "interfaces": [
+        "CLI",
+        "Test suite"
+      ],
+      "verification": {
+        "level": "basic-discovery",
+        "reviewed_at": "2026-09-08",
+        "checks": [
+          "README, release and source pins, normative classifications, offline signing boundary, TCLK workaround disclosure, test layout, and exact commit 3fb707bccff33e906c2c9cf5cc5d65e0c28524e8 screened",
+          "no package, vector, build, assertion, signer, network request, or community code executed"
+        ],
+        "notes": "Candidate only. Public existence, exact revision, and a differentiated offline conformance scope are established; pin integrity, vector provenance, canonicalization, signature checks, workaround correctness, and reported results require substantive review."
+      }
+    },
+    {
+      "id": "flop-session-router-retardio73-boop",
+      "name": "FLOP Session Router",
+      "description": "A deterministic local routing simulator with compatibility gates, bounded endpoint preflight, failover, durable decisions, replay, and external signer boundaries.",
+      "content_type": "routing-tool",
+      "review_tier": "candidate",
+      "categories": [
+        "routing",
+        "simulation",
+        "preflight",
+        "observability"
+      ],
+      "project_status": "unverified",
+      "source_url": "https://github.com/retardio73-boop/flop-session-router",
+      "homepage_url": null,
+      "author": {
+        "name": "retardio73-boop",
+        "did": null
+      },
+      "license": "Apache-2.0",
+      "languages": [
+        "TypeScript"
+      ],
+      "interfaces": [
+        "CLI",
+        "HTTP",
+        "Library"
+      ],
+      "verification": {
+        "level": "basic-discovery",
+        "reviewed_at": "2026-09-08",
+        "checks": [
+          "README, runtime-unavailable boundary, deterministic scoring, SSRF-aware preflight claims, replay limitation, signer interfaces, storage layout, and exact commit bc66c51340ef3a0ac25d5faa2fba13280275ee6d screened",
+          "no package, route, endpoint, database, signer, network request, or community code executed"
+        ],
+        "notes": "Candidate only. Public existence, exact revision, and differentiated simulation purpose are established; endpoint normalization, DNS and rebinding behavior, storage bounds, scoring, replay, signer policy, and API security require substantive review."
+      }
+    },
+    {
+      "id": "floppy-ephrett",
+      "name": "FLOPPY",
+      "description": "A desktop agent worker that installs local inference, stores a signing seed, automatically claims and delivers public Kibble work, and offers optional messaging integrations.",
+      "content_type": "autonomous-agent-worker",
+      "source_url": "https://github.com/Ephrett/floppy",
+      "license": "MIT",
+      "languages": [
+        "Python",
+        "JavaScript"
+      ],
+      "interfaces": [
+        "Desktop",
+        "Local HTTP",
+        "Signed writes"
+      ],
+      "review_tier": "caution",
+      "categories": [
+        "identity",
+        "signing",
+        "automation"
+      ],
+      "project_status": "unverified",
+      "homepage_url": null,
+      "author": {
+        "name": "Ephrett",
+        "did": null
+      },
+      "verification": {
+        "level": "repository-screened-with-caution",
+        "reviewed_at": "2026-09-08",
+        "checks": [
+          "README, source tree, operational boundary, and exact revision screened statically",
+          "no identity, key, dependency, browser action, network request, write, contract, model, or community code executed"
+        ],
+        "notes": "Caution: exact commit aa4bddb46e0886b7c31436550b44ce2bfac63e0d stores an unencrypted seed.hex locally, can silently install Ollama, autostart, claim and deliver signed work, and integrate Telegram. Strong local-only and no-telemetry claims exist, but custody, updater, download verification, state-changing HTTP, unattended work, and retention need deeper review."
+      }
+    },
+    {
+      "id": "gendid-faisalnugroho",
+      "name": "GenDid",
+      "description": "A transcript-authentication and semantic agreement prototype that can submit evidence to a separate GenLayer network.",
+      "content_type": "agreement-adjudication",
+      "source_url": "https://github.com/faisalnugroho/gendid",
+      "license": "MIT",
+      "languages": [
+        "Python",
+        "JavaScript"
+      ],
+      "interfaces": [
+        "Web",
+        "Smart contract",
+        "Network writes"
+      ],
+      "review_tier": "caution",
+      "categories": [
+        "identity",
+        "signing",
+        "automation"
+      ],
+      "project_status": "unverified",
+      "homepage_url": null,
+      "author": {
+        "name": "faisalnugroho",
+        "did": null
+      },
+      "verification": {
+        "level": "repository-screened-with-caution",
+        "reviewed_at": "2026-09-08",
+        "checks": [
+          "README, source tree, operational boundary, and exact revision screened statically",
+          "no identity, key, dependency, browser action, network request, write, contract, model, or community code executed"
+        ],
+        "notes": "Caution: exact commit 36041584164bc332ba9f43b07015047d34e8f99f generates signing seeds in browser localStorage and can submit untrusted transcript evidence to a separate live network for LLM-based adjudication. It is not settlement or a truth oracle; custody, cross-network disclosure, semantic-model behavior, and deployed claims require independent verification."
+      }
+    },
+    {
+      "id": "technocore-tase-forumevi",
+      "name": "Technocore TASE",
+      "description": "An unofficial autonomous escrow and settlement prototype broadcasting signed action payloads to public Technocore rooms.",
+      "content_type": "settlement-prototype",
+      "source_url": "https://github.com/forumevi/technocore-tase",
+      "license": null,
+      "languages": [
+        "Python",
+        "JavaScript"
+      ],
+      "interfaces": [
+        "Web",
+        "MCP adapter",
+        "Signed writes"
+      ],
+      "review_tier": "caution",
+      "categories": [
+        "identity",
+        "signing",
+        "automation"
+      ],
+      "project_status": "unverified",
+      "homepage_url": null,
+      "author": {
+        "name": "forumevi",
+        "did": null
+      },
+      "verification": {
+        "level": "repository-screened-with-caution",
+        "reviewed_at": "2026-09-08",
+        "checks": [
+          "README, source tree, operational boundary, and exact revision screened statically",
+          "no identity, key, dependency, browser action, network request, write, contract, model, or community code executed"
+        ],
+        "notes": "Caution: exact commit 37297e10594431bc5e8ddaf14016f16a9bf517a9 markets an autonomous production-ready settlement engine despite Technocore providing no settlement rail, uses a nonstandard DID form, and advertises public-room writes and MCP execution. Do not entrust identity, value, or autonomous authority."
+      }
+    },
+    {
+      "id": "flop-agent-jo-xp-vibe",
+      "name": "flop-agent",
+      "description": "A high-volume autonomous Technocore and TCLK worker with signed identity, periodic presence, offers, contracts, and model-oracle tasks.",
+      "content_type": "autonomous-agent-worker",
+      "source_url": "https://github.com/JoXp-ViBe/flop-agent",
+      "license": "Apache-2.0",
+      "languages": [
+        "Python",
+        "JavaScript"
+      ],
+      "interfaces": [
+        "CLI",
+        "Docker",
+        "Signed writes"
+      ],
+      "review_tier": "caution",
+      "categories": [
+        "identity",
+        "signing",
+        "automation"
+      ],
+      "project_status": "unverified",
+      "homepage_url": null,
+      "author": {
+        "name": "JoXp-ViBe",
+        "did": null
+      },
+      "verification": {
+        "level": "repository-screened-with-caution",
+        "reviewed_at": "2026-09-08",
+        "checks": [
+          "README, source tree, operational boundary, and exact revision screened statically",
+          "no identity, key, dependency, browser action, network request, write, contract, model, or community code executed"
+        ],
+        "notes": "Caution: screened commit 3337a5229ff58d126f83b028bead34a0aba3ea9d can accept up to 800 signed deals daily, reads a signing seed from process environment, and uses an external model oracle. It includes dry-run, counterparty, rate, and family controls, but high-volume unattended authority and unverified reward/testnet claims require caution."
+      }
+    },
+    {
+      "id": "flop-karma-muqaddashahzad",
+      "name": "FLOP Karma",
+      "description": "A client-side Technocore scorecard claiming to assess sybil risk and airdrop health.",
+      "content_type": "eligibility-scorecard",
+      "source_url": "https://github.com/muqaddashahzad/flop-karma",
+      "license": null,
+      "languages": [
+        "JavaScript"
+      ],
+      "interfaces": [
+        "Web"
+      ],
+      "review_tier": "caution",
+      "categories": [
+        "identity",
+        "signing",
+        "automation"
+      ],
+      "project_status": "unverified",
+      "homepage_url": null,
+      "author": {
+        "name": "muqaddashahzad",
+        "did": null
+      },
+      "verification": {
+        "level": "repository-screened-with-caution",
+        "reviewed_at": "2026-09-08",
+        "checks": [
+          "README, source tree, operational boundary, and exact revision screened statically",
+          "no identity, key, dependency, browser action, network request, write, contract, model, or community code executed"
+        ],
+        "notes": "Caution: exact commit fed1164e8bf7068fcdaf5677258bef0597e091c3 presents heuristic public-activity scoring as airdrop eligibility and cites unsupported network totals and snapshot language. No official eligibility oracle exists; scores must not be treated as qualification evidence."
+      }
+    },
+    {
+      "id": "pplx-tangtrades-flop",
+      "name": "pplx-tangtrades-flop",
+      "description": "A Perplexity skill that persists an Ed25519 seed and performs signed Technocore identity, room, note, and monitoring workflows.",
+      "content_type": "agent-skill",
+      "source_url": "https://github.com/tangtrades/pplx-tangtrades-flop",
+      "license": "MIT",
+      "languages": [
+        "Python",
+        "Markdown"
+      ],
+      "interfaces": [
+        "Agent skill",
+        "Signed writes"
+      ],
+      "review_tier": "caution",
+      "categories": [
+        "identity",
+        "signing",
+        "automation"
+      ],
+      "project_status": "unverified",
+      "homepage_url": null,
+      "author": {
+        "name": "tangtrades",
+        "did": null
+      },
+      "verification": {
+        "level": "repository-screened-with-caution",
+        "reviewed_at": "2026-09-08",
+        "checks": [
+          "README, source tree, operational boundary, and exact revision screened statically",
+          "no identity, key, dependency, browser action, network request, write, contract, model, or community code executed"
+        ],
+        "notes": "Caution: exact commit 659b4d6f7697ece004e1ba16745d2f45627208ff creates and stores a raw persistent signing seed, publishes identity and notes, and directs monitoring and public writes. It also embeds personal operator identity. Do not import or run it; custody and autonomous-write boundaries are unsuitable for AgentAtlas promotion."
       }
     }
   ]

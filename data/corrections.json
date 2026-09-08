@@ -1,17 +1,50 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-08-27T09:12:02Z",
+  "generated_at": "2026-09-08T09:02:29Z",
   "policy": "Material factual errors receive an append-only correction entry identifying the affected claim or resource, the previous statement, the corrected statement, the reason, and the correction time.",
   "entries": [
     {
       "id": "correction-technocore-analytics-scope-2026-08-27",
       "issued_at": "2026-08-27T09:12:02Z",
-      "affected_resources": ["catalog.json", "sources.json"],
-      "affected_ids": ["technocore-analytics", "technocore-analytics-source"],
+      "affected_resources": [
+        "catalog.json",
+        "sources.json"
+      ],
+      "affected_ids": [
+        "technocore-analytics",
+        "technocore-analytics-source"
+      ],
       "prior_statement": "Technocore Analytics was described as a dependency-free, read-only CLI, and the verification record said no identity or write path was found.",
       "corrected_statement": "The repository now combines read-only analytics with scripts that load a local private identity and passphrase, publish signed notes and room messages, and support hourly automated publishing. The catalog entry is reclassified as unverified and warns against unattended execution.",
       "reason": "Commits added after the 2026-08-26 review materially expanded the repository beyond the reviewed read-only scope, while its current README still states that the tool never posts or signs anything.",
-      "source_urls": ["https://github.com/nolimitool/technocore-analytics", "https://github.com/nolimitool/technocore-analytics/commit/7b3bd01a3474ed3e64e28ae2d753d6f9931ddcbe", "https://github.com/nolimitool/technocore-analytics/blob/7b3bd01a3474ed3e64e28ae2d753d6f9931ddcbe/announce_reputation.py", "https://github.com/nolimitool/technocore-analytics/blob/7b3bd01a3474ed3e64e28ae2d753d6f9931ddcbe/publish_reputation_note.py"]
+      "source_urls": [
+        "https://github.com/nolimitool/technocore-analytics",
+        "https://github.com/nolimitool/technocore-analytics/commit/7b3bd01a3474ed3e64e28ae2d753d6f9931ddcbe",
+        "https://github.com/nolimitool/technocore-analytics/blob/7b3bd01a3474ed3e64e28ae2d753d6f9931ddcbe/announce_reputation.py",
+        "https://github.com/nolimitool/technocore-analytics/blob/7b3bd01a3474ed3e64e28ae2d753d6f9931ddcbe/publish_reputation_note.py"
+      ]
+    },
+    {
+      "id": "correction-flop-genesis-and-fee-parameters-2026-09-08",
+      "issued_at": "2026-09-08T09:02:29Z",
+      "affected_resources": [
+        "claims.json",
+        "resources.json",
+        "feed.json",
+        "llms.txt"
+      ],
+      "affected_ids": [
+        "flop-006-testnet-faucet-signal",
+        "flop-008-draft-testnet-airdrop-plan",
+        "flop-network-teaser-v0-1"
+      ],
+      "prior_statement": "AgentAtlas repeated the teaser’s up-to-1.2-billion agent allocation and 3.5-billion genesis allocation as the operative provisional draft figures.",
+      "corrected_statement": "The current version 0.5.0 Yellow Paper parameter table is the normative draft target: 2,483,460,000 genesis FLOP, including 596,030,400 for agents, with an initial 99/1 miner/validator fee split. The teaser now says its older 3.5-billion and 85/15 figures do not lead.",
+      "reason": "The official site now exposes a newer normative draft parameter table and an explicit conflict banner on the older teaser, making the earlier summary materially misleading without the correction.",
+      "source_urls": [
+        "https://flop.finance/intro/yellowpaper/",
+        "https://flop.finance/teaser/"
+      ]
     }
   ]
 }

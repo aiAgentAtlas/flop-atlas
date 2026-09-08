@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-08T03:00:51Z",
+  "generated_at": "2026-09-08T09:02:29Z",
   "scope": "Independent learning resources. Inclusion is not endorsement, and instructions may become stale as Technocore changes.",
   "resources": [
     {
@@ -71,8 +71,8 @@
       ],
       "url": "https://flop.finance/teaser/",
       "project_status": "official",
-      "reviewed_at": "2026-09-07",
-      "based_on": "Version 0.1, updated 2026-08-26",
+      "reviewed_at": "2026-09-08",
+      "based_on": "Version 0.1 header updated 2026-08-26; footer updated 2026-08-27; current conflict banner reviewed 2026-09-08",
       "useful_for": [
         "draft network purpose and token mechanics",
         "provisional testnet and mainnet timing",
@@ -86,7 +86,7 @@
           "version, status, updated date, and provisional warning recorded",
           "agent allocation, faucet, spending formula, and timing read from the primary page"
         ],
-        "notes": "Official draft, not a final specification or eligibility guarantee. The page says figures remain provisional and the definitive Yellow Paper is not final."
+        "notes": "Official older draft, not a final specification or eligibility guarantee. A current banner says the teaser’s 3.5-billion genesis allocation and 85/15 fee split do not lead; use Yellow Paper v0.5.0 parameters instead."
       }
     },
     {
@@ -116,6 +116,33 @@
           "the advertised remote MCP endpoint was not invoked"
         ],
         "notes": "Official explanatory documentation, not a final Yellow Paper, live-network proof, or complete eligibility guarantee. Individual pages carry their own update dates and some protocol parameters remain planned, provisional, or under review."
+      }
+    },
+    {
+      "id": "flop-network-yellow-paper-v0-5",
+      "title": "The Flop Network — Yellow Paper",
+      "type": "draft-specification",
+      "languages": [
+        "English"
+      ],
+      "url": "https://flop.finance/intro/yellowpaper/",
+      "project_status": "official",
+      "reviewed_at": "2026-09-08",
+      "based_on": "Version 0.5.0 draft, updated 2026-09-05",
+      "useful_for": [
+        "normative draft protocol formats",
+        "current target parameters and allocations",
+        "implementation-status boundaries",
+        "compute-channel and transcript verification rules"
+      ],
+      "verification": {
+        "level": "official-source-reviewed",
+        "checks": [
+          "served by the official FLOP site and labeled version 0.5.0 draft",
+          "normative parameter table, implementation-status appendix, transcript formats, limits, and safety boundaries read from the primary page",
+          "current allocations and initial 99/1 fee split compared with the older teaser conflict banner"
+        ],
+        "notes": "Official normative target specification, still a draft. A target mechanism or parameter is not proof that the corresponding runtime, testnet, settlement rail, faucet, eligibility rule, or token contract is live."
       }
     }
   ]

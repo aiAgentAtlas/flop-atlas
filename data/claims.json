@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-07T09:05:44Z",
+  "generated_at": "2026-09-08T09:02:29Z",
   "statuses": [
     "confirmed",
     "official-but-incomplete",
@@ -80,14 +80,14 @@
     },
     {
       "id": "flop-006-testnet-faucet-signal",
-      "claim": "The official draft says agents claim free, rate-capped test tokens and earn a provisional airdrop based largely on FLOP spent on testnet inference, plus unspecified prizes.",
+      "claim": "Official draft sources describe free, rate-capped test tokens and a provisional agent airdrop based largely on testnet inference spending, but the current Yellow Paper parameter table allocates 596,030,400 FLOP to agents rather than the teaser’s older “up to 1.2 billion” figure.",
       "status": "official-but-incomplete",
-      "source": "https://flop.finance/teaser/",
-      "reviewed_at": "2026-09-07",
+      "source": "https://flop.finance/intro/yellowpaper/",
+      "reviewed_at": "2026-09-08",
       "corroborating_sources": [
-        "https://x.com/CryptoHayes/status/2092209532600463598"
+        "https://flop.finance/teaser/"
       ],
-      "note": "The draft says the agent allocation is up to 1.2 billion FLOP and arrives locked, with every three FLOP spent on inference unlocking one airdropped FLOP. All figures and mechanics remain provisional pending the final Yellow Paper.",
+      "note": "The version 0.5.0 Yellow Paper is the current normative target specification and lists 596,030,400 FLOP for agents. The older teaser language remains visible but now carries a banner saying its 3.5 billion genesis supply and 85/15 fee split do not lead the protocol parameters.",
       "unknowns": [
         "faucet URL and access flow",
         "rate cap",
@@ -95,7 +95,7 @@
         "final eligibility and anti-abuse rules",
         "wallet and claim process"
       ],
-      "stale_after": "2026-09-13"
+      "stale_after": "2026-09-15"
     },
     {
       "id": "flop-007-agent-collaboration-signal",
@@ -117,11 +117,11 @@
     },
     {
       "id": "flop-008-draft-testnet-airdrop-plan",
-      "claim": "The official version 0.1 draft plans a roughly 90-day Q4 2026 testnet, Q1 2027 mainnet, and a 3.5 billion FLOP genesis airdrop earned through testnet participation.",
+      "claim": "Official drafts still target a roughly 90-day Q4 2026 testnet and Q1 2027 mainnet, while the current Yellow Paper parameter table specifies a 2,483,460,000 FLOP genesis supply and a 99/1 miner/validator fee split for the initial deployment.",
       "status": "official-but-incomplete",
-      "source": "https://flop.finance/teaser/",
-      "reviewed_at": "2026-09-07",
-      "note": "The draft allocates up to 1.2 billion FLOP each to miners and agents, 305,505,000 to validators, and 794,495,000 to reserve and incentives. It explicitly labels figures provisional and the Yellow Paper not final.",
+      "source": "https://flop.finance/intro/yellowpaper/",
+      "reviewed_at": "2026-09-08",
+      "note": "The teaser’s older 3.5 billion allocation and 85/15 fee split remain visible but are explicitly marked as not leading. Current draft allocations are miners 993,384,000; validators 305,505,000; agents 596,030,400; reserve 588,540,600. All remain draft targets, not final eligibility or deployed-state guarantees.",
       "unknowns": [
         "exact testnet dates",
         "final protocol parameters",
@@ -129,7 +129,10 @@
         "claim process",
         "token contract"
       ],
-      "stale_after": "2026-09-13"
+      "stale_after": "2026-09-15",
+      "corroborating_sources": [
+        "https://flop.finance/teaser/"
+      ]
     }
   ]
 }

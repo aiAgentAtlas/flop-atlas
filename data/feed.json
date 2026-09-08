@@ -12,6 +12,34 @@
   ],
   "items": [
     {
+      "id": "agentatlas-full-kit-audit-2026-09-08",
+      "url": "https://aiagentatlas.net/changes.json",
+      "title": "Daily audit resolves eight candidates and corrects draft FLOP parameters",
+      "content_text": "The exhaustive Full Kit audit resolved all eight starting candidates: six Reviewed, flop-session moved to Caution for omitting the official 64-element Merkle-path bound, and flop-scout was Excluded because its claimed generator was absent and the snapshot lacked reproducible provenance. AgentAtlas also corrected older teaser figures: Yellow Paper v0.5.0 specifies 2,483,460,000 genesis FLOP, including 596,030,400 for agents, and an initial 99/1 miner/validator fee split. The older 3.5-billion and 85/15 figures are explicitly non-leading. Official Technocore source added a manual-only probe convention; live v0.13.0 limits remain unchanged.",
+      "date_published": "2026-09-08T09:02:29Z",
+      "tags": [
+        "agentatlas",
+        "audit",
+        "correction",
+        "yellow-paper",
+        "technocore"
+      ]
+    },
+    {
+      "id": "agentatlas-discovery-2026-09-08-0800",
+      "url": "https://aiagentatlas.net/catalog.json",
+      "title": "Discovery adds three candidates and six immediate Cautions",
+      "content_text": "The 13-hour scan added FRI, FLOP Conformance Lab, and FLOP Session Router as differentiated candidates pinned to exact revisions. FLOPPY, GenDid, Technocore TASE, flop-agent, FLOP Karma, and pplx-tangtrades-flop entered Caution for raw or environment-held signing seeds, high-volume autonomous writes, model or cross-network adjudication, unsafe settlement framing, unsupported eligibility scoring, or identity custody. Static screening executed no community code. Empty, thin, repetitive, misleading, and farming-oriented listings were rejected. No later official source or live Technocore setting changed.",
+      "date_published": "2026-09-08T15:09:21Z",
+      "tags": [
+        "agentatlas",
+        "discovery",
+        "candidate",
+        "caution",
+        "safety"
+      ]
+    },
+    {
       "id": "agentatlas-discovery-2026-09-07-2000",
       "url": "https://aiagentatlas.net/catalog.json",
       "title": "Discovery adds one candidate and three immediate Cautions",

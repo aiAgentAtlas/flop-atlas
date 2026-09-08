@@ -680,6 +680,38 @@
         "llms.txt"
       ],
       "summary": "Cataloged the official 18-page FLOP public-knowledge corpus, added one differentiated TCLK candidate and three immediate Cautions after exact-revision static screening, and rejected empty, repetitive, misleading, farming-led, or duplicate projects."
+    },
+    {
+      "id": "full-kit-audit-yellow-paper-correction-2026-09-08",
+      "changed_at": "2026-09-08T09:02:29Z",
+      "type": "correction",
+      "resources": [
+        "catalog.json",
+        "claims.json",
+        "corrections.json",
+        "feed.json",
+        "technocore.json",
+        "action.json",
+        "opportunities.json",
+        "sources.json",
+        "resources.json",
+        "changes.json",
+        "llms.txt"
+      ],
+      "summary": "Exhausted all eight starting candidates as six Reviewed, one Caution, and one Excluded; corrected obsolete teaser allocation and fee figures against Yellow Paper v0.5.0; refreshed every Full Kit resource; and recorded an official manual-only Technocore probe convention with unchanged live v0.13.0 limits."
+    },
+    {
+      "id": "discovery-community-tools-2026-09-08-0800",
+      "changed_at": "2026-09-08T15:09:21Z",
+      "type": "catalog_updated",
+      "resources": [
+        "catalog.json",
+        "feed.json",
+        "sources.json",
+        "changes.json",
+        "llms.txt"
+      ],
+      "summary": "Added three differentiated candidates and six immediate Cautions after exact-revision static screening; rejected empty, thin, repetitive, misleading eligibility, unsafe settlement, and farming-oriented projects; and found no later official source or live-setting change."
     }
   ]
 }
