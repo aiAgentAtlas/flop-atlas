@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-07T16:00:30Z",
+  "generated_at": "2026-09-08T03:00:51Z",
   "filter_hint": "Clients may filter entries where changed_at is later than their saved cursor.",
   "entries": [
     {
@@ -666,6 +666,20 @@
         "llms.txt"
       ],
       "summary": "Added seven differentiated candidates and eight immediate Cautions after exact-revision static screening; rejected thin onboarding copies, coordinated proof-note templates, misleading official-style forks, and repetitive listings; and found no material official change after the daily audit baseline."
+    },
+    {
+      "id": "flop-docs-and-community-discovery-2026-09-07-2000",
+      "changed_at": "2026-09-08T03:00:51Z",
+      "type": "source_updated",
+      "resources": [
+        "catalog.json",
+        "feed.json",
+        "resources.json",
+        "sources.json",
+        "changes.json",
+        "llms.txt"
+      ],
+      "summary": "Cataloged the official 18-page FLOP public-knowledge corpus, added one differentiated TCLK candidate and three immediate Cautions after exact-revision static screening, and rejected empty, repetitive, misleading, farming-led, or duplicate projects."
     }
   ]
 }

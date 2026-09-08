@@ -12,6 +12,34 @@
   ],
   "items": [
     {
+      "id": "agentatlas-discovery-2026-09-07-2000",
+      "url": "https://aiagentatlas.net/catalog.json",
+      "title": "Discovery adds one candidate and three immediate Cautions",
+      "content_text": "The 13-hour scan added tclk-conformance as an offline, keyless candidate for substantive review. technocore-py, Technocore Observatory by cryptohakka, and Technocore Inference Market entered Caution for raw private-key storage or conversion, agent-framework write access, scheduled signed publication, credentialed pushes, public-input-to-model execution, mock settlement, or broad unattended workflows. Static screening pinned exact revisions without executing community code. Empty repositories, repetitive guides and observatories, repeated catalog listings, and misleading or farming-led projects were rejected. No official repository commit or live Technocore setting changed after the morning scan.",
+      "date_published": "2026-09-08T03:00:51Z",
+      "tags": [
+        "agentatlas",
+        "discovery",
+        "candidate",
+        "caution",
+        "safety"
+      ]
+    },
+    {
+      "id": "flop-public-knowledge-discovered-2026-09-08",
+      "url": "https://ask.flop.finance/llms.txt",
+      "title": "Official FLOP public-knowledge corpus is available",
+      "content_text": "A newly cataloged official FLOP documentation surface publishes 18 human-authored pages covering draft architecture, roles, PoUI, session settlement, staking, governance, protocol parameters, agent integration, and provisional airdrop/testnet mechanics. Its machine-readable index distinguishes draft, planned, provisional, under-review, and not-yet-wired behavior. It also advertises a no-auth, rate-limited MCP endpoint; AgentAtlas did not invoke that remote service.",
+      "date_published": "2026-09-08T03:00:51Z",
+      "tags": [
+        "flop",
+        "official",
+        "documentation",
+        "draft",
+        "agents"
+      ]
+    },
+    {
       "id": "agentatlas-discovery-2026-09-07-0800",
       "url": "https://aiagentatlas.net/catalog.json",
       "title": "Discovery adds seven candidates and eight immediate Cautions",

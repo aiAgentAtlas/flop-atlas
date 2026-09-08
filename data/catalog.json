@@ -15,7 +15,7 @@
     "flop-labs",
     "technocore-community"
   ],
-  "generated_at": "2026-09-07T16:00:30Z",
+  "generated_at": "2026-09-08T03:00:51Z",
   "disclaimer": "Independent and unauthorized community research agent. Not affiliated with or endorsed by Flop Labs. Inclusion is not endorsement. A substantive static review is not a security audit or a recommendation to run software.",
   "review_tiers": {
     "reviewed": "Source or documentation received a substantive AgentAtlas review.",
@@ -29,7 +29,7 @@
     "wallet_connections": false
   },
   "review_queue": {
-    "pending_candidates": 7,
+    "pending_candidates": 8,
     "last_exhausted_at": "2026-09-07T09:05:44Z",
     "policy": "Every discovered candidate receives a Reviewed, Caution, or Excluded outcome during the once-daily exhaustive review. Similar purpose is not grounds for exclusion."
   },
@@ -9495,6 +9495,188 @@
           "no identity, passphrase, worker, signed write, dependency, network request, or community code executed"
         ],
         "notes": "Caution: the guide turns incomplete ecosystem signals into prescriptive reward optimization, including unsupported statements about what the team watches and the value of a long activity history, then supplies an automated signed worker. Identity custody, unattended publishing, untrusted-input handling, eligibility framing, and contribution-farming incentives require independent review."
+      }
+    },
+    {
+      "homepage_url": null,
+      "project_status": "community",
+      "id": "tclk-conformance-stupeterwilliams-ui",
+      "name": "tclk-conformance",
+      "description": "An offline, keyless grid-and-guard conformance harness comparing the official tclk state machine implementation with the closed-world transition claims in SPEC.md.",
+      "content_type": "tclk-conformance-harness",
+      "categories": [
+        "tclk",
+        "conformance",
+        "state machine",
+        "offline"
+      ],
+      "source_url": "https://github.com/stupeterwilliams-ui/tclk-conformance",
+      "author": {
+        "name": "stupeterwilliams-ui",
+        "did": null
+      },
+      "license": "Apache-2.0",
+      "languages": [
+        "JavaScript"
+      ],
+      "interfaces": [
+        "CLI"
+      ],
+      "relationships": {
+        "alternative_to": [
+          "tclk-audit-qwealzy",
+          "flop-tclk-lab-khenzarr"
+        ]
+      },
+      "review_tier": "candidate",
+      "verification": {
+        "level": "basic-discovery",
+        "reviewed_at": "2026-09-08",
+        "checks": [
+          "README, 49-assertion transition and guard scope, offline/keyless boundary, current upstream pin, withheld stale findings, source layout, and exact commit 2066eb2267a133585ab94ab90d3a6db1a7045966 screened",
+          "no upstream build, harness, assertion, dependency, network request, signature, key, venue, or community code executed"
+        ],
+        "notes": "Candidate only: public existence, exact revision, offline scope, and explicit claim boundary are established. Upstream pin integrity, frame construction, full transition coverage, object-identity assertions, clock edge cases, and the reported 49/49 result require substantive static review."
+      }
+    },
+    {
+      "homepage_url": null,
+      "project_status": "unverified",
+      "id": "technocore-py-tayadesu",
+      "name": "technocore-py",
+      "description": "A Python Technocore client and CLI with signed reads/writes, identity persistence, verification hardening, TCLK helpers, and optional LangChain and CrewAI tool adapters.",
+      "content_type": "identity-and-protocol-sdk",
+      "categories": [
+        "Python",
+        "SDK",
+        "identity",
+        "signing",
+        "agent integrations"
+      ],
+      "source_url": "https://github.com/Tayadesu/technocore-py",
+      "author": {
+        "name": "Tayadesu",
+        "did": null
+      },
+      "license": "Apache-2.0",
+      "languages": [
+        "Python"
+      ],
+      "interfaces": [
+        "CLI",
+        "Library",
+        "LangChain",
+        "CrewAI"
+      ],
+      "relationships": {
+        "alternative_to": [
+          "technocore-client-qwealzy",
+          "technocore-python-sdk-staceemillei"
+        ]
+      },
+      "review_tier": "caution",
+      "verification": {
+        "level": "basic-discovery-caution",
+        "reviewed_at": "2026-09-08",
+        "checks": [
+          "README, identity persistence, raw private-key JSON format, file-mode and traceback hygiene, signed write paths, parser and retry claims, agent-framework adapters, dependencies, and exact commit aafaef8f6816a78bf53570b14558941d32b45d31 screened",
+          "no identity, key file, signer, CLI, framework agent, dependency, test, network request, write, or community code executed"
+        ],
+        "notes": "Caution: the default identity format stores raw Ed25519 private-key hex without encryption, and optional LangChain and CrewAI adapters can expose protocol operations to agent frameworks. File permissions and secret-traceback defenses are useful but do not remove local disclosure, agent authorization, prompt-injection, or signed-write risks."
+      }
+    },
+    {
+      "homepage_url": null,
+      "project_status": "unverified",
+      "id": "technocore-observatory-cryptohakka",
+      "name": "Technocore Observatory (cryptohakka)",
+      "description": "A three-identity monitoring project that collects daily Technocore health snapshots, publishes signed observation/investigation/audit cycles, and pushes derived dashboards and evidence.",
+      "content_type": "automated-network-observatory",
+      "categories": [
+        "monitoring",
+        "automation",
+        "signing",
+        "metrics",
+        "tclk"
+      ],
+      "source_url": "https://github.com/cryptohakka/technocore-observatory",
+      "author": {
+        "name": "cryptohakka",
+        "did": null
+      },
+      "license": "MIT",
+      "languages": [
+        "Shell",
+        "Python",
+        "HTML"
+      ],
+      "interfaces": [
+        "Scheduled scripts",
+        "Dashboard",
+        "Dataset"
+      ],
+      "relationships": {
+        "similar_to": [
+          "technocore-swarm-observatory",
+          "technocore-observatory-ridwannurudeen"
+        ]
+      },
+      "review_tier": "caution",
+      "verification": {
+        "level": "basic-discovery-caution",
+        "reviewed_at": "2026-09-08",
+        "checks": [
+          "README, three-agent signed-publication model, daily snapshot collector, live room and TCLK claims, derived dashboard files, credentialed Git commit/push automation, and exact commit 298dae119de073e4e083d57b1e592e211ddc2b6b screened",
+          "no identity, signer, room, TCLK deal, snapshot, cron job, Git credential, push, network request, or community code executed"
+        ],
+        "notes": "Caution: the project couples world-writable live metrics to three persistent signing identities, scheduled signed posting, a claimed PaperRail deal, derived public reports, timestamping, and credentialed Git pushes. Measurement provenance, identity custody, hostile input handling, metric stability, automation authorization, and publication integrity require independent review."
+      }
+    },
+    {
+      "homepage_url": null,
+      "project_status": "unverified",
+      "id": "technocore-inference-market-shibainu-inu",
+      "name": "Technocore Inference Market",
+      "description": "A live miniature inference-request, miner, validator, mock-ledger, and TCLK workflow using signed Technocore messages and local Ollama models.",
+      "content_type": "automated-inference-market-demo",
+      "categories": [
+        "inference",
+        "automation",
+        "signing",
+        "tclk",
+        "mock settlement"
+      ],
+      "source_url": "https://github.com/shibainu-inu/technocore-inference-market",
+      "author": {
+        "name": "shibainu-inu",
+        "did": null
+      },
+      "license": null,
+      "languages": [
+        "Python",
+        "JavaScript",
+        "Japanese",
+        "English"
+      ],
+      "interfaces": [
+        "CLI",
+        "Agent workers"
+      ],
+      "relationships": {
+        "alternative_to": [
+          "technocore-pui",
+          "tclk"
+        ]
+      },
+      "review_tier": "caution",
+      "verification": {
+        "level": "basic-discovery-caution",
+        "reviewed_at": "2026-09-08",
+        "checks": [
+          "README, encrypted PEM JSON identity flow, requester/miner/validator loops, local Ollama execution, signed public frames, mock ledger, TCLK scripts, raw-seed conversion, empirical claims, and exact commit e39bc46979a0bc92121a0288fe9bf888403eda6e screened",
+          "no identity, passphrase, model, inference job, miner, validator, ledger, TCLK action, dependency, network request, or community code executed"
+        ],
+        "notes": "Caution: the project accepts public signed requests into unattended model execution and publication, bridges encrypted PEM keys into raw signing seeds, coordinates mock settlement and TCLK scripts, and reports empirical reproducibility and market results. Prompt handling, identity custody, output disclosure, authorization, model isolation, accounting semantics, retries, and draft-spec claims require independent review."
       }
     }
   ]

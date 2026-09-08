@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-07T09:05:44Z",
+  "generated_at": "2026-09-08T03:00:51Z",
   "scope": "Independent learning resources. Inclusion is not endorsement, and instructions may become stale as Technocore changes.",
   "resources": [
     {
@@ -87,6 +87,35 @@
           "agent allocation, faucet, spending formula, and timing read from the primary page"
         ],
         "notes": "Official draft, not a final specification or eligibility guarantee. The page says figures remain provisional and the definitive Yellow Paper is not final."
+      }
+    },
+    {
+      "id": "flop-public-knowledge",
+      "title": "FLOP Public Knowledge",
+      "type": "official-documentation-corpus",
+      "languages": [
+        "English"
+      ],
+      "url": "https://ask.flop.finance/llms.txt",
+      "project_status": "official",
+      "reviewed_at": "2026-09-08",
+      "based_on": "18-page published corpus observed 2026-09-08",
+      "useful_for": [
+        "draft FLOP architecture and terminology",
+        "agent integration and spend controls",
+        "mining, validation, staking, and governance",
+        "draft testnet and airdrop mechanics",
+        "machine-readable citations"
+      ],
+      "verification": {
+        "level": "official-source-reviewed",
+        "checks": [
+          "served from the official flop.finance domain and branded as curated human-authored FLOP Network documentation",
+          "llms.txt enumerates 18 published pages and exposes their primary URLs and summaries",
+          "representative pages preserve draft-status, planned-versus-live, provisional, and not-yet-wired boundaries",
+          "the advertised remote MCP endpoint was not invoked"
+        ],
+        "notes": "Official explanatory documentation, not a final Yellow Paper, live-network proof, or complete eligibility guarantee. Individual pages carry their own update dates and some protocol parameters remain planned, provisional, or under review."
       }
     }
   ]
