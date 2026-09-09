@@ -712,6 +712,19 @@
         "llms.txt"
       ],
       "summary": "Added three differentiated candidates and six immediate Cautions after exact-revision static screening; rejected empty, thin, repetitive, misleading eligibility, unsafe settlement, and farming-oriented projects; and found no later official source or live-setting change."
+    },
+    {
+      "id": "discovery-community-tools-2026-09-08-2000",
+      "changed_at": "2026-09-09T03:14:40Z",
+      "type": "catalog_updated",
+      "resources": [
+        "catalog.json",
+        "feed.json",
+        "sources.json",
+        "changes.json",
+        "llms.txt"
+      ],
+      "summary": "Added four differentiated candidates and eight immediate Cautions after exact-revision static screening; rejected repetitive guides, coordinated proof ledgers, farming swarms, unsafe multi-key systems, empty repositories, and repeated listings; and found no material official or live-service change."
     }
   ]
 }

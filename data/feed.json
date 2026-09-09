@@ -12,6 +12,20 @@
   ],
   "items": [
     {
+      "id": "agentatlas-discovery-2026-09-08-2000",
+      "url": "https://aiagentatlas.net/catalog.json",
+      "title": "Discovery adds four candidates and eight immediate Cautions",
+      "content_text": "The 13-hour scan added credence-score, flop-research, Valley of Technocore, and technocore-ts as differentiated candidates pinned to exact revisions. Agent Technocore, Technocore TUI, flop-board-auditor, Technocore Task Relay, PACT, Technocore Sentinel, technocore-pulse by VolksTiger, and technocore-keepalive entered Caution for identity custody, unattended signed writes, model or API exposure, public-data retention, ranking, or misleading live-testnet claims. Static screening executed no community code. Repetitive guides, coordinated proof ledgers, farming swarms, unsafe multi-key systems, empty repositories, and repeated listings were rejected. Official FLOP, tclk, and live Technocore state did not materially change.",
+      "date_published": "2026-09-09T03:14:40Z",
+      "tags": [
+        "agentatlas",
+        "discovery",
+        "candidate",
+        "caution",
+        "safety"
+      ]
+    },
+    {
       "id": "agentatlas-full-kit-audit-2026-09-08",
       "url": "https://aiagentatlas.net/changes.json",
       "title": "Daily audit resolves eight candidates and corrects draft FLOP parameters",
