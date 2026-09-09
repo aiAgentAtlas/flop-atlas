@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-09T03:14:40Z",
+  "generated_at": "2026-09-09T15:03:53Z",
   "sources": [
     {
       "id": "flop-website",
@@ -11,7 +11,7 @@
         "launch statements",
         "participation links"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -24,7 +24,7 @@
         "airdrop signals",
         "ecosystem updates"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": false
     },
@@ -37,7 +37,7 @@
         "technical documentation",
         "releases"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -51,7 +51,7 @@
         "operating limits",
         "write-refusal behavior"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -63,7 +63,7 @@
         "DID-gated task statement",
         "airdrop reward statement"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": false
     },
@@ -76,7 +76,7 @@
         "Technocore faucet statement",
         "DID-key access statement"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": false
     },
@@ -89,7 +89,7 @@
         "performance changes",
         "documentation corrections"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -102,7 +102,7 @@
         "concurrency fixes",
         "room-listing cache changes"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -115,7 +115,7 @@
         "room-listing cache correction",
         "benchmark results"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -128,7 +128,7 @@
         "interoperability guide",
         "static-document cache behavior"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -141,7 +141,7 @@
         "effective configuration endpoint",
         "configuration disclosure boundaries"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -155,7 +155,7 @@
         "HTTP 422 refusal behavior",
         "effective configuration changes"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -167,7 +167,7 @@
         "read-only explorer source",
         "signature inspection implementation"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -179,7 +179,7 @@
         "GET-only client source",
         "local identity handling"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -193,7 +193,7 @@
         "signed note and room publishing",
         "hourly automation"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -205,7 +205,7 @@
         "cross-platform beginner guide",
         "identity safety reminders"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -218,7 +218,7 @@
         "withdrawn beginner execution guide",
         "security review notes"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -231,7 +231,7 @@
         "additional FLOP allocation statement",
         "useful-participation reward intent"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": false
     },
@@ -244,7 +244,7 @@
         "compatibility rationale",
         "signature test update"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -257,7 +257,7 @@
         "room generation field",
         "cursor continuity tests"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -270,7 +270,7 @@
         "offline re-verification semantics",
         "replay-window tradeoff"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -283,7 +283,7 @@
         "CORS response-read boundary",
         "ambiguous browser failure behavior"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -296,7 +296,7 @@
         "capacity invariant",
         "unreleased status"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -309,7 +309,7 @@
         "generation header",
         "expiry and replay-material boundaries"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -320,7 +320,7 @@
       "publishes": [
         "source-only room-list cache reliability change"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -331,7 +331,7 @@
       "publishes": [
         "source-only input validation and OpenAPI contract changes"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -342,7 +342,7 @@
       "publishes": [
         "source-only long-poll held/refused response signal"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -355,7 +355,7 @@
         "streamable HTTP remote transport",
         "signed MCP tool custody modes"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -367,7 +367,7 @@
         "v0.11.0 release notes",
         "deployed protocol and MCP changes"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -379,7 +379,7 @@
         "v0.11.1 release notes",
         "creation-path and sequence-state performance changes"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -392,7 +392,7 @@
         "retained workers.dev alias",
         "deployment boundary"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -405,7 +405,7 @@
         "MCP Server Card corrections",
         "ephemeral expiry correction"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -418,7 +418,7 @@
         "canonical MCP endpoint",
         "batched lifetime-counter semantics"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -430,7 +430,7 @@
         "tclk/1 escrowed-deal convention",
         "settlement and public-room safety boundaries"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -442,7 +442,7 @@
         "source-only compaction line-cap correction",
         "retained byte-budget semantics"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -454,7 +454,7 @@
         "source-only newest-record compaction preservation",
         "acknowledged-write retention boundary"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -466,7 +466,7 @@
         "tclk/1 specification and reference implementation",
         "alpha status and settlement-rail limitations"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -479,7 +479,7 @@
         "provisional testnet and mainnet timing",
         "provisional genesis airdrop allocations and agent earning mechanics"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -492,7 +492,7 @@
         "deployed compaction and retention fixes",
         "OpenAPI format documentation and document-fallback changes"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -505,7 +505,7 @@
         "deployed asynchronous health endpoint",
         "unchanged health response contract"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -518,7 +518,7 @@
         "append benchmark results",
         "unchanged behavior claim"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -531,7 +531,7 @@
         "room-table failure state",
         "stale-list preservation behavior"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -544,7 +544,7 @@
         "background refresh and canonical cache-key behavior",
         "stale-copy and caller-specific response safeguards"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -557,7 +557,7 @@
         "wildcard routing fix for query-bearing /rooms requests",
         "edge snapshot dependency and manifest corrections"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -570,7 +570,7 @@
         "optional stateless follow-up reference token",
         "duplicate and follow-up request measurement"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -583,7 +583,7 @@
         "strict export parsing and venue ordering",
         "per-record timestamp and sender verification"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -596,7 +596,7 @@
         "lock-deadline and rail-reference guards",
         "canonical settlement-rail registry and heartbeat frame"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -609,7 +609,7 @@
         "configurable stillborn first-message window",
         "duplicate-refusal, append-lock, health-display, and human-page changes"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -622,7 +622,7 @@
         "whole-hour and seven-day bounds",
         "effective configuration reporting correction"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -635,7 +635,7 @@
         "reaper lock-contention fix",
         "fail-closed global count semantics"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -648,7 +648,7 @@
         "signed posting from /humans",
         "delegation note convention and long polling"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -661,7 +661,7 @@
         "v0.12.1 version bump",
         "count baseline correction"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -672,7 +672,7 @@
       "publishes": [
         "documented stillborn configuration alignment"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -684,7 +684,7 @@
         "note-read cacheability",
         "read-budget footer stride"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -697,7 +697,7 @@
         "missing-note CAS rejection",
         "reaper cadence"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -708,7 +708,7 @@
       "publishes": [
         "malformed stats-token handling"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -720,7 +720,7 @@
         "bounded MCP note listing",
         "note total reporting"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -733,7 +733,7 @@
         "reachable passkey enrolment",
         "browser capability and status-message fixes"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -746,7 +746,7 @@
         "bounded MCP note listing and POST upload",
         "signed-note, passkey, decoding, cache, and conflict-value fixes"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -757,7 +757,7 @@
       "publishes": [
         "signed note condition validation before nonce burn"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -768,7 +768,7 @@
       "publishes": [
         "MCP swept-empty signed message refusal"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -779,7 +779,7 @@
       "publishes": [
         "base58btc leading-zero preservation"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -790,7 +790,7 @@
       "publishes": [
         "409 conflict-value untrusted framing"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -804,7 +804,7 @@
         "agent-readable source index",
         "public documentation assistant boundary"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -817,7 +817,7 @@
         "current target parameters and allocations",
         "implementation-status matrix"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     },
@@ -828,7 +828,7 @@
       "publishes": [
         "manual-only probe v1 operator measurement convention"
       ],
-      "last_checked_at": "2026-09-09T03:14:40Z",
+      "last_checked_at": "2026-09-09T15:03:53Z",
       "next_review_due": "2026-09-10",
       "source_available": true
     }

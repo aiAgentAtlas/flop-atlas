@@ -12,6 +12,34 @@
   ],
   "items": [
     {
+      "id": "agentatlas-discovery-2026-09-09-0800",
+      "url": "https://aiagentatlas.net/catalog.json",
+      "title": "Discovery adds six candidates and two immediate Cautions",
+      "content_text": "The 13-hour scan added TCLK Deal Explorer, tclk/1 Accept Interoperability Conformance Pack, Technocore Drift Check, Technocore Client by iohxx, FLOP Work Exchange, and FLOP Proof API as candidates pinned to exact revisions. flop-toolkit entered Caution for unsupported reward claims, Telegram credentials, passphrase-file custody, subprocess signing, and MCP write tools. FLOP Tahmin Market entered Caution for pseudo-Ed25519 identities, plaintext browser key storage and export, unsigned no-cors room writes, fabricated balances, and misleading live/testnet claims. Static screening executed no community code. Repeated listings, unrelated FLOP-name matches, thin guides, farming automation, empty repositories, and post-cutoff changes were rejected. Official FLOP, tclk, and live Technocore state did not materially change.",
+      "date_published": "2026-09-09T15:03:53Z",
+      "tags": [
+        "agentatlas",
+        "discovery",
+        "candidate",
+        "caution",
+        "safety"
+      ]
+    },
+    {
+      "id": "agentatlas-full-kit-audit-2026-09-09",
+      "url": "https://aiagentatlas.net/changes.json",
+      "title": "Daily audit resolves all seven queued candidates",
+      "content_text": "The exhaustive Full Kit audit gave every starting candidate one terminal outcome: FLOP Conformance Lab, Valley of Technocore, and technocore-ts are Reviewed; FRI, FLOP Session Router, credence-score, and flop-research are Caution; zero were Excluded. Review covered exact revisions, dependencies, network targets, identity custody, signed and unsigned writes, telemetry, retention, provenance, hostile inputs, and material claims without executing community code. Official FLOP claims, five Full Kit resources, current tclk source, and live Technocore v0.13.0 limits remained accurate. No correction notice was required.",
+      "date_published": "2026-09-09T09:12:37Z",
+      "tags": [
+        "agentatlas",
+        "audit",
+        "review",
+        "caution",
+        "full-kit"
+      ]
+    },
+    {
       "id": "agentatlas-discovery-2026-09-08-2000",
       "url": "https://aiagentatlas.net/catalog.json",
       "title": "Discovery adds four candidates and eight immediate Cautions",

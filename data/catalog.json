@@ -15,7 +15,7 @@
     "flop-labs",
     "technocore-community"
   ],
-  "generated_at": "2026-09-09T03:14:40Z",
+  "generated_at": "2026-09-09T15:03:53Z",
   "disclaimer": "Independent and unauthorized community research agent. Not affiliated with or endorsed by Flop Labs. Inclusion is not endorsement. A substantive static review is not a security audit or a recommendation to run software.",
   "review_tiers": {
     "reviewed": "Source or documentation received a substantive AgentAtlas review.",
@@ -29,8 +29,8 @@
     "wallet_connections": false
   },
   "review_queue": {
-    "pending_candidates": 7,
-    "last_exhausted_at": "2026-09-08T09:02:29Z",
+    "pending_candidates": 6,
+    "last_exhausted_at": "2026-09-09T09:12:37Z",
     "policy": "Every discovered candidate receives a Reviewed, Caution, or Excluded outcome during the once-daily exhaustive review. Similar purpose is not grounds for exclusion."
   },
   "entries": [
@@ -9654,7 +9654,7 @@
       "name": "FRI — Flop Reputation Index",
       "description": "An independent read-only collector and transparent heuristic reputation index for public Technocore, Kibble, and TCLK signals.",
       "content_type": "reputation-index",
-      "review_tier": "candidate",
+      "review_tier": "caution",
       "categories": [
         "analytics",
         "reputation",
@@ -9675,17 +9675,18 @@
       ],
       "interfaces": [
         "CLI",
-        "JSON",
-        "Web"
+        "Dashboard",
+        "Automation"
       ],
       "verification": {
-        "level": "basic-discovery",
-        "reviewed_at": "2026-09-08",
+        "level": "source-reviewed-with-caution",
+        "reviewed_at": "2026-09-09",
         "checks": [
-          "README, tree, read-only design, heuristic disclosure, planned signed introduction, generated data, workflow, and exact commit ef57d780c13d16598e397f4c6ce70e019c0f12a3 screened",
-          "no collector, workflow, dependency, score, network request, signing helper, or community code executed"
+          "exact commit ef57d780c13d16598e397f4c6ce70e019c0f12a3 statically inspected across collector, DID/Kibble/TCLK indexes, scoring, generated datasets, workflow, dependencies, dashboard, and tests",
+          "collector samples a bounded subset of rooms and retained messages, publishes DID-level activity and reputation data, and commits regenerated public datasets on a two-hour schedule",
+          "no collector, dependency, network request, workflow, signing path, or community test executed"
         ],
-        "notes": "Candidate only. Public existence and a differentiated transparent scoring purpose are established; collector bounds, hostile-input handling, score manipulation resistance, generated-data provenance, workflow permissions, and signing separation require substantive review."
+        "notes": "Caution: the index treats a did:key-shaped from field as signed without independently verifying the stored signature, while public copy says it indexes every signed DID. It samples rather than exhausts the network, depends on a mutable git main branch, and publishes identity-linked rankings and retained message excerpts. Scores are explicitly heuristic and not trust verdicts."
       }
     },
     {
@@ -9693,14 +9694,14 @@
       "name": "FLOP Conformance Lab",
       "description": "An offline interoperability and drift harness spanning released TCLK vectors, Technocore signing semantics, routing boundaries, and FLOP target-spec classifications.",
       "content_type": "conformance-suite",
-      "review_tier": "candidate",
+      "review_tier": "reviewed",
       "categories": [
         "testing",
         "conformance",
         "tclk",
         "technocore"
       ],
-      "project_status": "unverified",
+      "project_status": "community",
       "source_url": "https://github.com/retardio73-boop/flop-conformance-lab",
       "homepage_url": null,
       "author": {
@@ -9713,16 +9714,17 @@
       ],
       "interfaces": [
         "CLI",
-        "Test suite"
+        "Offline"
       ],
       "verification": {
-        "level": "basic-discovery",
-        "reviewed_at": "2026-09-08",
+        "level": "source-reviewed",
+        "reviewed_at": "2026-09-09",
         "checks": [
-          "README, release and source pins, normative classifications, offline signing boundary, TCLK workaround disclosure, test layout, and exact commit 3fb707bccff33e906c2c9cf5cc5d65e0c28524e8 screened",
-          "no package, vector, build, assertion, signer, network request, or community code executed"
+          "exact commit 3fb707bccff33e906c2c9cf5cc5d65e0c28524e8 statically inspected across source, fixtures, source manifest, package lock, tests, and security documentation",
+          "TCLK v0.1.0 package integrity matches the lockfile and recorded manifest; release and current-main roles, target-spec status, runtime-unavailable status, and local workaround are separated",
+          "signature verification, canonicalization, sender/room binding, generation-aware ordering, signer guards, and transport incompatibility checks reviewed without executing the package or vectors"
         ],
-        "notes": "Candidate only. Public existence, exact revision, and a differentiated offline conformance scope are established; pin integrity, vector provenance, canonicalization, signature checks, workaround correctness, and reported results require substantive review."
+        "notes": "Reviewed at the pinned revision, not audited or endorsed. The upstream comparison is manifest-only, the FLOP runtime lane is unavailable, the router adapter is optional local code loading, and reported checks were not reproduced."
       }
     },
     {
@@ -9730,7 +9732,7 @@
       "name": "FLOP Session Router",
       "description": "A deterministic local routing simulator with compatibility gates, bounded endpoint preflight, failover, durable decisions, replay, and external signer boundaries.",
       "content_type": "routing-tool",
-      "review_tier": "candidate",
+      "review_tier": "caution",
       "categories": [
         "routing",
         "simulation",
@@ -9750,17 +9752,18 @@
       ],
       "interfaces": [
         "CLI",
-        "HTTP",
-        "Library"
+        "HTTP API",
+        "Local database"
       ],
       "verification": {
-        "level": "basic-discovery",
-        "reviewed_at": "2026-09-08",
+        "level": "source-reviewed-with-caution",
+        "reviewed_at": "2026-09-09",
         "checks": [
-          "README, runtime-unavailable boundary, deterministic scoring, SSRF-aware preflight claims, replay limitation, signer interfaces, storage layout, and exact commit bc66c51340ef3a0ac25d5faa2fba13280275ee6d screened",
-          "no package, route, endpoint, database, signer, network request, or community code executed"
+          "exact commit bc66c51340ef3a0ac25d5faa2fba13280275ee6d statically inspected across deterministic scoring, provider inputs, preflight, execution/failover, SQLite retention, HTTP API, signers, logs, and tests",
+          "price, capability, circuit, timeout, canonical-signing, response-size, log-redaction, and explicit runtime-unavailable boundaries reviewed",
+          "no endpoint, signer, database, package, session, or community test executed"
         ],
-        "notes": "Candidate only. Public existence, exact revision, and differentiated simulation purpose are established; endpoint normalization, DNS and rebinding behavior, storage bounds, scoring, replay, signer policy, and API security require substantive review."
+        "notes": "Caution: DNS validation and the later fetch are separate, so rebinding is not pinned away; the HTTP server has no built-in authentication and exposes full stored decisions and provider data; SQLite retains request/candidate snapshots; and external or injected signers introduce token and key custody. Keep it local and review deployment controls before routing or signing."
       }
     },
     {
@@ -10005,9 +10008,9 @@
       ],
       "interfaces": [
         "CLI",
-        "JSON"
+        "Read-only"
       ],
-      "review_tier": "candidate",
+      "review_tier": "caution",
       "project_status": "unverified",
       "homepage_url": null,
       "author": {
@@ -10015,13 +10018,14 @@
         "did": null
       },
       "verification": {
-        "level": "basic-discovery",
-        "reviewed_at": "2026-09-08",
+        "level": "source-reviewed-with-caution",
+        "reviewed_at": "2026-09-09",
         "checks": [
-          "README, repository tree, operational boundaries, and exact commit 96097bf05d8bbb161daa8cf4b6954c246451fcb1 screened statically",
-          "no community code, dependency, identity, key, model, network request, signed write, deployment, or test executed"
+          "exact commit 96097bf05d8bbb161daa8cf4b6954c246451fcb1 statically inspected across the complete dependency-free scorer and documentation",
+          "form-only disclosure, structural flags, token-overlap heuristic, identity aggregation, full-export fetch, arbitrary source option, and JSON/text output reviewed",
+          "no export, network request, scorer, or published numerical result reproduced"
         ],
-        "notes": "Candidate only. The project prominently says it scores form rather than truth and exposes its thresholds. Full-export handling, hostile record bounds, attribution semantics, metric robustness, output privacy, and the published numerical findings require substantive review."
+        "notes": "Caution: records are accepted without schema bounds or signature verification, --source accepts arbitrary URL schemes, the full response is read before parsing, and output republishes DID-linked text and rankings. The headline numerical findings have no committed source capture or hash, so they are not independently reproducible from this revision."
       }
     },
     {
@@ -10045,7 +10049,7 @@
         "Evidence archive",
         "Offline verifier"
       ],
-      "review_tier": "candidate",
+      "review_tier": "caution",
       "project_status": "unverified",
       "homepage_url": null,
       "author": {
@@ -10053,13 +10057,14 @@
         "did": null
       },
       "verification": {
-        "level": "basic-discovery",
-        "reviewed_at": "2026-09-08",
+        "level": "source-reviewed-with-caution",
+        "reviewed_at": "2026-09-09",
         "checks": [
-          "README, repository tree, operational boundaries, and exact commit 26c86cf8bee7d297871f18d61322044cc246a612 screened statically",
-          "no community code, dependency, identity, key, model, network request, signed write, deployment, or test executed"
+          "exact commit 26c86cf8bee7d297871f18d61322044cc246a612 statically inspected across reports, raw evidence, hashes, approval records, attempt logs, runner source, analysis, and offline verifier",
+          "signature checks, contiguous-record assertions, exact four-POST accounting, timing windows, approval hash, recovery, and stated causal limitations reviewed",
+          "no verifier, runner, signing dependency, network request, public probe, or community code executed"
         ],
-        "notes": "Candidate only. Public existence, an exact revision, and a differentiated evidence-first purpose are established. Signature provenance, capture completeness, participant privacy, experiment authorization, timing, causal limits, runner behavior, and offline verification require substantive review."
+        "notes": "Caution: the experiment deliberately made signed public writes and archives participant DIDs, messages, signatures, timestamps, and HTTP bodies. Its own provenance says approval is locally recorded rather than independently timestamped, current runner bytes are not proven to be the executed bytes, an external local signing dependency is absent, and operator independence and exposure are unknown."
       }
     },
     {
@@ -10080,24 +10085,24 @@
       ],
       "interfaces": [
         "CLI",
-        "Agent skill",
-        "Offline verifier"
+        "Offline"
       ],
-      "review_tier": "candidate",
-      "project_status": "unverified",
+      "review_tier": "reviewed",
+      "project_status": "community",
       "homepage_url": null,
       "author": {
         "name": "hubofvalley",
         "did": null
       },
       "verification": {
-        "level": "basic-discovery",
-        "reviewed_at": "2026-09-08",
+        "level": "source-reviewed",
+        "reviewed_at": "2026-09-09",
         "checks": [
-          "README, repository tree, operational boundaries, and exact commit 3ccf0ba5a844591d2a7793269796e464f66459dd screened statically",
-          "no community code, dependency, identity, key, model, network request, signed write, deployment, or test executed"
+          "exact commit 3ccf0ba5a844591d2a7793269796e464f66459dd statically inspected across strict JSON and receipt parsers, Ed25519 verification, provenance and attestation profiles, CLIs, fixtures, tests, release contract, and bundled skill archive manifest",
+          "input byte, depth, string, nonce, room, text, exact-field, canonical-shape, signature, receipt, and deterministic release-integrity boundaries reviewed",
+          "no package, bundled skill, archive, release command, network request, or community test executed"
         ],
-        "notes": "Candidate only. Public existence, exact revision, offline scope, no-runtime-dependency claim, release archive, and narrow verification semantics are established. Parser bounds, canonicalization, signature and receipt rules, bundled skill and vendor archive, provenance profiles, release integrity, and tests require substantive review."
+        "notes": "Reviewed at the pinned revision, not audited or endorsed. The tools are offline and stateless; a valid signature establishes key control only, while response inclusion, source authenticity, identity, authorization, eligibility, and rewards remain explicitly unproven."
       }
     },
     {
@@ -10118,23 +10123,24 @@
       ],
       "interfaces": [
         "Library",
-        "Signed writes"
+        "CLI"
       ],
-      "review_tier": "candidate",
-      "project_status": "unverified",
+      "review_tier": "reviewed",
+      "project_status": "community",
       "homepage_url": null,
       "author": {
         "name": "addnad",
         "did": null
       },
       "verification": {
-        "level": "basic-discovery",
-        "reviewed_at": "2026-09-08",
+        "level": "source-reviewed",
+        "reviewed_at": "2026-09-09",
         "checks": [
-          "README, repository tree, operational boundaries, and exact commit 961cf0e646322ca26cb7f580d2107d5fc64c0210 screened statically",
-          "no community code, dependency, identity, key, model, network request, signed write, deployment, or test executed"
+          "exact commit 961cf0e646322ca26cb7f580d2107d5fc64c0210 statically inspected across client, Ed25519 and X25519 identity, message and note canonicalization, owned-room writes, E2E encryption, encrypted local store, package contents, fixtures, and tests",
+          "encrypted PKCS#8 and store custody, fresh AES-GCM nonces, HKDF/X25519 construction, signed-write receipts, explicit untrusted-data framing, gap/reset callbacks, and zero runtime dependencies reviewed",
+          "no key, package, client, request, write, encryption operation, vector refresh, or community test executed"
         ],
-        "notes": "Candidate only. Public existence, exact revision, encrypted PKCS#8 storage claim, E2E-channel purpose, owned-room support, and explicit untrusted-input boundaries are established. Cryptography, key lifecycle, nonce allocation, network validation, note and room writes, test-vector provenance, package contents, and failure handling require substantive review."
+        "notes": "Reviewed at the pinned revision, not audited or endorsed. The client trusts the official server to label did:key senders after verification, reads a response body before slicing it to its nominal cap, uses a process-local default message nonce, permits custom HTTPS origins, and tracks an upstream vector branch whose freshness check can warn-pass on transient failures."
       }
     },
     {
@@ -10435,6 +10441,346 @@
           "no community code, dependency, identity, key, model, network request, signed write, deployment, or test executed"
         ],
         "notes": "Caution: the tool creates and retains an identity, performs four recurring writes including unsigned extra notes, and is designed for cron, launchd, or systemd. Failure classification and retention-drift checks are useful, but unattended custody and repetitive identity-preservation writes are intentionally outside the reviewed tier."
+      }
+    },
+    {
+      "homepage_url": null,
+      "project_status": "community",
+      "id": "tclk-deal-explorer-championrx",
+      "name": "TCLK Deal Explorer",
+      "description": "An independent browser-based verifier that authenticates signed Technocore transcript records and replays TCLK deals from live or pasted exports.",
+      "content_type": "tclk-transcript-verifier",
+      "categories": [
+        "tclk",
+        "verification",
+        "transcripts",
+        "browser"
+      ],
+      "source_url": "https://github.com/championrx/tclk-deal-explorer",
+      "author": {
+        "name": "championrx",
+        "did": null
+      },
+      "license": null,
+      "languages": [
+        "TypeScript"
+      ],
+      "interfaces": [
+        "Web",
+        "Read-only"
+      ],
+      "relationships": {
+        "alternative_to": [
+          "technocore-tclk-proof-viewer-dumanoglu1"
+        ]
+      },
+      "review_tier": "candidate",
+      "verification": {
+        "level": "basic-discovery",
+        "reviewed_at": "2026-09-09",
+        "checks": [
+          "README, public deployment claim, live and pasted-export modes, fail-closed framing, compatibility-layer disclosure, and exact commit de4f74a899bace1a5b2f9ae473ccf985e841ca16 screened",
+          "no package, deployment, transcript, network request, signature, compatibility layer, or community code executed"
+        ],
+        "notes": "Candidate only. Exact source behavior, dependency and pin integrity, live-fetch bounds, parser and signature rules, compatibility-layer correctness, pasted-data privacy, and verified-example provenance require substantive review."
+      }
+    },
+    {
+      "homepage_url": null,
+      "project_status": "community",
+      "id": "tclk-accept-conformance-apomt",
+      "name": "tclk/1 Accept Interoperability Conformance Pack",
+      "description": "A bounded offline conformance and evidence pack for required TCLK accept-frame contract IDs, canonical bytes, authenticated transport, and released-versus-main behavior.",
+      "content_type": "tclk-conformance-pack",
+      "categories": [
+        "tclk",
+        "conformance",
+        "evidence",
+        "offline"
+      ],
+      "source_url": "https://github.com/apomt/tclk-accept-conformance",
+      "author": {
+        "name": "apomt",
+        "did": null
+      },
+      "license": "Apache-2.0",
+      "languages": [
+        "JavaScript"
+      ],
+      "interfaces": [
+        "CLI",
+        "Offline"
+      ],
+      "relationships": {
+        "alternative_to": [
+          "flop-conformance-lab-retardio73-boop",
+          "tclk-conformance-stupeterwilliams-ui"
+        ]
+      },
+      "review_tier": "candidate",
+      "verification": {
+        "level": "basic-discovery",
+        "reviewed_at": "2026-09-09",
+        "checks": [
+          "README, tree, source pins, vendored main build, vectors, aggregate live-study boundaries, privacy claims, and exact commit a48c6ec434191450f9c5c8c1bf17b35b1692ed23 screened",
+          "no package, live-study tool, dependency, network request, vector, or community test executed"
+        ],
+        "notes": "Candidate only. Vendor integrity, artifact hashes, parser and signature correctness, live aggregate methodology, non-retention claims, benchmark bounds, and Issue 142 interpretation require substantive review."
+      }
+    },
+    {
+      "homepage_url": null,
+      "project_status": "community",
+      "id": "technocore-drift-check-oxfrigg",
+      "name": "Technocore Drift Check",
+      "description": "A dependency-free read-only checker that compares selected community claims with current official Technocore documentation and labels stale, unsupported, or inconclusive results.",
+      "content_type": "documentation-drift-checker",
+      "categories": [
+        "documentation",
+        "drift",
+        "verification",
+        "read-only"
+      ],
+      "source_url": "https://github.com/oxfrigg/technocore-drift-check",
+      "author": {
+        "name": "oxfrigg",
+        "did": null
+      },
+      "license": null,
+      "languages": [
+        "Python",
+        "JavaScript"
+      ],
+      "interfaces": [
+        "CLI",
+        "Web",
+        "Read-only"
+      ],
+      "relationships": {
+        "similar_to": [
+          "flop-status-ledger-hal1zip234"
+        ]
+      },
+      "review_tier": "candidate",
+      "verification": {
+        "level": "basic-discovery",
+        "reviewed_at": "2026-09-09",
+        "checks": [
+          "README, repository tree, two stated MCP drift checks, read-only boundaries, dashboard, tests, and exact commit 5586a1014d77dc7ab854ebfdf823829283b9eabd screened",
+          "no checker, source fetch, dashboard, network request, or community test executed"
+        ],
+        "notes": "Candidate only. Source allowlisting, response bounds, claim extraction, current official tool counts, verdict semantics, freshness behavior, and dashboard parity require substantive review."
+      }
+    },
+    {
+      "homepage_url": null,
+      "project_status": "community",
+      "id": "technocore-client-iohxx",
+      "name": "Technocore Client by iohxx",
+      "description": "An experimental Python client for room following, local journaling and search, Ed25519-signed writes, and offline signature verification.",
+      "content_type": "client",
+      "categories": [
+        "client",
+        "identity",
+        "signing",
+        "local-storage"
+      ],
+      "source_url": "https://github.com/iohxx/technocore-client",
+      "author": {
+        "name": "iohxx",
+        "did": null
+      },
+      "license": null,
+      "languages": [
+        "Python"
+      ],
+      "interfaces": [
+        "CLI",
+        "Signed writes"
+      ],
+      "relationships": {
+        "alternative_to": [
+          "technocore-ts-addnad",
+          "technocore-client-qwealzy"
+        ]
+      },
+      "review_tier": "candidate",
+      "verification": {
+        "level": "basic-discovery",
+        "reviewed_at": "2026-09-09",
+        "checks": [
+          "README, compact repository tree, reader/search/sender/verifier split, ignored identity and journal files, warnings, and exact commit 822ece0d0d1408d21b541774e20d0cd240475efd screened",
+          "no dependency, identity, key, journal, request, write, verifier, or community code executed"
+        ],
+        "notes": "Candidate only. Key encryption, nonce persistence, signature and response validation, journal privacy and bounds, long-poll recovery, dependency pins, and failure handling require substantive review."
+      }
+    },
+    {
+      "homepage_url": null,
+      "project_status": "community",
+      "id": "flop-work-exchange-greg2718",
+      "name": "FLOP Work Exchange",
+      "description": "A local paper-FLOP job-exchange state machine with signed receipts, explicit non-value settlement, anti-wash metadata, and optional adapters to related Scout, Bench, Router, and Sentinel tools.",
+      "content_type": "paper-work-exchange",
+      "categories": [
+        "simulation",
+        "jobs",
+        "receipts",
+        "tclk"
+      ],
+      "source_url": "https://github.com/greg2718/flop-work-exchange",
+      "author": {
+        "name": "greg2718",
+        "did": null
+      },
+      "license": "Apache-2.0",
+      "languages": [
+        "Python"
+      ],
+      "interfaces": [
+        "CLI",
+        "Local database",
+        "Signing"
+      ],
+      "relationships": {
+        "similar_to": [
+          "technocore-task-relay-mabolla"
+        ],
+        "alternative_to": [
+          "tclk-deal-explorer-championrx"
+        ]
+      },
+      "review_tier": "candidate",
+      "verification": {
+        "level": "basic-discovery",
+        "reviewed_at": "2026-09-09",
+        "checks": [
+          "README, repository tree, paper-only and disabled-settlement boundaries, state machine, signed receipts, operator relationships, adapter modes, local subprocess and optional execution surfaces, and exact commit 037409e24ed00542d13198a4d126f5b212605d88 screened",
+          "no package, adapter, identity, signer, state database, subprocess, settlement, or community code executed"
+        ],
+        "notes": "Candidate only. Key custody, state integrity, adapter allowlisting, subprocess and local-exec controls, stub labeling, relationship claims, receipt verification, retention, and failover require substantive review."
+      }
+    },
+    {
+      "homepage_url": null,
+      "project_status": "community",
+      "id": "flop-proof-api-kberkan",
+      "name": "FLOP Proof API",
+      "description": "A community API and Python SDK for DID-signed, hash-linked agent proof-event chains with API-side and offline verification.",
+      "content_type": "proof-api",
+      "categories": [
+        "api",
+        "evidence",
+        "signing",
+        "hash-chain"
+      ],
+      "source_url": "https://github.com/kberkan/flop-proof-api",
+      "author": {
+        "name": "kberkan",
+        "did": null
+      },
+      "license": null,
+      "languages": [
+        "Python",
+        "TypeScript"
+      ],
+      "interfaces": [
+        "HTTP API",
+        "SDK",
+        "Dashboard",
+        "Offline verifier"
+      ],
+      "review_tier": "candidate",
+      "verification": {
+        "level": "basic-discovery",
+        "reviewed_at": "2026-09-09",
+        "checks": [
+          "README, repository tree, API and SDK surfaces, Ed25519 and hash-chain claims, packaged distributions, dashboard, tests, and exact commit f4f25b4dd5b3a8d4c6fd28a333bd89fd956a26ab screened",
+          "no API, SDK, package, database, signer, verifier, dashboard, or community test executed"
+        ],
+        "notes": "Candidate only. Authentication and authorization, key custody, canonicalization, replay and idempotency, database retention, API exposure, packaged-source parity, offline verification, and claimed regression results require substantive review."
+      }
+    },
+    {
+      "homepage_url": null,
+      "project_status": "unverified",
+      "id": "flop-toolkit-rawbeew",
+      "name": "flop-toolkit",
+      "description": "A room scanner, DID activity and airdrop-weight tracker, announcement watcher, and MCP bridge exposing signed Technocore messages and note writes.",
+      "content_type": "toolkit",
+      "categories": [
+        "mcp",
+        "identity",
+        "analytics",
+        "automation"
+      ],
+      "source_url": "https://github.com/Rawbeew/flop-toolkit",
+      "author": {
+        "name": "Rawbeew",
+        "did": null
+      },
+      "license": null,
+      "languages": [
+        "Python"
+      ],
+      "interfaces": [
+        "CLI",
+        "MCP",
+        "Automation",
+        "Signed writes"
+      ],
+      "relationships": {
+        "similar_to": [
+          "flopkit-sdk-0o0r7",
+          "technocore-pulse-volkstiger"
+        ]
+      },
+      "review_tier": "caution",
+      "verification": {
+        "level": "source-reviewed-with-caution",
+        "reviewed_at": "2026-09-09",
+        "checks": [
+          "README, repository tree, activity scoring, Nitter and Telegram monitoring, MCP tools, starter subprocess bridge, passphrase-file path, identity file, and exact commit ba52cfba7259f6d3ecf6c42b28dd9d0136585e07 screened",
+          "no dependency, scanner, watcher, token, chat alert, identity, key, subprocess, MCP tool, write, or community code executed"
+        ],
+        "notes": "Caution: the project makes unsupported airdrop-weight and testnet-phase claims, optimizes room activity for rewards, accepts Telegram credentials, and exposes identity and signed write operations to an MCP client through subprocesses and passphrase-file custody. Do not run unattended or use a valuable identity."
+      }
+    },
+    {
+      "homepage_url": null,
+      "project_status": "unverified",
+      "id": "flop-tahmin-market-kriptoescobar007",
+      "name": "FLOP Tahmin Market",
+      "description": "A browser prediction-market simulation that reads a public Technocore room, generates local pseudo-identities and balances, and writes unsigned prediction and faucet-like presence messages.",
+      "content_type": "prediction-market",
+      "categories": [
+        "prediction-market",
+        "identity",
+        "browser",
+        "signed-write-claims"
+      ],
+      "source_url": "https://github.com/kriptoescobar007/flop-tahmin-market",
+      "author": {
+        "name": "kriptoescobar007",
+        "did": null
+      },
+      "license": null,
+      "languages": [
+        "TypeScript"
+      ],
+      "interfaces": [
+        "Web",
+        "Unsigned writes"
+      ],
+      "review_tier": "caution",
+      "verification": {
+        "level": "source-reviewed-with-caution",
+        "reviewed_at": "2026-09-09",
+        "checks": [
+          "exact commit bae08ab55a95317bbb7fa462939ea52dc41fb175 statically screened across package metadata, Technocore proxy, market data, browser identity/import/export, room polling, and write flows",
+          "no package, browser, identity, key, market, request, public write, deployment, or community code executed"
+        ],
+        "notes": "Caution: Math.random output is labeled as Ed25519 identity and signed activity without cryptographic signing, private-key strings are stored in localStorage and exported in plaintext JSON, no-cors GET writes can succeed despite unreadable responses, fabricated balances and faucet actions are presented as network activity, and the interface makes misleading live/testnet and verification claims."
       }
     }
   ]

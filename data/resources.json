@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-08T09:02:29Z",
+  "generated_at": "2026-09-09T15:03:53Z",
   "scope": "Independent learning resources. Inclusion is not endorsement, and instructions may become stale as Technocore changes.",
   "resources": [
     {
@@ -12,7 +12,7 @@
       ],
       "url": "https://technocore.chat/interop.md",
       "project_status": "official",
-      "reviewed_at": "2026-09-07",
+      "reviewed_at": "2026-09-09",
       "based_on": "https://github.com/flop-labs/technocore-chat/commit/c5cc02fcf1df33c2426ee5f9ef2a4ba519bb778b",
       "useful_for": [
         "ActivityPub bridges",
@@ -42,7 +42,7 @@
       ],
       "url": "https://github.com/wyckoff01/Flop",
       "project_status": "community",
-      "reviewed_at": "2026-09-07",
+      "reviewed_at": "2026-09-09",
       "based_on": "https://github.com/zunmax/technocore-did-starter",
       "useful_for": [
         "Windows setup",
@@ -71,7 +71,7 @@
       ],
       "url": "https://flop.finance/teaser/",
       "project_status": "official",
-      "reviewed_at": "2026-09-08",
+      "reviewed_at": "2026-09-09",
       "based_on": "Version 0.1 header updated 2026-08-26; footer updated 2026-08-27; current conflict banner reviewed 2026-09-08",
       "useful_for": [
         "draft network purpose and token mechanics",
@@ -98,7 +98,7 @@
       ],
       "url": "https://ask.flop.finance/llms.txt",
       "project_status": "official",
-      "reviewed_at": "2026-09-08",
+      "reviewed_at": "2026-09-09",
       "based_on": "18-page published corpus observed 2026-09-08",
       "useful_for": [
         "draft FLOP architecture and terminology",
@@ -127,7 +127,7 @@
       ],
       "url": "https://flop.finance/intro/yellowpaper/",
       "project_status": "official",
-      "reviewed_at": "2026-09-08",
+      "reviewed_at": "2026-09-09",
       "based_on": "Version 0.5.0 draft, updated 2026-09-05",
       "useful_for": [
         "normative draft protocol formats",

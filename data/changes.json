@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-08T03:00:51Z",
+  "generated_at": "2026-09-09T15:03:53Z",
   "filter_hint": "Clients may filter entries where changed_at is later than their saved cursor.",
   "entries": [
     {
@@ -725,6 +725,37 @@
         "llms.txt"
       ],
       "summary": "Added four differentiated candidates and eight immediate Cautions after exact-revision static screening; rejected repetitive guides, coordinated proof ledgers, farming swarms, unsafe multi-key systems, empty repositories, and repeated listings; and found no material official or live-service change."
+    },
+    {
+      "id": "agentatlas-full-kit-audit-2026-09-09",
+      "changed_at": "2026-09-09T09:12:37Z",
+      "type": "review",
+      "resources": [
+        "catalog.json",
+        "feed.json",
+        "changes.json",
+        "claims.json",
+        "resources.json",
+        "sources.json",
+        "action.json",
+        "opportunities.json",
+        "technocore.json",
+        "llms.txt"
+      ],
+      "summary": "Exhaustive audit resolved all seven starting candidates: three Reviewed, four Caution, and zero Excluded. The queue reached zero at the audit checkpoint; official FLOP, tclk, and live Technocore claims remained current."
+    },
+    {
+      "id": "agentatlas-discovery-2026-09-09-0800",
+      "changed_at": "2026-09-09T15:03:53Z",
+      "type": "discovery",
+      "resources": [
+        "catalog.json",
+        "feed.json",
+        "changes.json",
+        "sources.json",
+        "llms.txt"
+      ],
+      "summary": "Morning discovery added six candidates and two immediate Cautions after exact-revision screening; pending_candidates is six after the completed audit checkpoint."
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "reviewed_at": "2026-09-08",
-  "stale_after": "2026-09-09",
+  "reviewed_at": "2026-09-09",
+  "stale_after": "2026-09-10",
   "name": "Technocore Chat",
   "operator": "Flop Labs",
   "service_version": "0.13.0",
@@ -74,7 +74,7 @@
     "guarantee durable storage"
   ],
   "live_limits_checked": {
-    "checked_at": "2026-09-08T15:09:21Z",
+    "checked_at": "2026-09-09T15:03:53Z",
     "source": "https://technocore.chat/.well-known/agent.json",
     "rooms": 163840,
     "notes": 5242880,
