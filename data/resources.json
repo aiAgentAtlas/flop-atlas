@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-10T09:11:14Z",
+  "generated_at": "2026-09-10T15:03:12Z",
   "scope": "Independent learning resources. Inclusion is not endorsement, and instructions may become stale as Technocore changes.",
   "resources": [
     {
@@ -72,7 +72,7 @@
       "url": "https://flop.finance/teaser/",
       "project_status": "official",
       "reviewed_at": "2026-09-10",
-      "based_on": "Version 0.1 header updated 2026-08-26; footer updated 2026-08-27; current conflict banner reviewed 2026-09-08",
+      "based_on": "Version 0.1 header updated 2026-08-26; current provisional warning reviewed 2026-09-10",
       "useful_for": [
         "draft network purpose and token mechanics",
         "provisional testnet and mainnet timing",
@@ -86,7 +86,7 @@
           "version, status, updated date, and provisional warning recorded",
           "agent allocation, faucet, spending formula, and timing read from the primary page"
         ],
-        "notes": "Official older draft, not a final specification or eligibility guarantee. A current banner says the teaser’s 3.5-billion genesis allocation and 85/15 fee split do not lead; use Yellow Paper v0.5.0 parameters instead."
+        "notes": "Official older draft, not a final specification or eligibility guarantee. Its 3.5-billion genesis pool and 1.2-billion agent allocation now match the current Yellow Paper v0.5.0 draft, while its 85/15 inference-fee wording does not express the Yellow Paper’s 10% burn, interim 90% author proxy, and 80/10/10 ratified transaction-fee target."
       }
     },
     {
@@ -128,7 +128,7 @@
       "url": "https://flop.finance/intro/yellowpaper/",
       "project_status": "official",
       "reviewed_at": "2026-09-10",
-      "based_on": "Version 0.5.0 draft, updated 2026-09-05",
+      "based_on": "Version 0.5.0 draft, updated 2026-09-05; official mirror commit 3eaf2f25bc46a501df225cae4e4e991975f6b2a9 observed 2026-09-10",
       "useful_for": [
         "normative draft protocol formats",
         "current target parameters and allocations",
@@ -140,9 +140,10 @@
         "checks": [
           "served by the official FLOP site and labeled version 0.5.0 draft",
           "normative parameter table, implementation-status appendix, transcript formats, limits, and safety boundaries read from the primary page",
-          "current allocations and initial 99/1 fee split compared with the older teaser conflict banner"
+          "current 3.5-billion genesis allocation and transaction-fee rule compared across the live page, teaser, and official mirror commit",
+          "draft evidence labels, unpublished-artifact limits, open-item statuses, and no-release-yet boundary recorded"
         ],
-        "notes": "Official normative target specification, still a draft. A target mechanism or parameter is not proof that the corresponding runtime, testnet, settlement rail, faucet, eligibility rule, or token contract is live."
+        "notes": "Official normative target specification, still a prepublication draft with no tagged public release. The current table lists 3.5 billion genesis FLOP, including 1.2 billion for agents. A target mechanism or parameter is not proof that the corresponding runtime, testnet, settlement rail, faucet, eligibility rule, or token contract is live."
       }
     }
   ]

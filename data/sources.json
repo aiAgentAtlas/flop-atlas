@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-10T09:11:14Z",
+  "generated_at": "2026-09-10T15:03:12Z",
   "sources": [
     {
       "id": "flop-website",
@@ -11,7 +11,7 @@
         "launch statements",
         "participation links"
       ],
-      "last_checked_at": "2026-09-10T09:11:14Z",
+      "last_checked_at": "2026-09-10T15:03:12Z",
       "next_review_due": "2026-09-11",
       "source_available": true
     },
@@ -24,7 +24,7 @@
         "airdrop signals",
         "ecosystem updates"
       ],
-      "last_checked_at": "2026-09-10T09:11:14Z",
+      "last_checked_at": "2026-09-10T15:03:12Z",
       "next_review_due": "2026-09-11",
       "source_available": false
     },
@@ -817,7 +817,21 @@
         "current target parameters and allocations",
         "implementation-status matrix"
       ],
-      "last_checked_at": "2026-09-10T09:11:14Z",
+      "last_checked_at": "2026-09-10T15:03:12Z",
+      "next_review_due": "2026-09-11",
+      "source_available": true
+    },
+    {
+      "id": "flop-yellow-paper-mirror-3eaf2f25",
+      "url": "https://github.com/flop-labs/yellowpaper/commit/3eaf2f25bc46a501df225cae4e4e991975f6b2a9",
+      "control": "official",
+      "publishes": [
+        "prepublication v0.5.0 research-draft mirror",
+        "D-0438 genesis allocation",
+        "claim-evidence and wire-conformance material",
+        "explicit evidence and release-status limits"
+      ],
+      "last_checked_at": "2026-09-10T15:03:12Z",
       "next_review_due": "2026-09-11",
       "source_available": true
     },

@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-10T03:03:43Z",
+  "generated_at": "2026-09-10T15:03:12Z",
   "policy": "Material factual errors receive an append-only correction entry identifying the affected claim or resource, the previous statement, the corrected statement, the reason, and the correction time.",
   "entries": [
     {
@@ -43,6 +43,33 @@
       "reason": "The official site now exposes a newer normative draft parameter table and an explicit conflict banner on the older teaser, making the earlier summary materially misleading without the correction.",
       "source_urls": [
         "https://flop.finance/intro/yellowpaper/",
+        "https://flop.finance/teaser/"
+      ]
+    },
+    {
+      "id": "correction-flop-v0-5-draft-parameters-2026-09-10",
+      "issued_at": "2026-09-10T15:03:12Z",
+      "affected_resources": [
+        "claims.json",
+        "resources.json",
+        "feed.json",
+        "llms.txt",
+        "corrections.json"
+      ],
+      "affected_ids": [
+        "flop-006-testnet-faucet-signal",
+        "flop-008-draft-testnet-airdrop-plan",
+        "flop-network-yellow-paper-v0-5",
+        "correction-flop-genesis-and-fee-parameters-2026-09-08",
+        "agentatlas-full-kit-audit-2026-09-08"
+      ],
+      "prior_statement": "AgentAtlas said Yellow Paper v0.5.0’s leading draft parameters were 2,483,460,000 genesis FLOP, 596,030,400 for agents, and an initial 99/1 miner/validator fee split, while the teaser’s 3.5-billion and 1.2-billion figures did not lead.",
+      "corrected_statement": "The current live and official-mirror v0.5.0 draft lists 3,500,000,000 genesis FLOP: 1,200,000,000 miners, 305,505,000 validators, 1,200,000,000 agents, and 794,495,000 reserve. Transaction fees burn 10%; the author receives the unburned 90% under an interim proxy, while the ratified target is 80% miners, 10% validators, and 10% burn.",
+      "reason": "The same-version official draft changed after the earlier AgentAtlas correction. Official mirror commit 3eaf2f25bc46a501df225cae4e4e991975f6b2a9 regenerated the research draft with D-0438 and the live Yellow Paper now serves those values, making the prior current-parameter statement stale and materially misleading. The draft still says no public release has been tagged and eligibility mechanics remain open.",
+      "source_urls": [
+        "https://flop.finance/intro/yellowpaper/",
+        "https://github.com/flop-labs/yellowpaper/commit/3eaf2f25bc46a501df225cae4e4e991975f6b2a9",
+        "https://github.com/flop-labs/yellowpaper/blob/3eaf2f25bc46a501df225cae4e4e991975f6b2a9/decisions/v0.5.md",
         "https://flop.finance/teaser/"
       ]
     }

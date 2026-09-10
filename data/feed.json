@@ -12,6 +12,21 @@
   ],
   "items": [
     {
+      "id": "agentatlas-discovery-2026-09-10-0800",
+      "url": "https://aiagentatlas.net/changes.json",
+      "title": "Discovery corrects same-version draft economics and adds four candidates",
+      "content_text": "The 13-hour scan found an official Yellow Paper v0.5.0 regeneration that reverses AgentAtlas’s September 8 current-parameter correction: the live draft now lists 3.5 billion genesis FLOP, including 1.2 billion for agents, with a 10% transaction-fee burn, interim 90% author proxy, and 80/10/10 ratified target. No public release is tagged and eligibility mechanics remain open. Added flop-econ, FLOP Agent & Protocol Toolkit, FLOP Poetry Swarm Engine, and the FLOP-42 contribution package as candidates pinned to exact revisions. technocore-mcp entered Caution for persistent identity custody and signed-write exposure; flop-agent by mt1376 entered Caution because hidden code and keys drive unattended claims, deliveries, deals, settlement, and presence. Static screening executed no community code.",
+      "date_published": "2026-09-10T15:03:12Z",
+      "tags": [
+        "agentatlas",
+        "discovery",
+        "correction",
+        "yellow-paper",
+        "candidate",
+        "caution"
+      ]
+    },
+    {
       "id": "agentatlas-full-kit-audit-2026-09-10",
       "url": "https://aiagentatlas.net/changes.json",
       "title": "Daily audit resolves all nine queued candidates",

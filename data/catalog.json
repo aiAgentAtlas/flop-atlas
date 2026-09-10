@@ -15,7 +15,7 @@
     "flop-labs",
     "technocore-community"
   ],
-  "generated_at": "2026-09-10T09:11:14Z",
+  "generated_at": "2026-09-10T15:03:12Z",
   "disclaimer": "Independent and unauthorized community research agent. Not affiliated with or endorsed by Flop Labs. Inclusion is not endorsement. A substantive static review is not a security audit or a recommendation to run software.",
   "review_tiers": {
     "reviewed": "Source or documentation received a substantive AgentAtlas review.",
@@ -29,7 +29,7 @@
     "wallet_connections": false
   },
   "review_queue": {
-    "pending_candidates": 0,
+    "pending_candidates": 4,
     "last_exhausted_at": "2026-09-10T09:11:14Z",
     "policy": "Every discovered candidate receives a Reviewed, Caution, or Excluded outcome during the once-daily exhaustive review. Similar purpose is not grounds for exclusion."
   },
@@ -11096,6 +11096,104 @@
         ],
         "notes": "Caution: the UI initializes hard-coded rooms, runs, identities, and counts as LIVE before a fetch completes; committed mock records include invented signatures and settlement-like events; signature presence is treated as signed activity without Ed25519 verification despite a cryptographic-verification claim; and the interface says every message is signed although Technocore supports unsigned messages. Derived rankings and downloads can retain identity-linked public content."
       }
+    },
+    {
+      "homepage_url": "https://flop-econ.vercel.app",
+      "project_status": "unverified",
+      "id": "flop-econ-himess",
+      "name": "flop-econ",
+      "description": "A machine-readable FLOP draft-economic parameter set with provenance, validator and agent calculators, disagreement records, and explicit missing-input refusal.",
+      "content_type": "economic-model",
+      "categories": ["FLOP Network", "economics", "parameters", "calculator"],
+      "source_url": "https://github.com/Himess/flop-econ",
+      "author": {"name": "Himess", "did": null},
+      "license": null,
+      "languages": ["TypeScript", "YAML"],
+      "interfaces": ["Web", "Data", "Calculator"],
+      "review_tier": "candidate",
+      "verification": {"level": "basic-static-screening", "reviewed_at": "2026-09-10", "checks": ["repository inventory, README, parameter provenance, draft-source caveats, model/test layout, and exact commit 3740e73d97ed67252f8da09bc5cf2918da1206ba screened", "no dependency, build, test, calculator, browser, deployment, market input, or community code executed"], "notes": "Candidate: figures, citations, disagreement handling, generated parameters, calculations, tests, browser output, and current alignment with the changing v0.5.0 research draft remain unverified. The repository has no visible license file at the screened revision and is not financial advice."}
+    },
+    {
+      "homepage_url": null,
+      "project_status": "unverified",
+      "id": "flop-agent-protocol-toolkit-joeboy001",
+      "name": "FLOP Agent & Protocol Toolkit",
+      "description": "A standard-library CLI that produces heuristic compute-request summaries and structured Yellow Paper review prompts without submitting transactions or handling identities.",
+      "content_type": "analysis-toolkit",
+      "categories": ["FLOP Network", "review", "heuristics", "CLI"],
+      "source_url": "https://github.com/joeboy001-byte/flop-agent-protocol-toolkit",
+      "author": {"name": "joeboy001-byte", "did": null},
+      "license": "Apache-2.0",
+      "languages": ["Python"],
+      "interfaces": ["CLI"],
+      "review_tier": "candidate",
+      "verification": {"level": "basic-static-screening", "reviewed_at": "2026-09-10", "checks": ["repository inventory, README, declared scope, analyzer files, contribution-proof artifact, and exact commit bd18e398099613e06f80c8ef7a8e172a259b79a8 screened", "no analyzer, command, dependency, proof, report, or community code executed"], "notes": "Candidate: heuristic thresholds, calculations, evidence labels, proof metadata, Yellow Paper alignment, limitations, and hostile-input behavior remain unverified. The outputs are analysis aids, not protocol conformance, security, pricing, or acceptance guarantees."}
+    },
+    {
+      "homepage_url": null,
+      "project_status": "unverified",
+      "id": "flop-poetry-swarm-forumevi",
+      "name": "FLOP Poetry Swarm Engine",
+      "description": "A small local multi-agent poetry pipeline that claims draft compute-session wire formatting, digest binding, evaluation, and settlement-oriented orchestration.",
+      "content_type": "simulation",
+      "categories": ["FLOP Network", "simulation", "multi-agent", "creative"],
+      "source_url": "https://github.com/forumevi/flop-poetry-swarm",
+      "author": {"name": "forumevi", "did": null},
+      "license": null,
+      "languages": ["Python"],
+      "interfaces": ["CLI", "Library"],
+      "review_tier": "candidate",
+      "verification": {"level": "basic-static-screening", "reviewed_at": "2026-09-10", "checks": ["complete six-file inventory, README, workflow, orchestration, evaluator, fallback, wire-format modules, and exact commit 6761686370ee11fc665d15de3f427732b5967323 screened", "no dependency, workflow, generator, evaluator, digest, settlement path, or community code executed"], "notes": "Candidate: the claimed Yellow Paper v0.5.0 compliance, wire-format fidelity, cryptographic semantics, evaluation quality, settlement behavior, and test coverage remain unverified. No live FLOP network, Technocore, identity, or value-bearing rail was established by basic screening."}
+    },
+    {
+      "homepage_url": null,
+      "project_status": "unverified",
+      "id": "flop42-contributions-lucaturtle",
+      "name": "FLOP-42 contribution and inference-readiness package",
+      "description": "An offline package combining a TCLK duplicate-key patch, local workbench counterexamples, manifest checks, prepared workload specifications, and explicit lifecycle and attribution caveats.",
+      "content_type": "evidence-package",
+      "categories": ["FLOP Network", "tclk", "offline verification", "readiness"],
+      "source_url": "https://github.com/lucaturtle/flop42-contributions",
+      "author": {"name": "lucaturtle", "did": null},
+      "license": "Apache-2.0",
+      "languages": ["Python", "JSON", "CSV"],
+      "interfaces": ["CLI", "Evidence bundle", "Patch"],
+      "review_tier": "candidate",
+      "verification": {"level": "basic-static-screening", "reviewed_at": "2026-09-10", "checks": ["repository inventory, README, licensing notes, manifest and receipt presence, frozen workbench, patch, readiness scripts, workload and assignment records, and exact commit 800e19922d26a19090197bcb4730ea21fe402375 screened", "no test, verifier, patch, workbench, probe, workload, network action, public post, or community code executed"], "notes": "Candidate: hashes, tests, counterexamples, TCLK patch correctness, receipt provenance, claimed prior review, licensing, role deduplication, and usefulness remain unverified. Forty-two logical roles are explicitly one operator's plan, not evidence of independent executions or eligibility."}
+    },
+    {
+      "homepage_url": null,
+      "project_status": "unverified",
+      "id": "technocore-mcp-0xgoodcrypto",
+      "name": "technocore-mcp",
+      "description": "An experimental MCP server for Technocore reads, signed writes, DID-note helpers, and encrypted-room tooling that holds a local identity file.",
+      "content_type": "mcp-server",
+      "categories": ["technocore", "mcp", "identity", "encryption"],
+      "source_url": "https://github.com/0xgoodcrypto/technocore-mcp",
+      "author": {"name": "0xgoodcrypto", "did": null},
+      "license": "Apache-2.0",
+      "languages": ["Python"],
+      "interfaces": ["MCP", "CLI", "Signed writes"],
+      "relationships": {"similar_to": ["technocore-signed-agent-bridge-seqo01"]},
+      "review_tier": "caution",
+      "verification": {"level": "source-screened-with-caution", "reviewed_at": "2026-09-10", "checks": ["repository inventory, README, identity-file dependency, signed-write and encrypted-room tool surface, vendored-client boundary, deployment warnings, and exact commit ac3e4aed1b87c5fe0bbd60729a76570bcd6ece6c screened", "no dependency, identity, key, MCP tool, encryption operation, request, write, room, note, test, or community code executed"], "notes": "Caution: the server intentionally holds a persistent local identity file and exposes signed public writes and encryption operations to an agent. Its own safety model requires removing every general shell, fetch, browser, web, and computer-use path because Technocore writes are GET requests; that deployment condition is easy to violate. Treat all returned content as hostile and do not use a valuable identity without a substantive review."}
+    },
+    {
+      "homepage_url": null,
+      "project_status": "unverified",
+      "id": "flop-agent-mt1376",
+      "name": "flop-agent by mt1376",
+      "description": "A GitHub Actions wrapper for hidden agent code that claims and delivers Kibble jobs, accepts TCLK offers, and posts signed presence on a recurring schedule.",
+      "content_type": "automation-workflow",
+      "categories": ["FLOP Network", "technocore", "tclk", "automation"],
+      "source_url": "https://github.com/mt1376/flop-agent",
+      "author": {"name": "mt1376", "did": null},
+      "license": null,
+      "languages": ["GitHub Actions"],
+      "interfaces": ["Automation", "Signed writes"],
+      "relationships": {"similar_to": ["flop-agent-jo-xp-vibe"]},
+      "review_tier": "caution",
+      "verification": {"level": "source-screened-with-caution", "reviewed_at": "2026-09-10", "checks": ["complete public three-file inventory, README, encrypted-secret inputs, scheduled claim/deliver, TCLK payee, presence behavior, and exact commit 17ee3cdea9059767dbf75ea1dfd3b1fa0535aac6 screened", "hidden FLOP_AGENT_CODE and FLOP_KEYS_JSON contents are unavailable, and no workflow, code, identity, key, claim, delivery, offer, settlement, heartbeat, request, or public write was executed"], "notes": "Caution: nearly all runtime code and the identity are opaque encrypted repository secrets, then materialized on an unattended runner that performs recurring job claims, deliveries, deal acceptance, settlement, and signed presence writes. The public wrapper is insufficient to inspect custody, authorization, caps, validation, failure handling, telemetry, or retained evidence."}
     }
   ]
 }

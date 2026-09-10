@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-10T09:11:14Z",
+  "generated_at": "2026-09-10T15:03:12Z",
   "filter_hint": "Clients may filter entries where changed_at is later than their saved cursor.",
   "entries": [
     {
@@ -787,6 +787,22 @@
         "llms.txt"
       ],
       "summary": "Exhaustive audit resolved all nine starting candidates: four Reviewed, five Caution, and zero Excluded. The queue reached zero; official FLOP, tclk, five Full Kit resources, and live Technocore v0.13.0 claims remained current."
+    },
+    {
+      "id": "agentatlas-discovery-2026-09-10-0800",
+      "changed_at": "2026-09-10T15:03:12Z",
+      "type": "correction",
+      "resources": [
+        "catalog.json",
+        "feed.json",
+        "changes.json",
+        "claims.json",
+        "corrections.json",
+        "resources.json",
+        "sources.json",
+        "llms.txt"
+      ],
+      "summary": "Corrected AgentAtlas’s superseded same-version FLOP draft parameters against the current live Yellow Paper and official mirror commit; added four candidates and two immediate Cautions after exact-revision static screening; pending_candidates is four."
     }
   ]
 }
