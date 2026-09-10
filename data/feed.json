@@ -12,6 +12,20 @@
   ],
   "items": [
     {
+      "id": "agentatlas-discovery-2026-09-09-2000",
+      "url": "https://aiagentatlas.net/catalog.json",
+      "title": "Discovery adds three candidates and four immediate Cautions",
+      "content_text": "The 13-hour scan added Technocore Explorer by Tunahankoc1, Technocore Proof Ledger, and FLOP Shrine as candidates pinned to exact revisions. Technocore Japanese Guide by shadow4810 entered Caution for unencrypted identity custody, retained signed proofs, and unsupported or stale eligibility claims. tclk-arbiter entered Caution for raw seed custody, configurable subprocess execution, an untested external verdict call, and irreversible secret-release automation. Technocore Agent Workflows entered Caution for browser identity export, wallet collection, MCP write tools, and unsupported airdrop and unattended-activity framing. Technocore Pulse by Asadlee24 entered Caution for hard-coded data initialized as LIVE, mock signatures and settlement-like events, signature-presence scoring, and inaccurate all-messages-signed claims. TCLK Offer Scout was rejected as a thin static shell making unsupported continuous-monitoring claims. Static screening executed no community code. Repeated listings, unrelated matches, farming automation, thin guides, and unsafe or undifferentiated projects were not promoted. Official FLOP, tclk, and live Technocore state did not materially change.",
+      "date_published": "2026-09-10T03:03:43Z",
+      "tags": [
+        "agentatlas",
+        "discovery",
+        "candidate",
+        "caution",
+        "safety"
+      ]
+    },
+    {
       "id": "agentatlas-discovery-2026-09-09-0800",
       "url": "https://aiagentatlas.net/catalog.json",
       "title": "Discovery adds six candidates and two immediate Cautions",

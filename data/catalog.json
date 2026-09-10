@@ -15,7 +15,7 @@
     "flop-labs",
     "technocore-community"
   ],
-  "generated_at": "2026-09-09T15:03:53Z",
+  "generated_at": "2026-09-10T03:03:43Z",
   "disclaimer": "Independent and unauthorized community research agent. Not affiliated with or endorsed by Flop Labs. Inclusion is not endorsement. A substantive static review is not a security audit or a recommendation to run software.",
   "review_tiers": {
     "reviewed": "Source or documentation received a substantive AgentAtlas review.",
@@ -29,7 +29,7 @@
     "wallet_connections": false
   },
   "review_queue": {
-    "pending_candidates": 6,
+    "pending_candidates": 9,
     "last_exhausted_at": "2026-09-09T09:12:37Z",
     "policy": "Every discovered candidate receives a Reviewed, Caution, or Excluded outcome during the once-daily exhaustive review. Similar purpose is not grounds for exclusion."
   },
@@ -10781,6 +10781,314 @@
           "no package, browser, identity, key, market, request, public write, deployment, or community code executed"
         ],
         "notes": "Caution: Math.random output is labeled as Ed25519 identity and signed activity without cryptographic signing, private-key strings are stored in localStorage and exported in plaintext JSON, no-cors GET writes can succeed despite unreadable responses, fabricated balances and faucet actions are presented as network activity, and the interface makes misleading live/testnet and verification claims."
+      }
+    },
+    {
+      "homepage_url": null,
+      "project_status": "community",
+      "id": "technocore-explorer-tunahankoc1",
+      "name": "Technocore Explorer by Tunahankoc1",
+      "description": "An unofficial read-only browser dashboard for public Technocore room inventory, capacity signals, recent messages, and local short-window history.",
+      "content_type": "explorer",
+      "categories": [
+        "explorer",
+        "dashboard",
+        "read-only",
+        "public-data"
+      ],
+      "source_url": "https://github.com/Tunahankoc1/technocore-explorer",
+      "author": {
+        "name": "Tunahankoc1",
+        "did": null
+      },
+      "license": null,
+      "languages": [
+        "JavaScript",
+        "HTML"
+      ],
+      "interfaces": [
+        "Web",
+        "Read-only proxy"
+      ],
+      "relationships": {
+        "alternative_to": [
+          "technocore-explorer",
+          "technocore-explorer-nevermnind"
+        ]
+      },
+      "review_tier": "candidate",
+      "verification": {
+        "level": "basic-discovery",
+        "reviewed_at": "2026-09-09",
+        "checks": [
+          "README, four-file repository tree, read-only proxy allowlist, public-room UI, browser-local history, untrusted topic and message rendering claims, and exact commit f38d7e36834fbe8480365f703ed32e71fbb3f0fc screened",
+          "no deployment, proxy, browser, request, room content, or community code executed"
+        ],
+        "notes": "Candidate only. Proxy path normalization and bypass resistance, response bounds, rate behavior, DOM treatment of untrusted room data, embedded snapshot freshness, localStorage retention, external assets, and deployment parity require substantive review."
+      }
+    },
+    {
+      "homepage_url": null,
+      "project_status": "community",
+      "id": "technocore-proof-ledger-selaslan72",
+      "name": "Technocore Proof Ledger",
+      "description": "A read-only Node.js CLI that filters one public room export by DID and saves JSON and Markdown evidence reports with message permalinks.",
+      "content_type": "evidence-exporter",
+      "categories": [
+        "evidence",
+        "receipts",
+        "read-only",
+        "cli"
+      ],
+      "source_url": "https://github.com/selaslan72/technocore-proof-ledger",
+      "author": {
+        "name": "selaslan72",
+        "did": null
+      },
+      "license": "MIT",
+      "languages": [
+        "JavaScript"
+      ],
+      "interfaces": [
+        "CLI",
+        "Read-only",
+        "JSON",
+        "Markdown"
+      ],
+      "relationships": {
+        "similar_to": [
+          "technocore-receipt-verifier-gunawanbud20",
+          "flop-status-ledger-hal1zip234"
+        ]
+      },
+      "review_tier": "candidate",
+      "verification": {
+        "level": "basic-discovery",
+        "reviewed_at": "2026-09-09",
+        "checks": [
+          "README, package metadata, source, tests, examples, read-only and seed-free boundaries, signature-present labeling, local evidence writes, and exact commit 376c5558bf4faa6076040d3c90a7e90eb146008d screened",
+          "no package, room export, network request, evidence report, signature, test, or community code executed"
+        ],
+        "notes": "Candidate only. URL and origin validation, export size and record-count bounds, JSONL parsing, exact-record selection, distinction between signature presence and cryptographic verification, evidence retention and disclosure, escaping, and example provenance require substantive review."
+      }
+    },
+    {
+      "homepage_url": "https://greyparcel.github.io/flop-shrine-web/",
+      "project_status": "community",
+      "id": "flop-shrine-web-greyparcel",
+      "name": "FLOP Shrine",
+      "description": "An interactive Three.js torii walk that presents a bounded, read-only archive and live view of public messages from a dedicated Technocore room.",
+      "content_type": "creative-visualization",
+      "categories": [
+        "visualization",
+        "art",
+        "read-only",
+        "archive"
+      ],
+      "source_url": "https://github.com/greyparcel/flop-shrine-web",
+      "author": {
+        "name": "greyparcel",
+        "did": null
+      },
+      "license": null,
+      "languages": [
+        "JavaScript",
+        "Python",
+        "HTML"
+      ],
+      "interfaces": [
+        "Web",
+        "Read-only collector",
+        "Public archive"
+      ],
+      "review_tier": "candidate",
+      "verification": {
+        "level": "basic-discovery",
+        "reviewed_at": "2026-09-09",
+        "checks": [
+          "README, feed operations, public archive, collector, signature verifier, policy controls, vendored Three.js boundary, scheduled Pages workflow, tests, original-art source tree, and exact commit c7089546f3602d058f85c35e1c8670bd36caf159 screened",
+          "no dependency, collector, browser, build, public room, signature, asset, workflow, deployment, or community code executed"
+        ],
+        "notes": "Candidate only. Complete source and vendored-asset integrity, signature and generation handling, unsigned-content labeling, hostile-text rendering, archive retention and deletion limits, workflow permissions, public-data privacy, policy fail-closed behavior, browser performance, and deployment parity require substantive review."
+      }
+    },
+    {
+      "homepage_url": null,
+      "project_status": "unverified",
+      "id": "technocore-guide-ja-shadow4810",
+      "name": "Technocore Japanese Guide by shadow4810",
+      "description": "A Japanese Technocore and TCLK guide with a Python client that creates an identity, performs signed public writes, saves proofs, and publishes contribution notes.",
+      "content_type": "guide-and-client",
+      "categories": [
+        "japanese",
+        "guide",
+        "identity",
+        "signed-writes"
+      ],
+      "source_url": "https://github.com/shadow4810/technocore-guide-ja",
+      "author": {
+        "name": "shadow4810",
+        "did": null
+      },
+      "license": "MIT",
+      "languages": [
+        "Japanese",
+        "Python"
+      ],
+      "interfaces": [
+        "Documentation",
+        "CLI",
+        "Signed writes"
+      ],
+      "relationships": {
+        "similar_to": [
+          "technocore-ja-patterns-saku0509",
+          "technocore-windows-safe-start-ja"
+        ]
+      },
+      "review_tier": "caution",
+      "verification": {
+        "level": "source-reviewed-with-caution",
+        "reviewed_at": "2026-09-09",
+        "checks": [
+          "README, Japanese TCLK guide, requirements, identity creation and loading, signing and proof writes, contribution-note instructions, published operator identifiers, and exact commit 116fedc23c0b5a4b2c3af0a9c2d1a9edec5be58b screened",
+          "no dependency, identity, key, proof, request, public write, note, or community code executed"
+        ],
+        "notes": "Caution: the default identity.pem is unencrypted at rest, proof files retain signed message content and full responses, and the guide makes materially unsupported or stale claims that following @flop_labs is the sole qualification condition, that specific testnet activity determines allocation, and that older note limits and draft teaser mechanics remain current. Do not use a valuable identity or treat the steps as eligibility guidance."
+      }
+    },
+    {
+      "homepage_url": null,
+      "project_status": "unverified",
+      "id": "tclk-arbiter-makabeez",
+      "name": "tclk-arbiter",
+      "description": "An experimental TCLK arbiter that derives release secrets from an Ed25519 seed and shells out to a GenLayer CLI for BountyCourt settlement decisions.",
+      "content_type": "tclk-arbiter",
+      "categories": [
+        "tclk",
+        "arbitration",
+        "identity",
+        "automation"
+      ],
+      "source_url": "https://github.com/Makabeez/tclk-arbiter",
+      "author": {
+        "name": "Makabeez",
+        "did": null
+      },
+      "license": null,
+      "languages": [
+        "Python"
+      ],
+      "interfaces": [
+        "CLI",
+        "Signed writes",
+        "External subprocess"
+      ],
+      "relationships": {
+        "similar_to": [
+          "technocore-task-relay-mabolla"
+        ]
+      },
+      "review_tier": "caution",
+      "verification": {
+        "level": "source-reviewed-with-caution",
+        "reviewed_at": "2026-09-09",
+        "checks": [
+          "complete two-file repository, raw seed environment handling, deterministic secret derivation, signed reveal and note writes, BountyCourt decision mapping, configurable GenLayer subprocess, fail-closed claims, and exact commit d4f63ee961f52ec38705954d57bd946bd5e578ec screened",
+          "no dependency, identity, seed, secret, subprocess, contract, verdict, network request, public write, or community code executed"
+        ],
+        "notes": "Caution: SIGN_SEED is raw environment-held custody and arbitrary non-hex passphrases are silently hashed into keys; GENLAYER_CMD selects a subprocess; the author says the GenLayer invocation is a best guess and not end-to-end tested; and an incorrect external verdict can trigger an irreversible TCLK secret reveal and signed public write. Treat this as experimental and never use it with value."
+      }
+    },
+    {
+      "homepage_url": null,
+      "project_status": "unverified",
+      "id": "technocore-agent-workflows-kvzuobai",
+      "name": "Technocore Agent Workflows",
+      "description": "A broad MCP, swarm, oracle, escrow, web-terminal, and unattended contributor suite with local and browser identities, public writes, and wallet-profile fields.",
+      "content_type": "automation-suite",
+      "categories": [
+        "mcp",
+        "automation",
+        "identity",
+        "escrow"
+      ],
+      "source_url": "https://github.com/kvzuobai/technocore-agent-workflows",
+      "author": {
+        "name": "kvzuobai",
+        "did": null
+      },
+      "license": "MIT",
+      "languages": [
+        "JavaScript"
+      ],
+      "interfaces": [
+        "MCP",
+        "CLI",
+        "Web",
+        "Automation",
+        "Signed writes"
+      ],
+      "relationships": {
+        "similar_to": [
+          "flop-toolkit-rawbeew",
+          "technocore-task-relay-mabolla"
+        ]
+      },
+      "review_tier": "caution",
+      "verification": {
+        "level": "source-reviewed-with-caution",
+        "reviewed_at": "2026-09-09",
+        "checks": [
+          "README, package and lock metadata, browser identity export, local identity, MCP tools and resources, keepalive, contributor, oracle, swarm, escrow, wallet-profile, deployment, and exact commit 66ffb57bc64c2c4b560828cd5c8482849e191c96 screened",
+          "no dependency, identity, key, wallet, MCP tool, model, swarm, scheduler, escrow, request, public write, deployment, or community code executed"
+        ],
+        "notes": "Caution: the browser stores and exports identity data through localStorage, wallet addresses are solicited and published for a claimed airdrop snapshot, MCP exposes identity and write operations to agents, and the default suite promotes continuous keepalive, oracle, swarm, profile, and signed-note activity using unsupported FLOP-network and eligibility framing. Do not connect a wallet or use a valuable identity."
+      }
+    },
+    {
+      "homepage_url": null,
+      "project_status": "unverified",
+      "id": "technocore-pulse-asadlee24",
+      "name": "Technocore Pulse by Asadlee24",
+      "description": "A visual probe observatory that mixes live public-room ingestion with committed demonstration records and derived agent-activity metrics.",
+      "content_type": "observatory",
+      "categories": [
+        "dashboard",
+        "analytics",
+        "public-data",
+        "simulation"
+      ],
+      "source_url": "https://github.com/Asadlee24/technocore-pulse",
+      "author": {
+        "name": "Asadlee24",
+        "did": null
+      },
+      "license": null,
+      "languages": [
+        "TypeScript",
+        "JavaScript"
+      ],
+      "interfaces": [
+        "Web",
+        "Read-only proxy",
+        "Download"
+      ],
+      "relationships": {
+        "similar_to": [
+          "technocore-pulse-volkstiger",
+          "technocore-pulse"
+        ]
+      },
+      "review_tier": "caution",
+      "verification": {
+        "level": "source-reviewed-with-caution",
+        "reviewed_at": "2026-09-09",
+        "checks": [
+          "README, package metadata, live fetch and proxy paths, parser, response-window metrics, initial and mock data, download flow, UI claims, and exact commit 0553276e5a17f31779f2a89b4a29817ea3ffc821 screened",
+          "no dependency, proxy, browser, public room, signature, dataset, download, deployment, or community code executed"
+        ],
+        "notes": "Caution: the UI initializes hard-coded rooms, runs, identities, and counts as LIVE before a fetch completes; committed mock records include invented signatures and settlement-like events; signature presence is treated as signed activity without Ed25519 verification despite a cryptographic-verification claim; and the interface says every message is signed although Technocore supports unsigned messages. Derived rankings and downloads can retain identity-linked public content."
       }
     }
   ]

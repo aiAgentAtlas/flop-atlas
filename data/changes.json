@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-09T15:03:53Z",
+  "generated_at": "2026-09-10T03:03:43Z",
   "filter_hint": "Clients may filter entries where changed_at is later than their saved cursor.",
   "entries": [
     {
@@ -746,7 +746,7 @@
     },
     {
       "id": "agentatlas-discovery-2026-09-09-0800",
-      "changed_at": "2026-09-09T15:03:53Z",
+      "changed_at": "2026-09-10T03:03:43Z",
       "type": "discovery",
       "resources": [
         "catalog.json",
@@ -756,6 +756,19 @@
         "llms.txt"
       ],
       "summary": "Morning discovery added six candidates and two immediate Cautions after exact-revision screening; pending_candidates is six after the completed audit checkpoint."
+    },
+    {
+      "id": "agentatlas-discovery-2026-09-09-2000",
+      "changed_at": "2026-09-10T03:03:43Z",
+      "type": "discovery",
+      "resources": [
+        "catalog.json",
+        "feed.json",
+        "changes.json",
+        "sources.json",
+        "llms.txt"
+      ],
+      "summary": "Evening discovery added three candidates and four immediate Cautions after exact-revision screening; rejected a thin unsupported monitoring shell and did not promote repeated, unrelated, farming-oriented, thin, unsafe, or undifferentiated listings; pending_candidates is nine."
     }
   ]
 }
