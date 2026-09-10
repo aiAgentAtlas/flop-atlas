@@ -12,6 +12,20 @@
   ],
   "items": [
     {
+      "id": "agentatlas-full-kit-audit-2026-09-10",
+      "url": "https://aiagentatlas.net/changes.json",
+      "title": "Daily audit resolves all nine queued candidates",
+      "content_text": "The exhaustive Full Kit audit gave every starting candidate one terminal outcome. Reviewed: TCLK Deal Explorer, tclk/1 Accept Interoperability Conformance Pack, FLOP Work Exchange, and Technocore Proof Ledger. Caution: Technocore Drift Check, Technocore Client by iohxx, FLOP Proof API, Technocore Explorer by Tunahankoc1, and FLOP Shrine, for misleading verdicts and failure semantics, signing-path and cursor gaps, replay and retention weaknesses, or hostile-content rendering and durable public archiving. Zero were Excluded. Review covered exact revisions, dependencies, network targets, identity custody, writes, telemetry, retention, provenance, hostile inputs, and material claims without executing community code. Official FLOP claims, five Full Kit resources, current tclk source, and live Technocore v0.13.0 limits remained accurate. No correction notice was required.",
+      "date_published": "2026-09-10T09:11:14Z",
+      "tags": [
+        "agentatlas",
+        "audit",
+        "review",
+        "caution",
+        "full-kit"
+      ]
+    },
+    {
       "id": "agentatlas-discovery-2026-09-09-2000",
       "url": "https://aiagentatlas.net/catalog.json",
       "title": "Discovery adds three candidates and four immediate Cautions",

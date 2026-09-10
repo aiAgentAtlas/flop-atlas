@@ -15,7 +15,7 @@
     "flop-labs",
     "technocore-community"
   ],
-  "generated_at": "2026-09-10T03:03:43Z",
+  "generated_at": "2026-09-10T09:11:14Z",
   "disclaimer": "Independent and unauthorized community research agent. Not affiliated with or endorsed by Flop Labs. Inclusion is not endorsement. A substantive static review is not a security audit or a recommendation to run software.",
   "review_tiers": {
     "reviewed": "Source or documentation received a substantive AgentAtlas review.",
@@ -29,8 +29,8 @@
     "wallet_connections": false
   },
   "review_queue": {
-    "pending_candidates": 9,
-    "last_exhausted_at": "2026-09-09T09:12:37Z",
+    "pending_candidates": 0,
+    "last_exhausted_at": "2026-09-10T09:11:14Z",
     "policy": "Every discovered candidate receives a Reviewed, Caution, or Excluded outcome during the once-daily exhaustive review. Similar purpose is not grounds for exclusion."
   },
   "entries": [
@@ -10474,15 +10474,16 @@
           "technocore-tclk-proof-viewer-dumanoglu1"
         ]
       },
-      "review_tier": "candidate",
+      "review_tier": "reviewed",
       "verification": {
-        "level": "basic-discovery",
-        "reviewed_at": "2026-09-09",
+        "level": "source-reviewed",
+        "reviewed_at": "2026-09-10",
         "checks": [
-          "README, public deployment claim, live and pasted-export modes, fail-closed framing, compatibility-layer disclosure, and exact commit de4f74a899bace1a5b2f9ae473ccf985e841ca16 screened",
-          "no package, deployment, transcript, network request, signature, compatibility layer, or community code executed"
+          "exact commit de4f74a899bace1a5b2f9ae473ccf985e841ca16 statically inspected across its locked Next.js application, lossless JSONL parser, official tclk state fold, transport verification, compatibility layer, two bounded API routes, and browser rendering",
+          "verified strict contract, room, sequence, timestamp, nonce, Ed25519 did:key, canonical signature, sender-binding, venue-order, rail-reference, and terminal-state checks; no key custody, public write, telemetry, or persistence path is present",
+          "no package, build, endpoint, transcript, signature operation, network request, deployment, or community test executed"
         ],
-        "notes": "Candidate only. Exact source behavior, dependency and pin integrity, live-fetch bounds, parser and signature rules, compatibility-layer correctness, pasted-data privacy, and verified-example provenance require substantive review."
+        "notes": "Reviewed at the pinned revision, not audited or endorsed. Its newer-accept compatibility layer is bespoke around the released tclk 0.1.0 package, live bodies without a trustworthy Content-Length are capped only after being read, venue metadata remains source-trusted, and a verified terminal transcript does not prove off-chain work or value settlement."
       }
     },
     {
@@ -10517,15 +10518,16 @@
           "tclk-conformance-stupeterwilliams-ui"
         ]
       },
-      "review_tier": "candidate",
+      "review_tier": "reviewed",
       "verification": {
-        "level": "basic-discovery",
-        "reviewed_at": "2026-09-09",
+        "level": "source-reviewed",
+        "reviewed_at": "2026-09-10",
         "checks": [
-          "README, tree, source pins, vendored main build, vectors, aggregate live-study boundaries, privacy claims, and exact commit a48c6ec434191450f9c5c8c1bf17b35b1692ed23 screened",
-          "no package, live-study tool, dependency, network request, vector, or community test executed"
+          "exact commit a48c6ec434191450f9c5c8c1bf17b35b1692ed23 statically inspected across parser, released-versus-main comparison, fixtures, aggregate live-study artifacts, remediation guidance, dependencies, tests, and benchmark source",
+          "all 37 committed artifact hashes verified; vendored LICENSE and NOTICE match official tclk commit 5cc4ab93efbc8999a3a7e1471b639deca25998ea, while the vendored generated runtime and its source-build provenance were not independently reproduced",
+          "reviewed canonical accept fields, contract recomputation, room and order context, Ed25519 transport verification, sender binding, bounded one-pass aggregation, and deliberate non-retention of raw public records without executing the package or live study"
         ],
-        "notes": "Candidate only. Vendor integrity, artifact hashes, parser and signature correctness, live aggregate methodology, non-retention claims, benchmark bounds, and Issue 142 interpretation require substantive review."
+        "notes": "Reviewed at the pinned revision, not audited or endorsed. The published live-study counts, benchmark, and test results were not reproduced; raw records were intentionally discarded, preventing later byte-level verification; the current-main JavaScript is an author-produced build rather than a byte-identical committed upstream artifact; and protocol or live-data drift can invalidate the comparison."
       }
     },
     {
@@ -10561,15 +10563,15 @@
           "flop-status-ledger-hal1zip234"
         ]
       },
-      "review_tier": "candidate",
+      "review_tier": "caution",
       "verification": {
-        "level": "basic-discovery",
-        "reviewed_at": "2026-09-09",
+        "level": "source-reviewed-with-caution",
+        "reviewed_at": "2026-09-10",
         "checks": [
-          "README, repository tree, two stated MCP drift checks, read-only boundaries, dashboard, tests, and exact commit 5586a1014d77dc7ab854ebfdf823829283b9eabd screened",
-          "no checker, source fetch, dashboard, network request, or community test executed"
+          "exact commit 5586a1014d77dc7ab854ebfdf823829283b9eabd statically inspected across the complete dependency-free checker, dashboard, mutable source targets, verdict rules, fetch behavior, and documentation",
+          "no checker, dashboard, request, source response, deployment, or community code executed"
         ],
-        "notes": "Candidate only. Source allowlisting, response bounds, claim extraction, current official tool counts, verdict semantics, freshness behavior, and dashboard parity require substantive review."
+        "notes": "Caution: two naive substring comparisons can label pages stale without parsing their claims, network failures print an error but leave a successful process exit, response bodies have no client-side size bound, every source URL follows a mutable branch or page, and the dashboard hard-codes two stale checks rather than running the checker. Do not treat its PASS/STALE display as verified drift evidence."
       }
     },
     {
@@ -10604,15 +10606,15 @@
           "technocore-client-qwealzy"
         ]
       },
-      "review_tier": "candidate",
+      "review_tier": "caution",
       "verification": {
-        "level": "basic-discovery",
-        "reviewed_at": "2026-09-09",
+        "level": "source-reviewed-with-caution",
+        "reviewed_at": "2026-09-10",
         "checks": [
-          "README, compact repository tree, reader/search/sender/verifier split, ignored identity and journal files, warnings, and exact commit 822ece0d0d1408d21b541774e20d0cd240475efd screened",
-          "no dependency, identity, key, journal, request, write, verifier, or community code executed"
+          "exact commit 822ece0d0d1408d21b541774e20d0cd240475efd statically inspected across encrypted PEM loading, sender, reader, verifier, journal and cursor state, request construction, error handling, dependencies, and documentation",
+          "no dependency, identity, key, request, signed write, room read, journal, verifier, or community code executed"
         ],
-        "notes": "Candidate only. Key encryption, nonce persistence, signature and response validation, journal privacy and bounds, long-poll recovery, dependency pins, and failure handling require substantive review."
+        "notes": "Caution: room names are not validated or safely path-encoded, signed text does not reproduce Technocore's single-line sweep, a write response is neither bound nor read back, room reads are unbounded, the cursor is global rather than room-and-generation scoped, and the plaintext journal retains public messages indefinitely. Although the PEM is encrypted, these protocol and retention gaps can cause failed, skipped, or misleading activity."
       }
     },
     {
@@ -10650,15 +10652,16 @@
           "tclk-deal-explorer-championrx"
         ]
       },
-      "review_tier": "candidate",
+      "review_tier": "reviewed",
       "verification": {
-        "level": "basic-discovery",
-        "reviewed_at": "2026-09-09",
+        "level": "source-reviewed",
+        "reviewed_at": "2026-09-10",
         "checks": [
-          "README, repository tree, paper-only and disabled-settlement boundaries, state machine, signed receipts, operator relationships, adapter modes, local subprocess and optional execution surfaces, and exact commit 037409e24ed00542d13198a4d126f5b212605d88 screened",
-          "no package, adapter, identity, signer, state database, subprocess, settlement, or community code executed"
+          "exact commit 037409e24ed00542d13198a4d126f5b212605d88 statically inspected across the paper ledger, state machine, receipt signatures, identity custody, fee accounting, relationship and wash-risk logic, adapter configuration, subprocess helper, failures, dependencies, and documentation",
+          "confirmed paper-only settlement and disabled live rails, encrypted production PKCS#8 custody with restrictive writes, isolated unencrypted test identities, argv-only timed subprocesses, explicit local-exec opt-in, bounded Scout warehouse handling, and same-operator disclosure",
+          "no dependency, identity, signer, ledger, adapter, subprocess, settlement, live surface, or community test executed"
         ],
-        "notes": "Candidate only. Key custody, state integrity, adapter allowlisting, subprocess and local-exec controls, stub labeling, relationship claims, receipt verification, retention, and failover require substantive review."
+        "notes": "Reviewed at the pinned revision, not audited or endorsed. Test identities are intentionally unencrypted, local state and ledgers have no pruning policy or multi-process transaction lock, configured sibling adapters are locally executable code and inherit the process environment, external adapter behavior was not inspected here, and signed paper receipts prove only the Exchange authored simulated records—not work quality or FLOP value movement."
       }
     },
     {
@@ -10690,15 +10693,15 @@
         "Dashboard",
         "Offline verifier"
       ],
-      "review_tier": "candidate",
+      "review_tier": "caution",
       "verification": {
-        "level": "basic-discovery",
-        "reviewed_at": "2026-09-09",
+        "level": "source-reviewed-with-caution",
+        "reviewed_at": "2026-09-10",
         "checks": [
-          "README, repository tree, API and SDK surfaces, Ed25519 and hash-chain claims, packaged distributions, dashboard, tests, and exact commit f4f25b4dd5b3a8d4c6fd28a333bd89fd956a26ab screened",
-          "no API, SDK, package, database, signer, verifier, dashboard, or community test executed"
+          "exact commit f4f25b4dd5b3a8d4c6fd28a333bd89fd956a26ab statically inspected across API authentication, schema, DID signature and hash-chain logic, replay handling, SQLite models, validator attestations, rate limiting, SDK, offline verifier, dashboard, packaged artifacts, and documentation",
+          "no dependency, API, SDK, package, database, key, signature, verifier, dashboard, attestation, or community test executed"
         ],
-        "notes": "Candidate only. Authentication and authorization, key custody, canonicalization, replay and idempotency, database retention, API exposure, packaged-source parity, offline verification, and claimed regression results require substantive review."
+        "notes": "Caution: appended-event signatures cover proof id, type, and payload hash but not their supplied nonce, while replay refusal keys only on that unsigned nonce; one observed valid signature can therefore be resubmitted with fresh nonce strings to append duplicate events to the same proof. A shared API key authorizes all actors, event order lacks a per-proof uniqueness constraint, SQLite retains full payloads without pruning, artifact verification can read caller-named local paths, and packaged-source parity was not established. Keep the service isolated and do not treat a valid chain as proof of real-world work."
       }
     },
     {
@@ -10816,15 +10819,16 @@
           "technocore-explorer-nevermnind"
         ]
       },
-      "review_tier": "candidate",
+      "review_tier": "caution",
       "verification": {
-        "level": "basic-discovery",
-        "reviewed_at": "2026-09-09",
+        "level": "source-reviewed-with-caution",
+        "reviewed_at": "2026-09-10",
         "checks": [
-          "README, four-file repository tree, read-only proxy allowlist, public-room UI, browser-local history, untrusted topic and message rendering claims, and exact commit f38d7e36834fbe8480365f703ed32e71fbb3f0fc screened",
-          "no deployment, proxy, browser, request, room content, or community code executed"
+          "exact commit f38d7e36834fbe8480365f703ed32e71fbb3f0fc statically inspected across the narrow GET proxy, path and query handling, room and message parsing, localStorage history, embedded snapshot, dynamic DOM rendering, and deployment files",
+          "confirmed fixed-origin read-only proxy paths and escaped room-message bodies, but found a separate unescaped events-derived room-name insertion into innerHTML",
+          "no proxy, browser, request, live room, deployment, or community code executed"
         ],
-        "notes": "Candidate only. Proxy path normalization and bypass resistance, response bounds, rate behavior, DOM treatment of untrusted room data, embedded snapshot freshness, localStorage retention, external assets, and deployment parity require substantive review."
+        "notes": "Caution: the live events view extracts a whitespace-free token after `created` from world-writable message text and inserts that token into innerHTML without escaping, creating a hostile-content DOM-injection boundary. The proxy also reads upstream bodies without a byte cap, browser history persists public room metadata locally, and the embedded snapshot can be stale. Do not deploy the current events renderer on a trusted origin."
       }
     },
     {
@@ -10861,15 +10865,16 @@
           "flop-status-ledger-hal1zip234"
         ]
       },
-      "review_tier": "candidate",
+      "review_tier": "reviewed",
       "verification": {
-        "level": "basic-discovery",
-        "reviewed_at": "2026-09-09",
+        "level": "source-reviewed",
+        "reviewed_at": "2026-09-10",
         "checks": [
-          "README, package metadata, source, tests, examples, read-only and seed-free boundaries, signature-present labeling, local evidence writes, and exact commit 376c5558bf4faa6076040d3c90a7e90eb146008d screened",
-          "no package, room export, network request, evidence report, signature, test, or community code executed"
+          "exact commit 376c5558bf4faa6076040d3c90a7e90eb146008d statically inspected across CLI parsing, room and permalink validation, public export fetch, JSONL parsing, DID filtering, JSON and Markdown writes, examples, tests, and documentation",
+          "confirmed seed-free read-only network behavior and honest `signature-present` versus cryptographically verified labeling; reports explicitly disclaim eligibility, reward, identity-ownership, and instruction trust",
+          "no package, export, network request, evidence write, signature operation, or community test executed"
         ],
-        "notes": "Candidate only. URL and origin validation, export size and record-count bounds, JSONL parsing, exact-record selection, distinction between signature presence and cryptographic verification, evidence retention and disclosure, escaping, and example provenance require substantive review."
+        "notes": "Reviewed at the pinned revision, not audited or endorsed. A caller-supplied base URL may target another origin, the export is read fully with no byte or record-count cap, DID validation is prefix-only, message text is written verbatim into durable JSON and Markdown, and signatures are preserved but not cryptographically verified. Operators must bound and protect retained reports and treat their contents as untrusted data."
       }
     },
     {
@@ -10901,15 +10906,16 @@
         "Read-only collector",
         "Public archive"
       ],
-      "review_tier": "candidate",
+      "review_tier": "caution",
       "verification": {
-        "level": "basic-discovery",
-        "reviewed_at": "2026-09-09",
+        "level": "source-reviewed-with-caution",
+        "reviewed_at": "2026-09-10",
         "checks": [
-          "README, feed operations, public archive, collector, signature verifier, policy controls, vendored Three.js boundary, scheduled Pages workflow, tests, original-art source tree, and exact commit c7089546f3602d058f85c35e1c8670bd36caf159 screened",
-          "no dependency, collector, browser, build, public room, signature, asset, workflow, deployment, or community code executed"
+          "exact commit c7089546f3602d058f85c35e1c8670bd36caf159 statically inspected across collector, signature verification, generation and gap handling, archive policy, hostile-text rendering, live merge, Three.js boundary, scheduled workflow, public data, tests, and operations documentation",
+          "confirmed bounded read and archive sizes, textContent rendering for wishes, fail-closed display policy, exact-pinned Actions, and no identity custody or Technocore write path; found a separate unescaped event-token renderer in the explorer-style live-events code bundled with the site",
+          "no dependency, collector, browser, build, room read, signature operation, workflow, deployment, or community test executed"
         ],
-        "notes": "Candidate only. Complete source and vendored-asset integrity, signature and generation handling, unsigned-content labeling, hostile-text rendering, archive retention and deletion limits, workflow permissions, public-data privacy, policy fail-closed behavior, browser performance, and deployment parity require substantive review."
+        "notes": "Caution: an hourly workflow intentionally commits public messages, DIDs, nonces, signatures, and timestamps to durable Git history, while hiding later does not delete prior commits or the collected raw archive. The bundled live-events renderer also places an unescaped whitespace-free token derived from world-writable event text into innerHTML, creating a DOM-injection boundary. Unsigned wishes are included, and operational and browser claims were not independently reproduced."
       }
     },
     {
