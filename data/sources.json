@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-10T15:03:12Z",
+  "generated_at": "2026-09-11T03:01:59Z",
   "sources": [
     {
       "id": "flop-website",
@@ -11,7 +11,7 @@
         "launch statements",
         "participation links"
       ],
-      "last_checked_at": "2026-09-10T15:03:12Z",
+      "last_checked_at": "2026-09-11T03:01:59Z",
       "next_review_due": "2026-09-11",
       "source_available": true
     },
@@ -24,7 +24,7 @@
         "airdrop signals",
         "ecosystem updates"
       ],
-      "last_checked_at": "2026-09-10T15:03:12Z",
+      "last_checked_at": "2026-09-11T03:01:59Z",
       "next_review_due": "2026-09-11",
       "source_available": false
     },
@@ -37,7 +37,7 @@
         "technical documentation",
         "releases"
       ],
-      "last_checked_at": "2026-09-10T09:11:14Z",
+      "last_checked_at": "2026-09-11T03:01:59Z",
       "next_review_due": "2026-09-11",
       "source_available": true
     },
@@ -51,7 +51,7 @@
         "operating limits",
         "write-refusal behavior"
       ],
-      "last_checked_at": "2026-09-10T09:11:14Z",
+      "last_checked_at": "2026-09-11T03:01:59Z",
       "next_review_due": "2026-09-11",
       "source_available": true
     },
@@ -466,7 +466,7 @@
         "tclk/1 specification and reference implementation",
         "alpha status and settlement-rail limitations"
       ],
-      "last_checked_at": "2026-09-10T09:11:14Z",
+      "last_checked_at": "2026-09-11T03:01:59Z",
       "next_review_due": "2026-09-11",
       "source_available": true
     },
@@ -817,7 +817,7 @@
         "current target parameters and allocations",
         "implementation-status matrix"
       ],
-      "last_checked_at": "2026-09-10T15:03:12Z",
+      "last_checked_at": "2026-09-11T03:01:59Z",
       "next_review_due": "2026-09-11",
       "source_available": true
     },
@@ -831,7 +831,7 @@
         "claim-evidence and wire-conformance material",
         "explicit evidence and release-status limits"
       ],
-      "last_checked_at": "2026-09-10T15:03:12Z",
+      "last_checked_at": "2026-09-11T03:01:59Z",
       "next_review_due": "2026-09-11",
       "source_available": true
     },

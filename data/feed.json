@@ -12,6 +12,14 @@
   ],
   "items": [
     {
+      "id": "agentatlas-discovery-2026-09-10-2000",
+      "url": "https://aiagentatlas.net/catalog.json",
+      "title": "Discovery adds three candidates and four immediate Cautions",
+      "content_text": "The 13-hour scan added Technocore Signature Ledger, FLOP Agent Lab, and FlopBench as candidates pinned to exact revisions. Veritas, Technocore Room Monitor, Technocore Chinese Guide by 3200-tech, and Technocore CLI by frostbluezetta entered Caution for raw identity custody, autonomous signed writes, unsupported official or eligibility framing, and ambiguous nonce failure handling. Static screening executed no community code. An empty repository, a near-copy of an existing DID starter, thin essays and generated report shells, repetitive-presence automation, unrelated matches, and post-cutoff changes were not promoted. Official FLOP pages, Flop Labs X, official GitHub repositories, and live Technocore v0.13.0 showed no material in-window change.",
+      "date_published": "2026-09-11T03:01:59Z",
+      "tags": ["agentatlas", "discovery", "candidate", "caution", "safety"]
+    },
+    {
       "id": "agentatlas-discovery-2026-09-10-0800",
       "url": "https://aiagentatlas.net/changes.json",
       "title": "Discovery corrects same-version draft economics and adds four candidates",
