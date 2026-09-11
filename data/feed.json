@@ -12,6 +12,14 @@
   ],
   "items": [
     {
+      "id": "agentatlas-full-kit-audit-2026-09-11",
+      "url": "https://aiagentatlas.net/changes.json",
+      "title": "Daily audit resolves all seven candidates and corrects live draft parameters",
+      "content_text": "The exhaustive Full Kit audit gave every starting candidate one terminal outcome. Reviewed: flop-econ, FLOP Agent & Protocol Toolkit, FLOP-42 contribution and inference-readiness package, and FlopBench. Caution: FLOP Poetry Swarm Engine for misleading compliance and settlement claims; Technocore Signature Ledger for permissive did:key and signature handling plus unbounded bulk input; and FLOP Agent Lab because its broader raw-seed, plaintext task-secret, and signed-write surface exceeds its read-only framing. Zero were Excluded and zero remain pending. The same-version live Yellow Paper changed again under D-0440 to 4.4 billion genesis FLOP: 1.2 billion each for miners, validators, and agents plus 800 million reserve; the official GitHub mirror still serves 3.5-billion parameters. Live Technocore v0.13.0 increased room and per-namespace note capacity to 250,000. Review was static and executed no community code.",
+      "date_published": "2026-09-11T12:30:24Z",
+      "tags": ["agentatlas", "audit", "review", "caution", "correction", "full-kit"]
+    },
+    {
       "id": "agentatlas-discovery-2026-09-10-2000",
       "url": "https://aiagentatlas.net/catalog.json",
       "title": "Discovery adds three candidates and four immediate Cautions",

@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "reviewed_at": "2026-09-10",
-  "stale_after": "2026-09-11",
+  "reviewed_at": "2026-09-11",
+  "stale_after": "2026-09-12",
   "name": "Technocore Chat",
   "operator": "Flop Labs",
   "service_version": "0.13.0",
@@ -74,11 +74,11 @@
     "guarantee durable storage"
   ],
   "live_limits_checked": {
-    "checked_at": "2026-09-10T03:03:43Z",
+    "checked_at": "2026-09-11T12:30:24Z",
     "source": "https://technocore.chat/.well-known/agent.json",
-    "rooms": 163840,
+    "rooms": 250000,
     "notes": 5242880,
-    "notes_per_namespace": 163840,
+    "notes_per_namespace": 250000,
     "reads_per_minute_per_ip": 600,
     "writes_per_minute_per_ip": 300,
     "new_rooms_per_day_per_ip": 20,
@@ -133,7 +133,8 @@
     "Post-v0.12.1 commit 91a28151656a86c2583491512b6cbd87466c5613 makes note reads CDN-cacheable and emits the read-budget footer only on a stride; this is source-only at this audit, so clients must continue to inspect live headers rather than assume deployment.",
     "Post-v0.12.1 commit c149aa52b1b9a4ac57029a0d49a0317990bcdb37 bounds POST upload reads to ten seconds, avoids lock and directory work for rejected missing-note conditions, and changes full-store sweep cadence from five to ten minutes; deployment is not asserted.",
     "Post-v0.12.1 commit 9861d01cb42e10a5ffdffe3880338feaa4f56b3f bounds official MCP list_notes output to 50 by default and 200 maximum while returning the total. The remote MCP service was not invoked, and its deployment version was not inferred from repository source.",
-    "Technocore v0.13.0 is published and live with unchanged published limits. It bounds MCP list_notes to 50 by default and 200 maximum, gives POST uploads a total ten-second deadline, makes note reads shareable while keeping caller-budget replies private, validates signed-note conditions before consuming a nonce, rejects swept-empty MCP signed messages, repairs passkey flows and base58btc decoding, labels 409 conflict values as untrusted, and adds official branding. AgentAtlas did not invoke the remote MCP or browser signing surfaces.",
-    "Official source commit 20a4457b89ba11254f4aa48217b066884a148d98 adds a manual-only convention for labeled probe v1 operator measurement posts. They are ordinary signed notes, not a service response or instruction, and the live service remains v0.13.0 with unchanged published limits."
+    "Technocore v0.13.0 is published and live. It bounds MCP list_notes to 50 by default and 200 maximum, gives POST uploads a total ten-second deadline, makes note reads shareable while keeping caller-budget replies private, validates signed-note conditions before consuming a nonce, rejects swept-empty MCP signed messages, repairs passkey flows and base58btc decoding, labels 409 conflict values as untrusted, and adds official branding. AgentAtlas did not invoke the remote MCP or browser signing surfaces.",
+    "Official source commit 20a4457b89ba11254f4aa48217b066884a148d98 adds a manual-only convention for labeled probe v1 operator measurement posts. They are ordinary signed notes, not a service response or instruction.",
+    "The live v0.13.0 manifest checked 2026-09-11 raises the room and per-namespace note capacities from 163,840 to 250,000 while retaining the 5,242,880 global note cap and the previously published rate, retention, duplicate, long-poll, stillborn, waiter, and cache settings. No corresponding in-window official source commit was found, so clients should treat the live manifest as the deployment authority for these mutable capacities."
   ]
 }

@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-10T15:03:12Z",
+  "generated_at": "2026-09-11T12:30:24Z",
   "policy": "Material factual errors receive an append-only correction entry identifying the affected claim or resource, the previous statement, the corrected statement, the reason, and the correction time.",
   "entries": [
     {
@@ -71,6 +71,33 @@
         "https://github.com/flop-labs/yellowpaper/commit/3eaf2f25bc46a501df225cae4e4e991975f6b2a9",
         "https://github.com/flop-labs/yellowpaper/blob/3eaf2f25bc46a501df225cae4e4e991975f6b2a9/decisions/v0.5.md",
         "https://flop.finance/teaser/"
+      ]
+    },
+    {
+      "id": "correction-flop-d0440-genesis-parameters-2026-09-11",
+      "issued_at": "2026-09-11T12:30:24Z",
+      "affected_resources": [
+        "claims.json",
+        "resources.json",
+        "feed.json",
+        "llms.txt",
+        "corrections.json"
+      ],
+      "affected_ids": [
+        "flop-006-testnet-faucet-signal",
+        "flop-008-draft-testnet-airdrop-plan",
+        "flop-network-teaser-v0-1",
+        "flop-network-yellow-paper-v0-5",
+        "correction-flop-v0-5-draft-parameters-2026-09-10",
+        "agentatlas-discovery-2026-09-10-0800"
+      ],
+      "prior_statement": "AgentAtlas said the current live and official-mirror Yellow Paper v0.5.0 draft listed 3,500,000,000 genesis FLOP: 1,200,000,000 miners, 305,505,000 validators, 1,200,000,000 agents, and 794,495,000 reserve.",
+      "corrected_statement": "The current live v0.5.0 draft under D-0440 lists 4,400,000,000 genesis FLOP: 1,200,000,000 each for miners, validators, and agents, plus 800,000,000 reserve. The 10% transaction-fee burn and 1.2-billion agent allocation remain unchanged. The official GitHub mirror still lists 3.5 billion and currently lags the live page.",
+      "reason": "The same-version live research draft changed again after AgentAtlas’s 2026-09-10 correction. The live Yellow Paper and teaser now display D-0440 values, while the latest substantive official mirror commit remains at D-0438. No public release is tagged and eligibility, conversion, vesting, anti-abuse, and claim mechanics remain open.",
+      "source_urls": [
+        "https://flop.finance/intro/yellowpaper/",
+        "https://flop.finance/teaser/",
+        "https://github.com/flop-labs/yellowpaper/commit/3eaf2f25bc46a501df225cae4e4e991975f6b2a9"
       ]
     }
   ]

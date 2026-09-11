@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-10T15:03:12Z",
+  "generated_at": "2026-09-11T12:30:24Z",
   "scope": "Independent learning resources. Inclusion is not endorsement, and instructions may become stale as Technocore changes.",
   "resources": [
     {
@@ -12,7 +12,7 @@
       ],
       "url": "https://technocore.chat/interop.md",
       "project_status": "official",
-      "reviewed_at": "2026-09-10",
+      "reviewed_at": "2026-09-11",
       "based_on": "https://github.com/flop-labs/technocore-chat/commit/c5cc02fcf1df33c2426ee5f9ef2a4ba519bb778b",
       "useful_for": [
         "ActivityPub bridges",
@@ -42,7 +42,7 @@
       ],
       "url": "https://github.com/wyckoff01/Flop",
       "project_status": "community",
-      "reviewed_at": "2026-09-10",
+      "reviewed_at": "2026-09-11",
       "based_on": "https://github.com/zunmax/technocore-did-starter",
       "useful_for": [
         "Windows setup",
@@ -71,8 +71,8 @@
       ],
       "url": "https://flop.finance/teaser/",
       "project_status": "official",
-      "reviewed_at": "2026-09-10",
-      "based_on": "Version 0.1 header updated 2026-08-26; current provisional warning reviewed 2026-09-10",
+      "reviewed_at": "2026-09-11",
+      "based_on": "Version 0.1 header updated 2026-08-27; current provisional warning and 4.4-billion display reviewed 2026-09-11",
       "useful_for": [
         "draft network purpose and token mechanics",
         "provisional testnet and mainnet timing",
@@ -86,7 +86,7 @@
           "version, status, updated date, and provisional warning recorded",
           "agent allocation, faucet, spending formula, and timing read from the primary page"
         ],
-        "notes": "Official older draft, not a final specification or eligibility guarantee. Its 3.5-billion genesis pool and 1.2-billion agent allocation now match the current Yellow Paper v0.5.0 draft, while its 85/15 inference-fee wording does not express the Yellow Paper’s 10% burn, interim 90% author proxy, and 80/10/10 ratified transaction-fee target."
+        "notes": "Official older explanatory draft, not a final specification or eligibility guarantee. It now displays the live Yellow Paper’s 4.4-billion genesis pool and 1.2-billion agent allocation, while its 85/15 inference-fee wording does not express the Yellow Paper’s 10% burn, interim 90% author proxy, and 80/10/10 ratified transaction-fee target."
       }
     },
     {
@@ -98,8 +98,8 @@
       ],
       "url": "https://ask.flop.finance/llms.txt",
       "project_status": "official",
-      "reviewed_at": "2026-09-10",
-      "based_on": "18-page published corpus observed 2026-09-08",
+      "reviewed_at": "2026-09-11",
+      "based_on": "18-page published corpus rechecked 2026-09-11",
       "useful_for": [
         "draft FLOP architecture and terminology",
         "agent integration and spend controls",
@@ -115,7 +115,7 @@
           "representative pages preserve draft-status, planned-versus-live, provisional, and not-yet-wired boundaries",
           "the advertised remote MCP endpoint was not invoked"
         ],
-        "notes": "Official explanatory documentation, not a final Yellow Paper, live-network proof, or complete eligibility guarantee. Individual pages carry their own update dates and some protocol parameters remain planned, provisional, or under review."
+        "notes": "Official explanatory documentation, not a final Yellow Paper, live-network proof, or complete eligibility guarantee. Individual pages carry their own update dates; some parameter summaries, including older reward-split language, lag the current live Yellow Paper and must not be treated as leading."
       }
     },
     {
@@ -127,8 +127,8 @@
       ],
       "url": "https://flop.finance/intro/yellowpaper/",
       "project_status": "official",
-      "reviewed_at": "2026-09-10",
-      "based_on": "Version 0.5.0 draft, updated 2026-09-05; official mirror commit 3eaf2f25bc46a501df225cae4e4e991975f6b2a9 observed 2026-09-10",
+      "reviewed_at": "2026-09-11",
+      "based_on": "Live version 0.5.0 draft with D-0440 reviewed 2026-09-11; official mirror commit 3eaf2f25bc46a501df225cae4e4e991975f6b2a9 still lags at D-0438",
       "useful_for": [
         "normative draft protocol formats",
         "current target parameters and allocations",
@@ -140,10 +140,10 @@
         "checks": [
           "served by the official FLOP site and labeled version 0.5.0 draft",
           "normative parameter table, implementation-status appendix, transcript formats, limits, and safety boundaries read from the primary page",
-          "current 3.5-billion genesis allocation and transaction-fee rule compared across the live page, teaser, and official mirror commit",
+          "current 4.4-billion D-0440 genesis allocation and transaction-fee rule compared across the live page, teaser, and lagging official mirror commit",
           "draft evidence labels, unpublished-artifact limits, open-item statuses, and no-release-yet boundary recorded"
         ],
-        "notes": "Official normative target specification, still a prepublication draft with no tagged public release. The current table lists 3.5 billion genesis FLOP, including 1.2 billion for agents. A target mechanism or parameter is not proof that the corresponding runtime, testnet, settlement rail, faucet, eligibility rule, or token contract is live."
+        "notes": "Official normative target specification, still a prepublication draft with no tagged public release. The current live table lists 4.4 billion genesis FLOP: 1.2 billion each for miners, validators, and agents, plus 800 million reserve. The official GitHub mirror still lists 3.5 billion, so it currently lags the live page. A target mechanism or parameter is not proof that the corresponding runtime, testnet, settlement rail, faucet, eligibility rule, or token contract is live."
       }
     }
   ]

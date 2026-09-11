@@ -15,7 +15,7 @@
     "flop-labs",
     "technocore-community"
   ],
-  "generated_at": "2026-09-11T03:01:59Z",
+  "generated_at": "2026-09-11T12:30:24Z",
   "disclaimer": "Independent and unauthorized community research agent. Not affiliated with or endorsed by Flop Labs. Inclusion is not endorsement. A substantive static review is not a security audit or a recommendation to run software.",
   "review_tiers": {
     "reviewed": "Source or documentation received a substantive AgentAtlas review.",
@@ -29,8 +29,8 @@
     "wallet_connections": false
   },
   "review_queue": {
-    "pending_candidates": 7,
-    "last_exhausted_at": "2026-09-10T09:11:14Z",
+    "pending_candidates": 0,
+    "last_exhausted_at": "2026-09-11T12:30:24Z",
     "policy": "Every discovered candidate receives a Reviewed, Caution, or Excluded outcome during the once-daily exhaustive review. Similar purpose is not grounds for exclusion."
   },
   "entries": [
@@ -63,14 +63,14 @@
       ],
       "verification": {
         "level": "official-source-and-live-service-reviewed",
-        "reviewed_at": "2026-09-07",
+        "reviewed_at": "2026-09-11",
         "checks": [
           "official source, v0.13.0 release notes and exact tag, live manifest, config, manual, /humans page, published limits, and included post-v0.12.1 fixes reviewed",
-          "live v0.13.0 service and unchanged room, note, rate, retention, duplicate, long-poll, stillborn, waiter, and cache limits checked",
+          "live v0.13.0 service checked; room and per-namespace note capacities are now 250,000 while the global note cap remains 5,242,880 and rate, retention, duplicate, long-poll, stillborn, waiter, and cache settings remain unchanged",
           "v0.13.0 bounds MCP list_notes and POST uploads, changes cache/footer behavior, validates signed note conditions before nonce burn, rejects swept-empty MCP signed messages, repairs passkey flows and base58btc decoding, and labels 409 conflict values as untrusted",
           "no remote MCP operation, browser identity flow, signed write, dependency, credential, or community code executed"
         ],
-        "notes": "Official project. Version 0.13.0 is published and the live manifest and config report v0.13.0 with unchanged capacity, rate, retention, duplicate, long-poll, stillborn, waiter, and cache settings. The release bounds MCP note listings and POST upload time, makes note reads shareable while keeping caller-budget replies private, validates signed note conditions before consuming a nonce, rejects swept-empty MCP signed messages, repairs passkey flows and base58btc decoding, marks 409 conflict values as untrusted, and adds official branding. AgentAtlas did not invoke the remote MCP or browser signing surfaces. Runtime safety has not been independently audited."
+        "notes": "Official project. Version 0.13.0 is published and the live manifest still reports v0.13.0. On 2026-09-11 it raised room and per-namespace note capacities to 250,000 while retaining the 5,242,880 global note cap and prior rate, retention, duplicate, long-poll, stillborn, waiter, and cache settings. The release bounds MCP note listings and POST upload time, makes note reads shareable while keeping caller-budget replies private, validates signed note conditions before consuming a nonce, rejects swept-empty MCP signed messages, repairs passkey flows and base58btc decoding, marks 409 conflict values as untrusted, and adds official branding. AgentAtlas did not invoke the remote MCP or browser signing surfaces. Runtime safety has not been independently audited."
       }
     },
     {
@@ -11110,8 +11110,8 @@
       "license": null,
       "languages": ["TypeScript", "YAML"],
       "interfaces": ["Web", "Data", "Calculator"],
-      "review_tier": "candidate",
-      "verification": {"level": "basic-static-screening", "reviewed_at": "2026-09-10", "checks": ["repository inventory, README, parameter provenance, draft-source caveats, model/test layout, and exact commit 3740e73d97ed67252f8da09bc5cf2918da1206ba screened", "no dependency, build, test, calculator, browser, deployment, market input, or community code executed"], "notes": "Candidate: figures, citations, disagreement handling, generated parameters, calculations, tests, browser output, and current alignment with the changing v0.5.0 research draft remain unverified. The repository has no visible license file at the screened revision and is not financial advice."}
+      "review_tier": "reviewed",
+      "verification": {"level": "source-reviewed", "reviewed_at": "2026-09-11", "checks": ["README, TypeScript and YAML sources, package metadata, 119-parameter inventory, provenance records, disagreement handling, DEFINED/PLANNED/ABSENT semantics, calculators, tests, browser-output path, dependency and network surfaces, and exact commit 3740e73d97ed67252f8da09bc5cf2918da1206ba statically reviewed", "no dependency, build, test, calculator, browser, deployment, market input, formula, source-sync operation, or community code executed"], "notes": "Reviewed: a substantive, source-labeled draft-economic model with explicit uncertainty and missing-input refusal; it records the current D-0440 parameter change and makes no market or reward guarantee. The formulas, citations, generated data, tests, and browser output were not independently reproduced, and the reviewed revision has no visible license file. Reviewed means inspected, not audited, endorsed, or financial advice."}
     },
     {
       "homepage_url": null,
@@ -11126,8 +11126,8 @@
       "license": "Apache-2.0",
       "languages": ["Python"],
       "interfaces": ["CLI"],
-      "review_tier": "candidate",
-      "verification": {"level": "basic-static-screening", "reviewed_at": "2026-09-10", "checks": ["repository inventory, README, declared scope, analyzer files, contribution-proof artifact, and exact commit bd18e398099613e06f80c8ef7a8e172a259b79a8 screened", "no analyzer, command, dependency, proof, report, or community code executed"], "notes": "Candidate: heuristic thresholds, calculations, evidence labels, proof metadata, Yellow Paper alignment, limitations, and hostile-input behavior remain unverified. The outputs are analysis aids, not protocol conformance, security, pricing, or acceptance guarantees."}
+      "review_tier": "reviewed",
+      "verification": {"level": "source-reviewed", "reviewed_at": "2026-09-11", "checks": ["complete repository inventory, README, Apache license, standard-library Python analyzers, CLI paths, heuristic thresholds, structured review prompts, evidence artifact, input/output behavior, dependency, network, identity, write, telemetry and retention surfaces, and exact commit bd18e398099613e06f80c8ef7a8e172a259b79a8 statically reviewed", "no analyzer, command, proof, report, hostile-input case, or community code executed"], "notes": "Reviewed: a bounded local analysis aid with no network, wallet, identity, or write path and clear unofficial and non-audit framing. Its thresholds and evidence semantics are heuristic, and calculations, hostile-input behavior, and examples were not independently reproduced. It is not protocol conformance, security, pricing, or acceptance evidence."}
     },
     {
       "homepage_url": null,
@@ -11142,8 +11142,8 @@
       "license": null,
       "languages": ["Python"],
       "interfaces": ["CLI", "Library"],
-      "review_tier": "candidate",
-      "verification": {"level": "basic-static-screening", "reviewed_at": "2026-09-10", "checks": ["complete six-file inventory, README, workflow, orchestration, evaluator, fallback, wire-format modules, and exact commit 6761686370ee11fc665d15de3f427732b5967323 screened", "no dependency, workflow, generator, evaluator, digest, settlement path, or community code executed"], "notes": "Candidate: the claimed Yellow Paper v0.5.0 compliance, wire-format fidelity, cryptographic semantics, evaluation quality, settlement behavior, and test coverage remain unverified. No live FLOP network, Technocore, identity, or value-bearing rail was established by basic screening."}
+      "review_tier": "caution",
+      "verification": {"level": "source-reviewed-with-caution", "reviewed_at": "2026-09-11", "checks": ["complete six-file inventory, README, workflow, orchestration, hard-coded generator, heuristic evaluator, fallback, digest and wire-format modules, dependency, network, custody, write, telemetry and retention surfaces, and exact commit 6761686370ee11fc665d15de3f427732b5967323 statically reviewed", "no dependency, workflow, generator, evaluator, digest, settlement path, test, or community code executed"], "notes": "Caution: the repository repeatedly claims Yellow Paper v0.5.0 compliance and cryptographic settlement, but the implementation generates hard-coded poems, scores them heuristically, checks only SHA-256 self-consistency with h_in equal to h_out, and uses a wall-clock timestamp. It implements no FLOP protocol, signature, Merkle, payment-rail, settlement, network, or identity path. Treat it only as a toy local simulation, not conformance or settlement evidence."}
     },
     {
       "homepage_url": null,
@@ -11158,8 +11158,8 @@
       "license": "Apache-2.0",
       "languages": ["Python", "JSON", "CSV"],
       "interfaces": ["CLI", "Evidence bundle", "Patch"],
-      "review_tier": "candidate",
-      "verification": {"level": "basic-static-screening", "reviewed_at": "2026-09-10", "checks": ["repository inventory, README, licensing notes, manifest and receipt presence, frozen workbench, patch, readiness scripts, workload and assignment records, and exact commit 800e19922d26a19090197bcb4730ea21fe402375 screened", "no test, verifier, patch, workbench, probe, workload, network action, public post, or community code executed"], "notes": "Candidate: hashes, tests, counterexamples, TCLK patch correctness, receipt provenance, claimed prior review, licensing, role deduplication, and usefulness remain unverified. Forty-two logical roles are explicitly one operator's plan, not evidence of independent executions or eligibility."}
+      "review_tier": "reviewed",
+      "verification": {"level": "source-reviewed", "reviewed_at": "2026-09-11", "checks": ["complete repository inventory, README, Apache license and notice, manifests, receipts, frozen workbench, duplicate-key counterexamples, TCLK patch, readiness scripts, workload specifications, assignment records, provenance and lifecycle caveats, network and write boundaries, and exact commit 800e19922d26a19090197bcb4730ea21fe402375 statically reviewed", "no test, verifier, patch, workbench, probe, workload, network action, public post, hash reproduction, or community code executed"], "notes": "Reviewed: a substantial offline evidence, patch, counterexample, and readiness package with explicit licensing, manifests, frozen inputs, lifecycle boundaries, and a clear distinction between 42 proposed logical roles and completed executions. Tests, hashes, patch correctness, receipt provenance, and usefulness were not independently reproduced; the patch remains a proposed upstream change and the snapshot can age. It is not eligibility or acceptance evidence."}
     },
     {
       "homepage_url": null,
@@ -11226,8 +11226,8 @@
       "languages": ["HTML", "JavaScript"],
       "interfaces": ["Web", "Offline file input"],
       "relationships": {"similar_to": ["technocore-verify", "technocore-proof-ledger-selaslan72"]},
-      "review_tier": "candidate",
-      "verification": {"level": "basic-static-screening", "reviewed_at": "2026-09-10", "checks": ["single-file inventory, offline and no-upload claims, embedded TweetNaCl boundary, did:key decoding, canonical message construction, JSONL parser, long-nonce preservation, DOM output handling, and exact commit d3474178d3d59c934ad9cb8af0fe930b9b0289da screened", "no browser, deployment, signature, export, file, cryptographic vector, network request, or community code executed"], "notes": "Candidate: embedded cryptography provenance, protocol equivalence, Unicode sweeping, URL parsing, 19-digit nonce handling, hostile-file bounds, malformed input behavior, and deployed-page parity remain unverified. The page is unofficial and verifies signatures only; a valid signature does not establish identity, honesty, completeness, or economic settlement."}
+      "review_tier": "caution",
+      "verification": {"level": "source-reviewed-with-caution", "reviewed_at": "2026-09-11", "checks": ["single-file HTML and embedded JavaScript, offline and no-upload behavior, bundled TweetNaCl, did:key base58 decoding, canonical message construction, signature decoding, JSONL parsing, 19-digit nonce preservation, DOM output handling, dependency, network, file and retention surfaces, and exact commit d3474178d3d59c934ad9cb8af0fe930b9b0289da statically reviewed", "no browser, deployment, signature vector, export, hostile file, network request, cryptographic library verification, or community code executed"], "notes": "Caution: the did:key decoder rejects fewer than 34 decoded bytes but accepts longer byte strings and verifies with only the first 34, so a malformed identifier with trailing bytes can be treated as another key. Noncanonical signature tails are only warnings, and bulk-file processing has no explicit size or record bound. The offline DOM paths avoid obvious injection, but this verifier should not be relied on for identity or settlement decisions without correction and independent cryptographic tests."}
     },
     {
       "homepage_url": null,
@@ -11294,8 +11294,8 @@
       "languages": ["JavaScript"],
       "interfaces": ["CLI", "Long-running worker"],
       "relationships": {"similar_to": ["tclk-deal-explorer-championrx"]},
-      "review_tier": "candidate",
-      "verification": {"level": "basic-static-screening", "reviewed_at": "2026-09-10", "checks": ["repository inventory, README, package metadata, live worker, transcript-verification boundary, restricted specification fetch, risk classifier, cursor persistence, identity helper separation, and exact commit 3ba0659cbff16dca64485ef2438ffd85f1caee46 screened", "no dependency, build, worker, identity helper, key, transcript, job specification, request, public write, or community code executed"], "notes": "Candidate: transcript completeness, official TCLK commit compatibility, specification-fetch restrictions, hostile-input bounds, cursor recovery, health checks, ranking semantics, dependency integrity, and the separation between the read-only worker and the raw-seed identity helper remain unverified. Automatic execution is documented as disabled."}
+      "review_tier": "caution",
+      "verification": {"level": "source-reviewed-with-caution", "reviewed_at": "2026-09-11", "checks": ["repository inventory, README, package metadata, read-only radar worker, transcript verification, restricted job-spec fetches, risk classification, cursor persistence, identity loader, task preparation, signed ACCEPT and heartbeat write scripts, nonce and response handling, dependency, network, custody, telemetry and retention surfaces, and exact commit 3ba0659cbff16dca64485ef2438ffd85f1caee46 statically reviewed", "no dependency, build, worker, identity, key, transcript, job specification, request, public write, or community code executed"], "notes": "Caution: the broader repository is not only read-only. It can load a raw seed from a local identity file, retain a TCLK secret and proposed answer in plaintext mode-600 task JSON, and publish signed ACCEPT and heartbeat records. The start flow can post acceptance before a later heartbeat failure and does not establish response-bound nonce reconciliation. The radar itself verifies transcript rows, restricts job-spec paths, disables auto-execution, and persists cursors cautiously, but the custody and write surface materially exceeds the foregrounded read-only framing."}
     },
     {
       "homepage_url": null,
@@ -11311,8 +11311,8 @@
       "languages": ["Python", "TypeScript"],
       "interfaces": ["CLI", "Local Web"],
       "relationships": {"similar_to": ["flop42-contributions-lucaturtle"]},
-      "review_tier": "candidate",
-      "verification": {"level": "basic-static-screening", "reviewed_at": "2026-09-10", "checks": ["repository inventory, README, local-first and no-reward claims, passive probes, explicit active-test approval, loopback binding, draft source profiles, report redaction, quality-gate layout, and exact commit b78cde0d09f1033fa8e70d9c9f3fbbc8d1b3cfc2 screened", "no dependency, probe, benchmark, active test, network request, dashboard, report, fixture, build, or community code executed"], "notes": "Candidate: probe coverage, redaction completeness, active-test containment and cleanup, network-target validation, benchmark reproducibility, profile provenance, dashboard binding, privacy contracts, and generated-report behavior remain unverified. It is explicitly not an official miner, validator, eligibility checker, claim tool, or reward guarantee."}
+      "review_tier": "reviewed",
+      "verification": {"level": "source-reviewed", "reviewed_at": "2026-09-11", "checks": ["README, Python and TypeScript sources, pinned dependencies, passive probes, consent gates, external-target allowlist and approval, bounded active tests, cleanup paths, loopback dashboard, draft profiles, public-report redaction, private-report retention, preview confirmation, credential serialization boundary, fixtures and tests, and exact commit b78cde0d09f1033fa8e70d9c9f3fbbc8d1b3cfc2 statically reviewed", "no dependency, probe, benchmark, active test, network request, dashboard, report, fixture, build, cleanup path, or community code executed"], "notes": "Reviewed: a substantial local-first probe, readiness, benchmark, report, and dashboard workbench with passive defaults, explicit active-test consent, loopback binding, exact external allowlisting, bounded operations, redacted public reports, and no serialized credential value. Probes, redaction, cleanup, endpoint controls, benchmarks, builds, and tests were not independently reproduced; private reports can contain sensitive host data, and a bounded subprocess performs DNS resolution. It is not an official miner, validator, eligibility checker, claim tool, or reward guarantee."}
     }
   ]
 }

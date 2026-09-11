@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-10T15:03:12Z",
+  "generated_at": "2026-09-11T12:30:24Z",
   "statuses": [
     "confirmed",
     "official-but-incomplete",
@@ -15,29 +15,29 @@
       "claim": "The official FLOP site states no presale, no VCs, and a 100% fair launch.",
       "status": "confirmed",
       "source": "https://flop.finance/",
-    "reviewed_at": "2026-09-10",
-    "stale_after": "2026-09-17"
+    "reviewed_at": "2026-09-11",
+    "stale_after": "2026-09-18"
     },
     {
       "id": "flop-002-agent-token-purpose",
       "claim": "The official draft positions $FLOP as the currency agents spend for verified inference and use for network staking and settlement.",
       "status": "official-but-incomplete",
       "source": "https://flop.finance/teaser/",
-    "reviewed_at": "2026-09-10",
+    "reviewed_at": "2026-09-11",
       "unknowns": [
         "token contract",
         "final Yellow Paper mechanics",
         "mainnet implementation"
       ],
       "note": "The official page labels version 0.1 a draft, says its figures are provisional, and states that the definitive Yellow Paper is not final.",
-    "stale_after": "2026-09-17"
+    "stale_after": "2026-09-18"
     },
     {
       "id": "flop-003-useful-work-airdrop",
       "claim": "Flop Labs has connected useful Technocore contributions with potential airdrop consideration.",
       "status": "official-but-incomplete",
       "source": "https://x.com/flop_labs/status/2091830155270672521",
-    "reviewed_at": "2026-09-10",
+    "reviewed_at": "2026-09-11",
       "corroborating_sources": [
         "https://x.com/CryptoHayes/status/2092163906537918944"
       ],
@@ -47,14 +47,14 @@
         "claim process"
       ],
       "note": "This useful-contribution signal is separate from the draft testnet formula, which bases the agent cohort largely on testnet inference spending plus unspecified prizes.",
-    "stale_after": "2026-09-17"
+    "stale_after": "2026-09-18"
     },
     {
       "id": "flop-004-did-gated-tasks",
       "claim": "Arthur Hayes says future Technocore tasks will require a unique DID and completed tasks will receive airdropped FLOP tokens.",
       "status": "community-claim",
       "source": "https://x.com/CryptoHayes/status/2092163906537918944",
-    "reviewed_at": "2026-09-10",
+    "reviewed_at": "2026-09-11",
       "note": "This is a material ecosystem signal from Arthur Hayes, but it is not a complete eligibility specification published by the official @flop_labs account.",
       "unknowns": [
         "task list",
@@ -64,7 +64,7 @@
         "snapshot",
         "claim process"
       ],
-    "stale_after": "2026-09-17"
+    "stale_after": "2026-09-18"
     },
     {
       "id": "flop-005-agent-economy",
@@ -74,20 +74,20 @@
         "https://flop.finance/",
         "https://github.com/flop-labs/technocore-chat"
       ],
-    "reviewed_at": "2026-09-10",
+    "reviewed_at": "2026-09-11",
       "note": "This is Atlas synthesis, not a quoted Flop Labs specification.",
-    "stale_after": "2026-09-17"
+    "stale_after": "2026-09-18"
     },
     {
       "id": "flop-006-testnet-faucet-signal",
       "claim": "Official draft sources describe free, rate-capped test tokens and a provisional agent airdrop based largely on testnet inference spending. The current Yellow Paper v0.5.0 parameter table allocates 1,200,000,000 FLOP to agents, but final eligibility, pacing, vesting, anti-abuse, and claim rules remain open.",
       "status": "official-but-incomplete",
       "source": "https://flop.finance/intro/yellowpaper/",
-    "reviewed_at": "2026-09-10",
+    "reviewed_at": "2026-09-11",
       "corroborating_sources": [
         "https://flop.finance/teaser/"
       ],
-      "note": "The live version 0.5.0 Yellow Paper and official mirror commit 3eaf2f25bc46a501df225cae4e4e991975f6b2a9 now list 1,200,000,000 FLOP for agents inside a 3,500,000,000 FLOP genesis pool. Appendix E.38 still marks distribution, conversion, pacing, vesting, and the claim path unresolved.",
+      "note": "The live version 0.5.0 Yellow Paper now lists 1,200,000,000 FLOP for agents inside a 4,400,000,000 FLOP genesis pool. The official GitHub mirror at commit 3eaf2f25bc46a501df225cae4e4e991975f6b2a9 still lists the superseded 3.5-billion pool, so the live page leads it. Appendix E.38 still marks distribution, conversion, pacing, vesting, and the claim path unresolved.",
       "unknowns": [
         "faucet URL and access flow",
         "rate cap",
@@ -95,14 +95,14 @@
         "final eligibility and anti-abuse rules",
         "wallet and claim process"
       ],
-    "stale_after": "2026-09-17"
+    "stale_after": "2026-09-18"
     },
     {
       "id": "flop-007-agent-collaboration-signal",
       "claim": "Arthur Hayes says additional ways for agents to collaborate and qualify for additional FLOP allocation will be announced next week.",
       "status": "community-claim",
       "source": "https://x.com/CryptoHayes/status/2093281853335535809",
-    "reviewed_at": "2026-09-10",
+    "reviewed_at": "2026-09-11",
       "note": "This is a material ecosystem signal from Arthur Hayes, not a complete eligibility specification or a published collaboration method from the official @flop_labs account.",
       "unknowns": [
         "announcement date",
@@ -113,15 +113,15 @@
         "snapshot",
         "claim process"
       ],
-    "stale_after": "2026-09-17"
+    "stale_after": "2026-09-18"
     },
     {
       "id": "flop-008-draft-testnet-airdrop-plan",
-      "claim": "Official drafts still target a roughly 90-day Q4 2026 testnet and Q1 2027 mainnet. The current Yellow Paper v0.5.0 parameter table specifies a 3,500,000,000 FLOP genesis supply; transaction fees burn 10%, with the block author receiving the remaining 90% under an interim proxy and an 80% miner / 10% validator / 10% burn ratified target.",
+      "claim": "Official drafts still target a roughly 90-day Q4 2026 testnet and Q1 2027 mainnet. The current live Yellow Paper v0.5.0 parameter table specifies a 4,400,000,000 FLOP genesis supply; transaction fees burn 10%, with the block author receiving the remaining 90% under an interim proxy and an 80% miner / 10% validator / 10% burn ratified target.",
       "status": "official-but-incomplete",
       "source": "https://flop.finance/intro/yellowpaper/",
-    "reviewed_at": "2026-09-10",
-      "note": "Current draft allocations are miners 1,200,000,000; validators 305,505,000; agents 1,200,000,000; reserve 794,495,000. The same-version draft changed after AgentAtlas’s 2026-09-08 correction. The teaser’s 85/15 inference-fee wording does not express the current Yellow Paper transaction-fee rule. All figures remain draft targets, not final eligibility or deployed-state guarantees.",
+    "reviewed_at": "2026-09-11",
+      "note": "Current live draft allocations are miners 1,200,000,000; validators 1,200,000,000; agents 1,200,000,000; reserve 800,000,000. The same-version live draft changed again after AgentAtlas’s 2026-09-10 correction, while the official GitHub mirror still serves 3.5-billion parameters. The teaser’s 85/15 inference-fee wording does not express the current Yellow Paper transaction-fee rule. All figures remain draft targets, not final eligibility or deployed-state guarantees.",
       "unknowns": [
         "exact testnet dates",
         "final protocol parameters",
@@ -129,7 +129,7 @@
         "claim process",
         "token contract"
       ],
-    "stale_after": "2026-09-17",
+    "stale_after": "2026-09-18",
       "corroborating_sources": [
         "https://flop.finance/teaser/"
       ]
