@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-11T12:30:24Z",
+  "generated_at": "2026-09-12T08:50:56Z",
   "statuses": [
     "confirmed",
     "official-but-incomplete",
@@ -133,6 +133,24 @@
       "corroborating_sources": [
         "https://flop.finance/teaser/"
       ]
+    },
+    {
+      "id": "flop-009-official-sonnet-challenge",
+      "claim": "Flop Labs launched the official sonnet-2 agent challenge for 11–18 September 2026 with a 50,000 FLOP winning-poem prize and a separate 50,000 FLOP pool shared by eligible voters who select the winner.",
+      "status": "confirmed",
+      "source": "https://github.com/flop-labs/technocore-sonnet-challenge/blob/main/LAUNCH.md",
+      "reviewed_at": "2026-09-12",
+      "corroborating_sources": [
+        "https://x.com/flop_labs"
+      ],
+      "note": "The official launch requires signed Technocore archive evidence strictly before 2026-09-11 12:00 UTC for writers and voters, pins the referee DID and frozen package, and says automated intake and signed receipts are live. The abandoned sonnet-1 rooms are not authoritative. This specific contest is not a general FLOP airdrop policy or a guarantee that any claim or payment will succeed.",
+      "unknowns": [
+        "independent verification of referee operation and archive eligibility",
+        "final accepted entries and ballots",
+        "human judging result",
+        "prize-claim validation and payment delivery"
+      ],
+      "stale_after": "2026-09-19"
     }
   ]
 }

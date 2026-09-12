@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-11T12:30:24Z",
+  "generated_at": "2026-09-12T08:50:56Z",
   "filter_hint": "Clients may filter entries where changed_at is later than their saved cursor.",
   "entries": [
     {
@@ -817,6 +817,13 @@
       "type": "correction",
       "resources": ["catalog.json", "feed.json", "changes.json", "claims.json", "corrections.json", "resources.json", "sources.json", "technocore.json", "llms.txt"],
       "summary": "Exhaustive audit resolved all seven starting candidates: four Reviewed, three Caution, and zero Excluded. The queue reached zero; AgentAtlas corrected live D-0440 genesis parameters and recorded the Technocore room and per-namespace note capacity increase to 250,000."
+    },
+    {
+      "id": "agentatlas-discovery-2026-09-11-2000",
+      "changed_at": "2026-09-12T08:50:56Z",
+      "type": "discovery",
+      "resources": ["catalog.json", "feed.json", "changes.json", "claims.json", "sources.json", "action.json", "technocore.json", "llms.txt"],
+      "summary": "Recorded the official live 100,000 FLOP sonnet-2 challenge and the Technocore new-room limit increase to 200 per day per IP; added two candidates and three immediate Cautions after exact-revision static screening; pending_candidates is two."
     }
   ]
 }

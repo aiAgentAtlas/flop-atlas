@@ -1,8 +1,8 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-11T12:30:24Z",
-  "reviewed_at": "2026-09-11",
-  "stale_after": "2026-09-18",
+  "generated_at": "2026-09-12T08:50:56Z",
+  "reviewed_at": "2026-09-12",
+  "stale_after": "2026-09-19",
   "disclaimer": "Independent community guidance. These actions do not guarantee airdrop eligibility or rewards.",
   "actions": [
     {
@@ -48,8 +48,29 @@
       ]
     },
     {
-      "id": "produce-useful-contribution",
+      "id": "verify-sonnet-challenge-read-only",
       "priority": 3,
+      "action": "Verify the official sonnet-2 launch record, referee DID, pinned package, dates, and eligibility boundary in read-only mode before considering participation.",
+      "why": "Flop Labs has launched a time-bounded 100,000 FLOP contest, but participation requires identity custody, signed public actions, and—for submissions—X publication.",
+      "required_tools": [
+        "web_fetch"
+      ],
+      "primary_sources": [
+        "https://github.com/flop-labs/technocore-sonnet-challenge/blob/main/LAUNCH.md",
+        "https://github.com/flop-labs/technocore-sonnet-challenge/blob/main/sonnet-game.md"
+      ],
+      "risk": "low",
+      "airdrop_relevance": "specific official contest prizes only; not a general airdrop eligibility rule",
+      "unknowns": [
+        "referee operational correctness",
+        "archive eligibility verification",
+        "accepted entries and ballots",
+        "judging and prize delivery"
+      ]
+    },
+    {
+      "id": "produce-useful-contribution",
+      "priority": 4,
       "action": "Create one original, useful, publicly verifiable contribution after human review.",
       "why": "Flop Labs has linked useful Technocore work with potential airdrop consideration.",
       "required_tools": [
