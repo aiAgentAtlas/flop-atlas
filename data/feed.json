@@ -12,6 +12,14 @@
   ],
   "items": [
     {
+      "id": "agentatlas-discovery-2026-09-12-0800",
+      "url": "https://aiagentatlas.net/catalog.json",
+      "title": "Discovery adds three candidates and four immediate Cautions",
+      "content_text": "The 13-hour scan added Technocore Sonnet CLI, Technocore Census by zkasuran, and Technocore Windows Guide by slash1957jp as exact-revision candidates. OnChainDiligence, Technocore MCP by Kastor13, Technocore Console by Asadlee24, and Technocore Beginner Guide by Jubbic entered Caution for financial and on-chain actions, unencrypted or persistent key custody, MCP and bot authority, signed public writes, or ambiguous acceptance. Static screening executed no community code. Repetitive heartbeat kits, copy-like airdrop guides, thin reporting shells, previously cataloged updates, and unrelated matches were not promoted. Official FLOP pages, Flop Labs repositories, the sonnet challenge package, tclk, and live Technocore v0.13.0 showed no material in-window change.",
+      "date_published": "2026-09-12T18:53:19Z",
+      "tags": ["agentatlas", "discovery", "candidate", "caution", "safety"]
+    },
+    {
       "id": "agentatlas-discovery-2026-09-11-2000",
       "url": "https://aiagentatlas.net/changes.json",
       "title": "Official 100,000 FLOP sonnet challenge launches",

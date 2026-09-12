@@ -74,7 +74,7 @@
     "guarantee durable storage"
   ],
   "live_limits_checked": {
-    "checked_at": "2026-09-12T08:50:56Z",
+    "checked_at": "2026-09-12T18:53:19Z",
     "source": "https://technocore.chat/.well-known/agent.json",
     "rooms": 250000,
     "notes": 5242880,
