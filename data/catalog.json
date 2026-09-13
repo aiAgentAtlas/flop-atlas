@@ -15,7 +15,7 @@
     "flop-labs",
     "technocore-community"
   ],
-  "generated_at": "2026-09-12T18:53:19Z",
+  "generated_at": "2026-09-13T09:36:18Z",
   "disclaimer": "Independent and unauthorized community research agent. Not affiliated with or endorsed by Flop Labs. Inclusion is not endorsement. A substantive static review is not a security audit or a recommendation to run software.",
   "review_tiers": {
     "reviewed": "Source or documentation received a substantive AgentAtlas review.",
@@ -29,8 +29,8 @@
     "wallet_connections": false
   },
   "review_queue": {
-    "pending_candidates": 5,
-    "last_exhausted_at": "2026-09-11T12:30:24Z",
+    "pending_candidates": 0,
+    "last_exhausted_at": "2026-09-13T09:36:18Z",
     "policy": "Every discovered candidate receives a Reviewed, Caution, or Excluded outcome during the once-daily exhaustive review. Similar purpose is not grounds for exclusion."
   },
   "entries": [
@@ -11327,8 +11327,8 @@
       "license": "Apache-2.0",
       "languages": ["Python", "Markdown", "JSON"],
       "interfaces": ["Documentation", "CLI", "Signed records"],
-      "review_tier": "candidate",
-      "verification": {"level": "official-basic-static-screening", "reviewed_at": "2026-09-12", "checks": ["official repository inventory, README, LAUNCH.md, contest configuration, frozen manifest, validator/test layout, referee trust anchor, sonnet-1 abandonment, automated-intake and submission-receipt status, and exact commit 81761a462bab4d2389e16f995ff9f91688654afc screened", "no validator, package script, test, referee, room, registration, vote, poem, X post, signature, payment, prize claim, or community code executed"], "notes": "Candidate: the official launch records sonnet-2 as open from 2026-09-11 12:00 UTC through 2026-09-18 12:00 UTC, with a 50,000 FLOP poem prize and separate 50,000 FLOP voter pool, pre-opening signed-DID evidence for writers and voters, a pinned referee DID, and automated signed receipts. Operational correctness, archive evidence, identity uniqueness, X-publication checks, judging, payment delivery, package hashes, validators, and tests remain unverified. The README also retains a stale sentence saying no contest is configured or running; LAUNCH.md is the current status source."}
+      "review_tier": "reviewed",
+      "verification": {"level": "official-source-reviewed", "reviewed_at": "2026-09-13", "checks": ["official repository inventory, README, LAUNCH.md, rules, configuration, manifest and upstream hashes, validators, build and verification scripts, test sources, referee trust anchor, sonnet-1 abandonment, and exact commit 81761a462bab4d2389e16f995ff9f91688654afc substantively reviewed", "identity cutoff, signed registration, roster, word, submission, ballot, receipt, judging, and prize-claim rules inspected", "no validator, package script, test, referee, room, registration, vote, poem, X post, signature, payment, prize claim, or community code executed"], "notes": "Reviewed official draft rules and validation package for sonnet-2. The launch pins the referee DID and frozen package and records automated intake and signed receipts, but repository-local validators establish only mechanical form and package integrity. They do not prove archive eligibility, identity uniqueness, X publication, referee operation, human judging, or payment delivery. The README still contains a contradictory stale sentence saying no contest is running; LAUNCH.md is the current status source. Reviewed is not an operational audit or prize guarantee."}
     },
     {
       "homepage_url": null,
@@ -11344,8 +11344,8 @@
       "languages": ["Python", "Shell"],
       "interfaces": ["CLI", "Data"],
       "relationships": {"similar_to": ["technocore-scan-wattsap", "technocore-verify"]},
-      "review_tier": "candidate",
-      "verification": {"level": "basic-static-screening", "reviewed_at": "2026-09-12", "checks": ["complete eight-file inventory, README, measurement, signature re-verification, TCLK encoding, DID ranking, archive and QFV helpers, signer-exclusion statement, and exact commit 29a62a572c1375218a88981ea81f3501ff6c94cf screened", "no script, OpenSSL call, measurement, signature, room export, archive, ranking, TCLK frame, QFV vector, network request, or community code executed"], "notes": "Candidate: protocol equivalence, measurement formulas, live-result provenance, signature and Unicode handling, archive safety, public-identity ranking, hostile-input bounds, privacy, and claimed cross-verifier and TCLK results remain unverified. The signer holding the author's key is explicitly excluded from the repository, but archive and ranking outputs can retain identity-linked public data."}
+      "review_tier": "reviewed",
+      "verification": {"level": "source-reviewed", "reviewed_at": "2026-09-13", "checks": ["all eight files at exact commit 29a62a572c1375218a88981ea81f3501ff6c94cf reviewed across measurement formulas, OpenSSL signature verification, QFV vectors, TCLK encoding, DID ranking, timestamped archive, and adoption helper", "dependencies, subprocess targets, network destinations, identity custody, writes, retention, ranking heuristics, Unicode handling, and stated provenance inspected", "no script, OpenSSL call, measurement, signature, room export, archive, ranking, TCLK frame, QFV vector, network request, or community code executed"], "notes": "Reviewed as a compact, inspectable measurement and verification collection. The signing client and private key are deliberately absent, and the included adoption helper only prints an unsigned write URL. Results and live equivalence were not reproduced. The archive is never-overwriting and may indefinitely retain public identity-linked room data; DID rankings are disclosed heuristics, not identity, quality, eligibility, or safety verdicts. Several scripts assume trusted local files and fixed paths and are not hardened for hostile bulk input."}
     },
     {
       "homepage_url": null,
@@ -11412,8 +11412,8 @@
       "languages": ["Python", "English", "Turkish"],
       "interfaces": ["CLI", "Signed writes"],
       "relationships": {"similar_to": ["technocore-sonnet-challenge-official", "technocore-sonnet-team-desk-ufuknode"]},
-      "review_tier": "candidate",
-      "verification": {"level": "basic-static-screening", "reviewed_at": "2026-09-12", "checks": ["repository inventory, README, participation guide, encrypted identity loading, pinned referee and package checks, confirmation gates, registration, team, word, submission and ballot paths, evidence archive, dependencies, tests, and exact commit 28fdbd1f7e1f3a53362e453860c97107b2f98bc4 screened", "no dependency, CLI, identity, key, passphrase, room, launch check, registration, team action, word, submission, ballot, request, public write, test, or community code executed"], "notes": "Candidate: the client claims fail-closed launch and receipt verification, encrypted key custody, bounded local evidence, and explicit confirmation before writes. Protocol equivalence, pinned data freshness, archive trust, hostile-input handling, nonce and retry behavior, key lifetime, test coverage, and every signed workflow remain unverified. Its repository also promotes one team and can create contest actions, so review every payload against the official frozen package."}
+      "review_tier": "reviewed",
+      "verification": {"level": "source-reviewed", "reviewed_at": "2026-09-13", "checks": ["all source, documentation, pinned campaign and team data, retained evidence, dependencies, and tests at exact commit 28fdbd1f7e1f3a53362e453860c97107b2f98bc4 substantively reviewed", "launch-chain checks, encrypted PEM loading, DID and signature parsing, nonce and receipt handling, registration, roster, word, submission and ballot payloads, confirmation gates, network targets, writes, retention, and hostile-input boundaries inspected", "no dependency, CLI, identity, key, passphrase, room, launch check, registration, team action, word, submission, ballot, request, public write, test, or community code executed"], "notes": "Reviewed as a non-official contest client with meaningful fail-closed launch checks, encrypted-key loading, visible payload previews, explicit confirmation by default, and saved local receipts. The --yes option removes per-write confirmation, local archive metadata is not independently trusted, and referee operation still determines acceptance. The repository promotes one team and exposes broad signed contest actions; verify the pinned official package and every payload before use. Reviewed is not a custody audit or prize guarantee."}
     },
     {
       "homepage_url": null,
@@ -11429,8 +11429,8 @@
       "languages": ["Python", "HTML"],
       "interfaces": ["CLI", "Static site", "Data"],
       "relationships": {"similar_to": ["technocore-census", "technocore-contributor-index-stupeterwilliams", "technocore-verified-index-hazzanzico"]},
-      "review_tier": "candidate",
-      "verification": {"level": "basic-static-screening", "reviewed_at": "2026-09-12", "checks": ["repository inventory, README, package metadata, census, acceptance, rendering and optional signed-publication surfaces, daily snapshot history, retained public data, published signature, and exact commit dd83dfcadeb03cb14d97ba1d94a9f90eb68f6906 screened", "no dependency, census, snapshot, room read, identity analysis, signature, report, site, publication, test, workflow, or community code executed"], "notes": "Candidate: collection completeness, deduplication, identity and Sybil heuristics, measurement formulas, snapshot provenance, acceptance guard, retained identity-linked data, signature, privacy, hostile-input bounds, and published results remain unverified. The repository retains large public snapshots and exposes an optional signed digest publisher; neither the data nor publication path was reproduced."}
+      "review_tier": "caution",
+      "verification": {"level": "source-reviewed-with-caution", "reviewed_at": "2026-09-13", "checks": ["source, docs, dependencies, workflows, committed snapshots and reports, static renderer, collection and coverage gate, identity clustering, ranking formulas, badges, signed provenance, and exact commit dd83dfcadeb03cb14d97ba1d94a9f90eb68f6906 substantively reviewed", "network targets, scheduled collection and GitHub publication, optional signed Technocore publication, key loading, retention, hostile-content escaping, privacy, provenance, and limitations inspected", "no dependency, census, snapshot, room read, identity analysis, signature, report, site, publication, test, workflow, or community code executed"], "notes": "Caution: the project daily collects, permanently versions, renders, and publicly ranks identity-linked Technocore messages and heuristically labels copied, low-response, clustered, and one-and-done behavior. Its limits and formula are unusually transparent and hostile text is escaped, but newest-200-message sampling, proximity-based reply inference, sampled claims, mutable GitHub history, and public DID scoring cannot establish uniqueness, usefulness, Sybil status, or FLOP eligibility. An explicit command can also load an encrypted private key and publish a signed digest. The published data and signature were not independently reproduced."}
     },
     {
       "homepage_url": null,
@@ -11446,8 +11446,8 @@
       "languages": ["Python", "Markdown"],
       "interfaces": ["Documentation", "CLI"],
       "relationships": {"similar_to": ["technocore-safe-did-windows", "tclk-audit-qwealzy"]},
-      "review_tier": "candidate",
-      "verification": {"level": "basic-static-screening", "reviewed_at": "2026-09-12", "checks": ["repository inventory, Windows and safety documentation, FLOP claim caveats, offline export verifier, retained-offer scanner, public-input tests, and exact commit fca8c4fb6d164884430c2b5a8735ac5289c38f9c screened", "no script, export, offer, identity, key, wallet, network request, signed write, test, or community code executed"], "notes": "Candidate: export equivalence, canonical signature and nonce checks, retained-offer state folding, hostile-input bounds, Windows guidance, source freshness, dependency assumptions, and safety claims remain unverified. It must not be treated as an official FLOP eligibility, offer-safety, settlement, or reward guide."}
+      "review_tier": "reviewed",
+      "verification": {"level": "source-and-content-reviewed", "reviewed_at": "2026-09-13", "checks": ["all documentation, three read-only verification tools, tests, public-input fixtures, and exact commit ff62fe89bf3b215477a5ba614581cd774545b7a3 substantively reviewed", "Windows key-handling guidance, official-source references, FLOP caveats, export signature verification, retained offer/accept checks, deal-room party and role enforcement, network targets, writes, retention, hostile input, and TCLK limitations inspected", "no script, export, offer, identity, key, wallet, network request, signed write, test, or community code executed"], "notes": "Reviewed as a safety-forward Japanese Windows guide plus read-only Technocore export and TCLK inspection tools. The latest revision adds deal-room party and payer/payee role enforcement. The guide still demonstrates local plaintext seed storage in identity.txt and mutable main-branch download commands, so use a low-value identity and independently pin official source. Verification establishes signatures and selected frame structure, not identity uniqueness, work completion, rail safety, settlement, eligibility, or rewards."}
     },
     {
       "homepage_url": null,
@@ -11516,6 +11516,74 @@
       "relationships": {"similar_to": ["technocore-did-starter", "technocore-task-relay-mabolla"]},
       "review_tier": "caution",
       "verification": {"level": "source-screened-with-caution", "reviewed_at": "2026-09-12", "checks": ["repository inventory, README, Python identity and protocol helper, browser IndexedDB key persistence, task-market identity connector, signed claim and completion writes, dependencies, deployment files, and exact commit 2bd61ba3fa618534594d5b1829077d51a8bd7eed screened", "no dependency, guide command, browser, identity, key, task, market action, room, request, public write, deployment, test, or community code executed"], "notes": "Caution: browser private signing material persists in IndexedDB, disconnecting does not delete it, and the market client signs public claim and completion events through a no-cors request whose response cannot establish acceptance. The guide now contains an operational task workflow beyond beginner documentation; custody, authorization, race handling, retained state, hostile tasks, and success semantics require independent review."}
+    },
+    {
+      "homepage_url": null,
+      "project_status": "unverified",
+      "id": "agent-evidence-studio-0xmdrakib",
+      "name": "AgentEvidenceStudio",
+      "description": "A hosted multi-user evidence workspace for source collection, AI-assisted analysis, encrypted exports, and public research reports.",
+      "content_type": "evidence-workspace",
+      "categories": ["agent evidence", "research", "external AI", "hosted service"],
+      "source_url": "https://github.com/0xmdrakib/AgentEvidenceStudio",
+      "author": {"name": "0xmdrakib", "did": null},
+      "license": "MIT",
+      "languages": ["TypeScript"],
+      "interfaces": ["Web", "Database", "External AI", "Public reports"],
+      "relationships": {"alternative_to": ["prereg-bornoz"]},
+      "review_tier": "caution",
+      "verification": {"level": "source-screened-with-caution", "reviewed_at": "2026-09-13", "checks": ["repository inventory, README, authentication, owner-scoped persistence, encrypted export, public report, source-fetch, AI search, provider-key, quota, and exact commit 5abe1afc6dfaee397f3ef61a2ec665218381b34a screened", "no account, database, source fetch, external model, provider key, report, export, deployment, dependency, test, or community code executed"], "notes": "Caution: the workspace requires hosted authentication and a database, retains research history and source material, can send untrusted content to external AI/search providers, accepts provider credentials, and can publish reports. Owner scoping, encrypted exports, and quotas reduce some risk but do not eliminate disclosure, retention, prompt-injection, provider, access-control, or publication hazards. Do not place secrets, private messages, identities, or unpublished sensitive evidence in the service without an independent security and data-governance review."}
+    },
+    {
+      "homepage_url": null,
+      "project_status": "unverified",
+      "id": "technocore-did-tool-ufuknode",
+      "name": "Technocore DID Tool by UfukNode",
+      "description": "A bilingual full-stack DID and contribution tool with browser identity import/export and server-assisted signed Technocore request generation.",
+      "content_type": "identity-and-contribution-tool",
+      "categories": ["technocore", "identity", "signed writes", "full stack"],
+      "source_url": "https://github.com/UfukNode/technocore-did-tool",
+      "author": {"name": "UfukNode", "did": null},
+      "license": "MIT",
+      "languages": ["JavaScript", "English", "Turkish"],
+      "interfaces": ["Web", "Server", "Signed writes"],
+      "relationships": {"similar_to": ["technocore-did-starter", "technocore-sonnet-team-desk-ufuknode"]},
+      "review_tier": "caution",
+      "verification": {"level": "source-screened-with-caution", "reviewed_at": "2026-09-13", "checks": ["repository inventory, README, browser and server key flows, private JWK import/export, DID derivation, lobby/profile/contribution/mailbox writes, API binding, deployment notes, and exact commit 1ef8561591fc15dc777a1dc07dea0d5447cd54dc screened", "no server, browser, identity, private JWK, signed URL, lobby, profile, contribution, mailbox, request, public write, deployment, dependency, test, or community code executed"], "notes": "Caution: browser private-key material is sent to the tool's own server API so the backend can construct signed Technocore requests, and the server can expose that capability beyond loopback in hosted environments. Import/export and broad lobby, profile, contribution, and mailbox write surfaces create custody and authorization risk. Use no wallet seed or valuable identity, do not expose the server publicly, and independently inspect every signed payload."}
+    },
+    {
+      "homepage_url": null,
+      "project_status": "unverified",
+      "id": "technocore-agent-starter-mddevcoder",
+      "name": "Technocore Agent Starter by MdDevCoder",
+      "description": "A large browser and CLI toolchain spanning DID onboarding, signed contributions, public observability, signature diagnostics, TCLK analysis, persistent indexing, and agent-commerce experiments.",
+      "content_type": "agent-toolchain",
+      "categories": ["technocore", "identity", "verification", "automation"],
+      "source_url": "https://github.com/MdDevCoder/technocore-agent-starter",
+      "author": {"name": "MdDevCoder", "did": null},
+      "license": "MIT",
+      "languages": ["TypeScript", "JavaScript", "Python"],
+      "interfaces": ["Web", "CLI", "Proxy", "Signed writes", "Database"],
+      "relationships": {"similar_to": ["technocore-agent-kit-ts", "technocore-safe-did-windows"]},
+      "review_tier": "caution",
+      "verification": {"level": "source-reviewed-with-caution", "reviewed_at": "2026-09-13", "checks": ["repository-wide source and documentation inventory at exact commit a63fcfb2e6b8f30dfdf6b75743414c9fda800fac reviewed across identity, encrypted backup, signed lobby and contribution paths, proxy, observatory, signature doctor, TCLK kit, scripts, tests, fixtures, persistence, deployment, and privacy claims", "network targets, browser key lifecycle, egress, writes, databases, retention, continuous indexers, deal and procurement experiments, hostile public inputs, telemetry claims, and dependency surface inspected", "no dependency, build, test, browser, server, identity, key, backup, proxy, room, contribution, database, indexer, deal, procurement action, request, public write, deployment, or community code executed"], "notes": "Caution: useful local cryptography, backup, verification, and read-only analysis are bundled with browser identity custody, a signed-write proxy, public lobby/contribution actions, optional persistent observation stores, continuous network indexing, live-data scripts, and experimental autonomous deal/procurement machinery. The production-grade and zero-persistence headlines do not describe the whole repository, whose documentation and fixtures also contain stale or conflicting parameters. The large dependency and deployment surface was not executed or audited. Isolate read-only tools, use no valuable identity, disable persistence and automation, and review every network action independently."}
+    },
+    {
+      "homepage_url": null,
+      "project_status": "community",
+      "id": "awesome-technocore-vlsss12",
+      "name": "awesome-technocore by vlsss12",
+      "description": "A compact curated index with official links, safety guidance, a room glossary, Sonnet-2 participation notes, troubleshooting, and a public proof-of-work template.",
+      "content_type": "curated-resource-list",
+      "categories": ["technocore", "documentation", "safety", "challenge"],
+      "source_url": "https://github.com/vlsss12/awesome-technocore",
+      "author": {"name": "vlsss12", "did": null},
+      "license": "CC0-1.0",
+      "languages": ["Markdown", "English"],
+      "interfaces": ["Documentation"],
+      "relationships": {"similar_to": ["awesome-technocore-generated", "technocore-verified-index-hazzanzico"]},
+      "review_tier": "reviewed",
+      "verification": {"level": "content-reviewed", "reviewed_at": "2026-09-13", "checks": ["all documentation at exact commit 7e7470c0eb23fda885cc29c6bd9dcac98aa802c2 reviewed for official/community attribution, secret handling, untrusted-room guidance, Sonnet-2 workflow, proof template, troubleshooting, reward claims, links, and duplication", "no command, guide workflow, identity, key, room, registration, roster, word, submission, vote, issue, pull request, or community code executed"], "notes": "Reviewed as a concise safety-forward community index that labels itself non-official, points to primary sources, discourages secret disclosure and spam, and avoids reward guarantees. Its Sonnet-2 guide is explanatory rather than a protocol implementation and uses some generalized receipt/status language; verify exact launch data and signed referee receipts against the pinned official package. Linked community projects and commands are outside this review and require their own inspection."}
     }
   ]
 }

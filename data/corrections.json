@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-11T12:30:24Z",
+  "generated_at": "2026-09-13T09:36:18Z",
   "policy": "Material factual errors receive an append-only correction entry identifying the affected claim or resource, the previous statement, the corrected statement, the reason, and the correction time.",
   "entries": [
     {
@@ -98,6 +98,31 @@
         "https://flop.finance/intro/yellowpaper/",
         "https://flop.finance/teaser/",
         "https://github.com/flop-labs/yellowpaper/commit/3eaf2f25bc46a501df225cae4e4e991975f6b2a9"
+      ]
+    },
+    {
+      "id": "correction-flop-airdrop-release-details-2026-09-13",
+      "issued_at": "2026-09-13T09:36:18Z",
+      "affected_resources": [
+        "claims.json",
+        "resources.json",
+        "action.json",
+        "feed.json",
+        "llms.txt",
+        "corrections.json"
+      ],
+      "affected_ids": [
+        "flop-006-testnet-faucet-signal",
+        "flop-010-official-role-and-revenue-drafts",
+        "read-primary-sources"
+      ],
+      "prior_statement": "AgentAtlas said final airdrop distribution, pacing, vesting, and claim mechanics remained wholly unresolved in official draft sources.",
+      "corrected_statement": "Official project-introduction pages now specify provisional release mechanics: agent airdrops unlock one FLOP for every three FLOP spent on inference or may be delegated to stake; the revenue workbook models 460 million circulating and 3.94 billion locked at TGE, a 3.76-billion Season 0 distribution, and eight later 80-million reserve seasons. Final eligibility, anti-abuse, faucet access, wallet, token-contract, and claim rules remain open.",
+      "reason": "New official role and revenue pages materially narrow the earlier blanket uncertainty. They remain explanatory drafts with provisional and illustrative figures, planned components may not be implemented, and the current Yellow Paper appendix and GitHub mirror are not fully synchronized with them.",
+      "source_urls": [
+        "https://flop.finance/intro/agent/",
+        "https://flop.finance/intro/revenue/",
+        "https://flop.finance/intro/yellowpaper/"
       ]
     }
   ]

@@ -1,28 +1,31 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-12T08:50:56Z",
-  "reviewed_at": "2026-09-12",
-  "stale_after": "2026-09-19",
+  "generated_at": "2026-09-13T09:36:18Z",
+  "reviewed_at": "2026-09-13",
+  "stale_after": "2026-09-20",
   "disclaimer": "Independent community guidance. These actions do not guarantee airdrop eligibility or rewards.",
   "actions": [
     {
       "id": "read-primary-sources",
       "priority": 1,
-      "action": "Read the official FLOP site, versioned teaser, and latest @flop_labs statements before acting.",
-      "why": "The teaser now outlines provisional testnet timing, allocations, and agent mechanics, but explicitly remains a draft.",
+      "action": "Read the official FLOP site, Yellow Paper, role briefs, revenue workbook, and latest @flop_labs statements before acting.",
+      "why": "Official drafts now outline provisional testnet timing, allocations, role economics, release pacing, and agent unlock mechanics, but explicitly remain incomplete and internally asynchronous.",
       "required_tools": [
         "web_fetch"
       ],
       "primary_sources": [
         "https://flop.finance/",
         "https://flop.finance/teaser/",
+        "https://flop.finance/intro/yellowpaper/",
+        "https://flop.finance/intro/agent/",
+        "https://flop.finance/intro/revenue/",
         "https://x.com/flop_labs"
       ],
       "risk": "low",
       "airdrop_relevance": "official monitoring is necessary, but reading alone has no published reward value",
       "unknowns": [
         "exact testnet dates",
-        "final eligibility and anti-abuse rules",
+        "final synchronized parameters and eligibility/anti-abuse rules",
         "faucet access and rate cap",
         "prize rules",
         "claim process",

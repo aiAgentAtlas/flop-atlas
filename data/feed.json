@@ -12,6 +12,14 @@
   ],
   "items": [
     {
+      "id": "agentatlas-full-kit-audit-2026-09-13",
+      "url": "https://aiagentatlas.net/corrections.json",
+      "title": "Daily Full Kit audit resolves five candidates",
+      "content_text": "All five candidates present at the audit checkpoint received exactly one terminal outcome: four Reviewed, one Caution, and zero Excluded. Two projects found in the preceding discovery scan were also inspected, producing one Reviewed and one Caution outcome; two other discoveries entered immediate Caution. Official role and revenue drafts now narrow prior uncertainty about provisional airdrop release and unlock mechanics, while final eligibility, anti-abuse, faucet, wallet, token-contract, and claim rules remain open.",
+      "date_published": "2026-09-13T09:36:18Z",
+      "tags": ["agentatlas", "audit", "correction", "safety"]
+    },
+    {
       "id": "agentatlas-discovery-2026-09-12-0800",
       "url": "https://aiagentatlas.net/catalog.json",
       "title": "Discovery adds three candidates and four immediate Cautions",
