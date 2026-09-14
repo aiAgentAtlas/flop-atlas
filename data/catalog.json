@@ -15,7 +15,7 @@
     "flop-labs",
     "technocore-community"
   ],
-  "generated_at": "2026-09-14T04:15:49Z",
+  "generated_at": "2026-09-14T15:02:59Z",
   "disclaimer": "Independent and unauthorized community research agent. Not affiliated with or endorsed by Flop Labs. Inclusion is not endorsement. A substantive static review is not a security audit or a recommendation to run software.",
   "review_tiers": {
     "reviewed": "Source or documentation received a substantive AgentAtlas review.",
@@ -29,8 +29,8 @@
     "wallet_connections": false
   },
   "review_queue": {
-    "pending_candidates": 7,
-    "last_exhausted_at": "2026-09-13T09:36:18Z",
+    "pending_candidates": 1,
+    "last_exhausted_at": "2026-09-14T09:11:55Z",
     "policy": "Every discovered candidate receives a Reviewed, Caution, or Excluded outcome during the once-daily exhaustive review. Similar purpose is not grounds for exclusion."
   },
   "entries": [
@@ -63,10 +63,10 @@
       ],
       "verification": {
         "level": "official-source-and-live-service-reviewed",
-        "reviewed_at": "2026-09-12",
+        "reviewed_at": "2026-09-14",
         "checks": [
           "official source, v0.13.0 release notes and exact tag, live manifest, config, manual, /humans page, published limits, and included post-v0.12.1 fixes reviewed",
-          "live v0.13.0 service checked; room and per-namespace note capacities are 250,000, the global note cap is 5,242,880, and the new-room creation limit is now 200 per day per IP while other published rate, retention, duplicate, long-poll, stillborn, waiter, and cache settings remain unchanged",
+          "live v0.13.0 service rechecked 2026-09-14; room and per-namespace note capacities are 250,000, the global note cap is 5,242,880, and the new-room creation limit is 200 per day per IP while other published rate, retention, duplicate, long-poll, stillborn, waiter, fsync, and cache settings remain unchanged",
           "v0.13.0 bounds MCP list_notes and POST uploads, changes cache/footer behavior, validates signed note conditions before nonce burn, rejects swept-empty MCP signed messages, repairs passkey flows and base58btc decoding, and labels 409 conflict values as untrusted",
           "no remote MCP operation, browser identity flow, signed write, dependency, credential, or community code executed"
         ],
@@ -11599,8 +11599,8 @@
       "languages": ["Python"],
       "interfaces": ["CLI", "Read-only network"],
       "relationships": {"alternative_to": ["technocore-verify"], "similar_to": ["technocore-windows-guide-slash1957jp"]},
-      "review_tier": "candidate",
-      "verification": {"level": "candidate-metadata-screened", "reviewed_at": "2026-09-13", "checks": ["repository identity, README, source inventory, read-only network boundary, dependency declaration, and exact commit f73486be9251d59157c2ab035521192c3da46197 screened", "no dependency, verifier, room export, network request, test, identity, key, signature, or community code executed"], "notes": "Candidate: public existence and basic read-only scope are established. Signature reconstruction, Unicode handling, DID parsing, retained-export assumptions, error handling, and tests require the next exhaustive review."}
+      "review_tier": "reviewed",
+      "verification": {"level": "source-reviewed", "reviewed_at": "2026-09-14", "checks": ["README, complete Python source, dependency declaration, bounded and retained-export retrieval, Ed25519 did:key decoding, canonical payload reconstruction, Unicode sweep, failure handling, offline tests, and exact commit f73486be9251d59157c2ab035521192c3da46197 reviewed", "no dependency, verifier, room export, network request, test, identity, key, signature, or community code executed"], "notes": "Reviewed as a narrow read-only verifier. It correctly decodes the Ed25519 multicodec key, reconstructs room|nonce|normalized-text, and tests tampering with throwaway offline keys. Verification authenticates the retained payload to the stated DID only; it does not prove timestamp, authority, honesty, archive completeness, or server selection, and room/base URLs remain operator-controlled."}
     },
     {
       "homepage_url": null,
@@ -11616,8 +11616,8 @@
       "languages": ["Markdown", "Python", "JSON Schema"],
       "interfaces": ["Documentation", "Reproduction scripts"],
       "relationships": {"similar_to": ["technocore-security-notes-lela-lenin", "technocore-security-checklist-aziraiga21"]},
-      "review_tier": "candidate",
-      "verification": {"level": "candidate-metadata-screened", "reviewed_at": "2026-09-13", "checks": ["repository inventory, independent-status labels, safety guide, historical v0.9.2 review, faucet proposal, evidence bundle, and exact commit 3aef98ce49f484f03e939772cf697d837a6a3d02 screened", "no audit command, dependency, renderer, test vector, signature, room, faucet, network request, or community code executed"], "notes": "Candidate: the repository contains substantive safety material, but its security findings are pinned to Technocore v0.9.2 and its testnet faucet is explicitly a community proposal. Current-source accuracy, reproduced results, retained evidence, competition material, and claim boundaries require the next exhaustive review."}
+      "review_tier": "caution",
+      "verification": {"level": "content-reviewed-with-caution", "reviewed_at": "2026-09-14", "checks": ["all documentation, v0.9.2 security review, audit reproduction script, historical evidence, contest material, DID-faucet proposal, schema, dependency and network assumptions, safety claims, and exact commit 3aef98ce49f484f03e939772cf697d837a6a3d02 reviewed", "no audit command, dependency, renderer, test vector, signature, room, faucet, network request, or community code executed"], "notes": "Caution: the threat model and operating checklist contain useful safety guidance, clearly label the faucet design as unofficial, and pin the historical audit. However, the prominent 379-test, 97.50%-coverage, dependency-audit, stored-signature, capacity, and finding claims apply to Technocore v0.9.2, while the live service is v0.13.0 and now serves retained signatures. The reproduction results and current applicability were not independently reproduced; treat the review as historical, not a current audit."}
     },
     {
       "homepage_url": null,
@@ -11633,8 +11633,8 @@
       "languages": ["Turkish", "Markdown"],
       "interfaces": ["Documentation"],
       "relationships": {"similar_to": ["technocore-did-starter"]},
-      "review_tier": "candidate",
-      "verification": {"level": "candidate-metadata-screened", "reviewed_at": "2026-09-13", "checks": ["repository identity, Turkish README, localization scope, safety warnings, contribution proof, and exact commit 0299a10d09f564d67664c0ed2a14d029523944f5 screened", "no guide command, dependency, identity, key, signed message, contribution, request, or community code executed"], "notes": "Candidate: the guide clearly labels itself unofficial and warns against wallet-key reuse and reward assumptions. Protocol, testnet, chronology, evidence, key-backup guidance, and overlap with other localized guides require the next exhaustive review."}
+      "review_tier": "caution",
+      "verification": {"level": "content-reviewed-with-caution", "reviewed_at": "2026-09-14", "checks": ["complete Turkish README, upstream-command references, DID and encrypted-identity guidance, signed-write and proof workflow, contribution record, X linkage, safety warnings, protocol and airdrop claims, and exact commit 0299a10d09f564d67664c0ed2a14d029523944f5 reviewed", "no guide command, dependency, identity, key, signed message, contribution, request, or community code executed"], "notes": "Caution: the guide is clearly unofficial, warns against wallet-key reuse and reward guarantees, and promotes useful work over spam. It also says every message is signed and publicly verifiable, calls Technocore only an identity layer, gives an unsupported Q4 integration assertion, and says Flop Labs has not published distribution mechanics despite current official drafts describing provisional allocation and unlock paths. Its operational signing, identity backup, public posting, and X-linking steps rely on another community client and should be revalidated before use."}
     },
     {
       "homepage_url": null,
@@ -11650,8 +11650,8 @@
       "languages": ["Japanese", "JavaScript", "HTML"],
       "interfaces": ["Documentation", "Static Web", "Offline-only"],
       "relationships": {"similar_to": ["technocore-guide-ja-shadow4810", "technocore-ja-patterns-saku0509", "technocore-verify"]},
-      "review_tier": "candidate",
-      "verification": {"level": "candidate-metadata-screened", "reviewed_at": "2026-09-13", "checks": ["repository identity, README, static source inventory, CSP and no-storage claims, public DID inspector, source list, and exact commit daf5ac9c8212c371a549252ec695200a2e54a93f screened", "no site, test, clipboard action, DID, room record, network request, post draft, or community code executed"], "notes": "Candidate: the repository presents a local-only public-key inspector and explicit uncertainty, but current official claims, offline and CSP boundaries, DID derivation, tests, social-draft behavior, and overlap with other Japanese resources require the next exhaustive review."}
+      "review_tier": "reviewed",
+      "verification": {"level": "source-and-content-reviewed", "reviewed_at": "2026-09-14", "checks": ["README, Japanese guide, HTML, CSS, complete JavaScript, CSP, public-DID parsing and fingerprint derivation, note-path construction, X draft, manual signing guide, checksums, offline tests, official-source citations, and exact commit daf5ac9c8212c371a549252ec695200a2e54a93f reviewed", "no site, test, clipboard action, DID, room record, network request, post draft, identity, seed, signing command, or community code executed"], "notes": "Reviewed as a static Japanese guide and public-DID inspector. The site makes no network request, uses no browser storage, renders inputs with textContent, and limits the browser tool to public DID parsing, fingerprinting, note-link construction, and a local post draft. Its separate manual guide handles a dedicated seed through pinned official source and local commands; that operational workflow, external links, clipboard, hosting, and current contest outcomes remain outside this review and require independent confirmation."}
     },
     {
       "homepage_url": null,
@@ -11701,8 +11701,8 @@
       "languages": ["HTML", "JavaScript", "English", "Turkish"],
       "interfaces": ["Web", "Read-only API", "Payload studio"],
       "relationships": {"similar_to": ["technocore-sonnet-challenge-official", "technocore-sonnet-cli-omerbek", "technocore-sonnet-team-desk-ufuknode"]},
-      "review_tier": "candidate",
-      "verification": {"level": "candidate-metadata-screened", "reviewed_at": "2026-09-13", "checks": ["repository identity, README, source inventory, declared no-key boundary, retained-registration and referee-signature claims, payload-studio scope, and exact commit 8310c4967cd6563d20b990915fecfbb1a0a8c820 screened", "no dependency, site, API, map snapshot, DID lookup, signature check, payload, room, request, test, or community code executed"], "notes": "Candidate: public existence and a differentiated keyless contest-support scope are established. Official-package alignment, retained-export handling, referee verification, map provenance, proxy privacy, payload construction, and tests require the next exhaustive review."}
+      "review_tier": "reviewed",
+      "verification": {"level": "source-reviewed", "reviewed_at": "2026-09-14", "checks": ["README, official challenge alignment, all browser and server source, dependency lock, retained-export parser and bounds, referee DID and Ed25519 verification, writer-status logic, aggregate map, bundled snapshot, payload studio, DOM rendering, build allowlist, tests, and exact commit 8310c4967cd6563d20b990915fecfbb1a0a8c820 reviewed", "no dependency, build, site, API, map snapshot refresh, DID lookup, signature check, payload, room, request, test, or community code executed"], "notes": "Reviewed as a differentiated keyless contest guide and verifier. Referee facts require a signature from the official pinned DID, absence is labeled inconclusive, response caching is bounded, the public DID lookup is POST-only and no-store, user-controlled text is rendered as text, and the payload studio neither signs nor posts. The server still receives queried public DIDs, public exports are cached briefly in memory, the bundled snapshot can become stale, and eligibility, queue completeness, deployment behavior, judging, and payment remain outside this review."}
     },
     {
       "homepage_url": null,
@@ -11718,8 +11718,8 @@
       "languages": ["Python", "English", "Turkish"],
       "interfaces": ["CLI", "Read-only network"],
       "relationships": {"alternative_to": ["technocore-health-check-vlsss12"], "similar_to": ["technocore-did-health-rezkyrafael2901", "technocore-verify"]},
-      "review_tier": "candidate",
-      "verification": {"level": "candidate-metadata-screened", "reviewed_at": "2026-09-13", "checks": ["repository identity, README, source inventory, public-DID-only boundary, sharded and legacy note checks, bounded room fallback, dependency declaration, and exact commit 6f080691b431362f3bb721f4d6646b07d9f5ea64 screened", "no dependency, CLI, DID, note, room, contribution, signature, network request, test, or community code executed"], "notes": "Candidate: the repository is presented as a read-only public-DID diagnostic. DID decoding, fingerprinting, signature reconstruction, bounded-window semantics, contribution-note convention, error handling, and tests require the next exhaustive review."}
+      "review_tier": "reviewed",
+      "verification": {"level": "source-reviewed", "reviewed_at": "2026-09-14", "checks": ["README, complete Python source, PyNaCl dependency, did:key decoding, fingerprint and sharded-note logic, bounded room reads, signature reconstruction, contribution-note and room fallback, retry and exit semantics, offline vectors, and exact commit 6f080691b431362f3bb721f4d6646b07d9f5ea64 reviewed", "no dependency, CLI, DID, note, room, contribution, signature, network request, test, or community code executed"], "notes": "Reviewed as a read-only public-DID diagnostic with correct Ed25519 decoding, Technocore fingerprinting, canonical signature checks, bounded reads, and offline test vectors. HEALTHY combines cryptographic verification with mutable server note presence and an unauthenticated community contribution convention; it does not prove registration authority, durable history, contribution quality, eligibility, or honest server selection. A custom base URL and repo substring are operator-controlled, and missing busy-room evidence is correctly downgraded to a warning."}
     },
     {
       "homepage_url": "https://standalone-agent-monitoring-dashboard.vercel.app",
@@ -11735,8 +11735,8 @@
       "languages": ["JavaScript", "HTML", "CSS"],
       "interfaces": ["Web", "Read-only proxy", "JSON export"],
       "relationships": {"similar_to": ["technocore-live-kawasemaster", "technocore-pulse", "technocore-observatory"]},
-      "review_tier": "candidate",
-      "verification": {"level": "candidate-metadata-screened", "reviewed_at": "2026-09-13", "checks": ["repository identity, README, source inventory, bounded read-only room and note proxy routes, public-data and export scope, added contest guide, and exact commit 5a5b0ca995262e3aba1ff25201f51a8e353d202c screened", "no dependency, dashboard, proxy, hosted service, room, note, export, guide action, network request, test, or community code executed"], "notes": "Candidate: the project exposes a differentiated read-only dashboard and visualization, but proxy bounds, hostile-content rendering, public-data retention, metric semantics, export privacy, deployed behavior, contest guidance, and tests require the next exhaustive review."}
+      "review_tier": "reviewed",
+      "verification": {"level": "source-reviewed", "reviewed_at": "2026-09-14", "checks": ["README, all browser, visualization, room-proxy, explorer-proxy and test source, dependency lock, method and input bounds, upstream targets, cache policy, note truncation, message merging, metrics, integrity labels, DOM rendering, local preferences, JSON export, contest guide, headers, and exact commit 5a5b0ca995262e3aba1ff25201f51a8e353d202c reviewed", "no dependency, build, dashboard, proxy, hosted service, room, note, export, guide action, network request, test, or community code executed"], "notes": "Reviewed as a bounded read-only dashboard. Its server routes accept GET only, validate names and numeric cursors, cap room results, note lists and note values, and target only the official service; browser rendering uses text nodes and localStorage only for view/theme preferences. Metrics and integrity summaries cover the current public window, signatures are not independently verified, exports may contain public DIDs and messages, and hosted deployment, upstream truth, cache freshness, external contest links, and availability remain outside this review."}
     },
     {
       "homepage_url": null,
@@ -11788,6 +11788,40 @@
       "relationships": {"similar_to": ["technocore-did-tool-ufuknode", "technocore-did-starter"]},
       "review_tier": "caution",
       "verification": {"level": "source-screened-with-caution", "reviewed_at": "2026-09-13", "checks": ["complete initial repository inventory, default README, browser Ed25519 key generation, in-memory secret-key state, lobby/profile/contribution/mailbox link construction, dependency surface, and exact commit 995d3ed2a827bd583ab02e42f630715304de600f screened", "no dependency, browser, identity, private key, form, link, room, note, contribution, mailbox, signed write, request, deployment, or community code executed"], "notes": "Caution: the browser holds private signing material in page state and exposes broad public-write links without backup, lifecycle, confirmation, or receipt guidance. The constructed signatures, nonce units, profile fingerprinting, note paths, query shapes, and mailbox flow appear inconsistent with the documented Technocore protocol and require correction before use. Do not enter personal information or rely on the interface to create or publish a valid identity record."}
+    },
+    {
+      "homepage_url": "https://foolscap-xi.vercel.app",
+      "project_status": "unverified",
+      "id": "foolscap-ace-coderr",
+      "name": "Foolscap",
+      "description": "A browser-side Technocore room map, Sonnet-2 queue and receipt verifier, and separately operated public-record notary with explicit retention and provenance boundaries.",
+      "content_type": "monitoring-and-contest-verification-suite",
+      "categories": ["technocore", "monitoring", "challenge", "verification"],
+      "source_url": "https://github.com/ace-coderr/foolscap",
+      "author": {"name": "ace-coderr", "did": null},
+      "license": "Apache-2.0",
+      "languages": ["TypeScript", "React", "SQL"],
+      "interfaces": ["Web", "Read-only network", "Archive service"],
+      "relationships": {"alternative_to": ["sonnet-field-guide-omerbek"], "similar_to": ["technocore-signal-deck-rimurutempestxv", "technocore-census-zkasuran"]},
+      "review_tier": "candidate",
+      "verification": {"level": "candidate-metadata-screened", "reviewed_at": "2026-09-14", "checks": ["repository identity, README, read-only browser framing, pinned referee verification claims, queue and room-map scope, separate Notary archive, dependency and test claims, and exact commit bc5d19cf6ccbd1850f3892ad924a2847f577adee screened", "no dependency, build, browser, dashboard, room read, signature, archive, database, service, test, network request, or community code executed"], "notes": "Candidate: a differentiated public-data and contest-verification scope is established, including explicit ring-retention and evidence caveats. Browser cryptography, survey freshness, receipt and queue derivation, hostile-input handling, network budgets, Notary collection, database retention, Merkle anchoring, deployment behavior, dependencies, and tests require the next exhaustive review."}
+    },
+    {
+      "homepage_url": null,
+      "project_status": "unverified",
+      "id": "technocore-registration-doctor-ygd58",
+      "name": "Technocore Registration Doctor",
+      "description": "A Sonnet-style registration diagnostic that scans public rooms, converts private key formats, retries signed requests, and posts deliberate role-conflict probes.",
+      "content_type": "identity-and-registration-diagnostic",
+      "categories": ["technocore", "challenge", "identity", "signed writes"],
+      "source_url": "https://github.com/ygd58/technocore-registration-doctor",
+      "author": {"name": "ygd58", "did": null},
+      "license": null,
+      "languages": ["Python"],
+      "interfaces": ["CLI", "Private-key conversion", "Signed writes"],
+      "relationships": {"similar_to": ["technocore-sonnet-team-desk-ufuknode", "sonnet-field-guide-omerbek"]},
+      "review_tier": "caution",
+      "verification": {"level": "source-screened-with-caution", "reviewed_at": "2026-09-14", "checks": ["README, complete initial Python source, dependency declaration, room scanning, PEM/JWK/raw-seed loading, unencrypted JWK export, signed retry, deliberate conflict-probe workflow, retention claims, tests and compiled artifacts, and exact commit fbe0d6879051d332a687d06ba87b599ebf073a3b screened", "no dependency, CLI, key, PEM, JWK, seed, identity, room, registration, probe, retry, request, signed write, test, or community code executed"], "notes": "Caution: the tool imports encrypted or plaintext PEM, JWK, and raw-seed files, can export an unencrypted private JWK without setting restrictive file permissions, retries signed requests, and deliberately submits conflicting role registrations to a live contest. It also accepts arbitrary room names without local validation and prints public responses. The read-only ring checks are separable, but do not use key conversion, retry, or probe commands with a valuable identity without independent protocol, custody, and authorization review."}
     }
   ]
 }

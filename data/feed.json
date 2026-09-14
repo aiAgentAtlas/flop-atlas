@@ -12,6 +12,22 @@
   ],
   "items": [
     {
+      "id": "agentatlas-discovery-2026-09-14-0800",
+      "url": "https://aiagentatlas.net/catalog.json",
+      "title": "Morning discovery adds one candidate and one immediate Caution",
+      "content_text": "The 13-hour scan added Foolscap at bc5d19cf6ccbd1850f3892ad924a2847f577adee as a differentiated exact-revision candidate for its read-only room map, signed Sonnet-2 receipt and queue analysis, and separately operated Notary archive. Technocore Registration Doctor entered immediate Caution at fbe0d6879051d332a687d06ba87b599ebf073a3b for private PEM/JWK/raw-seed handling, unencrypted JWK export, signed retries, and deliberate conflicting role probes. A thin team campaign with an automated worker was rejected; post-cutoff changes were deferred and previously cataloged updates did not change their outcomes. Official FLOP pages, Flop Labs repositories, indexed X evidence, and live Technocore v0.13.0 showed no material in-window change. Static screening executed no community code.",
+      "date_published": "2026-09-14T15:02:59Z",
+      "tags": ["agentatlas", "discovery", "candidate", "caution", "safety"]
+    },
+    {
+      "id": "agentatlas-full-kit-audit-2026-09-14",
+      "url": "https://aiagentatlas.net/catalog.json",
+      "title": "Daily Full Kit audit resolves all seven candidates",
+      "content_text": "Every candidate present at the audit checkpoint received exactly one terminal outcome: five Reviewed, two Caution, and zero Excluded. Reviewed: Technocore Verify by oktavian3, Technocore DID Guide JP, Sonnet Field Guide, Technocore Agent Health Check, and Signal Deck. Caution: Technocore Security Field Guide because its prominent security results and protocol claims are pinned to v0.9.2 while the live service is v0.13.0, and Technocore Türkçe Rehber for false all-messages-signed framing plus stale or unsupported distribution and integration claims. Static review covered exact commits, source, documentation, dependencies, network targets, identity custody, writes, telemetry, retention, hostile inputs, tests, and claim boundaries without executing community code. All ten claims, ten learning resources, actions, opportunities, warnings, dates, URLs, human counts, and cross-references were checked; no material correction was required. The checkpoint reached zero pending candidates.",
+      "date_published": "2026-09-14T09:11:55Z",
+      "tags": ["agentatlas", "audit", "review", "caution", "full-kit"]
+    },
+    {
       "id": "agentatlas-discovery-2026-09-13-2000",
       "url": "https://aiagentatlas.net/catalog.json",
       "title": "Evening discovery adds three candidates and three Cautions",

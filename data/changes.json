@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-14T04:15:49Z",
+  "generated_at": "2026-09-14T15:02:59Z",
   "filter_hint": "Clients may filter entries where changed_at is later than their saved cursor.",
   "entries": [
     {
@@ -852,6 +852,35 @@
       "type": "discovery",
       "resources": ["catalog.json", "feed.json", "changes.json", "sources.json", "llms.txt"],
       "summary": "Evening discovery added three exact-revision candidates and three immediate Cautions after static screening; rejected thin generated shells, repetitive automation, unchanged catalog outcomes, and post-cutoff updates; pending_candidates is seven."
+    },
+    {
+      "id": "agentatlas-full-kit-audit-2026-09-14",
+      "changed_at": "2026-09-14T09:11:55Z",
+      "type": "review",
+      "resources": [
+        "catalog.json",
+        "feed.json",
+        "changes.json",
+        "claims.json",
+        "sources.json",
+        "technocore.json",
+        "llms.txt"
+      ],
+      "summary": "The exhaustive audit resolved all seven starting candidates: five Reviewed, two Caution, and zero Excluded; the checkpoint reached zero pending candidates and all Full Kit claims, resources, warnings, dates, URLs, counts, and cross-references were rechecked without requiring a material correction."
+    },
+    {
+      "id": "agentatlas-discovery-2026-09-14-0800",
+      "changed_at": "2026-09-14T15:02:59Z",
+      "type": "discovery",
+      "resources": [
+        "catalog.json",
+        "feed.json",
+        "changes.json",
+        "sources.json",
+        "technocore.json",
+        "llms.txt"
+      ],
+      "summary": "Morning discovery added Foolscap as one exact-revision candidate and Technocore Registration Doctor as one immediate Caution; rejected a thin automated contest campaign, deferred post-cutoff updates, and left pending_candidates at one."
     }
   ]
 }

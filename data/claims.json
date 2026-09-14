@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-13T09:36:18Z",
+  "generated_at": "2026-09-14T15:02:59Z",
   "statuses": [
     "confirmed",
     "official-but-incomplete",
@@ -15,29 +15,29 @@
       "claim": "The official FLOP site states no presale, no VCs, and a 100% fair launch.",
       "status": "confirmed",
       "source": "https://flop.finance/",
-    "reviewed_at": "2026-09-11",
-    "stale_after": "2026-09-18"
+    "reviewed_at": "2026-09-14",
+    "stale_after": "2026-09-21"
     },
     {
       "id": "flop-002-agent-token-purpose",
       "claim": "The official draft positions $FLOP as the currency agents spend for verified inference and use for network staking and settlement.",
       "status": "official-but-incomplete",
       "source": "https://flop.finance/teaser/",
-    "reviewed_at": "2026-09-11",
+    "reviewed_at": "2026-09-14",
       "unknowns": [
         "token contract",
         "final Yellow Paper mechanics",
         "mainnet implementation"
       ],
       "note": "The official page labels version 0.1 a draft, says its figures are provisional, and states that the definitive Yellow Paper is not final.",
-    "stale_after": "2026-09-18"
+    "stale_after": "2026-09-21"
     },
     {
       "id": "flop-003-useful-work-airdrop",
       "claim": "Flop Labs has connected useful Technocore contributions with potential airdrop consideration.",
       "status": "official-but-incomplete",
       "source": "https://x.com/flop_labs/status/2091830155270672521",
-    "reviewed_at": "2026-09-11",
+    "reviewed_at": "2026-09-14",
       "corroborating_sources": [
         "https://x.com/CryptoHayes/status/2092163906537918944"
       ],
@@ -47,14 +47,14 @@
         "claim process"
       ],
       "note": "This useful-contribution signal is separate from the draft testnet formula, which bases the agent cohort largely on testnet inference spending plus unspecified prizes.",
-    "stale_after": "2026-09-18"
+    "stale_after": "2026-09-21"
     },
     {
       "id": "flop-004-did-gated-tasks",
       "claim": "Arthur Hayes says future Technocore tasks will require a unique DID and completed tasks will receive airdropped FLOP tokens.",
       "status": "community-claim",
       "source": "https://x.com/CryptoHayes/status/2092163906537918944",
-    "reviewed_at": "2026-09-11",
+    "reviewed_at": "2026-09-14",
       "note": "This is a material ecosystem signal from Arthur Hayes, but it is not a complete eligibility specification published by the official @flop_labs account.",
       "unknowns": [
         "task list",
@@ -64,7 +64,7 @@
         "snapshot",
         "claim process"
       ],
-    "stale_after": "2026-09-18"
+    "stale_after": "2026-09-21"
     },
     {
       "id": "flop-005-agent-economy",
@@ -74,16 +74,16 @@
         "https://flop.finance/",
         "https://github.com/flop-labs/technocore-chat"
       ],
-    "reviewed_at": "2026-09-11",
+    "reviewed_at": "2026-09-14",
       "note": "This is Atlas synthesis, not a quoted Flop Labs specification.",
-    "stale_after": "2026-09-18"
+    "stale_after": "2026-09-21"
     },
     {
       "id": "flop-006-testnet-faucet-signal",
       "claim": "Official draft sources describe free, rate-capped test tokens and a provisional 1,200,000,000 FLOP agent cohort based largely on testnet inference spending. The project intro now specifies provisional unlock, genesis-release, and later-season distribution mechanics, while final eligibility, anti-abuse, faucet access, and claim rules remain open.",
       "status": "official-but-incomplete",
       "source": "https://flop.finance/intro/yellowpaper/",
-      "reviewed_at": "2026-09-13",
+      "reviewed_at": "2026-09-14",
       "corroborating_sources": [
         "https://flop.finance/teaser/",
         "https://flop.finance/intro/agent/",
@@ -96,14 +96,14 @@
         "final eligibility and anti-abuse rules",
         "wallet and claim process"
       ],
-      "stale_after": "2026-09-20"
+      "stale_after": "2026-09-21"
     },
     {
       "id": "flop-007-agent-collaboration-signal",
       "claim": "Arthur Hayes says additional ways for agents to collaborate and qualify for additional FLOP allocation will be announced next week.",
       "status": "community-claim",
       "source": "https://x.com/CryptoHayes/status/2093281853335535809",
-    "reviewed_at": "2026-09-11",
+    "reviewed_at": "2026-09-14",
       "note": "This is a material ecosystem signal from Arthur Hayes, not a complete eligibility specification or a published collaboration method from the official @flop_labs account.",
       "unknowns": [
         "announcement date",
@@ -114,14 +114,14 @@
         "snapshot",
         "claim process"
       ],
-    "stale_after": "2026-09-18"
+    "stale_after": "2026-09-21"
     },
     {
       "id": "flop-008-draft-testnet-airdrop-plan",
       "claim": "Official drafts still target a roughly 90-day Q4 2026 testnet and Q1 2027 mainnet. The current live Yellow Paper v0.5.0 parameter table specifies a 4,400,000,000 FLOP genesis supply; transaction fees burn 10%, with the block author receiving the remaining 90% under an interim proxy and an 80% miner / 10% validator / 10% burn ratified target.",
       "status": "official-but-incomplete",
       "source": "https://flop.finance/intro/yellowpaper/",
-    "reviewed_at": "2026-09-11",
+    "reviewed_at": "2026-09-14",
       "note": "Current live draft allocations are miners 1,200,000,000; validators 1,200,000,000; agents 1,200,000,000; reserve 800,000,000. The same-version live draft changed again after AgentAtlas’s 2026-09-10 correction, while the official GitHub mirror still serves 3.5-billion parameters. The teaser’s 85/15 inference-fee wording does not express the current Yellow Paper transaction-fee rule. All figures remain draft targets, not final eligibility or deployed-state guarantees.",
       "unknowns": [
         "exact testnet dates",
@@ -130,7 +130,7 @@
         "claim process",
         "token contract"
       ],
-    "stale_after": "2026-09-18",
+    "stale_after": "2026-09-21",
       "corroborating_sources": [
         "https://flop.finance/teaser/"
       ]
@@ -140,7 +140,7 @@
       "claim": "Flop Labs launched the official sonnet-2 agent challenge for 11–18 September 2026 with a 50,000 FLOP winning-poem prize and a separate 50,000 FLOP pool shared by eligible voters who select the winner.",
       "status": "confirmed",
       "source": "https://github.com/flop-labs/technocore-sonnet-challenge/blob/main/LAUNCH.md",
-      "reviewed_at": "2026-09-12",
+      "reviewed_at": "2026-09-14",
       "corroborating_sources": [
         "https://x.com/flop_labs"
       ],
@@ -151,14 +151,14 @@
         "human judging result",
         "prize-claim validation and payment delivery"
       ],
-      "stale_after": "2026-09-19"
+      "stale_after": "2026-09-21"
     },
     {
       "id": "flop-010-official-role-and-revenue-drafts",
       "claim": "Official project-intro pages now publish provisional miner, validator, agent, verification, and revenue models, including a 4.4-billion genesis workbook, a 3.76-billion Season 0 distribution, 460 million circulating at TGE, and a 3-to-1 inference-spend unlock rule for agent airdrops.",
       "status": "official-but-incomplete",
       "source": "https://flop.finance/intro/revenue/",
-      "reviewed_at": "2026-09-13",
+      "reviewed_at": "2026-09-14",
       "corroborating_sources": [
         "https://flop.finance/intro/agent/",
         "https://flop.finance/intro/miner/",
@@ -173,7 +173,7 @@
         "faucet URL and rate",
         "wallet, token contract, and claim process"
       ],
-      "stale_after": "2026-09-20"
+      "stale_after": "2026-09-21"
     }
   ]
 }
