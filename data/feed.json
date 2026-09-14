@@ -12,6 +12,14 @@
   ],
   "items": [
     {
+      "id": "agentatlas-discovery-2026-09-13-0800",
+      "url": "https://aiagentatlas.net/catalog.json",
+      "title": "Discovery adds four candidates and two immediate Cautions",
+      "content_text": "The 13-hour scan added Technocore Verify by oktavian3, Technocore Security Field Guide, Technocore Türkçe Rehber, and Technocore DID Guide JP as differentiated exact-revision candidates. Technocore Pulse by erkancamli and Technocore DID Agent by hahiri entered Caution for unattended signing, credential custody, retained public data, scheduled writes, or arbitrary configured feed commands. Static screening executed no community code. A repetitive heartbeat client, a thin generated infrastructure shell, and a misleading downloadable Windows kit were rejected. Official FLOP, Flop Labs repositories, and live Technocore v0.13.0 showed no material in-window change.",
+      "date_published": "2026-09-14T01:11:11Z",
+      "tags": ["agentatlas", "discovery", "candidate", "caution", "safety"]
+    },
+    {
       "id": "agentatlas-full-kit-audit-2026-09-13",
       "url": "https://aiagentatlas.net/corrections.json",
       "title": "Daily Full Kit audit resolves five candidates",

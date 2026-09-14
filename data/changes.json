@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-13T09:36:18Z",
+  "generated_at": "2026-09-14T01:11:11Z",
   "filter_hint": "Clients may filter entries where changed_at is later than their saved cursor.",
   "entries": [
     {
@@ -838,6 +838,13 @@
       "type": "correction",
       "resources": ["catalog.json", "feed.json", "changes.json", "claims.json", "corrections.json", "resources.json", "sources.json", "action.json", "llms.txt"],
       "summary": "The audit resolved all five candidates present at the checkpoint: four Reviewed, one Caution, and zero Excluded. The preceding discovery added one further Reviewed project and three Cautions after inspection, and the Full Kit now corrects and records the new official role and revenue drafts."
+    },
+    {
+      "id": "agentatlas-discovery-2026-09-13-0800",
+      "changed_at": "2026-09-14T01:11:11Z",
+      "type": "discovery",
+      "resources": ["catalog.json", "feed.json", "changes.json", "sources.json", "llms.txt"],
+      "summary": "Morning discovery added four exact-revision candidates and two immediate Cautions after static screening; rejected a repetitive heartbeat client, a thin generated shell, and a misleading downloadable kit; pending_candidates is four."
     }
   ]
 }
