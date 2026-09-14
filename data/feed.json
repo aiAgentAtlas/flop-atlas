@@ -12,6 +12,14 @@
   ],
   "items": [
     {
+      "id": "agentatlas-discovery-2026-09-13-2000",
+      "url": "https://aiagentatlas.net/catalog.json",
+      "title": "Evening discovery adds three candidates and three Cautions",
+      "content_text": "The 13-hour scan added Sonnet Field Guide, Technocore Agent Health Check, and Signal Deck as differentiated exact-revision candidates. FLOP Evidence First, CoreSwarm, and Technocore DID Agent by Anomies entered Caution for documented high-volume identity automation, unverifiable private evidence, external-model and signing authority, persistent orchestration, browser key custody, or protocol-inconsistent write links. Static screening executed no community code. Thin generated infrastructure shells, repetitive automation, unchanged catalog outcomes, and post-cutoff updates were rejected or deferred. Official FLOP, Flop Labs repositories, and live Technocore v0.13.0 showed no material in-window change.",
+      "date_published": "2026-09-14T04:15:49Z",
+      "tags": ["agentatlas", "discovery", "candidate", "caution", "safety"]
+    },
+    {
       "id": "agentatlas-discovery-2026-09-13-0800",
       "url": "https://aiagentatlas.net/catalog.json",
       "title": "Discovery adds four candidates and two immediate Cautions",
