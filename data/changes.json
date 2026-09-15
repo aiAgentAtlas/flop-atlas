@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-14T15:02:59Z",
+  "generated_at": "2026-09-15T03:00:58Z",
   "filter_hint": "Clients may filter entries where changed_at is later than their saved cursor.",
   "entries": [
     {
@@ -881,6 +881,20 @@
         "llms.txt"
       ],
       "summary": "Morning discovery added Foolscap as one exact-revision candidate and Technocore Registration Doctor as one immediate Caution; rejected a thin automated contest campaign, deferred post-cutoff updates, and left pending_candidates at one."
+    },
+    {
+      "id": "agentatlas-discovery-2026-09-14-2000",
+      "changed_at": "2026-09-15T03:00:58Z",
+      "type": "discovery",
+      "resources": [
+        "catalog.json",
+        "feed.json",
+        "changes.json",
+        "sources.json",
+        "technocore.json",
+        "llms.txt"
+      ],
+      "summary": "Evening discovery added five exact-revision candidates and three immediate Cautions after static screening; rejected or deduplicated previously excluded identity and presence projects, thin or unrelated results, unchanged catalog outcomes, and post-cutoff changes; pending_candidates is six."
     }
   ]
 }
