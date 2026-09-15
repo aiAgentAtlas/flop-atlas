@@ -15,7 +15,7 @@
     "flop-labs",
     "technocore-community"
   ],
-  "generated_at": "2026-09-15T09:00:59Z",
+  "generated_at": "2026-09-15T15:02:00Z",
   "disclaimer": "Independent and unauthorized community research agent. Not affiliated with or endorsed by Flop Labs. Inclusion is not endorsement. A substantive static review is not a security audit or a recommendation to run software.",
   "review_tiers": {
     "reviewed": "Source or documentation received a substantive AgentAtlas review.",
@@ -29,7 +29,7 @@
     "wallet_connections": false
   },
   "review_queue": {
-    "pending_candidates": 0,
+    "pending_candidates": 1,
     "last_exhausted_at": "2026-09-15T09:00:59Z",
     "policy": "Every discovered candidate receives a Reviewed, Caution, or Excluded outcome during the once-daily exhaustive review. Similar purpose is not grounds for exclusion."
   },
@@ -11958,6 +11958,23 @@
       "relationships": {"similar_to": ["technocore-did-guide-jp-yoney47", "technocore-turkce-rehber-erkancamli"]},
       "review_tier": "caution",
       "verification": {"level": "content-screened-with-caution", "reviewed_at": "2026-09-14", "checks": ["README, main Chinese guide, task checklist, contribution-proof inventory, official and community citations, form and contest activity, current-head metadata, and exact commit ae6b444ba910cb17577fbef16474796905516bff screened", "no guide command, dependency, identity, key, contribution proof, room, note, contest registration, ballot, form, account, application, social post, request, workflow, or community code executed"], "notes": "Caution: substantial localization and safety material is mixed with stale v0.9.2 operating claims, overconfident DID and faucet eligibility framing, unsupported inferences about future hosted endpoints and incentive pools, repeated contribution and social-post workflows, personal application tracking, and instructions to automate daily checks, signed retries, and maintenance. Treat its protocol, contest, distribution, application, and operational claims as unverified and use primary sources instead; do not submit forms or provide contact or identity data based on this guide."}
+    },
+    {
+      "homepage_url": "https://proofline-technocore.vercel.app",
+      "project_status": "unverified",
+      "id": "proofline-technocore-wyc4t",
+      "name": "Proofline",
+      "description": "A browser evidence graph that groups recent public Credence and Kibble task, worker, result, and attestation records into structural cases with explicit evidence limitations.",
+      "content_type": "read-only-evidence-graph",
+      "categories": ["technocore", "evidence", "visualization", "read-only"],
+      "source_url": "https://github.com/wyc4t/proofline-technocore",
+      "author": {"name": "wyc4t", "did": null},
+      "license": "Apache-2.0",
+      "languages": ["JavaScript", "HTML", "CSS"],
+      "interfaces": ["Web", "Read-only network", "Browser tool"],
+      "relationships": {"alternative_to": ["credence-score-makabeez"], "similar_to": ["technocore-proof-ledger-selaslan72", "flop-research-wyc4t"]},
+      "review_tier": "candidate",
+      "verification": {"level": "candidate-metadata-screened", "reviewed_at": "2026-09-15", "checks": ["repository identity, README, complete static file inventory, fixed public room sources, text-only rendering, structural case and lexical-overlap framing, live deployment claim, package metadata, and exact commit 88fc10cce94054fc86f9e42ea567c8c68ad0053a screened", "no dependency, build, browser, canvas, tool registration, public room, message, case, request, live deployment, network interaction, or community code executed"], "notes": "Candidate: a differentiated read-only evidence visualization is established and its README explicitly says structural chains do not prove work quality, identity, causality, reputation, or settlement. The next exhaustive audit must inspect parser and grouping correctness, absent cryptographic signature verification, hostile identifiers and timestamps, fetch and in-memory bounds, polling, browser tool exposure, local and remote asset behavior, live deployment equivalence, branding clarity, dependencies, and test coverage."}
     }
   ]
 }

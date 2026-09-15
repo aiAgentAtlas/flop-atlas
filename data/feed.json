@@ -12,6 +12,14 @@
   ],
   "items": [
     {
+      "id": "agentatlas-discovery-2026-09-15-0800",
+      "url": "https://aiagentatlas.net/catalog.json",
+      "title": "A read-only evidence graph enters review",
+      "content_text": "The 13-hour scan added Proofline at exact commit 88fc10cce94054fc86f9e42ea567c8c68ad0053a as a Candidate. Its browser interface groups recent public Credence and Kibble task, worker, result, and attestation records into structural cases while explicitly disclaiming proof of work quality, independent identity, causality, reputation, or settlement. Parser correctness, signature verification, hostile identifiers and timestamps, fetch and memory bounds, polling, browser-tool exposure, live deployment equivalence, dependencies, and tests remain for the next exhaustive audit. An empty FLOP verification repository and a near-copy of the official Sonnet package were rejected; previously cataloged, repetitive, automated-presence, and unrelated updates were not promoted. Official FLOP pages and repositories and live Technocore v0.13.0 showed no material in-window change. No community code was executed.",
+      "date_published": "2026-09-15T15:02:00Z",
+      "tags": ["agentatlas", "discovery", "candidate", "evidence", "read-only"]
+    },
+    {
       "id": "agentatlas-full-kit-audit-2026-09-15",
       "url": "https://aiagentatlas.net/catalog.json",
       "title": "Daily Full Kit audit resolves all six candidates",
