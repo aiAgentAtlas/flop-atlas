@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-13T09:36:18Z",
+  "generated_at": "2026-09-15T09:00:59Z",
   "scope": "Independent learning resources. Inclusion is not endorsement, and instructions may become stale as Technocore changes.",
   "resources": [
     {
@@ -12,7 +12,7 @@
       ],
       "url": "https://technocore.chat/interop.md",
       "project_status": "official",
-      "reviewed_at": "2026-09-11",
+      "reviewed_at": "2026-09-15",
       "based_on": "https://github.com/flop-labs/technocore-chat/commit/c5cc02fcf1df33c2426ee5f9ef2a4ba519bb778b",
       "useful_for": [
         "ActivityPub bridges",
@@ -42,7 +42,7 @@
       ],
       "url": "https://github.com/wyckoff01/Flop",
       "project_status": "community",
-      "reviewed_at": "2026-09-11",
+      "reviewed_at": "2026-09-15",
       "based_on": "https://github.com/zunmax/technocore-did-starter",
       "useful_for": [
         "Windows setup",
@@ -71,8 +71,8 @@
       ],
       "url": "https://flop.finance/teaser/",
       "project_status": "official",
-      "reviewed_at": "2026-09-11",
-      "based_on": "Version 0.1 header updated 2026-08-27; current provisional warning and 4.4-billion display reviewed 2026-09-11",
+      "reviewed_at": "2026-09-15",
+      "based_on": "Version 0.1 header updated 2026-08-27; current provisional warning and 4.4-billion display reviewed 2026-09-15",
       "useful_for": [
         "draft network purpose and token mechanics",
         "provisional testnet and mainnet timing",
@@ -98,8 +98,8 @@
       ],
       "url": "https://ask.flop.finance/llms.txt",
       "project_status": "official",
-      "reviewed_at": "2026-09-11",
-      "based_on": "18-page published corpus rechecked 2026-09-11",
+      "reviewed_at": "2026-09-15",
+      "based_on": "18-page published corpus rechecked 2026-09-15",
       "useful_for": [
         "draft FLOP architecture and terminology",
         "agent integration and spend controls",
@@ -127,8 +127,8 @@
       ],
       "url": "https://flop.finance/intro/yellowpaper/",
       "project_status": "official",
-      "reviewed_at": "2026-09-11",
-      "based_on": "Live version 0.5.0 draft with D-0440 reviewed 2026-09-11; official mirror commit 3eaf2f25bc46a501df225cae4e4e991975f6b2a9 still lags at D-0438",
+      "reviewed_at": "2026-09-15",
+      "based_on": "Live version 0.5.0 draft with D-0440 reviewed 2026-09-15; official mirror head cb3cbf97a346ff85aca6dba5e924434270ca672c still lags at D-0438",
       "useful_for": [
         "normative draft protocol formats",
         "current target parameters and allocations",
@@ -153,8 +153,8 @@
       "languages": ["English"],
       "url": "https://flop.finance/intro/miner/",
       "project_status": "official",
-      "reviewed_at": "2026-09-13",
-      "based_on": "Live official project-introduction page reviewed 2026-09-13",
+      "reviewed_at": "2026-09-15",
+      "based_on": "Live official project-introduction page reviewed 2026-09-15",
       "useful_for": ["provisional miner role", "compute contribution model", "draft economics context"],
       "verification": {"level": "official-source-reviewed", "checks": ["served by the official FLOP site", "role, reward, planned-feature, and draft-status boundaries read"], "notes": "Official explanatory draft, not proof that mining, rewards, settlement, or any quoted parameter is live or final."}
     },
@@ -165,8 +165,8 @@
       "languages": ["English"],
       "url": "https://flop.finance/intro/validator/",
       "project_status": "official",
-      "reviewed_at": "2026-09-13",
-      "based_on": "Live official project-introduction page reviewed 2026-09-13",
+      "reviewed_at": "2026-09-15",
+      "based_on": "Live official project-introduction page reviewed 2026-09-15",
       "useful_for": ["provisional validator role", "verification model", "draft economics context"],
       "verification": {"level": "official-source-reviewed", "checks": ["served by the official FLOP site", "role, reward, planned-feature, and draft-status boundaries read"], "notes": "Official explanatory draft, not proof that validator selection, rewards, slashing, or settlement is live or final."}
     },
@@ -177,8 +177,8 @@
       "languages": ["English"],
       "url": "https://flop.finance/intro/agent/",
       "project_status": "official",
-      "reviewed_at": "2026-09-13",
-      "based_on": "Live official project-introduction page reviewed 2026-09-13",
+      "reviewed_at": "2026-09-15",
+      "based_on": "Live official project-introduction page reviewed 2026-09-15",
       "useful_for": ["provisional agent role", "airdrop unlock model", "inference-spend framing"],
       "verification": {"level": "official-source-reviewed", "checks": ["served by the official FLOP site", "agent role, 3-to-1 unlock rule, stake-delegation option, and draft boundary read"], "notes": "Official explanatory draft. The unlock rule is provisional and does not establish present eligibility, a live faucet, a wallet, a claim path, or payment delivery."}
     },
@@ -189,8 +189,8 @@
       "languages": ["English"],
       "url": "https://flop.finance/intro/verification/",
       "project_status": "official",
-      "reviewed_at": "2026-09-13",
-      "based_on": "Live official project-introduction page reviewed 2026-09-13",
+      "reviewed_at": "2026-09-15",
+      "based_on": "Live official project-introduction page reviewed 2026-09-15",
       "useful_for": ["draft verification flow", "receipt and challenge context", "planned-versus-live boundaries"],
       "verification": {"level": "official-source-reviewed", "checks": ["served by the official FLOP site", "verification stages, role boundaries, and provisional language read"], "notes": "Official explanatory draft. Planned verification stages are not evidence that corresponding protocol or runtime components are implemented."}
     },
@@ -201,8 +201,8 @@
       "languages": ["English"],
       "url": "https://flop.finance/intro/revenue/",
       "project_status": "official",
-      "reviewed_at": "2026-09-13",
-      "based_on": "Live official project-introduction page reviewed 2026-09-13",
+      "reviewed_at": "2026-09-15",
+      "based_on": "Live official project-introduction page reviewed 2026-09-15",
       "useful_for": ["provisional genesis and Season 0 allocations", "circulation and unlock workbook", "draft fee-split comparison", "illustrative miner economics"],
       "verification": {"level": "official-source-reviewed", "checks": ["served by the official FLOP site", "genesis, Season 0, later-season reserve, circulation anchors, block-reward split, inference-fee split, and model limitations read"], "notes": "Official explanatory workbook. Values are provisional or illustrative, the 85/15 target and 99/1 current settlement descriptions are not the same as the Yellow Paper transaction-fee rule, and the page is not proof of a live token, market, faucet, claim flow, or profitable mining."}
     }

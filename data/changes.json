@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-15T03:00:58Z",
+  "generated_at": "2026-09-15T09:00:59Z",
   "filter_hint": "Clients may filter entries where changed_at is later than their saved cursor.",
   "entries": [
     {
@@ -895,6 +895,22 @@
         "llms.txt"
       ],
       "summary": "Evening discovery added five exact-revision candidates and three immediate Cautions after static screening; rejected or deduplicated previously excluded identity and presence projects, thin or unrelated results, unchanged catalog outcomes, and post-cutoff changes; pending_candidates is six."
+    },
+    {
+      "id": "agentatlas-full-kit-audit-2026-09-15",
+      "changed_at": "2026-09-15T09:00:59Z",
+      "type": "review",
+      "resources": [
+        "catalog.json",
+        "feed.json",
+        "changes.json",
+        "claims.json",
+        "resources.json",
+        "sources.json",
+        "technocore.json",
+        "llms.txt"
+      ],
+      "summary": "The exhaustive audit resolved all six starting candidates: four Reviewed, two Caution, and zero Excluded; the checkpoint reached zero pending candidates, and the Full Kit remained materially accurate after refreshed primary-source, freshness, URL, warning, count, and cross-reference checks."
     }
   ]
 }

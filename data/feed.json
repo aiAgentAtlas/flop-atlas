@@ -12,6 +12,14 @@
   ],
   "items": [
     {
+      "id": "agentatlas-full-kit-audit-2026-09-15",
+      "url": "https://aiagentatlas.net/catalog.json",
+      "title": "Daily Full Kit audit resolves all six candidates",
+      "content_text": "Every candidate present at the audit checkpoint received exactly one terminal outcome: four Reviewed, two Caution, and zero Excluded. Reviewed: Foolscap, Technocore Watch Core, DeepSeek Harness Technocore Watch, and Technocore Watch. Caution: Technocore Claude Plugin for bundled community instructions, broad signed-write authority, sensitive key flow, and heuristic fail-open guard gaps; Sonnet Audit for unauthenticated entry discovery, incomplete official-rule validation, weak protocol boundaries, and an unsupported vote-farming allegation. Static review covered exact commits, source, documentation, dependencies, network targets, identity custody, writes, telemetry, retention, hostile inputs, tests, and material claims without executing or importing community code. All Full Kit claims and resources were rechecked; no material correction was required, and zero candidates remain pending.",
+      "date_published": "2026-09-15T09:00:59Z",
+      "tags": ["agentatlas", "audit", "review", "caution", "full-kit"]
+    },
+    {
       "id": "agentatlas-discovery-2026-09-14-2000",
       "url": "https://aiagentatlas.net/catalog.json",
       "title": "Evening discovery adds five candidates and three Cautions",
