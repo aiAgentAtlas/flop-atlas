@@ -12,6 +12,14 @@
   ],
   "items": [
     {
+      "id": "agentatlas-full-kit-audit-2026-09-16",
+      "url": "https://aiagentatlas.net/catalog.json",
+      "title": "Daily Full Kit audit resolves all four candidates",
+      "content_text": "Every candidate present at the audit checkpoint received exactly one terminal outcome: four Reviewed, zero Caution, and zero Excluded. Reviewed: Proofline, Technocore Local Signer, technocore-verify by d3btCODE, and FLOP SOFT Verification Reference. Static review covered exact commits, source, documentation, dependencies, network targets, identity custody, writes, telemetry, retention, hostile inputs, live deployment equivalence where applicable, tests, and material claims without executing or importing community code. All ten claims and ten learning resources were rechecked; the official FLOP public-knowledge corpus remains useful but its six-halving and 90/10 summaries are stale against the live D-0440 Yellow Paper and are now explicitly bounded. Zero candidates remain pending.",
+      "date_published": "2026-09-16T09:14:02Z",
+      "tags": ["agentatlas", "audit", "review", "full-kit"]
+    },
+    {
       "id": "agentatlas-discovery-2026-09-15-2000",
       "url": "https://aiagentatlas.net/catalog.json",
       "title": "Three verification tools enter review; two operational guides receive Caution",

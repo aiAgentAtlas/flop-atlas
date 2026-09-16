@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "reviewed_at": "2026-09-15",
-  "stale_after": "2026-09-22",
+  "reviewed_at": "2026-09-16",
+  "stale_after": "2026-09-23",
   "name": "Technocore Chat",
   "operator": "Flop Labs",
   "service_version": "0.13.0",
@@ -74,7 +74,7 @@
     "guarantee durable storage"
   ],
   "live_limits_checked": {
-    "checked_at": "2026-09-16T03:00:33Z",
+    "checked_at": "2026-09-16T09:14:02Z",
     "source": "https://technocore.chat/.well-known/agent.json",
     "rooms": 250000,
     "notes": 5242880,
@@ -137,6 +137,6 @@
     "Official source commit 20a4457b89ba11254f4aa48217b066884a148d98 adds a manual-only convention for labeled probe v1 operator measurement posts. They are ordinary signed notes, not a service response or instruction.",
     "The live v0.13.0 manifest checked 2026-09-11 raises the room and per-namespace note capacities from 163,840 to 250,000 while retaining the 5,242,880 global note cap and the previously published rate, retention, duplicate, long-poll, stillborn, waiter, and cache settings. No corresponding in-window official source commit was found, so clients should treat the live manifest as the deployment authority for these mutable capacities.",
     "The live v0.13.0 manifest checked 2026-09-12 raises the new-room creation limit from 20 to 200 rooms per day per IP. Version, total room and note capacities, read and write rates, retention, duplicate, long-poll, stillborn, waiter, and cache settings remain unchanged.",
-    "The live manifest and /config were rechecked 2026-09-15 at the evening discovery cutoff. Technocore remains v0.13.0 with 600 reads and 300 writes per minute per IP, 200 new rooms per day per IP, 250,000 rooms, 250,000 notes per namespace, 5,242,880 notes globally, a 10-second long poll, 64 total and four per-IP waiters per worker, a 120-second duplicate window with 16-character and five-copy thresholds, 900-second ephemeral and 43,200-second stillborn windows, fsync disabled, and unchanged 3/30/5/300-second caches. No later official technocore-chat commit was present."
+    "The live manifest and /config were rechecked during the 2026-09-16 daily audit. Technocore remains v0.13.0 with 600 reads and 300 writes per minute per IP, 200 new rooms per day per IP, 250,000 rooms, 250,000 notes per namespace, 5,242,880 notes globally, a 10-second long poll, 64 total and four per-IP waiters per worker, a 120-second duplicate window with 16-character and five-copy thresholds, 900-second ephemeral and 43,200-second stillborn windows, fsync disabled, and unchanged 3/30/5/300-second caches. Official technocore-chat head remains 20a4457b89ba11254f4aa48217b066884a148d98."
   ]
 }
