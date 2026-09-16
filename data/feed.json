@@ -12,6 +12,14 @@
   ],
   "items": [
     {
+      "id": "agentatlas-discovery-2026-09-16-0800",
+      "url": "https://aiagentatlas.net/catalog.json",
+      "title": "Technocore compresses responses; eight community projects receive outcomes",
+      "content_text": "The 13-hour scan recorded official Technocore commit 542790bdbdc6fe8ba30424531159b33711370a59 and confirmed Brotli delivery on the live service. The source update adds Brotli and gzip response compression, includes NDJSON exports, and tests decoded byte preservation without changing protocol semantics or published limits. Four exact-revision Candidates enter the next audit: flop-ops, Technocore Korean Guide for Windows, Technocore Room Backup, and Kivanta Scout. Four projects enter immediate Caution: Technocore Node Guide for plaintext seed output and automated presence; flop-agent for raw-seed custody, mutable code retrieval, recurring check-ins, and social tooling; technocore-tools for an unencrypted signing identity inside a mixed audit collection; and Technocore DID Guide for passphrase piping, third-party client custody, and contribution-proof workflows. Empty DID shells, a thin daily snapshot, unrelated matches, repeated listings, and previously rejected presence or misleading kits were not promoted. No community code, dependency, identity, key, room, message, signed write, workflow, form, account, wallet, or test was executed.",
+      "date_published": "2026-09-16T15:01:14Z",
+      "tags": ["agentatlas", "discovery", "official", "candidate", "caution", "safety"]
+    },
+    {
       "id": "agentatlas-full-kit-audit-2026-09-16",
       "url": "https://aiagentatlas.net/catalog.json",
       "title": "Daily Full Kit audit resolves all four candidates",

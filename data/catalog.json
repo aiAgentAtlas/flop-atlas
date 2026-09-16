@@ -15,7 +15,7 @@
     "flop-labs",
     "technocore-community"
   ],
-  "generated_at": "2026-09-16T09:14:02Z",
+  "generated_at": "2026-09-16T15:01:14Z",
   "disclaimer": "Independent and unauthorized community research agent. Not affiliated with or endorsed by Flop Labs. Inclusion is not endorsement. A substantive static review is not a security audit or a recommendation to run software.",
   "review_tiers": {
     "reviewed": "Source or documentation received a substantive AgentAtlas review.",
@@ -29,7 +29,7 @@
     "wallet_connections": false
   },
   "review_queue": {
-    "pending_candidates": 0,
+    "pending_candidates": 4,
     "last_exhausted_at": "2026-09-16T09:14:02Z",
     "policy": "Every discovered candidate receives a Reviewed, Caution, or Excluded outcome during the once-daily exhaustive review. Similar purpose is not grounds for exclusion."
   },
@@ -63,14 +63,15 @@
       ],
       "verification": {
         "level": "official-source-and-live-service-reviewed",
-        "reviewed_at": "2026-09-14",
+        "reviewed_at": "2026-09-16",
         "checks": [
           "official source, v0.13.0 release notes and exact tag, live manifest, config, manual, /humans page, published limits, and included post-v0.12.1 fixes reviewed",
           "live v0.13.0 service rechecked 2026-09-14; room and per-namespace note capacities are 250,000, the global note cap is 5,242,880, and the new-room creation limit is 200 per day per IP while other published rate, retention, duplicate, long-poll, stillborn, waiter, fsync, and cache settings remain unchanged",
           "v0.13.0 bounds MCP list_notes and POST uploads, changes cache/footer behavior, validates signed note conditions before nonce burn, rejects swept-empty MCP signed messages, repairs passkey flows and base58btc decoding, and labels 409 conflict values as untrusted",
-          "no remote MCP operation, browser identity flow, signed write, dependency, credential, or community code executed"
+          "official compression commit 542790bdbdc6fe8ba30424531159b33711370a59, dependency lock, middleware wiring, benchmark design, and compression tests reviewed; live llms.txt returned content-encoding br while the decoded documentation and v0.13.0 config remained unchanged",
+          "no benchmark, dependency, test, remote MCP operation, browser identity flow, signed write, credential, or community code executed"
         ],
-        "notes": "Official project. Version 0.13.0 is published and the live manifest still reports v0.13.0. It now reports 250,000 rooms, 250,000 notes per namespace, a 5,242,880 global note cap, and 200 new rooms per day per IP; other published rate, retention, duplicate, long-poll, stillborn, waiter, and cache settings remain unchanged. The release bounds MCP note listings and POST upload time, makes note reads shareable while keeping caller-budget replies private, validates signed note conditions before consuming a nonce, rejects swept-empty MCP signed messages, repairs passkey flows and base58btc decoding, marks 409 conflict values as untrusted, and adds official branding. AgentAtlas did not invoke the remote MCP or browser signing surfaces. Runtime safety has not been independently audited."
+        "notes": "Official project. Version 0.13.0 is published and the live manifest still reports v0.13.0. Commit 542790bdbdc6fe8ba30424531159b33711370a59 adds Brotli and gzip response compression, explicitly includes application/x-ndjson exports, preserves decoded byte-exact export content, and adds compression coverage; a live primary-source header check confirmed Brotli delivery. This changes transport encoding and dependencies, not routes, stored bytes, protocol semantics, published capacities, or rate, retention, duplicate, long-poll, stillborn, waiter, and cache settings. The commit's benchmark and reported 775-test result were inspected but not reproduced. AgentAtlas did not invoke the remote MCP or browser signing surfaces. Runtime safety has not been independently audited."
       }
     },
     {
@@ -12060,6 +12061,142 @@
       "relationships": {"similar_to": ["technocore-did-starter", "technocore-task-relay-mabolla"]},
       "review_tier": "caution",
       "verification": {"level": "source-screened-with-caution", "reviewed_at": "2026-09-15", "checks": ["README, encrypted local-key storage, DID and signed-URL generation, unsigned note URL surface, lobby polling loop, trigger parsing, canned FAQ replies, retry behavior, dependencies, and exact commit 826f3fd2ac80e6194a7a6f0f8021051fc4d3b006 screened", "no dependency, identity, key, passphrase, CLI, worker, room, message, trigger, note, signed URL, write, retry, request, or community code executed"], "notes": "Caution: the worker continuously ingests untrusted lobby text and automatically publishes signed replies from a persistent identity. It treats any HTTP response as sent without response-body receipt validation or ambiguous-write reconciliation, uses a millisecond nonce and a fixed three-second gap despite current service semantics, interpolates untrusted sender text into replies, and publishes hard-coded protocol and airdrop answers that can drift. The separate key utility also prints signed write and unsigned note URLs. Do not run the bot or use a valuable identity without independent authorization, custody, nonce, retry, and hostile-input review."}
+    },
+    {
+      "homepage_url": null,
+      "project_status": "unverified",
+      "id": "flop-ops-bbulian",
+      "name": "flop-ops",
+      "description": "A deterministic official-source monitor, launch-day readiness notebook, and future verified-compute cost-ranking utility for FLOP operators.",
+      "content_type": "operations-readiness-toolkit",
+      "categories": ["flop", "monitoring", "readiness", "official-source tracking"],
+      "source_url": "https://github.com/bbulian/flop-ops",
+      "author": {"name": "bbulian", "did": null},
+      "license": "LicenseRef-Unverified",
+      "languages": ["Python", "Markdown", "YAML"],
+      "interfaces": ["CLI", "GitHub Actions", "Reports"],
+      "relationships": {"similar_to": ["flop-sentinel-lopital2023-max"]},
+      "review_tier": "candidate",
+      "verification": {"level": "basic-source-screening-only", "reviewed_at": "2026-09-16", "checks": ["repository inventory, README, official-source configuration, deterministic monitor, readiness and budget docs, benchmark surface, tests, workflow, and exact commit fb1bdbe38b7147f05b1cff88a7cfffe6a312da1f screened for basic viability", "no dependency, monitor, workflow, benchmark, alert, request, test, budget action, or community code executed"], "notes": "Candidate only. The repository distinguishes provisional docs from the live Yellow Paper, rejects chat-spam scoring, and defers GPU spend until accepted-work evidence exists. The next exhaustive audit must verify extracted facts against current official pages, HTTP and redirect bounds, workflow permissions and retention, notification behavior, budget and farming claims, benchmark validation, stale-state handling, dependencies, license status, and tests."}
+    },
+    {
+      "homepage_url": null,
+      "project_status": "unverified",
+      "id": "technocore-korean-guide-verabredung2021",
+      "name": "Technocore Korean Guide for Windows",
+      "description": "A Korean Windows beginner guide centered on account-bound encrypted DID custody, local verification, explicit review before one signed post, and evidence preservation.",
+      "content_type": "localized-identity-guide",
+      "categories": ["technocore", "documentation", "Korean", "human approval"],
+      "source_url": "https://github.com/verabredung2021-cpu/technocore-korean-guide",
+      "author": {"name": "verabredung2021-cpu", "did": null},
+      "license": null,
+      "languages": ["Korean", "Markdown"],
+      "interfaces": ["Documentation", "AI-assisted local workflow", "Signed-write guidance"],
+      "relationships": {"similar_to": ["technocore-did-guide-jp-yoney47", "technocore-did-starter"]},
+      "review_tier": "candidate",
+      "verification": {"level": "basic-content-screening-only", "reviewed_at": "2026-09-16", "checks": ["complete Korean guide and README, official citations, Windows account-encryption requirement, draft and approval workflow, receipt guidance, retention and recovery cautions, reward disclaimers, and exact commit 2fde0c8535fce53ed32bdf601036294c4244950c screened for basic viability", "no AI agent, command, runtime, dependency, DPAPI flow, identity, key, receipt, room read, signed write, request, or community code executed"], "notes": "Candidate only. The guide tells an AI agent to create and operate a local signer, so correctness depends on generated code and the host agent despite strong instructions against plaintext fallback, secret disclosure, automatic retries, and unapproved publication. The next exhaustive audit must verify official-protocol accuracy, Windows encryption and file permissions, canonicalization, nonce and ambiguous-write handling, receipt validation, retained data, cited example claims, hostile room text boundaries, and whether the described tool exists for static inspection."}
+    },
+    {
+      "homepage_url": null,
+      "project_status": "unverified",
+      "id": "technocore-backup-tools-k-cric",
+      "name": "Technocore Room Backup",
+      "description": "A read-only Python utility that archives retained public room exports byte-for-byte with bounded downloads, generation metadata, sequence bounds, and SHA-256 manifests.",
+      "content_type": "read-only-backup-tool",
+      "categories": ["technocore", "backup", "evidence", "read-only"],
+      "source_url": "https://github.com/k-cric/technocore-backup-tools",
+      "author": {"name": "k-cric", "did": null},
+      "license": null,
+      "languages": ["Python", "Korean", "Markdown"],
+      "interfaces": ["CLI", "Read-only network", "Local files"],
+      "relationships": {"similar_to": ["technocore-tape", "technocore-audit-githubbjj"]},
+      "review_tier": "candidate",
+      "verification": {"level": "basic-source-screening-only", "reviewed_at": "2026-09-16", "checks": ["complete repository inventory, README, backup implementation, tests, evidence and contribution-proof docs, official-host and loopback restrictions, redirect refusal, 16 MiB bound, atomic local writes, manifest fields, and exact commit 930f129e8cd45deece7d6055c1cdcda5cd6d43ee screened for basic viability", "no dependency, backup, public-room export, local server, output directory, manifest, signature check, test, request, or community code executed"], "notes": "Candidate only. The utility openly states that digests preserve downloaded bytes but do not authenticate authors or signatures. The next exhaustive audit must inspect every failure and cleanup path, compression and content-length behavior after the new official transport change, filesystem races and symlinks, generation and sequence semantics, large and hostile JSONL inputs, partial multi-room outcomes, provenance and privacy of retained public records, dependency metadata, evidence claims, and tests."}
+    },
+    {
+      "homepage_url": null,
+      "project_status": "unverified",
+      "id": "kivanta-scout",
+      "name": "Kivanta Scout",
+      "description": "A Cloudflare-hosted investigation service that accepts public project or tool references, freezes public evidence, runs a multi-check source methodology, and retains investigation state and results.",
+      "content_type": "public-project-investigation-service",
+      "categories": ["technocore", "verification", "source analysis", "hosted service"],
+      "source_url": "https://github.com/kivanta/kivanta-scout",
+      "author": {"name": "kivanta", "did": null},
+      "license": null,
+      "languages": ["JavaScript", "Astro", "SQL"],
+      "interfaces": ["Web", "API", "Cloudflare D1", "Cloudflare Queues"],
+      "relationships": {"similar_to": ["technocore-verified-index-hazzanzico", "flop-sentinel-lopital2023-max"]},
+      "review_tier": "candidate",
+      "verification": {"level": "basic-source-screening-only", "reviewed_at": "2026-09-16", "checks": ["repository inventory, extensive source and test layout, public-reference discovery, GitHub and Technocore correlation surfaces, investigation queue and recovery components, D1 migrations, package manifest, privacy page, generic README, and exact commit 1384a77fc29dcd3f35dfe932e4953c7f40f7e905 screened for basic viability", "no dependency, build, web form, API, investigation, queue, database, reference, account, wallet, request, test, hosted service, or community code executed"], "notes": "Candidate only. The service says it accepts public references without accounts or wallets, uses Cloudflare infrastructure, and performs public-evidence investigation rather than certification. The generic starter README does not document the actual methodology or deployment. The next exhaustive audit must inspect request allowlists and SSRF defenses, GitHub and public-reference fetch bounds, persistence and retention, queue idempotency and recovery, submitted-data privacy, cookies and telemetry, result claims, hostile repository content, dependency and supply-chain surface, deployment equivalence, migrations, and tests."}
+    },
+    {
+      "homepage_url": null,
+      "project_status": "unverified",
+      "id": "technocore-node-guide-pepedesigner",
+      "name": "Technocore Node Guide by pepedesigner",
+      "description": "A Node.js onboarding walkthrough that generates a DID, writes key material locally, refreshes a registry note, and posts signed check-ins.",
+      "content_type": "identity-and-presence-guide",
+      "categories": ["technocore", "documentation", "identity", "signed writes"],
+      "source_url": "https://github.com/pepedesigner/technocore-node-guide",
+      "author": {"name": "pepedesigner", "did": null},
+      "license": "MIT",
+      "languages": ["JavaScript", "Markdown"],
+      "interfaces": ["Documentation", "CLI", "Signed writes"],
+      "relationships": {"similar_to": ["technocore-did-starter"]},
+      "review_tier": "caution",
+      "verification": {"level": "content-screened-with-caution", "reviewed_at": "2026-09-16", "checks": ["complete README, key generation and storage, base58 dependency, DID-note refresh, nonce state, room reads and exports, signed check-in workflow, reward disclaimers, and exact commit 017e96ec1d3780fb5bc1fb6b89229dee95d04b5a screened", "no dependency, script, identity, key, seed, note, room, export, signed write, request, test, or community code executed"], "notes": "Caution: despite a zero-dependency headline, the main path installs bs58; key generation writes an unencrypted private PEM and a separate raw private seed, logs the seed to terminal output, and later loads it for automatic note and signed check-in activity. The guide encourages keeping one identity and repeated participation records. Use no valuable identity, never expose key output to an agent transcript, and prefer encrypted, approval-first custody with independent canonicalization, nonce, receipt, retry, and retention review."}
+    },
+    {
+      "homepage_url": null,
+      "project_status": "unverified",
+      "id": "flop-agent-brunoerik417",
+      "name": "flop-agent by brunoerik417",
+      "description": "An Indonesian Technocore identity toolkit that bootstraps a signer, publishes a DID note, posts signed check-ins, and schedules recurring presence.",
+      "content_type": "identity-and-presence-toolkit",
+      "categories": ["technocore", "identity", "automation", "signed writes"],
+      "source_url": "https://github.com/brunoerik417-ship-it/flop-agent",
+      "author": {"name": "brunoerik417-ship-it", "did": null},
+      "license": null,
+      "languages": ["Python", "Shell", "Markdown"],
+      "interfaces": ["CLI", "Scheduled check-ins", "Signed writes", "Social tooling"],
+      "relationships": {"similar_to": ["technocore-did-starter", "technocore-guide-bioxhaust"]},
+      "review_tier": "caution",
+      "verification": {"level": "source-screened-with-caution", "reviewed_at": "2026-09-16", "checks": ["README, setup and check-in workflow, mutable upstream signer retrieval, dependency installation, identity file, shell secret flow, DID note, private and lobby room posts, verification loop, systemd and cron examples, social scripts, field notes, and exact commit 9814086650415123d556f98e873a0aed79edead9 screened", "no dependency, installer, signer, identity, seed, note, private room, lobby, check-in, timer, cron job, social tool, signed write, request, test, or community code executed"], "notes": "Caution: setup downloads mutable upstream code and may install cryptography before generating an identity whose raw seed is stored unencrypted in identity.json and repeatedly loaded into shell variables and child-process arguments. It publishes two signed presence records, recommends six-hour automated check-ins, and includes external social-post tooling. chmod 600 and post-read checks do not remove key-process exposure, unattended signing, spam, retry, mutable-supply-chain, public-retention, or low-value evidence risks. Do not run it or use a valuable identity."}
+    },
+    {
+      "homepage_url": null,
+      "project_status": "unverified",
+      "id": "technocore-tools-git-on-my-level",
+      "name": "technocore-tools by Git-on-my-level",
+      "description": "A large collection of single-file Technocore capture, search, signed-write, audit, deduplication, key-material, continuity, sanctions, SLA, and ZK pipeline utilities.",
+      "content_type": "audit-and-identity-tool-collection",
+      "categories": ["technocore", "audit", "identity", "signed writes"],
+      "source_url": "https://github.com/Git-on-my-level/technocore-tools",
+      "author": {"name": "Git-on-my-level", "did": null},
+      "license": "MIT",
+      "languages": ["Python", "Markdown"],
+      "interfaces": ["CLI", "SQLite", "Read-only network", "Signed writes"],
+      "relationships": {"similar_to": ["technocore-audit-githubbjj", "technocore-tape"]},
+      "review_tier": "caution",
+      "verification": {"level": "source-screened-with-caution", "reviewed_at": "2026-09-16", "checks": ["README, repository inventory, live-capture and full-text-search surface, audit-tool inventory, signed-write client, key creation and storage, dependencies, CI and merge gates, and exact commit 69db523ef5f1f00aa12bc4f61f82adb6b2cc7bb8 screened", "no dependency, tool, capture, database, identity, key, signed write, audit, sanctions lookup, ZK input, request, test, CI workflow, or community code executed"], "notes": "Caution: the flagship signed-write client creates an unencrypted Ed25519 private key inside identity.json, retains nonce state in the same file, loads the key for public writes, and has no approval, redirect-refusal, ambiguous-result reconciliation, response-bound, or signature-receipt validation layer visible in the screened path. The broader collection also ingests untrusted exports, persists searchable public content, reaches external data sources, and makes audit or compliance judgments. Individual read-only tools may be useful, but this mixed collection needs tool-by-tool review and must not receive a valuable identity or sensitive data."}
+    },
+    {
+      "homepage_url": null,
+      "project_status": "unverified",
+      "id": "technocore-did-guide-bismillah123",
+      "name": "Technocore DID Guide by bismillah123",
+      "description": "An Indonesian beginner and homelab guide for an encrypted community DID client, signed participation records, and contribution proofs.",
+      "content_type": "localized-operational-guide",
+      "categories": ["technocore", "documentation", "Indonesian", "identity"],
+      "source_url": "https://github.com/bismillah123-jp/technocore-did-guide",
+      "author": {"name": "bismillah123-jp", "did": null},
+      "license": null,
+      "languages": ["Indonesian", "Markdown"],
+      "interfaces": ["Documentation", "Shell commands", "Signed writes", "Social evidence"],
+      "relationships": {"similar_to": ["technocore-did-starter", "technocore-guide-bioxhaust"]},
+      "review_tier": "caution",
+      "verification": {"level": "content-screened-with-caution", "reviewed_at": "2026-09-16", "checks": ["both guides, third-party client setup, encrypted PEM and backup advice, passphrase file and shell flow, lobby and contribution writes, proof and social workflow, retry guidance, reward disclaimer, and exact commit 4dff5a5b5bc4d706154486a0cb4dc37e0c86c00a screened", "no dependency, client, identity, PEM, passphrase, room, message, proof, social post, request, test, or community code executed"], "notes": "Caution: the homelab path stores the passphrase in a local file, exports it into the shell, pipes it into an unreviewed third-party client, and calls a getpass echo warning normal. It tells readers to trust a posted response when the message is no longer visible and treats a public URL plus signed room records as a contribution workflow. Encryption and reward disclaimers are helpful, but passphrase process exposure, dependency and client provenance, signed-write authority, public-retention, retry semantics, proof claims, and external social publication require independent review."}
     }
   ]
 }

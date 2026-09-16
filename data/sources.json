@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-16T09:14:02Z",
+  "generated_at": "2026-09-16T15:01:14Z",
   "sources": [
     {
       "id": "flop-website",
@@ -11,7 +11,7 @@
         "launch statements",
         "participation links"
       ],
-      "last_checked_at": "2026-09-16T09:14:02Z",
+      "last_checked_at": "2026-09-16T15:01:14Z",
       "next_review_due": "2026-09-23",
       "source_available": true
     },
@@ -24,7 +24,7 @@
         "airdrop signals",
         "ecosystem updates"
       ],
-      "last_checked_at": "2026-09-16T09:14:02Z",
+      "last_checked_at": "2026-09-16T15:01:14Z",
       "next_review_due": "2026-09-23",
       "source_available": false
     },
@@ -37,7 +37,7 @@
         "technical documentation",
         "releases"
       ],
-      "last_checked_at": "2026-09-16T09:14:02Z",
+      "last_checked_at": "2026-09-16T15:01:14Z",
       "next_review_due": "2026-09-23",
       "source_available": true
     },
@@ -51,7 +51,7 @@
         "operating limits",
         "write-refusal behavior"
       ],
-      "last_checked_at": "2026-09-16T09:14:02Z",
+      "last_checked_at": "2026-09-16T15:01:14Z",
       "next_review_due": "2026-09-23",
       "source_available": true
     },
@@ -902,6 +902,15 @@
       "control": "official",
       "publishes": ["provisional token and revenue workbook", "genesis and seasonal distribution model", "circulation and fee-split illustrations"],
       "last_checked_at": "2026-09-16T09:14:02Z",
+      "next_review_due": "2026-09-23",
+      "source_available": true
+    },
+    {
+      "id": "technocore-response-compression-commit",
+      "url": "https://github.com/flop-labs/technocore-chat/commit/542790bdbdc6fe8ba30424531159b33711370a59",
+      "control": "official",
+      "publishes": ["Brotli and gzip response compression", "NDJSON export compression coverage", "transport-byte preservation tests"],
+      "last_checked_at": "2026-09-16T15:01:14Z",
       "next_review_due": "2026-09-23",
       "source_available": true
     }
