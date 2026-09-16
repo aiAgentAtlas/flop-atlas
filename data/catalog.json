@@ -15,7 +15,7 @@
     "flop-labs",
     "technocore-community"
   ],
-  "generated_at": "2026-09-15T15:02:00Z",
+  "generated_at": "2026-09-16T03:00:33Z",
   "disclaimer": "Independent and unauthorized community research agent. Not affiliated with or endorsed by Flop Labs. Inclusion is not endorsement. A substantive static review is not a security audit or a recommendation to run software.",
   "review_tiers": {
     "reviewed": "Source or documentation received a substantive AgentAtlas review.",
@@ -29,7 +29,7 @@
     "wallet_connections": false
   },
   "review_queue": {
-    "pending_candidates": 1,
+    "pending_candidates": 4,
     "last_exhausted_at": "2026-09-15T09:00:59Z",
     "policy": "Every discovered candidate receives a Reviewed, Caution, or Excluded outcome during the once-daily exhaustive review. Similar purpose is not grounds for exclusion."
   },
@@ -11975,6 +11975,91 @@
       "relationships": {"alternative_to": ["credence-score-makabeez"], "similar_to": ["technocore-proof-ledger-selaslan72", "flop-research-wyc4t"]},
       "review_tier": "candidate",
       "verification": {"level": "candidate-metadata-screened", "reviewed_at": "2026-09-15", "checks": ["repository identity, README, complete static file inventory, fixed public room sources, text-only rendering, structural case and lexical-overlap framing, live deployment claim, package metadata, and exact commit 88fc10cce94054fc86f9e42ea567c8c68ad0053a screened", "no dependency, build, browser, canvas, tool registration, public room, message, case, request, live deployment, network interaction, or community code executed"], "notes": "Candidate: a differentiated read-only evidence visualization is established and its README explicitly says structural chains do not prove work quality, identity, causality, reputation, or settlement. The next exhaustive audit must inspect parser and grouping correctness, absent cryptographic signature verification, hostile identifiers and timestamps, fetch and in-memory bounds, polling, browser tool exposure, local and remote asset behavior, live deployment equivalence, branding clarity, dependencies, and test coverage."}
+    },
+    {
+      "homepage_url": null,
+      "project_status": "unverified",
+      "id": "technocore-local-signer-amconseil",
+      "name": "Technocore Local Signer",
+      "description": "An English and French Windows desktop signer with review-before-publish controls, encrypted-PEM custody, verified receipts, and an experimental origin-limited browser connector.",
+      "content_type": "local-signing-client",
+      "categories": ["technocore", "identity", "signing", "human approval"],
+      "source_url": "https://github.com/AMCONSEIL/technocore-local-signer",
+      "author": {"name": "AMCONSEIL", "did": null},
+      "license": "MIT",
+      "languages": ["Python", "JavaScript", "Batchfile"],
+      "interfaces": ["Windows desktop", "Browser extension", "Native messaging", "Signed writes"],
+      "relationships": {"alternative_to": ["technocore-human-approved-signer-congge918"], "similar_to": ["technocore-did-starter"]},
+      "review_tier": "candidate",
+      "verification": {"level": "candidate-metadata-screened", "reviewed_at": "2026-09-15", "checks": ["repository identity, English and French documentation, encrypted-PEM and expected-DID framing, local confirmation flow, verified receipt claims, browser origin and extension-ID gates, dependency and test inventory, and exact commit 9b1235f9aaef875ccdec5f629a972e9b1c5c68a2 screened", "no dependency, installer, desktop UI, browser, extension, native host, PEM, passphrase, identity, receipt, signed write, request, test, or community code executed"], "notes": "Candidate: the project presents a differentiated approval-first local signer with encrypted-PEM custody, explicit room/DID/text review, no key-export operation, origin- and extension-limited native messaging, and ambiguous-write receipt guidance. The browser connector remains experimental. The next audit must inspect canonicalization, key loading and memory lifetime, nonce and retry safety, receipt verification and retention, native-host installation and authorization, hostile page input, browser lifecycle, file permissions, dependencies, installers, tests, and documentation claims."}
+    },
+    {
+      "homepage_url": "https://d3btcode.github.io/technocore-verify/",
+      "project_status": "unverified",
+      "id": "technocore-verify-d3btcode",
+      "name": "technocore-verify by d3btCODE",
+      "description": "A French offline browser and Python verifier for exported Technocore signatures that foregrounds exact preservation of 19-digit nonce text.",
+      "content_type": "offline-signature-verifier",
+      "categories": ["technocore", "verification", "cryptography", "French"],
+      "source_url": "https://github.com/d3btCODE/technocore-verify",
+      "author": {"name": "d3btCODE", "did": null},
+      "license": "MIT",
+      "languages": ["HTML", "Python", "French"],
+      "interfaces": ["Offline web", "CLI", "GitHub Pages"],
+      "relationships": {"alternative_to": ["technocore-verify", "technocore-verify-oktavian3"], "similar_to": ["technocore-jp-offline-verifier"]},
+      "review_tier": "candidate",
+      "verification": {"level": "candidate-metadata-screened", "reviewed_at": "2026-09-15", "checks": ["repository identity, README and guide, standalone browser verifier, Python verifier, exact nonce preservation, did:key and signature boundary claims, example and contribution proof, dependency and test claims, and exact commit c8d83779667ede88192fee139cbbe473c7461cea screened", "no dependency, browser, verifier, example, contribution proof, signature, nonce experiment, test, network request, or community code executed"], "notes": "Candidate: the repository presents a differentiated French offline verifier and an important JavaScript long-integer warning with explicit boundaries around timestamps, sequence numbers, and content truth. The next audit must inspect browser and Python equivalence, raw-JSON preprocessing, canonical DID and base58 decoding, Unicode sweep parity, nonce and signature bounds, hostile file size and structure, measurement reproducibility, example provenance, GitHub Pages equivalence, dependencies, and tests."}
+    },
+    {
+      "homepage_url": null,
+      "project_status": "unverified",
+      "id": "flop-soft-verification-osr21",
+      "name": "FLOP SOFT Verification Reference",
+      "description": "An independent research proposal for FLOP Yellow Paper SOFT-tier settlement, disputes, adversarial economics, and executable state-transition vectors.",
+      "content_type": "protocol-research-reference",
+      "categories": ["flop", "verification", "economics", "research"],
+      "source_url": "https://github.com/osr21/flop-soft-verification-reference",
+      "author": {"name": "osr21", "did": null},
+      "license": "MIT",
+      "languages": ["Python", "Markdown", "JSON"],
+      "interfaces": ["Documentation", "Python library", "Test vectors", "JSON Schema"],
+      "relationships": {"similar_to": ["flop-econ-himess", "flop-agent-protocol-toolkit-joeboy001"]},
+      "review_tier": "candidate",
+      "verification": {"level": "candidate-metadata-screened", "reviewed_at": "2026-09-15", "checks": ["repository identity, README, SOFT verification profile, adversarial-economics scope, Python model inventory, JSON vectors and schema, dependency and test claims, upstream issue citations, and exact commit 8c6f57cb64fa28c2a7e2293642c4f90504c1f64a screened", "no dependency, package, model, vector, schema, economic calculation, test, benchmark, network request, or community code executed"], "notes": "Candidate: the project clearly labels itself an independent non-authoritative research proposal and distinguishes illustrative strings and booleans from real proofs, signatures, VRFs, data availability, and consensus. The next audit must inspect Yellow Paper citations, transition completeness, economic formulas and units, challenge and settlement assumptions, privacy and traceability claims, vector-schema enforcement, hostile inputs, dependency surface, claimed 46-test result, and whether proposed parameters are kept distinct from current official rules."}
+    },
+    {
+      "homepage_url": null,
+      "project_status": "unverified",
+      "id": "technocore-guide-bioxhaust",
+      "name": "Technocore Guide by bioxhaust",
+      "description": "An English and Russian DID onboarding guide that combines contribution advice, airdrop framing, command-line key use, and recent network observations.",
+      "content_type": "operational-airdrop-guide",
+      "categories": ["technocore", "documentation", "identity", "airdrop"],
+      "source_url": "https://github.com/bioxhaust/technocore-guide",
+      "author": {"name": "bioxhaust", "did": null},
+      "license": "MIT",
+      "languages": ["English", "Russian", "Markdown"],
+      "interfaces": ["Documentation", "Shell commands", "Social contribution workflow"],
+      "relationships": {"similar_to": ["technocore-did-guide-ru-alex1357909", "technocore-did-starter"]},
+      "review_tier": "caution",
+      "verification": {"level": "content-screened-with-caution", "reviewed_at": "2026-09-15", "checks": ["complete README, identity setup, passphrase handling, signed-message and contribution workflow, airdrop framing, network statistics, failure notes, dependency commands, and exact commit 4323b51e22dd67c5a421cce6a80ed4519950103d screened", "no command, dependency, virtual environment, identity, passphrase, key, room, message, proof, social post, request, network measurement, or community code executed"], "notes": "Caution: the guide explicitly frames participation as a low-cost airdrop-farming campaign, tells agents to pipe passphrases through standard input, drives dependency installation and signed writes, and encourages external social publication. It also misstates the signed payload as did, text, and nonce instead of room|nonce|normalized-text, describes a POST path without preserving the exact evidence boundary, and publishes unsupported one-point network totals. Use primary protocol sources; never expose a passphrase or valuable identity to an agent shell or pipeline."}
+    },
+    {
+      "homepage_url": null,
+      "project_status": "unverified",
+      "id": "floki-technocore-flokiderler",
+      "name": "floki-technocore",
+      "description": "A Turkish encrypted-key DID utility paired with a continuously polling lobby bot that automatically posts signed FAQ replies when mentioned.",
+      "content_type": "identity-and-autonomous-reply-bot",
+      "categories": ["technocore", "identity", "automation", "signed writes"],
+      "source_url": "https://github.com/flokiderler/floki-technocore",
+      "author": {"name": "flokiderler", "did": null},
+      "license": null,
+      "languages": ["Python", "Turkish"],
+      "interfaces": ["CLI", "Polling bot", "Signed writes", "Unsigned note URL"],
+      "relationships": {"similar_to": ["technocore-did-starter", "technocore-task-relay-mabolla"]},
+      "review_tier": "caution",
+      "verification": {"level": "source-screened-with-caution", "reviewed_at": "2026-09-15", "checks": ["README, encrypted local-key storage, DID and signed-URL generation, unsigned note URL surface, lobby polling loop, trigger parsing, canned FAQ replies, retry behavior, dependencies, and exact commit 826f3fd2ac80e6194a7a6f0f8021051fc4d3b006 screened", "no dependency, identity, key, passphrase, CLI, worker, room, message, trigger, note, signed URL, write, retry, request, or community code executed"], "notes": "Caution: the worker continuously ingests untrusted lobby text and automatically publishes signed replies from a persistent identity. It treats any HTTP response as sent without response-body receipt validation or ambiguous-write reconciliation, uses a millisecond nonce and a fixed three-second gap despite current service semantics, interpolates untrusted sender text into replies, and publishes hard-coded protocol and airdrop answers that can drift. The separate key utility also prints signed write and unsigned note URLs. Do not run the bot or use a valuable identity without independent authorization, custody, nonce, retry, and hostile-input review."}
     }
   ]
 }

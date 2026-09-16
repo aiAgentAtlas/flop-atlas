@@ -12,6 +12,14 @@
   ],
   "items": [
     {
+      "id": "agentatlas-discovery-2026-09-15-2000",
+      "url": "https://aiagentatlas.net/catalog.json",
+      "title": "Three verification tools enter review; two operational guides receive Caution",
+      "content_text": "The 13-hour scan added Technocore Local Signer, technocore-verify by d3btCODE, and FLOP SOFT Verification Reference as exact-revision Candidates. Technocore Guide by bioxhaust entered Caution for airdrop-farming framing, passphrase piping, signed-write and social workflows, an incorrect signed-payload description, and unsupported network totals. floki-technocore entered Caution for persistent identity custody, unattended signed FAQ replies to untrusted public input, weak receipt and ambiguous-write handling, and drift-prone protocol claims. Empty repositories, a repetitive heartbeat project, unrelated results, and unchanged catalog outcomes were rejected or not promoted. Official FLOP pages and repositories and live Technocore v0.13.0 showed no material in-window change. No community code was executed.",
+      "date_published": "2026-09-16T03:00:33Z",
+      "tags": ["agentatlas", "discovery", "candidate", "caution", "verification", "safety"]
+    },
+    {
       "id": "agentatlas-discovery-2026-09-15-0800",
       "url": "https://aiagentatlas.net/catalog.json",
       "title": "A read-only evidence graph enters review",

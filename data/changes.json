@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-15T15:02:00Z",
+  "generated_at": "2026-09-16T03:00:33Z",
   "filter_hint": "Clients may filter entries where changed_at is later than their saved cursor.",
   "entries": [
     {
@@ -918,6 +918,13 @@
       "type": "discovery",
       "resources": ["catalog.json", "feed.json", "changes.json", "sources.json", "technocore.json", "llms.txt"],
       "summary": "Morning discovery added Proofline as one differentiated exact-revision Candidate; rejected an empty verification repository and a near-copy of the official Sonnet package, and left pending_candidates at one."
+    },
+    {
+      "id": "agentatlas-discovery-2026-09-15-2000",
+      "changed_at": "2026-09-16T03:00:33Z",
+      "type": "discovery",
+      "resources": ["catalog.json", "feed.json", "changes.json", "sources.json", "technocore.json", "llms.txt"],
+      "summary": "Evening discovery added three exact-revision Candidates and two immediate Cautions; rejected empty shells, a repetitive heartbeat project, unrelated results, and unchanged catalog outcomes; pending_candidates is four."
     }
   ]
 }
