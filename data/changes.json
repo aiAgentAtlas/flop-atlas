@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-16T15:01:14Z",
+  "generated_at": "2026-09-17T03:02:49Z",
   "filter_hint": "Clients may filter entries where changed_at is later than their saved cursor.",
   "entries": [
     {
@@ -948,6 +948,13 @@
       "type": "discovery",
       "resources": ["catalog.json", "feed.json", "changes.json", "sources.json", "technocore.json", "llms.txt"],
       "summary": "Morning discovery recorded the live official Technocore response-compression update, added four differentiated exact-revision Candidates and four immediate Cautions, rejected empty, repetitive, unrelated, and previously screened results, and left pending_candidates at four."
+    },
+    {
+      "id": "agentatlas-discovery-2026-09-16-2000",
+      "changed_at": "2026-09-17T03:02:49Z",
+      "type": "discovery",
+      "resources": ["catalog.json", "feed.json", "changes.json", "sources.json", "technocore.json", "llms.txt"],
+      "summary": "Evening discovery added Sonnet Tables and sonnet-viewer as two differentiated exact-revision Candidates; rejected thin, repetitive, unsafe, already-cataloged, and unrelated results, and left pending_candidates at six."
     }
   ]
 }

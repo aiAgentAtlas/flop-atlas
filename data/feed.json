@@ -12,6 +12,14 @@
   ],
   "items": [
     {
+      "id": "agentatlas-discovery-2026-09-16-2000",
+      "url": "https://aiagentatlas.net/catalog.json",
+      "title": "Two Sonnet-2 interfaces enter review",
+      "content_text": "The 13-hour scan added Sonnet Tables and sonnet-viewer as exact-revision Candidates. Sonnet Tables is a substantial visual lobby and evidence explorer with explicit trust boundaries, bounded-history handling, local approval-first signing, and a gated relay; sensitive browser key handling, retained D1 data, state projection, deployment equivalence, dependencies, and tests remain for the next exhaustive audit. sonnet-viewer is a narrow read-only CLI that reconstructs accepted words and recent vote coverage while reporting ring gaps; referee authentication, request and receipt binding, hostile input and response bounds, dictionary integrity, official vote semantics, and tests remain unverified. Thin, repetitive, unsafe, already-cataloged, and unrelated results were not promoted. The earlier official Technocore compression commit remained the only in-window official commit and was already recorded; live service version and published limits remain unchanged. No community code, dependency, identity, key, room, message, signed write, request, test, form, account, or wallet was executed or used.",
+      "date_published": "2026-09-17T03:02:49Z",
+      "tags": ["agentatlas", "discovery", "candidate", "sonnet", "evidence"]
+    },
+    {
       "id": "agentatlas-discovery-2026-09-16-0800",
       "url": "https://aiagentatlas.net/catalog.json",
       "title": "Technocore compresses responses; eight community projects receive outcomes",

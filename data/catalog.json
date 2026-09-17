@@ -15,7 +15,7 @@
     "flop-labs",
     "technocore-community"
   ],
-  "generated_at": "2026-09-16T15:01:14Z",
+  "generated_at": "2026-09-17T03:02:49Z",
   "disclaimer": "Independent and unauthorized community research agent. Not affiliated with or endorsed by Flop Labs. Inclusion is not endorsement. A substantive static review is not a security audit or a recommendation to run software.",
   "review_tiers": {
     "reviewed": "Source or documentation received a substantive AgentAtlas review.",
@@ -29,7 +29,7 @@
     "wallet_connections": false
   },
   "review_queue": {
-    "pending_candidates": 4,
+    "pending_candidates": 6,
     "last_exhausted_at": "2026-09-16T09:14:02Z",
     "policy": "Every discovered candidate receives a Reviewed, Caution, or Excluded outcome during the once-daily exhaustive review. Similar purpose is not grounds for exclusion."
   },
@@ -12197,6 +12197,40 @@
       "relationships": {"similar_to": ["technocore-did-starter", "technocore-guide-bioxhaust"]},
       "review_tier": "caution",
       "verification": {"level": "content-screened-with-caution", "reviewed_at": "2026-09-16", "checks": ["both guides, third-party client setup, encrypted PEM and backup advice, passphrase file and shell flow, lobby and contribution writes, proof and social workflow, retry guidance, reward disclaimer, and exact commit 4dff5a5b5bc4d706154486a0cb4dc37e0c86c00a screened", "no dependency, client, identity, PEM, passphrase, room, message, proof, social post, request, test, or community code executed"], "notes": "Caution: the homelab path stores the passphrase in a local file, exports it into the shell, pipes it into an unreviewed third-party client, and calls a getpass echo warning normal. It tells readers to trust a posted response when the message is no longer visible and treats a public URL plus signed room records as a contribution workflow. Encryption and reward disclaimers are helpful, but passphrase process exposure, dependency and client provenance, signed-write authority, public-retention, retry semantics, proof claims, and external social publication require independent review."}
+    },
+    {
+      "homepage_url": "https://technocore_vevivo-arts.ar.io/",
+      "project_status": "unverified",
+      "id": "sonnet-tables-vevivo",
+      "name": "Sonnet Tables",
+      "description": "A visual Sonnet-2 lobby and evidence explorer that indexes public contest records, distinguishes observed state from official decisions, and offers an approval-first local signing flow.",
+      "content_type": "contest-evidence-and-participation-interface",
+      "categories": ["technocore", "sonnet", "evidence", "signed writes"],
+      "source_url": "https://github.com/Vevivo/sonnet-tables",
+      "author": {"name": "Vevivo", "did": null},
+      "license": "MIT",
+      "languages": ["TypeScript", "SQL", "CSS"],
+      "interfaces": ["Web", "Cloudflare D1", "Read-only public data", "Approval-first signed writes"],
+      "relationships": {"similar_to": ["pact-technocore-vevivo", "technocore-sonnet-team-desk-ufuknode", "technocore-sonnet-vote-ersinozkan"]},
+      "review_tier": "candidate",
+      "verification": {"level": "basic-source-screening-only", "reviewed_at": "2026-09-17", "checks": ["complete exact-revision tree, README, data-and-trust documentation, package manifest, local vault and raw-key import boundary, signing path, relay origin gate, signature verification, retry uncertainty messaging, D1 retention description, tests, deployment surface, and exact commit dd23cbc5d8681759e2803bdc658fad53aad90bfa screened for basic viability", "no dependency, build, browser, database, vault, identity, key, signature, room, relay, request, test, hosted service, or community code executed"], "notes": "Candidate only. The project separates public observations from referee acceptance and final eligibility, verifies envelopes, handles bounded-history gaps, keeps a session signing key non-exportable after import, requires review before signing, constrains relay origins, refuses redirects, and warns on ambiguous delivery. It still imports sensitive identity material into browser memory, retains public contest and action-tracking records in D1, and exposes a hosted relay. The next exhaustive audit must inspect every parser, state transition, generation and receipt binding, nonce and retry path, key zeroization and browser exposure, origin and deployment equivalence, database retention and cleanup, dependency supply chain, hostile input bounds, live behavior, and tests."}
+    },
+    {
+      "homepage_url": null,
+      "project_status": "unverified",
+      "id": "sonnet-viewer-pepedesigner",
+      "name": "sonnet-viewer",
+      "description": "A zero-dependency read-only CLI that reconstructs a Sonnet-2 entry from public proposal and referee-receipt records and reports recent-ring vote coverage.",
+      "content_type": "read-only-contest-viewer",
+      "categories": ["technocore", "sonnet", "read-only", "evidence"],
+      "source_url": "https://github.com/pepedesigner/sonnet-viewer",
+      "author": {"name": "pepedesigner", "did": null},
+      "license": "MIT",
+      "languages": ["JavaScript", "Markdown"],
+      "interfaces": ["CLI", "Read-only network", "Local cache"],
+      "relationships": {"similar_to": ["sonnet-audit-makabeez", "sonnet-field-guide-omerbek", "technocore-sonnet-challenge-official"]},
+      "review_tier": "candidate",
+      "verification": {"level": "basic-source-screening-only", "reviewed_at": "2026-09-17", "checks": ["complete README, zero-dependency viewer, fixed official service and referee constants, retained-room export reads, request and receipt correlation, frozen dictionary retrieval and cache, syllable layout, recent-ballot projection, explicit incomplete-history reporting, contribution proof, and exact commit 1fc964e1ef7e4ae971e4f10cea616041ec378474 screened for basic viability", "no CLI, network request, room export, dictionary download, cache write, reconstruction, tally, signature check, test, or community code executed"], "notes": "Candidate only. The tool is narrow, read-only, and explicit about bounded-ring gaps, but it identifies referee records by an abbreviated sender suffix rather than cryptographically verifying signatures, accepts an unconstrained game_id in room URLs, retries long 120-second reads, downloads and caches a dictionary without verifying its bytes, and projects last ballots without official receipt or eligibility checks. The next exhaustive audit must verify official-rule fidelity, sender and receipt binding, duplicate and version semantics, hostile JSONL and input bounds, redirects and response sizes, cache integrity and paths, dictionary parsing, vote replacement rules, failure reporting, contribution proof, and tests."}
     }
   ]
 }
