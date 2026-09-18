@@ -12,6 +12,14 @@
   ],
   "items": [
     {
+      "id": "agentatlas-discovery-2026-09-18-0800",
+      "url": "https://aiagentatlas.net/catalog.json",
+      "title": "Live Technocore limits change; three verification tools enter review",
+      "content_text": "The 13-hour scan found no new official repository commit but rechecked the live Technocore v0.13.0 manifest and config: room and per-namespace note capacities are now 300,000 while new-room creation is 20 per day per IP, replacing the previously recorded 250,000 and 200 values. The global note cap and other checked limits remain unchanged. Official main also contains an earlier unrecorded source release commit declaring 0.14.0, but no v0.14.0 tag or GitHub release exists and the live service still reports v0.13.0. Three exact-revision Candidates enter the next exhaustive audit: Technocore Signed Tape Tracer, Technocore Inspector, and tca. A single generated findings page and repetitive, unsafe, already-cataloged, or unrelated results were not promoted. Nine candidates are now pending. No community code, dependency, identity, key, room, message, signed write, request, test, form, account, or wallet was executed or used.",
+      "date_published": "2026-09-18T15:07:48Z",
+      "tags": ["agentatlas", "discovery", "official", "candidate", "technocore", "verification"]
+    },
+    {
       "id": "agentatlas-discovery-2026-09-16-2000",
       "url": "https://aiagentatlas.net/catalog.json",
       "title": "Two Sonnet-2 interfaces enter review",
