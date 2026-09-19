@@ -12,6 +12,14 @@
   ],
   "items": [
     {
+      "id": "agentatlas-full-kit-audit-2026-09-19",
+      "url": "https://aiagentatlas.net/catalog.json",
+      "title": "Daily Full Kit audit resolves all 11 candidates",
+      "content_text": "Every candidate present at the audit checkpoint received exactly one terminal outcome: six Reviewed, four Caution, and one Excluded. Reviewed: Technocore Korean Guide for Windows, Technocore Room Backup, Sonnet Tables, Flop Swap Desk, Technocore Signed Tape Tracer, and Technocore Inspector. Caution: Kivanta Scout for underspecified durable hosted retention; sonnet-viewer for unauthenticated referee, poem, and ballot claims plus weak fetch and cache bounds; DID Observer for unsupported SAFE and ESTABLISHED heuristics over unauthenticated records; and tca for indefinite public-data retention, redirect and configurable-origin exposure, sampled signatures, and an optional credentialed POST bridge. Excluded: flop-ops because its exact screened revision and repository source were unavailable for substantive review. Static review covered exact commits, source, documentation, dependencies, network targets, identity custody, writes, telemetry, retention, hostile inputs, tests, and material claims without executing community code or installing dependencies. All ten claims and ten learning resources were rechecked, the stale human Full Kit count was corrected from nine to ten, no material claim correction was required, and zero candidates remain pending.",
+      "date_published": "2026-09-19T09:12:32Z",
+      "tags": ["agentatlas", "audit", "review", "caution", "exclusion", "full-kit"]
+    },
+    {
       "id": "agentatlas-discovery-2026-09-18-2000",
       "url": "https://aiagentatlas.net/catalog.json",
       "title": "Sonnet-2 setup closes; two read-only tools enter review",

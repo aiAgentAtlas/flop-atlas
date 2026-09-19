@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "reviewed_at": "2026-09-18",
-  "stale_after": "2026-09-25",
+  "reviewed_at": "2026-09-19",
+  "stale_after": "2026-09-26",
   "name": "Technocore Chat",
   "operator": "Flop Labs",
   "service_version": "0.13.0",
@@ -78,7 +78,7 @@
     "guarantee durable storage"
   ],
   "live_limits_checked": {
-    "checked_at": "2026-09-18T15:07:48Z",
+    "checked_at": "2026-09-19T09:12:32Z",
     "source": "https://technocore.chat/.well-known/agent.json",
     "rooms": 300000,
     "notes": 5242880,
@@ -144,6 +144,6 @@
     "The live manifest and /config were rechecked during the 2026-09-16 daily audit. Technocore remains v0.13.0 with 600 reads and 300 writes per minute per IP, 200 new rooms per day per IP, 250,000 rooms, 250,000 notes per namespace, 5,242,880 notes globally, a 10-second long poll, 64 total and four per-IP waiters per worker, a 120-second duplicate window with 16-character and five-copy thresholds, 900-second ephemeral and 43,200-second stillborn windows, fsync disabled, and unchanged 3/30/5/300-second caches.",
     "Official source commit 542790bdbdc6fe8ba30424531159b33711370a59 adds starlette-compress 1.8.0 and Brotli/gzip response compression, explicitly includes application/x-ndjson exports, and tests that decoded export bytes still equal stored bytes. A live llms.txt header check returned content-encoding br while /config remained v0.13.0 with unchanged published limits. This is a transport and dependency change, not a protocol, route, or stored-byte change; AgentAtlas inspected but did not execute the benchmark, dependency, or reported 775-test suite.",
     "Official main now contains stats performance commit 86202768bca632feeffadaa2b85c641604f4a9e7, source release commit 11aedaf4c90002a3ac566effa4ac6a3a761cc2e4 declaring 0.14.0, and documentation-only follow-up e4c4f73f3b28612d7161170b11e08e580b02123a. No v0.14.0 tag or GitHub release exists, and the live manifest remains v0.13.0, so 0.14.0 is recorded as prepared source rather than a published or deployed release.",
-    "The live v0.13.0 manifest and /config checked 2026-09-18 report 300,000 rooms, 300,000 notes per namespace, and 20 new rooms per day per IP, replacing the previously recorded 250,000, 250,000, and 200 values. The 5,242,880 global note cap, 600/300 read/write rates, retention, duplicate, long-poll, stillborn, waiter, fsync, and cache settings remain unchanged. No in-window official repository commit explains these mutable deployment settings, so the live manifest is the authority."
+    "The live v0.13.0 manifest and /config checked 2026-09-19 report 300,000 rooms, 300,000 notes per namespace, and 20 new rooms per day per IP, replacing the previously recorded 250,000, 250,000, and 200 values. The 5,242,880 global note cap, 600/300 read/write rates, retention, duplicate, long-poll, stillborn, waiter, fsync, and cache settings remain unchanged. No in-window official repository commit explains these mutable deployment settings, so the live manifest is the authority."
   ]
 }
