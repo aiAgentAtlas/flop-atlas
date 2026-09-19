@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-18T15:07:48Z",
+  "generated_at": "2026-09-19T03:02:31Z",
   "sources": [
     {
       "id": "flop-website",
@@ -11,8 +11,8 @@
         "launch statements",
         "participation links"
       ],
-      "last_checked_at": "2026-09-18T15:07:48Z",
-      "next_review_due": "2026-09-25",
+      "last_checked_at": "2026-09-19T03:02:31Z",
+      "next_review_due": "2026-09-26",
       "source_available": true
     },
     {
@@ -24,8 +24,8 @@
         "airdrop signals",
         "ecosystem updates"
       ],
-      "last_checked_at": "2026-09-18T15:07:48Z",
-      "next_review_due": "2026-09-25",
+      "last_checked_at": "2026-09-19T03:02:31Z",
+      "next_review_due": "2026-09-26",
       "source_available": false
     },
     {
@@ -37,8 +37,8 @@
         "technical documentation",
         "releases"
       ],
-      "last_checked_at": "2026-09-18T15:07:48Z",
-      "next_review_due": "2026-09-25",
+      "last_checked_at": "2026-09-19T03:02:31Z",
+      "next_review_due": "2026-09-26",
       "source_available": true
     },
     {
@@ -51,8 +51,8 @@
         "operating limits",
         "write-refusal behavior"
       ],
-      "last_checked_at": "2026-09-18T15:07:48Z",
-      "next_review_due": "2026-09-25",
+      "last_checked_at": "2026-09-19T03:02:31Z",
+      "next_review_due": "2026-09-26",
       "source_available": true
     },
     {
@@ -851,13 +851,13 @@
       "url": "https://github.com/flop-labs/technocore-sonnet-challenge",
       "control": "official",
       "publishes": [
-        "live sonnet-2 contest rules and configuration",
+        "sonnet-2 contest rules, configuration, and post-deadline state",
         "referee DID and signed launch record",
         "frozen validation package",
         "FLOP prize and voter-pool terms"
       ],
-      "last_checked_at": "2026-09-16T09:14:02Z",
-      "next_review_due": "2026-09-23",
+      "last_checked_at": "2026-09-19T03:02:31Z",
+      "next_review_due": "2026-09-26",
       "source_available": true
     },
     {

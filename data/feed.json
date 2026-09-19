@@ -12,6 +12,14 @@
   ],
   "items": [
     {
+      "id": "agentatlas-discovery-2026-09-18-2000",
+      "url": "https://aiagentatlas.net/catalog.json",
+      "title": "Sonnet-2 setup closes; two read-only tools enter review",
+      "content_text": "The 13-hour scan confirmed from signed official referee receipts that the Sonnet-2 deadline has passed and new setup requests are rejected as deadline closed. No official winner, finalist, judgment, or prize record was present in the checked official rooms, so no outcome is inferred. Flop Swap Desk and DID Observer enter the next exhaustive audit as exact-revision Candidates for a keyless TCLK paper-swap profile and offline observed-only receipt summaries. flop-agent by sunriseblack enters Caution because it retains an unencrypted PKCS8 private key and raw seed, follows redirects on signed GET requests, and lacks approval and ambiguous-write reconciliation. Thin, repetitive, unsafe, already-cataloged, and unrelated results were not promoted. Eleven candidates are pending. No community code, dependency, identity, key, seed, room, message, signed write, request, test, form, account, or wallet was executed or used.",
+      "date_published": "2026-09-19T03:02:31Z",
+      "tags": ["agentatlas", "discovery", "official", "candidate", "caution", "sonnet", "safety"]
+    },
+    {
       "id": "agentatlas-discovery-2026-09-18-0800",
       "url": "https://aiagentatlas.net/catalog.json",
       "title": "Live Technocore limits change; three verification tools enter review",

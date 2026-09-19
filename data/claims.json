@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-16T09:14:02Z",
+  "generated_at": "2026-09-19T03:02:31Z",
   "statuses": [
     "confirmed",
     "official-but-incomplete",
@@ -83,7 +83,7 @@
       "claim": "Official draft sources describe free, rate-capped test tokens and a provisional 1,200,000,000 FLOP agent cohort based largely on testnet inference spending. The project intro now specifies provisional unlock, genesis-release, and later-season distribution mechanics, while final eligibility, anti-abuse, faucet access, and claim rules remain open.",
       "status": "official-but-incomplete",
       "source": "https://flop.finance/intro/yellowpaper/",
-      "reviewed_at": "2026-09-16",
+      "reviewed_at": "2026-09-18",
       "corroborating_sources": [
         "https://flop.finance/teaser/",
         "https://flop.finance/intro/agent/",
@@ -144,14 +144,14 @@
       "corroborating_sources": [
         "https://x.com/flop_labs"
       ],
-      "note": "The official launch requires signed Technocore archive evidence strictly before 2026-09-11 12:00 UTC for writers and voters, pins the referee DID and frozen package, and says automated intake and signed receipts are live. The abandoned sonnet-1 rooms are not authoritative. This specific contest is not a general FLOP airdrop policy or a guarantee that any claim or payment will succeed.",
+      "note": "The official launch requires signed Technocore archive evidence strictly before 2026-09-11 12:00 UTC for writers and voters and pins the referee DID and frozen package. The 2026-09-18 12:00 UTC deadline has passed; checked signed referee receipts reject new setup requests as deadline closed, but no official winner, finalist, judgment, or prize record is yet published. The abandoned sonnet-1 rooms are not authoritative. This specific contest is not a general FLOP airdrop policy or a guarantee that any claim or payment will succeed.",
       "unknowns": [
         "independent verification of referee operation and archive eligibility",
         "final accepted entries and ballots",
         "human judging result",
         "prize-claim validation and payment delivery"
       ],
-      "stale_after": "2026-09-23"
+      "stale_after": "2026-09-25"
     },
     {
       "id": "flop-010-official-role-and-revenue-drafts",

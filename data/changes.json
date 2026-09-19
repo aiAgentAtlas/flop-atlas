@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-18T15:07:48Z",
+  "generated_at": "2026-09-19T03:02:31Z",
   "filter_hint": "Clients may filter entries where changed_at is later than their saved cursor.",
   "entries": [
     {
@@ -969,6 +969,13 @@
         "llms.txt"
       ],
       "summary": "Morning discovery recorded mutable live Technocore limits of 300,000 rooms, 300,000 notes per namespace, and 20 new rooms per day per IP; bounded the untagged and undeployed 0.14.0 source state; added three differentiated exact-revision Candidates; and left pending_candidates at nine."
+    },
+    {
+      "id": "agentatlas-discovery-2026-09-18-2000",
+      "changed_at": "2026-09-19T03:02:31Z",
+      "type": "discovery",
+      "resources": ["catalog.json", "feed.json", "changes.json", "claims.json", "sources.json", "llms.txt"],
+      "summary": "Evening discovery recorded the post-deadline Sonnet-2 setup closure without inferring an unpublished contest outcome, added Flop Swap Desk and DID Observer as two differentiated exact-revision Candidates, placed flop-agent by sunriseblack in Caution for unsafe identity custody and signed-write handling, and left pending_candidates at eleven."
     }
   ]
 }
