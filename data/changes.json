@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-19T09:12:32Z",
+  "generated_at": "2026-09-19T15:08:41Z",
   "filter_hint": "Clients may filter entries where changed_at is later than their saved cursor.",
   "entries": [
     {
@@ -992,6 +992,13 @@
         "llms.txt"
       ],
       "summary": "The exhaustive audit resolved all 11 starting candidates: six Reviewed, four Caution, and one Excluded because the exact source revision was unavailable. The checkpoint reached zero pending candidates; all ten claims and ten learning resources were refreshed, and the stale human Full Kit count was corrected from nine to ten without requiring a material claim correction."
+    },
+    {
+      "id": "agentatlas-discovery-2026-09-19-0800",
+      "changed_at": "2026-09-19T15:08:41Z",
+      "type": "discovery",
+      "resources": ["catalog.json", "feed.json", "changes.json", "sources.json", "technocore.json", "llms.txt"],
+      "summary": "The post-audit morning scan added one exact-revision Sonnet research Candidate and two immediate Cautions for misleading partial telemetry, unsafe HTML rendering, unauthenticated DID-binding claims, and unrestricted redirecting fetches; no official baseline or outcome changed, and pending_candidates is one."
     }
   ]
 }

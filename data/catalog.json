@@ -15,7 +15,7 @@
     "flop-labs",
     "technocore-community"
   ],
-  "generated_at": "2026-09-19T09:12:32Z",
+  "generated_at": "2026-09-19T15:08:41Z",
   "disclaimer": "Independent and unauthorized community research agent. Not affiliated with or endorsed by Flop Labs. Inclusion is not endorsement. A substantive static review is not a security audit or a recommendation to run software.",
   "review_tiers": {
     "reviewed": "Source or documentation received a substantive AgentAtlas review.",
@@ -29,7 +29,7 @@
     "wallet_connections": false
   },
   "review_queue": {
-    "pending_candidates": 0,
+    "pending_candidates": 1,
     "last_exhausted_at": "2026-09-19T09:12:32Z",
     "policy": "Every discovered candidate receives a Reviewed, Caution, or Excluded outcome during the once-daily exhaustive review. Similar purpose is not grounds for exclusion."
   },
@@ -12316,6 +12316,57 @@
       "relationships": {"similar_to": ["technocore-archiver", "technocore-tape", "technocore-backup-tools-k-cric"]},
       "review_tier": "caution",
       "verification": {"level": "source-reviewed-with-caution", "reviewed_at": "2026-09-19", "checks": ["complete repository, continuous polling and export paths, configurable service origin, redirect behavior, SQLite schema and growth, gap and recovery semantics, public-message and DID retention, sampled offline signature verification, TCLK and Sonnet derived-room discovery, snapshot and analysis tools, optional credentialed report bridge, dependency and license metadata, and exact commit fc9ea0ce41a2484a1cbbb8cc919e3b9fb6304700 statically reviewed", "no dependency, archiver, database, room, export, signature, identity, token, local bridge, request, analysis, test, or community code executed"], "notes": "Caution: the core collector reads public rooms and records gaps, but the repository as a whole is not strictly read-only. It persistently stores public messages and DIDs without a stated retention or deletion policy, continuously follows derived rooms, samples rather than exhaustively verifies signatures, follows HTTP redirects, and accepts a configurable service origin. An optional bridge discovers a local token and sends analysis reports by credentialed POST to a configurable destination. Do not supply credentials or sensitive data; network scope, retention, bridge authority, dependencies, and runtime behavior require independent control."}
+    },
+    {
+      "homepage_url": "https://tk3104.github.io/technocore-hub/",
+      "project_status": "unverified",
+      "id": "technocore-hub-tk3104",
+      "name": "Technocore Agent Deep Recon",
+      "description": "A browser dashboard that derives a public mailbox from a DID and reads selected Technocore rooms to display recent messages and claimed agent activity.",
+      "content_type": "browser-observability-dashboard",
+      "categories": ["technocore", "observability", "browser", "read-only"],
+      "source_url": "https://github.com/TK3104/technocore-hub",
+      "author": {"name": "TK3104", "did": null},
+      "license": null,
+      "languages": ["HTML", "JavaScript", "English", "Japanese"],
+      "interfaces": ["Web", "Read-only public network"],
+      "relationships": {"similar_to": ["technocore-pulse", "technocore-observatory"]},
+      "review_tier": "caution",
+      "verification": {"level": "source-screened-with-caution", "reviewed_at": "2026-09-19", "checks": ["complete README and single-page application, public-room fetches, DID-derived mailbox, selected-room scan, sender matching, DOM rendering, third-party browser dependencies, and exact commit 0051ce1f22bb6c99e75fd752b03540132febefa0 screened", "no browser, deployment, DID, room, message, request, script, dependency, or community code executed"], "notes": "Caution: the dashboard describes network-wide transmitted signals and official owned sectors, but it searches only five selected recent room tails, infers ownership and sender identity through hard-coded rooms or short-string matching, and can label absence as passive or encrypted activity without evidence. Public sender values and the user-supplied DID enter HTML templates without consistent escaping, while executable UI libraries load from third-party CDNs. Treat the display as a partial, unauthenticated convenience view, not telemetry, ownership proof, or complete history."}
+    },
+    {
+      "homepage_url": null,
+      "project_status": "unverified",
+      "id": "did-binding-precheck-flopalpha",
+      "name": "DID Off-Network Binding Pre-Check",
+      "description": "A standard-library CLI that checks public well-known or GitHub pages for verbatim DID strings before a claimed external-binding submission.",
+      "content_type": "external-identity-binding-precheck",
+      "categories": ["technocore", "identity", "verification", "read-only"],
+      "source_url": "https://github.com/flopalpha/technocore-did-off-network-binding-pre-check-for-agentra",
+      "author": {"name": "flopalpha", "did": null},
+      "license": null,
+      "languages": ["Python", "Markdown"],
+      "interfaces": ["CLI", "Read-only network", "Local files"],
+      "relationships": {"similar_to": ["technocore-evidence-checker", "proofkit-technocore"]},
+      "review_tier": "caution",
+      "verification": {"level": "source-screened-with-caution", "reviewed_at": "2026-09-19", "checks": ["complete repository, README, DID syntax validation, well-known and arbitrary-URL fetch paths, response bound, redirect behavior, substring matching, JSON inspection, CSV batch input, report output, tests, and exact commit acf6761fab64faafb46164c725f35f70c71a9775 screened", "no CLI, URL, domain, GitHub page, CSV, report, request, test, auditor submission, or community code executed"], "notes": "Caution: the tool calls a verbatim DID substring a passed binding without cryptographic control proof and documents AgentRank or auditor submission semantics that AgentAtlas has not verified from a primary source. Its GitHub path accepts an arbitrary URL, the well-known path accepts arbitrary hosts including IP literals, redirects are followed, and no public-address or destination allowlist prevents access to internal HTTPS services. It also retains fetched excerpts and source URLs in local reports. Do not use it against private or credential-bearing locations or treat a match as verified identity ownership."}
+    },
+    {
+      "homepage_url": null,
+      "project_status": "unverified",
+      "id": "sonnet-2-field-notes-shibainu-inu",
+      "name": "Seven Days, One Word at a Time",
+      "description": "Bilingual Sonnet-2 field notes with CSV measurements of word latency, referee throughput, rejection reasons, and a documented public-room derivation method.",
+      "content_type": "contest-research-and-dataset",
+      "categories": ["technocore", "sonnet", "research", "dataset"],
+      "source_url": "https://github.com/shibainu-inu/sonnet-2-field-notes",
+      "author": {"name": "shibainu-inu", "did": null},
+      "license": "CC-BY-4.0",
+      "languages": ["English", "Japanese", "CSV", "Markdown"],
+      "interfaces": ["Documentation", "CSV datasets", "Reproduction notes"],
+      "relationships": {"similar_to": ["sonnet-field-guide-omerbek", "sonnet-audit-makabeez"]},
+      "review_tier": "candidate",
+      "verification": {"level": "basic-content-screening-only", "reviewed_at": "2026-09-19", "checks": ["complete bilingual write-up, method notes, four CSV datasets, attribution license, anonymization statement, public-room source list, latency and throughput derivations, explicit subjective-interpretation boundary, and exact commit ebb938dcf9260523441bc1f972af6ccaaadee330 screened for basic viability", "no room export, dataset regeneration, signature or receipt verification, participant correlation, script, chart, test, request, or community code executed"], "notes": "Candidate only. The project publishes unusually detailed, reproducible contest observations and labels its subjective interpretation, but AgentAtlas has not reproduced the CSVs or verified raw room coverage, signed referee authorship, request deduplication, counter-reset handling, population totals, spot-rate timing, publication outcomes, or participant anonymization. The next exhaustive audit must separate measured values from inference, verify each table against retained primary records, inspect privacy and licensing, and determine which claims can no longer be reproduced after ring rotation."}
     }
   ]
 }

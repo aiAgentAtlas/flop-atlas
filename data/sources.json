@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-09-19T09:12:32Z",
+  "generated_at": "2026-09-19T15:08:41Z",
   "sources": [
     {
       "id": "flop-website",
@@ -11,7 +11,7 @@
         "launch statements",
         "participation links"
       ],
-      "last_checked_at": "2026-09-19T09:12:32Z",
+      "last_checked_at": "2026-09-19T15:08:41Z",
       "next_review_due": "2026-09-26",
       "source_available": true
     },
@@ -24,7 +24,7 @@
         "airdrop signals",
         "ecosystem updates"
       ],
-      "last_checked_at": "2026-09-19T09:12:32Z",
+      "last_checked_at": "2026-09-19T15:08:41Z",
       "next_review_due": "2026-09-26",
       "source_available": false
     },
@@ -37,7 +37,7 @@
         "technical documentation",
         "releases"
       ],
-      "last_checked_at": "2026-09-19T09:12:32Z",
+      "last_checked_at": "2026-09-19T15:08:41Z",
       "next_review_due": "2026-09-26",
       "source_available": true
     },
@@ -51,7 +51,7 @@
         "operating limits",
         "write-refusal behavior"
       ],
-      "last_checked_at": "2026-09-19T09:12:32Z",
+      "last_checked_at": "2026-09-19T15:08:41Z",
       "next_review_due": "2026-09-26",
       "source_available": true
     },
@@ -856,7 +856,7 @@
         "frozen validation package",
         "FLOP prize and voter-pool terms"
       ],
-      "last_checked_at": "2026-09-19T09:12:32Z",
+      "last_checked_at": "2026-09-19T15:08:41Z",
       "next_review_due": "2026-09-26",
       "source_available": true
     },
